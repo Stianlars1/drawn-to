@@ -6,7 +6,7 @@
   "motion_level": "full-choreography",
   "one_liner": "Light bento of 5 live UI mocks, each feature demonstrated by its own animation loop",
   "standout": [
-   "every animation IS the feature — legible with copy muted",
+   "every animation IS the feature - legible with copy muted",
    "5 concurrent loops on desynced periods (2.45/2.5/5/7.4s/continuous)",
    "easing matched to meaning: linear marquee, spring shuffle/toolbar pop, stepped typing",
    "asymmetric typewriter: 105ms/char type vs 45ms/char delete",
@@ -250,7 +250,7 @@
   "standout": [
    "grain/halftone texture layered over photo blur",
    "UI fragments oversized and edge-bled, never full screenshots",
-   "one idea per card, zero captions — diegetic microcopy only",
+   "one idea per card, zero captions - diegetic microcopy only",
    "identical card geometry + shared flower motif = series identity",
    "repeated 3-item diagonal stagger as compositional signature",
    "single dark #333 element as sole contrast anchor"
@@ -304,7 +304,7 @@
    "density": "balanced",
    "color_strategy": "monochrome, zero accent (#232323/#2E2E2E/#9D9D9D/#EFEFEF)",
    "illustration": "rich-vector",
-   "borders": "borderless — 4% lightness-step separation, no shadows"
+   "borders": "borderless - 4% lightness-step separation, no shadows"
   }
  },
  {
@@ -451,7 +451,7 @@
    "one marble texture reused at every scale as the whole art direction",
    "primary CTA with inset white icon tile + blue-tinted shadow",
    "glass cards (white 35-50% + blur + 1px white/60 border) over texture",
-   "charcoal #3A3A3A headings, never pure black — soft-contrast premium read"
+   "charcoal #3A3A3A headings, never pure black - soft-contrast premium read"
   ],
   "axes": {
    "radius": "mixed",
@@ -488,7 +488,7 @@
   "kind": "resource",
   "mode": "dark",
   "motion_level": "sequence",
-  "one_liner": "interfaces.dev — carousel of interactive A/B demos teaching UI craft details",
+  "one_liner": "interfaces.dev - carousel of interactive A/B demos teaching UI craft details",
   "standout": [
    "every lesson is a live A/B demo with a user-operated stressor (slider/toggle/play), zero prose",
    "fixed verdict grammar: gray X vs blue check repeated across all nine cards",
@@ -623,7 +623,7 @@
   "motion_level": "full-choreography",
   "one_liner": "Delete button liquid-morphs into inline Confirm/Cancel pills via gooey metaball split",
   "standout": [
-   "metaball goo neck connects the splitting/merging buttons — one continuous liquid shape",
+   "metaball goo neck connects the splitting/merging buttons - one continuous liquid shape",
    "velocity-coupled blur: content smears mid-transition, Cancel sharpens before Confirm",
    "label starts sliding out from behind the icon before the shape deforms",
    "danger as red text on white; filled pink #FACDD2 reserved for hover only",
@@ -667,10 +667,10 @@
   "motion_level": "sequence",
   "one_liner": "Interactive design-system guidelines: hover a live UI, get inspector tooltips with real tokens",
   "standout": [
-   "documentation surface is a working UI — rules verified by hovering the real thing",
+   "documentation surface is a working UI - rules verified by hovering the real thing",
    "shared-token highlighting: one hover lights every instance of the 40px gap",
    "tooltips carry real token names (text-xlarge-medium, strong-fg) in monospace chips",
-   "guidelines encode fallback judgment: 'drop to text-large-medium — don't shrink further'",
+   "guidelines encode fallback judgment: 'drop to text-large-medium - don't shrink further'",
    "state switcher (Default/Long/Two-tone) proves rules survive variants",
    "single annotation blue kept strictly separate from documented UI palette"
   ],
@@ -714,7 +714,7 @@
    "mist texture continues through phone screen (device-as-window)",
    "display serif carries all numerals, sans only labels",
    "caret ^ as typographic up-delta instead of arrow icon",
-   "zero borders/shadows — separation purely by luminance vs field",
+   "zero borders/shadows - separation purely by luminance vs field",
    "ambient in-place morph (~1/255 luma per 150ms, no pan), no entrance choreography",
    "frosted pill nav parked in the light corner of a diagonal light-to-dark field"
   ],
@@ -738,7 +738,7 @@
    "asymmetric timing: ~650ms ease-out enter vs ~400ms ease-in exit",
    "etched groove divider (1px #0A0A0A + 1px #161616 highlight)",
    "~350px blurred icon watermark at 3-4% opacity echoes selection below",
-   "hold state measurably static — zero idle pulsing"
+   "hold state measurably static - zero idle pulsing"
   ],
   "axes": {
    "radius": "medium(10-16)",
@@ -841,7 +841,7 @@
   "kind": "illustration-set",
   "mode": "dark",
   "motion_level": "sequence",
-  "one_liner": "Two animated shader posters — graphite liquid relief and revolving gradient field — on dark stage",
+  "one_liner": "Two animated shader posters - graphite liquid relief and revolving gradient field - on dark stage",
   "standout": [
    "credit text uses difference-style blend, flips dark/light against rotating gradient",
    "headline allowed to drown in the light band ~2s per loop and resurface",
@@ -866,7 +866,7 @@
   "one_liner": "Airy light landing page where a live playground demos procedural UI sounds diegetically",
   "standout": [
    "each sound category demos itself inside the real UI fragment it serves (tap burst, hover lift, chat thread, confetti toast)",
-   "demo visuals are procedurally regenerated per replay — blob faces, confetti, waveforms — proving the 'never the same twice' claim",
+   "demo visuals are procedurally regenerated per replay - blob faces, confetti, waveforms - proving the 'never the same twice' claim",
    "every play writes real data (name, Hz, duration, sweep notation) into a live Recent sounds list",
    "monochrome resting page; color enters only through interactive scenes",
    "true disabled states in a marketing demo: Experimental grays out the v1/v2 toggle and rewrites its caption",
