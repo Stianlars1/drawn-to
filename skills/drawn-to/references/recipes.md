@@ -54,6 +54,33 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
 - **Families:** every family can render it; the visual changes, the skeleton does not. Clash: F4 + F6 on one screen (blueprint over pastel) - pick one.
 - **Choose when:** the product has one message and the visual can carry it (a skill, a tool, a launch); when every added section would dilute; when the page must be judged at a glance. Not for products that must explain a workflow - use Scrubbed Product Stage or a short-scroll page.
 
+### One-Screen Catalog - many screens, one chrome, a DIFFERENT content model per screen
+- **Why it exists:** shipped 2026-08-21 after a nine-screen cycle read generic. Every screen was a One-Screen Poster, so nine locked directions rendered the same headline, the same sub line and the same command nine times. The directions were distinct; the PAGE was monotonous. A catalog is not a poster repeated - it is a set of screens that each argue a different part of the product in a different register.
+- **Anatomy:** one persistent chrome (brand top-left · one link top-right · direction label bottom-left (the direction's PLAIN name - "ink & air",
+  "paper & print" - never its family code or blend, which live in the lock
+  file) · transport bottom-right) wrapping a body that changes KIND per screen. Every screen is still 100 vw x 100 svh, no scroll. The chrome is the only thing that repeats; the body must not.
+- **Screen kinds** (one per screen; a kind may recur only when BOTH the device and the content slice differ - never the same pair twice):
+
+  | Kind | Body | Budget deltas vs the poster |
+  |---|---|---|
+  | Poster | H1 + one sub line + the capture control + ONE signature visual | the base budgets (`quality-bar.md` § 2) |
+  | Feature trio | 3 cells, each a working fragment + title + <=3 spec lines; no H1, or one 2-word section head | no H1 needed; 3 titles <= 3 words; body <= 3 lines/cell |
+  | Bento 2x2 | 4 outlined cells, one carrying a media panel | one cell is the focal, the other three ghosted (C11) |
+  | Ledger / spec sheet | 8-14 rows: mono index, label, dotted leader, value | rows are DATA - every value must reconcile (C10) |
+  | Gallery / swatch wall | 6-9 plates or chips, captions demoted outside | no captions inside the plates |
+  | Metrics | ONE bespoke chart form invented for this data (never a stock bar chart) | 0 prose; axis labels mono |
+  | Frozen interaction | one product fragment held mid-gesture with real values | no marketing copy inside the fragment |
+  | Instrument | one component rendered as hardware, operable 1:1 | the component IS the screen; <= 1 caption |
+  | Chapters | a numbered index rail + one morphing panel | index <= 6 rows |
+  | Closing | one display-size statement + the capture control | <= 8 words, one lit element |
+
+- **Content law:** the shared invariants across the catalog are the brand, the direction label and the product's identity - NOT the headline and not the CTA. The direction label is a plain name; a screen that prints "F2 85 + F4 15" or "Constant C2" has leaked the ledger into the page (`quality-bar.md` § 1). Each screen renders a different SLICE of the product's real material (what it does, what it outputs, what it measured, what it enforces). If two screens carry the same sentence, one of them is wrong.
+- **Device law:** each screen names a different device from `illustration-ideation.md` § Device catalog. Two screens may share a family; they may not share a device. Record the device per screen in the lock file.
+- **Ingredients:** the chrome uses the host direction's separation physics on every screen (hairline in F1, one soft shadow in F6, 1 px frame in F5). The transport control is chrome, not content: it never takes an accent hue and never animates on cycle.
+- **Evidence:** the failure mode is the anchor - nine identical posters, owner verdict "litt generisk". Kinds map to the section recipes below: Feature trio = FIG-Plate Shared-Border Grid / Pebble Dissolve Grid; Bento = Divider-Cut Bento; Ledger = the print ledger sheet (basit_designs-2089995) and yurygok-2089624's dotted leaders; Metrics = yurygok-2089624 bespoke chart forms; Instrument = F7 (cabralorenzo-2090, jeetnirnejak-2089); Chapters = Numbered Index + Photo Panels.
+- **Families:** any. The catalog is a container, not a style.
+- **Choose when:** the page's job is to PROVE range - a taste library, a component gallery, a style system, a portfolio of directions. Not for a product page with one message: that is the One-Screen Poster, once.
+
 ## Feature section - grid/cards
 
 ### Self-Demo Loop Grid - every card is a working fragment animating its own headline

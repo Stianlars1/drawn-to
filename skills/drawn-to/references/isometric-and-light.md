@@ -82,6 +82,87 @@ language, (B) light with geometry instead of blob gradients. Media:
   `translate` loop with period = one item pitch; never ease an infinite
   iso loop (C6).
 
+### A2b. The generator - build ANY subject as an iso object
+
+A2 gives the values; this gives the procedure. Everything below is
+mode-agnostic: pick the material row for dark or light, then build.
+
+**1. Plan space, then project.** Author every face as a flat rectangle in plan
+coordinates and project once. 2:1 dimetric:
+
+    const px = (x, y) => [x - y, (x + y) / 2];        // plan -> screen
+    const at = (p, dy) => `${cx + p[0]},${dy + p[1]}`; // place at a stack level
+
+A plate of footprint W x D has corners `[[0,0],[W,0],[W,D],[0,D]].map(px)`.
+Anything drawn ON that plate (a bar, a window, a chip) is a plan rect run
+through the same `px` - so it lands in the plate's plane automatically and
+you never hand-skew a polygon. Vertical extrusion is the same face offset by
+-h on screen y; a translation along an iso axis is `(dx, dx*0.5)`.
+
+**2. Choose the arrangement.** Four cover almost everything:
+
+| Arrangement | Build | Reads as |
+|---|---|---|
+| **Exploded stack** | N copies of one plate, screen-y offset by a constant rise, dashed vertical guides through the shared corners | layers, versions, revisions, a file's sections |
+| **Board** | one large plate + smaller plates/prisms standing on it, dashed leader lines between them | a system, a dashboard, a machine |
+| **Conveyor** | plates repeating along one iso axis with a constant pitch, linear translate loop | a pipeline, a queue, a flow |
+| **Fan** | 3-5 plates rotated slightly around a shared anchor, overlapping | options, variants, a catalog |
+
+**3. Map the subject to the object** - what to draw for a given feature:
+
+| Subject | Object | Detail that sells it |
+|---|---|---|
+| An app / a screen flow | exploded stack of screen plates | each plate carries its own wireframe bars (title bar, body bars, one control) |
+| A UI surface / component | one plate + floating fragments above it on short posts | the fragment is the real control (a chip, a row, a toggle), not a rectangle |
+| A data flow / pipeline | conveyor of plates along one axis, nodes as small prisms | dotted connector paths that converge into one core |
+| Storage / a database | stacked slabs of unequal height | a cut-away wedge with stipple interior on one slab |
+| A file / a document | exploded stack, one plate per section | mono indices at the plate's right corner, a rise dimension at the left |
+| A network / integrations | board with tiles on dashed bezier orbits | one tile lifted off the plane with its shadow on the ground grid |
+| A build / compile step | two plates plus an extruded arrow between them | the arrow drawn as a real 3-face extrusion, never a 2D glyph |
+
+**4. Material, per mode.** Re-derive, never invert (dual-theme rule):
+
+| Layer | Dark blueprint | Light paper |
+|---|---|---|
+| Ground | #0A0A0C-#232323 | #EDEDED-#F4F2EC |
+| Ground grid | 1 px dashed white at 4-6 %, `stroke-dasharray 1 7` | 1 px dashed #D8D5CE, same pitch |
+| Guides (tier 1) | #3F3F43, `dasharray 3 4` | #CFCCC4, same |
+| Outlines (tier 2) | #6E6E72-#8E8E93 | #A9A69E-#8C8A83 |
+| Focal (tier 3) | ONE white edge, 1.4 px | ONE near-black edge #2A2A28, 1.4 px |
+| Faces | rgba(255,255,255,.02-.05) | #FFFFFF -> #E9E7E1, 1-2 % per face |
+| Depth | opacity dimming 25-40 % | opacity dimming + a soft contact shadow under the lowest plate only |
+| Handles | 6 px square, bg-filled, 1 px focal stroke | same, filled with the paper colour |
+| Labels | mono 10 px, #6E6E72 (focal row lighter) | mono 10 px, #8C8A83 (focal row darker) |
+
+Lighting order never changes: top lightest, left mid, right darkest, one
+light from upper-left, for every object on the page.
+
+**5. The annotation kit** (this is what makes it read measured, not decorative):
+- mono index at one corner of each plate ("01".."05"), tabular, focal row
+  one step brighter;
+- ONE dimension chain with real ticks - two 12 px cross-ticks joined by a
+  vertical, labelled with the actual value ("52");
+- dashed guides that OVERSHOOT the object by 18-24 px on both ends;
+- selection handles on the focal plate only - four is the whole budget;
+- never more than one dimension and one index system per object.
+
+**6. Worked example (shipped 2026-08-21, direction G).** Subject: the lock
+file. Arrangement: exploded stack. `W 300 · D 210 · rise 52 · cx 300 · cy 224`,
+viewBox 660 x 500. Five plates; each carries three plan-space bars at
+`(30,34,176,16)`, `(30,64,116,9)`, `(30,96,92,26)` - headline, sub line,
+command - so every plate is visibly a page. Focal = the top plate: face at
+5 % white, near edge in white 1.4 px, four handles, index "01" brighter.
+Guides run through all four shared corners, overshooting 22 px below and 18 px
+above. One rise dimension at the left, value 52. Ground: dashed iso grid at
+5 % white, `dasharray 1 7`, 60 px pitch, extended past the frame on both axes.
+Owner verdict: "her oser det kvalitet og detaljer".
+
+**7. Failure modes.** A cube with no plan-space content is a stock icon. Two
+dimension systems fight. Handles on every plate read as noise. Faces with
+strong gradients on dark break the flat-tone rule (C3/C4). If the subject has
+no physical object to draw, do not invent machinery - use a UI fragment
+instead (`illustration-ideation.md`).
+
 ### A3. How these were made - and the production route
 
 Marcel's set is vector work in Figma (the handles, px labels and dashed
