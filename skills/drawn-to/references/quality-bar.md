@@ -98,6 +98,19 @@ owner close the tab; the skill's whole job is that they never appear.
 - Two mid-luminance layers overprinting (ghost tiers, see SKILL checklist 4).
 
 **Illustration and light**
+- An illustration that would fit the feature next to it (the swap test) - the
+  single most common generated-illustration failure: pretty, on-brand, and
+  interchangeable. Also: N illustrations in one set drawn in N different
+  styles to make them feel distinct.
+- Isometric construction tells (these are what produce the "stock-looking iso
+  cubes" impression): every face stroked individually, so every seam shows a
+  doubled outline · a heavier outer contour added out of instinct (the
+  reference measures silhouette and seam identical) · gradient fills on object
+  faces · a far solid faded, blurred or shrunk to sit back instead of being
+  occluded · contact shadows that darken where they overlap · an assembly
+  built as N cubes drawn side by side instead of one extruded run · an iso
+  camera that rotates, dollies or parallaxes on scroll · a bobbing object
+  whose shadow bobs with it · a scale or spring on an iso entrance.
 - A centered radial blob as "atmosphere"; conic or striped "rays"; a logo-like
   glyph (triangle, circle, bolt) inside a ring as "the object"; a gradient
   without grain (C9); stock-looking isometric cubes; three floating cards at
@@ -155,6 +168,25 @@ An illustration or light field ships only if ALL of these hold:
    multi-cell set (feature trio, bento, gallery). Two competing objects inside
    one frame halve each other. This condition governs the inside of a frame;
    it never licenses reusing one device across the cells of a set - see § 3b.
+7. **Non-transferable** - in a SET (feature cards, bento, steps), each
+   illustration fails the swap test: mounted on a sibling feature it would
+   argue the wrong thing (`illustration-ideation.md` § derivation ladder). An
+   illustration that would sit equally well on any sibling is decoration, no
+   matter how well drawn.
+8. **One register across the set** - one projection, one module scale, one
+   value ladder, one line-weight hierarchy, one focal rule, one motion
+   register. Variety comes from what is on stage, never from restyling.
+
+9. **Isometric sets - the construction check.** One silhouette path per SOLID,
+   never one per face · a stated number of stroke weights (often ONE per card
+   in the paper-white register), constant across object sizes · zero gradients
+   on object faces, the single exception being an opened interior · depth by
+   occlusion only, never opacity, blur or size · shadows flat and
+   non-compounding where they overlap, and identical in value whether grounded
+   or detached · exactly one black focal face per card, always the surface the
+   feature acts through · grid pitch, phase and world origin identical across
+   every card in the set · rigid transforms only, and the camera never moves.
+   (`isometric-and-light.md` § A1a-A2g.)
 
 If any condition fails: ship NO illustration. A typographic hero on a well-set
 ground is a strong, legitimate answer; a weak object is the single fastest way
@@ -216,18 +248,27 @@ Judge the render, not the code. Never from a thumbnail.
    is the render cheaper? If the render loses the comparison, it is not done.
    Without media: compare against the measured values in the post analyses
    and say so in the QA line.
-5. **Locks** - every visual choice names a lock; every lock is visible in the
+5. **Illustration set re-test** (any page carrying 2+ illustrations). Concepts
+   pass the swap test on paper and drift into decoration during the build;
+   this catches the drift. Screenshot the rendered art at real size, crop away
+   every word of copy, then: (a) re-run the SWAP TEST on the rendered
+   pictures, writing the wrong claim each would make on each sibling; (b) run
+   the READ-BACK TEST on each - write the sentence the picture argues and
+   compare it to the claim in its QI row; (c) overlay the set and confirm
+   register parity (grid pitch and phase, module size, stroke weight, face
+   values, loop length). Any failure is a rebuild, not a tweak.
+6. **Locks** - every visual choice names a lock; every lock is visible in the
    render.
-5b. **Sameness sweep** (any page with repeated frames - multiple screens OR any multi-cell set) - lay the screens side by side
-   at thumbnail size. If two read as the same layout in different colours, one
-   is redundant: change its KIND, not its palette. Then check the chrome
-   across the set - the persistent controls must land on the same pixel in
-   every screen.
-   Run the same sweep INSIDE a screen: lay the cells of every trio, bento and
-   gallery side by side at thumbnail size. Two cells that read as the same
-   drawing under different labels are one cell shipped twice.
-6. **Polish pass** - `polish-moments.md`.
-7. **Record** in the lock file:
+6b. **Sameness sweep** (any page with repeated frames - multiple screens OR any
+   multi-cell set) - lay the screens side by side at thumbnail size. If two read
+   as the same layout in different colours, one is redundant: change its KIND,
+   not its palette. Then check the chrome across the set - the persistent
+   controls must land on the same pixel in every screen. Run the same sweep
+   INSIDE a screen: lay the cells of every trio, bento and gallery side by side
+   at thumbnail size. Two cells that read as the same drawing under different
+   labels are one cell shipped twice.
+7. **Polish pass** - `polish-moments.md`.
+8. **Record** in the lock file:
    `QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · codes 0 · budgets ✓ · sets: <surface: cell=device, cell=device, … · devices unique ✓ · registers N> · refs compared: <slugs or "text only">`.
    `codes 0` means the nomenclature grep in § 1 was run against the rendered
    text and alt/aria values and came back empty. It is never assumed.
