@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drawn To — give your coding agent a trained eye</title>
+<meta name="description" content="An agent skill that replaces 'make it look good' with a locked design direction: a measured taste library, a weighted interview, a lock file every visual decision must serve.">
+<meta property="og:title" content="Drawn To — give your coding agent a trained eye">
+<meta property="og:description" content="51 references reverse-engineered frame by frame into 12 constants and 8 style families. Same model, same brief, one variable: the library.">
+<meta property="og:image" content="assets/proof-same-model-same-brief.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+  /* ---- tokens: the locks in docs/design-locks/2026-08-21-drawn-to-site.md ---- */
+  :root{
+    --bg:#0A0C10; --surface:#0F1217;
+    --ink-1:#EDEDEE; --ink-2:#8B8E93; --ink-3:#5D5E63; --ink-4:#3A3C42;
+    --rule:rgba(255,255,255,.08); --rule-soft:rgba(255,255,255,.045); --rule-hot:rgba(255,255,255,.16);
+    --accent:#5B8CFF; --accent-wash:rgba(91,140,255,.07); --accent-glow:rgba(91,140,255,.35);
+    --col:1120px; --pad:28px; --air:120px;
+    --sans:Inter,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    --mono:"Geist Mono","SF Mono",Menlo,Consolas,monospace;
+    --ease-out:cubic-bezier(.23,1,.32,1);
+  }
+  *{box-sizing:border-box}
+  html{background:var(--bg);color-scheme:dark}
+  body{margin:0;background:var(--bg);color:var(--ink-1);font:400 15px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:rgba(91,140,255,.25)}
+
+  /* blueprint grid outside the rails only (AX5) */
+  .page{position:relative;min-height:100vh;
+    background-image:linear-gradient(var(--rule-soft) 1px,transparent 1px),linear-gradient(90deg,var(--rule-soft) 1px,transparent 1px);
+    background-size:32px 32px;
+    -webkit-mask-image:radial-gradient(120% 80% at 50% 40%,#000 40%,transparent 100%);mask-image:radial-gradient(120% 80% at 50% 40%,#000 40%,transparent 100%)}
+  .col{position:relative;max-width:var(--col);margin:0 auto;background:var(--bg);border-inline:1px solid var(--rule)}
+  .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+  .eyebrow{font:500 11px/1.4 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+
+  /* nav */
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:20px var(--pad);border-bottom:1px solid var(--rule)}
+  .nav .brand{font-weight:500;letter-spacing:-.01em}
+  .nav ul{display:flex;gap:28px;margin:0;padding:0;list-style:none;font-size:13px;color:var(--ink-2)}
+  .nav a:hover{color:var(--ink-1)}
+  .pill{display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 14px;border-radius:999px;font:500 13px/1 var(--sans);background:var(--ink-1);color:var(--bg);transition:transform 160ms var(--ease-out)}
+  .pill:active{transform:scale(.97)}
+  .pill.ghost{background:transparent;color:var(--ink-1);box-shadow:inset 0 0 0 1px var(--rule-hot)}
+  .pill.ghost:hover{box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+
+  /* hero */
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;padding:112px var(--pad) 96px;border-bottom:1px solid var(--rule)}
+  h1{margin:18px 0 0;font:500 clamp(48px,6vw,76px)/1.04 var(--sans);letter-spacing:-.025em}
+  h1 .dim{color:var(--ink-2)}
+  .w{display:inline-block;opacity:0;filter:blur(12px);transform:translateY(8px);animation:reveal 480ms var(--ease-out) forwards}
+  @keyframes reveal{to{opacity:1;filter:blur(0);transform:none}}
+  .lead{max-width:54ch;margin:26px 0 0;color:var(--ink-2);font-size:17px;line-height:1.55}
+  .cta{display:flex;align-items:center;gap:12px;margin-top:34px;flex-wrap:wrap}
+  .cmd{display:inline-flex;align-items:center;gap:12px;height:44px;padding:0 16px;border:1px solid var(--rule-hot);font:400 13px/1 var(--mono);color:var(--ink-1);background:var(--surface)}
+  .cmd span{color:var(--ink-3)}
+  .cmd button{all:unset;cursor:pointer;color:var(--ink-3);font:inherit;padding-left:8px;border-left:1px solid var(--rule)}
+  .cmd button:hover{color:var(--ink-1)}
+  .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:40px;font:400 12px/1 var(--mono);color:var(--ink-3);letter-spacing:.06em}
+  .stats b{color:var(--ink-2);font-weight:500}
+
+  /* FIG plates (hero right) */
+  .plates{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;border:1px solid var(--rule);align-self:start;margin-top:8px}
+  .plate{position:relative;min-height:190px;padding:16px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);overflow:hidden;transition:background 230ms var(--ease-out)}
+  .plate:nth-child(2n){border-right:0}.plate:nth-child(n+3){border-bottom:0}
+  .plate:hover{background:var(--accent-wash);transition-duration:230ms}
+  .plate .fig{position:absolute;top:14px;left:16px}
+  .plate svg{position:absolute;inset:0;width:100%;height:100%}
+  .plate p{position:absolute;left:16px;bottom:14px;margin:0;font-size:12px;color:var(--ink-2);max-width:22ch}
+  .comet{transform-origin:center;animation:spin 24s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* sections */
+  section{padding:var(--air) var(--pad) 0;border-bottom:1px solid var(--rule)}
+  section:last-of-type{border-bottom:0}
+  .sec-head{max-width:62ch;padding-bottom:56px}
+  h2{margin:14px 0 0;font:500 clamp(32px,3.6vw,48px)/1.08 var(--sans);letter-spacing:-.02em}
+  h2 .dim{color:var(--ink-2)}
+  .sub{margin:18px 0 0;color:var(--ink-2);font-size:16px;max-width:58ch}
+  figure{margin:0 calc(-1 * var(--pad));border-top:1px solid var(--rule)}
+  figure img{display:block;width:100%;height:auto}
+  figcaption{padding:14px var(--pad) 48px;font:400 12px/1.6 var(--mono);color:var(--ink-3)}
+  figcaption b{color:var(--ink-2);font-weight:500}
+
+  /* steps (divider-cut) */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);margin:0 calc(-1 * var(--pad));border-top:1px solid var(--rule)}
+  .step{padding:24px var(--pad) 32px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .step:nth-child(3n){border-right:0}.step:nth-child(n+4){border-bottom:0}
+  .step h3{margin:10px 0 8px;font:500 17px/1.3 var(--sans);letter-spacing:-.01em}
+  .step p{margin:0;color:var(--ink-2);font-size:14px}
+
+  /* question sample */
+  .q{margin:0 calc(-1 * var(--pad));border-top:1px solid var(--rule);display:grid;grid-template-columns:1fr 1fr}
+  .q > div{padding:28px var(--pad) 40px}
+  .q > div + div{border-left:1px solid var(--rule)}
+  .q .opt{display:grid;grid-template-columns:20px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--rule-soft);font-size:14px}
+  .q .opt:first-of-type{border-top:0}
+  .q .opt b{color:var(--accent);font:500 12px/1.8 var(--mono)}
+  .q .opt em{color:var(--ink-3);font-style:normal}
+  pre{margin:0;padding:18px 0 0;font:400 12px/1.7 var(--mono);color:var(--ink-2);white-space:pre;overflow-x:auto}
+  pre b{color:var(--ink-1);font-weight:500}
+
+  /* constants ledger */
+  .ledger{margin:0 calc(-1 * var(--pad));border-top:1px solid var(--rule)}
+  .row{display:grid;grid-template-columns:64px 1fr 200px;gap:16px;padding:13px var(--pad);border-bottom:1px solid var(--rule);align-items:baseline}
+  .row:last-child{border-bottom:0}
+  .row .c{font:500 12px/1.6 var(--mono);color:var(--accent)}
+  .row .t{font-size:14px}
+  .row .t small{display:block;color:var(--ink-2);font-size:13px}
+  .row .n{font:400 12px/1.6 var(--mono);color:var(--ink-3);text-align:right;font-variant-numeric:tabular-nums}
+
+  /* families */
+  .fam{margin:0 calc(-1 * var(--pad));border-top:1px solid var(--rule);display:grid;grid-template-columns:repeat(4,1fr)}
+  .f{position:relative;padding:22px var(--pad) 26px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);transition:background 230ms var(--ease-out)}
+  .f:nth-child(4n){border-right:0}.f:nth-child(n+5){border-bottom:0}
+  .f:hover{background:var(--accent-wash)}
+  .f h3{margin:8px 0 10px;font:500 15px/1.3 var(--sans)}
+  .sw{display:flex;gap:5px;margin:0 0 12px}
+  .sw i{display:block;width:26px;height:16px;border:1px solid var(--rule)}
+  .f p{margin:0;color:var(--ink-2);font-size:13px}
+  .f small{display:block;margin-top:10px;font:400 11px/1.5 var(--mono);color:var(--ink-3)}
+
+  /* close */
+  .close{padding:var(--air) var(--pad);text-align:center;position:relative}
+  .close h2{max-width:20ch;margin:0 auto}
+  .close .cta{justify-content:center}
+  .close .lit{position:absolute;left:50%;bottom:96px;width:220px;height:2px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,var(--accent),transparent);filter:blur(1px);opacity:.8}
+  .close .lit::after{content:"";position:absolute;inset:-40px -60px;background:radial-gradient(50% 50% at 50% 50%,var(--accent-glow),transparent 70%);filter:blur(18px)}
+  footer{padding:28px var(--pad) 48px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font:400 12px/1.6 var(--mono);color:var(--ink-3)}
+  footer a:hover{color:var(--ink-1)}
+
+  @media (max-width:900px){
+    .hero{grid-template-columns:1fr;padding-top:72px}.plates{display:none}
+    .steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--rule)}.step:last-child{border-bottom:0}
+    .q{grid-template-columns:1fr}.q > div + div{border-left:0;border-top:1px solid var(--rule)}
+    .fam{grid-template-columns:1fr 1fr}.f:nth-child(2n){border-right:0}.f:nth-child(n+7){border-bottom:0}.f:nth-child(n+5){border-bottom:1px solid var(--rule)}
+    .row{grid-template-columns:48px 1fr}.row .n{grid-column:2;text-align:left}
+    .nav ul{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .w{animation:none;opacity:1;filter:none;transform:none}
+    .comet{animation:none}
+    *{transition-duration:0ms!important}
+  }
+</style>
+</head>
+<body>
+<div class="page"><div class="col">
+
+<nav class="nav">
+  <a class="brand" href="#">Drawn To</a>
+  <ul>
+    <li><a href="#proof">Proof</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#library">The library</a></li>
+    <li><a href="#beyond">Beyond direction</a></li>
+    <li><a href="https://github.com/Stianlars1/drawn-to">GitHub</a></li>
+  </ul>
+  <a class="pill ghost" href="#install">Install</a>
+</nav>
+
+<header class="hero">
+  <div>
+    <p class="eyebrow">An agent skill · 51 references · reverse-engineered frame by frame</p>
+    <h1>
+      <span class="w" style="animation-delay:0ms">Give</span> <span class="w" style="animation-delay:110ms">your</span> <span class="w" style="animation-delay:220ms">coding</span> <span class="w" style="animation-delay:330ms">agent</span><br>
+      <span class="dim"><span class="w" style="animation-delay:460ms">a</span> <span class="w" style="animation-delay:570ms">trained</span> <span class="w" style="animation-delay:680ms">eye.</span></span>
+    </h1>
+    <p class="lead">Drawn To replaces “make it look good” with a locked design direction: a measured taste library, a short interview you answer with weights instead of forced picks, and a lock file every visual decision must serve. Then it builds.</p>
+    <div class="cta" id="install">
+      <span class="cmd"><span>$</span> npx skills add Stianlars1/drawn-to <button type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('npx skills add Stianlars1/drawn-to');this.textContent='copied';setTimeout(()=>this.textContent='copy',1400)">copy</button></span>
+      <a class="pill ghost" href="https://github.com/Stianlars1/drawn-to">Read the source</a>
+    </div>
+    <div class="stats"><span><b>12</b> CONSTANTS</span><span><b>8</b> STYLE FAMILIES</span><span><b>31</b> SECTION RECIPES</span><span><b>2 662</b> VIDEO FRAMES READ</span><span><b>0</b> ICON + BLURB CARDS</span></div>
+  </div>
+
+  <div class="plates" aria-hidden="true">
+    <div class="plate">
+      <span class="fig eyebrow">FIG.01</span>
+      <svg viewBox="0 0 260 190" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1">
+        <rect x="40.5" y="44.5" width="180" height="100"/><line x1="40" y1="88.5" x2="220" y2="88.5"/><line x1="130.5" y1="88" x2="130.5" y2="144"/>
+        <line x1="160.5" y1="44" x2="160.5" y2="88" stroke-dasharray="3 4"/>
+        <rect x="52" y="56" width="60" height="6" fill="rgba(255,255,255,.10)" stroke="none"/><rect x="52" y="68" width="38" height="6" fill="rgba(255,255,255,.06)" stroke="none"/>
+        <rect x="176" y="58" width="30" height="20" stroke="#5B8CFF"/>
+      </svg>
+      <p>Divider-cut bento — structure felt, not seen</p>
+    </div>
+    <div class="plate">
+      <span class="fig eyebrow">FIG.02</span>
+      <svg viewBox="0 0 260 190" fill="none" stroke-width="1">
+        <defs><linearGradient id="cg" x1="0" x2="1"><stop offset="0" stop-color="#5B8CFF" stop-opacity="0"/><stop offset=".5" stop-color="#5B8CFF"/><stop offset="1" stop-color="#5B8CFF" stop-opacity="0"/></linearGradient></defs>
+        <g transform="translate(130 92)">
+          <circle r="58" stroke="rgba(255,255,255,.07)"/><circle r="40" stroke="rgba(255,255,255,.09)"/><circle r="22" stroke="rgba(255,255,255,.12)"/>
+          <g class="comet"><path d="M -56 -15 A 58 58 0 0 1 -12 -57" stroke="url(#cg)" stroke-width="2"/></g>
+          <circle r="2.5" fill="#EDEDEE"/><circle cx="40" cy="0" r="2" fill="rgba(255,255,255,.35)"/><circle cx="-28" cy="28" r="2" fill="rgba(255,255,255,.35)"/>
+        </g>
+      </svg>
+      <p>Ambient is linear; interaction is eased — never mixed</p>
+    </div>
+    <div class="plate">
+      <span class="fig eyebrow">FIG.03</span>
+      <svg viewBox="0 0 260 190" fill="none" stroke-width="1">
+        <g transform="translate(70 40)">
+          <path d="M 0 46 L 60 16 L 120 46 L 60 76 Z" stroke="#7A7A7A"/><path d="M 0 46 L 0 76 L 60 106 L 120 76 L 120 46" stroke="#7A7A7A"/><path d="M 60 76 L 60 106" stroke="#7A7A7A"/>
+          <path d="M 60 16 L 60 -10" stroke="#3F3F3F" stroke-dasharray="3 4"/><path d="M 120 46 L 150 31" stroke="#3F3F3F" stroke-dasharray="3 4"/>
+          <path d="M 30 31 L 90 61" stroke="#EDEDEE"/><rect x="-3" y="43" width="6" height="6" stroke="#7A7A7A"/><rect x="117" y="43" width="6" height="6" stroke="#7A7A7A"/>
+        </g>
+      </svg>
+      <p>Isometric objects, three gray tiers, one white focal</p>
+    </div>
+    <div class="plate">
+      <span class="fig eyebrow">FIG.04</span>
+      <svg viewBox="0 0 260 190" fill="none" stroke-width="1">
+        <g font-family="Geist Mono, SF Mono, Menlo, monospace" font-size="10" fill="#5D5E63">
+          <text x="30" y="58">changes seen</text><line x1="100" y1="55" x2="200" y2="55" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="58" fill="#8B8E93">4,471</text>
+          <text x="30" y="82">kept</text><line x1="60" y1="79" x2="200" y2="79" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="82" fill="#8B8E93">3,412</text>
+          <text x="30" y="106">duplicates dropped</text><line x1="130" y1="103" x2="200" y2="103" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="106" fill="#8B8E93">1,059</text>
+          <text x="30" y="130">written to disk</text><line x1="118" y1="127" x2="200" y2="127" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="130" fill="#5B8CFF">0</text>
+        </g>
+      </svg>
+      <p>Numbers that reconcile — microcopy is design material</p>
+    </div>
+  </div>
+</header>
+
+<section id="proof">
+  <div class="sec-head">
+    <p class="eyebrow">01 — Proof</p>
+    <h2>Same model. Same brief. <span class="dim">One variable.</span></h2>
+    <p class="sub">Two agents, the same model, the same five-feature brief, the same empty folder. The left one had a well-engineered skill with an empty knowledge layer. The right one had this library.</p>
+  </div>
+  <figure>
+    <img src="assets/proof-same-model-same-brief.jpg" alt="Left: a competent, anonymous dark bento built without a taste library. Right: the same model with Drawn To — divider-cut, radius-0, FIG-numbered section with instrument illustrations." loading="lazy">
+    <figcaption><b>Left</b> soft tiles, gaps, system blue — the look any capable agent produces from its priors. <b>Right</b> every element traces to a reference: the divider-cut grid to <b>basit_designs-2017</b>, the FIG plates to <b>0xSero-2090</b>, the scrubbable redline popover to <b>cabralorenzo-2090</b>. The difference is not the model. It is the library.</figcaption>
+  </figure>
+</section>
+
+<section id="how">
+  <div class="sec-head">
+    <p class="eyebrow">02 — How it works</p>
+    <h2>Six steps. <span class="dim">One lock file.</span></h2>
+    <p class="sub">It reads your repo before it asks anything, proposes weighted directions instead of a single pick, and writes every decision down as it happens.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><span class="eyebrow">01</span><h3>Discover</h3><p>Reads tokens, docs, product truth. Infrastructure is adopted; the current look is a question, never an assumption. You never explain what the repo already says.</p></div>
+    <div class="step"><span class="eyebrow">02</span><h3>Brief</h3><p>“Here is what I found — correct?” Then only the gaps: the real feature list, the data domain, the language of the copy.</p></div>
+    <div class="step"><span class="eyebrow">03</span><h3>Blend</h3><p>Two or three directions from the eight families, answered with weights — 70 / 20 / 10. Clashes are warned about and resolved, not re-asked.</p></div>
+    <div class="step"><span class="eyebrow">04</span><h3>Lock</h3><p>One plain-language question per open axis — corners, separation, accent, motion budget — with anchors you know. Firmness recorded per lock.</p></div>
+    <div class="step"><span class="eyebrow">05</span><h3>Variants</h3><p>Two or three compositions per section from 31 recipes; for feature work, 2–4 illustration concepts per feature across metaphor registers.</p></div>
+    <div class="step"><span class="eyebrow">06</span><h3>Build</h3><p>Every visual change serves a named lock. Motion follows the craft doctrine. Revisions never erase — the ledger is history.</p></div>
+  </div>
+  <div class="q">
+    <div>
+      <p class="eyebrow">A question, as you hear it</p>
+      <p style="margin:12px 0 6px;font-weight:500">3 of ~8 — How should surfaces separate?</p>
+      <div class="opt"><b>A</b><span>Thin light dividers cut from one dark surface — structure felt, not seen <em>· like Linear</em></span></div>
+      <div class="opt"><b>B</b><span>One soft, wide shadow and no borders — warm, friendly <em>· like Amie</em></span></div>
+      <div class="opt"><b>C</b><span>Tone steps and air only — no lines, no shadows <em>· like Stripe light</em></span></div>
+      <p style="margin:14px 0 0;color:var(--ink-3);font-size:13px">Answer with weights if you like several: “70% A + 30% C — A for the cards, C for the hero.”</p>
+    </div>
+    <div>
+      <p class="eyebrow">What it writes down</p>
+<pre>| #   | Axis       | Locked                                  | Firmness  |
+|-----|------------|-----------------------------------------|-----------|
+| Q1  | Blend      | <b>65% Editorial + 15% Blueprint + …</b>    | must-have |
+| Q2  | Separation | <b>1px alpha dividers, no fills</b>         | must-have |
+| Q3  | Radius     | <b>sharp 0 — radius only on buttons</b>     | must-have |
+| QI4 | popover    | <b>redline plate, pointer-scrubbable 1:1</b>| must-have |
+| R1  | Q4 motion  | revised (AGENTS.md caps UI at 300ms)    | —         |</pre>
+    </div>
+  </div>
+</section>
+
+<section id="library">
+  <div class="sec-head">
+    <p class="eyebrow">03 — The library</p>
+    <h2>Measured, <span class="dim">not described.</span></h2>
+    <p class="sub">Every claim carries a reference slug and a number. The constants held across the whole corpus — the skill enforces them and never asks about them.</p>
+  </div>
+  <div class="ledger">
+    <div class="row"><span class="c">C1</span><span class="t">Quarantine chroma — at most one accent hue in the UI layer<small>The shell is neutral; colour lives in one signature asset, semantic states, or photos.</small></span><span class="n">45/45 · 38/45</span></div>
+    <div class="row"><span class="c">C2</span><span class="t">Show the feature — never icon + paragraph<small>Working fragments, mechanisms, frozen interactions. Zero counter-examples in the corpus.</small></span><span class="n">33/45 · 0 against</span></div>
+    <div class="row"><span class="c">C3</span><span class="t">Separation ladder: hairlines, tone steps, or one soft shadow<small>Zero drop shadows on dark — 16 of 16 dark references.</small></span><span class="n">45/45</span></div>
+    <div class="row"><span class="c">C4</span><span class="t">Hierarchy by size and gray value at weight 400–600<small>Two-tone headlines, 3–4 step ramps; bold is the last resort.</small></span><span class="n">35/45</span></div>
+    <div class="row"><span class="c">C5</span><span class="t">Two voices — grotesque prose, mono data<small>Every numeral tabular; microcaps 11–13px at +0.06–0.1em.</small></span><span class="n">22/45</span></div>
+    <div class="row"><span class="c">C6</span><span class="t">Two motion registers, never mixed<small>Ambient = linear constant velocity. Interaction = 150–800 ms eased. Never ease an infinite loop.</small></span><span class="n">27/27</span></div>
+    <div class="row"><span class="c">C7</span><span class="t">Loops close frame-perfectly; concurrent loops desync<small>2.45 / 2.5 / 5 / 7.4 s — nothing beats in unison.</small></span><span class="n">17/27</span></div>
+    <div class="row"><span class="c">C8</span><span class="t">Radii in stepped families, nested concentrically<small>Outer = inner + padding. Radius 0 is a family, not a violation.</small></span><span class="n">~20 · 0 against</span></div>
+    <div class="row"><span class="c">C9</span><span class="t">Texture every large gradient<small>2–6 % grain or a print/pixel process. A flat gradient is the loudest generic-AI tell.</small></span><span class="n">11/13</span></div>
+    <div class="row"><span class="c">C10</span><span class="t">Diegetic microcopy — arithmetic that reconciles<small>Zero lorem, versioned filenames, one fictional client threaded through.</small></span><span class="n">45/45</span></div>
+    <div class="row"><span class="c">C11</span><span class="t">Opacity is the attention system<small>One full-contrast focal; siblings ghosted 15–45 %; disabled dimmed, never hidden.</small></span><span class="n">12/45</span></div>
+    <div class="row"><span class="c">C12</span><span class="t">Composed at t = 0<small>Ambient backgrounds never stage an entrance; reveals are word-group blur, 400–500 ms.</small></span><span class="n">—</span></div>
+  </div>
+  <div class="sec-head" style="padding-top:72px">
+    <p class="eyebrow">Eight families — what you blend</p>
+    <p class="sub" style="margin-top:10px">Each has measured grounds, separation physics, radius family, texture, graphic device, motion register and a “choose when”. Proven pairings and documented clashes ship with them.</p>
+  </div>
+  <div class="fam">
+    <div class="f"><span class="eyebrow">F1</span><h3>Editorial Monochrome</h3><div class="sw"><i style="background:#0A0C10"></i><i style="background:#15181D"></i><i style="background:#8b8e93"></i><i style="background:#EDEDED"></i><i style="background:#3B82F6"></i></div><p>Dark, divider-cut, type does the work.</p><small>14 refs · Linear · Vercel · Attio</small></div>
+    <div class="f"><span class="eyebrow">F2</span><h3>Ink &amp; Air</h3><div class="sw"><i style="background:#F7F7F7"></i><i style="background:#FFFFFF"></i><i style="background:#6B7280"></i><i style="background:#3A3A3A"></i><i style="background:#3770E9"></i></div><p>Airy light editorial, charcoal ink, one accent.</p><small>10 refs · Stripe · Vercel light</small></div>
+    <div class="f"><span class="eyebrow">F3</span><h3>Staged Atmosphere</h3><div class="sw"><i style="background:#101013"></i><i style="background:linear-gradient(120deg,#5ec9d8,#7a6cf0 55%,#e86aa6)"></i><i style="background:#EDEDEE"></i><i style="background:#C0A0EC"></i></div><p>One chroma asset carries the mood; UI stays gray.</p><small>15 refs · Raycast · Reflect</small></div>
+    <div class="f"><span class="eyebrow">F4</span><h3>Blueprint Sheet</h3><div class="sw"><i style="background:#050505"></i><i style="background:#454545"></i><i style="background:#a9e494"></i><i style="background:#c25b52"></i><i style="background:#dcc17e"></i></div><p>Drafting-table ornament: grid, FIG labels, redlines.</p><small>9 refs · Prime Intellect · interfaces.dev</small></div>
+    <div class="f"><span class="eyebrow">F5</span><h3>Paper &amp; Print</h3><div class="sw"><i style="background:#FFFFFF"></i><i style="background:#ECECEC"></i><i style="background:#3B3B3B"></i><i style="background:linear-gradient(120deg,#f27bb4,#e2493f 55%,#7a4ec9)"></i></div><p>Halftone, crop marks, paper grain, white mats.</p><small>5 refs · studio brand boards</small></div>
+    <div class="f"><span class="eyebrow">F6</span><h3>Soft Pastel Stage</h3><div class="sw"><i style="background:#DBF3FF"></i><i style="background:#F0F5FE"></i><i style="background:#77dbff"></i><i style="background:#eea733"></i><i style="background:#2349DA"></i></div><p>Pastel fields, squircles, one soft shadow.</p><small>6 refs · Amie · Luma</small></div>
+    <div class="f"><span class="eyebrow">F7</span><h3>Tactile Instruments</h3><div class="sw"><i style="background:#F2F1EE"></i><i style="background:#1F2326"></i><i style="background:#FF9C28"></i><i style="background:#10B981"></i></div><p>Components as hardware: dials, wheels, 1:1 drag.</p><small>8 refs · Rauno · Emil demos</small></div>
+    <div class="f"><span class="eyebrow">F8</span><h3>Emissive Signal</h3><div class="sw"><i style="background:#08080A"></i><i style="background:#4D9FFF"></i><i style="background:#E921B8"></i><i style="background:#22C55E"></i></div><p>Near-dark; light is the accent, bloom at the action.</p><small>8 refs · Linear release films</small></div>
+  </div>
+</section>
+
+<section id="beyond">
+  <div class="sec-head">
+    <p class="eyebrow">04 — Beyond direction</p>
+    <h2>The interview locks <em style="font-style:normal">what</em>. <span class="dim">Four references build it well.</span></h2>
+  </div>
+  <div class="steps">
+    <div class="step"><span class="eyebrow">Illustration ideation</span><h3>A concept per feature, not an icon</h3><p>The feature’s verb picks the metaphor — instrument, mechanism, product fragment, blueprint plate, isometric object, light. 2–4 concepts each, with construction recipes.</p></div>
+    <div class="step"><span class="eyebrow">Scroll-scrub</span><h3>The pinned product scene</h3><p>Poses as registered custom properties, one keyframe track, scroll / keyboard / static drivers, svh mobile math, a fallback ladder where every rung is composed.</p></div>
+    <div class="step"><span class="eyebrow">Animation craft</span><h3>Doctrine, then recipes</h3><p>The animate-at-all gate, the curve trio, springs with velocity handoff, interruptibility, clip-path tricks, a never-ship list — and 14 paste-ready component animations.</p></div>
+  </div>
+  <figure style="margin-top:0">
+    <img src="assets/latch-bento.jpg" alt="A features bento built with Drawn To — divider-cut, radius 0, FIG plates, instrument illustrations" loading="lazy">
+    <figcaption><b>Case</b> five features for a macOS clipboard tool, greenfield, dark. Discovery found the owner’s scaffold generator, adopted its palette, asked only about the look. Blend 65 / 15 / 12 / 8. Fifteen locks, 27 animations measured frame-perfect, a pointer-scrubbable redline popover as the tactile cell, four revision rows. Everything in the frame answers to a row in <b>docs/design-locks/</b>.</figcaption>
+  </figure>
+</section>
+
+<section class="close">
+  <p class="eyebrow">05 — Install</p>
+  <h2>Stop describing taste. <span class="dim">Hand it the eye.</span></h2>
+  <div class="cta">
+    <span class="cmd"><span>$</span> npx skills add Stianlars1/drawn-to</span>
+    <a class="pill" href="https://github.com/Stianlars1/drawn-to">Read the source</a>
+  </div>
+  <p class="mono" style="margin-top:28px;color:var(--ink-3);font-size:12px;letter-spacing:.04em">Claude Code · Codex · Cursor · Copilot · Gemini · anything that reads SKILL.md · MIT</p>
+  <span class="lit" aria-hidden="true"></span>
+</section>
+
+<footer>
+  <span>© 2026 Drawn To · MIT · analyses are original, referenced designs remain their authors’</span>
+  <span><a href="https://github.com/Stianlars1/drawn-to">GitHub</a> · <a href="https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/style-families.md">style-families.md</a> · <a href="https://github.com/Stianlars1/drawn-to/issues/new?template=add-reference.md">add a reference</a></span>
+</footer>
+
+</div></div>
+</body>
+</html>

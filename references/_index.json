@@ -1,0 +1,992 @@
+[
+ {
+  "slug": "LexnLin-2024485283769540850",
+  "kind": "bento",
+  "mode": "light",
+  "motion_level": "full-choreography",
+  "one_liner": "Light bento of 5 live UI mocks, each feature demonstrated by its own animation loop",
+  "standout": [
+   "every animation IS the feature — legible with copy muted",
+   "5 concurrent loops on desynced periods (2.45/2.5/5/7.4s/continuous)",
+   "easing matched to meaning: linear marquee, spring shuffle/toolbar pop, stepped typing",
+   "asymmetric typewriter: 105ms/char type vs 45ms/char delete",
+   "toolbar rises out of its text selection with anchor tail + overshoot",
+   "captions demoted outside cards; mock UI stays 100% product-true"
+  ],
+  "axes": {
+   "radius": "large(20-28)",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "hairline-cards"
+  }
+ },
+ {
+  "slug": "basit_designs-2017899338953900190",
+  "kind": "section-set",
+  "mode": "dark",
+  "motion_level": "full-choreography",
+  "one_liner": "Dark editorial bento/feature sections with linear ambient motion and cursor-directed hover choreography",
+  "standout": [
+   "divider-cut bento at near-threshold contrast (1px #15181D on #0A0C10, dashed inner splits)",
+   "two motion registers: constant-velocity ambient (60deg/s radar, 3s/pitch marquee) vs eased 200-450ms interaction",
+   "simulated cursor tours grid in radar's rotational direction with narrative pacing, firing one-shot icon micro-anims",
+   "hover = gradient 1px border bottom-lit fading up sides + directional 6% teal wash",
+   "features depicted as working instruments (radar, dials, sliders) with named multiplayer cursors",
+   "slow-mo chrome-blue 3D renders and drifting smoke as living materials inside static layout"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "1px-alpha-dividers"
+  }
+ },
+ {
+  "slug": "AlexandruDranga-2090070261978578989",
+  "kind": "feature-cards",
+  "mode": "light",
+  "motion_level": "full-choreography",
+  "one_liner": "Three feature cards, each a looping micro-animation literally demoing its headline",
+  "standout": [
+   "semantic motion: each loop enacts the card's copy (drag-drop kanban, files sucked into named zip, video annotations)",
+   "desynchronized loop periods (~2s / ~3.3s / footage-synced) keep the row ambient, never mechanical",
+   "one neutral family at three temperatures (sage/taupe/tan) with saturation quarantined to status tags and labels",
+   "dashed gold crop-mark borders + solid corner squares = canvas-selection motif around every card",
+   "realistic fragment content: versioned filename client-delivery-v3.zip, plausible defect labels, live column counts",
+   "grainy blurred photography under flat UI fragments so neutral fields never sit dead"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "airy",
+   "color_strategy": "neutral+kind-hues",
+   "illustration": "ui-fragment",
+   "borders": "1px dashed crop-marks + gold corner squares, shadowless cards"
+  }
+ },
+ {
+  "slug": "piyushsphere-2088518889860919565",
+  "kind": "feature-cards",
+  "mode": "light",
+  "motion_level": "none",
+  "one_liner": "Split enterprise feature cards: grayscale text half, grainy gradient half with curated UI shot",
+  "standout": [
+   "~240px deliberate dead-air between top title and bottom description+CTA",
+   "page bg tinted per-card to echo the gradient hue",
+   "stipple grain (noise sigma~5) on mesh gradients",
+   "chroma quarantined to image half; text strictly grayscale",
+   "two crop strategies (corner bleed vs centered float) in one shell",
+   "slashed-zero mono series index 01/03"
+  ],
+  "axes": {
+   "radius": "small(2-8)",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "kevserctk-2090002547410870428",
+  "kind": "section-set",
+  "mode": "light",
+  "motion_level": "none",
+  "one_liner": "Grayscale SaaS hero/pricing/footer colored solely by one pixelated aurora artwork",
+  "standout": [
+   "single artwork reused 3x (hero, Pro card bg, footer banner) binds sections",
+   "pixel-mosaic grid texture turns aurora photo into owned brand asset",
+   "Pro tier emphasized by pure surface inversion of identical card geometry",
+   "check chips re-derived as white @ ~18% alpha on imagery",
+   "floating prompt bar demos product inside hero decoration",
+   "pill CTAs for marketing chrome vs 8px-radius CTAs inside components"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "rich-vector",
+   "borders": "hairline-cards"
+  }
+ },
+ {
+  "slug": "devxnuj-2090030294892269799",
+  "kind": "brand",
+  "mode": "light",
+  "motion_level": "none",
+  "one_liner": "Pastel brand board for an AI-biology startup: blurred flower gradients plus hairline geometry",
+  "standout": [
+   "one contrast engine restated in all six tiles: soft gradient blur vs 1px hairline geometry",
+   "hairlines switch color exactly where they cross image edges (gray on paper, white over image)",
+   "palette shown as usage-weighted bars (neutrals wide, pastels narrow)",
+   "text never sits on pastels; charcoal #3b3b3b ink, no true black, no bold weights",
+   "typewriter-mono metadata layer (fig. numbers, ledger rows, 01/02/03 chips)",
+   "2-3% grain over every gradient for print feel and no banding"
+  ],
+  "axes": {
+   "radius": "sharp",
+   "density": "airy",
+   "color_strategy": "neutral+4-pastel-accents (#ffc6ef #98c0fe #9598ff #ffc8a9) with charcoal ink",
+   "illustration": "photo",
+   "borders": "1px-hairline-ornaments, borderless flat blocks"
+  }
+ },
+ {
+  "slug": "basit_designs-2089995658640122065",
+  "kind": "brand",
+  "mode": "light",
+  "motion_level": "none",
+  "one_liner": "Light brand boards where one gradient slab plus halftone ink carries all the energy",
+  "standout": [
+   "single brand gradient ramp reused via rotation/mirroring/cropping across all boards",
+   "black halftone screen (8px pitch) clipped to exact rectangles over the gradient",
+   "white mat + 1px hairline framing every panel, zero radii, zero shadows",
+   "ghost arrow watermark at 2-3% luminance with gradient bleed",
+   "chroma rationing: 90% near-white, color confined to one 28-47% slab",
+   "in-headline opacity hierarchy (trailing phrase at ~55%)"
+  ],
+  "axes": {
+   "radius": "sharp",
+   "density": "airy",
+   "color_strategy": "neutral grays + one multi-stop pink-red-violet gradient ramp",
+   "illustration": "shader",
+   "borders": "hairline-cards"
+  }
+ },
+ {
+  "slug": "cabralorenzo-2090102237548740718",
+  "kind": "component",
+  "mode": "light",
+  "motion_level": "full-choreography",
+  "one_liner": "Draggable tick-wheel dial: spin the ring to set a value with zone colors",
+  "standout": [
+   "dock-style fisheye: ticks near the pointer magnify ~1.5x with a ~200ms spring",
+   "numeral tracks pointer 1:1 per frame - zero tween, feels like a hardware encoder",
+   "gauge built from ~60 discrete ticks so each animates length independently",
+   "zone thresholds (<30 / 30-75 / >75) recolor entire active run + pill dot in one hue swap",
+   "active run ramps length and opacity toward leading edge, tail fades to ~0.45",
+   "fixed setpoint slash outside the ring at the 60% angle, labeled in muted mono"
+  ],
+  "axes": {
+   "radius": "large(20-28)",
+   "density": "airy",
+   "color_strategy": "neutral+zone-hue (green/blue/orange on warm gray)",
+   "illustration": "ui-fragment",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "adriankuleszo-2090249969060151700",
+  "kind": "hero",
+  "mode": "light",
+  "motion_level": "none",
+  "one_liner": "SaaS hero where paper invoices visually flow through the logo chip into a UI table",
+  "standout": [
+   "z-order diagrams the pipeline: grainy paper in, borderless clean table out",
+   "flat #dbf3ff wash, all depth from element lighting, no bg gradient",
+   "one #34a2d5 accent line among nine gray connector curves",
+   "logo in two materials: flat ink navbar, brushed-metal illustration chip",
+   "neutrals hue-shifted toward bg blue (#6e8895 body text)",
+   "alpha-mask fades and radially faded dot grid, no hard crops"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "rich-vector",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "0xSero-2090197565035753820",
+  "kind": "feature-cards",
+  "mode": "dark",
+  "motion_level": "none",
+  "one_liner": "Prime Intellect landing: 2x2 blueprint feature grid, FIG-numbered line-art plates on black",
+  "standout": [
+   "product-truthful illustrations (real CLI commands, hyperparams, registry cards) replace paragraph copy",
+   "FIG.1-4 plate labels + triple numbering (01-04 nav, 01/02 sections, 1.1-2.3 specs)",
+   "shared-border 1px #202020 grid, radius 0, zero shadows or card fills",
+   "title and body same size; hierarchy via 4-step gray ramp only",
+   "semantic-only color: green/red/amber scores, green terminal $, all else grayscale",
+   "depth via 25-40% opacity dimming of stacked UI fragments"
+  ],
+  "axes": {
+   "radius": "sharp",
+   "density": "airy",
+   "color_strategy": "monochrome+semantic-green/red/amber",
+   "illustration": "rich-vector",
+   "borders": "1px-hairline-shared-grid"
+  }
+ },
+ {
+  "slug": "adriankuleszo-2089887587586675171",
+  "kind": "bento",
+  "mode": "mixed",
+  "motion_level": "none",
+  "one_liner": "Five-card features bento for an AI design tool, illustrated with the product's own UI chrome",
+  "standout": [
+   "diegetic illustrations: selection handles, marquees, cursors as drawing language",
+   "one fictional client brand (Identiq) threads all five cards",
+   "content cropped/faded at card edges implies a larger canvas",
+   "opacity hierarchy: one full-contrast hero per card, alternates ghosted 15-30%",
+   "mirrored 60/40 -> 40/60 rows on a strict 16px gutter, dark full-width finale",
+   "dense plausible micro-copy (9:41 bars, 99,8% match, version pills)"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "balanced",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "hairline-cards"
+  }
+ },
+ {
+  "slug": "_heyrico-2090113322255622509",
+  "kind": "illustration-set",
+  "mode": "light",
+  "motion_level": "none",
+  "one_liner": "Five micro-illustration feature cards: cropped white UI fragments over textured blur-flower fields",
+  "standout": [
+   "grain/halftone texture layered over photo blur",
+   "UI fragments oversized and edge-bled, never full screenshots",
+   "one idea per card, zero captions — diegetic microcopy only",
+   "identical card geometry + shared flower motif = series identity",
+   "repeated 3-item diagonal stagger as compositional signature",
+   "single dark #333 element as sole contrast anchor"
+  ],
+  "axes": {
+   "radius": "large(20-28)",
+   "density": "airy",
+   "color_strategy": "pastel-hue-field-per-card+shared-warm-accent",
+   "illustration": "ui-fragment",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "xchylerdrenth-2090100203722572286",
+  "kind": "brand",
+  "mode": "dark",
+  "motion_level": "none",
+  "one_liner": "Rejected Attio brand explorations: editorial dark UI with generative monochrome line systems",
+  "standout": [
+   "emphasis by gray value only: two-tone sentences #ededed/#8b8e93, 400-weight display type",
+   "row-opacity stagger 100/60/35% implying scroll-linked active state",
+   "barcode width-gradient bars as an easing curve made physical",
+   "single color moment: spectrum-mapped dot-plot sphere on an otherwise grayscale page",
+   "blueprint hairline grid overshooting content edges + dashed register frames",
+   "invertible pattern sheet proving every texture on white and near-black"
+  ],
+  "axes": {
+   "radius": "sharp",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "rich-vector",
+   "borders": "1px-alpha-dividers"
+  }
+ },
+ {
+  "slug": "marcelkargul-2090148130914206137",
+  "kind": "feature-cards",
+  "mode": "dark",
+  "motion_level": "none",
+  "one_liner": "Monochrome isometric line-art service cards in a 3+2 dark grid, animation-ready",
+  "standout": [
+   "3-tier gray ramp in illustrations (#3F3F3F guides / #7A7A7A outlines / #FFF single focal)",
+   "card vs page separated by 4% lightness only, borderless, shadowless",
+   "chips reuse page-bg token to read as punched holes",
+   "isometric exploded-mechanism illustrations of the deliverable itself (PCB, layered UI, draped sheet)",
+   "design-tool vocabulary: selection handles, dotted px leader lines, iso dash guides",
+   "textures: 1px hatch + noise stipple + 4px diamond crosshatch at <=8% contrast"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "balanced",
+   "color_strategy": "monochrome, zero accent (#232323/#2E2E2E/#9D9D9D/#EFEFEF)",
+   "illustration": "rich-vector",
+   "borders": "borderless — 4% lightness-step separation, no shadows"
+  }
+ },
+ {
+  "slug": "piyushsphere-2089714360235225334",
+  "kind": "section-set",
+  "mode": "both",
+  "motion_level": "none",
+  "one_liner": "Editorial feature section over cinematic photography, shipped in matched dark and light themes",
+  "standout": [
+   "two-tone serif headline (#fff→#898989) splitting hierarchy by color not size",
+   "mono-numbered spec-sheet feature index (1.0/1.1/1.2)",
+   "features staged as frozen micro-interactions: I-beam cursor mid string-swap, rerouting toast",
+   "theme-matched photography: amber dusk for dark, green daylight for light",
+   "materials re-derived per theme: blurred black glass chips vs solid white + shadow",
+   "theme-specific texture strips: pixel dither on #000, graph-paper grid on #fff"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "airy",
+   "color_strategy": "pure #000/#fff grounds + all chroma delegated to photography",
+   "illustration": "photo",
+   "borders": "1px-alpha-dividers"
+  }
+ },
+ {
+  "slug": "TheKartikBansal-2089786517023789189",
+  "kind": "component",
+  "mode": "both",
+  "motion_level": "none",
+  "one_liner": "Profile card shown as matched light/dark theme pair with sticker-outline styling",
+  "standout": [
+   "warm-tinted inversion: cream #f2efe8 flips to warm near-black #1a1710, not neutral gray",
+   "elevation replaced by 12px solid outline ring that flips #fff to #000 with the theme",
+   "card ring and avatar ring share one token, reading as a single die-cut sticker",
+   "CTA stays tonal in both modes so the painterly red cover is the only saturated element",
+   "single ~22px spacing token governs all insets; radii step 50 to 33 to 22",
+   "avatar straddles cover/body seam 70/30 as a 32%-radius rounded square"
+  ],
+  "axes": {
+   "radius": "large(20-28)",
+   "density": "airy",
+   "color_strategy": "warm-neutrals+1-painterly-accent",
+   "illustration": "photo",
+   "borders": "thick-solid-sticker-outline"
+  }
+ },
+ {
+  "slug": "mnowakdesign-2089321854582562983",
+  "kind": "component",
+  "mode": "both",
+  "motion_level": "none",
+  "one_liner": "Candidate-review dashboard card shown as a matched dark/light theme pair",
+  "standout": [
+   "dark neutrals hue-tinted wine toward the red accent (#0f0408/#251017/#371923), even text whites pink-tinted #f4e8ec",
+   "accent demoted per mode: quote glyph red #d2303e on dark, gray #98989e on light",
+   "3-token status badges (text/fill/border) with constant hue, flipped luminance across modes",
+   "two-tone card: content area over darker action tray; hairline divider only in light mode",
+   "secondary button swaps style per mode: outlined ghost on dark, borderless tonal fill on light",
+   "hanging oversized quote glyph in a fixed icon gutter, all text on one left axis"
+  ],
+  "axes": {
+   "radius": "large(20-28)",
+   "density": "airy",
+   "color_strategy": "accent-tinted-dark-neutrals+neutral-light, dual-mode status hues",
+   "illustration": "ui-fragment",
+   "borders": "1px-alpha-dividers, desaturated badge rings, hairline light-mode seams"
+  }
+ },
+ {
+  "slug": "designbynavneet-2089970626207318243",
+  "kind": "section-set",
+  "mode": "light",
+  "motion_level": "none",
+  "one_liner": "SaaS hero exploration set: product window framed by oil-painting mattes on exposed hairline grid",
+  "standout": [
+   "grid exposed as full-height hairline rules with hatched 48px gutters",
+   "impasto painting used only as thin 80-140px matte around the app window",
+   "frosted window chrome samples the backdrop hue (blue/orange)",
+   "one fully-populated inbox UI reused across three hero layout variants",
+   "strictly monochrome chrome; color only for semantic states + artwork",
+   "radius hierarchy 24/16/12/pill and no-lorem product microcopy"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "1px-alpha-dividers"
+  }
+ },
+ {
+  "slug": "yurygok-2089981554747424955",
+  "kind": "component",
+  "mode": "dark",
+  "motion_level": "none",
+  "one_liner": "Four dark ops-dashboard cards, each inventing a bespoke chart form per data story",
+  "standout": [
+   "bespoke chart per story: DIP switch, mekko, beeswarm, radar",
+   "one accent hue per card, applied only to the actionable datum",
+   "insight copy written as consequence with stakes, not chart description",
+   "self-teaching mono-caps legends (ONE DOT = ONE SAMPLED PROMPT, SCALE 50-100)",
+   "surface ramp #1C1C1E to #343436 replaces borders between bands",
+   "rigid mono microcap grammar repeated identically across all four cards"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "balanced",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "inset-highlight"
+  }
+ },
+ {
+  "slug": "arknow91-2089955524007674031",
+  "kind": "component",
+  "mode": "dark",
+  "motion_level": "full-choreography",
+  "one_liner": "Gooey metaball speed dial that fissions into PlayStation face buttons on dark charcoal",
+  "standout": [
+   "accent color drawn as gradient stroke on the metaball seam, not a blob glow",
+   "buttons filled with the background color so resting state is near-invisible",
+   "cursor attraction deforms the blob from ~150px away, before hover",
+   "dual-color seams (pink+green) coexist on one liquid surface when bridging two nodes",
+   "ordered choreography: rotate + to x, then fission; un-rotate, absorb, squash on close",
+   "wordless PlayStation homage via canonical glyph colors (#50de88/#d95dbb/#bf4e6c)"
+  ],
+  "axes": {
+   "radius": "pill",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "none",
+   "borders": "1px-alpha-dividers"
+  }
+ },
+ {
+  "slug": "_heyfaisal-2089734362485096473",
+  "kind": "full-page",
+  "mode": "light",
+  "motion_level": "none",
+  "one_liner": "Airy light AI-automation landing UI kit unified by blue ink-marble texture",
+  "standout": [
+   "single #3770E9 accent; all other color quarantined in texture imagery",
+   "features shown as working UI fragments: router diagram, workflow checklist, integration hub",
+   "one marble texture reused at every scale as the whole art direction",
+   "primary CTA with inset white icon tile + blue-tinted shadow",
+   "glass cards (white 35-50% + blur + 1px white/60 border) over texture",
+   "charcoal #3A3A3A headings, never pure black — soft-contrast premium read"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "mnowakdesign-2089684516814422257",
+  "kind": "dashboard",
+  "mode": "dark",
+  "motion_level": "full-choreography",
+  "one_liner": "14s quad-grid reel of cinematic dark dashboard animations with semantic neon-glow data motion",
+  "standout": [
+   "forecast line forks into 3-color scenario fan with flare at split point",
+   "progress % chip rides the glowing bar draw-head while numerals count up",
+   "leaderboard re-sorts live with motion-blurred row swaps and green score flashes",
+   "bloom concentrated at draw heads/fill fronts, unified by film grain and shallow DoF",
+   "staggered per-quadrant cut waves keep some region always mid-animation",
+   "finale resolves macro fragments into one flat full-product zoom-out"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "dense",
+   "color_strategy": "near-black base + semantic neon accents (blue/green/pink/violet/orange) as light sources",
+   "illustration": "ui-fragment",
+   "borders": "1px-alpha-dividers"
+  }
+ },
+ {
+  "slug": "ImranUxi-2089707090969563302",
+  "kind": "resource",
+  "mode": "dark",
+  "motion_level": "sequence",
+  "one_liner": "interfaces.dev — carousel of interactive A/B demos teaching UI craft details",
+  "standout": [
+   "every lesson is a live A/B demo with a user-operated stressor (slider/toggle/play), zero prose",
+   "fixed verdict grammar: gray X vs blue check repeated across all nine cards",
+   "derived values set in accent-blue mono pills (20px = 12 + 8 concentric radius)",
+   "design-tool measurement as sole ornament: cyan padding overlays, hairline guides, live px readouts",
+   "site practices its own rules: border-only dark elevation, tabular-nums readouts, ease-out only",
+   "word-level blur-fade entrance cascade at ~100ms stagger, 400ms per word, no overshoot"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "1px-alpha-dividers"
+  }
+ },
+ {
+  "slug": "flornkm-2089749302960615875",
+  "kind": "component",
+  "mode": "light",
+  "motion_level": "micro",
+  "one_liner": "Toggle-switch prototype whose knob stretches toward its destination on press",
+  "standout": [
+   "holdable mousedown pose: knob stretches +21% toward travel direction, anchored at origin edge",
+   "spring energy dissipates as width contraction on arrival, no bounce",
+   "knob lands ~80-100ms before track color finishes crossfading",
+   "Plain/Stretch segmented A/B rig teaches the delta by feel",
+   "wide capsule knob (60% of track) makes deformation legible",
+   "seamless loop closing pixel-identical to frame 1"
+  ],
+  "axes": {
+   "radius": "pill",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "LexnLin-2089704858970673447",
+  "kind": "section-set",
+  "mode": "dark",
+  "motion_level": "none",
+  "one_liner": "Dark agency landing sections: testimonial, illustrated bento, product cards, watermark footer",
+  "standout": [
+   "mechanism-diagram illustrations (hub-and-spoke agents, doc pipeline) instead of decorative art",
+   "skeleton UI fragments where only 3-5 selling data points render, rest is gray bars",
+   "identical card anatomy everywhere: gradient media panel + hairline divider + title/desc",
+   "brighter top-edge gradient border ranks the featured card, zero shadows on page",
+   "blueprint grid texture confined outside the container at ~5% contrast",
+   "footer watermark logo at ~450px/12% opacity beside display-size email"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "1px-alpha-dividers",
+   "notes": "outer cards 16-20px, media panels 8-12px, footer 40px; slate-blue gradient panels #152636→#31424A on #090909; accent blue #3B82F6 family only"
+  }
+ },
+ {
+  "slug": "toolfolio-2089745439624974755",
+  "kind": "resource",
+  "mode": "both",
+  "motion_level": "full-choreography",
+  "one_liner": "Rare UI playground tour: 11 animated React components demoed via live cursor interaction",
+  "standout": [
+   "cursor-driven demos, never autoplay loops",
+   "shared-layout pill-to-inputs morph (duration picker)",
+   "one scalar drives ring fill + section label (scroll pill)",
+   "physics glyphs and emoji particles with real gravity",
+   "monochrome shell + single #FF4D00 accent over grainy mesh wallpaper",
+   "product-film camera: expo-out zooms, motion blur, ~3s per feature"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "1px-alpha-dividers"
+  }
+ },
+ {
+  "slug": "jeetnirnejak-2089706882688753782",
+  "kind": "component",
+  "mode": "light",
+  "motion_level": "full-choreography",
+  "one_liner": "Interactive camera-aperture dial card with self-running exposure demo choreography",
+  "standout": [
+   "scripted 4s intro (bloom, overexposed beat, Auto solve) canceled by any touch",
+   "f-number ring rotates under fixed orange index like real lens hardware",
+   "iris hole fill encodes exposure: dark closed to blown-out white",
+   "Auto corrections spring with ~10% overshoot; user drags track 1:1",
+   "meter needle leaves fading motion-trail ghosts",
+   "single orange accent carries all active/target semantics on gray+black"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "balanced",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "kail_designs-2089687103760457768",
+  "kind": "resource",
+  "mode": "mixed",
+  "motion_level": "sequence",
+  "one_liner": "Screen-recorded tour of three asset sites: handkit.design, coolshap.es, whirrls.com",
+  "standout": [
+   "7-color switcher where the white swatch flips the whole section to light mode",
+   "hover-to-copy SVG/JSX with in-tile 'Copied!' confirmation, no global toast",
+   "scroll peel: hero scales ~92% + rotates ~-2.5deg revealing a marquee wall behind",
+   "clickable lamp doodle randomly recolors the footer arc per click, type stays contrast-safe",
+   "landing pages built entirely from the asset packs they sell",
+   "grainy mesh-gradient shapes as the sole color source on mute #151719 tiles"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "balanced",
+   "color_strategy": "dark: asset-glow on near-black; light: ink-on-cream + candy accents",
+   "illustration": "rich-vector",
+   "borders": "dark sites borderless surface-contrast; light site 2px ink outlines + hard offset shadows"
+  }
+ },
+ {
+  "slug": "_heyfaisal-2089369690078630069",
+  "kind": "component",
+  "mode": "light",
+  "motion_level": "full-choreography",
+  "one_liner": "Delete button liquid-morphs into inline Confirm/Cancel pills via gooey metaball split",
+  "standout": [
+   "metaball goo neck connects the splitting/merging buttons — one continuous liquid shape",
+   "velocity-coupled blur: content smears mid-transition, Cancel sharpens before Confirm",
+   "label starts sliding out from behind the icon before the shape deforms",
+   "danger as red text on white; filled pink #FACDD2 reserved for hover only",
+   "borderless elevation on a 2%-delta gray palette (#F9FAFA on #F7F7F7 + soft shadow)",
+   "split ~400ms ease-out, merge ~20% faster, seamless 5-cycle loop"
+  ],
+  "axes": {
+   "radius": "pill",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "none",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "recentdesign-2089617450815963434",
+  "kind": "component",
+  "mode": "dark",
+  "motion_level": "full-choreography",
+  "one_liner": "WebGL gel-glass slider with tumbling value cube and synced gauge HUD",
+  "standout": [
+   "gel deformation amplitude mapped to drag velocity",
+   "fill line refracts through the dent under the thumb",
+   "one value echoed across counter, dial, and track with distinct lags",
+   "grey-idle to amber-active state language with bloom",
+   "spring-overshoot cube tumble on direction reversals",
+   "four-act 18.7s demo that loops on the exact idle frame"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "shader",
+   "borders": "1px corner-bracket HUD hairlines"
+  }
+ },
+ {
+  "slug": "GrahamPaterson-2089421643311616127",
+  "kind": "resource",
+  "mode": "light",
+  "motion_level": "sequence",
+  "one_liner": "Interactive design-system guidelines: hover a live UI, get inspector tooltips with real tokens",
+  "standout": [
+   "documentation surface is a working UI — rules verified by hovering the real thing",
+   "shared-token highlighting: one hover lights every instance of the 40px gap",
+   "tooltips carry real token names (text-xlarge-medium, strong-fg) in monospace chips",
+   "guidelines encode fallback judgment: 'drop to text-large-medium — don't shrink further'",
+   "state switcher (Default/Long/Two-tone) proves rules survive variants",
+   "single annotation blue kept strictly separate from documented UI palette"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "airy",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "3d",
+   "borders": "1px-alpha-dividers"
+  }
+ },
+ {
+  "slug": "yurygok-2089624786213237049",
+  "kind": "dashboard",
+  "mode": "dark",
+  "motion_level": "none",
+  "one_liner": "Four dark AI-infra dashboard cards sharing one strict card grammar across four viz types",
+  "standout": [
+   "unit glyphs ($, M) dimmed to ~40% inside 40px hero numerals",
+   "state via fill treatment: solid done, gradient running, red-outline failed, dashed queued",
+   "solid-to-dashed line flip exactly at the now/forecast boundary with anchored label chips",
+   "stepped-gray bands + 1px hairlines instead of borders or shadows",
+   "strict mono-for-data vs sans-for-prose voice split",
+   "all numbers reconcile (450K+330K+255K+95K=1.13M; shares=100%)"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "balanced",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "1px-alpha-dividers"
+  }
+ },
+ {
+  "slug": "basit_designs-2089627588184653915",
+  "kind": "hero",
+  "mode": "mixed",
+  "motion_level": "micro",
+  "one_liner": "Analytics landing hero on a slowly morphing blurred-cloud video background",
+  "standout": [
+   "mist texture continues through phone screen (device-as-window)",
+   "display serif carries all numerals, sans only labels",
+   "caret ^ as typographic up-delta instead of arrow icon",
+   "zero borders/shadows — separation purely by luminance vs field",
+   "ambient in-place morph (~1/255 luma per 150ms, no pan), no entrance choreography",
+   "frosted pill nav parked in the light corner of a diagonal light-to-dark field"
+  ],
+  "axes": {
+   "radius": "mixed",
+   "density": "airy",
+   "color_strategy": "atmospheric silver-teal-indigo field + 1 lavender accent (#C0A0EC)",
+   "illustration": "photo",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "marcelkargul-2089632076370763821",
+  "kind": "component",
+  "mode": "dark",
+  "motion_level": "sequence",
+  "one_liner": "Dark-UI tab switcher whose underline acts as a physical light source",
+  "standout": [
+   "underline treated as light source: pill under-lit gradient + glow cone bleeding through divider",
+   "indicator width == trigger width, scaleX from center",
+   "asymmetric timing: ~650ms ease-out enter vs ~400ms ease-in exit",
+   "etched groove divider (1px #0A0A0A + 1px #161616 highlight)",
+   "~350px blurred icon watermark at 3-4% opacity echoes selection below",
+   "hold state measurably static — zero idle pulsing"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "airy",
+   "color_strategy": "monochrome luminance-only (#0F0F0F ground, #8A8A8A→#FFF state)",
+   "illustration": "none",
+   "borders": "inset-highlight groove dividers, hairline pill borders"
+  }
+ },
+ {
+  "slug": "helvetiica-2089382313649995881",
+  "kind": "full-page",
+  "mode": "dark",
+  "motion_level": "full-choreography",
+  "one_liner": "Landscape-native iOS onboarding and trackpad UI walkthrough for Hilium (iPhone-as-Mac-trackpad)",
+  "standout": [
+   "Every screen re-composed for landscape (50/50 visual/text split, right-thumb numpad and control rail)",
+   "Trackpad shown as dot-matrix grid that ripples on activation (~800ms wave) and touch (~600ms radial)",
+   "Continue button silently morphs gray->green with status caption when Mac discovery succeeds",
+   "Real iOS permission dialog tilted in a mini 3D frame with a hand-drawn yellow ellipse draw-on (~600ms)",
+   "Working replica of the macOS menu-bar dropdown embedded in the iOS tutorial",
+   "Brand logo as oversized dark-on-dark embossed relief background (~4% lightness delta)"
+  ],
+  "axes": {
+   "radius": "large(20-28)",
+   "density": "airy",
+   "color_strategy": "monochrome+state-hues (green/yellow status, blue only in artwork)",
+   "illustration": "rich-vector",
+   "borders": "borderless-shadow (fill-on-fill #1d1d1d on #080808, zero borders)"
+  }
+ },
+ {
+  "slug": "Triopixels-2089426990696685794",
+  "kind": "feature-cards",
+  "mode": "light",
+  "motion_level": "micro",
+  "one_liner": "2x2+full-width periwinkle feature cards, each with bespoke semantic hover choreography",
+  "standout": [
+   "gradient dissolves into text zone - zero image/text seam",
+   "squircle radius ~14% of card width, no borders, shadow-only separation",
+   "hover acts out the feature's real state change (toggle: color+label+avatar re-layout)",
+   "symmetric 300-400ms ease-out reversal on mouse-leave",
+   "always-on ambient avatar-network drift layer",
+   "strict color discipline: one indigo accent, green only for status"
+  ],
+  "axes": {
+   "radius": "large(20-28)",
+   "density": "airy",
+   "color_strategy": "periwinkle-gradient+1indigo-accent+status-green",
+   "illustration": "ui-fragment",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "adriankuleszo-2089328910802825606",
+  "kind": "section-set",
+  "mode": "mixed",
+  "motion_level": "sequence",
+  "one_liner": "2x2 video montage of four SaaS sites demoing six high-converting UI patterns",
+  "standout": [
+   "feature cards whose visuals are live micro-demos, not static images",
+   "auto-camera tour of a card grid that loops seamlessly to its opening frame",
+   "scroll-scrubbed word-by-word text highlight on dark editorial page",
+   "sticky step-rail storytelling with morphing code/diagram panel",
+   "one accent hue per site; logos and green deltas carry remaining color",
+   "mega-menu swaps list content only while panel chrome stays fixed"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "balanced",
+   "color_strategy": "monochrome+1accent",
+   "illustration": "ui-fragment",
+   "borders": "1px-alpha-dividers"
+  }
+ },
+ {
+  "slug": "adriankuleszo-2089253435665494317",
+  "kind": "feature-cards",
+  "mode": "light",
+  "motion_level": "full-choreography",
+  "one_liner": "Animated light SaaS feature-card trio toured by a continuous camera with live micro-demos",
+  "standout": [
+   "word-group blur reveal of headline in reading order (~450ms/group, 100-150ms stagger)",
+   "single virtual camera: zoom in, dolly card-to-card, pull back (~700-900ms ease-in-out moves)",
+   "each card vignette is a working micro-demo: avatar drag-drop, dial progress, slider",
+   "employee count-up (14→132) eased in lockstep with the size-slider tick",
+   "neumorphic dial knobs as tactile contrast inside one flat vignette only",
+   "ambient loops keep running through camera moves; fade-out returns to intro blank for seamless loop"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "airy",
+   "color_strategy": "pastel-mesh navy/blue + one red-orange accent",
+   "illustration": "ui-fragment",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "its_sslvr-2088853260535034223",
+  "kind": "illustration-set",
+  "mode": "dark",
+  "motion_level": "sequence",
+  "one_liner": "Two animated shader posters — graphite liquid relief and revolving gradient field — on dark stage",
+  "standout": [
+   "credit text uses difference-style blend, flips dark/light against rotating gradient",
+   "headline allowed to drown in the light band ~2s per loop and resurface",
+   "blue and caramel exist only as boundary phenomena between black and cream",
+   "exact 2:3 posters, 10% gap, optically centered on flat #1f1f1f, zero chrome",
+   "hierarchy from weight+grey-value at one size (700 white over 400 grey)",
+   "seamless ~10.5s linear-time loop, one full field revolution, no easing"
+  ],
+  "axes": {
+   "radius": "small(2-8)",
+   "density": "airy",
+   "color_strategy": "monochrome+boundary-hues(steel-blue/caramel)",
+   "illustration": "shader",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "mickces-2088707061945118946",
+  "kind": "full-page",
+  "mode": "light",
+  "motion_level": "full-choreography",
+  "one_liner": "Airy light landing page where a live playground demos procedural UI sounds diegetically",
+  "standout": [
+   "each sound category demos itself inside the real UI fragment it serves (tap burst, hover lift, chat thread, confetti toast)",
+   "demo visuals are procedurally regenerated per replay — blob faces, confetti, waveforms — proving the 'never the same twice' claim",
+   "every play writes real data (name, Hz, duration, sweep notation) into a live Recent sounds list",
+   "monochrome resting page; color enters only through interactive scenes",
+   "true disabled states in a marketing demo: Experimental grays out the v1/v2 toggle and rewrites its caption",
+   "per-scene spaced-mono witty captions (CLICK TO WORRY AGAIN)"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "airy",
+   "color_strategy": "monochrome+8-category-accent-dots",
+   "illustration": "ui-fragment",
+   "borders": "hairline-cards"
+  }
+ },
+ {
+  "slug": "alaymanguy-2088528410025120164",
+  "kind": "resource",
+  "mode": "both",
+  "motion_level": "sequence",
+  "one_liner": "Open-source WebGL gradient tool with Figma/Framer plugins and copy-paste React",
+  "standout": [
+   "same WebGL renderer in Figma plugin, Framer component, and React package",
+   "entire gradient config serialized into shareable URL query state",
+   "3-color-stop constraint plus grain toggle prevents muddy, banded gradients",
+   "loopDuration-based perfect loops; freeze uTime for static poster frames",
+   "MIT monorepo split into stateless renderer core + stateless UI controls"
+  ],
+  "axes": {
+   "radius": "n/a (full-bleed shader surface)",
+   "density": "airy",
+   "color_strategy": "3-stop animated mesh gradient, user-defined + env lighting",
+   "illustration": "shader",
+   "borders": "borderless"
+  }
+ },
+ {
+  "slug": "madebylalit-2088541863032836293",
+  "kind": "component",
+  "mode": "dark",
+  "motion_level": "full-choreography",
+  "one_liner": "AI thinking/loading state: breathing three-petal glow rosette with orbiting magenta-blue hue field",
+  "standout": [
+   "stroke-to-fill petal morph so contraction reads as energy concentration",
+   "halo brightness inversely coupled to scale (light conservation)",
+   "non-commensurate periods (2.33s breath vs ~24s hue orbit) so loop never repeats",
+   "dark center pinch point survives peak bloom, no white clipping",
+   "sinusoidal ease-in-out, zero overshoot, calibrated for long stares",
+   "97% negative space, single element on near-black void"
+  ],
+  "axes": {
+   "radius": "sharp",
+   "density": "airy",
+   "color_strategy": "vibrant-contrast",
+   "illustration": "shader",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "insporadesign-2087895823619182608",
+  "kind": "component",
+  "mode": "light",
+  "motion_level": "full-choreography",
+  "one_liner": "Shader carousel whose slides defocus and color-morph as one continuous material",
+  "standout": [
+   "one persistent shader lerps palette uniforms through intermediate hues instead of image crossfade",
+   "defocus pass (~25px blur, 250ms in / 350ms out) with grain that melts and re-crystallizes",
+   "text strictly sequenced after refocus, description trailing title ~130ms",
+   "dark shader mass always parked behind the text block for scrim-free white type",
+   "page ambient bloom re-tints with each slide's hue",
+   "disabled chevrons dim to ~25% at range ends"
+  ],
+  "axes": {
+   "radius": "medium(10-16)",
+   "density": "airy",
+   "color_strategy": "neutral page + 5 saturated shader palettes",
+   "illustration": "shader",
+   "borders": "borderless-shadow"
+  }
+ },
+ {
+  "slug": "insporadesign-2088123952136638508",
+  "kind": "component",
+  "mode": "dark",
+  "motion_level": "micro",
+  "one_liner": "Dark skeuomorphic card whose hidden LED bar ignites on hover; metal toggle switches mode",
+  "standout": [
+   "physically coherent lighting: logo shadow casts upward from below-mounted light bar",
+   "asymmetric easing: ~200ms ignite, ~350ms lamp-like decay",
+   "near-monochrome hierarchy from 2-4% value steps; luminance is the only accent",
+   "fully modelled hardware toggle: bevel bezel, inset track, lit indicator window",
+   "offset 1px bracket frame closed by ~1.01 hover scale",
+   "full state reset on mouse-out for clean looping"
+  ],
+  "axes": {
+   "radius": "large(20-28)",
+   "density": "airy",
+   "color_strategy": "monochrome luminance-as-accent",
+   "illustration": "ui-fragment",
+   "borders": "borderless-shadow with 1px offset bracket hairline"
+  }
+ },
+ {
+  "slug": "madebylalit-2087815622709403800",
+  "kind": "component",
+  "mode": "light",
+  "motion_level": "sequence",
+  "one_liner": "Siri-style AI orb: rotating violet-magenta gradient ring, seamless 20s loop, Claude-built generator",
+  "standout": [
+   "frame-perfect seamless 20s loop at constant 18 deg/s (linear, no seam heartbeat)",
+   "unequal hue arcs that stretch/compress +-25% instead of fixed conic-gradient stops",
+   "1-2px caustic filament streaks sheared at offset rate to the main band",
+   "asymmetric blur: crisp inner rim edge, soft outer bloom to white",
+   "interior white directionally tinted by nearest rim hue (#F1EDFE / #FEF2FC)",
+   "output of a parameterized generator tool built with Claude, not a hand-keyed one-off"
+  ],
+  "axes": {
+   "radius": "pill",
+   "density": "airy",
+   "color_strategy": "white-field+neon-annulus (violet #8E0EF7, magenta #E921B8, raspberry #F3447B)",
+   "illustration": "shader",
+   "borders": "borderless-shadow"
+  }
+ }
+]

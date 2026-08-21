@@ -1,0 +1,173 @@
+---
+name: drawn-to
+description: >-
+  The owner's personal design taste, reverse-engineered from 45 saved
+  references into 12 constants and 8 style families, plus an interactive
+  weighted lock-in flow that fixes style/tone/direction before any UI work.
+  Use BEFORE designing or building any landing page, hero, feature section,
+  feature cards, bento, pricing, UI component, subpage, or full site — and when
+  the user says "my taste", "min stil", "lock in a direction", "design
+  direction", "som refetch-prosessen", or asks for a new section that should
+  "feel right". Also use when reviewing whether existing UI matches the
+  owner's taste. Not for projects with their own locked design skill (e.g.
+  refetch-design) — those override this.
+---
+
+# Drawn To — the owner's design direction system
+
+Built 2026-08-20 from reverse-engineered references (45 X/Twitter posts at
+launch, 51 and growing; frame-by-frame video analysis, measured values). Generalizes the refetch.sh Q1-Q25 lock-in
+process to any project. Nothing here is generic best practice — it is this
+owner's measured taste, and it beats trained-default aesthetics every time.
+
+## Process (six steps, in order)
+
+1. **Discover** — repo recon BEFORE any question (`references/discovery.md`):
+   prior lock files, CLAUDE/AGENTS/README, `docs/**/*.md`, design tokens,
+   existing pages/sections, product source signals. Build a product-truth
+   brief. The owner never explains what the repo already says.
+2. **Scope (Q0)** — present the brief for confirmation, then ask ONLY the
+   gaps discovery couldn't answer. `references/question-flow.md` § Q0.
+3. **Blend proposal** — propose 2-3 weighted blends of the 8 style families
+   with reference evidence; the owner reweights. § Q1.
+4. **Axis locks** — interactive questions ONLY where the blend diverges;
+   multi-select + weights, one at a time, evidence-cited. § Axis question bank.
+5. **Section variants (QS) + illustration proposals (QI)** — for each section
+   in scope, offer 2-3 concrete composition variants from
+   `references/recipes.md`, filtered by the locked blend; redesigns always
+   include "keep structure, reskin to the locks". For feature-card work,
+   then propose 2-4 creative illustration concepts PER FEATURE
+   (`references/illustration-ideation.md`) and lock the picks.
+6. **Lock + enforce** — record every lock as it happens in
+   `docs/design-locks/YYYY-MM-DD-<task>.md` in the target project; implement
+   from the lock file + dimension docs; every visual change serves a named
+   lock; run the output checklist below.
+
+## Read in this order
+
+1. `references/discovery.md` — the repo-recon protocol (runs first, always).
+2. `references/style-families.md` — the 12 constants, 8 families, blend rules,
+   clashes. The master document.
+3. `references/question-flow.md` — the lock-in protocol and axis question bank.
+4. `references/recipes.md` — named composition variants per section kind
+   (hero, feature grid, bento, pricing, footer, CTA…) for the QS stage.
+5. `references/production-formula.md` — page-scale architecture measured off
+   seven famous production sites (containers, air, running order, nav,
+   buttons, closing CTA); feeds AX13-AX15 and full-page sanity checks.
+   `references/scroll-scrub.md` — the scroll-scrubbed product-scene pattern
+   (registered-property poses, three drivers, sticky-run geometry, mobile
+   playbook, fallback ladder); read before building any scrubbed hero or
+   chapter composite.
+   `references/illustration-ideation.md` — the per-feature illustration
+   engine: fit-method (verb → metaphor register → hero + evidence), device
+   catalog with construction recipes, the QI proposal protocol, HTML/CSS/SVG
+   build guidance; read before proposing or building feature graphics.
+   `references/animation-craft.md` — implementation doctrine (Emil Kowalski /
+   Apple fluid-interfaces distillation): the animate-at-all gate, tool
+   ladder, property rules, curve/duration tables, spring + gesture physics,
+   interruptibility, clip-path toolkit, never-ship list; read before WRITING
+   any animation code. motion-grammar = taste; animation-craft = mechanics.
+   `references/isometric-and-light.md` — two optional paths: isometric
+   objects (blueprint line-art / soft-shaded, construction math, production
+   route) and structured light (why shaped gradients read expensive, recipes
+   for arcs, slabs, rays, rings, dot-maps, ribbons).
+   `references/animation-recipes.md` — ready-to-build implementations
+   (button press, popover, tooltip, modal, drawer, toast, accordion, stagger,
+   hold-to-confirm, tab clip-indicator, scroll reveal, drag-to-dismiss, blur
+   mask, WAAPI); start from the recipe, never from a blank file.
+6. Dimension docs as needed during locking and implementation:
+   `references/layout-language.md` (grids, separation, radius, air),
+   `references/motion-grammar.md` (registers, easing table, loops, cursor
+   choreography), `references/graphic-language.md` (UI-fragments, line-art,
+   texture, shaders, mock craft), `references/color-type.md` (palettes,
+   chroma quarantine, dual-mode, typography).
+7. `references/matrix.md` — index of every reference (51 at last count);
+   `references/posts/<slug>.md` — per-reference deep dives (look up on demand
+   when a lock cites one). Slug convention: citations use author + the first 4
+   digits of the post id (7 digits where an author's ids collide, e.g.
+   yurygok-2089624 vs yurygok-2089981); filenames carry the full id — locate by
+   prefix match (`posts/basit_designs-2017*.md`).
+
+## The constants (enforced always, asked never)
+
+- **C1** Quarantine chroma: neutral shell, ≤1 accent hue in the UI layer;
+  remaining color lives in one signature asset, semantic states, or photos.
+- **C2** Show the feature: working product fragments / mechanisms / frozen
+  interactions — never icon + paragraph cards.
+- **C3** Separation ladder: hairlines, tone steps, or one soft shadow. Zero
+  drop shadows on dark. Never mid-contrast (#333/#ccc-class) borders.
+- **C4** Hierarchy by size + gray value at weight 400-600; bold is the last
+  resort. Two-tone headlines; 3-4 step gray ramps.
+- **C5** Two voices: grotesque prose + mono data voice. All numerals mono/
+  tabular; microcaps 11-13px @ +0.06-0.1em.
+- **C6** Two motion registers, never mixed: ambient = linear constant velocity;
+  interaction = 150-800ms eased. Never ease an infinite loop.
+- **C7** Loops close frame-perfectly; concurrent loops on desynced,
+  non-commensurate periods.
+- **C8** Radii in stepped 3-tier families, nested concentrically
+  (outer = inner + padding). Radius 0 is a family, not a violation.
+- **C9** Texture every large gradient: 2-6% grain or a print/pixel process.
+  A flat un-grained CSS gradient is the loudest generic-AI tell.
+- **C10** Diegetic realistic microcopy: zero lorem, versioned filenames,
+  arithmetic that reconciles, one fictional client brand threaded through.
+- **C11** Opacity is the attention system: one full-contrast focal; siblings
+  ghosted 15-45%; disabled dimmed ~25%, never hidden.
+- **C12** Ambient background ⇒ page composed at t=0. Entrances only as
+  word-group blur reveals (blur(12px)→0, 400-500ms, 100-150ms stagger).
+
+## Working rules
+
+- User's explicit instructions override everything here; this skill fills the
+  remaining freedom.
+- Existing design systems: PRIMITIVES (token scales, motion contract, theming)
+  are infrastructure — adopt and map the locked direction onto them; never
+  produce a different look beside a serious system, never introduce parallel
+  literals; add only missing tokens, section-scoped and listed in the lock
+  file. The DESIGN-STATE layer (current look, palette mood, sections) is
+  evidence, not authority: adopt only after the owner chooses build-on / keep
+  parts / scratch in Q0 (`discovery.md` § Trust model + mapping protocol).
+  Owner-authored systems are infrastructure by definition.
+- Interview in plain language. The codes (F1-F8, AX1-15, C1-C12, QI, slugs)
+  are ledger bookkeeping and never appear in a question the owner must
+  answer — say what it looks like and name a site they know; number
+  questions "3 of ~8", not "AX3". A question the owner cannot answer without
+  the nomenclature is a defect (`question-flow.md` § Question phrasing +
+  glossary).
+- Never force a single choice on a style question — weighted multi-select is
+  the contract (the "I liked all 3" rule).
+- Never guess an unanswered lock; ask, or mark `(delegated)` if told to decide.
+- Warn before mixing clashing families (style-families.md § Blend behavior);
+  offer the scale-split resolution.
+- Product truth: feature fragments must depict what the product actually does;
+  invent presentation, never capability.
+
+## Visual evidence
+
+The source media for every reference — photos and extracted video frames —
+lives in the taste repo at
+`/Users/stian/Documents/claudee/my_taste/references/media/<full-slug>/`
+(deliberately not shipped inside this skill folder). On a machine that has it,
+open the media to verify a claim or calibrate a value before locking or
+implementing; the per-post analyses in `references/posts/` are the portable
+evidence, the media is ground truth. Guardrails: references are vocabulary,
+not templates — adapt patterns and values, never clone a reference's
+composition or brand into a project; a lock cites the pattern, never "make it
+look like this image". Without media access the skill is fully functional on
+the text analyses.
+
+## Output checklist (include in the response for design-sensitive work)
+
+1. Lock file path + which locks this work serves (or: question flow run first).
+2. Constants check: chroma quarantine · no icon+blurb · separation ladder ·
+   grain on gradients · mono data voice · diegetic microcopy.
+3. Modes: which are required, both verified if dual (materials re-derived,
+   never inverted).
+4. Motion: register split (ambient linear / interaction eased), loop closure,
+   reduced-motion fallback, stop conditions.
+   Ghost tiers: verify every dimmed/evidence layer on a real display AND
+   zoomed out — 15-30% layers on near-black sit at the visibility threshold
+   and die in screenshots/JPEG; hover overlays need the layer beneath dropped
+   to ≤5% or occluded, never two mid-luminance layers overprinting.
+5. References: which family docs / posts backed the choices.
+6. Honest handoff state: distinguish locally verified · committed · pushed/PR ·
+   deployed · independently verified live. Never report further than proven.

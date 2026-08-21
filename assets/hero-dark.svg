@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" role="img" aria-label="Drawn To — give your coding agent a trained eye">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="fade" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridmask"><rect width="1600" height="640" fill="url(#fade)"/></mask>
+    <linearGradient id="comet" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5B8CFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#5B8CFF" stop-opacity="1"/>
+      <stop offset="1" stop-color="#5B8CFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+    <style>
+      .sans { font-family: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .mono { font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="640" fill="#0A0C10"/>
+  <rect width="1600" height="640" fill="url(#grid)" mask="url(#gridmask)"/>
+
+  <!-- rails -->
+  <line x1="64.5" y1="0" x2="64.5" y2="640" stroke="#fff" stroke-opacity="0.08"/>
+  <line x1="1535.5" y1="0" x2="1535.5" y2="640" stroke="#fff" stroke-opacity="0.08"/>
+  <line x1="64" y1="96.5" x2="1536" y2="96.5" stroke="#fff" stroke-opacity="0.06"/>
+  <line x1="64" y1="560.5" x2="1536" y2="560.5" stroke="#fff" stroke-opacity="0.06"/>
+
+  <!-- eyebrow -->
+  <text x="104" y="66" class="mono" font-size="12" letter-spacing="1.4" fill="#5D5E63">DRAWN TO · AN AGENT SKILL · 51 REFERENCES, REVERSE-ENGINEERED FRAME BY FRAME</text>
+
+  <!-- headline, two-tone (C4) -->
+  <text x="104" y="248" class="sans" font-size="112" font-weight="500" letter-spacing="-3" fill="#EDEDEE">Drawn To</text>
+  <text x="104" y="318" class="sans" font-size="40" font-weight="400" letter-spacing="-0.8" fill="#8B8E93">Give your coding agent a trained eye.</text>
+  <text x="104" y="378" class="sans" font-size="18" fill="#8B8E93">A design-direction system for agents: a measured taste library, a weighted lock-in interview,</text>
+  <text x="104" y="406" class="sans" font-size="18" fill="#8B8E93">and a lock file every visual decision must serve. No more “make it look good”.</text>
+
+  <!-- stats row -->
+  <text x="104" y="604" class="mono" font-size="12" letter-spacing="1.2" fill="#5D5E63">12 CONSTANTS   ·   8 STYLE FAMILIES   ·   31 SECTION RECIPES   ·   2 662 VIDEO FRAMES READ   ·   0 ICON + BLURB CARDS</text>
+
+  <!-- FIG plates (right) -->
+  <g transform="translate(980 120)">
+    <!-- FIG.01 divider-cut bento -->
+    <text x="0" y="0" class="mono" font-size="11" letter-spacing="1.2" fill="#454545">FIG.01</text>
+    <g transform="translate(0 16)">
+      <rect x="0.5" y="0.5" width="150" height="100" fill="none" stroke="#fff" stroke-opacity="0.12"/>
+      <line x1="0" y1="44.5" x2="150" y2="44.5" stroke="#fff" stroke-opacity="0.12"/>
+      <line x1="75.5" y1="44" x2="75.5" y2="100" stroke="#fff" stroke-opacity="0.12"/>
+      <line x1="100.5" y1="0" x2="100.5" y2="44" stroke="#fff" stroke-opacity="0.12" stroke-dasharray="3 4"/>
+      <rect x="10" y="10" width="50" height="6" fill="#fff" fill-opacity="0.10"/>
+      <rect x="10" y="22" width="32" height="6" fill="#fff" fill-opacity="0.06"/>
+      <rect x="112" y="12" width="26" height="18" fill="none" stroke="#5B8CFF" stroke-opacity="0.9"/>
+      <rect x="10" y="58" width="40" height="6" fill="#fff" fill-opacity="0.06"/>
+      <rect x="86" y="58" width="40" height="6" fill="#fff" fill-opacity="0.06"/>
+    </g>
+    <!-- FIG.02 radar + comet arc -->
+    <text x="200" y="0" class="mono" font-size="11" letter-spacing="1.2" fill="#454545">FIG.02</text>
+    <g transform="translate(275 66)">
+      <circle r="50" fill="none" stroke="#fff" stroke-opacity="0.07"/>
+      <circle r="34" fill="none" stroke="#fff" stroke-opacity="0.09"/>
+      <circle r="18" fill="none" stroke="#fff" stroke-opacity="0.12"/>
+      <path d="M -48 -14 A 50 50 0 0 1 -10 -49" fill="none" stroke="url(#comet)" stroke-width="2"/>
+      <circle r="2.5" fill="#EDEDEE"/>
+      <circle cx="34" cy="0" r="2" fill="#fff" fill-opacity="0.35"/>
+      <circle cx="-24" cy="24" r="2" fill="#fff" fill-opacity="0.35"/>
+    </g>
+    <!-- FIG.03 iso cube -->
+    <text x="400" y="0" class="mono" font-size="11" letter-spacing="1.2" fill="#454545">FIG.03</text>
+    <g transform="translate(470 26)" fill="none" stroke-width="1">
+      <path d="M 0 46 L 60 16 L 120 46 L 60 76 Z" stroke="#7A7A7A"/>
+      <path d="M 0 46 L 0 76 L 60 106 L 120 76 L 120 46" stroke="#7A7A7A"/>
+      <path d="M 60 76 L 60 106" stroke="#7A7A7A"/>
+      <path d="M 60 16 L 60 -10" stroke="#3F3F3F" stroke-dasharray="3 4"/>
+      <path d="M 120 46 L 150 31" stroke="#3F3F3F" stroke-dasharray="3 4"/>
+      <path d="M 30 31 L 90 61" stroke="#EDEDEE"/>
+      <rect x="-3" y="43" width="6" height="6" stroke="#7A7A7A"/>
+      <rect x="117" y="43" width="6" height="6" stroke="#7A7A7A"/>
+    </g>
+    <!-- one lit datum (C1 / F8 garnish) -->
+    <circle cx="256" cy="52" r="14" fill="#5B8CFF" fill-opacity="0.25" filter="url(#glow)"/>
+  </g>
+</svg>
