@@ -1,7 +1,7 @@
-# Polish moments — where the small animations live, and what each one is
+# Polish moments - where the small animations live, and what each one is
 
 `animation-craft.md` says HOW to animate and when NOT to. This doc is the
-missing half: a map of the MOMENTS that separate "built" from "felt" — the
+missing half: a map of the MOMENTS that separate "built" from "felt" - the
 number that should count, the label that should swap in place, the copy button
 that should confirm, the check that should be earned. Distilled from
 transitions.dev (Jakub Antalik, 18 transitions + decision rules), pixel-point's
@@ -19,13 +19,13 @@ Most "it feels cheap" moments are one of three defects:
    changes size for a state.
 2. **Hard swap** (text/number/icon changes with no transition). Every in-place
    replacement gets a swap: old exits (up, blur 2px, 150 ms), new enters from
-   below — or a crossfade with a micro-delay so the two never overprint.
+   below - or a crossfade with a micro-delay so the two never overprint.
 3. **Success without a signal** (copied / saved / sent shows only a word).
    Confirmation gets three channels at once: the word swaps, the icon swaps to
    a check, the color moves to the semantic success hue (allowed on top of the
-   one accent — C1), then reverts quietly after ~1.4–2 s.
+   one accent - C1), then reverts quietly after ~1.4–2 s.
 
-## Decision rules — match the element, then the verb
+## Decision rules - match the element, then the verb
 
 | You see | Do this | Values |
 |---|---|---|
@@ -49,24 +49,24 @@ Most "it feels cheap" moments are one of three defects:
 | **Centered surface** | Modal: scale .96, softer close; backdrop with it | open 250 / close 150 |
 | **Panel slides into a region / page ↔ page** | Panel reveal (blur 2, 400/350 ms) · page side-by-side (8 px, blur 3, 250 ms) | |
 | **Badge/dot appears on a trigger** | Slide in + pop the dot with one overshoot | slide 260 · pop 500 `cubic-bezier(.34,1.36,.64,1)` |
-| **Nothing matches** | Don't invent — leave static, or ask. Static is a legitimate answer (animation-craft gate). | |
+| **Nothing matches** | Don't invent - leave static, or ask. Static is a legitimate answer (animation-craft gate). | |
 
 Tie-break: prefer the lighter transition (resize over panel, dropdown over
 modal, success check over a celebration modal). If the element is hit 100+
 times a day (shortcuts, command palette), the gate wins: no motion.
 
-## Text effect families (animate-text) — pick by unit, not by mood
+## Text effect families (animate-text) - pick by unit, not by mood
 
-- **Per-character emphasis** — hero titles, one-line statements: `soft-blur-in`
+- **Per-character emphasis** - hero titles, one-line statements: `soft-blur-in`
   (Apple register), `per-character-rise` (no blur, crisp), `typewriter` (editorial
   stepped; corpus: 105 ms/char type, 45 ms/char delete).
-- **Per-word phrasing** — headlines that should READ: `per-word-crossfade`
-  (calm), `shared-axis-y` (hard-cut staircase 78 ms, `steps(1,end)` — sharp
+- **Per-word phrasing** - headlines that should READ: `per-word-crossfade`
+  (calm), `shared-axis-y` (hard-cut staircase 78 ms, `steps(1,end)` - sharp
   editorial swaps), `spring-scale-in` (playful, one overshoot).
-- **Per-line editorial** — stacked copy: `mask-reveal-up`, `line-by-line-slide`.
-- **Whole-phrase state transitions** — labels, captions, status: `fade-through`
-  (420/260 ms, y 6, blur 2 — replace in the same slot, no direction),
-  `micro-scale-fade` (600 ms, scale .96 — the premium tiny pop for short
+- **Per-line editorial** - stacked copy: `mask-reveal-up`, `line-by-line-slide`.
+- **Whole-phrase state transitions** - labels, captions, status: `fade-through`
+  (420/260 ms, y 6, blur 2 - replace in the same slot, no direction),
+  `micro-scale-fade` (600 ms, scale .96 - the premium tiny pop for short
   titles; non-overlapping swap), `focus-blur-resolve` (heavy blur → crisp).
 - **Swap contract**: define exit, enter, overlap and micro-delay explicitly; for
   whole-phrase swaps keep overlap 0–20 ms so strings never overprint (the
@@ -92,12 +92,12 @@ These sit inside animation-craft's bands; the corpus's marketing choreography
 
 - Enumerate transitioned properties; never `transition: all`.
 - Replay = remove class → `void el.offsetWidth` (reflow) → add class.
-- Keep both states mounted for swaps (icon swap, text stack) — no remount flicker.
+- Keep both states mounted for swaps (icon swap, text stack) - no remount flicker.
 - `will-change` only on the animated pieces; animate the inner piece, not the container (badge dot, not the trigger).
-- Every snippet ships its `prefers-reduced-motion` guard — keep feedback (color, final value), drop travel.
+- Every snippet ships its `prefers-reduced-motion` guard - keep feedback (color, final value), drop travel.
 - Success check: `stroke-dasharray` = `path.getTotalLength()` rounded up; round caps.
 - Count-ups and pop-ins: tabular numerals so widths never jitter; the unit glyph never moves.
-- If the project has the `transitions-dev` or `animate-text` skills installed, use their snippets/specs verbatim (namespaced `t-*`, JSON contracts) — don't re-derive what is already tuned.
+- If the project has the `transitions-dev` or `animate-text` skills installed, use their snippets/specs verbatim (namespaced `t-*`, JSON contracts) - don't re-derive what is already tuned.
 
 ## The polish pass (before handoff)
 

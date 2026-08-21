@@ -1,14 +1,14 @@
-# Animation recipes — ready-to-build implementations
+# Animation recipes - ready-to-build implementations
 
 Companion to `animation-craft.md` (which holds the gate, curves, springs and
 never-ship rules). Adapted from Emil Kowalski's `animate` skill recipes.
-Start from the recipe, adapt to the project's tokens — never rebuild from
+Start from the recipe, adapt to the project's tokens - never rebuild from
 scratch. Curves are the trio from animation-craft: `--ease-out`,
 `--ease-in-out`, `--ease-drawer`.
 
 ## Button press
 
-Any pressable element. `scale()` carries the label and icons with it — that
+Any pressable element. `scale()` carries the label and icons with it - that
 is what makes it read as a physical press. `:active` is a real press on
 touch, so no hover gating needed here.
 
@@ -19,7 +19,7 @@ touch, so no hover gating needed here.
 
 ## Dropdown / popover / menu / select
 
-Scales out of its trigger, not out of thin air — the origin is the whole
+Scales out of its trigger, not out of thin air - the origin is the whole
 point.
 
 ```css
@@ -33,7 +33,7 @@ point.
 
 ## Tooltip
 
-Popover shape, faster — plus the detail most miss: after the first tooltip
+Popover shape, faster - plus the detail most miss: after the first tooltip
 opens, neighbours open instantly (skip delay AND animation), which makes the
 whole toolbar feel faster without losing the accidental-hover guard.
 
@@ -65,7 +65,7 @@ Backdrop animates alongside so the two read as one surface.
 ## Drawer / sheet
 
 Vaul's approach: hidden by its own height, iOS drawer curve. Adding drag
-turns it into a gesture problem — see Drag to dismiss.
+turns it into a gesture problem - see Drag to dismiss.
 
 ```css
 .drawer { transform: translateY(0); transition: transform 500ms var(--ease-drawer); }
@@ -74,7 +74,7 @@ turns it into a gesture problem — see Drag to dismiss.
 
 ## Toast
 
-`ease` and slightly slower than the UI budget on purpose — Sonner reads as
+`ease` and slightly slower than the UI budget on purpose - Sonner reads as
 elegant because the motion is tuned to the component's personality. Rapidly
 added/removed ⇒ transitions, never keyframes.
 
@@ -92,12 +92,12 @@ No `@starting-style` support → mount-flag fallback:
 useEffect(() => { setMounted(true); }, []);  // <div data-mounted={mounted}>
 ```
 
-When stacked toasts reflow, opacity-vs-height has no formula — tune, then
+When stacked toasts reflow, opacity-vs-height has no formula - tune, then
 re-check next day.
 
 ## Accordion / collapse
 
-One of the few sanctioned `height` animations — it costs layout every frame,
+One of the few sanctioned `height` animations - it costs layout every frame,
 so keep it short and measure the real height in JS (or use a primitive that
 supplies it); never animate to `auto`.
 
@@ -110,7 +110,7 @@ supplies it); never animate to `auto`.
 
 ## Stagger a group entrance
 
-Occasional-view lists only. Decorative — must never block interaction.
+Occasional-view lists only. Decorative - must never block interaction.
 
 ```css
 .item { opacity: 0; transform: translateY(8px);
@@ -122,7 +122,7 @@ Occasional-view lists only. Decorative — must never block interaction.
 ```
 
 30-80ms between items in product UI (corpus word-group reveals at 100-150ms
-are marketing-tier — motion-grammar governs those).
+are marketing-tier - motion-grammar governs those).
 
 ## Hold to confirm
 
@@ -139,7 +139,7 @@ the system responds.
 ## Tab indicator with perfect color sync
 
 Timing separate color transitions never lands. Duplicate the tab list, style
-the copy as the active state, clip it to the active tab, animate the clip —
+the copy as the active state, clip it to the active tab, animate the clip  - 
 text and background change together because ONE element is being revealed.
 
 ```css
@@ -154,7 +154,7 @@ clip/position mechanics.)
 
 ## Scroll reveal
 
-Marketing surfaces only — never functional daily UI. Fire ONCE.
+Marketing surfaces only - never functional daily UI. Fire ONCE.
 
 ```css
 .reveal { clip-path: inset(0 0 100% 0); transition: clip-path 600ms var(--ease-in-out); }
@@ -166,7 +166,7 @@ For scrubbed (not fired) reveals, use `scroll-scrub.md` instead.
 
 ## Drag to dismiss
 
-Springs, not durations — the user can reverse mid-motion. Full physics in
+Springs, not durations - the user can reverse mid-motion. Full physics in
 animation-craft §5.
 
 ```js
@@ -174,7 +174,7 @@ animation-craft §5.
 const velocity = Math.abs(swipeAmount) / (Date.now() - dragStart);
 if (Math.abs(swipeAmount) >= SWIPE_THRESHOLD || velocity > 0.11) dismiss();
 
-// Transform on the element directly — a CSS var on the parent recalcs all children
+// Transform on the element directly - a CSS var on the parent recalcs all children
 element.style.transform = `translateY(${distance}px)`;
 ```
 
