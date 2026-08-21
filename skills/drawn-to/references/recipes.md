@@ -54,6 +54,13 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
 - **Families:** every family can render it; the visual changes, the skeleton does not. Clash: F4 + F6 on one screen (blueprint over pastel) - pick one.
 - **Choose when:** the product has one message and the visual can carry it (a skill, a tool, a launch); when every added section would dilute; when the page must be judged at a glance. Not for products that must explain a workflow - use Scrubbed Product Stage or a short-scroll page.
 
+### Field Hero - the field owns the page, or there is no field
+- **Anatomy, ingredients, optics and evidence:** `hero-atmosphere.md` in full. Summary: one 100 svh screen, a field at inset 0 and z-index 0 edge to edge, copy at z-index 2 in a `background: transparent` container, H1 64-112 px on one or two lines, one sub line, two controls, nothing else.
+- **The load-bearing rule:** the container must not be a surface. An opaque column background prevents the field from existing anywhere except the margins, and it is the most common reason a full-bleed hero looks contained.
+- **Evidence:** Antigravity (particle scatter on white), Codex (out-of-focus photograph), Linear (no field, restraint as the statement), Raycast (dithered light shafts, one hue at full energy), Vercel (one object, bloom on true black).
+- **Families:** F3 native; F1 for the no-field variants; F8 when the field is bloom on true black.
+- **Choose when:** the first screen of anything, where the job is to stop a visitor before they read. Not when the screen must explain - that is One-Screen Poster or a section recipe.
+
 ### One-Screen Catalog - many screens, one chrome, a DIFFERENT content model per screen
 - **Why it exists:** shipped 2026-08-21 after a nine-screen cycle read generic. Every screen was a One-Screen Poster, so nine locked directions rendered the same headline, the same sub line and the same command nine times. The directions were distinct; the PAGE was monotonous. A catalog is not a poster repeated - it is a set of screens that each argue a different part of the product in a different register.
 - **Anatomy:** one persistent chrome (brand top-left · one link top-right · direction label bottom-left (the direction's PLAIN name - "ink & air",

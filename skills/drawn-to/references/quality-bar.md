@@ -73,6 +73,13 @@ owner close the tab; the skill's whole job is that they never appear.
   line is visible, the copy must be INSET from it (one gutter, 32-48 px), not
   sitting on it. Flush-to-the-rule reads as missing padding, never as
   alignment.
+- **A first screen composed as a figure in a box beside a column of copy.**
+  Correct at section scale, wrong at hero scale, and it is what this corpus
+  hands you by default because the corpus is section-scale. None of the five
+  production heroes does it. A first screen either lets a field own the page
+  with the type set directly on it, or runs no field at all
+  (`hero-atmosphere.md`). A container with its own background on a first screen
+  is a defect, not a style choice - it is what prevents the field.
 - **Chrome that moves between screens.** Persistent controls (transport,
   theme toggle, progress) must hold ONE position and ONE skin across every
   screen of a cycling page. Nesting them inside a per-direction container
