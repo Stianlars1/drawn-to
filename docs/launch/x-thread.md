@@ -4,13 +4,13 @@
 
 1/ Same model. Same brief. One variable.
 Left: a capable coding agent with a well-engineered design skill - and an empty knowledge layer.
-Right: the same model with a taste library of 51 references reverse-engineered frame by frame.
+Right: the same model with a taste library of 52 references reverse-engineered frame by frame.
 The difference is not the model. It's the library.
 
 2/ I built Drawn To because "make it look good" is not a prompt - it's an abdication.
 The agent fills the gap with its priors: soft tiles, system blue, icon + paragraph cards. Competent. Anonymous.
 
-3/ So I reverse-engineered the things I was actually drawn to - 51 saved posts, 2 662 video frames - into 12 constants (held across the whole corpus, never asked about) and 8 style families with measured grounds, separation physics, radii, motion registers.
+3/ So I reverse-engineered the things I was actually drawn to - 52 saved posts, 2 963 video frames - into 12 constants (held across the whole corpus, never asked about) and 8 style families with measured grounds, separation physics, radii, motion registers.
 
 4/ Then a short interview in plain language. You answer with weights - "70% Linear-ish dividers + 30% Stripe-ish air" - never a forced single pick. Every answer becomes a row in a lock file. Revisions never erase; the ledger is history.
 

@@ -1,7 +1,7 @@
 ---
 name: drawn-to
 description: >-
-  A design-direction system for coding agents: a measured taste library (51
+  A design-direction system for coding agents: a measured taste library (52
   references reverse-engineered frame by frame into 12 constants and 8 style
   families), a plain-language interview answered with weights instead of forced
   picks, and a lock file every visual decision must serve. Use BEFORE designing
@@ -110,7 +110,7 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    choreography), `references/graphic-language.md` (UI-fragments, line-art,
    texture, shaders, mock craft), `references/color-type.md` (palettes,
    chroma quarantine, dual-mode, typography).
-7. `references/matrix.md` - index of every reference (51 at last count);
+7. `references/matrix.md` - index of every reference (52 at last count);
    `references/posts/<slug>.md` - per-reference deep dives (look up on demand
    when a lock cites one). Slug convention: citations use author + the first 4
    digits of the post id (7 digits where an author's ids collide, e.g.

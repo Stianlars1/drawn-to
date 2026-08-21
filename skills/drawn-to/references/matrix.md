@@ -1,4 +1,4 @@
-# Taste matrix - all 51 references
+# Taste matrix - all 52 references
 
 Auto-generated from the repo's `references/_index.json` (per-post deep dives in `posts/<slug>.md`; source media archived in the repo at `references/media/<slug>/` - not shipped with the skill folder).
 
@@ -57,9 +57,10 @@ Auto-generated from the repo's `references/_index.json` (per-post deep dives in 
 | 49 | [marcelkargul-2089404](posts/marcelkargul-2089404418504429611.md) | section-set | dark | none | sharp | airy | rich-vector | Hunt.io footer: one prism emitting light shafts over the dot map |
 | 50 | [marcelkargul-2090509](posts/marcelkargul-2090509406995706108.md) | section-set | light | none | sharp | airy | rich-vector | Kargul Studio CTA: wireframe dome on iso graph paper, soft-gradient faces |
 | 51 | [marcelkargul-1952697](posts/marcelkargul-1952697746894250143.md) | hero | light | sequence | small(2-8) | airy | rich-vector | Chatsheet hero: soft-shaded isometric conveyor, one blue core |
+| 52 | [0xhammermann-2090](posts/0xhammermann-2090450716380831921.md) | feature-cards | light | full-choreography | sharp(0-4) | airy | isometric | Three feature cards, three isometric worlds - a form-maze, two machines transacting, a block city that opens to show the protocol inside |
 ## Distribution
 
-- **Kind** (first 45): component 14 · section-set 6 · feature-cards 6 · resource 5 · brand 3 · full-page 3 · bento 2 · hero 2 · illustration-set 2 · dashboard 2
+- **Kind** (first 45): component 14 · section-set 6 · feature-cards 7 · resource 5 · brand 3 · full-page 3 · bento 2 · hero 2 · illustration-set 2 · dashboard 2
 - **Mode**: light 20 · dark 16 · both 5 · mixed 4
 - **Motion**: none 18 · full-choreography 15 · sequence 8 · micro 4
 
