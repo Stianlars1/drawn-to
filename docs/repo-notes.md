@@ -13,7 +13,7 @@ drawn-to/                 ← THE SKILL (portable, self-contained, lightweight)
     discovery.md            repo recon before any question + trust model
     style-families.md       master: 12 constants, 8 families, blends, clashes
     question-flow.md        the lock-in protocol + axis question bank + QS variants
-    recipes.md              31 named composition variants across 9 section kinds
+    recipes.md              36 named composition variants across 9 section kinds
     production-formula.md   page-scale values measured off 7 famous sites
     scroll-scrub.md         scroll-scrubbed product scenes (the refetch stage pattern)
     illustration-ideation.md per-feature illustration engine (fit-method, devices, QI)

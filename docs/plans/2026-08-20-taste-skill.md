@@ -184,3 +184,18 @@ style/tone/direction before any code is written.
       direction (A redline plate · B typographic poster · C halved paper · D one
       beam · E ring with lit arc), delivery via QA loop. Rebuild runs in a NEW
       session through /drawn-to with the lock file as input.
+- [x] Round 15 (x402 isometric reverse-engineering, parallel to the site rebuild):
+      owner supplied 0xhammermann-2090 (301 frames, 60fps). Ran a 10-agent workflow -
+      one analyst per card + a system analyst, a derivation-logic agent, a skill-gap
+      auditor, and four adversarial verifiers that re-measured every numeric claim
+      (57 corrections; my own first pass had the projection, the stroke hierarchy and
+      the card-2 reading wrong). Library gained reference 52. Skill gained: the
+      claim-to-scene derivation ladder (9 claim shapes -> topologies, cast, loop
+      rhetoric, swap test, read-back test, absence check, set register contract with
+      literal values), the corrected paper-white iso register (true 30 deg, ONE stroke
+      weight per card with colour assigning role, refused third face value, flat
+      non-compounding shadows, grid == module cell + shared world origin, interiors
+      that open, actors/apertures, motion grammar, legal-transform contract),
+      quality-bar iso tells + construction check + rendered-set re-test, motion-grammar
+      poster frames, and register scoping on graphic-language R7 / C11. Counts: 52
+      references, 2 963 frames, 36 recipes.

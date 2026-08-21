@@ -5,13 +5,13 @@
 
 <p align="center">
   <a href="https://skills.sh"><img alt="Install with skills" src="https://img.shields.io/badge/npx%20skills%20add-Stianlars1%2Fdrawn--to-0A0C10?style=flat-square&labelColor=0A0C10&color=5B8CFF"></a>
-  <img alt="51 references" src="https://img.shields.io/badge/references-51%20reverse--engineered-0A0C10?style=flat-square&labelColor=0A0C10&color=8B8E93">
+  <img alt="52 references" src="https://img.shields.io/badge/references-52%20reverse--engineered-0A0C10?style=flat-square&labelColor=0A0C10&color=8B8E93">
   <img alt="MIT" src="https://img.shields.io/badge/license-MIT-0A0C10?style=flat-square&labelColor=0A0C10&color=8B8E93">
   <img alt="agents" src="https://img.shields.io/badge/works%20in-Claude%20Code%20%C2%B7%20Codex%20%C2%B7%20Cursor%20%C2%B7%20Copilot%20%C2%B7%20Gemini-0A0C10?style=flat-square&labelColor=0A0C10&color=8B8E93">
 </p>
 
 **Drawn To** is an agent skill that replaces "make it look good" with a locked design direction.
-It carries a *measured* taste library - 51 saved references reverse-engineered frame by frame
+It carries a *measured* taste library - 52 saved references reverse-engineered frame by frame
 into 12 constants and 8 style families - runs a short, plain-language interview where you
 answer with **weights** instead of forced single choices, and writes a lock file every visual
 decision must serve. Then it builds.
@@ -85,7 +85,7 @@ skills/drawn-to/
     discovery.md               repo recon + a trust model: product facts / infrastructure tokens / design state
     style-families.md          the master: 12 constants (count-backed), 8 families, blend rules, clashes
     question-flow.md           the interview protocol, plain-language glossary, axis bank, lock-file template
-    recipes.md                 31 named composition variants across 9 section kinds
+    recipes.md                 36 named composition variants across 9 section kinds
     illustration-ideation.md   per-feature illustration engine: verb → metaphor register → hero + evidence, 20 devices
     scroll-scrub.md            scroll-scrubbed product scenes (registered-property poses, three drivers, mobile playbook)
     animation-craft.md         build doctrine: the animate-at-all gate, curves, springs & gesture physics, never-ship list
