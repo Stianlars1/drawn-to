@@ -164,3 +164,13 @@ style/tone/direction before any code is written.
       the name carries the taste corpus, the differentiator; Tell Me lives on as
       the question-flow voice). npm + GitHub checked free 2026-08-20. Folder,
       SKILL name and all references renamed my-taste → drawn-to.
+- [x] Round 13 (site rebuilt THROUGH the skill): owner caught that the landing page was
+      built delegated (no interview) and had a plate/caption collision. Re-ran the
+      skill's own flow on the site: Q0 brief (convince-first), Q1 five locked directions
+      (A narrow dark sharp · B wide light pastel · C paper & print · D dark atmosphere ·
+      E Vercel-home), Q2 auto-cycle 5 s always (reduced-motion → manual), Q3 cross-fade
+      2 px blur 700 ms via View Transitions, Q4 everything morphs / no switcher. Lock
+      file rewritten (R0 = superseded delegated version). docs/index.html rebuilt: one
+      content model, per-variant token blocks, HERO.a–e + PAGE.a–e running orders,
+      View Transitions engine (`?v=x&still` QA, arrow keys), count-up + copy polish kept
+      once-per-session. A–E verified in browser; D light field intensified.
