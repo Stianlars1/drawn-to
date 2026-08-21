@@ -144,6 +144,24 @@ metrics, gallery, instrument and frozen interaction all recur with a different
 device and a different slice, which the set law permits; matrix and marquee are
 new kinds.
 
+## Revision R6 - screen one becomes an instrument (2026-08-21)
+
+Owner on the core sample: "seems a bit too easy representing this skill... i
+like it, in one way, but its not enough". Correct. R5 showed what the library
+CONTAINS and was finished in one glance; it had no mechanism, and a screen
+whose job is to be the proof has to show the thing working.
+
+| # | Axis | Locked | Firmness | Consequence |
+|---|------|--------|----------|-------------|
+| Q7-A | Signature visual, screen 1 | revised (R6): the core **reads itself.** A lit head walks down the column one lamina at a time at a constant cadence, and a readout beside it names the reference it is crossing - index, kind, mode and measured ground, with a swatch of that exact ground under it. An elbow leader keeps the head connected to the readout as it travels. Fifty-one real rows, no invented ones | must-have | the object is now a machine reading its own corpus, not an inventory of it |
+| Q14 | Beat, screen 1 | revised (R6): 240 ms per lamina, so one full pass of the corpus takes 12.2 s. Discrete steps at a constant rate, which is the ambient register; under reduced motion the head holds the first lamina and the readout holds its values | must-have | verified from renders: the readout differs between t=2 s and t=5 s, and two reduced-motion renders at different times are pixel-identical |
+| Q15 | Narrow viewports | The readout is withheld below 720 px, where its 10-12 px mono would fall under the legibility floor. The column, the dimension chain and the foot ledger stay | prefer | an honest degradation, not a squeeze |
+
+Material added in the same pass: a lit top edge per stratum at the lamina's own
+colour times 1.35, which is how stacked material actually reads; a contact
+shadow rather than a glow; and the read head as a gradient band with a white
+leading edge so it is unmistakably a head.
+
 ## Revision R5 - screen one remade (2026-08-21)
 
 Owner on the landing screen: remake it, simple but unique and spectacular,
