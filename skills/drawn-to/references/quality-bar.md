@@ -35,7 +35,7 @@ owner close the tab; the skill's whole job is that they never appear.
   Owner's standing rule: ALWAYS "-", NEVER "—". An em dash is the single
   most reliable tell of generated copy; a hyphen with spaces does the job.
 - **Internal nomenclature in anything a visitor can read.** Family ids
-  (F1-F8), constant ids (C1-C12), axis ids (AX1-15), question ids (Q0, Q1,
+  (F1-F8), constant ids (C1-C12), axis ids (AX1-17), question ids (Q0, Q1,
   QI) and reference slugs (`basit_designs-2089995`) are ledger bookkeeping.
   They must never reach user-visible output: headlines, sub copy, body,
   captions, labels, eyebrows, direction labels, legends, chart keys, swatch
@@ -222,6 +222,54 @@ Failing any of these: redesign the offending cell against the device catalog,
 or drop the illustrations for the whole set and ship it typographically. Never
 ship N of the same device.
 
+## 3c. The first screen - the bar a hero has to clear
+
+§ 1-3b judge any screen. A first screen carries three extra contracts, all
+measured off the five production heroes (`hero-atmosphere.md`,
+`posts/local-production-heroes.md`).
+
+**The field question is answered before anything is drawn.** Does the field own
+the page, or is there no field? There is no third answer, and a container with
+its own background on a first screen is a defect, not a style choice.
+
+**The crop contract - crop the media, never the meaning.**
+
+| May cross the fold | Never crosses the fold |
+|---|---|
+| A product shelf or a field: top edge at 50-65 % of viewport height, cut mid-panel through repeating UI, at least its own frame edge plus 2-3 rows of real content visible | Headline, sub, buttons, the announcement row |
+| The cut reads "this continues" | Any card whose own border or radius is severed - a card is a closed object and the fold is not one of its edges |
+| Measured: Linear shows 410 of 804 px at 1440x900, 170 of 748 at 1280x720 - the top edge is anchored to the copy, so the fraction moves with viewport height | A signature object that only works whole (a lit constellation, a drawn figure) - that is a message, not a shelf |
+
+The test: if a visitor who never scrolls has lost an IDEA, the cut is wrong. If
+they have only lost more of the same thing, the cut is the invitation.
+
+**The light budget - one light logic per first screen.** One direction, one
+source, and the type placed where that light is already dark so no headline
+needs a scrim. Two light stories on one screen (a glow behind the type AND a
+lit object AND a gradient wash) is the same failure as two signature objects.
+
+**The type-as-the-object exemption.** The § 2 headline budget (<= 6 words) is
+lifted to **9 words / 2 lines** when ALL four hold: the type is the ONLY object
+on the screen · it is set at >= 72 px at 1440 with one designed break · the
+measure is 1000-1200 px · there is no eyebrow and at most one short sub line.
+Fail any one and 6 words applies again. A long headline BESIDE an object is
+never the exemption - that is two competing objects (§ 3 item 6).
+
+**Buttons: at most two, and zero is available.** Measured across the five:
+0, 1, 2, 2, 2. Linear's first screen has no button at all - the nav carries the
+action and the product shot carries the argument. Three actions in view is
+already a § 1 tell; two identical-weight pills where one would do is a weaker
+screen than one pill.
+
+**Render tier.** Any first screen carrying a field also passes
+`render-tiers.md` § 6: poster authored first and shipped as the ground · the H1
+is DOM text, never inside the canvas · all four stop conditions wired (off
+screen, hidden tab, reduced motion, save-data) · DPR clamped to 1.25-1.5 on a
+soft field · one full-viewport canvas, never two · no 3D engine loaded for a
+flat field · reduced motion holds a composed frame rather than stopping
+mid-animation. The tier and its reason go in the lock file as the `RENDER:`
+line.
+
 ## 4. The visual QA loop - mandatory before handoff
 
 Judge the render, not the code. Never from a thumbnail.
@@ -257,6 +305,12 @@ Judge the render, not the code. Never from a thumbnail.
    compare it to the claim in its QI row; (c) overlay the set and confirm
    register parity (grid pitch and phase, module size, stroke weight, face
    values, loop length). Any failure is a rebuild, not a tweak.
+5b. **First screen** (any page whose first viewport carries a field or a shelf) -
+   walk § 3c: field-or-no-field, the crop contract at BOTH desktop sizes, one
+   light logic, the headline budget or its exemption in full, button count,
+   and the render-tier list. Then reload with JavaScript disabled and with
+   `prefers-reduced-motion: reduce` emulated: the poster must carry the screen
+   alone in both, and it must be a screen you would have shipped.
 6. **Locks** - every visual choice names a lock; every lock is visible in the
    render.
 6b. **Sameness sweep** (any page with repeated frames - multiple screens OR any

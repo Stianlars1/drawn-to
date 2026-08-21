@@ -69,7 +69,7 @@ Modeled on the refetch.sh Q1-Q25 process; generalized to the whole taste library
 
 ## Question phrasing - the owner must never need the nomenclature
 
-The internal codes (F1-F8, AX1-15, C1-C12, QI, reference slugs) are
+The internal codes (F1-F8, AX1-17, C1-C12, QI, reference slugs) are
 BOOKKEEPING, not interview language. Rules:
 
 - **Ask in plain words.** Lead every question and option with what it looks
@@ -131,6 +131,9 @@ asking and shipping alike.
 | AX13 Page architecture | "Page width, air between sections, and the order of sections" | - |
 | AX14 Nav | "Top bar: plain on the page, floating rounded bar, or bar with a rule?" | Linear vs Raycast vs Vite |
 | AX15 Buttons | "Buttons: pills, squarish, or light-with-ring?" | Linear vs Vercel vs Raycast |
+| AX16a First screen: field | "Does something fill the whole first screen behind the words, or is it empty except for the words and the product?" | - |
+| AX16b First screen: composition | "Which of these first screens are you drawn to, and how much of each?" (five plain descriptions, no brand names) | - |
+| AX17 Render tier | "Should that background be a still, a light drawn layer, or a live one that costs a bit of bundle and battery?" | - |
 | QS | "For this section, which composition?" (2-3 named variants) | - |
 | QI | "For this feature, which illustration idea?" (2-4 concepts) | - |
 | Qf | "Build in phases with check-ins, or straight through?" | - |
@@ -318,6 +321,46 @@ refetch lock) · squarish r6-8, 32/40px (Vercel) · 36px r8 light fill + 2px
 dark ring + white glow (Raycast) · pill-for-marketing vs r8-for-component
 split rides AX3/C8.
 
+**AX16 - The first screen** (any task whose scope includes a hero or a
+one-screen page; `hero-atmosphere.md`, plates in `assets/plates/zone-*.svg`)
+Asked as **two questions in order**, never as a menu of site names.
+
+*16a, binary, asked first:* does something fill the whole first screen behind
+the words, or is the screen empty except for the words and the product? There
+is no third answer. "No field" removes three of the 16b options and is the
+strongest answer whenever the product's own screenshot can carry the page.
+
+*16b, weighted multi-select, only if 16a said there IS a field, or if the
+screen needs a shape either way:* which of these compositions, and in what
+mix -
+- scattered marks across the whole screen, thinning in the middle so the words
+  sit in clear air, and the words are the only object (particle field)
+- one photographic or filmed surface, thrown far out of focus, with the words,
+  the icon and the button sitting straight on it (filmed ground)
+- no background at all: the words at the left edge, and the product itself as a
+  wide shelf underneath that runs off the bottom of the screen (product shelf)
+- broad diagonal shafts of one colour crossing the screen, with the words
+  placed inside the light where it is already dark (light shafts)
+- an almost empty screen with the words small at the left, one glowing object
+  holding the middle, and a short column of text at the right (three zones)
+
+Weights blend the way families do (70/20/10 is a legal answer). The one
+illegal blend is two SPINES at equal weight: centred and left-anchored at
+50/50 is not a composition. Name a production site only in the RATIONALE, or
+when the owner names it first - never as an option label.
+
+**AX17 - Render tier and motion budget** (only if AX16a said there IS a field,
+or any hero object moves; `render-tiers.md`)
+Usually NOT a question: take the lowest tier that holds and state it. Ask only
+when the owner has a constraint the tiers trade against - bundle size, a
+no-JavaScript requirement, an existing 3D asset, a designer-authored Rive or
+Lottie file, or a hard "must work on a five-year-old laptop". Then the question
+is about the trade, in plain words: "this field can be a still image that never
+moves, a lightweight drawn layer, or a live one that costs a bundle and a bit
+of battery - which end do you want?" The answer is recorded as the `RENDER:`
+line in the lock file (tier · what · DPR cap · poster path · stop conditions ·
+the gate that justified the tier).
+
 **Qf - Delivery phasing** (process, asked last, full pages/sites only)
 Phased build with a live checkpoint after each phase (the refetch Q19 choice  - 
 owner's standing preference) · straight through, review at the end.
@@ -383,6 +426,8 @@ status: locking | locked | shipped
 | Q2 | Accent | #3B82F6 | interactive+measured only; green/red semantic |
 | … | | | |
 | QS1 | Hero variant | <recipe name> | anatomy + ingredient consequences |
+| AX16a | First screen: field | field owns the page / no field | container backgrounds forbidden on the hero |
+| AX16b | First screen: composition | 70 three zones / 30 product shelf | zone map, what crosses the fold |
 
 Inherited from blend (not asked): AX2 separation = 1px alpha dividers, …
 Constants enforced: C1-C12 (see drawn-to SKILL.md).
@@ -393,6 +438,10 @@ contain no repeated value - a repeat is a build stop, `quality-bar.md` § 3b):
 
 | Surface | Cell | Verb | Register | Device | Hero object |
 |---|---|---|---|---|---|
+RENDER: <T0-T6> · <what draws the field> · dpr <cap> · poster <path>
+        · stops: io+hidden+rM+saveData · gate: <why this tier>   (render-tiers.md)
+FOLD:   crosses the fold: <media only> · top edge <y / % of viewport>
+        · message intact at 1440×900 and 1280×720             (quality-bar.md § 3c)
 POLISH: applied <list> · gated <list>            (polish-moments.md)
 QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · budgets ✓ · refs compared: <slugs or "text only">   (quality-bar.md)
 ```

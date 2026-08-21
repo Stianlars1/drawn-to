@@ -1,7 +1,7 @@
 ---
 name: drawn-to
 description: >-
-  A design-direction system for coding agents: a measured taste library (52
+  A design-direction system for coding agents: a measured taste library (53
   references reverse-engineered frame by frame into 12 constants and 8 style
   families), a plain-language interview answered with weights instead of forced
   picks, and a lock file every visual decision must serve. Use BEFORE designing
@@ -84,7 +84,20 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    values, and the Field Hero recipe. Read before building any first screen -
    the rest of this corpus is section-scale and will otherwise hand you a
    figure in a box beside a column of copy, which is the one composition none
-   of the five uses.
+   of the five uses. Part two adds the measured plate (all five probed live at
+   1440x900), the zone grammar, the crop contract, the type-as-object
+   exemption, and archetypes as weights; layout diagrams per archetype ship in
+   `assets/plates/zone-*.svg` and the captures themselves in
+   `assets/heroes/`.
+   `references/render-tiers.md` - what actually DRAWS a field: the T0-T6 ladder
+   (still, CSS, SVG, canvas 2D, raw WebGL, three/R3F, prerendered video /
+   Lottie / Rive / Spline), the promotion gates, DPR and fill-rate budgets, the
+   four stop conditions, the poster-first fallback ladder, per-tier recipes for
+   grain, bloom, dithered falloff, particle fields, filmed grounds and light
+   shafts, and the render-tier tells. Read before writing any field, object or
+   background that is not a flat colour - four of the five production heroes
+   ship a canvas or a video, three of them WebGL, and choosing that tier by
+   instinct is how a hero ends up either cheap or janky.
    `references/scroll-scrub.md` - the scroll-scrubbed product-scene pattern
    (registered-property poses, three drivers, sticky-run geometry, mobile
    playbook, fallback ladder); read before building any scrubbed hero or
@@ -125,7 +138,7 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    choreography), `references/graphic-language.md` (UI-fragments, line-art,
    texture, shaders, mock craft), `references/color-type.md` (palettes,
    chroma quarantine, dual-mode, typography).
-7. `references/matrix.md` - index of every reference (52 at last count);
+7. `references/matrix.md` - index of every reference (53 at last count);
    `references/posts/<slug>.md` - per-reference deep dives (look up on demand
    when a lock cites one). Slug convention: citations use author + the first 4
    digits of the post id (7 digits where an author's ids collide, e.g.
@@ -174,7 +187,7 @@ owner's measured taste, and it beats trained-default aesthetics every time.
   evidence, not authority: adopt only after the owner chooses build-on / keep
   parts / scratch in Q0 (`discovery.md` § Trust model + mapping protocol).
   Owner-authored systems are infrastructure by definition.
-- Interview in plain language. The codes (F1-F8, AX1-15, C1-C12, QI, slugs)
+- Interview in plain language. The codes (F1-F8, AX1-17, C1-C12, QI, slugs)
   are ledger bookkeeping and never appear in a question the owner must
   answer - say what it looks like and name a site they know; number
   questions "3 of ~8", not "AX3". A question the owner cannot answer without
@@ -184,7 +197,7 @@ owner's measured taste, and it beats trained-default aesthetics every time.
   protects the owner; this one protects everyone who later reads the page.
   Nothing a visitor can see or a screen reader can speak - headline, sub,
   caption, label, direction label, legend, chart or swatch key, tooltip,
-  footer, alt text, aria-label, SVG text - may contain F1-F8, C1-C12, AX1-15,
+  footer, alt text, aria-label, SVG text - may contain F1-F8, C1-C12, AX1-17,
   Q numbers or reference slugs. When a lock row becomes copy, translate it
   through `question-flow.md` § Plain-language glossary first: the lock says
   "C2", the screen says "zero icon-and-paragraph cards"; the lock says
@@ -229,6 +242,17 @@ owner's measured taste, and it beats trained-default aesthetics every time.
   during visual QA (`quality-bar.md` § 4). Text analyses carry the values;
   the frames carry the density and the quality of line - the two things a
   build most often gets wrong.
+- Render tier is a decision, not a habit: take the LOWEST tier that holds
+  (`render-tiers.md` § 1), write it and its gate into the lock file's `RENDER:`
+  line, author the poster BEFORE the live version, and wire all four stop
+  conditions. A 3D engine loaded for a flat field, an uncapped DPR on a soft
+  field, or a canvas with no poster are ship blockers, not preferences.
+- The zone plates in `assets/plates/` are GEOMETRY, never style. They show where
+  the parts sit, what crosses the fold and where the light comes from, drawn as
+  grey bars and dashed boxes on purpose. A build that resembles a plate has
+  failed. The look comes from the locked blend and the family docs; the captures
+  in `assets/heroes/` show the standard, under the terms in their NOTICE
+  (study the pattern, never reproduce the page).
 - Copy punctuation: ALWAYS "-", NEVER "—" (em dash) in anything the owner
   ships - UI copy, captions, labels, README, docs. This is a standing owner
   rule and a top generated-copy tell (`quality-bar.md` § 1).
@@ -266,6 +290,11 @@ the text analyses.
    zoomed out - 15-30% layers on near-black sit at the visibility threshold
    and die in screenshots/JPEG; hover overlays need the layer beneath dropped
    to ≤5% or occluded, never two mid-luminance layers overprinting.
+4b. Field / first screen (any page with a hero): the `RENDER:` line (tier ·
+   what draws it · DPR cap · poster path · stop conditions · the gate) and the
+   `FOLD:` line (what crosses the fold, top edge, message intact at both
+   desktop sizes). A field shipped without a poster, or a hero whose message is
+   cut by the fold, is reported as unfinished.
 5. References: which family docs / posts backed the choices.
    Illustration sets: each QI row's topology + what its loop asserts + its
    poster frame + its swap-test and read-back results; one register contract

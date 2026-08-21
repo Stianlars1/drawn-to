@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="582" viewBox="0 0 768 582" role="img" aria-label="Layout diagram, geometry only. Zone diagram: filmed out-of-focus hero ground with a small centred stack">
+ <defs><style>
+  .m{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:9px;fill:#8B8E93;letter-spacing:.04em}
+  .mt{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:10.5px;fill:#8B8E93;letter-spacing:.08em}
+  .r{stroke:#8B8E93;stroke-opacity:.5;fill:none;stroke-width:1}
+  .d{stroke:#8B8E93;stroke-opacity:.34;fill:none;stroke-width:1;stroke-dasharray:3 3}
+  .b{fill:#8B8E93;fill-opacity:.55}
+  .bl{fill:#8B8E93;fill-opacity:.26}
+  .a{stroke:#5B8CFF;fill:none;stroke-width:1.25}
+  .af{fill:#5B8CFF;fill-opacity:.9}
+  .w{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:8px;fill:#8B8E93;fill-opacity:.75;letter-spacing:.08em}
+ </style></defs>
+ <text class="mt" x="24" y="18">FILMED GROUND / SMALL CENTRED STACK</text>
+ <text class="m" x="24" y="34">centred spine - the field owns the page - the product enters as a shelf</text>
+ <text class="w" x="744" y="18" text-anchor="end">LAYOUT DIAGRAM - GEOMETRY ONLY</text>
+ <text class="w" x="744" y="32" text-anchor="end">geometry, not style</text>
+ <rect class="d" x="24.0" y="48.0" width="720.0" height="450.0" rx="0"/>
+ <text class="m" x="34.0" y="61.0">ground: video 2560 sq, object-fit cover, + one canvas 2d pass, DPR 2</text>
+ <ellipse class="d" cx="639.0" cy="163.0" rx="65.0" ry="55.0"/>
+ <ellipse class="d" cx="189.0" cy="383.0" rx="105.0" ry="75.0"/>
+ <text class="m" x="579.0" y="102.0">dark mass</text>
+ <text class="m" x="89.0" y="302.0">bright streak</text>
+ <text class="m" x="324.0" y="108.0">real bokeh: blur 56-120, saturate 2.5-4.5</text>
+ <rect class="r" x="361.5" y="124.0" width="45.0" height="45.0" rx="12"/>
+ <text class="m" x="419.0" y="150.5">icon plate 90 - r 24</text>
+ <rect class="b" x="339.5" y="193.0" width="89.0" height="24.0" rx="1"/>
+ <text class="m" x="304.0" y="189.0">H1 64 / 500 - -0.03em - centred - ink #000 ON the field</text>
+ <rect class="bl" x="324.0" y="234.0" width="120.0" height="6.0" rx="1"/>
+ <rect class="b" x="342.0" y="259.0" width="84.0" height="20.0" rx="10.0"/>
+ <text class="m" x="354.0" y="291.0">one pill only</text>
+ <rect class="bl" x="239.0" y="318.0" width="290.0" height="6.0" rx="1"/>
+ <text class="m" x="239.0" y="314.0">logo row, low opacity</text>
+ <rect class="r" x="194.0" y="398.0" width="380.0" height="210.0" rx="8"/>
+ <text class="m" x="204.0" y="413.0">product window - crosses the fold, cut mid-panel</text>
+ <line class="a" x1="24.0" y1="498.0" x2="744.0" y2="498.0"/>
+ <text class="m" x="714.0" y="486.0" text-anchor="end">the cut lands in repeating UI = invitation</text>
+ <rect class="r" x="24" y="48" width="720" height="450"/>
+ <text class="m" x="24" y="568">1440 x 900 - the frame IS the fold</text>
+ <text class="m" x="744" y="568" text-anchor="end">T6 video + T3 canvas</text>
+</svg>

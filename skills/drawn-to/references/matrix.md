@@ -1,4 +1,4 @@
-# Taste matrix - all 52 references
+# Taste matrix - all 53 references
 
 Auto-generated from the repo's `references/_index.json` (per-post deep dives in `posts/<slug>.md`; source media archived in the repo at `references/media/<slug>/` - not shipped with the skill folder).
 
@@ -58,6 +58,8 @@ Auto-generated from the repo's `references/_index.json` (per-post deep dives in 
 | 50 | [marcelkargul-2090509](posts/marcelkargul-2090509406995706108.md) | section-set | light | none | sharp | airy | rich-vector | Kargul Studio CTA: wireframe dome on iso graph paper, soft-gradient faces |
 | 51 | [marcelkargul-1952697](posts/marcelkargul-1952697746894250143.md) | hero | light | sequence | small(2-8) | airy | rich-vector | Chatsheet hero: soft-shaded isometric conveyor, one blue core |
 | 52 | [0xhammermann-2090](posts/0xhammermann-2090450716380831921.md) | feature-cards | light | full-choreography | sharp(0-4) | airy | isometric | Three feature cards, three isometric worlds - a form-maze, two machines transacting, a block city that opens to show the protocol inside |
+
+| 53 | [local-production-heroes](posts/local-production-heroes.md) | hero | mixed | sequence | mixed | airy | shader | Five production first screens measured at 1440x900 - particle field, filmed bokeh, no field at all, WebGL shafts, one emissive object |
 ## Distribution
 
 - **Kind** (first 45): component 14 · section-set 6 · feature-cards 7 · resource 5 · brand 3 · full-page 3 · bento 2 · hero 2 · illustration-set 2 · dashboard 2

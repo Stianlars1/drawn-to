@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="582" viewBox="0 0 768 582" role="img" aria-label="Layout diagram, geometry only. Zone diagram: left-anchored hero with the product as a shelf crossing the fold">
+ <defs><style>
+  .m{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:9px;fill:#8B8E93;letter-spacing:.04em}
+  .mt{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:10.5px;fill:#8B8E93;letter-spacing:.08em}
+  .r{stroke:#8B8E93;stroke-opacity:.5;fill:none;stroke-width:1}
+  .d{stroke:#8B8E93;stroke-opacity:.34;fill:none;stroke-width:1;stroke-dasharray:3 3}
+  .b{fill:#8B8E93;fill-opacity:.55}
+  .bl{fill:#8B8E93;fill-opacity:.26}
+  .a{stroke:#5B8CFF;fill:none;stroke-width:1.25}
+  .af{fill:#5B8CFF;fill-opacity:.9}
+  .w{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:8px;fill:#8B8E93;fill-opacity:.75;letter-spacing:.08em}
+ </style></defs>
+ <text class="mt" x="24" y="18">PRODUCT SHELF / NO FIELD</text>
+ <text class="m" x="24" y="34">left-anchored spine - restraint IS the field - zero buttons</text>
+ <text class="w" x="744" y="18" text-anchor="end">LAYOUT DIAGRAM - GEOMETRY ONLY</text>
+ <text class="w" x="744" y="32" text-anchor="end">geometry, not style</text>
+ <line class="r" x1="24.0" y1="80.0" x2="744.0" y2="80.0"/>
+ <text class="m" x="34.0" y="75.0">nav on one hairline - the only rule on the screen</text>
+ <rect class="b" x="63.0" y="186.0" width="351.5" height="32.0" rx="1"/>
+ <rect class="b" x="63.0" y="226.0" width="310.0" height="32.0" rx="1"/>
+ <text class="m" x="63.0" y="181.0">H1 64 / 510 - -0.022em - lh 1.0 - LEFT at the container edge</text>
+ <rect class="bl" x="64.0" y="266.0" width="252.5" height="12.0" rx="1"/>
+ <rect class="bl" x="584.0" y="266.0" width="120.0" height="12.0" rx="1"/>
+ <line class="d" x1="54.0" y1="279.0" x2="714.0" y2="279.0"/>
+ <text class="m" x="64.0" y="293.0">sub 15 / 400 #8A8F98</text>
+ <text class="m" x="704.0" y="293.0" text-anchor="end">announcement on the SAME baseline</text>
+ <rect class="r" x="24.0" y="293.0" width="720.0" height="265.0" rx="8"/>
+ <rect class="d" x="30.0" y="311.0" width="708.0" height="247.0" rx="8"/>
+ <text class="m" x="39.0" y="308.0">product shelf - top edge y 490 = 54 % of viewport height</text>
+ <text class="m" x="39.0" y="328.0">410 of 804 px visible at 1440x900, 170 of 748 at 1280x720</text>
+ <text class="m" x="39.0" y="398.0">the shelf continues past the frame - only the media is cut, never the message</text>
+ <line class="a" x1="24.0" y1="498.0" x2="744.0" y2="498.0"/>
+ <text class="m" x="714.0" y="486.0" text-anchor="end">no field - no button in the hero</text>
+ <rect class="r" x="24" y="48" width="720" height="450"/>
+ <text class="m" x="24" y="568">1440 x 900 - the frame IS the fold</text>
+ <text class="m" x="744" y="568" text-anchor="end">T0 - nothing is drawn</text>
+</svg>
