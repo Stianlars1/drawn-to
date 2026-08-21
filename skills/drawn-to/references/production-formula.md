@@ -45,6 +45,14 @@ buttons, closing CTA and footer - and to sanity-check any full-page build.
   #867e8e. Isometric dark tiles on grainy purple gradient; hover = tile lifts
   along the iso axis revealing a gradient side face + dashed guide (~0.3s
   ease-out). Mono uppercase labels.
+- **Antigravity (added 2026-08-21, probed at 1440x900)** - bg #FFF, no
+  gradient anywhere. H1 72/450/-0.02em lh 1.0 centred, ink #121317, Google Sans
+  Flex, measure ~1150. Buttons 47px full pill, gap 16: fill #121317 / ghost
+  rgba(183,191,217,.1) + 1px rgba(33,34,38,.06), 17.5/450. The only graphic is
+  a full-viewport WebGL2 particle field at DPR 2, dense at two edges and thin
+  through the middle so the eight-word headline sits in clear air. Proof that a
+  light page needs neither a gradient nor a product shot when the type is the
+  object.
 - **Notion (light outlier)** - bg #fff; container ~1229. H1 96/600/-0.048em
   centered + rotating pastel pill word; H2 54/700; radii 12/8; borders
   rgba(0,0,0,.1); pastel card tints; blue CTA r8; scroll-pinned hero.
@@ -56,7 +64,11 @@ describe how these sites compose their FIRST screen, and that gap produced
 three failed landing screens on 2026-08-21 before it was noticed. Hero-scale
 composition, the optics values that make a field read as real, and the Field
 Hero recipe now live in `hero-atmosphere.md`, read composition-first off
-captures of Antigravity, Codex, Linear, Raycast and Vercel. Read that file
+captures of Antigravity, Codex, Linear, Raycast and Vercel, then re-probed live
+at 1440x900 (part two of that file carries the measured plate, the zone
+grammar and the crop contract). What DRAWS those fields lives in
+`render-tiers.md` - four of the five ship a canvas or a video and three are
+WebGL, which is not a fact any value in this file exposes. Read those two
 before building any first screen; read this one for everything below the fold.
 
 ## The cross-site formula (all seven do this)

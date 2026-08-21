@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="582" viewBox="0 0 768 582" role="img" aria-label="Layout diagram, geometry only. Zone diagram: diagonal light shaft hero with the headline set inside the light">
+ <defs><style>
+  .m{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:9px;fill:#8B8E93;letter-spacing:.04em}
+  .mt{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:10.5px;fill:#8B8E93;letter-spacing:.08em}
+  .r{stroke:#8B8E93;stroke-opacity:.5;fill:none;stroke-width:1}
+  .d{stroke:#8B8E93;stroke-opacity:.34;fill:none;stroke-width:1;stroke-dasharray:3 3}
+  .b{fill:#8B8E93;fill-opacity:.55}
+  .bl{fill:#8B8E93;fill-opacity:.26}
+  .a{stroke:#5B8CFF;fill:none;stroke-width:1.25}
+  .af{fill:#5B8CFF;fill-opacity:.9}
+  .w{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:8px;fill:#8B8E93;fill-opacity:.75;letter-spacing:.08em}
+ </style><clipPath id="fb"><rect x="84.0" y="48.0" width="600.0" height="450.0"/></clipPath><marker id="ah" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="#5B8CFF"/></marker></defs>
+ <text class="mt" x="24" y="18">LIGHT SHAFTS / TYPE INSIDE THE LIGHT</text>
+ <text class="m" x="24" y="34">centred spine - the field owns the page - one hue at full energy</text>
+ <text class="w" x="744" y="18" text-anchor="end">LAYOUT DIAGRAM - GEOMETRY ONLY</text>
+ <text class="w" x="744" y="32" text-anchor="end">geometry, not style</text>
+ <g clip-path="url(#fb)">
+ <path class="d" d="M 174.0 28.0 L 229.0 28.0 L 79.0 518.0 L 24.0 518.0 Z"/>
+ <path class="d" d="M 269.0 28.0 L 324.0 28.0 L 174.0 518.0 L 119.0 518.0 Z"/>
+ <path class="d" d="M 364.0 28.0 L 419.0 28.0 L 269.0 518.0 L 214.0 518.0 Z"/>
+ <path class="d" d="M 459.0 28.0 L 514.0 28.0 L 364.0 518.0 L 309.0 518.0 Z"/>
+ <path class="d" d="M 554.0 28.0 L 609.0 28.0 L 459.0 518.0 L 404.0 518.0 Z"/>
+ <path class="d" d="M 649.0 28.0 L 704.0 28.0 L 554.0 518.0 L 499.0 518.0 Z"/>
+ </g>
+ <rect class="d" x="84.0" y="48.0" width="600.0" height="450.0" rx="0"/>
+ <text class="m" x="90.0" y="61.0">field box 1200 wide on a 1440 viewport - the shafts die before the edges</text>
+ <line class="a" x1="644.0" y1="123.0" x2="549.0" y2="213.0" marker-end="url(#ah)"/>
+ <text class="m" x="644.0" y="114.0" text-anchor="end">one direction ~55 deg, dithered falloff</text>
+ <rect class="b" x="249.0" y="248.0" width="270.0" height="31.0" rx="1"/>
+ <rect class="b" x="274.0" y="288.0" width="220.0" height="31.0" rx="1"/>
+ <text class="m" x="249.0" y="244.0">H1 64 / 600 - lh 1.1 - centred ON the shafts, no scrim</text>
+ <rect class="bl" x="249.0" y="348.0" width="270.0" height="8.0" rx="1"/>
+ <text class="m" x="249.0" y="344.0">sub 18 / 400</text>
+ <rect class="b" x="285.0" y="428.0" width="86.5" height="18.0" rx="9.0"/>
+ <rect class="b" x="379.5" y="428.0" width="103.5" height="18.0" rx="9.0"/>
+ <text class="m" x="249.0" y="457.0">pills 36 - r 8 - ring 0 0 0 2px rgba(0,0,0,.5)</text>
+ <text class="m" x="249.0" y="471.0">+ glow 0 0 14px rgba(255,255,255,.19)</text>
+ <text class="m" x="674.0" y="485.0" text-anchor="end">type placed where the shafts are already dark</text>
+ <rect class="r" x="24" y="48" width="720" height="450"/>
+ <text class="m" x="24" y="568">1440 x 900 - the frame IS the fold</text>
+ <text class="m" x="744" y="568" text-anchor="end">T4 raw WebGL, container width</text>
+</svg>

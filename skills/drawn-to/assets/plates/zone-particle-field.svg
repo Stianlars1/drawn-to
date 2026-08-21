@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="582" viewBox="0 0 768 582" role="img" aria-label="Layout diagram, geometry only. Zone diagram: particle field hero where the headline is the only object">
+ <defs><style>
+  .m{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:9px;fill:#8B8E93;letter-spacing:.04em}
+  .mt{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:10.5px;fill:#8B8E93;letter-spacing:.08em}
+  .r{stroke:#8B8E93;stroke-opacity:.5;fill:none;stroke-width:1}
+  .d{stroke:#8B8E93;stroke-opacity:.34;fill:none;stroke-width:1;stroke-dasharray:3 3}
+  .b{fill:#8B8E93;fill-opacity:.55}
+  .bl{fill:#8B8E93;fill-opacity:.26}
+  .a{stroke:#5B8CFF;fill:none;stroke-width:1.25}
+  .af{fill:#5B8CFF;fill-opacity:.9}
+  .w{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:8px;fill:#8B8E93;fill-opacity:.75;letter-spacing:.08em}
+ </style></defs>
+ <text class="mt" x="24" y="18">PARTICLE FIELD / TYPE AS THE OBJECT</text>
+ <text class="m" x="24" y="34">centred spine - the field owns the page - no product, no object</text>
+ <text class="w" x="744" y="18" text-anchor="end">LAYOUT DIAGRAM - GEOMETRY ONLY</text>
+ <text class="w" x="744" y="32" text-anchor="end">geometry, not style</text>
+ <rect class="bl" x="594.9" y="90.4" width="2" height="5" rx="1" transform="rotate(16 594.9 90.4)"/>
+ <rect class="bl" x="731.2" y="482.1" width="2" height="5" rx="1" transform="rotate(111 731.2 482.1)"/>
+ <rect class="bl" x="137.4" y="54.8" width="2" height="5" rx="1" transform="rotate(11 137.4 54.8)"/>
+ <rect class="bl" x="160.9" y="156.9" width="2" height="5" rx="1" transform="rotate(84 160.9 156.9)"/>
+ <rect class="bl" x="341.2" y="427.1" width="2" height="5" rx="1" transform="rotate(115 341.2 427.1)"/>
+ <rect class="bl" x="224.3" y="496.9" width="2" height="5" rx="1" transform="rotate(151 224.3 496.9)"/>
+ <rect class="bl" x="232.1" y="79.6" width="2" height="5" rx="1" transform="rotate(72 232.1 79.6)"/>
+ <rect class="bl" x="634.1" y="48.2" width="2" height="5" rx="1" transform="rotate(164 634.1 48.2)"/>
+ <rect class="bl" x="362.4" y="489.2" width="2" height="5" rx="1" transform="rotate(13 362.4 489.2)"/>
+ <rect class="bl" x="477.2" y="398.3" width="2" height="5" rx="1" transform="rotate(16 477.2 398.3)"/>
+ <rect class="bl" x="263.5" y="481.8" width="2" height="5" rx="1" transform="rotate(21 263.5 481.8)"/>
+ <rect class="bl" x="201.4" y="93.5" width="2" height="5" rx="1" transform="rotate(143 201.4 93.5)"/>
+ <rect class="bl" x="151.9" y="299.7" width="2" height="5" rx="1" transform="rotate(34 151.9 299.7)"/>
+ <rect class="bl" x="551.0" y="106.9" width="2" height="5" rx="1" transform="rotate(21 551.0 106.9)"/>
+ <rect class="bl" x="326.9" y="143.8" width="2" height="5" rx="1" transform="rotate(175 326.9 143.8)"/>
+ <rect class="bl" x="260.8" y="181.3" width="2" height="5" rx="1" transform="rotate(16 260.8 181.3)"/>
+ <rect class="bl" x="612.8" y="160.3" width="2" height="5" rx="1" transform="rotate(133 612.8 160.3)"/>
+ <rect class="bl" x="659.2" y="319.6" width="2" height="5" rx="1" transform="rotate(19 659.2 319.6)"/>
+ <rect class="bl" x="51.9" y="481.2" width="2" height="5" rx="1" transform="rotate(127 51.9 481.2)"/>
+ <rect class="bl" x="73.5" y="150.8" width="2" height="5" rx="1" transform="rotate(153 73.5 150.8)"/>
+ <rect class="bl" x="170.9" y="55.5" width="2" height="5" rx="1" transform="rotate(80 170.9 55.5)"/>
+ <rect class="bl" x="67.5" y="127.3" width="2" height="5" rx="1" transform="rotate(103 67.5 127.3)"/>
+ <rect class="bl" x="730.0" y="343.6" width="2" height="5" rx="1" transform="rotate(105 730.0 343.6)"/>
+ <rect class="bl" x="125.0" y="63.8" width="2" height="5" rx="1" transform="rotate(164 125.0 63.8)"/>
+ <rect class="bl" x="528.7" y="481.2" width="2" height="5" rx="1" transform="rotate(115 528.7 481.2)"/>
+ <rect class="bl" x="743.5" y="81.9" width="2" height="5" rx="1" transform="rotate(133 743.5 81.9)"/>
+ <rect class="bl" x="672.1" y="379.7" width="2" height="5" rx="1" transform="rotate(143 672.1 379.7)"/>
+ <rect class="bl" x="682.8" y="206.3" width="2" height="5" rx="1" transform="rotate(162 682.8 206.3)"/>
+ <rect class="bl" x="645.7" y="305.8" width="2" height="5" rx="1" transform="rotate(69 645.7 305.8)"/>
+ <rect class="bl" x="484.4" y="495.0" width="2" height="5" rx="1" transform="rotate(131 484.4 495.0)"/>
+ <rect class="bl" x="341.2" y="425.3" width="2" height="5" rx="1" transform="rotate(135 341.2 425.3)"/>
+ <rect class="bl" x="45.4" y="318.6" width="2" height="5" rx="1" transform="rotate(41 45.4 318.6)"/>
+ <rect class="bl" x="686.7" y="163.1" width="2" height="5" rx="1" transform="rotate(54 686.7 163.1)"/>
+ <rect class="bl" x="512.3" y="139.2" width="2" height="5" rx="1" transform="rotate(163 512.3 139.2)"/>
+ <rect class="bl" x="657.8" y="221.0" width="2" height="5" rx="1" transform="rotate(57 657.8 221.0)"/>
+ <rect class="bl" x="223.3" y="124.1" width="2" height="5" rx="1" transform="rotate(50 223.3 124.1)"/>
+ <rect class="bl" x="731.1" y="251.6" width="2" height="5" rx="1" transform="rotate(6 731.1 251.6)"/>
+ <rect class="bl" x="652.4" y="66.7" width="2" height="5" rx="1" transform="rotate(103 652.4 66.7)"/>
+ <rect class="bl" x="246.5" y="404.2" width="2" height="5" rx="1" transform="rotate(24 246.5 404.2)"/>
+ <rect class="bl" x="351.5" y="59.1" width="2" height="5" rx="1" transform="rotate(43 351.5 59.1)"/>
+ <rect class="bl" x="125.4" y="69.1" width="2" height="5" rx="1" transform="rotate(80 125.4 69.1)"/>
+ <rect class="bl" x="714.1" y="356.0" width="2" height="5" rx="1" transform="rotate(86 714.1 356.0)"/>
+ <rect class="bl" x="152.7" y="52.8" width="2" height="5" rx="1" transform="rotate(129 152.7 52.8)"/>
+ <rect class="bl" x="153.0" y="170.6" width="2" height="5" rx="1" transform="rotate(126 153.0 170.6)"/>
+ <rect class="bl" x="86.8" y="467.7" width="2" height="5" rx="1" transform="rotate(23 86.8 467.7)"/>
+ <rect class="bl" x="597.7" y="472.9" width="2" height="5" rx="1" transform="rotate(117 597.7 472.9)"/>
+ <rect class="bl" x="672.0" y="489.2" width="2" height="5" rx="1" transform="rotate(97 672.0 489.2)"/>
+ <rect class="bl" x="640.2" y="204.8" width="2" height="5" rx="1" transform="rotate(79 640.2 204.8)"/>
+ <rect class="bl" x="44.5" y="412.1" width="2" height="5" rx="1" transform="rotate(144 44.5 412.1)"/>
+ <rect class="bl" x="125.2" y="114.9" width="2" height="5" rx="1" transform="rotate(130 125.2 114.9)"/>
+ <rect class="bl" x="378.7" y="475.1" width="2" height="5" rx="1" transform="rotate(40 378.7 475.1)"/>
+ <rect class="bl" x="632.6" y="453.2" width="2" height="5" rx="1" transform="rotate(153 632.6 453.2)"/>
+ <rect class="bl" x="721.3" y="283.9" width="2" height="5" rx="1" transform="rotate(36 721.3 283.9)"/>
+ <rect class="bl" x="44.0" y="484.2" width="2" height="5" rx="1" transform="rotate(72 44.0 484.2)"/>
+ <rect class="bl" x="521.5" y="77.7" width="2" height="5" rx="1" transform="rotate(74 521.5 77.7)"/>
+ <rect class="bl" x="712.9" y="463.5" width="2" height="5" rx="1" transform="rotate(85 712.9 463.5)"/>
+ <rect class="bl" x="672.4" y="262.4" width="2" height="5" rx="1" transform="rotate(34 672.4 262.4)"/>
+ <rect class="bl" x="468.9" y="464.4" width="2" height="5" rx="1" transform="rotate(140 468.9 464.4)"/>
+ <rect class="bl" x="40.4" y="135.3" width="2" height="5" rx="1" transform="rotate(124 40.4 135.3)"/>
+ <rect class="bl" x="99.5" y="376.9" width="2" height="5" rx="1" transform="rotate(92 99.5 376.9)"/>
+ <rect class="bl" x="405.1" y="119.9" width="2" height="5" rx="1" transform="rotate(114 405.1 119.9)"/>
+ <rect class="bl" x="464.4" y="433.5" width="2" height="5" rx="1" transform="rotate(133 464.4 433.5)"/>
+ <rect class="bl" x="607.6" y="454.2" width="2" height="5" rx="1" transform="rotate(57 607.6 454.2)"/>
+ <rect class="bl" x="663.0" y="108.3" width="2" height="5" rx="1" transform="rotate(131 663.0 108.3)"/>
+ <rect class="bl" x="327.6" y="403.5" width="2" height="5" rx="1" transform="rotate(73 327.6 403.5)"/>
+ <rect class="bl" x="517.4" y="56.0" width="2" height="5" rx="1" transform="rotate(123 517.4 56.0)"/>
+ <rect class="bl" x="680.2" y="483.8" width="2" height="5" rx="1" transform="rotate(91 680.2 483.8)"/>
+ <rect class="bl" x="160.1" y="79.7" width="2" height="5" rx="1" transform="rotate(7 160.1 79.7)"/>
+ <rect class="bl" x="129.5" y="131.0" width="2" height="5" rx="1" transform="rotate(151 129.5 131.0)"/>
+ <rect class="bl" x="737.0" y="465.1" width="2" height="5" rx="1" transform="rotate(11 737.0 465.1)"/>
+ <rect class="bl" x="709.1" y="255.9" width="2" height="5" rx="1" transform="rotate(59 709.1 255.9)"/>
+ <rect class="bl" x="456.7" y="54.0" width="2" height="5" rx="1" transform="rotate(152 456.7 54.0)"/>
+ <rect class="bl" x="315.8" y="135.8" width="2" height="5" rx="1" transform="rotate(92 315.8 135.8)"/>
+ <rect class="bl" x="35.1" y="449.9" width="2" height="5" rx="1" transform="rotate(127 35.1 449.9)"/>
+ <rect class="bl" x="643.7" y="331.2" width="2" height="5" rx="1" transform="rotate(108 643.7 331.2)"/>
+ <rect class="bl" x="387.1" y="490.2" width="2" height="5" rx="1" transform="rotate(46 387.1 490.2)"/>
+ <rect class="bl" x="680.1" y="383.0" width="2" height="5" rx="1" transform="rotate(147 680.1 383.0)"/>
+ <rect class="bl" x="191.1" y="473.1" width="2" height="5" rx="1" transform="rotate(61 191.1 473.1)"/>
+ <rect class="bl" x="304.5" y="497.9" width="2" height="5" rx="1" transform="rotate(126 304.5 497.9)"/>
+ <rect class="bl" x="572.5" y="489.0" width="2" height="5" rx="1" transform="rotate(111 572.5 489.0)"/>
+ <rect class="bl" x="60.3" y="136.0" width="2" height="5" rx="1" transform="rotate(18 60.3 136.0)"/>
+ <rect class="bl" x="204.6" y="455.5" width="2" height="5" rx="1" transform="rotate(91 204.6 455.5)"/>
+ <rect class="bl" x="483.4" y="412.3" width="2" height="5" rx="1" transform="rotate(108 483.4 412.3)"/>
+ <rect class="bl" x="139.2" y="260.3" width="2" height="5" rx="1" transform="rotate(89 139.2 260.3)"/>
+ <rect class="bl" x="237.1" y="54.3" width="2" height="5" rx="1" transform="rotate(8 237.1 54.3)"/>
+ <rect class="bl" x="136.7" y="387.6" width="2" height="5" rx="1" transform="rotate(162 136.7 387.6)"/>
+ <rect class="bl" x="61.5" y="285.6" width="2" height="5" rx="1" transform="rotate(80 61.5 285.6)"/>
+ <rect class="bl" x="406.2" y="496.9" width="2" height="5" rx="1" transform="rotate(132 406.2 496.9)"/>
+ <rect class="bl" x="683.3" y="443.4" width="2" height="5" rx="1" transform="rotate(11 683.3 443.4)"/>
+ <rect class="bl" x="97.8" y="291.7" width="2" height="5" rx="1" transform="rotate(16 97.8 291.7)"/>
+ <rect class="bl" x="77.5" y="101.9" width="2" height="5" rx="1" transform="rotate(112 77.5 101.9)"/>
+ <rect class="bl" x="209.8" y="412.4" width="2" height="5" rx="1" transform="rotate(118 209.8 412.4)"/>
+ <rect class="bl" x="736.2" y="194.4" width="2" height="5" rx="1" transform="rotate(134 736.2 194.4)"/>
+ <rect class="bl" x="687.0" y="240.4" width="2" height="5" rx="1" transform="rotate(17 687.0 240.4)"/>
+ <rect class="bl" x="654.1" y="83.3" width="2" height="5" rx="1" transform="rotate(102 654.1 83.3)"/>
+ <rect class="bl" x="582.4" y="82.2" width="2" height="5" rx="1" transform="rotate(119 582.4 82.2)"/>
+ <rect class="bl" x="82.8" y="184.7" width="2" height="5" rx="1" transform="rotate(125 82.8 184.7)"/>
+ <rect class="bl" x="227.7" y="112.3" width="2" height="5" rx="1" transform="rotate(131 227.7 112.3)"/>
+ <rect class="bl" x="697.0" y="450.6" width="2" height="5" rx="1" transform="rotate(65 697.0 450.6)"/>
+ <rect class="bl" x="658.2" y="174.7" width="2" height="5" rx="1" transform="rotate(93 658.2 174.7)"/>
+ <rect class="bl" x="492.9" y="409.9" width="2" height="5" rx="1" transform="rotate(98 492.9 409.9)"/>
+ <rect class="bl" x="591.4" y="85.8" width="2" height="5" rx="1" transform="rotate(133 591.4 85.8)"/>
+ <rect class="bl" x="671.3" y="86.1" width="2" height="5" rx="1" transform="rotate(26 671.3 86.1)"/>
+ <rect class="bl" x="721.2" y="350.6" width="2" height="5" rx="1" transform="rotate(97 721.2 350.6)"/>
+ <rect class="bl" x="663.8" y="479.0" width="2" height="5" rx="1" transform="rotate(94 663.8 479.0)"/>
+ <rect class="bl" x="535.3" y="409.0" width="2" height="5" rx="1" transform="rotate(76 535.3 409.0)"/>
+ <rect class="bl" x="294.4" y="123.4" width="2" height="5" rx="1" transform="rotate(76 294.4 123.4)"/>
+ <rect class="bl" x="234.3" y="484.4" width="2" height="5" rx="1" transform="rotate(56 234.3 484.4)"/>
+ <rect class="bl" x="153.2" y="76.1" width="2" height="5" rx="1" transform="rotate(105 153.2 76.1)"/>
+ <rect class="bl" x="678.7" y="64.4" width="2" height="5" rx="1" transform="rotate(33 678.7 64.4)"/>
+ <rect class="bl" x="452.2" y="148.8" width="2" height="5" rx="1" transform="rotate(51 452.2 148.8)"/>
+ <rect class="bl" x="148.2" y="388.9" width="2" height="5" rx="1" transform="rotate(99 148.2 388.9)"/>
+ <rect class="bl" x="662.9" y="459.4" width="2" height="5" rx="1" transform="rotate(99 662.9 459.4)"/>
+ <rect class="bl" x="713.1" y="265.2" width="2" height="5" rx="1" transform="rotate(9 713.1 265.2)"/>
+ <rect class="bl" x="706.2" y="408.6" width="2" height="5" rx="1" transform="rotate(95 706.2 408.6)"/>
+ <rect class="bl" x="497.4" y="154.9" width="2" height="5" rx="1" transform="rotate(85 497.4 154.9)"/>
+ <rect class="bl" x="460.4" y="118.8" width="2" height="5" rx="1" transform="rotate(58 460.4 118.8)"/>
+ <rect class="bl" x="210.8" y="439.2" width="2" height="5" rx="1" transform="rotate(115 210.8 439.2)"/>
+ <rect class="bl" x="739.0" y="167.9" width="2" height="5" rx="1" transform="rotate(27 739.0 167.9)"/>
+ <rect class="bl" x="578.7" y="48.6" width="2" height="5" rx="1" transform="rotate(152 578.7 48.6)"/>
+ <rect class="bl" x="615.9" y="85.1" width="2" height="5" rx="1" transform="rotate(129 615.9 85.1)"/>
+ <rect class="bl" x="94.0" y="264.0" width="2" height="5" rx="1" transform="rotate(172 94.0 264.0)"/>
+ <rect class="bl" x="446.4" y="433.8" width="2" height="5" rx="1" transform="rotate(142 446.4 433.8)"/>
+ <rect class="bl" x="324.2" y="460.5" width="2" height="5" rx="1" transform="rotate(149 324.2 460.5)"/>
+ <rect class="bl" x="137.4" y="422.4" width="2" height="5" rx="1" transform="rotate(56 137.4 422.4)"/>
+ <rect class="bl" x="78.7" y="185.6" width="2" height="5" rx="1" transform="rotate(129 78.7 185.6)"/>
+ <rect class="bl" x="621.4" y="342.3" width="2" height="5" rx="1" transform="rotate(68 621.4 342.3)"/>
+ <rect class="bl" x="353.8" y="52.7" width="2" height="5" rx="1" transform="rotate(144 353.8 52.7)"/>
+ <rect class="bl" x="261.2" y="473.3" width="2" height="5" rx="1" transform="rotate(130 261.2 473.3)"/>
+ <rect class="bl" x="262.8" y="420.1" width="2" height="5" rx="1" transform="rotate(25 262.8 420.1)"/>
+ <rect class="bl" x="92.0" y="353.0" width="2" height="5" rx="1" transform="rotate(32 92.0 353.0)"/>
+ <rect class="bl" x="88.9" y="150.0" width="2" height="5" rx="1" transform="rotate(22 88.9 150.0)"/>
+ <rect class="bl" x="576.1" y="417.5" width="2" height="5" rx="1" transform="rotate(60 576.1 417.5)"/>
+ <rect class="bl" x="320.7" y="54.9" width="2" height="5" rx="1" transform="rotate(126 320.7 54.9)"/>
+ <rect class="bl" x="731.0" y="403.4" width="2" height="5" rx="1" transform="rotate(110 731.0 403.4)"/>
+ <rect class="bl" x="37.3" y="197.0" width="2" height="5" rx="1" transform="rotate(117 37.3 197.0)"/>
+ <rect class="bl" x="100.5" y="217.9" width="2" height="5" rx="1" transform="rotate(142 100.5 217.9)"/>
+ <rect class="bl" x="618.1" y="323.1" width="2" height="5" rx="1" transform="rotate(138 618.1 323.1)"/>
+ <rect class="bl" x="674.2" y="294.7" width="2" height="5" rx="1" transform="rotate(90 674.2 294.7)"/>
+ <rect class="bl" x="166.0" y="473.2" width="2" height="5" rx="1" transform="rotate(36 166.0 473.2)"/>
+ <rect class="bl" x="83.9" y="158.1" width="2" height="5" rx="1" transform="rotate(125 83.9 158.1)"/>
+ <rect class="bl" x="261.0" y="466.1" width="2" height="5" rx="1" transform="rotate(83 261.0 466.1)"/>
+ <rect class="bl" x="113.3" y="486.1" width="2" height="5" rx="1" transform="rotate(163 113.3 486.1)"/>
+ <rect class="bl" x="700.4" y="344.3" width="2" height="5" rx="1" transform="rotate(121 700.4 344.3)"/>
+ <rect class="bl" x="602.7" y="55.4" width="2" height="5" rx="1" transform="rotate(84 602.7 55.4)"/>
+ <rect class="bl" x="127.0" y="221.9" width="2" height="5" rx="1" transform="rotate(31 127.0 221.9)"/>
+ <rect class="bl" x="627.5" y="432.8" width="2" height="5" rx="1" transform="rotate(78 627.5 432.8)"/>
+ <rect class="bl" x="431.5" y="455.4" width="2" height="5" rx="1" transform="rotate(95 431.5 455.4)"/>
+ <rect class="bl" x="335.2" y="454.9" width="2" height="5" rx="1" transform="rotate(10 335.2 454.9)"/>
+ <rect class="bl" x="546.4" y="453.1" width="2" height="5" rx="1" transform="rotate(108 546.4 453.1)"/>
+ <rect class="bl" x="74.3" y="104.0" width="2" height="5" rx="1" transform="rotate(90 74.3 104.0)"/>
+ <rect class="bl" x="309.6" y="71.4" width="2" height="5" rx="1" transform="rotate(95 309.6 71.4)"/>
+ <rect class="bl" x="719.9" y="347.6" width="2" height="5" rx="1" transform="rotate(76 719.9 347.6)"/>
+ <rect class="bl" x="432.1" y="454.5" width="2" height="5" rx="1" transform="rotate(143 432.1 454.5)"/>
+ <rect class="bl" x="24.4" y="157.8" width="2" height="5" rx="1" transform="rotate(58 24.4 157.8)"/>
+ <rect class="bl" x="69.1" y="450.8" width="2" height="5" rx="1" transform="rotate(72 69.1 450.8)"/>
+ <rect class="bl" x="46.4" y="452.3" width="2" height="5" rx="1" transform="rotate(90 46.4 452.3)"/>
+ <rect class="bl" x="696.4" y="487.8" width="2" height="5" rx="1" transform="rotate(37 696.4 487.8)"/>
+ <rect class="bl" x="164.8" y="425.1" width="2" height="5" rx="1" transform="rotate(85 164.8 425.1)"/>
+ <rect class="bl" x="657.7" y="70.5" width="2" height="5" rx="1" transform="rotate(131 657.7 70.5)"/>
+ <rect class="bl" x="699.2" y="248.3" width="2" height="5" rx="1" transform="rotate(40 699.2 248.3)"/>
+ <rect class="bl" x="660.8" y="313.5" width="2" height="5" rx="1" transform="rotate(54 660.8 313.5)"/>
+ <rect class="bl" x="691.3" y="348.2" width="2" height="5" rx="1" transform="rotate(115 691.3 348.2)"/>
+ <rect class="bl" x="88.8" y="490.4" width="2" height="5" rx="1" transform="rotate(95 88.8 490.4)"/>
+ <rect class="bl" x="406.2" y="68.4" width="2" height="5" rx="1" transform="rotate(51 406.2 68.4)"/>
+ <rect class="bl" x="204.7" y="409.4" width="2" height="5" rx="1" transform="rotate(51 204.7 409.4)"/>
+ <rect class="bl" x="568.1" y="158.7" width="2" height="5" rx="1" transform="rotate(99 568.1 158.7)"/>
+ <rect class="bl" x="48.2" y="255.7" width="2" height="5" rx="1" transform="rotate(69 48.2 255.7)"/>
+ <rect class="bl" x="693.1" y="273.0" width="2" height="5" rx="1" transform="rotate(100 693.1 273.0)"/>
+ <rect class="bl" x="632.7" y="355.9" width="2" height="5" rx="1" transform="rotate(171 632.7 355.9)"/>
+ <rect class="bl" x="149.2" y="398.8" width="2" height="5" rx="1" transform="rotate(109 149.2 398.8)"/>
+ <rect class="bl" x="590.3" y="404.0" width="2" height="5" rx="1" transform="rotate(88 590.3 404.0)"/>
+ <rect class="bl" x="49.4" y="316.6" width="2" height="5" rx="1" transform="rotate(103 49.4 316.6)"/>
+ <rect class="bl" x="652.5" y="129.0" width="2" height="5" rx="1" transform="rotate(3 652.5 129.0)"/>
+ <rect class="bl" x="213.3" y="407.3" width="2" height="5" rx="1" transform="rotate(163 213.3 407.3)"/>
+ <rect class="bl" x="195.3" y="113.8" width="2" height="5" rx="1" transform="rotate(8 195.3 113.8)"/>
+ <rect class="bl" x="614.8" y="125.2" width="2" height="5" rx="1" transform="rotate(29 614.8 125.2)"/>
+ <rect class="bl" x="68.0" y="232.8" width="2" height="5" rx="1" transform="rotate(39 68.0 232.8)"/>
+ <rect class="bl" x="722.8" y="67.0" width="2" height="5" rx="1" transform="rotate(137 722.8 67.0)"/>
+ <rect class="bl" x="734.1" y="113.1" width="2" height="5" rx="1" transform="rotate(134 734.1 113.1)"/>
+ <rect class="bl" x="52.2" y="156.3" width="2" height="5" rx="1" transform="rotate(25 52.2 156.3)"/>
+ <rect class="bl" x="573.6" y="378.3" width="2" height="5" rx="1" transform="rotate(46 573.6 378.3)"/>
+ <rect class="bl" x="695.4" y="211.8" width="2" height="5" rx="1" transform="rotate(177 695.4 211.8)"/>
+ <rect class="bl" x="463.8" y="65.9" width="2" height="5" rx="1" transform="rotate(117 463.8 65.9)"/>
+ <rect class="bl" x="66.1" y="202.4" width="2" height="5" rx="1" transform="rotate(156 66.1 202.4)"/>
+ <rect class="bl" x="449.3" y="446.9" width="2" height="5" rx="1" transform="rotate(71 449.3 446.9)"/>
+ <rect class="bl" x="419.7" y="121.7" width="2" height="5" rx="1" transform="rotate(39 419.7 121.7)"/>
+ <rect class="bl" x="739.2" y="353.6" width="2" height="5" rx="1" transform="rotate(37 739.2 353.6)"/>
+ <rect class="bl" x="299.7" y="80.8" width="2" height="5" rx="1" transform="rotate(65 299.7 80.8)"/>
+ <rect class="bl" x="221.7" y="56.4" width="2" height="5" rx="1" transform="rotate(47 221.7 56.4)"/>
+ <rect class="bl" x="306.9" y="463.6" width="2" height="5" rx="1" transform="rotate(48 306.9 463.6)"/>
+ <rect class="bl" x="677.1" y="57.2" width="2" height="5" rx="1" transform="rotate(69 677.1 57.2)"/>
+ <rect class="bl" x="83.9" y="445.1" width="2" height="5" rx="1" transform="rotate(139 83.9 445.1)"/>
+ <rect class="bl" x="397.9" y="72.7" width="2" height="5" rx="1" transform="rotate(43 397.9 72.7)"/>
+ <rect class="bl" x="53.4" y="115.9" width="2" height="5" rx="1" transform="rotate(6 53.4 115.9)"/>
+ <rect class="bl" x="121.9" y="366.0" width="2" height="5" rx="1" transform="rotate(131 121.9 366.0)"/>
+ <rect class="bl" x="503.6" y="114.2" width="2" height="5" rx="1" transform="rotate(50 503.6 114.2)"/>
+ <rect class="bl" x="647.5" y="149.7" width="2" height="5" rx="1" transform="rotate(62 647.5 149.7)"/>
+ <rect class="bl" x="179.3" y="66.3" width="2" height="5" rx="1" transform="rotate(113 179.3 66.3)"/>
+ <rect class="bl" x="711.7" y="438.8" width="2" height="5" rx="1" transform="rotate(114 711.7 438.8)"/>
+ <rect class="bl" x="88.7" y="240.5" width="2" height="5" rx="1" transform="rotate(11 88.7 240.5)"/>
+ <rect class="bl" x="225.5" y="119.4" width="2" height="5" rx="1" transform="rotate(86 225.5 119.4)"/>
+ <rect class="bl" x="144.0" y="347.3" width="2" height="5" rx="1" transform="rotate(17 144.0 347.3)"/>
+ <rect class="bl" x="528.1" y="58.4" width="2" height="5" rx="1" transform="rotate(66 528.1 58.4)"/>
+ <rect class="bl" x="69.3" y="230.0" width="2" height="5" rx="1" transform="rotate(89 69.3 230.0)"/>
+ <rect class="bl" x="206.4" y="58.6" width="2" height="5" rx="1" transform="rotate(161 206.4 58.6)"/>
+ <rect class="bl" x="711.4" y="211.2" width="2" height="5" rx="1" transform="rotate(170 711.4 211.2)"/>
+ <rect class="bl" x="621.3" y="443.9" width="2" height="5" rx="1" transform="rotate(164 621.3 443.9)"/>
+ <rect class="bl" x="51.5" y="109.1" width="2" height="5" rx="1" transform="rotate(56 51.5 109.1)"/>
+ <rect class="bl" x="283.5" y="487.6" width="2" height="5" rx="1" transform="rotate(35 283.5 487.6)"/>
+ <rect class="bl" x="24.7" y="292.7" width="2" height="5" rx="1" transform="rotate(43 24.7 292.7)"/>
+ <rect class="bl" x="721.6" y="198.1" width="2" height="5" rx="1" transform="rotate(160 721.6 198.1)"/>
+ <rect class="bl" x="518.3" y="481.8" width="2" height="5" rx="1" transform="rotate(29 518.3 481.8)"/>
+ <rect class="bl" x="408.5" y="154.7" width="2" height="5" rx="1" transform="rotate(58 408.5 154.7)"/>
+ <rect class="bl" x="152.0" y="279.2" width="2" height="5" rx="1" transform="rotate(11 152.0 279.2)"/>
+ <rect class="bl" x="73.4" y="94.0" width="2" height="5" rx="1" transform="rotate(20 73.4 94.0)"/>
+ <rect class="bl" x="62.5" y="162.3" width="2" height="5" rx="1" transform="rotate(143 62.5 162.3)"/>
+ <rect class="bl" x="114.2" y="217.6" width="2" height="5" rx="1" transform="rotate(42 114.2 217.6)"/>
+ <rect class="bl" x="156.9" y="54.2" width="2" height="5" rx="1" transform="rotate(169 156.9 54.2)"/>
+ <rect class="bl" x="722.7" y="108.2" width="2" height="5" rx="1" transform="rotate(75 722.7 108.2)"/>
+ <rect class="bl" x="735.9" y="69.9" width="2" height="5" rx="1" transform="rotate(21 735.9 69.9)"/>
+ <rect class="d" x="154.0" y="188.0" width="460.0" height="190.0" rx="0"/>
+ <text class="m" x="159.0" y="184.0">the field thins here so the type sits in clear air</text>
+ <rect class="bl" x="354.0" y="198.0" width="60.0" height="8.0" rx="1"/>
+ <rect class="b" x="194.0" y="218.0" width="380.0" height="30.0" rx="1"/>
+ <rect class="b" x="224.0" y="258.0" width="320.0" height="30.0" rx="1"/>
+ <rect class="b" x="304.0" y="318.0" width="90.0" height="23.5" rx="11.8"/>
+ <rect class="d" x="404.0" y="318.0" width="75.0" height="23.5" rx="11.8"/>
+ <text class="m" x="194.0" y="214.0">H1 72 / 450 - -0.02em - lh 1.0 - measure ~1150, centred</text>
+ <text class="m" x="194.0" y="356.0">8 words legal here: the type is the ONLY object</text>
+ <text class="m" x="54.0" y="463.0">field: WebGL2, full viewport, DPR 2.0</text>
+ <text class="m" x="54.0" y="478.0">marks 2-10 px, random rotation, 0.5-2 % coverage</text>
+ <text class="m" x="714.0" y="463.0" text-anchor="end">density highest at two edges</text>
+ <text class="m" x="714.0" y="478.0" text-anchor="end">ambient drift: linear, constant velocity</text>
+ <rect class="r" x="24" y="48" width="720" height="450"/>
+ <text class="m" x="24" y="568">1440 x 900 - the frame IS the fold</text>
+ <text class="m" x="744" y="568" text-anchor="end">T4 raw WebGL</text>
+</svg>

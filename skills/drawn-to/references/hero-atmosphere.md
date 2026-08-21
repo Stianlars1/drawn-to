@@ -15,6 +15,25 @@ That composition is the one thing none of the five do.
 Media: `references/media/local-production-heroes/` (owner's own captures at
 1440-class widths; gitignored like the rest of the archive).
 
+**Plates that ship with the skill** (no media archive required):
+
+- `assets/plates/zone-*.svg` - own CC0 **layout diagrams**, one per archetype:
+  `zone-particle-field` · `zone-filmed-ground` · `zone-product-shelf` ·
+  `zone-light-shafts` · `zone-three-zone`. Each draws the viewport at
+  1440 x 900, the zones, the baselines, the light direction, what crosses the
+  fold, and the measured values as redline labels. Open the plate before
+  composing; it is the geometry the prose below describes.
+  **They are geometry, never style.** Every plate is stamped "layout diagram -
+  geometry only" for a reason: grey bars stand in for type, dashed boxes stand
+  in for fields, and none of it is a look. A build that resembles a plate has
+  failed - the plate says WHERE, the locked blend says WHAT IT LOOKS LIKE, and
+  the captures below say how good it has to be. Never copy a plate's palette,
+  its hairlines, its mono labels or its wireframe bars into a page.
+- `assets/heroes/*.jpg` - 1440-wide captures of the five pages themselves,
+  chrome cropped, for looking at the real thing. Third-party material under the
+  terms in `assets/heroes/NOTICE.md`: study them, cite the pattern, never
+  reproduce them in a build.
+
 ---
 
 ## The five, read
@@ -135,3 +154,174 @@ inside a container" - correct at section scale, wrong at hero scale, and it
 produced three near misses in a row. After it, the first question for any
 first screen is: **does the field own the page, or is there no field?** There
 is no third answer, and a container with a background is a defect.
+
+---
+
+# Part two - the probe, the geometry, the contracts
+
+The section above was read off captures. On 2026-08-21 the same five heroes
+were re-opened live at exactly 1440x900 and probed for computed styles,
+bounding boxes and drawing technology. Screenshots taken on a wide display read
+type larger than it is; the probe is the ground truth, and it corrected five
+values that had been eyeballed. Both passes stay: the reading above is what the
+screens ARGUE, the table below is what they MEASURE.
+
+## The measured plate - all five at 1440x900
+
+| | Antigravity | Codex | Linear | Raycast | Vercel |
+|---|---|---|---|---|---|
+| Ground | `#FFF` | full-bleed film | `#08090A` | `#07080A` | `#000` |
+| H1 size / weight | **72 / 450** | 64 / 500 | 64 / 510 | 64 / 600 | 64 / 400 |
+| Tracking | -0.02em | -0.03em | -0.022em | 0 | **-0.06em** |
+| Line height | 1.0 | 1.0 | 1.0 | 1.1 | 1.0 |
+| Alignment | centre | centre | **left** | centre | **left** |
+| Ink | `#121317` | `#000` | `#F7F8F8` | `#FFF` | `#EDEDED` |
+| Face | Google Sans Flex | OpenAI Sans | Inter Variable | Inter | GeistSans |
+| H1 top | y 348 | y 274 | y 276 | y 390 | y 328 |
+| Sub | none | 1 line | 15 / 400 `#8A8F98`, lh 24 | 18 / 400 white, lh normal | none under H1 |
+| Buttons | 2 x 47 px, full pill | **1** x 40 px, r 40 | **0** | 2 x 36 px, **r 8** | 2 x 40 px, full pill |
+| Button gap | 16 | - | - | 16 | 12 |
+| Button skin | `#121317` fill / `rgba(183,191,217,.1)` + 1px `rgba(33,34,38,.06)` | `#000` fill | - | `#E6E6E6` + ring `0 0 0 2px rgba(0,0,0,.5)` + glow `0 0 14px rgba(255,255,255,.19)` | `#EDEDED` fill / `#0A0A0A` + ring |
+| Field tech | WebGL2, DPR 2 | `<video>` 2560² + canvas 2d | none | WebGL, 1200-wide box | WebGL2, overscan, DPR 1.48, screen |
+
+**Five corrections to part one, from the probe.** They matter because each one
+would otherwise be built wrong:
+
+1. **The H1s are 64-72 px at 1440, not 96-112.** Every one of the five sits in a
+   64-72 band; only Antigravity leaves 64, and only by 8 px. A 112 px headline
+   at 1440 is not what these pages do - it is what a retina screenshot of them
+   looks like. (Type is fluid: the same H1 grows past 1440. Build to the value
+   at the viewport you are judging.)
+2. **Codex's field is a video, not a photograph.** `floral_a.mp4`, 2560x2560,
+   `object-fit: cover`, muted / looped / autoplaying, with a 2D canvas pass over
+   it. The bokeh is real because a camera made it (`render-tiers.md` § T6).
+3. **Vercel's right-hand column is 16 px sans, not mono, and it is two-tone**:
+   a `#EDEDED` lead clause at weight 450 followed by an `#A1A1A1` continuation
+   at 400 - C4's two-tone headline device applied to body copy.
+4. **"Exactly two buttons" is not the rule.** The set runs 0, 1, 2, 2, 2.
+   Linear's hero has **no** button at all: the only action on the first screen
+   is the `Sign up` pill in the nav, and the hero carries a text link instead.
+   The rule is **at most two, and zero is available** when the nav already
+   carries the action and the product shot is the argument.
+5. **Raycast's shafts are container-width, not full-bleed.** They live in a
+   1200x942 box on a 1440 viewport, so the field dies before the viewport edges
+   and the page keeps a dark frame around it. Vercel does the opposite and
+   overscans past every edge. Full-bleed is a decision, not a default.
+
+## Zone grammar - where the parts sit
+
+Part one settles the field. This settles the geometry. Two axes, and every one
+of the five is one cell of the pair.
+
+**Axis 1 - the spine.**
+- **Centred column** (Antigravity, Codex, Raycast). One axis, everything on it,
+  the field symmetric around it. Reads as an announcement.
+- **Left-anchored with a right counterweight** (Linear, Vercel). Copy at the
+  container's left edge; something else holds the right so the row does not
+  fall over. Reads as a system.
+
+**Axis 2 - what fills the rest of the screen.**
+- **The field** (Antigravity, Codex, Raycast) - it goes to the edges and the
+  type sits on it.
+- **The product** (Linear) - a real screenshot, one frame, crossing the fold.
+- **One lit object** (Vercel) - a single emissive thing in its own zone.
+
+### The three named devices this produces
+
+**Three-zone shared baseline** (Vercel, measured). One horizontal band, three
+occupants, one shared optical centre line: H1 + buttons at the container's left
+edge (x 24) · the lit object dead centre · a right column at x 1060 carrying
+three two-tone sentences. No column has a background. The zones are held apart
+by emptiness, not by rules or panels. Choose it when three different things
+must be said at once and none of them is a paragraph.
+
+**Baseline-anchored announcement** (Linear, measured). The sub line sits left at
+15 / 400 grey; the "New / Coding Sessions ->" link sits on the **same baseline**
+at the right end of the container. It is not a badge, it is not above the H1,
+and it takes the eyebrow's job without being one - which is how a page ships a
+"what's new" hook while keeping the 0-1 eyebrow budget (`quality-bar.md` § 2).
+
+**Product shelf** (Linear, measured). Below the copy, one real product frame,
+container-wide or full-bleed, top edge at ~54 % of viewport height (y 490 of
+900), running 300-500 px past the fold. See the crop contract below.
+
+## The crop contract - what may cross the fold
+
+`quality-bar.md` § 1 bans content cut by the fold. Linear and Codex both cut
+content at the fold on purpose, and the difference is not taste, it is which
+LAYER gets cut. Both rules are true, and this is the seam between them.
+
+**May cross the fold.** A product shelf or a field. Its top edge lands at
+50-65 % of viewport height, it shows at least its own frame edge plus two or
+three rows of real UI, and it is cut mid-panel, through repeating content, where
+the eye reads "this continues" rather than "this ended". Measured: Linear's
+shelf shows 410 of 804 px at 1440x900 (51 %) and 170 of 748 at 1280x720 (23 %) -
+the top edge is anchored to the copy, so the fraction changes with viewport
+height and both readings are correct. The invariant is the top edge and the
+cut quality, never a percentage.
+
+**Never crosses the fold.** The message. Headline, sub, buttons, the announcement
+row, and any card whose own border or corner radius is severed - a cut card
+reads as a layout bug, because a card is a closed object and the fold is not
+one of its edges. A signature object that only makes sense whole (Vercel's dot
+triangle) is a message, not a shelf.
+
+Test in one line: **crop the media, never the meaning.** If a visitor who never
+scrolls has lost an idea, the cut is wrong. If they have only lost more of the
+same thing, the cut is the invitation.
+
+## Type as the object
+
+`quality-bar.md` § 2 budgets a headline at <= 6 words and <= 2 lines.
+Antigravity ships **eight** words - "Experience liftoff with the next-gen agent
+platform" - over two lines at 72 px, and it is the strongest type on any of the
+five. The budget is not wrong; the case is exempt, and the exemption has
+conditions.
+
+**The headline may run to 9 words / 2 lines when ALL of these hold:**
+
+1. It is the ONLY object on the screen. No product frame, no lit object, no
+   illustration, no card. The field, if any, has a hole in it where the type
+   sits (Antigravity's particle density thins through the middle band precisely
+   for this).
+2. It is set at **>= 72 px** at 1440 and holds one designed break -
+   `text-wrap: balance` plus an explicit `<br>` at the planned split, with no
+   orphan on either line.
+3. The measure is wide: 1000-1200 px, centred. A long headline in a 600 px
+   column is the failure the budget exists to prevent; the same words across
+   1150 px are a poster.
+4. There is no eyebrow, and the sub line is absent or a single short line.
+
+Fail any one and the 6-word budget applies again. In particular: a long
+headline NEXT TO an object is never the exemption - it is two things competing,
+which is the § 3 "one object" rule under a different name.
+
+## Archetypes are a layer under the families
+
+A hero archetype is not a style. It says where the parts sit, where the light
+comes from and what may be cut; the locked family blend says what it is made
+of. The same three-zone baseline renders as F1 editorial (hairline column
+rules, mono right column), F5 paper (a printed slab in the centre zone) or F8
+emissive (Vercel's own register) without becoming any of those pages. This is
+the same separation `recipes.md` § One-Screen Poster already uses: the skeleton
+is fixed, the signature visual changes by family.
+
+Consequences for the interview:
+
+- **Never name a site in the question.** Ask in plain language - "type on the
+  left with one lit thing holding the centre", "the product itself as a shelf
+  under the words", "one field edge to edge with the words on top" - the same
+  rule that keeps F1-F8 out of the owner's questions
+  (`question-flow.md` § Question phrasing).
+- **Name the site in the RATIONALE, and when the owner names it first.** "That
+  composition is what Linear's first screen does; in your locked blend it comes
+  out like this" is useful and honest. A menu of brand names is not a question,
+  it is a moodboard.
+- **Weights, not a pick.** Archetypes blend the way families do: 60 % left-
+  anchored spine + 30 % type-as-object + 10 % product shelf is a legal answer
+  and produces a real screen (large left type, no object, a shelf entering
+  low). The one illegal blend is two SPINES at full weight - centred and
+  left-anchored at 50/50 is not a composition, it is an unresolved layout.
+- **The field question comes first** and is still binary (part one): field or
+  no field. Archetype weights are asked after it, because "no field" removes
+  three of the answers.

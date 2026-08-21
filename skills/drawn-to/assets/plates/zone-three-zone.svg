@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="582" viewBox="0 0 768 582" role="img" aria-label="Layout diagram, geometry only. Zone diagram: three-zone hero with type left, a lit object centre and a text column right">
+ <defs><style>
+  .m{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:9px;fill:#8B8E93;letter-spacing:.04em}
+  .mt{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:10.5px;fill:#8B8E93;letter-spacing:.08em}
+  .r{stroke:#8B8E93;stroke-opacity:.5;fill:none;stroke-width:1}
+  .d{stroke:#8B8E93;stroke-opacity:.34;fill:none;stroke-width:1;stroke-dasharray:3 3}
+  .b{fill:#8B8E93;fill-opacity:.55}
+  .bl{fill:#8B8E93;fill-opacity:.26}
+  .a{stroke:#5B8CFF;fill:none;stroke-width:1.25}
+  .af{fill:#5B8CFF;fill-opacity:.9}
+  .w{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:8px;fill:#8B8E93;fill-opacity:.75;letter-spacing:.08em}
+ </style></defs>
+ <text class="mt" x="24" y="18">THREE-ZONE SHARED BASELINE</text>
+ <text class="m" x="24" y="34">left-anchored spine - one emissive object holds the centre - no panel anywhere</text>
+ <text class="w" x="744" y="18" text-anchor="end">LAYOUT DIAGRAM - GEOMETRY ONLY</text>
+ <text class="w" x="744" y="32" text-anchor="end">geometry, not style</text>
+ <rect class="d" x="4.0" y="41.0" width="760.0" height="465.0" rx="0"/>
+ <text class="m" x="34.0" y="63.0">canvas overscans every edge (-131 x, -145 y) - DPR clamp 1.48 - screen over #000</text>
+ <rect class="bl" x="304.0" y="123.0" width="130.0" height="10.0" rx="1"/>
+ <text class="m" x="304.0" y="119.0">announcement strip + pill</text>
+ <rect class="b" x="36.0" y="198.0" width="222.0" height="28.0" rx="1"/>
+ <rect class="b" x="36.0" y="234.0" width="190.0" height="28.0" rx="1"/>
+ <text class="m" x="36.0" y="194.0">H1 64 / 400 - -0.06em - LEFT at x 24</text>
+ <rect class="b" x="36.0" y="278.0" width="62.0" height="20.0" rx="10.0"/>
+ <rect class="d" x="104.0" y="278.0" width="65.0" height="20.0" rx="10.0"/>
+ <text class="m" x="36.0" y="310.0">2 pills - gap 12</text>
+ <circle class="a" cx="384.0" cy="213.0" r="17.0" stroke-opacity=".22"/>
+ <circle class="af" cx="384.0" cy="213.0" r="5.0"/>
+ <circle class="a" cx="362.0" cy="244.0" r="17.0" stroke-opacity=".22"/>
+ <circle class="af" cx="362.0" cy="244.0" r="5.0"/>
+ <circle class="a" cx="406.0" cy="244.0" r="17.0" stroke-opacity=".22"/>
+ <circle class="af" cx="406.0" cy="244.0" r="5.0"/>
+ <circle class="a" cx="340.0" cy="275.0" r="17.0" stroke-opacity=".22"/>
+ <circle class="af" cx="340.0" cy="275.0" r="5.0"/>
+ <circle class="a" cx="384.0" cy="275.0" r="17.0" stroke-opacity=".22"/>
+ <circle class="af" cx="384.0" cy="275.0" r="5.0"/>
+ <circle class="a" cx="428.0" cy="275.0" r="17.0" stroke-opacity=".22"/>
+ <circle class="af" cx="428.0" cy="275.0" r="5.0"/>
+ <circle class="a" cx="318.0" cy="306.0" r="17.0" stroke-opacity=".22"/>
+ <circle class="af" cx="318.0" cy="306.0" r="5.0"/>
+ <circle class="a" cx="362.0" cy="306.0" r="17.0" stroke-opacity=".22"/>
+ <circle class="af" cx="362.0" cy="306.0" r="5.0"/>
+ <circle class="a" cx="406.0" cy="306.0" r="17.0" stroke-opacity=".22"/>
+ <circle class="af" cx="406.0" cy="306.0" r="5.0"/>
+ <circle class="a" cx="450.0" cy="306.0" r="17.0" stroke-opacity=".22"/>
+ <circle class="af" cx="450.0" cy="306.0" r="5.0"/>
+ <text class="m" x="384.0" y="182.0" text-anchor="middle">one lit object - bloom at the source, not around it</text>
+ <rect class="b" x="524.0" y="263.0" width="150.0" height="7.0" rx="1"/>
+ <rect class="bl" x="524.0" y="274.0" width="120.0" height="6.0" rx="1"/>
+ <rect class="b" x="524.0" y="289.0" width="150.0" height="7.0" rx="1"/>
+ <rect class="bl" x="524.0" y="300.0" width="110.0" height="6.0" rx="1"/>
+ <rect class="b" x="524.0" y="315.0" width="150.0" height="7.0" rx="1"/>
+ <rect class="bl" x="524.0" y="326.0" width="100.0" height="6.0" rx="1"/>
+ <text class="m" x="524.0" y="256.0">right column x 1060</text>
+ <text class="m" x="724.0" y="348.0" text-anchor="end">16 / 450 lead clause + 16 / 400 grey tail</text>
+ <line class="d" x1="36.0" y1="275.5" x2="724.0" y2="275.5"/>
+ <text class="m" x="714.0" y="378.0" text-anchor="end">three zones, one shared band, no panels</text>
+ <rect class="bl" x="124.0" y="458.0" width="520.0" height="10.0" rx="1"/>
+ <text class="m" x="124.0" y="454.0">logo row at the foot</text>
+ <rect class="r" x="24" y="48" width="720" height="450"/>
+ <text class="m" x="24" y="568">1440 x 900 - the frame IS the fold</text>
+ <text class="m" x="744" y="568" text-anchor="end">T4 raw WebGL, overscanned</text>
+</svg>
