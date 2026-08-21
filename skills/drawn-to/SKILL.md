@@ -1,19 +1,23 @@
 ---
 name: drawn-to
 description: >-
-  The owner's personal design taste, reverse-engineered from 45 saved
-  references into 12 constants and 8 style families, plus an interactive
-  weighted lock-in flow that fixes style/tone/direction before any UI work.
-  Use BEFORE designing or building any landing page, hero, feature section,
-  feature cards, bento, pricing, UI component, subpage, or full site — and when
-  the user says "my taste", "min stil", "lock in a direction", "design
-  direction", "som refetch-prosessen", or asks for a new section that should
-  "feel right". Also use when reviewing whether existing UI matches the
-  owner's taste. Not for projects with their own locked design skill (e.g.
-  refetch-design) — those override this.
+  A design-direction system for coding agents: a measured taste library (51
+  references reverse-engineered frame by frame into 12 constants and 8 style
+  families), a plain-language interview answered with weights instead of forced
+  picks, and a lock file every visual decision must serve. Use BEFORE designing
+  or building any landing page, hero, feature section, feature cards, bento,
+  pricing, UI component, subpage, or full site — and when the user says "lock
+  in a direction", "design direction", "my taste", "min stil", or asks for a new
+  section that should "feel right". Also use to review whether existing UI
+  matches a locked direction. Not for projects that carry their own locked
+  design skill — those override this.
 ---
 
-# Drawn To — the owner's design direction system
+# Drawn To — a design direction system
+
+("The owner" below = the person whose project this is — the one being
+interviewed. The library ships one owner's measured taste; swap in your own
+references and the flow asks about yours.)
 
 Built 2026-08-20 from reverse-engineered references (45 X/Twitter posts at
 launch, 51 and growing; frame-by-frame video analysis, measured values). Generalizes the refetch.sh Q1-Q25 lock-in
@@ -38,10 +42,13 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    include "keep structure, reskin to the locks". For feature-card work,
    then propose 2-4 creative illustration concepts PER FEATURE
    (`references/illustration-ideation.md`) and lock the picks.
-6. **Lock + enforce** — record every lock as it happens in
+6. **Lock + enforce + polish** — record every lock as it happens in
    `docs/design-locks/YYYY-MM-DD-<task>.md` in the target project; implement
    from the lock file + dimension docs; every visual change serves a named
-   lock; run the output checklist below.
+   lock. Before handoff run the **polish pass** (`references/polish-moments.md`):
+   numbers count, state text swaps in place without layout shift, confirmations
+   signal on three channels, loading/hover/error moments handled or explicitly
+   gated. Then the output checklist below.
 
 ## Read in this order
 
@@ -71,6 +78,11 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    objects (blueprint line-art / soft-shaded, construction math, production
    route) and structured light (why shaped gradients read expensive, recipes
    for arcs, slabs, rays, rings, dot-maps, ribbons).
+   `references/polish-moments.md` — WHERE the small animations live: element +
+   verb → treatment (number pop-in, text-states swap, icon swap, success check,
+   count-up, reveals, shimmer…), the law of the state change (no layout shift,
+   no hard swap, no silent success), motion tokens, the polish pass. Read
+   before handing off any interactive surface.
    `references/animation-recipes.md` — ready-to-build implementations
    (button press, popover, tooltip, modal, drawer, toast, accordion, stagger,
    hold-to-confirm, tab clip-indicator, scroll reveal, drag-to-dismiss, blur
@@ -169,5 +181,8 @@ the text analyses.
    and die in screenshots/JPEG; hover overlays need the layer beneath dropped
    to ≤5% or occluded, never two mid-luminance layers overprinting.
 5. References: which family docs / posts backed the choices.
-6. Honest handoff state: distinguish locally verified · committed · pushed/PR ·
+6. Polish pass: numbers / state text / toggles / confirmations / loading /
+   hover rows / entrances / errors — each applied or explicitly gated
+   (`polish-moments.md`); no state change shifts layout.
+7. Honest handoff state: distinguish locally verified · committed · pushed/PR ·
    deployed · independently verified live. Never report further than proven.

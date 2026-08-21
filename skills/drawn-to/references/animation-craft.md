@@ -10,6 +10,10 @@ and interactive components this doc governs; for marketing choreography
 (loops, scrub scenes, camera moves) motion-grammar's registers govern and
 this doc still supplies the mechanics.
 
+Where the motion SHOULD exist — the small moments (numbers, state text,
+confirmations, loading, hover rows) — is mapped in `polish-moments.md`; this
+doc and that one are the two halves of the same discipline.
+
 ## 1. The gate — before any motion
 
 Two failure modes; the worse one is animating what shouldn't animate.

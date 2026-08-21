@@ -17,6 +17,7 @@
     --ink-1:#EDEDEE; --ink-2:#8B8E93; --ink-3:#5D5E63; --ink-4:#3A3C42;
     --rule:rgba(255,255,255,.08); --rule-soft:rgba(255,255,255,.045); --rule-hot:rgba(255,255,255,.16);
     --accent:#5B8CFF; --accent-wash:rgba(91,140,255,.07); --accent-glow:rgba(91,140,255,.35);
+    --success:#35C56A;
     --col:1120px; --pad:28px; --air:120px;
     --sans:Inter,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
     --mono:"Geist Mono","SF Mono",Menlo,Consolas,monospace;
@@ -57,8 +58,22 @@
   .cta{display:flex;align-items:center;gap:12px;margin-top:34px;flex-wrap:wrap}
   .cmd{display:inline-flex;align-items:center;gap:12px;height:44px;padding:0 16px;border:1px solid var(--rule-hot);font:400 13px/1 var(--mono);color:var(--ink-1);background:var(--surface)}
   .cmd span{color:var(--ink-3)}
-  .cmd button{all:unset;cursor:pointer;color:var(--ink-3);font:inherit;padding-left:8px;border-left:1px solid var(--rule)}
-  .cmd button:hover{color:var(--ink-1)}
+  /* copy button: width reserved for the longest state, text swap + icon swap, three-channel success */
+  .cmd .copy{all:unset;cursor:pointer;display:inline-grid;grid-template-columns:6ch 14px;align-items:center;gap:8px;color:var(--ink-3);font:inherit;padding-left:10px;border-left:1px solid var(--rule);transition:color 150ms ease-in-out}
+  .cmd .copy:hover{color:var(--ink-1)}
+  .cmd .copy .swap{display:inline-grid}
+  .cmd .copy .swap>span{grid-area:1/1;transition:opacity 150ms ease-in-out,transform 150ms ease-in-out,filter 150ms ease-in-out}
+  .cmd .copy .w2{opacity:0;transform:translateY(4px);filter:blur(2px)}
+  .cmd .copy[data-state="done"] .w1{opacity:0;transform:translateY(-4px);filter:blur(2px)}
+  .cmd .copy[data-state="done"] .w2{opacity:1;transform:none;filter:none}
+  .cmd .copy .ico{display:inline-grid;width:14px;height:14px}
+  .cmd .copy .ico svg{grid-area:1/1;width:14px;height:14px;transition:opacity 250ms ease-in-out,filter 250ms ease-in-out,transform 250ms ease-in-out}
+  .cmd .copy .i-check{opacity:0;transform:scale(.25);filter:blur(2px);stroke-dasharray:14;stroke-dashoffset:14}
+  .cmd .copy[data-state="done"]{color:var(--success)}
+  .cmd .copy[data-state="done"] .i-copy{opacity:0;transform:scale(.25);filter:blur(2px)}
+  .cmd .copy[data-state="done"] .i-check{opacity:1;transform:none;filter:none;animation:draw 500ms cubic-bezier(.22,1,.36,1) 80ms forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .stats b[data-count]{display:inline-block;min-width:1ch;font-variant-numeric:tabular-nums}
   .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:40px;font:400 12px/1 var(--mono);color:var(--ink-3);letter-spacing:.06em}
   .stats b{color:var(--ink-2);font-weight:500}
 
@@ -70,7 +85,7 @@
   .plate .fig{position:absolute;top:14px;left:16px}
   .plate svg{position:absolute;inset:0;width:100%;height:100%}
   .plate p{position:absolute;left:16px;bottom:14px;margin:0;font-size:12px;color:var(--ink-2);max-width:22ch}
-  .comet{transform-origin:center;animation:spin 24s linear infinite}
+  .comet{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
 
   /* sections */
@@ -171,10 +186,10 @@
     </h1>
     <p class="lead">Drawn To replaces “make it look good” with a locked design direction: a measured taste library, a short interview you answer with weights instead of forced picks, and a lock file every visual decision must serve. Then it builds.</p>
     <div class="cta" id="install">
-      <span class="cmd"><span>$</span> npx skills add Stianlars1/drawn-to <button type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText('npx skills add Stianlars1/drawn-to');this.textContent='copied';setTimeout(()=>this.textContent='copy',1400)">copy</button></span>
+      <span class="cmd"><span>$</span> npx skills add Stianlars1/drawn-to <button type="button" class="copy" data-state="idle" aria-label="Copy install command" onclick="copyCmd(this)"><span class="swap"><span class="w1">copy</span><span class="w2">copied</span></span><span class="ico"><svg class="i-copy" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5.5" y="5.5" width="8" height="8" rx="1"/><path d="M3 10.5V3.5a1 1 0 0 1 1-1h7"/></svg><svg class="i-check" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5l3 3 6-7"/></svg></span></button></span>
       <a class="pill ghost" href="https://github.com/Stianlars1/drawn-to">Read the source</a>
     </div>
-    <div class="stats"><span><b>12</b> CONSTANTS</span><span><b>8</b> STYLE FAMILIES</span><span><b>31</b> SECTION RECIPES</span><span><b>2 662</b> VIDEO FRAMES READ</span><span><b>0</b> ICON + BLURB CARDS</span></div>
+    <div class="stats"><span><b data-count="12">12</b> CONSTANTS</span><span><b data-count="8">8</b> STYLE FAMILIES</span><span><b data-count="31">31</b> SECTION RECIPES</span><span><b data-count="2662" data-group="1">2 662</b> VIDEO FRAMES READ</span><span><b data-count="0">0</b> ICON + BLURB CARDS</span></div>
   </div>
 
   <div class="plates" aria-hidden="true">
@@ -194,7 +209,7 @@
         <defs><linearGradient id="cg" x1="0" x2="1"><stop offset="0" stop-color="#5B8CFF" stop-opacity="0"/><stop offset=".5" stop-color="#5B8CFF"/><stop offset="1" stop-color="#5B8CFF" stop-opacity="0"/></linearGradient></defs>
         <g transform="translate(130 92)">
           <circle r="58" stroke="rgba(255,255,255,.07)"/><circle r="40" stroke="rgba(255,255,255,.09)"/><circle r="22" stroke="rgba(255,255,255,.12)"/>
-          <g class="comet"><path d="M -56 -15 A 58 58 0 0 1 -12 -57" stroke="url(#cg)" stroke-width="2"/></g>
+          <g class="comet"><circle r="58" fill="none" stroke="none"/><path d="M -56 -15 A 58 58 0 0 1 -12 -57" stroke="url(#cg)" stroke-width="2"/></g>
           <circle r="2.5" fill="#EDEDEE"/><circle cx="40" cy="0" r="2" fill="rgba(255,255,255,.35)"/><circle cx="-28" cy="28" r="2" fill="rgba(255,255,255,.35)"/>
         </g>
       </svg>
@@ -343,5 +358,27 @@
 </footer>
 
 </div></div>
+<script>
+  function copyCmd(btn){
+    if(navigator.clipboard) navigator.clipboard.writeText('npx skills add Stianlars1/drawn-to');
+    btn.dataset.state='done';
+    clearTimeout(btn._t); btn._t=setTimeout(()=>{btn.dataset.state='idle';},1600);
+  }
+  (function(){
+    const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const fmt=(n,group)=>group? String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'\u202f') : String(n);
+    const els=[...document.querySelectorAll('[data-count]')];
+    if(!('IntersectionObserver' in window)||reduce) return; // final values already in the markup
+    const io=new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(!e.isIntersecting) return; io.unobserve(e.target);
+        const el=e.target, end=+el.dataset.count, group=!!el.dataset.group, t0=performance.now(), dur=1100;
+        const tick=(t)=>{const p=Math.min(1,(t-t0)/dur), k=1-Math.pow(1-p,3); el.textContent=fmt(Math.round(end*k),group); if(p<1) requestAnimationFrame(tick);};
+        requestAnimationFrame(tick);
+      });
+    },{threshold:.6});
+    els.forEach(el=>io.observe(el));
+  })();
+</script>
 </body>
 </html>

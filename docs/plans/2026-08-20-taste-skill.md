@@ -152,6 +152,14 @@ style/tone/direction before any code is written.
       assets/ (hero-dark/light.svg, families.svg, proof composite, latch shot).
       Pending owner: git init, create GitHub repo Stianlars1/drawn-to, push, first
       `npx skills add` to seed skills.sh telemetry, launch post.
+- [x] Round 12 (owner review of the live site): the Emil distillation had the gate and
+      the recipes but not the OPPORTUNITY MAP. Added polish-moments.md — element+verb →
+      treatment decision rules (transitions.dev), text-effect families + swap contracts
+      (animate-text), the law of the state change (no layout shift / no hard swap / no
+      silent success), motion tokens, the polish pass; wired into SKILL step 6 + checklist
+      + animation-craft. Site fixed: comet rotation origin (fill-box on a symmetric group),
+      stats count-up (once, ease-out 1.1s, tabular, reduced-motion → final), copy button
+      (reserved width, text swap + icon swap + success colour + stroke-draw check, quiet revert).
 - [x] Named: **Drawn To** (`drawn-to`) — chosen over Tell Me (mechanics vs content:
       the name carries the taste corpus, the differentiator; Tell Me lives on as
       the question-flow voice). npm + GitHub checked free 2026-08-20. Folder,
