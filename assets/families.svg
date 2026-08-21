@@ -28,7 +28,7 @@
 
   <!-- F1 -->
   <g transform="translate(20 28)">
-    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">F1</text>
+    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">01</text>
     <text class="sans" font-size="15" font-weight="600" fill="#8B8E93" y="26">Editorial Monochrome</text>
     <g transform="translate(0 44)" class="sw"><rect width="28" height="18" fill="#0A0C10"/><rect x="32" width="28" height="18" fill="#15181D"/><rect x="64" width="28" height="18" fill="#8b8e93"/><rect x="96" width="28" height="18" fill="#EDEDED"/><rect x="128" width="28" height="18" fill="#3B82F6"/></g>
     <text class="sans ess" font-size="12" y="94">Dark, divider-cut, type</text>
@@ -37,7 +37,7 @@
   </g>
   <!-- F2 -->
   <g transform="translate(220 28)">
-    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">F2</text>
+    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">02</text>
     <text class="sans" font-size="15" font-weight="600" fill="#8B8E93" y="26">Ink &amp; Air</text>
     <g transform="translate(0 44)" class="sw"><rect width="28" height="18" fill="#F7F7F7"/><rect x="32" width="28" height="18" fill="#FFFFFF"/><rect x="64" width="28" height="18" fill="#6B7280"/><rect x="96" width="28" height="18" fill="#3A3A3A"/><rect x="128" width="28" height="18" fill="#3770E9"/></g>
     <text class="sans ess" font-size="12" y="94">Airy light editorial,</text>
@@ -46,7 +46,7 @@
   </g>
   <!-- F3 -->
   <g transform="translate(420 28)">
-    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">F3</text>
+    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">03</text>
     <text class="sans" font-size="15" font-weight="600" fill="#8B8E93" y="26">Staged Atmosphere</text>
     <g transform="translate(0 44)" class="sw"><rect width="28" height="18" fill="#101013"/><rect x="32" width="60" height="18" fill="url(#atm)"/><rect x="96" width="28" height="18" fill="#EDEDEE"/><rect x="128" width="28" height="18" fill="#C0A0EC"/></g>
     <text class="sans ess" font-size="12" y="94">One chroma asset carries</text>
@@ -55,7 +55,7 @@
   </g>
   <!-- F4 -->
   <g transform="translate(620 28)">
-    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">F4</text>
+    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">04</text>
     <text class="sans" font-size="15" font-weight="600" fill="#8B8E93" y="26">Blueprint Sheet</text>
     <g transform="translate(0 44)" class="sw"><rect width="28" height="18" fill="#050505"/><rect x="32" width="28" height="18" fill="#454545"/><rect x="64" width="28" height="18" fill="#a9e494"/><rect x="96" width="28" height="18" fill="#c25b52"/><rect x="128" width="28" height="18" fill="#dcc17e"/></g>
     <text class="sans ess" font-size="12" y="94">Drafting-table ornament:</text>
@@ -64,7 +64,7 @@
   </g>
   <!-- F5 -->
   <g transform="translate(820 28)">
-    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">F5</text>
+    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">05</text>
     <text class="sans" font-size="15" font-weight="600" fill="#8B8E93" y="26">Paper &amp; Print</text>
     <g transform="translate(0 44)" class="sw"><rect width="28" height="18" fill="#FFFFFF"/><rect x="32" width="28" height="18" fill="#ECECEC"/><rect x="64" width="28" height="18" fill="#3B3B3B"/><rect x="96" width="60" height="18" fill="url(#print)"/></g>
     <text class="sans ess" font-size="12" y="94">Halftone, crop marks,</text>
@@ -73,7 +73,7 @@
   </g>
   <!-- F6 -->
   <g transform="translate(1020 28)">
-    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">F6</text>
+    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">06</text>
     <text class="sans" font-size="15" font-weight="600" fill="#8B8E93" y="26">Soft Pastel Stage</text>
     <g transform="translate(0 44)" class="sw"><rect width="28" height="18" fill="#DBF3FF"/><rect x="32" width="28" height="18" fill="#F0F5FE"/><rect x="64" width="28" height="18" fill="#77dbff"/><rect x="96" width="28" height="18" fill="#eea733"/><rect x="128" width="28" height="18" fill="#2349DA"/></g>
     <text class="sans ess" font-size="12" y="94">Pastel fields, squircles,</text>
@@ -82,7 +82,7 @@
   </g>
   <!-- F7 -->
   <g transform="translate(1220 28)">
-    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">F7</text>
+    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">07</text>
     <text class="sans" font-size="15" font-weight="600" fill="#8B8E93" y="26">Tactile Instruments</text>
     <g transform="translate(0 44)" class="sw"><rect width="28" height="18" fill="#F2F1EE"/><rect x="32" width="28" height="18" fill="#1F2326"/><rect x="64" width="28" height="18" fill="#FF9C28"/><rect x="96" width="28" height="18" fill="#10B981"/></g>
     <text class="sans ess" font-size="12" y="94">Components as hardware:</text>
@@ -91,7 +91,7 @@
   </g>
   <!-- F8 -->
   <g transform="translate(1420 28)">
-    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">F8</text>
+    <text class="mono fx" font-size="11" letter-spacing="1.2" y="0">08</text>
     <text class="sans" font-size="15" font-weight="600" fill="#8B8E93" y="26">Emissive Signal</text>
     <g transform="translate(0 44)" class="sw"><rect width="28" height="18" fill="#08080A"/><rect x="32" width="28" height="18" fill="#4D9FFF"/><rect x="64" width="28" height="18" fill="#E921B8"/><rect x="96" width="28" height="18" fill="#22C55E"/></g>
     <text class="sans ess" font-size="12" y="94">Near-dark, light as the</text>
