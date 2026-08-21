@@ -67,4 +67,32 @@ locks" above, the row below wins and the older line is `revised (R1)`.
 
 Exemplars: after QA, screenshot each direction at 1440×900 into `assets/exemplars/<a-e>-<family>.png` and link them from the skill's style-families.md as owned, CC0 exemplar plates.
 
-QA: pending (new session) · POLISH: pending
+## Build R1 - what shipped (2026-08-21, rebuilt through the skill)
+
+One file, `docs/index.html`: `100svh`, `overflow:hidden`, no scroll, no sections.
+Every screen carries brand · GitHub · H1 · one sub line · the copy command · one
+signature visual · the direction label; three numbers in A, C, E only. Engine
+kept as locked: View Transitions cross-fade 700 ms / blur 2 px, auto 5 s, hash
+state, arrow keys, `?v=<a-e>&still` freeze, reduced-motion drops auto + rotation
+and advances on click. H1 reveal and count-up run on the FIRST paint only (C12).
+
+Signature visuals as built: **A** one blueprint plate that redlines this hero at
+1:1 - the drawn column, headline, sub bar and command box sit on the same left
+edge as the real ones, dimensioned 1120 · 28 · 44 · r 0 · 0.08 in one blue
+(#5B8CFF) over 1 px hairlines; mobile shows a natural-scale detail crop.
+**B** pastel horizon with a masked light rim + 3 % grain, one white squircle
+(r 28, `0 24px 48px -12px rgba(50,70,130,.14)`) carrying the command; no cards,
+chips or pills. **C** paper #F3F2EE, white mat with a 1 px #E3E1DB frame holding
+the fold with ~78 px air, Instrument Serif H1, ledger numbers top-right, gradient
+slab #F27BB4→#7A4EC9 at 28 % of the mat with a 4 px-pitch halftone on its right
+half, L crop marks, grain. **D** one light: a single slanted beam from the upper
+right with one defined edge and a long falloff, a turbulence dust field that
+dies out along the beam, grain; no rays, no rings, no blob; the glass pill keeps
+GitHub and nothing else. **E** #000, H1 40/500/-0.06em left, one large thin ring
+with a single lit comet arc rotating linearly (ambient register), three mono
+lines right. All five clear the illustration bar (specific · layered · shaped
+light · one line · two distances · one object), so no direction ships bare.
+
+QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · budgets ✓ (H1 4 words / 1 line desktop, 2 on mobile · sub 66 ch on one line · 1 command + 1 link · 3 numbers in A/C/E, 0 in B/D · 0 eyebrows · no scroll: scrollHeight = innerHeight at every size) · refs compared: basit_designs-2017, 0xSero-2090, Triopixels-2089, adriankuleszo-2089253, basit_designs-2089995, devxnuj-2090, marcelkargul-2089371, marcelkargul-2089404, flohoeller-2090, its_sslvr-2088
+
+POLISH: applied - copy control with reserved width (6 ch, measured: box 305.8 px before and after the state change, button 25 px, zero layout shift) and three-channel success (word copy→copied, icon→check with a stroke draw, colour→#35C56A), quiet revert at 1600 ms · count-up once on first paint, tabular numerals · H1 word-group blur reveal on first paint only · cross-fade 700 ms / blur 2 px between directions · gated - no hover lifts on dark (C3), no per-cycle entrances (the cross-fade IS the entrance, C12), no ambient loop except E's ring (linear, stops under reduced-motion: verified from renders, identical pixels at t=1.2 s and t=5.2 s with the flag on, different with it off)
