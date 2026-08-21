@@ -144,13 +144,44 @@ An illustration or light field ships only if ALL of these hold:
 5. **Two distances** - something to read at 2 m (the silhouette) and something
    to discover at 20 cm (the detail). A shape that is fully understood in one
    glance is a logo, not an illustration.
-6. **One** - one signature object per screen. Two competing objects halve each
-   other.
+6. **One per frame** - one signature object per screen, or one per CELL in a
+   multi-cell set (feature trio, bento, gallery). Two competing objects inside
+   one frame halve each other. This condition governs the inside of a frame;
+   it never licenses reusing one device across the cells of a set - see § 3b.
 
 If any condition fails: ship NO illustration. A typographic hero on a well-set
 ground is a strong, legitimate answer; a weak object is the single fastest way
 to look generated. Devices and construction: `illustration-ideation.md`,
 `isometric-and-light.md`, `graphic-language.md`.
+
+## 3b. The set bar - 2 or more illustrations on one screen or in one section
+
+§ 3 judges ONE illustration. Three illustrations that each pass § 3 can still
+ship as slop, because sameness is a property of the SET and no per-object test
+can see it. This shipped: a "Discover / Interview / Lock" trio rendered as
+three drawings of grey bars inside a thin rectangle - each cell specific,
+layered, line-consistent, and the row read as one device photocopied.
+
+A set of 2+ illustrations ships only if ALL of these hold, on top of § 3 per
+cell:
+
+1. **No device repeats.** Every cell names a different device from
+   `illustration-ideation.md` § Device catalog. Two cells may share a family;
+   they may not share a device. Same device twice = fail.
+2. **Two registers minimum.** The set spans at least two metaphor registers
+   (instrument · mechanism · product-fragment · blueprint plate · material ·
+   isometric).
+3. **Distinct silhouettes at 2 m.** View the row at 25 % zoom with the type
+   hidden. If the cells read as one shape repeated, the set fails - relabelling
+   and recolouring do not fix it.
+4. **Distinct verbs.** Each cell's verb (fit-method step 1) differs, and each
+   drawing enacts ITS verb.
+5. **One material system.** Same hairline weight, ramp, accent and grain across
+   the set - variety lives in the object, never in the finish.
+
+Failing any of these: redesign the offending cell against the device catalog,
+or drop the illustrations for the whole set and ship it typographically. Never
+ship N of the same device.
 
 ## 4. The visual QA loop - mandatory before handoff
 
@@ -164,6 +195,12 @@ Judge the render, not the code. Never from a thumbnail.
 3. **Budgets** - walk § 2. Count the eyebrows, the CTAs, the headline lines,
    the stat numbers; measure the column in ch; check the fold at both desktop
    sizes.
+3b. **Device table** - for every screen or section carrying 2+ illustrations,
+   read its set table out of the lock file and check it against the render: one
+   row per cell, no repeated value in the Device column, ≥ 2 registers. Then
+   squint at the row at 25 % zoom (§ 3b.3). A MISSING table is itself a
+   failure - the set was never designed. Go back to
+   `illustration-ideation.md` § The set law before re-rendering.
 4. **Compare to the references** - if the media archive exists locally
    (`references/media/<full-slug>/`, populated by `scripts/fetch-posts.sh`;
    never committed), open 2–3 frames of the references the lock file cites,
@@ -174,14 +211,17 @@ Judge the render, not the code. Never from a thumbnail.
    and say so in the QA line.
 5. **Locks** - every visual choice names a lock; every lock is visible in the
    render.
-5b. **Catalog sweep** (multi-screen pages only) - lay the screens side by side
+5b. **Sameness sweep** (any page with repeated frames - multiple screens OR any multi-cell set) - lay the screens side by side
    at thumbnail size. If two read as the same layout in different colours, one
    is redundant: change its KIND, not its palette. Then check the chrome
    across the set - the persistent controls must land on the same pixel in
    every screen.
+   Run the same sweep INSIDE a screen: lay the cells of every trio, bento and
+   gallery side by side at thumbnail size. Two cells that read as the same
+   drawing under different labels are one cell shipped twice.
 6. **Polish pass** - `polish-moments.md`.
 7. **Record** in the lock file:
-   `QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · codes 0 · budgets ✓ · refs compared: <slugs or "text only">`.
+   `QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · codes 0 · budgets ✓ · sets: <surface: cell=device, cell=device, … · devices unique ✓ · registers N> · refs compared: <slugs or "text only">`.
    `codes 0` means the nomenclature grep in § 1 was run against the rendered
    text and alt/aria values and came back empty. It is never assumed.
 

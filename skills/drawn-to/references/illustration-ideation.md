@@ -43,6 +43,50 @@ local-feature-graphics (the fit-method exemplar), adriankuleszo-2089887
    opportunity per `motion-grammar.md` (a loop that enacts the verb, a hover
    state-change, or a scrub beat).
 
+## The set law - a device is spent when it is used
+
+Any surface carrying TWO OR MORE illustrations at once - a feature trio, a
+bento, a card grid, a gallery wall, a feature-trio screen inside a catalog -
+is a SET, and a set has rules a single illustration does not:
+
+1. **One device, one cell.** Each cell names its device from the catalog
+   below, and no device may appear twice in the same set. "Skeleton bars in a
+   frame" is ONE device; three drawings of grey bars inside a thin rectangle
+   are that device three times, whatever the bars are supposed to mean.
+2. **Two registers minimum.** The cells of a set span at least two metaphor
+   registers from step 2. Step 2's "one register per PROJECT" governs the
+   MATERIAL SYSTEM (line, ramp, accent, grain), never the objects: inside a
+   set the objects must diverge or the set has one idea.
+3. **Verbs before drawings.** Run step 1 per cell and write the verbs down
+   first - read / weigh / bind. If two cells produce the same verb, the COPY
+   is the defect: fix the feature list, not the drawing.
+4. **Same finish, different object.** One line weight, one ramp, one accent
+   across the set; a different hero object in every cell.
+
+The set law is checked as a table, not as a feeling. BEFORE writing any
+markup, write this table into the lock file - one row per cell - and stop the
+build if any value in the Device column repeats:
+
+| Cell | Verb (step 1) | Register (step 2) | Device (catalog) | Hero object |
+|---|---|---|---|---|
+| Discover | reads before it asks | mechanism | mini-flow spine | repo node fanning into three extracted chips |
+| Interview | weighs, never forces | bespoke chart form | DIP-switch weight bank | the 70/20/10 sliders mid-throw |
+| Lock | binds a decision | blueprint plate | screwed plate + seal | the numbered lock row, stamped |
+
+If a set cannot produce N distinct devices, the set is too big: cut it to the
+number of genuinely different mechanisms, or ship the cells typographically
+with no illustration at all (`quality-bar.md` § 3). Never pad with a repeat.
+
+## The fit-method runs at BUILD time
+
+QI below is the PROPOSAL stage and it is skippable in exactly one case: the
+owner delegated the picks. The fit-method is not skippable and has no
+condition. Before the first line of markup for any illustration - proposed or
+delegated, new build or edit, hero or cell - steps 1-5 above run per cell and
+the set table above is written to the lock file. An illustration with no row
+in that table has not been designed, it has been decorated; building it is a
+defect regardless of how it looks.
+
 ## Device catalog (pick, combine, subvert)
 
 Composition devices, each with its construction recipe. Values assume the

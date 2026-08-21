@@ -387,6 +387,12 @@ status: locking | locked | shipped
 Inherited from blend (not asked): AX2 separation = 1px alpha dividers, …
 Constants enforced: C1-C12 (see drawn-to SKILL.md).
 References consulted: basit_designs-2017, 0xSero-2090, …
+
+SET TABLES (one per surface carrying 2+ illustrations; the Device column must
+contain no repeated value - a repeat is a build stop, `quality-bar.md` § 3b):
+
+| Surface | Cell | Verb | Register | Device | Hero object |
+|---|---|---|---|---|---|
 POLISH: applied <list> · gated <list>            (polish-moments.md)
 QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · budgets ✓ · refs compared: <slugs or "text only">   (quality-bar.md)
 ```
@@ -397,6 +403,12 @@ state becomes `revised (<reason>)`, and the replacement is added as a new
 row - the ledger is history, not just current state.
 
 ## During implementation
+
+- Any surface with 2+ illustrations: run the fit-method per cell and write its
+  set table BEFORE markup (`illustration-ideation.md` § The set law). Devices
+  must be unique within the surface and across the page. This runs even when
+  the picks were delegated or QI was skipped - QI is the owner's choice of
+  concept, the fit-method is how any concept is derived.
 
 - Before any visual decision, check the lock file. Every visual change must
   serve a named lock; a change that serves no lock is unsanctioned taste  - 
