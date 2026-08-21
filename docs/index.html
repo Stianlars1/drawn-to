@@ -384,7 +384,9 @@ h1{margin:0;font-family:var(--sans);font-weight:var(--display-w);letter-spacing:
 [data-variant="j"] .cell .spec{margin-top:16px}
 [data-variant="j"] .cell:last-child{border-right:0}
 [data-variant="j"] .cell .fig{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
-[data-variant="j"] .cell svg{width:100%;max-width:300px;height:auto}
+[data-variant="j"] .cell svg{width:100%;max-width:340px;height:auto}
+[data-variant="j"] .cell svg *{vector-effect:non-scaling-stroke}
+[data-variant="j"] .cell svg text{font-family:var(--mono);font-variant-numeric:tabular-nums slashed-zero}
 [data-variant="j"] .cell .n{font:500 10px/1 var(--mono);color:var(--ink3);letter-spacing:.1em}
 [data-variant="j"] .cell svg .lb{font:400 10px/1 var(--mono);fill:#8A8D92;font-variant-numeric:tabular-nums}
 [data-variant="j"] .cell svg .lb.dim{fill:#55575C}
@@ -400,43 +402,13 @@ h1{margin:0;font-family:var(--sans);font-weight:var(--display-w);letter-spacing:
 [data-variant="k"] .trio{gap:26px;flex:1;min-height:0;max-height:440px}
 [data-variant="k"] .peb{position:relative;display:flex;flex-direction:column;border-radius:26px;corner-shape:squircle;background:#fff;
   box-shadow:0 24px 48px -12px rgba(50,70,130,.14);overflow:hidden;gap:0}
-[data-variant="k"] .peb .viz{position:relative;flex:1;min-height:0;background:linear-gradient(170deg,#C8D6FB 0%,#DCE5FC 46%,#fff 88%)}
-[data-variant="k"] .peb .viz::before{content:"";position:absolute;inset:0;
-  background-image:linear-gradient(rgba(255,255,255,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.6) 1px,transparent 1px);
-  background-size:28px 28px;-webkit-mask-image:linear-gradient(#000,transparent 78%);mask-image:linear-gradient(#000,transparent 78%)}
-[data-variant="k"] .rows,[data-variant="k"] .stair{position:absolute;inset:0}
-[data-variant="k"] .rows>*,[data-variant="k"] .stair>*{position:absolute}
-[data-variant="k"] .curve{position:absolute}
-/* shared finish: every fragment is white, r9-12, and carries its own small shadow */
-[data-variant="k"] .peb .fg{background:#fff;box-shadow:0 6px 15px -5px rgba(50,70,130,.22)}
-/* 1 - raked ledger rows: records, never loses */
-[data-variant="k"] .rows i{display:flex;align-items:center;gap:9px;height:32px;padding:0 11px;border-radius:9px}
-[data-variant="k"] .rows i b{display:block;height:6px;border-radius:3px;background:#C3CBE1}
-[data-variant="k"] .rows i em{margin-left:auto;font:400 9.5px/1 var(--mono);font-style:normal;color:#fff;background:var(--accent);padding:5px 7px;border-radius:5px}
-[data-variant="k"] .rows .a{left:26px;top:30px;width:252px}
-[data-variant="k"] .rows .b{left:42px;top:74px;width:214px;opacity:.66}
-[data-variant="k"] .rows .c{left:58px;top:118px;width:176px;opacity:.38}
-[data-variant="k"] .rows .n{left:26px;top:172px;font:400 10px/1 var(--mono);color:#7C88A8;box-shadow:none;background:none}
-/* 2 - fanned concept plates: offers several, not one */
-[data-variant="k"] .stair i{width:66px;height:66px;border-radius:13px;display:grid;place-items:center}
-[data-variant="k"] .stair .p1{left:24px;top:24px;transform:scale(.84);opacity:.46}
-[data-variant="k"] .stair .p2{left:88px;top:50px;transform:scale(.9);opacity:.68}
-[data-variant="k"] .stair .p3{left:152px;top:76px;transform:scale(.96);opacity:.86}
-[data-variant="k"] .stair .p4{left:216px;top:102px;box-shadow:0 8px 20px -6px rgba(50,70,130,.28),0 0 0 1.5px var(--accent)}
-[data-variant="k"] .stair .p4::before,[data-variant="k"] .stair .p4::after{content:"";position:absolute;width:5px;height:5px;background:#fff;box-shadow:0 0 0 1.5px var(--accent)}
-[data-variant="k"] .stair .p4::before{left:-3px;top:-3px}
-[data-variant="k"] .stair .p4::after{right:-3px;bottom:-3px}
-[data-variant="k"] .stair svg{width:34px;height:34px;display:block}
-[data-variant="k"] .stair .n{left:24px;top:182px;font:400 10px/1 var(--mono);color:#7C88A8}
-/* 3 - plotted easing curve: measures motion */
-[data-variant="k"] .curve{left:26px;top:26px;width:262px;height:152px;display:block}
-[data-variant="k"] .curve .ax{stroke:#C9D2E6}
-[data-variant="k"] .curve .tk{stroke:#DFE5F1}
-[data-variant="k"] .curve .cv{stroke:var(--accent);stroke-width:2;fill:none;stroke-linecap:round}
-[data-variant="k"] .curve .hd{stroke:#A9B4CE;stroke-dasharray:2 3}
-[data-variant="k"] .curve .lb{font:400 9.5px/1 var(--mono);fill:#7C88A8}
-[data-variant="k"] .curve .runner{offset-path:path("M34 118C79.3 22 108.2 22 240 22");offset-rotate:0deg;offset-distance:0%;animation:runcv 4.3s linear infinite}
-@keyframes runcv{to{offset-distance:100%}}
+[data-variant="k"] .peb .viz{position:relative;flex:none;height:250px;overflow:hidden}
+[data-variant="k"] .peb .viz svg{display:block;width:100%;height:100%}
+[data-variant="k"] .peb .viz svg *{vector-effect:non-scaling-stroke}
+[data-variant="k"] .peb .viz::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.055;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/><feColorMatrix type='saturate' values='0'/></filter><rect width='120' height='120' filter='url(%23n)' opacity='.5'/></svg>");
+  -webkit-mask-image:linear-gradient(#000,transparent 86%);mask-image:linear-gradient(#000,transparent 86%)}
+[data-variant="k"] .peb .viz svg text{font-family:var(--mono);font-variant-numeric:tabular-nums slashed-zero}
 [data-variant="k"] .peb .txt{padding:0 26px 26px;display:grid;gap:6px}
 [data-variant="k"] .peb h3{margin:0;font:600 18px/1.3 var(--sans);letter-spacing:-.015em}
 [data-variant="k"] .peb p{margin:0;color:var(--ink2);font-size:14px;line-height:1.5}
@@ -1216,80 +1188,251 @@ const KGLYPH = [
   '<svg viewBox="0 0 34 34" fill="none" stroke="#8FA0C8"><path d="M6 22a11 11 0 0 1 22 0"/><path d="M17 22l7-7" stroke="#2349DA" stroke-width="1.6"/></svg>'
 ];
 const KFIG = [
-  `<div class="rows">
-     <i class="a fg"><b style="width:52px"></b><b style="width:74px"></b><em>must-have</em></i>
-     <i class="b fg"><b style="width:44px"></b><b style="width:88px"></b></i>
-     <i class="c fg"><b style="width:58px"></b><b style="width:52px"></b></i>
-     <span class="n">28 rows &middot; 0 deleted</span>
-   </div>`,
-  `<div class="stair">
-     <i class="p1 fg">${KGLYPH[0]}</i><i class="p2 fg">${KGLYPH[1]}</i><i class="p3 fg">${KGLYPH[2]}</i><i class="p4 fg">${KGLYPH[3]}</i>
-     <span class="n">4 concepts &middot; 1 picked</span>
-   </div>`,
-  `<svg class="curve" viewBox="0 0 258 150" fill="none">
-     <g class="tk"><path d="M34 22h206M34 54h206M34 86h206"/></g>
-     <path class="ax" d="M34 10v108h206"/>
-     <path class="hd" d="M34 118L79.3 22M240 22L108.2 22"/>
-     <rect x="76.8" y="19.5" width="5" height="5" fill="#A9B4CE"/><rect x="105.7" y="19.5" width="5" height="5" fill="#A9B4CE"/>
-     <path class="cv" d="M34 118C79.3 22 108.2 22 240 22"/>
-     <circle class="runner" cx="34" cy="118" r="3.5" fill="#2349DA"/>
-     <g class="lb"><text x="34" y="136">0</text><text x="240" y="136" text-anchor="end">460 ms</text><text x="10" y="26">1</text><text x="10" y="122">0</text></g>
-     <text class="lb" x="240" y="14" text-anchor="end">cubic-bezier(.22, 1, .36, 1)</text>
-   </svg>`
+  `<svg viewBox="0 0 400 250" role="img" aria-label="Three stacked revisions of one lock file, the newest on top with a single row locked in indigo">
+<defs>
+<linearGradient id="k1sky" x1=".56" y1="0" x2=".44" y2="1"><stop offset="0" stop-color="#C8D6FB"/><stop offset=".46" stop-color="#DCE5FC"/><stop offset=".88" stop-color="#fff"/></linearGradient>
+<pattern id="k1grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0V28M0 28H28" fill="none" stroke="#fff" stroke-opacity=".55"/></pattern>
+<linearGradient id="k1fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".78" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<mask id="k1gm"><rect width="400" height="250" fill="url(#k1fade)"/></mask>
+<filter id="k1sh" x="-15%" y="-25%" width="130%" height="185%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#283C78" flood-opacity=".18"/></filter>
+</defs>
+<rect width="400" height="250" fill="url(#k1sky)"/>
+<rect width="400" height="250" fill="url(#k1grid)" mask="url(#k1gm)"/>
+
+<g transform="rotate(-3 350 100)">
+  <g opacity=".46"><rect x="16" y="20" width="356" height="118" rx="12" fill="#fff" filter="url(#k1sh)"/>
+    <text x="350" y="35" font-size="7" fill="#5E6A8A" text-anchor="end">R0 · 7 rows</text></g>
+  <g opacity=".72"><rect x="-2" y="42" width="356" height="118" rx="12" fill="#fff" filter="url(#k1sh)"/>
+    <text x="332" y="57" font-size="7" fill="#5E6A8A" text-anchor="end">R1 · 11 rows</text></g>
+  <g><rect x="-20" y="64" width="356" height="118" rx="12" fill="#fff" filter="url(#k1sh)"/>
+    <text x="14" y="79" font-size="8.5" fill="#1B2A50">design-locks/2026-08-21-drawn-to-site.md</text>
+    <text x="314" y="79" font-size="7" fill="#939CB6" text-anchor="end">R4 · 17 rows</text>
+    <path d="M-20 88.5H336" stroke="#1B2A50" stroke-opacity=".14"/>
+    <g font-size="7" fill="#939CB6" letter-spacing=".04em">
+      <text x="14" y="100">axis</text><text x="108" y="100">locked value</text><text x="214" y="100">firm</text><text x="250" y="100">consequence</text></g>
+    <path d="M-20 107.5H336" stroke="#1B2A50" stroke-opacity=".08"/>
+    <rect x="-20" y="144" width="356" height="16" fill="#2349DA" opacity=".07"/>
+    <g stroke="#1B2A50" stroke-opacity=".10"><path d="M-20 112.5H336M-20 128.5H336M-20 144.5H336M-20 160.5H336"/></g>
+
+    <text x="14" y="123" font-size="7.5" fill="#5E6A8A">page shape</text><text x="108" y="123" font-size="7.5" fill="#1B2A50">one screen, no scroll</text>
+    <text x="250" y="123" font-size="7.5" fill="#5E6A8A">budgets are hard</text>
+    <g fill="#5E6A8A"><circle cx="215" cy="120" r="1.9"/><circle cx="222.5" cy="120" r="1.9" fill="none" stroke="#5E6A8A" stroke-width=".8"/></g>
+
+    <text x="14" y="139" font-size="7.5" fill="#5E6A8A">cycle</text><text x="108" y="139" font-size="7.5" fill="#1B2A50">auto, 5 s, always</text>
+    <text x="250" y="139" font-size="7.5" fill="#5E6A8A">arrows if reduced</text>
+    <g fill="#5E6A8A"><circle cx="215" cy="136" r="1.9"/><circle cx="222.5" cy="136" r="1.9" fill="none" stroke="#5E6A8A" stroke-width=".8"/></g>
+
+    <text x="14" y="155" font-size="7.5" fill="#2349DA">transition</text>
+    
+    <text x="108" y="155" font-size="7.5" fill="#2349DA">#2349DA</text>
+    <text x="250" y="155" font-size="7.5" fill="#2349DA">no directional wipe</text>
+    <g fill="#2349DA"><circle cx="215" cy="152" r="1.9"/><circle cx="222.5" cy="152" r="1.9" fill="none" stroke="#5E6A8A" stroke-width=".8"/></g>
+    
+
+    <text x="14" y="171" font-size="7.5" fill="#5E6A8A">headline</text><text x="108" y="171" font-size="7.5" fill="#1B2A50">four words, one line</text>
+    <text x="250" y="171" font-size="7.5" fill="#5E6A8A">same in every skin</text>
+    <circle cx="215" cy="168" r="1.9" fill="#5E6A8A"/>
+    <g fill="none" stroke="#939CB6"><circle cx="222.5" cy="168" r="1.9" fill="none" stroke="#5E6A8A" stroke-width=".8"/></g>
+  </g>
+</g>
+
+<g filter="url(#k1sh)"><rect x="228" y="214" width="156" height="26" rx="8" fill="#fff"/></g>
+<circle cx="244" cy="227" r="3.2" fill="#1D9847"/>
+<text x="254" y="230" font-size="8.5" fill="#1B2A50">0 rows deleted · since R0</text>
+</svg>`,
+  `<svg viewBox="0 0 452 250" role="img" aria-label="One feature fanning along hairline curves into three concept plates and one empty slot, the picked concept solid and carrying its recipe">
+<defs>
+<linearGradient id="k2sky" x1=".56" y1="0" x2=".44" y2="1"><stop offset="0" stop-color="#C8D6FB"/><stop offset=".46" stop-color="#DCE5FC"/><stop offset=".88" stop-color="#fff"/></linearGradient>
+<pattern id="k2grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0V28M0 28H28" fill="none" stroke="#fff" stroke-opacity=".55"/></pattern>
+<linearGradient id="k2fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".78" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<mask id="k2gm"><rect width="452" height="250" fill="url(#k2fade)"/></mask>
+<filter id="k2sh" x="-15%" y="-25%" width="130%" height="185%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#283C78" flood-opacity=".18"/></filter>
+</defs>
+<rect width="452" height="250" fill="url(#k2sky)"/>
+<rect width="452" height="250" fill="url(#k2grid)" mask="url(#k2gm)"/>
+
+<path d="M0 108H14" stroke="#1B2A50" stroke-opacity=".18"/>
+<g fill="none" stroke="#1B2A50" stroke-opacity=".26">
+  <path d="M134 108C196 108 202 47 262 47"/>
+  <path d="M134 108C196 108 202 169 262 169"/>
+</g>
+<path d="M134 108C196 108 202 213 262 213" fill="none" stroke="#1B2A50" stroke-opacity=".16" stroke-dasharray="3 4"/>
+<path d="M134 108C196 108 202 113 262 113" fill="none" stroke="#2349DA" stroke-width="1.5"/>
+<circle cx="134" cy="108" r="2.2" fill="#5E6A8A"/>
+
+<!-- A -->
+<rect x="262" y="30" width="150" height="34" rx="10" fill="#fff" fill-opacity=".55" stroke="#1B2A50" stroke-opacity=".14"/>
+<g fill="none" stroke="#939CB6"><path d="M276 54A14 14 0 0 1 290 40"/><path d="M277.1 47.2l-2.7-.8M280.6 42.1l-1.9-2.1M285.9 38.9l-.8-2.7"/></g>
+<text x="300" y="50" font-size="8" fill="#939CB6">A · tick arc</text>
+
+<!-- B · picked -->
+<g filter="url(#k2sh)"><rect x="262" y="84" width="150" height="58" rx="10" fill="#fff"/></g>
+<path d="M264.5 88v50" stroke="#2349DA" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="276" y="96" width="18" height="12" rx="2.5" fill="none" stroke="#939CB6"/>
+<g fill="#5E6A8A"><rect x="279.4" y="98.4" width="2.2" height="4" rx="1.1"/><rect x="284.4" y="98.4" width="2.2" height="4" rx="1.1"/><rect x="289.4" y="103.4" width="2.2" height="4" rx="1.1"/></g>
+<text x="300" y="106" font-size="8.5" fill="#1B2A50">B · bespoke chart</text>
+<text x="278" y="124" font-size="7" fill="#939CB6">channels</text>
+<path d="M312 121.5h30" stroke="#939CB6" stroke-dasharray=".8 2.6"/>
+<text x="346" y="124" font-size="7.5" fill="#1B2A50">03</text>
+<text x="278" y="136" font-size="7" fill="#939CB6">weights</text>
+<path d="M308 133.5h34" stroke="#939CB6" stroke-dasharray=".8 2.6"/>
+<text x="346" y="136" font-size="7.5" fill="#1B2A50">70/20/10</text>
+
+<!-- C -->
+<rect x="262" y="152" width="150" height="34" rx="10" fill="#fff" fill-opacity=".55" stroke="#1B2A50" stroke-opacity=".14"/>
+<g fill="#939CB6"><circle cx="277" cy="164" r="1.1"/><circle cx="282" cy="164" r="1.1"/><circle cx="287" cy="164" r="1.1"/><circle cx="277" cy="169" r="1.1"/><circle cx="282" cy="169" r="1.1"/><circle cx="287" cy="169" r="1.1"/><circle cx="277" cy="174" r="1.1"/><circle cx="282" cy="174" r="1.1"/><circle cx="287" cy="174" r="1.1"/></g>
+<text x="300" y="172" font-size="8" fill="#939CB6">C · comet arc</text>
+
+<!-- D · vacant -->
+<rect x="262" y="198" width="150" height="30" rx="10" fill="none" stroke="#1B2A50" stroke-opacity=".16" stroke-dasharray="4 4"/>
+<path d="M283 208v10M278 213h10" stroke="#1B2A50" stroke-opacity=".22"/>
+
+<!-- source plate -->
+<g filter="url(#k2sh)"><rect x="14" y="74" width="120" height="68" rx="12" fill="#fff"/></g>
+<text x="28" y="92" font-size="7" fill="#939CB6" letter-spacing=".04em">feature</text>
+<text x="28" y="108" font-size="10" fill="#1B2A50">Interview</text>
+<path d="M28 117.5H120" stroke="#1B2A50" stroke-opacity=".12"/>
+<text x="28" y="131" font-size="7" fill="#5E6A8A">weighs, never forces</text>
+
+<g filter="url(#k2sh)"><rect x="14" y="200" width="142" height="26" rx="8" fill="#fff"/></g>
+<circle cx="30" cy="213" r="3.2" fill="#2349DA"/>
+<text x="40" y="216" font-size="8.5" fill="#1B2A50">3 proposed · 1 picked</text>
+</svg>`,
+  `<svg viewBox="0 0 452 250" role="img" aria-label="An easing curve with its control handles plotted over a millisecond ruler, a playhead reading 115 milliseconds and a settle annotation">
+<defs>
+<linearGradient id="k3sky" x1=".56" y1="0" x2=".44" y2="1"><stop offset="0" stop-color="#C8D6FB"/><stop offset=".46" stop-color="#DCE5FC"/><stop offset=".88" stop-color="#fff"/></linearGradient>
+<pattern id="k3grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0V28M0 28H28" fill="none" stroke="#fff" stroke-opacity=".55"/></pattern>
+<linearGradient id="k3fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".78" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<mask id="k3gm"><rect width="452" height="250" fill="url(#k3fade)"/></mask>
+<filter id="k3sh" x="-15%" y="-25%" width="130%" height="185%"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#283C78" flood-opacity=".18"/></filter>
+</defs>
+<rect width="452" height="250" fill="url(#k3sky)"/>
+<rect width="452" height="250" fill="url(#k3grid)" mask="url(#k3gm)"/>
+
+<g font-size="7" fill="#939CB6" text-anchor="end"><text x="34" y="73">1.0</text><text x="34" y="133">0.5</text><text x="34" y="193">0</text></g>
+<g stroke="#1B2A50" stroke-opacity=".07"><path d="M208 190V124M290 190V124"/></g>
+<path d="M44 70.5H162" stroke="#1B2A50" stroke-opacity=".14" stroke-dasharray="4 4"/>
+<path d="M44 130.5H372" stroke="#1B2A50" stroke-opacity=".10" stroke-dasharray="1 4"/>
+<path d="M44 190.5H384" stroke="#1B2A50" stroke-opacity=".26"/>
+
+<path d="M44 190L116.2 70M372 70H162.1" stroke="#1B2A50" stroke-opacity=".32"/>
+<rect x="113.7" y="67.5" width="5" height="5" fill="#5E6A8A"/>
+<rect x="159.6" y="67.5" width="5" height="5" fill="#5E6A8A"/>
+<circle cx="44" cy="190" r="2.8" fill="#fff" stroke="#5E6A8A"/>
+<circle cx="372" cy="70" r="2.8" fill="#fff" stroke="#5E6A8A"/>
+
+<path d="M44 190C116.2 70 162.1 70 372 70" fill="none" stroke="#2349DA" stroke-width="1.5" stroke-linecap="round"/>
+
+<path d="M314 70v11" stroke="#1B2A50" stroke-opacity=".3"/>
+<text x="314" y="92" font-size="7" fill="#939CB6" text-anchor="middle">settles 378 ms</text>
+
+<path d="M126 56v148" stroke="#1B2A50" stroke-opacity=".28"/>
+<path d="M126 98V152H222" fill="none" stroke="#1B2A50" stroke-opacity=".28"/>
+<circle cx="126" cy="98" r="3.2" fill="#1B2A50"/>
+
+<path d="M44 204.5H372" stroke="#1B2A50" stroke-opacity=".22"/>
+<g stroke="#1B2A50" stroke-opacity=".16"><path d="M60.4 204v4M76.8 204v4M93.2 204v4M109.6 204v4M142.4 204v4M158.8 204v4M175.2 204v4M191.6 204v4M224.4 204v4M240.8 204v4M257.2 204v4M273.6 204v4M306.4 204v4M322.8 204v4M339.2 204v4M355.6 204v4"/></g>
+<g stroke="#1B2A50" stroke-opacity=".3"><path d="M44 204v8M126 204v8M208 204v8M290 204v8M372 204v8"/></g>
+<g font-size="7" fill="#939CB6" text-anchor="middle"><text x="44" y="222">0</text><text x="126" y="222">115</text><text x="208" y="222">230</text><text x="290" y="222">345</text><text x="372" y="222">460</text></g>
+<text x="380" y="222" font-size="7" fill="#939CB6">ms</text>
+<text x="44" y="238" font-size="7" fill="#939CB6">read off 28 frames · 60 fps</text>
+
+<g filter="url(#k3sh)"><rect x="16" y="16" width="188" height="26" rx="8" fill="#fff"/></g>
+<text x="28" y="32.5" font-size="8" fill="#1B2A50">ease-out · cubic-bezier(.22,1,.36,1)</text>
+<g filter="url(#k3sh)"><rect x="222" y="139" width="154" height="26" rx="8" fill="#fff"/></g>
+<circle cx="236" cy="152" r="3.2" fill="#1B2A50"/>
+<text x="246" y="155" font-size="8" fill="#1B2A50">115 ms · 0.766 · blur 2.8 px</text>
+</svg>`
 ];
 
 /* Screen 10 - set table in the lock file. Three registers, three devices, one finish:
    every stroke 1px, guides #3F3F43, outlines #6E6E72, ONE near-white focal per cell,
    the green marks only the living datum. */
 const FIGS = {
-  /* Discover - mechanism. A repo node fans three extracted values out to the right;
-     the dashes march, which is the reading. */
-  discover: `<svg viewBox="0 0 300 168" fill="none">
-    <rect x="14.5" y="66.5" width="38" height="38" stroke="#6E6E72"/>
-    <path d="M21 77.5h10l3 4h11" stroke="#8E8E93"/>
-    <path d="M21 87.5h20M21 94.5h14" stroke="#3F3F43"/>
-    <g class="wire" stroke="#5A5A60" stroke-dasharray="3 5">
-      <path d="M53 85C96 85 106 44 149 44"/><path d="M53 85h96"/><path d="M53 85C96 85 106 126 149 126"/>
-    </g>
-    <rect x="150.5" y="32.5" width="132" height="23" stroke="#6E6E72"/>
-    <rect x="150.5" y="73.5" width="132" height="23" stroke="#8E8E93"/>
-    <rect x="150.5" y="114.5" width="132" height="23" stroke="#6E6E72"/>
-    <path d="M158 84.5l3.5 3.5 6.5-7" stroke="#A9E494" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-    <g class="lb"><text x="160" y="48">README.md</text><text x="174" y="89">design-locks/</text><text x="160" y="130">AGENTS.md</text></g>
-    <text class="lb dim" x="15" y="126">3 of 3 read</text>
-  </svg>`,
-  /* Interview - instrument. A weight bank: all three faders are up at once,
-     which is the argument against a forced single pick. */
-  interview: `<svg viewBox="0 0 300 168" fill="none">
-    <g stroke="#44444A">${[0,1,2,3,4,5,6,7,8,9,10].map(function(k){var y=128.5-k*10,w=(k%5===0)?9:5;return '<path d="M'+(52-w)+' '+y+'h'+w+'"/>';}).join('')}</g>
-    <path d="M52.5 26v104" stroke="#44444A"/>
-    <g class="lb dim"><text x="40" y="32" text-anchor="end">100</text><text x="40" y="132" text-anchor="end">0</text></g>
-    <g stroke="#3F3F43"><path d="M86.5 26v104M150.5 26v104M214.5 26v104"/></g>
-    <path d="M64 136.5h214" stroke="#44444A"/>
-    <rect x="70.5" y="53.5" width="32" height="11" fill="#141416" stroke="#8E8E93"/>
-    <path d="M71 54.5h31" stroke="#fff"/><path d="M78 59.5h16" stroke="#060608"/>
-    <rect x="134.5" y="103.5" width="32" height="11" fill="#141416" stroke="#6E6E72"/><path d="M142 109.5h16" stroke="#060608"/>
-    <rect x="198.5" y="113.5" width="32" height="11" fill="#141416" stroke="#6E6E72"/><path d="M206 119.5h16" stroke="#060608"/>
-    <g class="lb"><text x="86" y="152" text-anchor="middle">70</text><text x="150" y="152" text-anchor="middle">20</text><text x="214" y="152" text-anchor="middle">10</text></g>
-    <text class="lb hot" x="282" y="152" text-anchor="end">= 100</text>
-  </svg>`,
-  /* Lock - blueprint plate. The sheet runs off the frame; one row is lifted onto a
-     brighter plane and carries its own firmness, which is what "point at it" means. */
-  lock: `<svg viewBox="0 0 300 168" fill="none">
-    <rect x="34.5" y="26.5" width="290" height="118" stroke="#6E6E72"/>
-    <path d="M34 46.5h290" stroke="#6E6E72"/>
-    <g stroke="#3A3A40"><path d="M34 68.5h290M34 108.5h290M34 128.5h290"/><path d="M120.5 26v118M196.5 26v118M256.5 26v118"/></g>
-    <g class="lb dim"><text x="42" y="41">axis</text><text x="128" y="41">locked</text><text x="204" y="41">firmness</text></g>
-    <g fill="#3A3A40">
-      <rect x="42" y="55" width="52" height="6"/><rect x="128" y="55" width="44" height="6"/><rect x="204" y="55" width="38" height="6"/>
-      <rect x="42" y="115" width="46" height="6"/><rect x="128" y="115" width="56" height="6"/><rect x="204" y="115" width="30" height="6"/>
-      <rect x="42" y="135" width="58" height="6"/><rect x="128" y="135" width="40" height="6"/><rect x="204" y="135" width="42" height="6"/>
-    </g>
-    <rect x="18.5" y="74.5" width="252" height="28" fill="#131315" stroke="#fff"/>
-    <g fill="#6E6E72"><rect x="30" y="85" width="60" height="7"/><rect x="132" y="85" width="50" height="7"/></g>
-    <text class="lb hot" x="208" y="92">must-have</text>
-    <text class="lb dim" x="18" y="160">28 rows · 0 deleted</text>
-  </svg>`
+  discover: `<svg viewBox="0 0 300 170" fill="none" stroke="#6E6E72" stroke-width="1" vector-effect="non-scaling-stroke" aria-hidden="true"
+     font-family="Geist Mono, ui-monospace, Menlo, monospace" letter-spacing=".02em" style="font-variant-numeric:tabular-nums">
+ <defs><pattern id="a_discover" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+   <path d="M0 0V6" stroke="#20202A" stroke-width="1"/></pattern></defs>
+ <path d="M196.5 16V154" stroke="#3F3F43" stroke-dasharray="2 3"/>
+ <path d="M0 134.5H124a16 16 0 0 0 16-16v-18a16 16 0 0 1 16-16h19"/>
+ <path d="M0 84.5h175"/>
+ <path d="M0 34.5H124a16 16 0 0 1 16 16v18a16 16 0 0 0 16 16h19" stroke="#A9E494"/>
+ <rect x="174.5" y="62.5" width="44" height="44" fill="#060608" stroke="none"/>
+ <rect x="175" y="63" width="43" height="43" fill="url(#a_discover)" stroke="none"/>
+ <path d="M174.5 81.5V62.5h44v44h-44V87.5" stroke="#EDEDF0"/>
+ <circle cx="174.5" cy="84.5" r="2" fill="#A9E494" stroke="none"/>
+ <rect x="26.5" y="25.5" width="82" height="18" fill="#060608"/>
+ <rect x="26.5" y="75.5" width="82" height="18" fill="#060608"/>
+ <rect x="26.5" y="125.5" width="82" height="18" fill="#060608"/>
+ <circle cx="108.5" cy="34.5" r="1.8" fill="#A9E494" stroke="none"/>
+ <text x="33" y="37" font-size="6.5" fill="#6E6E72" stroke="none">design-locks/</text>
+ <text x="33" y="87" font-size="6.5" fill="#6E6E72" stroke="none">AGENTS.md</text>
+ <text x="33" y="137" font-size="6.5" fill="#6E6E72" stroke="none">src/</text>
+ <text x="26.5" y="54" font-size="6" fill="#6E6E72" stroke="none">17 rows</text>
+ <text x="26.5" y="104" font-size="6" fill="#6E6E72" stroke="none">0 found</text>
+ <text x="26.5" y="154" font-size="6" fill="#6E6E72" stroke="none">69 files</text>
+ <path d="M228 84.5h56" stroke="#3F3F43"/>
+ <text x="174.5" y="124" font-size="6.5" fill="#6E6E72" stroke="none">read</text>
+ <text x="284" y="80" font-size="6" fill="#6E6E72" stroke="none" text-anchor="end">questions asked</text>
+ <text x="284" y="96" font-size="12" fill="#6E6E72" stroke="none" text-anchor="end">0</text>
+</svg>`,
+  interview: `<svg viewBox="0 0 300 170" fill="none" stroke="#3F3F43" stroke-width="1" vector-effect="non-scaling-stroke" aria-hidden="true"
+     font-family="Geist Mono, ui-monospace, Menlo, monospace" letter-spacing=".02em" style="font-variant-numeric:tabular-nums">
+ <path d="M36.5 22.5h240" stroke-dasharray="2 3"/>
+ <path d="M36.5 126.5h240"/>
+ <path d="M36.5 126.5h6M36.5 74.5h6M36.5 22.5h6"/>
+ <path d="M39.5 116.5h3M39.5 105.5h3M39.5 95.5h3M39.5 84.5h3M39.5 64.5h3M39.5 53.5h3M39.5 43.5h3M39.5 32.5h3"/>
+ <text x="33" y="25" font-size="6" fill="#6E6E72" stroke="none" text-anchor="end">100</text>
+ <text x="33" y="77" font-size="6" fill="#6E6E72" stroke="none" text-anchor="end">50</text>
+ <text x="33" y="129" font-size="6" fill="#6E6E72" stroke="none" text-anchor="end">0</text>
+ <path d="M78.5 22.5v104M162.5 22.5v104M246.5 22.5v104"/>
+ <rect x="52.5" y="65.5" width="52" height="8" stroke-dasharray="2 2"/>
+ <path d="M112.5 53.5v16M109.5 53.5h6M109.5 69.5h6"/>
+ <text x="119" y="63.5" font-size="6" fill="#6E6E72" stroke="none">+15</text>
+ <rect x="52.5" y="49.5" width="52" height="8" fill="#EDEDF0" stroke="none"/>
+ <path d="M62.5 53.5h32" stroke="#060608"/>
+ <rect x="136.5" y="101.5" width="52" height="8" fill="#6E6E72" stroke="none"/>
+ <path d="M146.5 105.5h32" stroke="#060608"/>
+ <rect x="220.5" y="111.5" width="52" height="8" fill="#6E6E72" stroke="none"/>
+ <path d="M230.5 115.5h32" stroke="#060608"/>
+ <text x="104.5" y="45" font-size="9" fill="#A9E494" stroke="none" text-anchor="end">70</text>
+ <text x="188.5" y="97" font-size="9" fill="#6E6E72" stroke="none" text-anchor="end">20</text>
+ <text x="272.5" y="107" font-size="9" fill="#6E6E72" stroke="none" text-anchor="end">10</text>
+ <text x="78.5" y="139" font-size="6" fill="#6E6E72" stroke="none" text-anchor="middle">Editorial</text>
+ <text x="78.5" y="147" font-size="6" fill="#6E6E72" stroke="none" text-anchor="middle">Monochrome</text>
+ <text x="162.5" y="139" font-size="6" fill="#6E6E72" stroke="none" text-anchor="middle">Staged</text>
+ <text x="162.5" y="147" font-size="6" fill="#6E6E72" stroke="none" text-anchor="middle">Atmosphere</text>
+ <text x="246.5" y="139" font-size="6" fill="#6E6E72" stroke="none" text-anchor="middle">Blueprint</text>
+ <text x="246.5" y="147" font-size="6" fill="#6E6E72" stroke="none" text-anchor="middle">Sheet</text>
+ <text x="36.5" y="163" font-size="6" fill="#6E6E72" stroke="none">blend proposal</text>
+ <text x="276" y="163" font-size="6" fill="#6E6E72" stroke="none" text-anchor="end">70 + 20 + 10 = 100</text>
+</svg>`,
+  lock: `<svg viewBox="0 0 300 170" fill="none" stroke="#3F3F43" stroke-width="1" vector-effect="non-scaling-stroke" aria-hidden="true"
+     font-family="Geist Mono, ui-monospace, Menlo, monospace" letter-spacing=".02em" style="font-variant-numeric:tabular-nums">
+ <path d="M8.5 30.5h256M8.5 48.5h256M8.5 74.5h256M8.5 100.5h256M8.5 126.5h256"/>
+ <path d="M36.5 30.5v96M96.5 30.5v96M182.5 30.5v96"/>
+ <path d="M4.5 30.5h8M8.5 26.5v8M260.5 30.5h8M264.5 26.5v8M4.5 126.5h8M8.5 122.5v8M260.5 126.5h8M264.5 122.5v8"/>
+ <g stroke="none" font-size="6" fill="#6E6E72">
+   <text x="13" y="42">rev</text><text x="41" y="42">axis</text><text x="101" y="42">locked</text><text x="187" y="42">firmness</text>
+ </g>
+ <g stroke="none" font-size="6.5" fill="#3F3F43">
+   <text x="13" y="64">R0</text><text x="41" y="64">cycle</text><text x="101" y="64">auto, 5 s</text><text x="195" y="64">prefer</text>
+ </g>
+ <rect x="187.5" y="59.5" width="4" height="4"/>
+ <g stroke="none" font-size="6.5" fill="#6E6E72">
+   <text x="13" y="90">R1</text><text x="41" y="90">transition</text><text x="101" y="90">cross-fade 700 ms</text><text x="195" y="90">must-have</text>
+ </g>
+ <rect x="187.5" y="85.5" width="4" height="4" fill="#6E6E72" stroke="none"/>
+ <g stroke="none" font-size="6.5" fill="#EDEDF0">
+   <text x="13" y="116">R2</text><text x="41" y="116">page shape</text><text x="195" y="116">must-have</text>
+ </g>
+ <text x="101" y="116" font-size="6.5" fill="#A9E494" stroke="none">one screen</text>
+ <rect x="187.5" y="111.5" width="4" height="4" fill="#EDEDF0" stroke="none"/>
+ <path d="M264.5 113.5h24" stroke="#A9E494"/>
+ <circle cx="270.5" cy="113.5" r="1.8" fill="#A9E494" stroke="none"/>
+ <path d="M300 101.5h-11.5v8M300 125.5h-11.5v-8"/>
+ <text x="8.5" y="141" font-size="6" fill="#6E6E72" stroke="none">5 revisions · 0 removed</text>
+</svg>`
 };
 const GAUGE = () => {
   const N=60, on=51, cx=300, cy=250, r1=168, r2=196, t=[];

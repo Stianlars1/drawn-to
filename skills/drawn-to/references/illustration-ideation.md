@@ -104,6 +104,43 @@ If a set cannot produce N distinct devices, the set is too big: cut it to the
 number of genuinely different mechanisms, or ship the cells typographically
 with no illustration at all (`quality-bar.md` § 3). Never pad with a repeat.
 
+## How to actually build one - isolate, magnify, squint, assemble
+
+Measured against two builds of the same trio on 2026-08-21: one assembled
+straight into the page and read as slop, one built this way and the owner
+called it "akkurat sånn skillen vår skal klare". The difference was not talent
+or taste. It was the working method, and it is four steps:
+
+1. **Isolate.** One standalone file per cell - `discover.html`, not
+   `page.html`. Nothing else on the canvas, no page chrome, no siblings. A
+   figure built inside a finished page inherits that page's compromises and
+   never gets looked at on its own.
+2. **Magnify.** Render each figure alone at 2-3x its delivered size and READ
+   it. Every label, every tick, every hairline. Anything you cannot read at 2x
+   is decoration at 1x, and the guide tier that measures below about 2:1 on
+   its ground has already disappeared at delivered size - check it, do not
+   assume it.
+3. **Squint.** Put the cells side by side at 25 % with the type hidden. If two
+   silhouettes rhyme, one of them is not designed yet. This is the set bar
+   test (`quality-bar.md` § 3b.3) run BEFORE assembly, where it is still cheap
+   to change the device.
+4. **Assemble last.** Only then paste into the page, and re-render the whole
+   screen to check the figures against the copy and the fold.
+
+Two properties of the good build are worth naming because they are cheap and
+almost always skipped: `vector-effect="non-scaling-stroke"` on every SVG child,
+so a 1 px hairline stays 1 px at any scale instead of thickening as the figure
+grows; and grain over the illustration zone, masked to fade out before the
+text, so the figure sits on a surface rather than floating on a flat fill.
+
+And the values: write the real ones or do not write any. A drawing that prints
+a filename, a row count, a duration or a device name is making a checkable
+claim. `docs/design-locks/2026-08-21.md` when the file is
+`...-drawn-to-site.md`, a firmness ladder with three states when the product
+has two, a device called "switch bank" that is not in the catalog below - each
+of those was caught by an adversarial pass, and each would have been caught by
+the author opening the file instead of recalling it.
+
 ## The fit-method runs at BUILD time
 
 QI below is the PROPOSAL stage and it is skippable in exactly one case: the
