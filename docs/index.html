@@ -462,6 +462,7 @@ h1{margin:0;font-family:var(--sans);font-weight:var(--display-w);letter-spacing:
 [data-variant="p"] .rail .st.on::after{transform:scaleY(1)}
 [data-variant="p"] .rail .st.on::before{background:transparent}
 [data-variant="p"] .panel .swapzone{display:grid}
+[data-variant="p"] .panel .swapzone>div{display:grid;gap:16px;align-content:center}
 [data-variant="p"] .panel .swapzone>*{grid-area:1/1;transition:opacity 180ms ease-in-out,transform 180ms ease-in-out,filter 180ms ease-in-out}
 [data-variant="p"] .panel[data-swap="out"] .swapzone>*{opacity:0;transform:translateY(-5px);filter:blur(2px)}
 [data-variant="p"] .panel h3{margin:0;font:500 22px/1.25 var(--sans);letter-spacing:-.018em}
