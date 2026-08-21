@@ -63,6 +63,33 @@ is a SET, and a set has rules a single illustration does not:
 4. **Same finish, different object.** One line weight, one ramp, one accent
    across the set; a different hero object in every cell.
 
+**How the corpus actually does it - the four dials.** Measured off the four
+sets the owner saved for exactly this reason (Triopixels-2089, LexnLin-2024,
+adriankuleszo-2089887, 0xSero-2090): every one of them varies each card by ONE
+NOTCH on three or four independent dials, and no two cards in a set share a
+combination. This is the mechanism behind "different device" - name the notch,
+not a mood:
+
+| Dial | Notches seen in the corpus |
+|---|---|
+| **Primitive** - the one shape vocabulary a cell owns and never borrows | wide row · keycap · small pill · bare circle node · vertical bar · circle+diagonal · axis-aligned rectangle · noisy polyline + dotted leader · arc + filled square |
+| **Arrangement** - how the primitives are placed | raked vertical stack · single horizontal baseline · diagonal staircase (+55, +30 per step) · free 2D scatter · orthogonal series on a baseline · occluding two-plane stack · cropped gallery · exploded flat parts grid |
+| **Depth encoding** - how the third dimension is spent | opacity + width steps · overlap + scale · tone along one axis · real Z bands · none (deliberately flat) |
+| **Symmetry** | 4-fold radial · single vertical mirror · asymmetric · hard-cropped by the frame |
+
+adriankuleszo-2089887 states it most plainly: every card is assigned a
+different SPATIAL ARRANGEMENT VERB - stack in depth, place two widths side by
+side, repeat in a cropped gallery, explode into a flat parts grid, annotate one
+continuous canvas - and no verb repeats. 0xSero-2090 varies the primitive and
+the symmetry while holding every stroke at exactly 1 px and every radius at 0.
+Triopixels-2089 varies primitive, arrangement, depth and even whether the card
+keeps the shared sky at all, while the shell and the shadow never move.
+
+So: hold the FINISH rigid (one hairline weight, one radius family, one ramp,
+one accent, one shell, one shadow) and spend all the variety on the dials. A
+set where the finish varies and the objects rhyme is the exact inversion of
+what the corpus does.
+
 The set law is checked as a table, not as a feeling. BEFORE writing any
 markup, write this table into the lock file - one row per cell - and stop the
 build if any value in the Device column repeats:
