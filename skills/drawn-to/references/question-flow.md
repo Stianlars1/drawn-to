@@ -142,6 +142,10 @@ ask ONLY what discovery couldn't answer of the following:
   bento) / pricing / component / full site / subpage / brand board - and, for
   feature work, the format (grid/bento vs alternating rows) and item count;
   for a full page/site, the section inventory (sets the question budget).
+- **Page shape** (landing pages): one screen (100 vw × 100 svh, no scroll -
+  one message, one signature visual, hard budgets from `quality-bar.md`) ·
+  short scroll (3-5 sections) · long-form. Fewer screens is the stronger
+  default for a product with one message; ask, don't assume the long page.
 - **Product truth**: product + audience one-liner, AND the real feature list
   (4-6 items, priority order) plus the data domain (what a record/file/request
   actually looks like). C2/C10 need this - fragments depict real capability

@@ -8,7 +8,7 @@ mode: per direction (A dark · B light · C light paper · D dark · E black)
 language: English
 constraints: static HTML/CSS/JS, no framework, Pages-hosted; View Transitions with instant fallback
 delivery: lock + build
-status: locked → building
+status: locked → rebuilding as one screen (revision R1)
 ---
 
 # Design locks - Drawn To site (interview of 2026-08-21)
@@ -42,3 +42,29 @@ Constants enforced in all five: C1–C12. Grain on every gradient (B, C slab, D 
 POLISH: applied - count-up (first view only), copy button (reserved width, text+icon swap, success colour, quiet revert), hero word-group reveal (first paint only, not per cycle), transition blur 2 px · gated - no hover lifts on dark (C3), no entrance choreography per cycle (the cross-fade IS the entrance), no ambient loops except D's rings (linear).
 
 References: basit_designs-2017, 0xSero-2090, Triopixels-2089, adriankuleszo-2089253, basit_designs-2089995, devxnuj-2090, marcelkargul-2089371/2089404, production-formula (Vercel, Linear, Raycast measures), flohoeller-2090.
+
+## Revision R1 - owner review of the shipped cycling page (2026-08-21, 11:00)
+
+Owner verdict on the live build (screenshots at ~1840 px): eyebrow labels on every
+screen ("oser AI slop"), 7-word H1 breaking onto three lines, paper mat (C) cut by
+the fold, cramped narrow text columns (E), triangle-in-a-ring "object" (E), conic
+stripes as "light" (D), too many CTAs and stats. Root cause recorded in
+`references/quality-bar.md` (added because of this review). Rows below ADD to the
+ledger; nothing above is erased. Where a row below conflicts with "Per-direction
+locks" above, the row below wins and the older line is `revised (R1)`.
+
+| # | Axis | Locked | Firmness | Consequence |
+|---|------|--------|----------|-------------|
+| Q5 | Page shape | **One screen: 100 vw × 100 svh, no scroll.** Content budget per screen: brand top-left · GitHub link top-right · H1 · one sub line · install command (copy) · ONE signature visual · a discreet mono line bottom-left naming the direction ("02 / 05 · wide light pastel" - a label, never a switcher) · three numbers as one mono line only where the direction carries it (A, C, E; not B, D). Nav links, "Read the source", "Install" button: removed. | must-have | the budgets in quality-bar.md § 2 are hard limits; fold verified at 1440×900 and 1280×720; 390×844 stacks |
+| Q6 | Headline | **"Give your agent taste."** (4 words, one line in every direction; `text-wrap: balance`). Sub line: "A measured taste library and a lock-in interview for coding agents." | must-have | identical strings in all five; no eyebrow anywhere (the direction label at the bottom is the only mono caps) |
+| Q7-A | Signature visual A | "The page measuring itself": one large blueprint plate - a redline of a hero section with dimension lines and real values (1120 · 28 · 0.08 · 0), hairlines, one blue accent, mono labels | must-have | replaces the FIG.01-04 plates (revised R1) |
+| Q7-B | Signature visual B | Typographic poster on the pastel horizon gradient with 3 % grain + ONE soft squircle surface carrying the command; no cards, no chips, no pills | must-have | replaces stat chips + pebble cards (revised R1) |
+| Q7-C | Signature visual C | The current paper composition halved: serif H1, gradient slab with finer halftone (4 px pitch), white mat that fits the fold with ≥ 48 px air; crop marks stay | must-have | mat content cut, not air (revised R1) |
+| Q7-D | Signature visual D | "One light": a single slanted beam from top-right (shaped gradient: one defined edge, soft falloff) lighting the H1, a fading dust field, grain; NO rays, NO rings, NO centered blob | must-have | 100 % redesign of the D field (revised R1) |
+| Q7-E | Signature visual E | One large thin ring with a single lit arc (comet), slow linear rotation (ambient register), H1 small at left, three mono lines at right; the triangle is gone | must-have | replaces triangle-in-ring (revised R1) |
+| Q8 | Delivery | Build locally → visual QA loop at 1440×900 / 1280×720 / 390×844 → full-size screenshots shown to the owner → push on "ok" | must-have | QA + POLISH lines recorded below before handoff |
+| AX12 | Copy punctuation | ALWAYS "-", NEVER "—" - in every string on the page | must-have | standing owner rule |
+
+Exemplars: after QA, screenshot each direction at 1440×900 into `assets/exemplars/<a-e>-<family>.png` and link them from the skill's style-families.md as owned, CC0 exemplar plates.
+
+QA: pending (new session) · POLISH: pending

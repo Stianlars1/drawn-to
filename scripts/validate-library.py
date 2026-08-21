@@ -65,14 +65,14 @@ for doc in doc_files:
             errors.append(f"{doc.name}: citation '{author}-{digits}' matches no post")
         elif len(matches) > 1:
             errors.append(
-                f"{doc.name}: citation '{author}-{digits}' ambiguous ({len(matches)} posts) — use 7 digits"
+                f"{doc.name}: citation '{author}-{digits}' ambiguous ({len(matches)} posts) - use 7 digits"
             )
 
 # --- 3. SKILL.md read-order files -------------------------------------------
 skill_text = (SKILL / "SKILL.md").read_text()
 for ref in re.findall(r"`references/([A-Za-z0-9_.-]+\.md)`", skill_text):
     if not (REFS / ref).exists():
-        errors.append(f"SKILL.md names references/{ref} — file missing")
+        errors.append(f"SKILL.md names references/{ref} - file missing")
 
 # --- 4. matrix row count ------------------------------------------------------
 matrix = (REFS / "matrix.md").read_text()
@@ -81,12 +81,19 @@ if len(rows) != len(post_files):
     errors.append(f"matrix.md has {len(rows)} rows but posts/ has {len(post_files)} files")
 for link in re.findall(r"\]\(posts/([^)]+)\)", matrix):
     if not (POSTS / link).exists():
-        errors.append(f"matrix.md links posts/{link} — file missing")
+        errors.append(f"matrix.md links posts/{link} - file missing")
 
 # --- 5. media presence (warn) -------------------------------------------------
 for name in post_names:
     if not (MEDIA / name).is_dir():
         warnings.append(f"no media dir for {name} (ok if intentionally text-only)")
+
+# --- 6. copy rule: ALWAYS "-", NEVER an em dash (owner rule; generated-copy tell) ---
+EM = "\u2014"
+for doc in sorted(SKILL.rglob("*.md")):
+    for i, line in enumerate(doc.read_text().splitlines(), 1):
+        if EM in line and "NEVER" not in line and "Em dashes (" not in line:
+            errors.append(f"{doc.relative_to(SKILL)}:{i}: em dash in text - use '-'")
 
 # --- report -------------------------------------------------------------------
 for w in warnings:

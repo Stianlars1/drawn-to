@@ -92,6 +92,7 @@ skills/drawn-to/
     animation-recipes.md       14 ready-to-build component animations
     isometric-and-light.md     two paths: isometric objects (construction math) and structured light (why shaped gradients read expensive)
     production-formula.md      page-scale values measured live off 7 famous sites
+    quality-bar.md             the tells (generated-UI signatures), per-screen budgets, illustration bar, mandatory visual QA loop
     layout-language.md · motion-grammar.md · graphic-language.md · color-type.md
     matrix.md                  index of every reference
     posts/                     51 frame-level analyses, one per reference

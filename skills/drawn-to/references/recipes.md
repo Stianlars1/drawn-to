@@ -47,6 +47,13 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
 
 ---
 
+### One-Screen Poster - the whole page is one 100 svh screen, one message, one signature visual
+- **Anatomy:** `min-height:100svh`, no scroll, no sections. Brand top-left, one link/action top-right (nav = 2 items). H1 ≤ 6 words on ONE designed line break (`text-wrap:balance` + `<br>`), 48–96px by family → 16–24px → one sub line ≤ 120 chars → 32–40px → the install/capture control (one) → the rest of the screen belongs to ONE signature visual. Bottom edge: one discreet mono line (direction label, version, or three tabular numbers) - the only mono caps on the page. Everything fits the fold at 1440×900 AND 1280×720 with ≥ 48px air top and bottom; at 390×844 the visual moves below the copy or becomes the ground.
+- **Ingredients:** the signature visual carries the family: F1 = a measured blueprint plate (redline with real values), F3/F8 = one shaped light (beam, arc, lit ring - never a centred blob), F5 = a paper mat with one gradient slab + halftone + crop marks, F6 = the horizon gradient with 3% grain and one soft surface, Vercel-register = one lit object with H1 small at left and mono lines at right. Zero eyebrows, ≤ 2 CTAs, 0 or 3 numbers. Polish: copy control with reserved width + success state; count-up once. If the page cycles directions (view transitions), entrances run on first paint only - each new skin arrives composed (C12).
+- **Evidence:** its_sslvr-2088 (poster register), basit_designs-2017 (one lit line on near-black), marcelkargul-2089371 (structured light as the only object); budgets from `quality-bar.md` § 2.
+- **Families:** every family can render it; the visual changes, the skeleton does not. Clash: F4 + F6 on one screen (blueprint over pastel) - pick one.
+- **Choose when:** the product has one message and the visual can carry it (a skill, a tool, a launch); when every added section would dilute; when the page must be judged at a glance. Not for products that must explain a workflow - use Scrubbed Product Stage or a short-scroll page.
+
 ## Feature section - grid/cards
 
 ### Self-Demo Loop Grid - every card is a working fragment animating its own headline

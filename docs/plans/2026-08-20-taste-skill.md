@@ -174,3 +174,13 @@ style/tone/direction before any code is written.
       content model, per-variant token blocks, HERO.a–e + PAGE.a–e running orders,
       View Transitions engine (`?v=x&still` QA, arrow keys), count-up + copy polish kept
       once-per-session. A–E verified in browser; D light field intensified.
+- [x] Round 14 (owner review of the five-direction site → quality bar): the build passed
+      its locks and still read as generated. Added references/quality-bar.md (tells,
+      budgets, illustration bar, mandatory visual QA loop at full viewport, honesty
+      clause); wired into SKILL step 6, read order, working rules, checklist, lock
+      template (QA + POLISH lines); Q0 gained "page shape". Owner rule: ALWAYS "-",
+      NEVER em dash - encoded + swept (1674 replacements). Site revision R1 locked:
+      one screen 100svh, H1 "Give your agent taste.", one signature visual per
+      direction (A redline plate · B typographic poster · C halved paper · D one
+      beam · E ring with lit arc), delivery via QA loop. Rebuild runs in a NEW
+      session through /drawn-to with the lock file as input.
