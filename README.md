@@ -85,7 +85,7 @@ skills/drawn-to/
     discovery.md               repo recon + a trust model: product facts / infrastructure tokens / design state
     style-families.md          the master: 12 constants (count-backed), 8 families, blend rules, clashes
     question-flow.md           the interview protocol, plain-language glossary, axis bank, lock-file template
-    recipes.md                 31 named composition variants across 9 section kinds
+    recipes.md                 36 named composition variants across 9 section kinds
     illustration-ideation.md   per-feature illustration engine: verb → metaphor register → hero + evidence, 20 devices
     scroll-scrub.md            scroll-scrubbed product scenes (registered-property poses, three drivers, mobile playbook)
     animation-craft.md         build doctrine: the animate-at-all gate, curves, springs & gesture physics, never-ship list

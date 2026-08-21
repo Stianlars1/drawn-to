@@ -118,6 +118,13 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
 
 ---
 
+### Iso Stage Cards - one isometric world per claim, 1 wide + 2
+- **Anatomy:** container ~1036px on a white page. Row 1: one wide card 1036x555 (1.87:1). Row 2: two cards 511x397 (1.29:1). Gutter 14-15px both axes. Cards: white fill, 1px #E0E0E0 border, radius 0-4, no shadow - the border is the only separation. Inside each card, edge to edge and clipped by it: a hairline isometric diamond grid (~2% ink, ~40x30px cell) as the ground the scenes stand on. Text block sits in the LOWER-LEFT of every card at a constant inset (~44px): eyebrow 12px caps, tracking ~0.12em, gray #7F7F7F -> ~36px -> headline 28-30px/29px leading, black, max 2 lines -> ~18px -> body 15px/19.5px, near-black, measure 52-60ch. The illustration owns the rest of the card and may overlap the text's grid, never its glyphs.
+- **Ingredients:** one iso scene per card, each derived from that card's claim by the derivation ladder in `illustration-ideation.md` (gauntlet / two actors + payload / open-the-host ...), drawn in ONE register: unit-cube modules, flat white-to-#D2D2D2 faces, heavy black silhouette contour over thin internal seams, projected footprint shadows for grounded objects and detached ones for floating objects, and exactly one pure-black face per card carrying a white glyph as the focal. Labels are extruded iso plates with the text sheared onto the plane (italic), carrying the product's real field names (C10). Motion: all cards on ONE clock - enter eased 1.0-1.3s, hold 1.0-1.3s, release 1.0s, quiet 0.5s, 5s loop; ambient travel (dash trains, payload runs) linear; the loop's shape argues the claim (never-arrives = friction, opens-and-closes = already built in).
+- **Evidence:** 0xhammermann-2090 (anchor - three claims, three topologies, one register), marcelkargul-2090148 (iso line-art register), LexnLin-2089 (mechanism diagrams).
+- **Families:** F2 Ink & Air and F6 native (paper-white). F4 Blueprint: invert to dark line-art on graph paper and keep the contour hierarchy. F1: one iso card per section as a garnish, not a whole grid. Clash: F8 emissive - glow kills the drawing.
+- **Choose when:** 2-4 claims that are genuinely different in KIND (a problem, a capability, an integration), a product with no screenshot worth showing, and an audience that respects drawings. Not for feature lists whose items differ only in degree - three gauntlets in a row is one idea told three times.
+
 ## Feature section - editorial rows/chapters
 
 ### Numbered Index + Photo Panels - spec-sheet chapters over cinematic imagery

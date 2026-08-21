@@ -38,10 +38,123 @@ local-feature-graphics (the fit-method exemplar), adriankuleszo-2089887
    tie the hero to the card edges so it sits IN the card.
 4. **Accent = the living datum.** Grayscale everything; the one accent marks
    what the feature acts on (the scanned face, the progress arc, the pins).
-5. **Design the still first, name the motion second.** Every concept must
+5. **Run the derivation ladder below** (claim shape → scene topology → cast →
+   loop rhetoric → swap test → absence check → set register). The fit-method
+   picks the register; the ladder decides what is actually on stage. Skipping
+   it is how interchangeable decoration gets shipped.
+6. **Design the still first, name the motion second.** Every concept must
    carry the pitch as a static frame (C12); then note its one motion
    opportunity per `motion-grammar.md` (a loop that enacts the verb, a hover
    state-change, or a scrub beat).
+
+## From claim to scene - the derivation ladder (run per feature, before any device is picked)
+
+The fit-method above gets the VERB. This ladder gets the SCENE: what is on
+stage, who acts, what travels, what resists, and what the loop asserts. A
+concept that skips it produces the generated-UI failure mode - a pretty object
+that would sit equally well on any of the sibling cards.
+
+Worked exemplar throughout: `0xhammermann-2090` (x402, three cards, one iso
+register, three different scene topologies).
+
+### Step 1 - write the claim as one sentence with an antagonist
+
+Not the headline; the argument under it. "Filling out a form is a maze that
+the payment never gets through" · "Two machines can transact with nothing
+between them" · "The payment layer is already inside HTTP". If you cannot name
+what the feature is arguing AGAINST (friction, a middleman, a migration, a
+leak, a wait), the illustration will have nothing to depict.
+
+### Step 2 - classify the claim shape; the shape picks the scene topology
+
+| Claim shape | Sounds like | Scene topology | The rule that makes it read |
+|---|---|---|---|
+| **Friction / problem** | "X today is broken / painful / slow" | **Gauntlet**: architectural-scale obstacle + a small labelled payload trying to cross | the payload must be visibly IN the obstacle, and it must never arrive - resolution would argue the opposite |
+| **Disintermediation** | "no form, no login, no human in the loop" | **Two actors, one payload, empty space between** | the removed thing must be visibly absent; the gap between actors is the message, so keep it wide and empty |
+| **Integration** | "built into X · no new infrastructure" | **Open the host**: the existing structure at rest, then it parts / cross-sections to show the feature already seated inside | the feature must never arrive from off-stage; the host must be recognisable BEFORE it opens |
+| **Autonomy** | "runs itself · retries without you" | **Closed cycle**: a loop that completes without an operator; failure enters and the loop absorbs it | no cursor, no hand, no avatar anywhere in the frame |
+| **Coverage / scale** | "any client · everywhere · all formats" | **Field**: one module tiled past the frame edge, one instance singled out | the tiling must exceed the canvas (cropped), or it reads as a finite list |
+| **Speed** | "in 40 ms · instantly" | **Compressed distance**: the same route drawn twice, long and short, or one beat crossing the whole stage while a counter ticks | needs a reference length in-frame, otherwise fast is invisible |
+| **Safety / containment** | "nothing leaks · isolated" | **Enclosure + rebound**: a boundary as the hero, an attempt that bounces off | draw the attempt, not just the wall - a wall alone is décor |
+| **Composability** | "bring your own · swap any part" | **Socket**: one standard receptacle, interchangeable parts hovering in the plug order | the socket geometry must repeat exactly across parts |
+| **Continuity** | "no downtime · always on" | **Relay**: overlapping spans where one carries while another is replaced | the overlap is the whole argument - show it |
+
+Two features in one set may share a topology only if their payloads differ in
+kind; three cards with three Gauntlets is one idea repeated.
+
+### Step 3 - cast the scene: actor · payload · terrain · antagonist
+
+Name all four in writing before drawing. The x402 set:
+
+| Card | Actor | Payload | Terrain | Antagonist |
+|---|---|---|---|---|
+| The problem | (none - deliberately) | four form fields, labelled with the real field names | a walled maze at building scale | the maze itself |
+| Agent-ready | two machine bodies | one request in flight | open plane | the absent human (shown by not being there) |
+| HTTP-native | the existing block city | the protocol mark | the city's own footprint | the assumed need for new infrastructure |
+
+Rules: the payload carries the product's real data (C10) - "Card Number…",
+"CVV…", not "Label". The terrain is drawn at a scale that dwarfs the payload
+when the claim is about friction, and at the payload's own scale when the
+claim is about capability. An actor is a body, never an icon of a body.
+
+### Step 4 - the loop asserts the claim (motion is an argument, not decoration)
+
+Pick the loop's rhetorical shape from the claim, then time it:
+
+| Rhetorical shape | Loop | Reads as |
+|---|---|---|
+| **Never arrives** | payload advances, stalls, dissolves before the goal; restart | friction, waste (x402 card 1) |
+| **Crosses in one beat** | payload traverses the full stage in a single eased move, long hold | speed, directness |
+| **Passes directly** | payload leaves A and lands in B with nothing in between | disintermediation (x402 card 2) |
+| **Opens and closes** | host parts, holds open long enough to read the interior, closes | it was inside all along (x402 card 3) |
+| **Absorbs** | a fault enters the cycle, the cycle deforms and recovers | resilience |
+| **Multiplies** | one instance becomes a field, field settles | scale |
+| **Assembles** | separate parts converge into one body and hold | composition, "one system" |
+
+The hold matters as much as the move: the interior of an opened host needs
+~1.0-1.3 s of stillness or the reveal cannot be read. A never-arrives loop
+must fail LATE (past the midpoint) or it reads as a glitch, not as friction.
+
+### Step 5 - the swap test (mandatory; the concept fails if it passes)
+
+Mount each concept on its sibling features and write the sentence it would then
+be arguing. If a concept survives the swap, it is decoration - redesign it.
+
+Worked example from the exemplar: put card 3's opening block-city on card 2 and
+it argues "machines are inside the infrastructure", which is not the claim
+(the claim is that two machines transact directly); put card 2's two floating
+objects on card 1 and the maze's friction disappears - the section then has no
+problem to solve; put card 1's maze on card 3 and it argues that HTTP is an
+obstacle, the exact opposite of "already built in".
+
+Record the result in the lock file on the QI row: `swap test: fails on cards
+2, 3 (correct)`. A QI row without a swap test is not locked.
+
+### Step 6 - the absence check
+
+Whatever the feature ELIMINATES must be visibly missing from the frame, in a
+place where the eye expects it: no form plate on the plane between the two
+machines, no cursor, no human proxy, no login gate. Absence is only legible if
+the composition leaves a hole where the removed thing would have been - so
+leave the hole, and keep it empty.
+
+### Step 7 - the set register contract (what makes N illustrations one family)
+
+Lock these ONCE for the whole set; vary only topology and payload:
+
+- one projection and one grid origin (all cards read as one world),
+- one module scale (the unit block/cell is identical in every card),
+- one value ladder (same face grays, same ground plate, same shadow recipe),
+- one line-weight hierarchy (silhouette / seam / annotation),
+- one focal rule - e.g. exactly one black element per card, always the thing
+  the feature acts on,
+- one motion register (same easing family, same loop length, same hold), and
+  a shared clock if the cards are visible together,
+- one payload typography (the labels are the same component everywhere).
+
+Variety comes from the scene topology, never from restyling. If the three
+illustrations need three different rendering styles to feel distinct, the
+topologies were too similar - go back to Step 2.
 
 ## Device catalog (pick, combine, subvert)
 
@@ -133,6 +246,16 @@ C. Skeleton request log - window skeleton, every row's payload column
 Rules:
 - Concepts must span at least two metaphor registers - variety is the point;
   never three variants of the same device.
+- Every concept carries its **claim sentence** (with the antagonist named) and
+  its **scene topology** from the derivation ladder; across the set, no two
+  features get the same topology unless their payloads differ in kind.
+- Every concept passes the **swap test** before it is shown to the owner: state,
+  in one line per sibling feature, the wrong claim this concept would make if it
+  were mounted there. A concept that would work fine on a sibling is decoration;
+  redesign it rather than presenting it.
+- Every concept states what the loop **asserts** (never-arrives / crosses in one
+  beat / passes directly / opens and closes / absorbs / multiplies / assembles)
+  and what it deliberately leaves absent.
 - Every concept names: metaphor rationale (one line: why it argues THIS
   claim), hero object, evidence chips w/ actual microcopy, accent use, the
   one motion opportunity + its register (C6), and build cost (S/M/L).
@@ -140,7 +263,12 @@ Rules:
   say so and why it earns it.
 - Owner answers with weights as always; a pick may graft a runner-up's
   ingredient ("A, men med C sin hover-dekryptering").
-- Record picks as QI-rows in the lock file (QI1, QI2, … one per feature).
+- Record picks as QI-rows in the lock file (QI1, QI2, … one per feature). Each
+  QI row carries `topology`, `loop asserts`, `absent`, and `swap test: fails on
+  <siblings> (correct)`. A QI row without a swap test is not locked.
+- Lock the **set register contract** once (projection, module scale, value
+  ladder, line weights, focal rule, motion register, payload type) as its own
+  row - it governs every QI row and is what makes N illustrations one family.
 
 ## Building them (HTML/CSS/SVG, no raster)
 

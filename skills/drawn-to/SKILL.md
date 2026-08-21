@@ -41,7 +41,11 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    `references/recipes.md`, filtered by the locked blend; redesigns always
    include "keep structure, reskin to the locks". For feature-card work,
    then propose 2-4 creative illustration concepts PER FEATURE
-   (`references/illustration-ideation.md`) and lock the picks.
+   (`references/illustration-ideation.md`): run the derivation ladder (claim
+   shape → scene topology → cast → what the loop asserts), apply the SWAP TEST
+   to every concept (mounted on a sibling feature it must argue the wrong
+   thing - a concept that survives the swap is decoration), lock the picks,
+   and lock the set's register contract as its own row.
 6. **Lock + enforce + quality bar + polish** - record every lock as it
    happens in `docs/design-locks/YYYY-MM-DD-<task>.md` in the target project;
    implement from the lock file + dimension docs; every visual change serves a
@@ -80,8 +84,9 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    interruptibility, clip-path toolkit, never-ship list; read before WRITING
    any animation code. motion-grammar = taste; animation-craft = mechanics.
    `references/isometric-and-light.md` - two optional paths: isometric
-   objects (blueprint line-art / soft-shaded, construction math, production
-   route) and structured light (why shaped gradients read expensive, recipes
+   objects (three registers - blueprint line-art, soft-shaded, paper-white
+   heavy-contour - construction math, module architecture, interiors that
+   open, payloads in transit, timing) and structured light (why shaped gradients read expensive, recipes
    for arcs, slabs, rays, rings, dot-maps, ribbons).
    `references/polish-moments.md` - WHERE the small animations live: element +
    verb → treatment (number pop-in, text-states swap, icon swap, success check,
@@ -209,6 +214,8 @@ the text analyses.
    and die in screenshots/JPEG; hover overlays need the layer beneath dropped
    to ≤5% or occluded, never two mid-luminance layers overprinting.
 5. References: which family docs / posts backed the choices.
+   Illustration sets: each QI row's topology + what its loop asserts + its
+   swap-test result; one register contract for the whole set.
 6. Polish pass: numbers / state text / toggles / confirmations / loading /
    hover rows / entrances / errors - each applied or explicitly gated
    (`polish-moments.md`); no state change shifts layout.

@@ -4,7 +4,10 @@ Reverse-engineered from Marcel Kargul's work (kargul.studio): the Services
 bento + CTA dome (local saves, marcelkargul-2090148, marcelkargul-2090509),
 the Hunt.io hero + footer (marcelkargul-2089371, marcelkargul-2089404), the
 six-hero collage (local_HPbqQYUXAAAbrLQ.jpeg) and the Chatsheet hero video
-(marcelkargul-1952697). Two distinct crafts live here and both are offered as
+(marcelkargul-1952697). Extended 2026-08-21 with a third
+iso register reverse-engineered frame by frame from the x402 feature section
+(`0xhammermann-2090`): paper-white, heavy-contour, scene-per-claim. Two
+distinct crafts live here and both are offered as
 a PATH the lock-in flow can choose: (A) isometric objects as the illustration
 language, (B) light with geometry instead of blob gradients. Media:
 `references/media/local-marcel-isometric/` + the slugs above.
@@ -13,7 +16,7 @@ language, (B) light with geometry instead of blob gradients. Media:
 
 ## Path A - Isometric objects
 
-### A1. Two registers
+### A1. Three registers
 
 **Blueprint iso (dark, monochrome)** - the Services bento, marcelkargul-2090148:
 - Objects are 1px line-art on a visible isometric graph-paper grid (~24px
@@ -42,6 +45,35 @@ language, (B) light with geometry instead of blob gradients. Media:
   dot nodes, handles on the bounding boxes. Faces here carry SOFT GRADIENTS
   (white → #e6e6e6, 1-2% per face) - the "soft gradients that make the
   section feel like a product" comment in the post.
+
+**Paper-white iso (light, heavy contour, zero chroma)** - `0xhammermann-2090`,
+a three-card feature section where every card carries its own iso scene:
+
+- Ground: pure white card on a white page; separation is a 1px #E0E0E0-class
+  card border and nothing else. The stage is a hairline diamond grid drawn
+  edge to edge inside the card, clipped by the card, ~2% ink - it reads as
+  graph paper the objects stand on, not as a pattern.
+- Objects are drawn like architectural models: FLAT faces (no gradients on any
+  object face) in a 3-4 step ladder - white #FFF top-lit face · #F2F2F2 ·
+  #D2D2D2 · and, for exactly one face per card, pure black carrying a white
+  glyph. The black face is the focal and it is always the surface the feature
+  acts through (the machine's aperture, the counterpart's mark).
+- The contour does the work the shading does in soft-shaded iso: a heavy,
+  uniform black outline around every solid (2-2.5x the internal seam weight),
+  internal seams thinner, and the ground grid thinner still. Three line
+  weights, no more. This is what separates "architectural model" from "clip
+  art" - a single-weight drawing collapses at a glance.
+- Contact: objects that stand on the plane get a projected footprint shadow
+  (the object's own silhouette, sheared onto the grid, ~#EDEDED, blurred
+  6-10px); objects that float get the same shadow DETACHED and offset - the
+  gap is the altitude. No drop shadows on the object itself.
+- Grain: none. This register is a print drawing, not a rendered scene, and
+  C9's grain rule applies to gradients - here the only gradient is the light
+  falling into an opened interior.
+- Annotation objects (labels, chips, values) are drawn as extruded iso plates:
+  a white top face with the text set ON the plane (sheared into the iso axes)
+  and a black extruded side, so a label is an object in the world rather than
+  UI floating over it. Italic sets them apart from the page's UI type.
 
 **Soft-shaded iso (light, one chroma hero)** - Chatsheet hero video:
 - A single blue disc (concentric ring "core") sits on an iso plane with a
@@ -81,6 +113,78 @@ language, (B) light with geometry instead of blob gradients. Media:
   planes fading/sliding in (graphic-language R8); conveyor = linear
   `translate` loop with period = one item pitch; never ease an infinite
   iso loop (C6).
+
+### A2b. Module architecture - building scenes instead of objects
+
+Marcel's register draws one deliverable per card. This register draws a
+WORLD per card, from one unit cell:
+
+- Pick a unit cube whose footprint equals one grid diamond (typ. 48-64px
+  CSS on the horizontal axis) and a standard height (typ. 0.6-1.0 x the
+  footprint). Every solid in every card is a multiple of that cube: walls are
+  runs of it, towers are stacks, plazas are fields.
+- Runs and walls: draw the run as a single extruded polyline (one silhouette),
+  then draw the module seams INSIDE it at the thinner weight. Never draw N
+  separate cubes side by side - the doubled outlines read as clip art and the
+  silhouette dies.
+- Corners: an L-turn in a wall is one mitre on the top face plus one vertical
+  seam; do not overlap two runs (the double contour shows).
+- Sorting is painter's algorithm on (x + y + z): draw far to near, and let
+  near solids occlude far ones completely - occlusion, not opacity, is what
+  makes iso read as depth. Never fake depth by fading a solid.
+- Heights carry meaning: vary tower heights in a small set (1, 1.5, 2, 3
+  units) so a cluster reads as a city rather than a chart; keep the set small
+  or it reads as noise.
+- A ground plate under a cluster (a flat, slightly darker diamond, ~#F5F5F5,
+  extending 1 cell past the silhouette) grounds the whole assembly and gives
+  the shadow somewhere to fall.
+
+### A2c. Interiors, openings and reveals
+
+The strongest move in this register: a solid host that OPENS.
+
+- Build the host as 4-8 module groups that already tile a footprint with no
+  gaps. Reveal = translate each group outward along its own iso axis,
+  distance 1-2 cells, keeping every group's silhouette intact.
+- Stagger by distance from the opening's centre (nearest first, 40-80ms
+  apart), ease-out ~600-900ms, hold open ~1.0-1.3s, close on the same curve
+  or slightly slower. The hold is not padding: it is the only moment the
+  reveal can be read.
+- The interior is the one place a gradient is allowed: a recessed floor that
+  darkens toward the far corner (near-black at the deepest edge → ~#B8B8B8 at
+  the lip) sells the cavity. Give the pit a lip line at full contour weight.
+- What is revealed must be flat ON the interior floor (sheared into the iso
+  plane), white, and simple enough to read at 40px - a mark, a glyph, a
+  status code. If it needs a legend, it is the wrong object.
+- Do not rotate the camera to show the inside. The camera never moves in this
+  register; the world opens instead. A moving iso camera reads as a game demo
+  and breaks the drawing.
+
+### A2d. Payloads in transit
+
+- A payload travelling a route is an extruded plate (see A1) that moves along
+  the iso axes only - dx, dx*0.5 - never on the screen diagonal. Turns happen
+  at grid intersections, and the turn is instantaneous in direction but eased
+  in speed.
+- A route drawn as a thin spline with rounded corners (radius = 0.5 cell) is
+  a legitimate object: it is the path the payload will take, drawn before it
+  moves. Keep it at annotation weight, well below the contour weight.
+- A transmission between two actors is a dash train: 3-5 dashes of equal
+  length travelling along the axis at constant velocity (linear, ambient
+  register - C6), spawning at the sender and dying at the receiver. Dash
+  length ~1 cell, gap ~0.7 cell. Never animate a dashed line by shifting
+  `stroke-dashoffset` on a curve the eye can follow end to end - the loop
+  seam shows; move discrete dashes instead.
+- Payload stacking: when several payloads queue on one route, stagger their
+  starts by ~250-400ms and let them keep their spacing; a queue that
+  compresses reads as a bug.
+
+### A2e. Timing the register
+
+Measured off the exemplar (5.0s loop, 60fps, three cards on one shared clock):
+enter ~0.5-1.8s eased, hold ~1.0-1.3s, exit/dissolve ~1.0s, quiet ~0.5s. All
+three scenes share the clock, so the section breathes as one; if scenes are
+far apart on the page, desync them instead (C7).
 
 ### A3. How these were made - and the production route
 
