@@ -31,8 +31,8 @@ owner close the tab; the skill's whole job is that they never appear.
   command + "read the source" = four). Budget: one primary, one secondary.
 - Stat strips with 5 numbers. Three or none. One witty line ("0 icon + blurb
   cards") is a joke; repeated on every screen it is noise.
-- Em dashes ( - ) anywhere in copy - headline, sub, captions, labels, footer.
-  Owner's standing rule: ALWAYS "-", NEVER " - ". An em dash is the single
+- Em dashes (—) anywhere in copy - headline, sub, captions, labels, footer.
+  Owner's standing rule: ALWAYS "-", NEVER "—". An em dash is the single
   most reliable tell of generated copy; a hyphen with spaces does the job.
 - Triads ("Fast · Secure · Scalable"), sparkles ✦, emoji, "✨ New" pills above
   the headline, lorem, placeholder avatars, "Trusted by 10,000+ teams" without

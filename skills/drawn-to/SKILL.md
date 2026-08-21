@@ -172,7 +172,7 @@ owner's measured taste, and it beats trained-default aesthetics every time.
   during visual QA (`quality-bar.md` § 4). Text analyses carry the values;
   the frames carry the density and the quality of line - the two things a
   build most often gets wrong.
-- Copy punctuation: ALWAYS "-", NEVER " - " (em dash) in anything the owner
+- Copy punctuation: ALWAYS "-", NEVER "—" (em dash) in anything the owner
   ships - UI copy, captions, labels, README, docs. This is a standing owner
   rule and a top generated-copy tell (`quality-bar.md` § 1).
 - Judge renders, never thumbnails: visual QA happens at 1440×900 and
