@@ -225,14 +225,20 @@ h1{margin:0;font-family:var(--sans);font-weight:var(--display-w);letter-spacing:
 [data-variant="a"] .bottom{border-top:1px solid var(--rule)}
 [data-variant="a"] .copyblock{min-width:0}
 [data-variant="a"] .cmd{margin-top:28px}
-[data-variant="a"] .body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:44px;padding-bottom:2vh}
-[data-variant="a"] h1{font-size:46px}
-[data-variant="a"] .sub{font-size:16px;max-width:40ch}
-[data-variant="a"] .plate{min-width:0;display:flex;align-items:center;justify-content:center}
-[data-variant="a"] .plate svg{display:block;width:100%;max-width:560px;height:auto;max-height:100%}
-[data-variant="a"] .plate .fg{font:500 10px/1 var(--mono);fill:#5D5E63;letter-spacing:.1em}
-[data-variant="a"] .plate .v{font:500 11px/1 var(--mono);fill:var(--accent);font-variant-numeric:tabular-nums}
-
+[data-variant="a"] .body{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);align-items:center;gap:36px;padding-bottom:1vh}
+[data-variant="a"] h1{font-size:44px}
+[data-variant="a"] .sub{font-size:16.5px;max-width:34ch}
+[data-variant="a"] .cmd{margin-top:32px}
+[data-variant="a"] .copyblock{min-width:0}
+[data-variant="a"] .plate{min-width:0;display:flex;align-items:center;justify-content:center;overflow:visible}
+[data-variant="a"] .core{width:100%;max-width:540px;height:auto;max-height:76vh;display:block}
+[data-variant="a"] .core *{vector-effect:non-scaling-stroke}
+[data-variant="a"] .core .v{font:500 12px/1 var(--mono);fill:var(--accent);font-variant-numeric:tabular-nums}
+[data-variant="a"] .core .lb{font:400 10.5px/1 var(--mono);fill:#9296A0;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+[data-variant="a"] .core .lb.dim{fill:#666A73}
+[data-variant="a"] .core .lb.hot{fill:#C9CCD4}
+[data-variant="a"] .core .sweep{animation:coresweep 9s linear infinite}
+@keyframes coresweep{from{transform:translateY(90px)}to{transform:translateY(640px)}}
 
 /* ===================== B · wide light pastel ===================== */
 [data-variant="b"] .screen{background:
@@ -774,7 +780,7 @@ h1{margin:0;font-family:var(--sans);font-weight:var(--display-w);letter-spacing:
 /* ---------- 1280x720 and below: tighten the vertical budget ---------- */
 @media (max-height:760px){
   h1{font-size:56px}
-  [data-variant="a"] h1{font-size:42px}
+  [data-variant="a"] h1{font-size:38px}
   [data-variant="b"] h1{font-size:72px}
   [data-variant="c"] h1{font-size:64px}
   [data-variant="c"] .mat .in{padding:44px 48px 32px}
@@ -937,6 +943,7 @@ h1{margin:0;font-family:var(--sans);font-weight:var(--display-w);letter-spacing:
   .first .w{animation:none;opacity:1;filter:none;transform:none}
   ::view-transition-old(root),::view-transition-new(root){animation:none}
   [data-variant="e"] .ring .spin{animation:none}
+  [data-variant="a"] .core .sweep{animation:none}
   [data-variant="j"] .cell svg .wire,[data-variant="k"] .peb .fan,[data-variant="k"] .peb .runner{animation:none}
   *{transition-duration:0ms!important}
 }
@@ -1066,39 +1073,31 @@ const CTL = (p) => reduce
   : `<div class="ctl" role="group" aria-label="Cycle controls" data-paused="${p?1:0}">${PREV()}${TOGGLE(p)}${NEXT()}</div>`;
 const BOTTOM = (v) => `<div class="bottom"><span class="label">${String(ORDER.indexOf(v)+1).padStart(2,'0')} / ${TOTAL} &middot; ${C.names[v]}</span>${WITH_NUMS.has(v)?NUMS():''}</div>`;
 
-/* A - FIG. 01: a framed technical figure OF the hero, wireframe bars, real values.
-   Never a live copy of the screen it sits on (quality-bar § 1). */
-const PLATE = () => `<div class="plate" aria-hidden="true"><svg viewBox="0 0 560 340" fill="none" preserveAspectRatio="xMidYMid meet">
-  <rect x=".5" y=".5" width="559" height="339" stroke="rgba(255,255,255,.11)"/>
-  <text class="fg" x="18" y="26">FIG. 01 · HERO SECTION</text>
-  <path d="M0 40.5h560" stroke="rgba(255,255,255,.11)"/>
-  <path d="M60 88.5h440" stroke="rgba(255,255,255,.17)"/>
-  <g stroke="rgba(255,255,255,.13)" stroke-dasharray="2 4">
-    <path d="M60.5 58v256M499.5 58v256"/>
-    <path d="M88.5 88v252"/>
-    <path d="M60 120.5h300M60 146.5h300"/>
-    <path d="M268.5 196.5h30M268.5 228.5h30"/>
-  </g>
-  <rect x="88" y="120" width="272" height="26" fill="rgba(255,255,255,.17)"/>
-  <rect x="88" y="160" width="184" height="8" fill="rgba(255,255,255,.075)"/>
-  <rect x="88.5" y="196.5" width="180" height="32" stroke="rgba(255,255,255,.20)"/>
-  <rect x="100" y="208" width="112" height="8" fill="rgba(255,255,255,.10)"/>
-  <path d="M232.5 204v17" stroke="rgba(255,255,255,.14)"/>
-  <g stroke="#5B8CFF" stroke-opacity=".82">
-    <path d="M60 296.5h204M296 296.5h204M60.5 291v11M499.5 291v11"/>
-    <path d="M60 176.5h28M60.5 171v11M88.5 171v11"/>
-    <path d="M292.5 196v32M287 196.5h11M287 228.5h11"/>
-    <path d="M88.5 228.5l-18 20h-16"/>
-    <path d="M404 88.5l16-15h16"/>
-  </g>
-  <g class="v">
-    <text x="280" y="300" text-anchor="middle">1120</text>
-    <text x="74" y="166" text-anchor="middle">28</text>
-    <text x="306" y="216">44</text>
-    <text x="18" y="252">r 0</text>
-    <text x="442" y="78">0.08</text>
-  </g>
-</svg></div>`;
+/* Screen 1 - the corpus as one object. Every lamina is one reference, and its
+   colour is that reference's MEASURED ground, in corpus order; the eight whose
+   analyses describe the ground in words rather than a hex are drawn as voids.
+   The colour is not chosen, it is read. */
+const CORE = () => `<svg class="core" viewBox="52 84 402 592" fill="none" aria-label="Fifty-one measured grounds stacked as one core sample">
+<defs>
+  <pattern id="void" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#0D1015"/><path d="M0 0V5" stroke="#252A33"/></pattern>
+  <linearGradient id="sheen" x1="0" y1="0" x2=".6" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".10"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="sweep" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".26"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <clipPath id="coreclip"><path d="M200.0 120.0 L320.0 180.0 L320.0 588.0 L240.0 628.0 L120.0 568.0 L120.0 160.0 Z"/></clipPath>
+  <filter id="soft" x="-60%" y="-40%" width="220%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<ellipse cx="240" cy="634" rx="118" ry="14" fill="#5B8CFF" opacity=".12" filter="url(#soft)"/>
+<g stroke="#232733" stroke-dasharray="3 5"><path d="M200.0 90.0 V562.0"/><path d="M320.0 150.0 V622.0"/><path d="M240.0 190.0 V662.0"/><path d="M120.0 130.0 V602.0"/></g>
+<g>['<polygon fill="url(#void)" points="120.0,560.0 240.0,620.0 240.0,628.0 120.0,568.0"/>', '<polygon fill="url(#void)" points="240.0,620.0 320.0,580.0 320.0,588.0 240.0,628.0"/>', '<polygon fill="#bdbdbd" points="120.0,552.0 240.0,612.0 240.0,620.0 120.0,560.0"/>', '<polygon fill="#8e8e8e" points="240.0,612.0 320.0,572.0 320.0,580.0 240.0,620.0"/>', '<polygon fill="url(#void)" points="120.0,544.0 240.0,604.0 240.0,612.0 120.0,552.0"/>', '<polygon fill="url(#void)" points="240.0,604.0 320.0,564.0 320.0,572.0 240.0,612.0"/>', '<polygon fill="url(#void)" points="120.0,536.0 240.0,596.0 240.0,604.0 120.0,544.0"/>', '<polygon fill="url(#void)" points="240.0,596.0 320.0,556.0 320.0,564.0 240.0,604.0"/>', '<polygon fill="url(#void)" points="120.0,528.0 240.0,588.0 240.0,596.0 120.0,536.0"/>', '<polygon fill="url(#void)" points="240.0,588.0 320.0,548.0 320.0,556.0 240.0,596.0"/>', '<polygon fill="url(#void)" points="120.0,520.0 240.0,580.0 240.0,588.0 120.0,528.0"/>', '<polygon fill="url(#void)" points="240.0,580.0 320.0,540.0 320.0,548.0 240.0,588.0"/>', '<polygon fill="#cccccc" points="120.0,512.0 240.0,572.0 240.0,580.0 120.0,520.0"/>', '<polygon fill="#999999" points="240.0,572.0 320.0,532.0 320.0,540.0 240.0,580.0"/>', '<polygon fill="#101010" points="120.0,504.0 240.0,564.0 240.0,572.0 120.0,512.0"/>', '<polygon fill="#0c0c0c" points="240.0,564.0 320.0,524.0 320.0,532.0 240.0,572.0"/>', '<polygon fill="#c5c4c1" points="120.0,496.0 240.0,556.0 240.0,564.0 120.0,504.0"/>', '<polygon fill="#949391" points="240.0,556.0 320.0,516.0 320.0,524.0 240.0,564.0"/>', '<polygon fill="#040306" points="120.0,488.0 240.0,548.0 240.0,556.0 120.0,496.0"/>', '<polygon fill="#030204" points="240.0,548.0 320.0,508.0 320.0,516.0 240.0,556.0"/>', '<polygon fill="url(#void)" points="120.0,480.0 240.0,540.0 240.0,548.0 120.0,488.0"/>', '<polygon fill="url(#void)" points="240.0,540.0 320.0,500.0 320.0,508.0 240.0,548.0"/>', '<polygon fill="#bcbcbc" points="120.0,472.0 240.0,532.0 240.0,540.0 120.0,480.0"/>', '<polygon fill="#8d8d8d" points="240.0,532.0 320.0,492.0 320.0,500.0 240.0,540.0"/>', '<polygon fill="#181818" points="120.0,464.0 240.0,524.0 240.0,532.0 120.0,472.0"/>', '<polygon fill="#121212" points="240.0,524.0 320.0,484.0 320.0,492.0 240.0,532.0"/>', '<polygon fill="#c0c4cb" points="120.0,456.0 240.0,516.0 240.0,524.0 120.0,464.0"/>', '<polygon fill="#909398" points="240.0,516.0 320.0,476.0 320.0,484.0 240.0,524.0"/>', '<polygon fill="#bcbcc0" points="120.0,448.0 240.0,508.0 240.0,516.0 120.0,456.0"/>', '<polygon fill="#8d8d90" points="240.0,508.0 320.0,468.0 320.0,476.0 240.0,516.0"/>', '<polygon fill="#c8c8c9" points="120.0,440.0 240.0,500.0 240.0,508.0 120.0,448.0"/>', '<polygon fill="#969697" points="240.0,500.0 320.0,460.0 320.0,468.0 240.0,508.0"/>', '<polygon fill="#b0b4b4" points="120.0,432.0 240.0,492.0 240.0,500.0 120.0,440.0"/>', '<polygon fill="#848787" points="240.0,492.0 320.0,452.0 320.0,460.0 240.0,500.0"/>', '<polygon fill="#0c0c0c" points="120.0,424.0 240.0,484.0 240.0,492.0 120.0,432.0"/>', '<polygon fill="#090909" points="240.0,484.0 320.0,444.0 320.0,452.0 240.0,492.0"/>', '<polygon fill="#c2c5c6" points="120.0,416.0 240.0,476.0 240.0,484.0 120.0,424.0"/>', '<polygon fill="#919494" points="240.0,476.0 320.0,436.0 320.0,444.0 240.0,484.0"/>', '<polygon fill="#0c0c0e" points="120.0,408.0 240.0,468.0 240.0,476.0 120.0,416.0"/>', '<polygon fill="#09090a" points="240.0,468.0 320.0,428.0 320.0,436.0 240.0,476.0"/>', '<polygon fill="#b7b7b7" points="120.0,400.0 240.0,460.0 240.0,468.0 120.0,408.0"/>', '<polygon fill="#898989" points="240.0,460.0 320.0,420.0 320.0,428.0 240.0,468.0"/>', '<polygon fill="#030405" points="120.0,392.0 240.0,452.0 240.0,460.0 120.0,400.0"/>', '<polygon fill="#020304" points="240.0,452.0 320.0,412.0 320.0,420.0 240.0,460.0"/>', '<polygon fill="#c5c5c5" points="120.0,384.0 240.0,444.0 240.0,452.0 120.0,392.0"/>', '<polygon fill="#949494" points="240.0,444.0 320.0,404.0 320.0,412.0 240.0,452.0"/>', '<polygon fill="#070708" points="120.0,376.0 240.0,436.0 240.0,444.0 120.0,384.0"/>', '<polygon fill="#050506" points="240.0,436.0 320.0,396.0 320.0,404.0 240.0,444.0"/>', '<polygon fill="#c8c8c8" points="120.0,368.0 240.0,428.0 240.0,436.0 120.0,376.0"/>', '<polygon fill="#969696" points="240.0,428.0 320.0,388.0 320.0,396.0 240.0,436.0"/>', '<polygon fill="#0e0e0e" points="120.0,360.0 240.0,420.0 240.0,428.0 120.0,368.0"/>', '<polygon fill="#0a0a0a" points="240.0,420.0 320.0,380.0 320.0,388.0 240.0,428.0"/>', '<polygon fill="#0c0d0f" points="120.0,352.0 240.0,412.0 240.0,420.0 120.0,360.0"/>', '<polygon fill="#090a0b" points="240.0,412.0 320.0,372.0 320.0,380.0 240.0,420.0"/>', '<polygon fill="#c8c8c8" points="120.0,344.0 240.0,404.0 240.0,412.0 120.0,352.0"/>', '<polygon fill="#969696" points="240.0,404.0 320.0,364.0 320.0,372.0 240.0,412.0"/>', '<polygon fill="#0c0c0c" points="120.0,336.0 240.0,396.0 240.0,404.0 120.0,344.0"/>', '<polygon fill="#090909" points="240.0,396.0 320.0,356.0 320.0,364.0 240.0,404.0"/>', '<polygon fill="#0f0f11" points="120.0,328.0 240.0,388.0 240.0,396.0 120.0,336.0"/>', '<polygon fill="#0b0b0d" points="240.0,388.0 320.0,348.0 320.0,356.0 240.0,396.0"/>', '<polygon fill="#c5c5c5" points="120.0,320.0 240.0,380.0 240.0,388.0 120.0,328.0"/>', '<polygon fill="#949494" points="240.0,380.0 320.0,340.0 320.0,348.0 240.0,388.0"/>', '<polygon fill="#181c1e" points="120.0,312.0 240.0,372.0 240.0,380.0 120.0,320.0"/>', '<polygon fill="#121516" points="240.0,372.0 320.0,332.0 320.0,340.0 240.0,380.0"/>', '<polygon fill="#0c0c0e" points="120.0,304.0 240.0,364.0 240.0,372.0 120.0,312.0"/>', '<polygon fill="#09090a" points="240.0,364.0 320.0,324.0 320.0,332.0 240.0,372.0"/>', '<polygon fill="#adadad" points="120.0,296.0 240.0,356.0 240.0,364.0 120.0,304.0"/>', '<polygon fill="#828282" points="240.0,356.0 320.0,316.0 320.0,324.0 240.0,364.0"/>', '<polygon fill="url(#void)" points="120.0,288.0 240.0,348.0 240.0,356.0 120.0,296.0"/>', '<polygon fill="url(#void)" points="240.0,348.0 320.0,308.0 320.0,316.0 240.0,356.0"/>', '<polygon fill="#b7b8bc" points="120.0,280.0 240.0,340.0 240.0,348.0 120.0,288.0"/>', '<polygon fill="#898a8d" points="240.0,340.0 320.0,300.0 320.0,308.0 240.0,348.0"/>', '<polygon fill="#bcbcbc" points="120.0,272.0 240.0,332.0 240.0,340.0 120.0,280.0"/>', '<polygon fill="#8d8d8d" points="240.0,332.0 320.0,292.0 320.0,300.0 240.0,340.0"/>', '<polygon fill="#1c1c1c" points="120.0,264.0 240.0,324.0 240.0,332.0 120.0,272.0"/>', '<polygon fill="#151515" points="240.0,324.0 320.0,284.0 320.0,292.0 240.0,332.0"/>', '<polygon fill="#afafaf" points="120.0,256.0 240.0,316.0 240.0,324.0 120.0,264.0"/>', '<polygon fill="#838383" points="240.0,316.0 320.0,276.0 320.0,284.0 240.0,324.0"/>', '<polygon fill="#cccccc" points="120.0,248.0 240.0,308.0 240.0,316.0 120.0,256.0"/>', '<polygon fill="#999999" points="240.0,308.0 320.0,268.0 320.0,276.0 240.0,316.0"/>', '<polygon fill="#c7c8c9" points="120.0,240.0 240.0,300.0 240.0,308.0 120.0,248.0"/>', '<polygon fill="#959697" points="240.0,300.0 320.0,260.0 320.0,268.0 240.0,308.0"/>', '<polygon fill="#191919" points="120.0,232.0 240.0,292.0 240.0,300.0 120.0,240.0"/>', '<polygon fill="#131313" points="240.0,292.0 320.0,252.0 320.0,260.0 240.0,300.0"/>', '<polygon fill="#afc2cc" points="120.0,224.0 240.0,284.0 240.0,292.0 120.0,232.0"/>', '<polygon fill="#839199" points="240.0,284.0 320.0,244.0 320.0,252.0 240.0,292.0"/>', '<polygon fill="#c1c0be" points="120.0,216.0 240.0,276.0 240.0,284.0 120.0,224.0"/>', '<polygon fill="#91908e" points="240.0,276.0 320.0,236.0 320.0,244.0 240.0,284.0"/>', '<polygon fill="#cccccc" points="120.0,208.0 240.0,268.0 240.0,276.0 120.0,216.0"/>', '<polygon fill="#999999" points="240.0,268.0 320.0,228.0 320.0,236.0 240.0,276.0"/>', '<polygon fill="#adadad" points="120.0,200.0 240.0,260.0 240.0,268.0 120.0,208.0"/>', '<polygon fill="#828282" points="240.0,260.0 320.0,220.0 320.0,228.0 240.0,268.0"/>', '<polygon fill="#c8c8c8" points="120.0,192.0 240.0,252.0 240.0,260.0 120.0,200.0"/>', '<polygon fill="#969696" points="240.0,252.0 320.0,212.0 320.0,220.0 240.0,260.0"/>', '<polygon fill="url(#void)" points="120.0,184.0 240.0,244.0 240.0,252.0 120.0,192.0"/>', '<polygon fill="url(#void)" points="240.0,244.0 320.0,204.0 320.0,212.0 240.0,252.0"/>', '<polygon fill="#c5c5c5" points="120.0,176.0 240.0,236.0 240.0,244.0 120.0,184.0"/>', '<polygon fill="#949494" points="240.0,236.0 320.0,196.0 320.0,204.0 240.0,244.0"/>', '<polygon fill="#141414" points="120.0,168.0 240.0,228.0 240.0,236.0 120.0,176.0"/>', '<polygon fill="#0f0f0f" points="240.0,228.0 320.0,188.0 320.0,196.0 240.0,236.0"/>', '<polygon fill="#c7c7c7" points="120.0,160.0 240.0,220.0 240.0,228.0 120.0,168.0"/>', '<polygon fill="#959595" points="240.0,220.0 320.0,180.0 320.0,188.0 240.0,228.0"/>']</g>
+<g stroke="#000" stroke-opacity=".45" stroke-width=".75"><path d="M120.0 160.0 L240.0 220.0 L320.0 180.0"/><path d="M120.0 168.0 L240.0 228.0 L320.0 188.0"/><path d="M120.0 176.0 L240.0 236.0 L320.0 196.0"/><path d="M120.0 184.0 L240.0 244.0 L320.0 204.0"/><path d="M120.0 192.0 L240.0 252.0 L320.0 212.0"/><path d="M120.0 200.0 L240.0 260.0 L320.0 220.0"/><path d="M120.0 208.0 L240.0 268.0 L320.0 228.0"/><path d="M120.0 216.0 L240.0 276.0 L320.0 236.0"/><path d="M120.0 224.0 L240.0 284.0 L320.0 244.0"/><path d="M120.0 232.0 L240.0 292.0 L320.0 252.0"/><path d="M120.0 240.0 L240.0 300.0 L320.0 260.0"/><path d="M120.0 248.0 L240.0 308.0 L320.0 268.0"/><path d="M120.0 256.0 L240.0 316.0 L320.0 276.0"/><path d="M120.0 264.0 L240.0 324.0 L320.0 284.0"/><path d="M120.0 272.0 L240.0 332.0 L320.0 292.0"/><path d="M120.0 280.0 L240.0 340.0 L320.0 300.0"/><path d="M120.0 288.0 L240.0 348.0 L320.0 308.0"/><path d="M120.0 296.0 L240.0 356.0 L320.0 316.0"/><path d="M120.0 304.0 L240.0 364.0 L320.0 324.0"/><path d="M120.0 312.0 L240.0 372.0 L320.0 332.0"/><path d="M120.0 320.0 L240.0 380.0 L320.0 340.0"/><path d="M120.0 328.0 L240.0 388.0 L320.0 348.0"/><path d="M120.0 336.0 L240.0 396.0 L320.0 356.0"/><path d="M120.0 344.0 L240.0 404.0 L320.0 364.0"/><path d="M120.0 352.0 L240.0 412.0 L320.0 372.0"/><path d="M120.0 360.0 L240.0 420.0 L320.0 380.0"/><path d="M120.0 368.0 L240.0 428.0 L320.0 388.0"/><path d="M120.0 376.0 L240.0 436.0 L320.0 396.0"/><path d="M120.0 384.0 L240.0 444.0 L320.0 404.0"/><path d="M120.0 392.0 L240.0 452.0 L320.0 412.0"/><path d="M120.0 400.0 L240.0 460.0 L320.0 420.0"/><path d="M120.0 408.0 L240.0 468.0 L320.0 428.0"/><path d="M120.0 416.0 L240.0 476.0 L320.0 436.0"/><path d="M120.0 424.0 L240.0 484.0 L320.0 444.0"/><path d="M120.0 432.0 L240.0 492.0 L320.0 452.0"/><path d="M120.0 440.0 L240.0 500.0 L320.0 460.0"/><path d="M120.0 448.0 L240.0 508.0 L320.0 468.0"/><path d="M120.0 456.0 L240.0 516.0 L320.0 476.0"/><path d="M120.0 464.0 L240.0 524.0 L320.0 484.0"/><path d="M120.0 472.0 L240.0 532.0 L320.0 492.0"/><path d="M120.0 480.0 L240.0 540.0 L320.0 500.0"/><path d="M120.0 488.0 L240.0 548.0 L320.0 508.0"/><path d="M120.0 496.0 L240.0 556.0 L320.0 516.0"/><path d="M120.0 504.0 L240.0 564.0 L320.0 524.0"/><path d="M120.0 512.0 L240.0 572.0 L320.0 532.0"/><path d="M120.0 520.0 L240.0 580.0 L320.0 540.0"/><path d="M120.0 528.0 L240.0 588.0 L320.0 548.0"/><path d="M120.0 536.0 L240.0 596.0 L320.0 556.0"/><path d="M120.0 544.0 L240.0 604.0 L320.0 564.0"/><path d="M120.0 552.0 L240.0 612.0 L320.0 572.0"/><path d="M120.0 560.0 L240.0 620.0 L320.0 580.0"/><path d="M120.0 568.0 L240.0 628.0 L320.0 588.0"/></g>
+<polygon fill="#2A2A2E" points="200.0,120.0 320.0,180.0 240.0,220.0 120.0,160.0"/><polygon fill="url(#sheen)" points="200.0,120.0 320.0,180.0 240.0,220.0 120.0,160.0"/>
+<g clip-path="url(#coreclip)"><rect class="sweep" x="114" y="0" width="216" height="36" fill="url(#sweep)"/></g>
+<g stroke="#5B8CFF"><path d="M84 160.0h10M84 568.0h10"/><path d="M89 160.0V568.0"/></g>
+<text class="v" x="76" y="368" text-anchor="end">51</text>
+<g fill="#0A0C10" stroke="#EDEDEE"><rect x="197.0" y="117.0" width="6" height="6"/><rect x="317.0" y="177.0" width="6" height="6"/><rect x="237.0" y="217.0" width="6" height="6"/><rect x="117.0" y="157.0" width="6" height="6"/></g>
+<g stroke="#39404E"><path d="M320 232h30"/><path d="M320 420h30"/><path d="M320 584h30"/></g>
+<g class="lb"><text x="358" y="235">#ffffff</text><text x="358" y="423">not recorded</text><text x="358" y="587">#040607</text></g>
+<text class="lb hot" x="120" y="642">one reference per lamina</text><text class="lb dim" x="120" y="658">43 of them measured to the hex</text>
+</svg>`;
 
 /* E - one lit object: a thin ring with a single comet arc, linear rotation (ambient register) */
 const RING = () => `<svg class="ring" viewBox="0 0 400 400" fill="none" aria-hidden="true">
@@ -1449,7 +1448,7 @@ const GAUGE = () => {
   </svg>`;
 };
 const SCREEN = {
-  a: f => `<div class="col">${TOP()}<div class="body"><div class="copyblock">${H1('a',f)}${SUB('a')}${CMD()}</div>${PLATE()}</div>${BOTTOM('a')}</div>`,
+  a: f => `<div class="col">${TOP()}<div class="body"><div class="copyblock">${H1('a',f)}${SUB('a')}${CMD()}</div>${CORE()}</div>${BOTTOM('a')}</div>`,
   b: f => `<div class="grain"></div><div class="col">${TOP()}<div class="body">${H1('b',f)}${SUB('b')}<div class="pebble">${CMD()}</div></div>${BOTTOM('b')}</div>`,
   c: f => `<div class="col">${TOP()}<div class="body"><div class="mat"><i class="cm tl"></i><i class="cm tr"></i><i class="cm bl"></i><i class="cm br"></i><div class="in">${H1('c',f)}${SUB('c')}${CMD()}${NUMS('meta')}</div><div class="slab" aria-hidden="true"><i class="ht"></i><i class="grain"></i></div></div></div>${BOTTOM('c')}</div>`,
   d: f => `<div class="beam" aria-hidden="true"></div><div class="dust" aria-hidden="true"></div><div class="grain"></div><div class="col">${TOP()}<div class="body">${H1('d',f)}${SUB('d')}${CMD()}</div>${BOTTOM('d')}</div>`,

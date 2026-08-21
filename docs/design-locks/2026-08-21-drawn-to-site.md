@@ -144,6 +144,22 @@ metrics, gallery, instrument and frozen interaction all recur with a different
 device and a different slice, which the set law permits; matrix and marquee are
 new kinds.
 
+## Revision R5 - screen one remade (2026-08-21)
+
+Owner on the landing screen: remake it, simple but unique and spectacular,
+attention to detail, "why didn't I think of this".
+
+| # | Axis | Locked | Firmness | Consequence |
+|---|------|--------|----------|-------------|
+| Q7-A | Signature visual, screen 1 | revised (R5): **a core sample.** One isometric column of fifty-one laminae; each lamina is one reference and its colour is that reference's MEASURED ground, in corpus order. The eight whose analyses describe the ground in words rather than a hex are drawn as hatched voids. Lighting contract holds - top lightest, left mid, right darkest - and a 0.75 px seam gives every stratum an edge so the near-black ones do not dissolve into the page. Dashed guides overshoot, handles on the crown, one dimension chain reading 51, three leaders naming real values, a foot ledger reading "one reference per lamina / 43 of them measured to the hex" | must-have | replaces the FIG figure (revised R5). The colour is not chosen, it is read - that is the whole idea, and it is checkable against the reference analyses |
+| Q14 | Beat, screen 1 | A light band travels down the core at constant linear velocity, 9 s, clipped to the silhouette - the corpus being read. Stops under reduced motion | prefer | ambient register, closes frame-perfectly |
+
+Built by the method in `illustration-ideation.md` § How to actually build one:
+isolated in its own file, rendered at 2x and read label by label, squinted at
+25 % against the other dark screens before assembly. The 2x pass caught three
+defects invisible at delivered size - dark laminae dissolving into the ground,
+leader labels running past the frame, and a crown that did not obey the light.
+
 ## Build R1 - what shipped (2026-08-21, rebuilt through the skill)
 
 One file, `docs/index.html`: `100svh`, `overflow:hidden`, no scroll, no sections.
