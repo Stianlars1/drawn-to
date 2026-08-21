@@ -79,14 +79,14 @@
   .stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:40px;font:400 12px/1 var(--mono);color:var(--ink-3);letter-spacing:.06em}
   .stats b{color:var(--ink-2);font-weight:500}
 
-  /* FIG plates (hero right) */
-  .plates{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;border:1px solid var(--rule);align-self:start;margin-top:8px}
-  .plate{position:relative;min-height:190px;padding:16px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);overflow:hidden;transition:background 230ms var(--ease-out)}
+  /* FIG plates (hero right): label / drawing / caption as three rows — the drawing never enters the caption zone (AX11) */
+  .plates{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--rule);align-self:start;margin-top:8px}
+  .plate{display:grid;grid-template-rows:auto 1fr auto;gap:12px;min-height:228px;padding:16px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);overflow:hidden;transition:background 230ms var(--ease-out)}
   .plate:nth-child(2n){border-right:0}.plate:nth-child(n+3){border-bottom:0}
-  .plate:hover{background:var(--accent-wash);transition-duration:230ms}
-  .plate .fig{position:absolute;top:14px;left:16px}
-  .plate svg{position:absolute;inset:0;width:100%;height:100%}
-  .plate p{position:absolute;left:16px;bottom:14px;margin:0;font-size:12px;color:var(--ink-2);max-width:22ch}
+  .plate:hover{background:var(--accent-wash)}
+  .plate .fig{align-self:start}
+  .plate svg{display:block;width:100%;height:112px;align-self:center}
+  .plate p{margin:0;font-size:12px;line-height:1.45;color:var(--ink-2);max-width:24ch;align-self:end}
   .comet{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
 
