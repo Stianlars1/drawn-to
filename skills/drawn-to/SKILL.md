@@ -68,6 +68,13 @@ owner's measured taste, and it beats trained-default aesthetics every time.
 5. `references/production-formula.md` - page-scale architecture measured off
    seven famous production sites (containers, air, running order, nav,
    buttons, closing CTA); feeds AX13-AX15 and full-page sanity checks.
+   `references/hero-atmosphere.md` - the FIRST screen at production scale:
+   five heroes read composition-first (Antigravity, Codex, Linear, Raycast,
+   Vercel), the shared formula, an optics table with real blur/bloom/dither
+   values, and the Field Hero recipe. Read before building any first screen -
+   the rest of this corpus is section-scale and will otherwise hand you a
+   figure in a box beside a column of copy, which is the one composition none
+   of the five uses.
    `references/scroll-scrub.md` - the scroll-scrubbed product-scene pattern
    (registered-property poses, three drivers, sticky-run geometry, mobile
    playbook, fallback ladder); read before building any scrubbed hero or
@@ -186,6 +193,12 @@ owner's measured taste, and it beats trained-default aesthetics every time.
   the product's real material (`recipes.md` § One-Screen Catalog). Repeating the
   same headline + sub + CTA on every screen is the fastest way to make a set of
   genuinely distinct directions read as generic (`quality-bar.md` § 1).
+- First screens are decided by ONE question before anything is drawn: does the
+  field own the page, or is there no field? Three of the five production heroes
+  run a field edge to edge with the type set directly on it; two run no field
+  at all. There is no third answer, and a container with its own background is
+  a defect - an opaque column is what silently prevents every full-bleed field
+  (`hero-atmosphere.md`). Section-scale instincts do not transfer here.
 - Two or more illustrations on one screen or in one section are a SET, and a
   set may not use a device twice. Before writing markup, run the fit-method per
   cell and write the set table (cell · verb · register · device · hero object)

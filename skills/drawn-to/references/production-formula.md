@@ -49,6 +49,16 @@ buttons, closing CTA and footer - and to sanity-check any full-page build.
   centered + rotating pastel pill word; H2 54/700; radii 12/8; borders
   rgba(0,0,0,.1); pastel card tints; blue CTA r8; scroll-pinned hero.
 
+## The first screen is a different problem
+
+The values above are page-scale architecture and they hold. They do NOT
+describe how these sites compose their FIRST screen, and that gap produced
+three failed landing screens on 2026-08-21 before it was noticed. Hero-scale
+composition, the optics values that make a field read as real, and the Field
+Hero recipe now live in `hero-atmosphere.md`, read composition-first off
+captures of Antigravity, Codex, Linear, Raycast and Vercel. Read that file
+before building any first screen; read this one for everything below the fold.
+
 ## The cross-site formula (all seven do this)
 
 1. One container, 1200-1400px, gutters 24-40.
