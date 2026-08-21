@@ -42,13 +42,18 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    include "keep structure, reskin to the locks". For feature-card work,
    then propose 2-4 creative illustration concepts PER FEATURE
    (`references/illustration-ideation.md`) and lock the picks.
-6. **Lock + enforce + polish** — record every lock as it happens in
-   `docs/design-locks/YYYY-MM-DD-<task>.md` in the target project; implement
-   from the lock file + dimension docs; every visual change serves a named
-   lock. Before handoff run the **polish pass** (`references/polish-moments.md`):
-   numbers count, state text swaps in place without layout shift, confirmations
-   signal on three channels, loading/hover/error moments handled or explicitly
-   gated. Then the output checklist below.
+6. **Lock + enforce + quality bar + polish** — record every lock as it
+   happens in `docs/design-locks/YYYY-MM-DD-<task>.md` in the target project;
+   implement from the lock file + dimension docs; every visual change serves a
+   named lock. Then, before handoff, two passes that never get skipped:
+   the **quality bar + visual QA loop** (`references/quality-bar.md`: render at
+   1440×900 / 1280×720 / 390×844, walk the tells and the budgets, compare
+   against the cited reference frames, fix, re-render — a build that passes
+   its locks can still read as generated; this pass is what catches it) and
+   the **polish pass** (`references/polish-moments.md`: numbers count, state
+   text swaps in place without layout shift, confirmations signal on three
+   channels, loading/hover/error moments handled or explicitly gated). Then
+   the output checklist below.
 
 ## Read in this order
 
@@ -83,6 +88,13 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    count-up, reveals, shimmer…), the law of the state change (no layout shift,
    no hard swap, no silent success), motion tokens, the polish pass. Read
    before handing off any interactive surface.
+   `references/quality-bar.md` — the tells (signatures of generated UI:
+   eyebrow spray, over-long headlines, unplanned breaks, fold overflow, blob
+   light, glyph-in-a-ring objects), per-screen budgets (headline ≤ 6 words /
+   2 lines, ≤ 2 CTAs, 0 or 3 stats, 0–1 eyebrow, 45–75 ch measure, fold at
+   1440×900 + 1280×720), the illustration bar (specific · layered · shaped
+   light · one line · two distances · one object — else none), and the
+   mandatory visual QA loop. Read before building and again before handoff.
    `references/animation-recipes.md` — ready-to-build implementations
    (button press, popover, tooltip, modal, drawer, toast, accordion, stagger,
    hold-to-confirm, tab clip-indicator, scroll reveal, drag-to-dismiss, blur
@@ -152,13 +164,26 @@ owner's measured taste, and it beats trained-default aesthetics every time.
   offer the scale-split resolution.
 - Product truth: feature fragments must depict what the product actually does;
   invent presentation, never capability.
+- The content model is a ceiling, not a floor: an airy direction renders fewer
+  words of the same message; cut copy before shrinking type or narrowing the
+  measure. Ask the owner only when a cut removes a message.
+- Look before you build: when the media archive is present locally, open the
+  frames of the references the locks cite BEFORE writing the screen and AGAIN
+  during visual QA (`quality-bar.md` § 4). Text analyses carry the values;
+  the frames carry the density and the quality of line — the two things a
+  build most often gets wrong.
+- Judge renders, never thumbnails: visual QA happens at 1440×900 and
+  390×844 in a real browser; an 800-px pane screenshot is not verification.
 
 ## Visual evidence
 
 The source media for every reference — photos and extracted video frames —
 lives in the taste repo at
 `/Users/stian/Documents/claudee/my_taste/references/media/<full-slug>/`
-(deliberately not shipped inside this skill folder). On a machine that has it,
+(deliberately not shipped inside this skill folder — the originals stay their
+authors'). Any clone can rebuild it locally with `scripts/fetch-posts.sh`
+from the repo root (fxtwitter fetch + ffmpeg frame extraction, per slug or in
+batch); the folder is git-ignored. On a machine that has it,
 open the media to verify a claim or calibrate a value before locking or
 implementing; the per-post analyses in `references/posts/` are the portable
 evidence, the media is ground truth. Guardrails: references are vocabulary,
@@ -184,5 +209,8 @@ the text analyses.
 6. Polish pass: numbers / state text / toggles / confirmations / loading /
    hover rows / entrances / errors — each applied or explicitly gated
    (`polish-moments.md`); no state change shifts layout.
-7. Honest handoff state: distinguish locally verified · committed · pushed/PR ·
+7. Quality bar + visual QA (`quality-bar.md`): the QA line from the lock file
+   (viewports rendered · tells 0 · budgets · refs compared) — a screen that
+   was not rendered at full size is reported as unrendered, never verified.
+8. Honest handoff state: distinguish locally verified · committed · pushed/PR ·
    deployed · independently verified live. Never report further than proven.

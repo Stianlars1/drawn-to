@@ -363,6 +363,8 @@ status: locking | locked | shipped
 Inherited from blend (not asked): AX2 separation = 1px alpha dividers, …
 Constants enforced: C1-C12 (see drawn-to SKILL.md).
 References consulted: basit_designs-2017, 0xSero-2090, …
+POLISH: applied <list> · gated <list>            (polish-moments.md)
+QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · budgets ✓ · refs compared: <slugs or "text only">   (quality-bar.md)
 ```
 
 Each locked row carries its firmness (`must-have`/`prefer`/`open`) in the
@@ -378,4 +380,11 @@ row — the ledger is history, not just current state.
 - Pull exact values from the dimension docs; look up cited `posts/<slug>.md`
   when a lock needs deeper detail (a specific hover, a loop structure) — slugs
   are id prefixes, find files by prefix match (`posts/basit_designs-2017*.md`).
-- Run the output checklist from SKILL.md before presenting the work.
+- Content is a ceiling: per direction, cut copy before shrinking type or
+  narrowing the measure (`quality-bar.md` § 2 budgets). Ask only when a cut
+  removes a message.
+- Before presenting: the visual QA loop (`quality-bar.md` § 4 — render at
+  full size, walk the tells and budgets, compare to the cited frames, fix),
+  then the polish pass, then the output checklist from SKILL.md. The QA and
+  POLISH lines go into the lock file; a screen that was never rendered at
+  full size is handed off as unrendered, not verified.
