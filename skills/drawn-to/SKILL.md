@@ -157,6 +157,18 @@ owner's measured taste, and it beats trained-default aesthetics every time.
   questions "3 of ~8", not "AX3". A question the owner cannot answer without
   the nomenclature is a defect (`question-flow.md` § Question phrasing +
   glossary).
+- The same codes never reach SHIPPED OUTPUT either. The interview rule above
+  protects the owner; this one protects everyone who later reads the page.
+  Nothing a visitor can see or a screen reader can speak - headline, sub,
+  caption, label, direction label, legend, chart or swatch key, tooltip,
+  footer, alt text, aria-label, SVG text - may contain F1-F8, C1-C12, AX1-15,
+  Q numbers or reference slugs. When a lock row becomes copy, translate it
+  through `question-flow.md` § Plain-language glossary first: the lock says
+  "C2", the screen says "zero icon-and-paragraph cards"; the lock says
+  "F2 85 + F4 15", the screen says "ink & air". Codes belong in the lock
+  file, in source comments and in internal docs, nowhere else. A code in
+  user-visible copy is a ship blocker of the same severity as an em dash
+  (`quality-bar.md` § 1) and is checked by the `codes 0` grep in the QA loop.
 - Never force a single choice on a style question - weighted multi-select is
   the contract (the "I liked all 3" rule).
 - Never guess an unanswered lock; ask, or mark `(delegated)` if told to decide.
@@ -167,6 +179,14 @@ owner's measured taste, and it beats trained-default aesthetics every time.
 - The content model is a ceiling, not a floor: an airy direction renders fewer
   words of the same message; cut copy before shrinking type or narrowing the
   measure. Ask the owner only when a cut removes a message.
+- Multi-screen pages are CATALOGS, not one design repeated: each screen takes a
+  different screen kind and a different device, and renders a different slice of
+  the product's real material (`recipes.md` § One-Screen Catalog). Repeating the
+  same headline + sub + CTA on every screen is the fastest way to make a set of
+  genuinely distinct directions read as generic (`quality-bar.md` § 1).
+- Persistent chrome (transport controls, toggles, progress) holds ONE position
+  and ONE skin across every screen - never nested in a container whose width
+  changes per direction, or it jumps on every transition.
 - Look before you build: when the media archive is present locally, open the
   frames of the references the locks cite BEFORE writing the screen and AGAIN
   during visual QA (`quality-bar.md` § 4). Text analyses carry the values;
@@ -199,7 +219,8 @@ the text analyses.
 
 1. Lock file path + which locks this work serves (or: question flow run first).
 2. Constants check: chroma quarantine · no icon+blurb · separation ladder ·
-   grain on gradients · mono data voice · diegetic microcopy.
+   grain on gradients · mono data voice · diegetic microcopy · zero internal
+   codes in visible copy, captions, labels or alt text.
 3. Modes: which are required, both verified if dual (materials re-derived,
    never inverted).
 4. Motion: register split (ambient linear / interaction eased), loop closure,

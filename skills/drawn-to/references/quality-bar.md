@@ -34,9 +34,50 @@ owner close the tab; the skill's whole job is that they never appear.
 - Em dashes (—) anywhere in copy - headline, sub, captions, labels, footer.
   Owner's standing rule: ALWAYS "-", NEVER "—". An em dash is the single
   most reliable tell of generated copy; a hyphen with spaces does the job.
+- **Internal nomenclature in anything a visitor can read.** Family ids
+  (F1-F8), constant ids (C1-C12), axis ids (AX1-15), question ids (Q0, Q1,
+  QI) and reference slugs (`basit_designs-2089995`) are ledger bookkeeping.
+  They must never reach user-visible output: headlines, sub copy, body,
+  captions, labels, eyebrows, direction labels, legends, chart keys, swatch
+  keys, table headers, tooltips, button text, footers, `alt` text,
+  `aria-label`, `title`, `<figcaption>`, SVG `<text>`, page `<title>` or any
+  filename shown on screen. "Constant C2: zero icon-and-paragraph cards" and
+  a swatch wall keyed `F1 ... F8` are the failure: a visitor cannot know what
+  C2 or F1 is, so the string reads as internal tooling left switched on. Say
+  the thing instead - "Zero icon-and-paragraph cards across fifty-one
+  references", "Editorial Monochrome". Every code has a plain wording in
+  `question-flow.md` § Plain-language glossary; run a lock row through the
+  RIGHT column before it becomes copy. A code that must be labelled on screen
+  (a legend, an index) takes the plain name, and the code goes in a comment.
+  This is a ship blocker at the same tier as an em dash. Codes stay legal in
+  the lock file, in source comments, in commit messages and in skill docs.
+  Check before handoff: strip comments from the rendered markup, then
+  `grep -nE '\b(F[1-8]|C([1-9]|1[0-2])|AX[0-9]{1,2}|Q[0-9]+|QI)\b|Constant C'`
+  over the visible text plus every alt/aria-label/title value - zero hits.
 - Triads ("Fast · Secure · Scalable"), sparkles ✦, emoji, "✨ New" pills above
   the headline, lorem, placeholder avatars, "Trusted by 10,000+ teams" without
   a real logo row.
+- **The same content model repeated across a multi-screen page.** Five, nine or
+  twenty screens that each render the identical headline, sub line and CTA are
+  one design shown N times, and an owner reads that as generic no matter how
+  distinct the skins are. In a catalog, each screen argues a DIFFERENT slice of
+  the product in a different screen kind (`recipes.md` § One-Screen Catalog).
+  Same failure at device level: nine screens, nine "one signature visual"
+  slots, but only three device families used. Name the device per screen.
+- **The page draws itself twice.** A wireframe/redline of the current screen
+  placed ON the current screen, complete with its nav bar, its headline text
+  and its footer, does not read as a technical figure - it reads as an
+  accidental duplicate. Draw a FIGURE (framed, labeled, wireframe bars, no
+  live copy) or annotate the real elements in place; never both.
+- **Text set flush on its own construction line.** If a scaffold, rule or grid
+  line is visible, the copy must be INSET from it (one gutter, 32-48 px), not
+  sitting on it. Flush-to-the-rule reads as missing padding, never as
+  alignment.
+- **Chrome that moves between screens.** Persistent controls (transport,
+  theme toggle, progress) must hold ONE position and ONE skin across every
+  screen of a cycling page. Nesting them inside a per-direction container
+  whose width changes makes them jump on every transition - the single most
+  irritating motion on the page, and the visitor blames the transition.
 
 **Surfaces and composition**
 - Anything the owner should see first that does not fit the first viewport:
@@ -79,6 +120,13 @@ cut removes a message, never when it removes words.
 Single-screen pages (100 vw × 100 svh, no scroll) are a legitimate and often
 superior answer for a product with one message; the budgets above are then
 hard limits, and the signature visual carries the direction.
+
+**Per screen KIND.** The table above is the POSTER budget. A one-screen
+catalog runs several kinds, and a feature trio or a ledger legitimately
+carries more elements than a poster does - the per-kind deltas live in
+`recipes.md` § One-Screen Catalog. Two rules survive every kind: the fold
+(100 svh, no scroll, ≥ 48 px air) and the tells in § 1. Two rules are added
+for catalogs: **no screen kind repeats**, and **no device repeats**.
 
 ## 3. The illustration bar
 
@@ -126,9 +174,16 @@ Judge the render, not the code. Never from a thumbnail.
    and say so in the QA line.
 5. **Locks** - every visual choice names a lock; every lock is visible in the
    render.
+5b. **Catalog sweep** (multi-screen pages only) - lay the screens side by side
+   at thumbnail size. If two read as the same layout in different colours, one
+   is redundant: change its KIND, not its palette. Then check the chrome
+   across the set - the persistent controls must land on the same pixel in
+   every screen.
 6. **Polish pass** - `polish-moments.md`.
 7. **Record** in the lock file:
-   `QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · budgets ✓ · refs compared: <slugs or "text only">`.
+   `QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · codes 0 · budgets ✓ · refs compared: <slugs or "text only">`.
+   `codes 0` means the nomenclature grep in § 1 was run against the rendered
+   text and alt/aria values and came back empty. It is never assumed.
 
 The owner's screenshot beats yours. If the owner sends one, it is the
 ground-truth viewport - fix what it shows, do not explain it.

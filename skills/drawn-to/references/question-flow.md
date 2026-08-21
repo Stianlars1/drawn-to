@@ -96,9 +96,14 @@ BOOKKEEPING, not interview language. Rules:
 
 ## Plain-language glossary - what the owner hears instead of the code
 
-Use the LEFT column in the lock file, the RIGHT column in questions. Never
-show the owner "AX3" or "F4"; show "Spørsmål 3 av ~8" and the plain phrase.
-Mirror the owner's language.
+Use the LEFT column in the lock file, the RIGHT column everywhere a human
+reads words: in questions AND in shipped copy, captions, labels, legends
+and alt text. Never show the owner "AX3" or "F4"; show "Spørsmål 3 av ~8"
+and the plain phrase. Mirror the owner's language. The rule does not stop
+at the interview - if a person who has never read this skill will see the
+string, it carries the plain phrase, never the code (`quality-bar.md` § 1,
+nomenclature tell). The section above governs asking; this table governs
+asking and shipping alike.
 
 | Code | Say instead (plain) | Anchor the owner knows |
 |---|---|---|
@@ -146,6 +151,17 @@ ask ONLY what discovery couldn't answer of the following:
   one message, one signature visual, hard budgets from `quality-bar.md`) ·
   short scroll (3-5 sections) · long-form. Fewer screens is the stronger
   default for a product with one message; ask, don't assume the long page.
+- **Single or set?** If the answer is "one screen", ask whether it is ONE
+  screen or a SET of screens the visitor moves between (a catalog: cycling
+  directions, a component gallery, a style system, a portfolio). A set changes
+  the whole build: `recipes.md` § One-Screen Catalog takes over, each screen
+  gets its own screen KIND, its own device and its own slice of the content,
+  and the only thing repeated across screens is the chrome. Asking this is
+  what prevents a set from shipping as one poster rendered N times
+  (`quality-bar.md` § 1). If it IS a set, also settle: how many screens, how
+  the visitor moves (auto-cycle, arrows, both), and which slices of the
+  product each screen may argue - the slice list is content, so it comes from
+  the owner, never invented.
 - **Product truth**: product + audience one-liner, AND the real feature list
   (4-6 items, priority order) plus the data domain (what a record/file/request
   actually looks like). C2/C10 need this - fragments depict real capability
@@ -310,6 +326,10 @@ owner's standing preference) · straight through, review at the end.
 
 The axes lock the STYLE; QS locks the COMPOSITION. For each section in scope
 (from Q0's section inventory), in page order:
+(For a SET of screens - Q0 "single or set" - the unit is a SCREEN, not a
+section: propose a screen KIND + device + content slice per screen from
+`recipes.md` § One-Screen Catalog, and never offer the same kind-and-device
+pair twice. Present them as a numbered running order the owner can reorder.)
 
 - Filter `recipes.md` by the locked blend (each recipe lists its native
   families) and the locked axes; present 2-3 genuinely different variants as
