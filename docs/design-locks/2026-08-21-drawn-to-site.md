@@ -67,6 +67,83 @@ locks" above, the row below wins and the older line is `revised (R1)`.
 
 Exemplars: after QA, screenshot each direction at 1440×900 into `assets/exemplars/<a-e>-<family>.png` and link them from the skill's style-families.md as owned, CC0 exemplar plates.
 
+## Revision R2 - four more directions + a transport control (2026-08-21, owner request)
+
+Owner on the shipped nine-screen cycle: "likte dette bedre" - R1 approved and pushed
+(`aaeb541`). Then: more directions, each designed as its OWN screen through the skill,
+plus a small pill control to pause the cycle and step through it by hand. Rows below ADD
+to the ledger; R1 stands.
+
+| # | Axis | Locked | Firmness | Consequence |
+|---|------|--------|----------|-------------|
+| Q9 | Directions | Four appended after E: **F** ink & air (F2 85 + F4 15) · **G** isometric blueprint (F4 75 + F1 25) · **H** emissive signal (F8 80 + F1 20) · **I** tactile instrument (F7 70 + F2 30). The cycle is nine, and with these the page demonstrates all eight families - the "8 families" on screen is now visibly true | must-have | the direction label reads "NN / 09"; the three numbers are carried by A, C, E, F, G and withheld from B, D, H, I |
+| Q10 | Transport | An **icon-only pill** in the bottom bar, right of the numbers: previous · pause/play · next. Pause stops the auto-cycle; any manual step restarts the 5 s timer; Space toggles. Skinned per direction (glass in D, ring in E, radius-2 in C and G, machined in I) | must-have | narrows Q4 for CONTROLS only - the bottom-left label stays a label, never a switcher |
+| Q10a | Transport under reduced motion | The toggle is **not rendered** - there is no auto-cycle to pause - and only the two arrows ship | must-have | accessibility is not a style choice (Q2) |
+| Q7-F | Signature visual F | The page's own column scaffold exposed: 1 px #E8E8E8 rules on a 1120 grid running the full height, 48 px 45-degree hatched drafting gutters hugging the sheet, two blue registration crosses on the origin rule; no colour field at all | must-have | F2's separation is whitespace and tone, so the scaffold IS the illustration |
+| Q7-G | Signature visual G | One 2:1 dimetric object: five sheets of a lock file exploded along the vertical, dashed iso guides overshooting, selection handles on the focal sheet, three gray tiers with ONE white near-edge, mono indices 01-05 and a 52 px rise dimension, on a dotted iso ground plane | must-have | F4 leads here for once; zero accent hue by design (marcelkargul-2090148 register) |
+| Q7-H | Signature visual H | One light, and it is the product's own entry point: ≥95 % of the frame under 15 % luminance, headline dimmed to #C6C6CE, the install command emitting - amber bloom concentrated at the prompt, a fill hairline under it with one lit head, 40 px HUD grid at 2 % | must-have | the headline recedes and the command ignites (F8 doctrine); no loop - the poster is composed at t=0 |
+| Q7-I | Signature visual I | The command built as hardware: bezel with two recessed screws, a recessed track, a machined cap with 3 px of height carrying the mono command, and a lit indicator window whose amber lens turns green on copy. Pressing it depresses 1:1 with no tween; the release eases | must-have | the copy control IS the signature object, so the screen carries exactly one |
+
+## Revision R3 - the catalog turn (2026-08-21, owner review of the nine)
+
+Owner on the nine: two directions loved outright (G isometric, I instrument),
+one defect ("ingen padding inn til teksten" - F set its copy flush ON the
+scaffold rule), one rejection ("denne var rar" - A drew a second copy of the
+whole screen, nav bars and headline text included), one structural note ("det
+blir litt generisk med alle sider som har helt samme innhold"), and one
+irritation ("kontrollpanelet flytter seg mellom hver overgang").
+
+The structural note is a SKILL defect, not a build defect, and it was fixed
+upstream first: `recipes.md` gained **One-Screen Catalog** (ten screen kinds
+with per-kind budget deltas, a content law and a device law),
+`quality-bar.md` gained four tells (same content model repeated · the page
+drawn twice · text flush on its own construction line · chrome that moves),
+`question-flow.md` Q0 gained the **single-or-set** question so the recipe is
+reachable by interview instead of sitting there as prose, and
+`isometric-and-light.md` gained **§A2b The generator** - projection helper,
+four arrangements, a subject-to-object table for seven subjects, a light and
+dark material table, an annotation kit and failure modes - so the register
+that produced G can be rebuilt for an app, a UI surface, a data flow or a
+database, in either mode.
+
+| # | Axis | Locked | Firmness | Consequence |
+|---|------|--------|----------|-------------|
+| Q11 | Page shape | **A catalog of twenty screens**, not one poster repeated. Each screen carries a screen KIND, a device and its own slice of the product's real material | must-have | kinds in play: poster (8) · instrument (2) · feature trio (2) · gallery (2) · ledger · metrics · frozen interaction · chapters · bento · closing. No kind-and-device pair repeats |
+| Q12 | Content | **The headline is per screen, not global.** Only the brand, the direction label and the install command recur; every screen argues a different true statement (the weights, the corpus, the lock file, the constants, discovery, C2) | must-have | supersedes Q6's "identical strings in all five". Screen 01 and screen 20 both carry "Give your agent taste." - the catalog opens and closes on the anchor |
+| Q13 | Transport | **Fixed to the viewport, one position, one skin.** `position:fixed`, right 24 / bottom 20, a neutral scrim pill (rgba(128,128,134,.14) + blur 16 + a .32 hairline) with #8E8E94 icons that reads on #000 and on #FAFAFA alike; rendered ONCE outside the per-screen markup so it survives the cross-fade | must-have | supersedes R2's per-direction skinning: nesting it in `.col` made it jump on every transition because the column width changes per direction (1120-1400) |
+| Q7-A | Signature visual A | revised (R3): a **framed FIG. 01 figure** - wireframe bars, no live copy, its own frame and label, redlined 1120 / 28 / 44 / r 0 / 0.08 - beside the headline, never a second rendering of the screen it sits on | must-have | replaces the full-width self-portrait |
+| Q7-F | Signature visual F | revised (R3): the scaffold rules align to the column's PADDING box, so the copy sits one 40 px gutter inside the first rule | must-have | flush-to-the-rule read as missing padding |
+
+## Revision R4 - the catalog goes to thirty (2026-08-21, question round answered)
+
+Owner answered the four open axes: all four content slices in scope · **most
+life** (eight of ten carry a beat or an interaction) · **six light of ten**, so
+the set ends 20 dark / 10 light · the two trios rebuilt in place, not replaced.
+
+Also this round, from a fourteen-agent audit: the internal-code rule became a
+ship gate, illustration SETS gained their own law and bar, and the four dials
+the corpus actually uses were written down. Three defects the adversarial pass
+found in the rebuilt trios were fixed (an invented token, a row count that did
+not reconcile, and an easing curve whose control points were drawn by eye).
+
+| # | Direction | Kind | Device | Ground | Behaviour | Slice |
+|---|---|---|---|---|---|---|
+| 21 | proof diptych | comparison | split frame with a travelling divider | dark | beat | same model, same brief, one variable |
+| 22 | the refusals | ledger | struck-through refusal list | light | still | what it will not ship |
+| 23 | two registers | metrics | dual timeline, two runners | dark | beat | ambient is linear, interaction is eased, never mixed |
+| 24 | stop conditions | instrument | rotary selector with detents | light | interaction | when motion stops: off-screen, reduced motion, pointer |
+| 25 | the contact sheet | gallery | dense plate grid, one scan pass | light | beat | fifty-one references with their measured values |
+| 26 | the clash matrix | matrix | eight-by-eight grid, marked cells | dark | interaction | which families cannot be blended |
+| 27 | a real run | frozen interaction | terminal log advancing | dark | beat | the tool in use |
+| 28 | works with | marquee | horizontal conveyor, linear | light | beat | anything that reads a skill file |
+| 29 | the measured page | spec sheet | redline of production values | light | still | containers, air, three type sizes |
+| 30 | both modes | comparison | one skeleton split down the middle | light | interaction | materials re-derived, never inverted |
+
+No kind-and-device pair repeats against screens 1-20. Comparison, ledger,
+metrics, gallery, instrument and frozen interaction all recur with a different
+device and a different slice, which the set law permits; matrix and marquee are
+new kinds.
+
 ## Build R1 - what shipped (2026-08-21, rebuilt through the skill)
 
 One file, `docs/index.html`: `100svh`, `overflow:hidden`, no scroll, no sections.
@@ -93,6 +170,8 @@ with a single lit comet arc rotating linearly (ambient register), three mono
 lines right. All five clear the illustration bar (specific · layered · shaped
 light · one line · two distances · one object), so no direction ships bare.
 
-QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · budgets ✓ (H1 4 words / 1 line desktop, 2 on mobile · sub 66 ch on one line · 1 command + 1 link · 3 numbers in A/C/E, 0 in B/D · 0 eyebrows · no scroll: scrollHeight = innerHeight at every size) · refs compared: basit_designs-2017, 0xSero-2090, Triopixels-2089, adriankuleszo-2089253, basit_designs-2089995, devxnuj-2090, marcelkargul-2089371, marcelkargul-2089404, flohoeller-2090, its_sslvr-2088
+QA: 1440×900 ✓ (all twenty) · 1280×720 ✓ (all twenty) · 390×844 ✓ (the first nine, in-browser at 375) and 500×844 ✓ (the eleven catalog screens, headless - the same `max-width:720px` rules, at a wider viewport) · tells 0 · no screen scrolls at any size · kinds and devices unique · em dashes 0 · refs compared: the eleven from R1/R2 plus designbynavneet-2089, LexnLin-2024, marcelkargul-2090148 + local-marcel-isometric, mnowakdesign-2089684, recentdesign-2089, cabralorenzo-2090, insporadesign-2088123, jeetnirnejak-2089, 0xSero-2090, Triopixels-2089, yurygok-2089624, AlexandruDranga-2090, kevserctk-2090, piyushsphere-2089714
 
-POLISH: applied - copy control with reserved width (6 ch, measured: box 305.8 px before and after the state change, button 25 px, zero layout shift) and three-channel success (word copy→copied, icon→check with a stroke draw, colour→#35C56A), quiet revert at 1600 ms · count-up once on first paint, tabular numerals · H1 word-group blur reveal on first paint only · cross-fade 700 ms / blur 2 px between directions · gated - no hover lifts on dark (C3), no per-cycle entrances (the cross-fade IS the entrance, C12), no ambient loop except E's ring (linear, stops under reduced-motion: verified from renders, identical pixels at t=1.2 s and t=5.2 s with the flag on, different with it off)
+BUG (fixed): the transport was first rendered into a `const chrome` binding, which collides with Chrome's global `chrome` and threw `SyntaxError: Identifier 'chrome' has already been declared` in headless - every screen rendered blank. Caught because the QA loop renders instead of trusting the code.
+
+POLISH: applied - copy control with reserved width (6 ch, 305.8 px before and after the state change, zero layout shift) and three-channel success; in I the channels are physical (the cap depresses 1:1, the lens turns green, a live region announces "Copied") · count-up once on first paint · H1 word-group blur reveal on first paint only · cross-fade 700 ms / blur 2 px · transport: pause/play icon swap in place, aria-pressed and aria-label swap with it, a manual step restarts the 5 s timer, Space toggles, and under reduced-motion the toggle is not rendered at all · gated - no hover lifts on dark (C3), no per-cycle entrances (C12), no ambient loop except E's ring (linear, stops under reduced-motion)
