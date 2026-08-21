@@ -812,10 +812,13 @@ h1{margin:0;font-family:var(--sans);font-weight:var(--display-w);letter-spacing:
   .copy .swap{display:none}
   .cb{width:38px;height:38px}
   .label{font-size:10px}
-  [data-variant="a"] .copyblock{padding-top:20px}
-  [data-variant="a"] .body{justify-content:space-between}
-  [data-variant="a"] .plate{flex:none;height:300px;margin:16px -16px 0;align-items:center;justify-content:flex-start}
-  [data-variant="a"] .plate svg{flex:none;width:1120px;max-width:none;height:440px;max-height:none;transform:scale(.74);transform-origin:left center}
+  [data-variant="a"] .body{grid-template-columns:1fr;gap:16px;align-content:center;padding-bottom:0}
+  [data-variant="a"] h1{font-size:34px}
+  [data-variant="a"] .sub{font-size:14.5px;max-width:none}
+  [data-variant="a"] .cmd{margin-top:22px}
+  [data-variant="a"] .plate{overflow:hidden;justify-content:flex-start}
+  [data-variant="a"] .core{max-width:none;width:100%;max-height:40vh;transform:scale(1.32) translateX(-5%);transform-origin:left center}
+  [data-variant="a"] .core .side{display:none}
   [data-variant="b"] h1{font-size:44px}
   [data-variant="b"] .sub{font-size:16px}
   [data-variant="b"] .pebble{margin-top:28px;border-radius:22px}
@@ -1094,8 +1097,8 @@ const CORE = () => `<svg class="core" viewBox="52 84 402 592" fill="none" aria-l
 <g stroke="#5B8CFF"><path d="M84 160.0h10M84 568.0h10"/><path d="M89 160.0V568.0"/></g>
 <text class="v" x="76" y="368" text-anchor="end">51</text>
 <g fill="#0A0C10" stroke="#EDEDEE"><rect x="197.0" y="117.0" width="6" height="6"/><rect x="317.0" y="177.0" width="6" height="6"/><rect x="237.0" y="217.0" width="6" height="6"/><rect x="117.0" y="157.0" width="6" height="6"/></g>
-<g stroke="#39404E"><path d="M320 232h30"/><path d="M320 420h30"/><path d="M320 584h30"/></g>
-<g class="lb"><text x="358" y="235">#ffffff</text><text x="358" y="423">not recorded</text><text x="358" y="587">#040607</text></g>
+<g class="side" stroke="#39404E"><path d="M320 232h30"/><path d="M320 420h30"/><path d="M320 584h30"/></g>
+<g class="lb side"><text x="358" y="235">#ffffff</text><text x="358" y="423">not recorded</text><text x="358" y="587">#040607</text></g>
 <text class="lb hot" x="120" y="642">one reference per lamina</text><text class="lb dim" x="120" y="658">43 of them measured to the hex</text>
 </svg>`;
 
