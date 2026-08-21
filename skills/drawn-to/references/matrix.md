@@ -1,6 +1,6 @@
-# Taste matrix — all 51 references
+# Taste matrix - all 51 references
 
-Auto-generated from the repo's `references/_index.json` (per-post deep dives in `posts/<slug>.md`; source media archived in the repo at `references/media/<slug>/` — not shipped with the skill folder).
+Auto-generated from the repo's `references/_index.json` (per-post deep dives in `posts/<slug>.md`; source media archived in the repo at `references/media/<slug>/` - not shipped with the skill folder).
 
 | # | Ref | Kind | Mode | Motion | Radius | Density | Illustration | What it is |
 |--|-----|------|------|--------|--------|---------|--------------|------------|
@@ -26,7 +26,7 @@ Auto-generated from the repo's `references/_index.json` (per-post deep dives in 
 | 20 | [arknow91-2089](posts/arknow91-2089955524007674031.md) | component | dark | full-choreography | pill | airy | none | Gooey metaball speed dial that fissions into PlayStation face buttons on dark charcoal |
 | 21 | [_heyfaisal-2089734](posts/_heyfaisal-2089734362485096473.md) | full-page | light | none | mixed | airy | ui-fragment | Airy light AI-automation landing UI kit unified by blue ink-marble texture |
 | 22 | [mnowakdesign-2089684](posts/mnowakdesign-2089684516814422257.md) | dashboard | dark | full-choreography | medium(10-16 | dense | ui-fragment | 14s quad-grid reel of cinematic dark dashboard animations with semantic neon-glow data motion |
-| 23 | [ImranUxi-2089](posts/ImranUxi-2089707090969563302.md) | resource | dark | sequence | mixed | airy | ui-fragment | interfaces.dev — carousel of interactive A/B demos teaching UI craft details |
+| 23 | [ImranUxi-2089](posts/ImranUxi-2089707090969563302.md) | resource | dark | sequence | mixed | airy | ui-fragment | interfaces.dev - carousel of interactive A/B demos teaching UI craft details |
 | 24 | [flornkm-2089](posts/flornkm-2089749302960615875.md) | component | light | micro | pill | airy | ui-fragment | Toggle-switch prototype whose knob stretches toward its destination on press |
 | 25 | [LexnLin-2089](posts/LexnLin-2089704858970673447.md) | section-set | dark | none | mixed | airy | ui-fragment | Dark agency landing sections: testimonial, illustrated bento, product cards, watermark footer |
 | 26 | [toolfolio-2089](posts/toolfolio-2089745439624974755.md) | resource | both | full-choreography | medium(10-16 | airy | ui-fragment | Rare UI playground tour: 11 animated React components demoed via live cursor interaction |
@@ -42,7 +42,7 @@ Auto-generated from the repo's `references/_index.json` (per-post deep dives in 
 | 36 | [Triopixels-2089](posts/Triopixels-2089426990696685794.md) | feature-cards | light | micro | large(20-28) | airy | ui-fragment | 2x2+full-width periwinkle feature cards, each with bespoke semantic hover choreography |
 | 37 | [adriankuleszo-2089328](posts/adriankuleszo-2089328910802825606.md) | section-set | mixed | sequence | medium(10-16 | balanced | ui-fragment | 2x2 video montage of four SaaS sites demoing six high-converting UI patterns |
 | 38 | [adriankuleszo-2089253](posts/adriankuleszo-2089253435665494317.md) | feature-cards | light | full-choreography | medium(10-16 | airy | ui-fragment | Animated light SaaS feature-card trio toured by a continuous camera with live micro-demos |
-| 39 | [its_sslvr-2088](posts/its_sslvr-2088853260535034223.md) | illustration-set | dark | sequence | small(2-8) | airy | shader | Two animated shader posters — graphite liquid relief and revolving gradient field — on dark stage |
+| 39 | [its_sslvr-2088](posts/its_sslvr-2088853260535034223.md) | illustration-set | dark | sequence | small(2-8) | airy | shader | Two animated shader posters - graphite liquid relief and revolving gradient field - on dark stage |
 | 40 | [mickces-2088](posts/mickces-2088707061945118946.md) | full-page | light | full-choreography | medium(10-16 | airy | ui-fragment | Airy light landing page where a live playground demos procedural UI sounds diegetically |
 | 41 | [alaymanguy-2088](posts/alaymanguy-2088528410025120164.md) | resource | both | sequence | n/a (full-bl | airy | shader | Open-source WebGL gradient tool with Figma/Framer plugins and copy-paste React |
 | 42 | [madebylalit-2088](posts/madebylalit-2088541863032836293.md) | component | dark | full-choreography | sharp | airy | shader | AI thinking/loading state: breathing three-petal glow rosette with orbiting magenta-blue hue field |

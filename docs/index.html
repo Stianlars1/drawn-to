@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Drawn To — give your coding agent a trained eye</title>
+<title>Drawn To - give your coding agent a trained eye</title>
 <meta name="description" content="An agent skill that replaces 'make it look good' with a locked design direction. This page is the proof: the same content, five locked directions, cycling.">
-<meta property="og:title" content="Drawn To — give your coding agent a trained eye">
+<meta property="og:title" content="Drawn To - give your coding agent a trained eye">
 <meta property="og:description" content="Same content. Five locked directions. One skill. 51 references reverse-engineered into 12 constants and 8 style families.">
 <meta property="og:image" content="assets/social-card.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif&display=swap">
 <style>
 /* =====================================================================
-   Drawn To — one content model, five locked directions, cycling.
+   Drawn To - one content model, five locked directions, cycling.
    Locks: docs/design-locks/2026-08-21-drawn-to-site.md
    ===================================================================== */
 :root{
@@ -192,7 +192,7 @@ h1 .dim,h2 .dim{color:var(--ink2)}
 [data-variant="d"] .rings i:nth-child(3){width:500px;height:500px;animation-delay:-4s}
 @keyframes ringpulse{0%{opacity:.5}50%{opacity:.9}100%{opacity:.5}}
 
-/* E: Vercel-home — tiny H1 left, lit object centre, mono lines right */
+/* E: Vercel-home - tiny H1 left, lit object centre, mono lines right */
 [data-variant="e"] .hero{display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;align-items:center;min-height:560px;padding:80px 0 60px}
 [data-variant="e"] h1{font-size:clamp(32px,3.2vw,44px);letter-spacing:-.06em;line-height:1.0;max-width:12ch}
 [data-variant="e"] .hero .lead{font-size:15px;max-width:36ch}
@@ -335,37 +335,37 @@ const C = {
   stats: [[12,'constants'],[8,'style families'],[31,'section recipes'],[2662,'video frames read'],[0,'icon + blurb cards']],
   monolines: ['51 references, frame by frame','12 constants · 8 families','one lock file per project'],
   proof: {
-    eyebrow: '01 — Proof', h: 'Same model. Same brief.', dim: 'One variable.',
+    eyebrow: '01 - Proof', h: 'Same model. Same brief.', dim: 'One variable.',
     sub: 'Two agents, the same model, the same five-feature brief, the same empty folder. The left one had a well-engineered skill with an empty knowledge layer. The right one had this library.',
     img: 'assets/proof-same-model-same-brief.jpg',
-    alt: 'Left: a competent, anonymous dark bento built without a taste library. Right: the same model with Drawn To — divider-cut, radius-0, FIG-numbered section with instrument illustrations.',
-    cap: '<b>Left</b> soft tiles, gaps, system blue — the look any capable agent produces from its priors. <b>Right</b> every element traces to a reference: the divider-cut grid to <b>basit_designs-2017</b>, the FIG plates to <b>0xSero-2090</b>, the scrubbable redline popover to <b>cabralorenzo-2090</b>. The difference is not the model. It is the library.'
+    alt: 'Left: a competent, anonymous dark bento built without a taste library. Right: the same model with Drawn To - divider-cut, radius-0, FIG-numbered section with instrument illustrations.',
+    cap: '<b>Left</b> soft tiles, gaps, system blue - the look any capable agent produces from its priors. <b>Right</b> every element traces to a reference: the divider-cut grid to <b>basit_designs-2017</b>, the FIG plates to <b>0xSero-2090</b>, the scrubbable redline popover to <b>cabralorenzo-2090</b>. The difference is not the model. It is the library.'
   },
-  how: { eyebrow: '02 — How it works', h: 'Six steps.', dim: 'One lock file.', sub: 'It reads your repo before it asks anything, proposes weighted directions instead of a single pick, and writes every decision down as it happens.' },
+  how: { eyebrow: '02 - How it works', h: 'Six steps.', dim: 'One lock file.', sub: 'It reads your repo before it asks anything, proposes weighted directions instead of a single pick, and writes every decision down as it happens.' },
   steps: [
     ['01','Discover','Reads tokens, docs, product truth. Infrastructure is adopted; the current look is a question, never an assumption.'],
-    ['02','Brief','“Here is what I found — correct?” Then only the gaps: the real feature list, the data domain, the language of the copy.'],
-    ['03','Blend','Two or three directions from the eight families, answered with weights — 70 / 20 / 10. Clashes are warned about and resolved.'],
-    ['04','Lock','One plain-language question per open axis — corners, separation, accent, motion — with anchors you know. Firmness per lock.'],
+    ['02','Brief','“Here is what I found - correct?” Then only the gaps: the real feature list, the data domain, the language of the copy.'],
+    ['03','Blend','Two or three directions from the eight families, answered with weights - 70 / 20 / 10. Clashes are warned about and resolved.'],
+    ['04','Lock','One plain-language question per open axis - corners, separation, accent, motion - with anchors you know. Firmness per lock.'],
     ['05','Variants','Two or three compositions per section from 31 recipes; for feature work, 2–4 illustration concepts per feature.'],
     ['06','Build + polish','Every visual change serves a named lock. Numbers count, state text swaps in place, confirmations signal. Revisions never erase.']
   ],
-  lib: { eyebrow: '03 — The library', h: 'Measured,', dim: 'not described.', sub: 'Every claim carries a reference slug and a number. The constants held across the whole corpus — the skill enforces them and never asks about them.' },
+  lib: { eyebrow: '03 - The library', h: 'Measured,', dim: 'not described.', sub: 'Every claim carries a reference slug and a number. The constants held across the whole corpus - the skill enforces them and never asks about them.' },
   constants: [
-    ['C1','Quarantine chroma — at most one accent hue in the UI layer','The shell is neutral; colour lives in one signature asset, semantic states, or photos.','45/45 · 38/45'],
-    ['C2','Show the feature — never icon + paragraph','Working fragments, mechanisms, frozen interactions. Zero counter-examples.','33/45 · 0 against'],
-    ['C3','Separation ladder: hairlines, tone steps, or one soft shadow','Zero drop shadows on dark — 16 of 16 dark references.','45/45'],
+    ['C1','Quarantine chroma - at most one accent hue in the UI layer','The shell is neutral; colour lives in one signature asset, semantic states, or photos.','45/45 · 38/45'],
+    ['C2','Show the feature - never icon + paragraph','Working fragments, mechanisms, frozen interactions. Zero counter-examples.','33/45 · 0 against'],
+    ['C3','Separation ladder: hairlines, tone steps, or one soft shadow','Zero drop shadows on dark - 16 of 16 dark references.','45/45'],
     ['C4','Hierarchy by size and gray value at weight 400–600','Two-tone headlines, 3–4 step ramps; bold is the last resort.','35/45'],
-    ['C5','Two voices — grotesque prose, mono data','Every numeral tabular; microcaps 11–13px at +0.06–0.1em.','22/45'],
+    ['C5','Two voices - grotesque prose, mono data','Every numeral tabular; microcaps 11–13px at +0.06–0.1em.','22/45'],
     ['C6','Two motion registers, never mixed','Ambient = linear constant velocity. Interaction = 150–800 ms eased.','27/27'],
-    ['C7','Loops close frame-perfectly; concurrent loops desync','2.45 / 2.5 / 5 / 7.4 s — nothing beats in unison.','17/27'],
+    ['C7','Loops close frame-perfectly; concurrent loops desync','2.45 / 2.5 / 5 / 7.4 s - nothing beats in unison.','17/27'],
     ['C8','Radii in stepped families, nested concentrically','Outer = inner + padding. Radius 0 is a family, not a violation.','~20 · 0 against'],
     ['C9','Texture every large gradient','2–6 % grain or a print/pixel process. A flat gradient is the loudest generic-AI tell.','11/13'],
-    ['C10','Diegetic microcopy — arithmetic that reconciles','Zero lorem, versioned filenames, one fictional client threaded through.','45/45'],
+    ['C10','Diegetic microcopy - arithmetic that reconciles','Zero lorem, versioned filenames, one fictional client threaded through.','45/45'],
     ['C11','Opacity is the attention system','One full-contrast focal; siblings ghosted 15–45 %; disabled dimmed, never hidden.','12/45'],
-    ['C12','Composed at t = 0','Ambient backgrounds never stage an entrance; reveals are word-group blur, 400–500 ms.','—']
+    ['C12','Composed at t = 0','Ambient backgrounds never stage an entrance; reveals are word-group blur, 400–500 ms.',' - ']
   ],
-  famHead: { eyebrow: 'Eight families — what you blend', sub: 'Each has measured grounds, separation physics, radius family, texture, graphic device, motion register and a “choose when”. This page cycles through five of them.' },
+  famHead: { eyebrow: 'Eight families - what you blend', sub: 'Each has measured grounds, separation physics, radius family, texture, graphic device, motion register and a “choose when”. This page cycles through five of them.' },
   families: [
     ['F1','Editorial Monochrome',['#0A0C10','#15181D','#8b8e93','#EDEDED','#3B82F6'],'Dark, divider-cut, type does the work.','14 refs · Linear · Vercel · Attio'],
     ['F2','Ink & Air',['#F7F7F7','#FFFFFF','#6B7280','#3A3A3A','#3770E9'],'Airy light editorial, charcoal ink, one accent.','10 refs · Stripe · Vercel light'],
@@ -376,15 +376,15 @@ const C = {
     ['F7','Tactile Instruments',['#F2F1EE','#1F2326','#FF9C28','#10B981'],'Components as hardware: dials, wheels, 1:1 drag.','8 refs · Rauno · Emil demos'],
     ['F8','Emissive Signal',['#08080A','#4D9FFF','#E921B8','#22C55E'],'Near-dark; light is the accent, bloom at the action.','8 refs · Linear release films']
   ],
-  beyondHead: { eyebrow: '04 — Beyond direction', h: 'The interview locks what.', dim: 'Four references build it well.' },
+  beyondHead: { eyebrow: '04 - Beyond direction', h: 'The interview locks what.', dim: 'Four references build it well.' },
   beyond: [
-    ['Illustration ideation','A concept per feature, not an icon','The feature’s verb picks the metaphor — instrument, mechanism, fragment, blueprint plate, isometric object, light. 2–4 concepts each, with construction recipes.'],
+    ['Illustration ideation','A concept per feature, not an icon','The feature’s verb picks the metaphor - instrument, mechanism, fragment, blueprint plate, isometric object, light. 2–4 concepts each, with construction recipes.'],
     ['Scroll-scrub','The pinned product scene','Poses as registered custom properties, one keyframe track, scroll / keyboard / static drivers, svh mobile math, a fallback ladder where every rung is composed.'],
-    ['Animation craft','Doctrine, then recipes','The animate-at-all gate, the curve trio, springs with velocity handoff, interruptibility, clip-path tricks, a never-ship list — and 14 paste-ready component animations.'],
+    ['Animation craft','Doctrine, then recipes','The animate-at-all gate, the curve trio, springs with velocity handoff, interruptibility, clip-path tricks, a never-ship list - and 14 paste-ready component animations.'],
     ['Polish moments','Where the small animations live','Numbers count, state text swaps in place, confirmations signal on three channels, loading and hover rows handled or explicitly gated. No state change shifts layout.']
   ],
   caseImg: 'assets/latch-bento.jpg',
-  caseAlt: 'A features bento built with Drawn To — divider-cut, radius 0, FIG plates, instrument illustrations',
+  caseAlt: 'A features bento built with Drawn To - divider-cut, radius 0, FIG plates, instrument illustrations',
   caseCap: '<b>Case</b> five features for a macOS clipboard tool, greenfield, dark. Discovery found the owner’s scaffold generator, adopted its palette, asked only about the look. Blend 65 / 15 / 12 / 8. Fifteen locks, 27 animations measured frame-perfect, four revision rows. Everything in the frame answers to a row in <b>docs/design-locks/</b>.',
   close: ['Stop describing taste.', 'Hand it the eye.'],
   closeMeta: 'Claude Code · Codex · Cursor · Copilot · Gemini · anything that reads SKILL.md · MIT',
@@ -399,10 +399,10 @@ const CMD = () => `<span class="cmd"><span>$</span> ${C.cmd} <button type="butto
 const STATS = () => `<div class="stats">${C.stats.map(([n,l])=>`<span><b data-count="${n}"${n>999?' data-group="1"':''}>${fmt(n,n>999)}</b> ${l}</span>`).join('')}</div>`;
 const NAV = () => `<nav class="nav"><a class="brand" href="#">Drawn To</a><ul><li><a href="#proof">Proof</a></li><li><a href="#how">How it works</a></li><li><a href="#library">The library</a></li><li><a href="${C.repo}">GitHub</a></li></ul><a class="pill ghost" href="#install">Install</a></nav>`;
 const PLATES = () => `<div class="plates" aria-hidden="true">
-  <div class="plate"><span class="eyebrow">FIG.01</span><svg viewBox="0 0 260 150" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"><rect x="40.5" y="24.5" width="180" height="100"/><line x1="40" y1="68.5" x2="220" y2="68.5"/><line x1="130.5" y1="68" x2="130.5" y2="124"/><line x1="160.5" y1="24" x2="160.5" y2="68" stroke-dasharray="3 4"/><rect x="52" y="36" width="60" height="6" fill="rgba(255,255,255,.10)" stroke="none"/><rect x="52" y="48" width="38" height="6" fill="rgba(255,255,255,.06)" stroke="none"/><rect x="176" y="38" width="30" height="20" stroke="#5B8CFF"/></svg><p>Divider-cut bento — structure felt, not seen</p></div>
-  <div class="plate"><span class="eyebrow">FIG.02</span><svg viewBox="0 0 260 150" fill="none" stroke-width="1"><defs><linearGradient id="cg" x1="0" x2="1"><stop offset="0" stop-color="#5B8CFF" stop-opacity="0"/><stop offset=".5" stop-color="#5B8CFF"/><stop offset="1" stop-color="#5B8CFF" stop-opacity="0"/></linearGradient></defs><g transform="translate(130 75)"><circle r="58" stroke="rgba(255,255,255,.07)"/><circle r="40" stroke="rgba(255,255,255,.09)"/><circle r="22" stroke="rgba(255,255,255,.12)"/><g style="transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite"><circle r="58" fill="none" stroke="none"/><path d="M -56 -15 A 58 58 0 0 1 -12 -57" stroke="url(#cg)" stroke-width="2"/></g><circle r="2.5" fill="#EDEDEE"/><circle cx="40" cy="0" r="2" fill="rgba(255,255,255,.35)"/><circle cx="-28" cy="28" r="2" fill="rgba(255,255,255,.35)"/></g></svg><p>Ambient is linear; interaction is eased — never mixed</p></div>
+  <div class="plate"><span class="eyebrow">FIG.01</span><svg viewBox="0 0 260 150" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1"><rect x="40.5" y="24.5" width="180" height="100"/><line x1="40" y1="68.5" x2="220" y2="68.5"/><line x1="130.5" y1="68" x2="130.5" y2="124"/><line x1="160.5" y1="24" x2="160.5" y2="68" stroke-dasharray="3 4"/><rect x="52" y="36" width="60" height="6" fill="rgba(255,255,255,.10)" stroke="none"/><rect x="52" y="48" width="38" height="6" fill="rgba(255,255,255,.06)" stroke="none"/><rect x="176" y="38" width="30" height="20" stroke="#5B8CFF"/></svg><p>Divider-cut bento - structure felt, not seen</p></div>
+  <div class="plate"><span class="eyebrow">FIG.02</span><svg viewBox="0 0 260 150" fill="none" stroke-width="1"><defs><linearGradient id="cg" x1="0" x2="1"><stop offset="0" stop-color="#5B8CFF" stop-opacity="0"/><stop offset=".5" stop-color="#5B8CFF"/><stop offset="1" stop-color="#5B8CFF" stop-opacity="0"/></linearGradient></defs><g transform="translate(130 75)"><circle r="58" stroke="rgba(255,255,255,.07)"/><circle r="40" stroke="rgba(255,255,255,.09)"/><circle r="22" stroke="rgba(255,255,255,.12)"/><g style="transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite"><circle r="58" fill="none" stroke="none"/><path d="M -56 -15 A 58 58 0 0 1 -12 -57" stroke="url(#cg)" stroke-width="2"/></g><circle r="2.5" fill="#EDEDEE"/><circle cx="40" cy="0" r="2" fill="rgba(255,255,255,.35)"/><circle cx="-28" cy="28" r="2" fill="rgba(255,255,255,.35)"/></g></svg><p>Ambient is linear; interaction is eased - never mixed</p></div>
   <div class="plate"><span class="eyebrow">FIG.03</span><svg viewBox="0 0 260 150" fill="none" stroke-width="1"><g transform="translate(70 18)"><path d="M 0 46 L 60 16 L 120 46 L 60 76 Z" stroke="#7A7A7A"/><path d="M 0 46 L 0 76 L 60 106 L 120 76 L 120 46" stroke="#7A7A7A"/><path d="M 60 76 L 60 106" stroke="#7A7A7A"/><path d="M 60 16 L 60 -6" stroke="#3F3F3F" stroke-dasharray="3 4"/><path d="M 120 46 L 150 31" stroke="#3F3F3F" stroke-dasharray="3 4"/><path d="M 30 31 L 90 61" stroke="#EDEDEE"/><rect x="-3" y="43" width="6" height="6" stroke="#7A7A7A"/><rect x="117" y="43" width="6" height="6" stroke="#7A7A7A"/></g></svg><p>Isometric objects, three gray tiers, one white focal</p></div>
-  <div class="plate"><span class="eyebrow">FIG.04</span><svg viewBox="0 0 260 150" fill="none"><g font-family="Geist Mono, SF Mono, Menlo, monospace" font-size="10" fill="#5D5E63"><text x="30" y="38">changes seen</text><line x1="100" y1="35" x2="200" y2="35" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="38" fill="#8B8E93">4,471</text><text x="30" y="62">kept</text><line x1="60" y1="59" x2="200" y2="59" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="62" fill="#8B8E93">3,412</text><text x="30" y="86">duplicates dropped</text><line x1="130" y1="83" x2="200" y2="83" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="86" fill="#8B8E93">1,059</text><text x="30" y="110">written to disk</text><line x1="118" y1="107" x2="200" y2="107" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="110" fill="#5B8CFF">0</text></g></svg><p>Numbers that reconcile — microcopy is design material</p></div>
+  <div class="plate"><span class="eyebrow">FIG.04</span><svg viewBox="0 0 260 150" fill="none"><g font-family="Geist Mono, SF Mono, Menlo, monospace" font-size="10" fill="#5D5E63"><text x="30" y="38">changes seen</text><line x1="100" y1="35" x2="200" y2="35" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="38" fill="#8B8E93">4,471</text><text x="30" y="62">kept</text><line x1="60" y1="59" x2="200" y2="59" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="62" fill="#8B8E93">3,412</text><text x="30" y="86">duplicates dropped</text><line x1="130" y1="83" x2="200" y2="83" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="86" fill="#8B8E93">1,059</text><text x="30" y="110">written to disk</text><line x1="118" y1="107" x2="200" y2="107" stroke="rgba(255,255,255,.12)" stroke-dasharray="1 3"/><text x="206" y="110" fill="#5B8CFF">0</text></g></svg><p>Numbers that reconcile - microcopy is design material</p></div>
 </div>`;
 const HEAD = (o) => `<div class="sec-head"><p class="eyebrow">${o.eyebrow}</p>${o.h?`<h2>${o.h} <span class="dim">${o.dim||''}</span></h2>`:''}${o.sub?`<p class="sub">${o.sub}</p>`:''}</div>`;
 const PROOF = () => `<section id="proof" class="proof">${HEAD(C.proof)}<figure><img src="${C.proof.img}" alt="${C.proof.alt}" loading="lazy"><figcaption>${C.proof.cap}</figcaption></figure></section>`;
@@ -412,14 +412,14 @@ const FAM = () => `<section>${HEAD(C.famHead)}<div class="fam">${C.families.map(
 const BEYOND = () => `<section>${HEAD(C.beyondHead)}<div class="beyond">${C.beyond.map(([e,t,p])=>`<div class="b"><span class="eyebrow">${e}</span><h3>${t}</h3><p>${p}</p></div>`).join('')}</div></section>`;
 const BENTO = () => `<section>${HEAD(C.beyondHead)}<div class="bento">${C.beyond.map(([e,t,p],i)=>`<div class="card">${i===0?`<div class="panel"><img src="${C.caseImg}" alt="${C.caseAlt}" loading="lazy"></div>`:i===1?`<div class="panel"><img src="assets/fig-01-plate.jpg" alt="" loading="lazy"></div>`:''}<span class="eyebrow">${e}</span><h3>${t}</h3><p>${p}</p></div>`).join('')}</div></section>`;
 const CASE = () => `<section class="case"><figure><img src="${C.caseImg}" alt="${C.caseAlt}" loading="lazy"><figcaption>${C.caseCap}</figcaption></figure></section>`;
-const CLOSE = () => `<section class="close" id="install"><p class="eyebrow">05 — Install</p><h2>${C.close[0]} <span class="dim">${C.close[1]}</span></h2><div class="cta">${CMD()}<a class="pill" href="${C.repo}">Read the source</a></div><p class="mono" style="margin-top:28px;color:var(--ink3);font-size:12px;letter-spacing:.04em">${C.closeMeta}</p><span class="lit" aria-hidden="true"></span></section>`;
+const CLOSE = () => `<section class="close" id="install"><p class="eyebrow">05 - Install</p><h2>${C.close[0]} <span class="dim">${C.close[1]}</span></h2><div class="cta">${CMD()}<a class="pill" href="${C.repo}">Read the source</a></div><p class="mono" style="margin-top:28px;color:var(--ink3);font-size:12px;letter-spacing:.04em">${C.closeMeta}</p><span class="lit" aria-hidden="true"></span></section>`;
 const FOOTER = () => `<footer><span>${C.footerL}</span><span>${C.footerR.map(([t,h])=>`<a href="${h}">${t}</a>`).join(' · ')}</span></footer>`;
 
 /* ============================ five heroes ============================ */
 const HERO = {
   a: (first) => `<header class="hero"><div><p class="eyebrow">${C.eyebrow}</p>${H1(first)}<p class="lead">${C.lead}</p><div class="cta">${CMD()}<a class="pill ghost" href="${C.repo}">Read the source</a></div>${STATS()}</div>${PLATES()}</header>`,
   b: (first) => `<header class="hero grain"><p class="eyebrow">${C.eyebrow}</p>${H1(first)}<p class="lead">${C.lead}</p><div class="cta">${CMD()}<a class="pill" href="${C.repo}">Read the source</a></div>${STATS()}</header>`,
-  c: (first) => `<header class="hero"><div class="mat"><p class="eyebrow">fig. 01 — ${C.eyebrow}</p>${H1(first)}<p class="lead">${C.lead}</p><div class="cta">${CMD()}<a class="pill" href="${C.repo}">Read the source</a></div>${STATS()}</div><div class="slab grain"><span class="meta">est. 2026 · 51 references · one eye</span></div></header>`,
+  c: (first) => `<header class="hero"><div class="mat"><p class="eyebrow">fig. 01 - ${C.eyebrow}</p>${H1(first)}<p class="lead">${C.lead}</p><div class="cta">${CMD()}<a class="pill" href="${C.repo}">Read the source</a></div>${STATS()}</div><div class="slab grain"><span class="meta">est. 2026 · 51 references · one eye</span></div></header>`,
   d: (first) => `<header class="hero"><div class="light grain" aria-hidden="true"></div><div class="rings" aria-hidden="true"><i></i><i></i><i></i></div><p class="eyebrow">${C.eyebrow}</p>${H1(first)}<p class="lead">${C.lead}</p><div class="cta">${CMD()}<a class="pill ghost" href="${C.repo}">Read the source</a></div>${STATS()}</header>`,
   e: (first) => `<header class="hero"><div><p class="eyebrow">${C.eyebrow}</p>${H1(first)}<p class="lead">${C.lead}</p></div><div class="lit" aria-hidden="true"><i></i></div><div class="monolines">${C.monolines.map(l=>`<span>${l}</span>`).join('')}</div><div class="cta">${CMD()}<a class="pill" href="${C.repo}">Read the source</a></div>${STATS()}</header>`
 };
@@ -459,7 +459,7 @@ function copyCmd(btn){
   btn.dataset.state='done'; clearTimeout(btn._t); btn._t=setTimeout(()=>{btn.dataset.state='idle';},1600);
 }
 function countUp(){
-  /* once per session, never per cycle — the cycle is the ambient register; counting every 5 s would be noise */
+  /* once per session, never per cycle - the cycle is the ambient register; counting every 5 s would be noise */
   if (counted || reduce || !('IntersectionObserver' in window)) return;
   const els=[...document.querySelectorAll('[data-count]')]; if(!els.length) return;
   const io=new IntersectionObserver((entries)=>{

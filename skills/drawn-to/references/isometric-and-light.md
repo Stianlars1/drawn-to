@@ -1,4 +1,4 @@
-# Isometric objects & structured light — two paths
+# Isometric objects & structured light - two paths
 
 Reverse-engineered from Marcel Kargul's work (kargul.studio): the Services
 bento + CTA dome (local saves, marcelkargul-2090148, marcelkargul-2090509),
@@ -11,16 +11,16 @@ language, (B) light with geometry instead of blob gradients. Media:
 
 ---
 
-## Path A — Isometric objects
+## Path A - Isometric objects
 
 ### A1. Two registers
 
-**Blueprint iso (dark, monochrome)** — the Services bento, marcelkargul-2090148:
+**Blueprint iso (dark, monochrome)** - the Services bento, marcelkargul-2090148:
 - Objects are 1px line-art on a visible isometric graph-paper grid (~24px
   cells, 4-6% white). The grid is a MATERIAL the object stands on, never
   decoration: dashed iso guides overshoot every object and run to the card
   walls; selection-handle squares sit on key vertices; a dashed bounding
-  box frames the hero object — literally Figma's chrome as vocabulary.
+  box frames the hero object - literally Figma's chrome as vocabulary.
 - Three gray tiers, one white focal: guides #3F3F3F-class · outlines
   #7A7A7A-class · ONE white edge/face per illustration (the ribbon's near
   edge, the front window). Faces are flat near-background tones (+2-4%),
@@ -35,22 +35,22 @@ language, (B) light with geometry instead of blob gradients. Media:
   chip and Figma→code node; Landing pages = a folded ribbon sheet carrying a
   3-bar chart; Full websites = a fan of browser windows with NEXT.js and
   Framer logos, dashed path threading them.
-- The dome CTA (light): same vocabulary inverted — white paper #EDEDED,
+- The dome CTA (light): same vocabulary inverted - white paper #EDEDED,
   #c9c9c9 outlines, a wireframe geodesic dome with meridians, a cut-away
   wedge whose interior is stipple, iso primitives around it (stairs,
   cylinders, lego brick, pie wedge, arc ring), dashed bezier orbit lines with
   dot nodes, handles on the bounding boxes. Faces here carry SOFT GRADIENTS
-  (white → #e6e6e6, 1-2% per face) — the "soft gradients that make the
+  (white → #e6e6e6, 1-2% per face) - the "soft gradients that make the
   section feel like a product" comment in the post.
 
-**Soft-shaded iso (light, one chroma hero)** — Chatsheet hero video:
+**Soft-shaded iso (light, one chroma hero)** - Chatsheet hero video:
 - A single blue disc (concentric ring "core") sits on an iso plane with a
   soft blue radial under it (the only strong chroma); integration app tiles
   (Slack, Gmail, Drive, Sheets, Notion…) are small iso tiles scattered on
   dotted connector paths that converge into the core; from the core a
   conveyor rail of iso cards ("Automation Action", "Strategy Contract",
-  "Personalized Outreach" — pill + checklist) runs up-right and slides
-  continuously along the iso axis (linear, constant velocity — C6 ambient).
+  "Personalized Outreach" - pill + checklist) runs up-right and slides
+  continuously along the iso axis (linear, constant velocity - C6 ambient).
 - Faces: white → #eef1f5 soft gradients, blue-tinted contact shadows
   (`0 12px 32px rgba(40,80,200,.14)`-class), 1px edges at 8-10% navy.
   Tiles bob ±4px slowly; the conveyor never eases; loop closes on the
@@ -60,7 +60,7 @@ language, (B) light with geometry instead of blob gradients. Media:
 
 ### A2. Construction (the math, so it can be built in code)
 
-- Projection: 2:1 dimetric ("pixel isometric") — axes at ±26.57° (tan = 0.5)
+- Projection: 2:1 dimetric ("pixel isometric") - axes at ±26.57° (tan = 0.5)
   on a square grid; or true isometric at ±30°. Pick one per project; the
   corpus uses 2:1 (flatter, cleaner hatch).
 - SVG face transforms (2:1): top `matrix(1 0.5 -1 0.5 tx ty)` → for 30°:
@@ -82,7 +82,7 @@ language, (B) light with geometry instead of blob gradients. Media:
   `translate` loop with period = one item pitch; never ease an infinite
   iso loop (C6).
 
-### A3. How these were made — and the production route
+### A3. How these were made - and the production route
 
 Marcel's set is vector work in Figma (the handles, px labels and dashed
 bounding boxes ARE Figma chrome; his stack lists Figma · Rive · Lottie ·
@@ -103,42 +103,42 @@ After Effects), exported as SVG and, per his caption, "ready for animation"
 - Choose when each feature/service has a physical deliverable to draw, when
   the audience respects engineering drawings, or when a "how it flows"
   story needs a stage (conveyor).
-- Avoid when the product is abstract (no object to draw) — then UI
+- Avoid when the product is abstract (no object to draw) - then UI
   fragments beat invented machinery.
 
 ---
 
-## Path B — Structured light (why these gradients look expensive)
+## Path B - Structured light (why these gradients look expensive)
 
 A radial blob gradient looks cheap for four reasons: no shape, no direction,
 saturation everywhere, no grain. Every "expensive" example here gives light
 GEOMETRY:
 
-1. **Shaped falloff** — the gradient follows a form: a curved horizon band
+1. **Shaped falloff** - the gradient follows a form: a curved horizon band
    (Metricly: lavender→blue with a lighter arc rim; LeadBurst: navy→blue
    horizon rising from the bottom), a diagonal slab confined to one panel
    (Signilo: pink→coral inside a rounded panel), wedge rays (Hunt.io footer:
    light SHAFTS radiating from the hex prism), concentric rings (Hunt.io
    radar nodes).
-2. **Line-work over light** — structure drawn on top modulates it: PCB
+2. **Line-work over light** - structure drawn on top modulates it: PCB
    traces with rounded corners and node pads (Flowpilot), spectrum sine
    ribbons threading an envelope (InboxWarden), nested rounded-rect
    outlines (Signilo), dashed connectors (BugScout), a hex-dot world map
    whose dots brighten near the source (Hunt.io). The eye reads the light
    THROUGH geometry.
-3. **Anisotropic glow** — rays/streaks and 1px rings at falling opacity,
+3. **Anisotropic glow** - rays/streaks and 1px rings at falling opacity,
    not one blurred circle. Hunt.io footer = conic/linear shafts from the
    prism + a tight radial base + the dot field lit by proximity; hero = teal
    radar rings around cyan hex prisms, red threat dots with 2-3 tight
    rings, 1px connectors with rounded corners to mono label chips.
-4. **Chroma rationing** — one hue family + white/black; a second hue only
+4. **Chroma rationing** - one hue family + white/black; a second hue only
    semantic (red = threat) or as thin spectrum strokes (ribbons, gradient
    text) at <3% surface area. Light pages keep 60-80% white.
-5. **Grain + banding control** — 2-6% noise over every field (C9); pastels
+5. **Grain + banding control** - 2-6% noise over every field (C9); pastels
    at low chroma; no hard stops except deliberate slabs.
-6. **One light source** — tile shadows tint toward it, glows sit under
+6. **One light source** - tile shadows tint toward it, glows sit under
    objects, rays point away from it; everything agrees on one position.
-7. **Objects sit IN the light** — glass tiles with tinted shadows, hex
+7. **Objects sit IN the light** - glass tiles with tinted shadows, hex
    prisms with a lit top face, an envelope with ribbons passing through; the
    gradient is an environment, not wallpaper.
 
@@ -154,7 +154,7 @@ GEOMETRY:
   masked by a radial so they die at ~40% of the canvas; or
   `repeating-conic-gradient` masked radially.
 - Rings: concentric SVG circles, 1px, opacity 0.18/0.12/0.07, optional slow
-  linear pulse (scale 1 → 1.05, 4s) — ambient register.
+  linear pulse (scale 1 → 1.05, 4s) - ambient register.
 - Hex-dot map: `<pattern>` of 2-3px hexagons, masked by a continent
   silhouette, brightness multiplied by a radial mask from the source.
 - Ribbons: SVG paths 2-3px with gradient strokes + a blurred duplicate
@@ -162,7 +162,7 @@ GEOMETRY:
 - Tinted shadows for glass tiles: `0 12px 32px -8px rgba(hue, .18)`; top
   face `linear-gradient(180deg, #fff, #f0f3ff)`; 1px border white/60.
 - Always: grain layer (feTurbulence) over the field, and check the field
-  on a real display — banding shows in 8-bit exports.
+  on a real display - banding shows in 8-bit exports.
 
 ### B2. Where it fits
 
@@ -175,23 +175,23 @@ glass tiles). In AX10 "structured light" is now a named asset option.
 
 ## Per-link reverse-engineering (short form; files in `posts/`)
 
-- **marcelkargul-2090148** (corpus): monochrome iso line-art service cards —
+- **marcelkargul-2090148** (corpus): monochrome iso line-art service cards  - 
   see its post file.
 - **Services bento / CTA dome** (`local-marcel-isometric`, marcelkargul-2090509):
   above, A1.
-- **marcelkargul-2089371 — Hunt.io hero**: black ground; hex-dot world map;
+- **marcelkargul-2089371 - Hunt.io hero**: black ground; hex-dot world map;
   cyan hex prisms as nodes with teal radar rings; red threat dots with tight
   concentric glows; 1px rounded-corner connectors to mono label chips
   (Unique error page · JA4 fingerprint · Hash Match · Campaign); one flag
-  badge as the only non-palette color; H1 left-bottom, sub + pill right —
+  badge as the only non-palette color; H1 left-bottom, sub + pill right  - 
   the map is the hero object, the copy steps aside.
-- **marcelkargul-2089404 — Hunt.io footer**: the same prism alone, dead
+- **marcelkargul-2089404 - Hunt.io footer**: the same prism alone, dead
   center, emitting light SHAFTS across the dot map; two-line H1 + one pill;
   the footer as a second hero with the asset reused (F3 discipline).
-- **HPbq collage — six light heroes**: shaped pastel fields (arc horizon,
+- **HPbq collage - six light heroes**: shaped pastel fields (arc horizon,
   diagonal slab, rising horizon), line-work over light (traces, ribbons,
   outlines, dashed connectors), glass tiles with tinted shadows, hub-and-
   spoke icon rows, one dashboard shot bleeding off the bottom.
-- **marcelkargul-1952697 — Chatsheet hero (video)**: soft-shaded iso
+- **marcelkargul-1952697 - Chatsheet hero (video)**: soft-shaded iso
   conveyor, A1 second register; motion: linear conveyor along the iso
   axis, tiles bob, dotted paths converge; serif H1.

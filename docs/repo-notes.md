@@ -20,7 +20,7 @@ drawn-to/                 ← THE SKILL (portable, self-contained, lightweight)
     animation-craft.md      implementation doctrine (Emil Kowalski / Apple distillation)
     animation-recipes.md    ready-to-build component recipes (press, popover, drawer…)
     isometric-and-light.md  isometric objects + structured-light paths (Kargul set)
-    layout-language.md      grids, separation, radius, air — measured
+    layout-language.md      grids, separation, radius, air - measured
     motion-grammar.md       registers, easing table, loops, cursor choreography
     graphic-language.md     UI-fragments, line-art, texture, shaders, mock craft
     color-type.md           palettes, chroma quarantine, dual-mode, typography
@@ -31,7 +31,7 @@ references/               ← heavy archive (NOT part of the skill)
   _index.json               structured summary of the first 45 analyses (later refs: posts/ only)
 scripts/
   validate-library.py       library integrity check (citations, frontmatter,
-                            matrix, SKILL read-order) — run before publishing
+                            matrix, SKILL read-order) - run before publishing
 docs/plans/               ← build plan + status
 ```
 
@@ -39,14 +39,14 @@ docs/plans/               ← build plan + status
 
 - **Claude Code (this machine):** copy or symlink `drawn-to/` into a project's
   `.claude/skills/` (or `~/.claude/skills/` for global). Invoke with
-  `/drawn-to` or just ask to design something — the description auto-triggers.
+  `/drawn-to` or just ask to design something - the description auto-triggers.
 - **Codex CLI / Copilot CLI / Gemini CLI:** copy `drawn-to/` into the host's
   skills location; the SKILL.md format is portable.
 - **ChatGPT:** paste `skills/drawn-to/SKILL.md` + `skills/drawn-to/references/style-families.md`
   (and `question-flow.md` for the interactive flow) as project instructions.
 
 The skill's output per project is a lock file:
-`docs/design-locks/YYYY-MM-DD-<task>.md` in the target repo — the contract
+`docs/design-locks/YYYY-MM-DD-<task>.md` in the target repo - the contract
 implementation must serve, à la refetch.sh's Q1-Q25.
 
 ## Regenerating / extending the library

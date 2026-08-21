@@ -1,4 +1,4 @@
-# Illustration ideation — inventing the graphic for each feature
+# Illustration ideation - inventing the graphic for each feature
 
 The skill must not only pick styles; for feature-card work it must PROPOSE the
 illustrations: 2-4 genuinely creative concepts per feature, each buildable in
@@ -16,20 +16,20 @@ local-feature-graphics (the fit-method exemplar), adriankuleszo-2089887
    *protecting, continuously*; "Global" → *everywhere at once*. If the copy
    has a measurable claim (256-bit, 190+ regions, <10s), the number belongs
    IN the illustration as a readout.
-2. **Choose the metaphor register** — one per PROJECT, restated per card
+2. **Choose the metaphor register** - one per PROJECT, restated per card
    (C-rule: one material system for the whole set):
-   - *Instrument*: the feature as hardware — dial, gauge, knob, radar, LCD
+   - *Instrument*: the feature as hardware - dial, gauge, knob, radar, LCD
      (local-feature-graphics; fits security/infra/perf products).
-   - *Mechanism*: the feature as a diagram that runs — hub-and-spoke,
+   - *Mechanism*: the feature as a diagram that runs - hub-and-spoke,
      pipeline spine, exploded isometric (LexnLin-2089, marcelkargul-2090148).
    - *Product-fragment*: the feature as the real UI mid-action, skeletonized
      to 3-5 selling data points (adriankuleszo-2089887, LexnLin-2024).
-   - *Blueprint plate*: the feature as a labeled technical figure — line art,
+   - *Blueprint plate*: the feature as a labeled technical figure - line art,
      FIG numbering, real commands (0xSero-2090).
-   - *Material/atmosphere*: the feature as a physical phenomenon — light,
+   - *Material/atmosphere*: the feature as a physical phenomenon - light,
      goo, shader field (arknow91-2089, madebylalit-2088; for AI/ambient).
    - *Isometric object*: the deliverable drawn as an iso object on a visible
-     grid — blueprint line-art (dark) or soft-shaded (light); conveyors for
+     grid - blueprint line-art (dark) or soft-shaded (light); conveyors for
      flows (marcelkargul-2090148, marcelkargul-1952697; full craft in
      `isometric-and-light.md`).
 3. **Compose: one hero object + orbiting evidence.** The hero performs the
@@ -46,7 +46,7 @@ local-feature-graphics (the fit-method exemplar), adriankuleszo-2089887
 ## Device catalog (pick, combine, subvert)
 
 Composition devices, each with its construction recipe. Values assume the
-locked family's ground; all depth via lightness steps + inset highlights —
+locked family's ground; all depth via lightness steps + inset highlights  - 
 no hard borders inside illustrations.
 
 - **Dial / gauge**: segmented ring (conic-gradient mask or SVG stroke-dash),
@@ -76,7 +76,7 @@ no hard borders inside illustrations.
 - **Coin / terminal button**: large circular button w/ inset shadow + one
   semantic glyph, traces terminating into it. Completion, confirmation.
 - **Evidence chips**: white/dark chips w/ icon + bold claim + one-line proof
-  ("256-bit protection active"). The universal proof layer — orbit 1-3
+  ("256-bit protection active"). The universal proof layer - orbit 1-3
   around any hero.
 - **Isometric exploded mechanism**: 2:1 iso line-art, 3-tier gray ramp, one
   white focal, dashed guides + px annotations (marcelkargul-2090148).
@@ -84,54 +84,54 @@ no hard borders inside illustrations.
   converging into one chroma core, outputs riding a rail that slides
   linearly along the iso axis (marcelkargul-1952697). Pipelines,
   integrations, automations. Construction: `isometric-and-light.md` §A2.
-- **Structured light field**: glow with geometry — shaped falloff (arc
+- **Structured light field**: glow with geometry - shaped falloff (arc
   horizon, diagonal slab, wedge rays), line-work over light (traces,
   ribbons, hex-dot maps), rings, one source (marcelkargul-2089371/2089404,
   the six-hero collage). The hero/CTA environment device. Recipes:
   `isometric-and-light.md` §B1.
-- **Bespoke chart form**: invent the chart that fits the data story — DIP
+- **Bespoke chart form**: invent the chart that fits the data story - DIP
   switch, beeswarm, mekko (yurygok-2089624). Metrics features.
 - **Diegetic canvas**: the product's own selection handles, marquees,
   cursors drawing the feature (adriankuleszo-2089887). Design tools.
 - **Brand-hued underglow ("neon skirt")**: an elliptical glow at a floating
-  tile's bottom edge as the ENTIRE hover grammar — no scale, no lift, no
+  tile's bottom edge as the ENTIRE hover grammar - no scale, no lift, no
   border change; each tile answers in its OWN brand hue (violet hub, blue
   Salesforce, orange HubSpot). Ignite ~250ms ease-out, decay 500-600ms.
   Radial-gradient ellipse, blur 12-20px, opacity ≤0.5. The tile "powers on".
   (flohoeller-2090.) Integrations, connected tools, anything tile-based.
 - **Comet arc**: a 90-120° gradient stroke segment traveling a hairline ring
-  at constant velocity (~15°/s), both ends fading to transparent — the one
+  at constant velocity (~15°/s), both ends fading to transparent - the one
   lit ambient element of the diagram. SVG stroke-dash + gradient, or a
   rotating conic-gradient mask. (flohoeller-2090.) Enrichment, sync, cycles.
 - **Vacant slots**: unlabeled darker tiles at the grid's corners implying an
-  extensible catalog — "more fit here" said without copy. (flohoeller-2090.)
-- **Arch merge / wishbone**: 2-3 hairline S-curves converging into one node —
+  extensible catalog - "more fit here" said without copy. (flohoeller-2090.)
+- **Arch merge / wishbone**: 2-3 hairline S-curves converging into one node  - 
   many-into-one stories (routing, consolidation, outreach). Mini-flow-spine
   variant. (flohoeller-2090.)
   Variants proven on dark: logo marks may sit on dark top-lit squircles (not
   only white tiles), and graph-paper patches may run two densities (8px fine
   inside 32px coarse) when confined to a diagram zone. (flohoeller-2090.)
 
-## QI — the proposal protocol (runs per feature, after QS)
+## QI - the proposal protocol (runs per feature, after QS)
 
 For feature-card/bento tasks, after the section variant locks: take the real
 feature list from Q0 and, for EACH feature, present 2-4 concepts:
 
 ```
-QI2 — "Encrypted infrastructure":
-A. Shield knob — knob + tick arc, accent arc at the claim's %, seven-segment
+QI2 - "Encrypted infrastructure":
+A. Shield knob - knob + tick arc, accent arc at the claim's %, seven-segment
    "SECURED" band; motion: arc draws + LCD counts on first view.
    (register: instrument · build M)
-B. Sealed pipeline — mini-flow spine where the middle node is a closed vault
+B. Sealed pipeline - mini-flow spine where the middle node is a closed vault
    plate w/ screws; chips: "AES-256 · at rest + in transit"; motion: pulse
    travels the spine, linear, 4s loop.  (register: mechanism · build M)
-C. Skeleton request log — window skeleton, every row's payload column
+C. Skeleton request log - window skeleton, every row's payload column
    scrambled to mono cipher glyphs except one decrypted row in accent;
    motion: hover decrypts the hovered row.  (register: product-fragment · build S)
 ```
 
 Rules:
-- Concepts must span at least two metaphor registers — variety is the point;
+- Concepts must span at least two metaphor registers - variety is the point;
   never three variants of the same device.
 - Every concept names: metaphor rationale (one line: why it argues THIS
   claim), hero object, evidence chips w/ actual microcopy, accent use, the
@@ -146,7 +146,7 @@ Rules:
 
 - Layered divs + gradients first: surfaces = lightness-step backgrounds +
   `inset 0 1px 0 rgba(255,255,255,0.06)` top highlight + soft outer glow at
-  the accent (8-24px, ≤35% — never uniform).
+  the accent (8-24px, ≤35% - never uniform).
 - SVG for line work: traces, ticks, arcs (stroke-dasharray for segments and
   draw-on animation), dot fields; 1px strokes, `vector-effect:
   non-scaling-stroke`.
