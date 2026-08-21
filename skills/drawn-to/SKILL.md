@@ -45,7 +45,9 @@ owner's measured taste, and it beats trained-default aesthetics every time.
 6. **Lock + enforce + quality bar + polish** - record every lock as it
    happens in `docs/design-locks/YYYY-MM-DD-<task>.md` in the target project;
    implement from the lock file + dimension docs; every visual change serves a
-   named lock. Then, before handoff, two passes that never get skipped:
+   named lock and every illustration serves a set-table row (an illustration
+   with no row was never designed). Then, before handoff, two passes that
+   never get skipped:
    the **quality bar + visual QA loop** (`references/quality-bar.md`: render at
    1440×900 / 1280×720 / 390×844, walk the tells and the budgets, compare
    against the cited reference frames, fix, re-render - a build that passes
@@ -184,6 +186,14 @@ owner's measured taste, and it beats trained-default aesthetics every time.
   the product's real material (`recipes.md` § One-Screen Catalog). Repeating the
   same headline + sub + CTA on every screen is the fastest way to make a set of
   genuinely distinct directions read as generic (`quality-bar.md` § 1).
+- Two or more illustrations on one screen or in one section are a SET, and a
+  set may not use a device twice. Before writing markup, run the fit-method per
+  cell and write the set table (cell · verb · register · device · hero object)
+  into the lock file; a repeated value in the device column is a build stop,
+  not a taste note (`illustration-ideation.md` § The set law,
+  `quality-bar.md` § 3b). The fit-method is a BUILD step: it runs whether or
+  not the QI proposal stage ran - delegation removes the questions, never the
+  method.
 - Persistent chrome (transport controls, toggles, progress) holds ONE position
   and ONE skin across every screen - never nested in a container whose width
   changes per direction, or it jumps on every transition.
@@ -234,7 +244,8 @@ the text analyses.
    hover rows / entrances / errors - each applied or explicitly gated
    (`polish-moments.md`); no state change shifts layout.
 7. Quality bar + visual QA (`quality-bar.md`): the QA line from the lock file
-   (viewports rendered · tells 0 · budgets · refs compared) - a screen that
+   (viewports rendered · tells 0 · codes 0 · budgets · set table per multi-cell
+   surface with devices unique · refs compared) - a screen that
    was not rendered at full size is reported as unrendered, never verified.
 8. Honest handoff state: distinguish locally verified · committed · pushed/PR ·
    deployed · independently verified live. Never report further than proven.

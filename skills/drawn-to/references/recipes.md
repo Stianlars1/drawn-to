@@ -64,8 +64,8 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
   | Kind | Body | Budget deltas vs the poster |
   |---|---|---|
   | Poster | H1 + one sub line + the capture control + ONE signature visual | the base budgets (`quality-bar.md` § 2) |
-  | Feature trio | 3 cells, each a working fragment + title + <=3 spec lines; no H1, or one 2-word section head | no H1 needed; 3 titles <= 3 words; body <= 3 lines/cell |
-  | Bento 2x2 | 4 outlined cells, one carrying a media panel | one cell is the focal, the other three ghosted (C11) |
+  | Feature trio | 3 cells, each a working fragment + title + <=3 spec lines; no H1, or one 2-word section head | no H1 needed; 3 titles <= 3 words; body <= 3 lines/cell · 3 cells = 3 DIFFERENT devices, >=2 registers (set law) |
+  | Bento 2x2 | 4 outlined cells, one carrying a media panel | one cell is the focal, the other three ghosted (C11) · 4 cells = 4 DIFFERENT devices (set law) |
   | Ledger / spec sheet | 8-14 rows: mono index, label, dotted leader, value | rows are DATA - every value must reconcile (C10) |
   | Gallery / swatch wall | 6-9 plates or chips, captions demoted outside | no captions inside the plates |
   | Metrics | ONE bespoke chart form invented for this data (never a stock bar chart) | 0 prose; axis labels mono |
@@ -75,7 +75,14 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
   | Closing | one display-size statement + the capture control | <= 8 words, one lit element |
 
 - **Content law:** the shared invariants across the catalog are the brand, the direction label and the product's identity - NOT the headline and not the CTA. The direction label is a plain name; a screen that prints "F2 85 + F4 15" or "Constant C2" has leaked the ledger into the page (`quality-bar.md` § 1). Each screen renders a different SLICE of the product's real material (what it does, what it outputs, what it measured, what it enforces). If two screens carry the same sentence, one of them is wrong.
-- **Device law:** each screen names a different device from `illustration-ideation.md` § Device catalog. Two screens may share a family; they may not share a device. Record the device per screen in the lock file.
+- **Device law:** each screen names a different device from
+  `illustration-ideation.md` § Device catalog. Two screens may share a family;
+  they may not share a device. A screen whose KIND carries several cells
+  (feature trio, bento 2x2, gallery) names a device PER CELL, not per screen,
+  and those cell devices are spent for the whole catalog too - one device is
+  used exactly once on the page, cells included. Record the device per screen
+  AND per cell in the lock file as a set table
+  (`illustration-ideation.md` § The set law).
 - **Ingredients:** the chrome uses the host direction's separation physics on every screen (hairline in F1, one soft shadow in F6, 1 px frame in F5). The transport control is chrome, not content: it never takes an accent hue and never animates on cycle.
 - **Evidence:** the failure mode is the anchor - nine identical posters, owner verdict "litt generisk". Kinds map to the section recipes below: Feature trio = FIG-Plate Shared-Border Grid / Pebble Dissolve Grid; Bento = Divider-Cut Bento; Ledger = the print ledger sheet (basit_designs-2089995) and yurygok-2089624's dotted leaders; Metrics = yurygok-2089624 bespoke chart forms; Instrument = F7 (cabralorenzo-2090, jeetnirnejak-2089); Chapters = Numbered Index + Photo Panels.
 - **Families:** any. The catalog is a container, not a style.
