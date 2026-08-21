@@ -54,6 +54,15 @@ owner close the tab; the skill's whole job is that they never appear.
   single most common generated-illustration failure: pretty, on-brand, and
   interchangeable. Also: N illustrations in one set drawn in N different
   styles to make them feel distinct.
+- Isometric construction tells (these are what produce the "stock-looking iso
+  cubes" impression): every face stroked individually, so every seam shows a
+  doubled outline · a heavier outer contour added out of instinct (the
+  reference measures silhouette and seam identical) · gradient fills on object
+  faces · a far solid faded, blurred or shrunk to sit back instead of being
+  occluded · contact shadows that darken where they overlap · an assembly
+  built as N cubes drawn side by side instead of one extruded run · an iso
+  camera that rotates, dollies or parallaxes on scroll · a bobbing object
+  whose shadow bobs with it · a scale or spring on an iso entrance.
 - A centered radial blob as "atmosphere"; conic or striped "rays"; a logo-like
   glyph (triangle, circle, bolt) inside a ring as "the object"; a gradient
   without grain (C9); stock-looking isometric cubes; three floating cards at
@@ -111,6 +120,17 @@ An illustration or light field ships only if ALL of these hold:
    value ladder, one line-weight hierarchy, one focal rule, one motion
    register. Variety comes from what is on stage, never from restyling.
 
+9. **Isometric sets - the construction check.** One silhouette path per SOLID,
+   never one per face · a stated number of stroke weights (often ONE per card
+   in the paper-white register), constant across object sizes · zero gradients
+   on object faces, the single exception being an opened interior · depth by
+   occlusion only, never opacity, blur or size · shadows flat and
+   non-compounding where they overlap, and identical in value whether grounded
+   or detached · exactly one black focal face per card, always the surface the
+   feature acts through · grid pitch, phase and world origin identical across
+   every card in the set · rigid transforms only, and the camera never moves.
+   (`isometric-and-light.md` § A1a-A2g.)
+
 If any condition fails: ship NO illustration. A typographic hero on a well-set
 ground is a strong, legitimate answer; a weak object is the single fastest way
 to look generated. Devices and construction: `illustration-ideation.md`,
@@ -136,10 +156,19 @@ Judge the render, not the code. Never from a thumbnail.
    is the render cheaper? If the render loses the comparison, it is not done.
    Without media: compare against the measured values in the post analyses
    and say so in the QA line.
-5. **Locks** - every visual choice names a lock; every lock is visible in the
+5. **Illustration set re-test** (any page carrying 2+ illustrations). Concepts
+   pass the swap test on paper and drift into decoration during the build;
+   this catches the drift. Screenshot the rendered art at real size, crop away
+   every word of copy, then: (a) re-run the SWAP TEST on the rendered
+   pictures, writing the wrong claim each would make on each sibling; (b) run
+   the READ-BACK TEST on each - write the sentence the picture argues and
+   compare it to the claim in its QI row; (c) overlay the set and confirm
+   register parity (grid pitch and phase, module size, stroke weight, face
+   values, loop length). Any failure is a rebuild, not a tweak.
+6. **Locks** - every visual choice names a lock; every lock is visible in the
    render.
-6. **Polish pass** - `polish-moments.md`.
-7. **Record** in the lock file:
+7. **Polish pass** - `polish-moments.md`.
+8. **Record** in the lock file:
    `QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · budgets ✓ · refs compared: <slugs or "text only">`.
 
 The owner's screenshot beats yours. If the owner sends one, it is the
