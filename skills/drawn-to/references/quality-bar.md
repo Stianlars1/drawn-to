@@ -50,6 +50,10 @@ owner close the tab; the skill's whole job is that they never appear.
 - Two mid-luminance layers overprinting (ghost tiers, see SKILL checklist 4).
 
 **Illustration and light**
+- An illustration that would fit the feature next to it (the swap test) - the
+  single most common generated-illustration failure: pretty, on-brand, and
+  interchangeable. Also: N illustrations in one set drawn in N different
+  styles to make them feel distinct.
 - A centered radial blob as "atmosphere"; conic or striped "rays"; a logo-like
   glyph (triangle, circle, bolt) inside a ring as "the object"; a gradient
   without grain (C9); stock-looking isometric cubes; three floating cards at
@@ -98,6 +102,14 @@ An illustration or light field ships only if ALL of these hold:
    glance is a logo, not an illustration.
 6. **One** - one signature object per screen. Two competing objects halve each
    other.
+7. **Non-transferable** - in a SET (feature cards, bento, steps), each
+   illustration fails the swap test: mounted on a sibling feature it would
+   argue the wrong thing (`illustration-ideation.md` § derivation ladder). An
+   illustration that would sit equally well on any sibling is decoration, no
+   matter how well drawn.
+8. **One register across the set** - one projection, one module scale, one
+   value ladder, one line-weight hierarchy, one focal rule, one motion
+   register. Variety comes from what is on stage, never from restyling.
 
 If any condition fails: ship NO illustration. A typographic hero on a well-set
 ground is a strong, legitimate answer; a weak object is the single fastest way
