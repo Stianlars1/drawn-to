@@ -16,8 +16,11 @@ local-feature-graphics (the fit-method exemplar), adriankuleszo-2089887
    *protecting, continuously*; "Global" → *everywhere at once*. If the copy
    has a measurable claim (256-bit, 190+ regions, <10s), the number belongs
    IN the illustration as a readout.
-2. **Choose the metaphor register** - one per PROJECT, restated per card
-   (C-rule: one material system for the whole set):
+2. **Choose the metaphor register** - decided ONCE for the whole set, never
+   per card (C-rule: one material system for the whole set). The register says
+   how everything is drawn; it does not say what is on stage. Pick it after
+   the ladder's Steps 1-3 have run for every feature, so it is chosen to serve
+   the hardest scene in the set:
    - *Instrument*: the feature as hardware - dial, gauge, knob, radar, LCD
      (local-feature-graphics; fits security/infra/perf products).
    - *Mechanism*: the feature as a diagram that runs - hub-and-spoke,
@@ -38,10 +41,12 @@ local-feature-graphics (the fit-method exemplar), adriankuleszo-2089887
    tie the hero to the card edges so it sits IN the card.
 4. **Accent = the living datum.** Grayscale everything; the one accent marks
    what the feature acts on (the scanned face, the progress arc, the pins).
-5. **Run the derivation ladder below** (claim shape → scene topology → cast →
-   loop rhetoric → swap test → absence check → set register). The fit-method
-   picks the register; the ladder decides what is actually on stage. Skipping
-   it is how interchangeable decoration gets shipped.
+5. **The derivation ladder below has already decided what is on stage** -
+   claim + antagonist → claim shape → topology → cast, run per feature BEFORE
+   any device is picked. The register only decides how it is drawn, and the
+   device catalog is consulted LAST, to build what the cast already named.
+   Picking a device first and back-filling a claim is exactly how
+   interchangeable decoration gets shipped.
 6. **Design the still first, name the motion second.** Every concept must
    carry the pitch as a static frame (C12); then note its one motion
    opportunity per `motion-grammar.md` (a loop that enacts the verb, a hover
@@ -64,6 +69,14 @@ the payment never gets through" · "Two machines can transact with nothing
 between them" · "The payment layer is already inside HTTP". If you cannot name
 what the feature is arguing AGAINST (friction, a middleman, a migration, a
 leak, a wait), the illustration will have nothing to depict.
+
+If you cannot name the antagonist, the defect is in the COPY, not in the
+illustration. Take it back to Q0 and ask the owner what this feature removes,
+replaces or prevents. Do not proceed on "it is fast and easy" - a claim with no
+antagonist produces the pretty-but-interchangeable object every time, and the
+swap test will catch it three hours later. If the owner confirms there is
+genuinely no antagonist, that feature ships type-only (`quality-bar.md` § 3:
+if any condition fails, ship NO illustration).
 
 ### Step 2 - classify the claim shape; the shape picks the scene topology
 
@@ -115,6 +128,19 @@ The hold matters as much as the move: the interior of an opened host needs
 ~1.0-1.3 s of stillness or the reveal cannot be read. A never-arrives loop
 must fail LATE (past the midpoint) or it reads as a glitch, not as friction.
 
+Two set-level rules:
+- **No two cards in a set may use the same rhetorical shape.** The exemplar
+  runs never-arrives / passes-directly / opens-and-closes. Three different
+  topologies animated with the same rhetoric still read as one card shown
+  three times.
+- **Name each loop's POSTER FRAME** - the single frame the loop degrades to
+  under `prefers-reduced-motion`, and the frame every screenshot will capture.
+  It is chosen for the CLAIM, not for being the settled end state: a
+  never-arrives loop whose settled state is the dissolved payload would argue
+  that the friction resolved, so its poster frame is the payload at its
+  deepest point in the terrain. An opens-and-closes loop posters at full open,
+  not closed.
+
 ### Step 5 - the swap test (mandatory; the concept fails if it passes)
 
 Mount each concept on its sibling features and write the sentence it would then
@@ -129,6 +155,20 @@ obstacle, the exact opposite of "already built in".
 
 Record the result in the lock file on the QI row: `swap test: fails on cards
 2, 3 (correct)`. A QI row without a swap test is not locked.
+
+### Step 5b - the read-back test
+
+The swap test catches an illustration that fits everywhere. This catches the
+opposite failure: one that is non-transferable but argues nothing legible.
+
+Cover the headline and the body. Look at the illustration alone - cold, after a
+break, or through someone else - and write the ONE sentence it argues. Compare
+it word for word with the claim sentence from Step 1.
+- Vaguer than the claim ("something about payments") → the scene is under-cast:
+  the antagonist or the payload is not actually in the frame. Add the missing
+  role, do not add detail.
+- A DIFFERENT sentence → the topology is wrong; go back to Step 2.
+The two tests fail in opposite directions, so run both, always.
 
 ### Step 6 - the absence check
 
@@ -155,6 +195,26 @@ Lock these ONCE for the whole set; vary only topology and payload:
 Variety comes from the scene topology, never from restyling. If the three
 illustrations need three different rendering styles to feel distinct, the
 topologies were too similar - go back to Step 2.
+
+**The register row carries VALUES, not adjectives.** Write it into the lock
+file as literals, because this is what every QI row will be built and measured
+against:
+
+```
+REGISTER (set-level): projection true iso 30 deg (slope 0.5774) · module
+footprint 53 x 31 CSS, cube height 31 · grid = one cell per module, phase from
+card top-left, hairline ~0.2 CSS px equivalent, faded to zero behind copy ·
+faces #FFFFFF / #E8E8E8 / #CECECE, one #0B0B0B focal face per card · stroke
+2.6 CSS px, ONE weight per card, color assigns role (gray = scenery, black =
+subject) · shadow: flat iso polygon #E8E8E8, zero blur, non-compounding ·
+loop 5.0 s, shared clock, poster frames named per card · annotation plates
+skewY(-30deg), #F2F2F2 / 2.65 stroke / r 7.1, upright type
+```
+
+Then verify parity on the built set: overlay the rendered illustrations and
+check that grid pitch and phase, module size, stroke weight and face values
+match across every card. A set that drifts by a few percent per card reads as
+three drawings by three people.
 
 ## Device catalog (pick, combine, subvert)
 

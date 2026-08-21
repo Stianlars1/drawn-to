@@ -44,8 +44,14 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    (`references/illustration-ideation.md`): run the derivation ladder (claim
    shape → scene topology → cast → what the loop asserts), apply the SWAP TEST
    to every concept (mounted on a sibling feature it must argue the wrong
-   thing - a concept that survives the swap is decoration), lock the picks,
-   and lock the set's register contract as its own row.
+   thing - a concept that survives the swap is decoration) plus the read-back
+   test (cover the copy; the picture must argue the claim sentence), lock the
+   picks, and lock the set's register contract as its own row with LITERAL
+   values. Once the cast is named, if the scene is a WORLD rather than a UI
+   fragment - a gauntlet, a host that opens, two actors across a gap, a field -
+   read `references/isometric-and-light.md` § A1a-A2g BEFORE proposing: the
+   projection, grid origin, module size, face ladder, stroke rule, shadow
+   recipe and transform contract are what every concept will be built against.
 6. **Lock + enforce + quality bar + polish** - record every lock as it
    happens in `docs/design-locks/YYYY-MM-DD-<task>.md` in the target project;
    implement from the lock file + dimension docs; every visual change serves a
@@ -140,7 +146,10 @@ owner's measured taste, and it beats trained-default aesthetics every time.
 - **C10** Diegetic realistic microcopy: zero lorem, versioned filenames,
   arithmetic that reconciles, one fictional client brand threaded through.
 - **C11** Opacity is the attention system: one full-contrast focal; siblings
-  ghosted 15-45%; disabled dimmed ~25%, never hidden.
+  ghosted 15-45%; disabled dimmed ~25%, never hidden. Scope: this governs UI
+  layers and outline illustration. Inside a solid-face isometric drawing the
+  rule inverts - depth is occlusion, and a faded far solid is a tell
+  (`isometric-and-light.md` § A1a, A2b).
 - **C12** Ambient background ⇒ page composed at t=0. Entrances only as
   word-group blur reveals (blur(12px)→0, 400-500ms, 100-150ms stagger).
 
@@ -215,7 +224,9 @@ the text analyses.
    to ≤5% or occluded, never two mid-luminance layers overprinting.
 5. References: which family docs / posts backed the choices.
    Illustration sets: each QI row's topology + what its loop asserts + its
-   swap-test result; one register contract for the whole set.
+   poster frame + its swap-test and read-back results; one register contract
+   for the whole set, written as literal values, with the built set verified
+   for parity (grid, module, stroke, face values, loop length).
 6. Polish pass: numbers / state text / toggles / confirmations / loading /
    hover rows / entrances / errors - each applied or explicitly gated
    (`polish-moments.md`); no state change shifts layout.

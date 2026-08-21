@@ -186,9 +186,22 @@ What hover NEVER does:
 22. **Hold states dead still:** no idle pulsing on active indicators (luminance flat), ~500ms full rest between loop events, at most one ambient layer per section, ambient amplitude just above perception (~3°/frame, ~1 luma level/150ms) (marcelkargul-2089632, Triopixels-2089, madebylalit-2087, basit_designs-2089627).
 23. **Skip entrance choreography when the background is alive** - ship the page composed at t=0 and let one ambient material carry the life (basit_designs-2089627, AlexandruDranga-2090).
 24. **Keep demos honest:** true disabled states with rewritten captions, dimmed (25%) not hidden range-end controls, visible clamps, no snap-back, real data written by every interaction; regenerate procedural visuals per replay when the claim is "generative" (mickces-2088, insporadesign-2087, cabralorenzo-2090, jeetnirnejak-2089).
-25. **Design every choreography to degrade to its settled final frame** - the static end-state must carry the full pitch, as proven by the corpus's frozen-interaction statics; use CSS transitions (not keyframes) for anything a user can interrupt mid-flight (piyushsphere-2089, marcelkargul-2090148, ImranUxi-2089, flornkm-2089).
+25. **Design every choreography to degrade to a named POSTER FRAME** - usually the settled final frame, which must carry the full pitch (the corpus's frozen-interaction statics prove it). But NOT when the loop's argument is failure or friction: a never-arrives loop whose settled state is the dissolved payload argues that the problem resolved - the opposite of its claim. Every semantic loop names its poster frame at concept time (`illustration-ideation.md` § Step 4) and `prefers-reduced-motion` renders exactly that frame (0xhammermann-2090). Use CSS transitions (not keyframes) for anything a user can interrupt mid-flight (piyushsphere-2089, marcelkargul-2090148, ImranUxi-2089, flornkm-2089).
 
-## Addendum - hover-light grammar (flohoeller-2090)
+## Addendum - isometric scenes (0xhammermann-2090)
+
+- The camera NEVER moves: no rotate, no dolly, no scroll parallax between grid
+  and objects, no scene rotation. The world opens, slides or fills instead.
+  Full construction and transform contract: `isometric-and-light.md` § A2, A2f.
+- Across one set of sibling loops, no two may use the same rhetorical shape
+  (never-arrives / crosses-in-one-beat / passes-directly / opens-and-closes /
+  absorbs / multiplies / assembles). Desyncing periods (§ 2a) is not enough -
+  three loops with the same argument read as one card shown three times.
+- Stillness is a legal phase and often the largest one (the exemplar holds
+  1133 ms with nothing moving); idle bobs, floats and pulses are the
+  generated-motion tell.
+
+Addendum - hover-light grammar (flohoeller-2090)
 
 - Hover may be LIGHT ONLY: no scale, lift, or border change anywhere - a
   brand-hued underglow blooming under the tile, ~250ms ease-out ignite,

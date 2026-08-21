@@ -46,34 +46,91 @@ language, (B) light with geometry instead of blob gradients. Media:
   (white → #e6e6e6, 1-2% per face) - the "soft gradients that make the
   section feel like a product" comment in the post.
 
-**Paper-white iso (light, heavy contour, zero chroma)** - `0xhammermann-2090`,
-a three-card feature section where every card carries its own iso scene:
+**Paper-white iso (light, one stroke weight, zero chroma)** - `0xhammermann-2090`,
+a three-card feature section where every card carries its own iso scene. All
+values below are measured off the 301-frame source, not estimated:
 
-- Ground: pure white card on a white page; separation is a 1px #E0E0E0-class
-  card border and nothing else. The stage is a hairline diamond grid drawn
-  edge to edge inside the card, clipped by the card, ~2% ink - it reads as
-  graph paper the objects stand on, not as a pattern.
-- Objects are drawn like architectural models: FLAT faces (no gradients on any
-  object face) in a 3-4 step ladder - white #FFF top-lit face · #F2F2F2 ·
-  #D2D2D2 · and, for exactly one face per card, pure black carrying a white
-  glyph. The black face is the focal and it is always the surface the feature
-  acts through (the machine's aperture, the counterpart's mark).
-- The contour does the work the shading does in soft-shaded iso: a heavy,
-  uniform black outline around every solid (2-2.5x the internal seam weight),
-  internal seams thinner, and the ground grid thinner still. Three line
-  weights, no more. This is what separates "architectural model" from "clip
-  art" - a single-weight drawing collapses at a glance.
-- Contact: objects that stand on the plane get a projected footprint shadow
-  (the object's own silhouette, sheared onto the grid, ~#EDEDED, blurred
-  6-10px); objects that float get the same shadow DETACHED and offset - the
-  gap is the altitude. No drop shadows on the object itself.
-- Grain: none. This register is a print drawing, not a rendered scene, and
-  C9's grain rule applies to gradients - here the only gradient is the light
-  falling into an opened interior.
-- Annotation objects (labels, chips, values) are drawn as extruded iso plates:
-  a white top face with the text set ON the plane (sheared into the iso axes)
-  and a black extruded side, so a label is an object in the world rather than
-  UI floating over it. Italic sets them apart from the page's UI type.
+- Ground: pure white card on a white page; separation is a 1 CSS px #D2D2D2
+  card border and nothing else, square corners, `overflow: hidden`. The stage
+  is a hairline diamond grid (below, A1a) drawn first, always occluded by the
+  subject, clipped by the card.
+- Objects are drawn like architectural plans, not renders: FLAT faces, no
+  gradients anywhere on an object, in a four-step ladder - `#FFFFFF` ·
+  `#E8E8E8` · `#CECECE` · `#0B0B0B` - and exactly ONE face per card goes
+  black, carrying a white glyph. That black face is the focal and it is
+  always the surface the feature acts through (the machine's aperture, the
+  parcel's frank). Two blacks means two claims.
+- **Refuse the third face value.** The conventional contract (top lightest,
+  left mid, right darkest) is what turns a drawing into a render. This
+  register tints ONE plane and lets the rest go pure white: card 1 tints only
+  the tops (#E7E8E7, both side faces white); card 2 is binary (every face
+  255, one black face per body); card 3 tints per MODULE rather than per
+  orientation (left faces always white, top and right sharing one gray, 9 of
+  12 at #CECECE and 3 at #E8E8E8, scattered - just enough irregularity to
+  kill the "procedurally generated grid" tell without implying a lighting
+  story). There is NO cast shading: a solid never darkens because another
+  solid stands between it and the light.
+- **ONE stroke weight per card, identical on silhouette and interior seam**
+  (measured 2.6-2.75 CSS px on every edge of every card; the silhouette is
+  within noise of the seams). The heavier-outer-contour instinct - which every
+  generated iso drawing follows - is refused: with one weight the object reads
+  as a technical assembly, with a fat outline it reads as a sticker.
+- **Stroke COLOR carries the layer instead of stroke weight**: gray-stroked
+  geometry is architecture that must recede (card 1's maze at #B7B8B8, so the
+  black tracer and plaques own the eye); black-stroked geometry (#0B0B0B) is
+  the subject itself. Decide per card which role the geometry plays, then pick
+  the stroke color - never split the weight.
+- Only the ground grid is lighter than the object stroke: ~0.15-0.3 CSS px of
+  full-black equivalent. Three ink levels total (grid · object stroke ·
+  black focal), and the object stroke is a single number.
+- Build mechanics that decide whether it reads as a drawing or as clip art:
+  one silhouette path per SOLID, stroked after the fills - never one stroke
+  per face (per-face stroking doubles every seam). `vector-effect:
+  non-scaling-stroke` on every stroke so a responsive viewBox cannot
+  re-weight the drawing; `stroke-linejoin: miter`, `stroke-miterlimit: 8`,
+  butt caps. Weights stay CONSTANT for every object regardless of its size -
+  constancy is what makes it a print drawing rather than a perspective render.
+- Contact: card 2 uses a hard, flat isometric polygon at `#E8E8E8` with
+  literally ZERO blur (its edge profile is a 2-device-px antialias ramp and
+  nothing more), every edge on +/-30 deg or vertical - the shadow belongs to
+  the same drawing system as the object, which a soft radial blob never does.
+  It is rigidly parented: offset constant to +/-0.35 px and area constant to
+  0.4% across the whole loop; it never scales, softens or fades. Card 3 uses
+  ONE soft plate (#F6F6F6 to #F3F3F3, 8-10 px edge) for the whole
+  composition rather than one per module. Card 1 has no shadow at all - a
+  scene of architecture standing on its own plan does not need one.
+  Whichever you choose: put every shadow in one group with a single group
+  opacity and `isolation: isolate` (or union the paths before filling) so two
+  overlapping shadows never darken each other. Compounding shadows are the
+  fastest way to turn a print drawing into a render.
+- Grain: none. This register is a print drawing; C9's grain rule applies to
+  gradients, and the only gradient allowed here is the light falling into an
+  opened interior (A2c).
+
+### A1a. The ground grid and the shared world origin
+
+Without a shared origin, three correctly-drawn scenes still read as three
+unrelated drawings. Lock these once for the whole set:
+
+- Grid = two line families on the projection's own axes (here exactly +/-30
+  deg), authored as a `<pattern>` carrying a `patternTransform` matrix, never
+  a rotated square grid - the diagonals must sit exactly on the projection
+  axes or the objects float off the paper.
+- **Grid cell = module footprint.** Measured: grid diamond 53.5 x 30.9 CSS,
+  cube footprint ~53.1 x 30.6 with a ~30.9 vertical edge - within 1-3%, so a
+  unit cube stands on exactly one grid cell and every wall run is countable in
+  cells. (A half-pitch grid is a legitimate alternative, but then say so in the
+  lock: the cost is that cells stop being a unit of measure.)
+- The world origin is a point on the grid, in CSS px from a stated card
+  corner, plus the phase of the pattern. Every card in the set inherits it, so
+  a cube in card 3 sits on the same imaginary floor as a wall in card 1.
+- Ink: hairline only (see above). The grid bleeds to the card's clip on the
+  subject side and is FADED TO LITERALLY ZERO behind the copy - measured ramp:
+  100% to ~43% of card height, 70% at 53%, 50% at 60%, 10% at 77%, 0 from
+  ~82%. On a card where the copy sits beside the subject, fade the wedge
+  diagonally instead. This is a second mechanism on top of silhouette
+  clearance: geometry alone leaves the grid texturing the words, a scrim alone
+  leaves the subject crowding them.
 
 **Soft-shaded iso (light, one chroma hero)** - Chatsheet hero video:
 - A single blue disc (concentric ring "core") sits on an iso plane with a
@@ -93,8 +150,13 @@ a three-card feature section where every card carries its own iso scene:
 ### A2. Construction (the math, so it can be built in code)
 
 - Projection: 2:1 dimetric ("pixel isometric") - axes at ±26.57° (tan = 0.5)
-  on a square grid; or true isometric at ±30°. Pick one per project; the
-  corpus uses 2:1 (flatter, cleaner hatch).
+  on a square grid; or TRUE isometric at ±30° (slope 0.5774, cell width/height
+  = √3). Pick one per project and write it in the lock with its slope. The
+  dark line-art corpus uses 2:1 (flatter, cleaner hatch); the paper-white
+  register measures true 30° on every card (Radon peaks at ±30.00, plaque
+  edges -0.5773…-0.5769) - 2:1 is ruled out there by 3.4°. The two are not
+  interchangeable inside one set: a scene drawn at 26.57° next to one at 30°
+  reads as two different worlds.
 - SVG face transforms (2:1): top `matrix(1 0.5 -1 0.5 tx ty)` → for 30°:
   left face `matrix(0.866 0.5 0 1 tx ty)`, right face `matrix(0.866 -0.5 0 1
   tx ty)`, top `matrix(0.866 0.5 -0.866 0.5 tx ty)`. Draw every face as a
@@ -104,15 +166,28 @@ a three-card feature section where every card carries its own iso scene:
   rotateZ(45deg)` on a stage (2:1-ish), children built as flat planes with
   `translateZ`. Cheaper for animated stacks; SVG for line textures.
 - Lighting order is a contract: top lightest · left mid · right darkest
-  (one light from upper-left), consistent for every object on the page.
+  (one light from upper-left), consistent for every object on the page. In the
+  paper-white register the contract is deliberately REDUCED to two values (or
+  one tint) - see A1a's "refuse the third face value"; whichever you pick,
+  every object on the page obeys the same one.
 - Textures: hatch = `<pattern>` of 1px lines at the face's angle, 4-6px
   pitch, opacity 6-8%; stipple = `feTurbulence baseFrequency .9 + feColorMatrix`
   masked to the face, 3-6%; dashed guides `stroke-dasharray 3 4`; handles =
   4-6px squares with 1px stroke.
-- Motion: translate along an iso axis = (dx, dx·0.5); assembly = separable
-  planes fading/sliding in (graphic-language R8); conveyor = linear
-  `translate` loop with period = one item pitch; never ease an infinite
-  iso loop (C6).
+- Motion: translate along an iso axis = (dx, dx·0.5 for 2:1, dx·0.577 for
+  30°); assembly = separable planes fading/sliding in (graphic-language R8);
+  conveyor = linear `translate` loop with period = one item pitch; never ease
+  an infinite iso loop (C6).
+- **Legal transforms on an iso solid**: translate along an iso axis, translate
+  on screen-Y (altitude), opacity, stroke-width, gradient stops. Nothing else.
+  Never scale (a 1.05 hover on an iso object is immediately wrong - it breaks
+  the projection), never rotate or skew a solid in the picture plane (it
+  breaks the one-camera contract; a genuinely re-posed object is re-drawn in
+  3D, not rolled). A bob is translateY only, and the contact shadow STAYS
+  WHERE IT IS - a shadow that bobs with the object reads as a floating
+  sticker. Animate the `<g transform>` via WAAPI or CSS with
+  `transform-box: fill-box` and an explicit `transform-origin: 0 0`. Never
+  animate the grid: the world does not slide under the camera.
 
 ### A2b. Module architecture - building scenes instead of objects
 
@@ -123,15 +198,27 @@ WORLD per card, from one unit cell:
   CSS on the horizontal axis) and a standard height (typ. 0.6-1.0 x the
   footprint). Every solid in every card is a multiple of that cube: walls are
   runs of it, towers are stacks, plazas are fields.
-- Runs and walls: draw the run as a single extruded polyline (one silhouette),
-  then draw the module seams INSIDE it at the thinner weight. Never draw N
-  separate cubes side by side - the doubled outlines read as clip art and the
-  silhouette dies.
+- Runs and walls: draw the run as a single extruded polyline (one silhouette
+  path, stroked after the fills), then draw the module seams INSIDE it at the
+  SAME weight (this register has one weight) or at a thinner one if the
+  project's lock says so. Never draw N separate cubes side by side - the
+  doubled outlines read as clip art and the silhouette dies.
 - Corners: an L-turn in a wall is one mitre on the top face plus one vertical
   seam; do not overlap two runs (the double contour shows).
-- Sorting is painter's algorithm on (x + y + z): draw far to near, and let
-  near solids occlude far ones completely - occlusion, not opacity, is what
-  makes iso read as depth. Never fake depth by fading a solid.
+- Sorting is painter's algorithm on (x + y + z) of each solid's NEAREST-to-
+  camera corner, not its centroid - centroid sorting flips on long runs. Draw
+  far to near; within one solid: top fill, left fill, right fill, then seams,
+  then the silhouette. Occlusion comes from opaque fills plus draw order - a
+  near solid's white fill must fully cover the far solid's contour. Never fake
+  depth by fading, blurring or shrinking a solid.
+- Touching vs overlapping: two solids that TOUCH merge into one silhouette
+  with the join drawn as a seam; two solids that merely overlap on screen keep
+  both contours, and the near one wins by fill. Getting this wrong is what
+  makes a cluster read as a pile of stickers.
+- A MOVING payload that must pass behind static geometry gets depth bands: cut
+  the scene into z-bands at the wall lines and put the payload's group between
+  them, or clip the payload against the near wall's silhouette path. Sorting
+  alone cannot do it, because the payload's sort key changes mid-animation.
 - Heights carry meaning: vary tower heights in a small set (1, 1.5, 2, 3
   units) so a cluster reads as a city rather than a chart; keep the set small
   or it reads as noise.
@@ -146,45 +233,153 @@ The strongest move in this register: a solid host that OPENS.
 - Build the host as 4-8 module groups that already tile a footprint with no
   gaps. Reveal = translate each group outward along its own iso axis,
   distance 1-2 cells, keeping every group's silhouette intact.
-- Stagger by distance from the opening's centre (nearest first, 40-80ms
-  apart), ease-out ~600-900ms, hold open ~1.0-1.3s, close on the same curve
-  or slightly slower. The hold is not padding: it is the only moment the
+- **Slide, never lift.** In the measured exemplar every one of the 12
+  displacements is a pure ground-plane slide with a mathematically zero
+  vertical component. That single restraint is what makes it read as a floor
+  opening rather than as objects being taken apart.
+- **Stagger out, land together** (measured): 12 different start frames
+  converging on ONE shared landing frame - fanning out feels unlocked, landing
+  together feels resolved. The CLOSE inverts it: one shared start, fanning
+  arrivals. Open ~1.5 s, hold open ~1.25 s, close ~1.45 s, closed hold ~0.95 s
+  spanning the loop seam. The hold is not padding: it is the only moment the
   reveal can be read.
-- The interior is the one place a gradient is allowed: a recessed floor that
-  darkens toward the far corner (near-black at the deepest edge → ~#B8B8B8 at
-  the lip) sells the cavity. Give the pit a lip line at full contour weight.
+- **Land the payoff early**: finish the reveal ~450 ms BEFORE the movement
+  stops (the exemplar exposes the glyph at 1.53 s and the blocks settle at
+  1.98 s). You read the message, then watch the scene settle; a payoff that
+  lands on the last frame feels like a machine finishing.
+- **The closed seam problem.** A host must read as ONE solid when closed and as
+  N groups when open. Author every group with its own silhouette path plus one
+  assembly-level silhouette computed on the closed footprint; closed, the
+  assembly contour is what you see and the group outlines read as internal
+  seams. If the register uses a single weight, this resolves itself - the
+  exemplar's closed plaza shows every module seam at the same 2.6 px and still
+  reads as one paved surface, because the seams are exactly what paving has.
+- The interior is the one place a gradient is allowed - and it is authored in
+  the FLOOR's own coordinate space, not the screen's: measured, #0D-#28 along
+  the back edges ramping to #C8 at the front vertex (~0.6 gray levels per CSS
+  px), PLUS an inner shadow pooled in the back corner (18-25 under the apex vs
+  84 at the far end of the same edge). A pure linear ramp reads as a printed
+  gradient; the corner pool is what sells a cavity.
+- Taper the pit: the opening rhombus at grade is larger than the floor
+  rhombus (measured floor 125.5 x 72.5 CSS at a depth of 18.2 CSS = 0.61 cube
+  units), so the walls read as chamfered rather than as a bottomless hole.
+- **Asymmetric lip**: stroke the two BACK edges of the opening at full weight
+  and leave the two FRONT edges unstroked, where the floor's lightest value
+  meets the ground. The front lip dissolves and the hole opens toward you.
 - What is revealed must be flat ON the interior floor (sheared into the iso
-  plane), white, and simple enough to read at 40px - a mark, a glyph, a
-  status code. If it needs a legend, it is the wrong object.
+  plane), simple enough to read at 40px - a mark, a glyph, a status code - and
+  authored IN PLACE, 100% occluded at rest. It never fades in, slides in,
+  scales in or draws itself: anything that enters has been argued to be new,
+  which is the opposite of the claim the reveal exists to make.
+- Do not fill the revealed mark pure white: measured #F3F3F3 against a #14
+  floor. It is still the highest-contrast edge on the card, and the half-step
+  down keeps it painted into the floor rather than floating in the hole.
 - Do not rotate the camera to show the inside. The camera never moves in this
   register; the world opens instead. A moving iso camera reads as a game demo
   and breaks the drawing.
 
 ### A2d. Payloads in transit
 
-- A payload travelling a route is an extruded plate (see A1) that moves along
-  the iso axes only - dx, dx*0.5 - never on the screen diagonal. Turns happen
-  at grid intersections, and the turn is instantaneous in direction but eased
-  in speed.
-- A route drawn as a thin spline with rounded corners (radius = 0.5 cell) is
-  a legitimate object: it is the path the payload will take, drawn before it
-  moves. Keep it at annotation weight, well below the contour weight.
-- A transmission between two actors is a dash train: 3-5 dashes of equal
-  length travelling along the axis at constant velocity (linear, ambient
-  register - C6), spawning at the sender and dying at the receiver. Dash
-  length ~1 cell, gap ~0.7 cell. Never animate a dashed line by shifting
-  `stroke-dashoffset` on a curve the eye can follow end to end - the loop
-  seam shows; move discrete dashes instead.
+- **Annotation plates** (field names, values, status strings) are objects in
+  the world, not UI over it: a rounded rect under `skewY(-30deg)` so its long
+  edges run the iso axis while its short edges stay screen-vertical; measured
+  fill #F2F2F2, stroke #0B0B0B at 2.65, radius ~7.1 - **the same radius token
+  as the route's corner fillet**. The extrusion is a hard duplicate of the
+  same path filled black, offset along the iso axis (measured -9.85, -5.85)
+  and hulled to the plate: it reads as thickness only because the offset is
+  exactly on an axis.
+- **Set the plate's type UPRIGHT.** Inside the skew group, upright roman comes
+  out with exactly screen-vertical stems and reads as lying in the plane. A
+  real italic on top of the skew is the tell that the plate was drawn in 2D
+  and tilted. Size the plate to its label (measured: constant 46.2 height,
+  widths 62.5-141) and end placeholder strings with a literal ellipsis so they
+  read as fields, not as captions.
+- Annotation layers are exempt from depth sorting: plates draw above every
+  solid regardless of position, because they are labels, not bodies.
+- A payload travelling a route moves along the iso axes only - never on the
+  screen diagonal. Turns happen at grid intersections.
+- A route is a legitimate object: a thin spline with rounded corners (measured
+  radius ~7.1, i.e. ~0.13 cell), kept lighter than the object stroke, drawn
+  under the solids and over the grid. If the claim is friction, give it NO
+  start marker and NO end marker - clip both ends at the card edge; a capped
+  route implies an origin and a destination, which resolves the very thing the
+  scene is complaining about.
+- **A tracer on a friction route never eases.** Measured: 497 CSS px/s, dead
+  constant, through every corner and under every plate. The instinct to slow
+  at corners and pause under labels is exactly what makes it read as a helpful
+  demo instead of an indifferent process.
+- **Motion streaks** (the two or three short strokes trailing a moving body)
+  are stroked HEAVIER than the object outline (measured 2.84 vs 2.59) with
+  round caps against the objects' miters, so they read as signal rather than
+  structure - and they pass BEHIND the bodies, which is a free, exact depth
+  cue. They are not a dash train between actors: nothing is being handed over.
 - Payload stacking: when several payloads queue on one route, stagger their
   starts by ~250-400ms and let them keep their spacing; a queue that
   compresses reads as a bug.
 
-### A2e. Timing the register
+### A2e. Actors, apertures and the exchange axis
 
-Measured off the exemplar (5.0s loop, 60fps, three cards on one shared clock):
-enter ~0.5-1.8s eased, hold ~1.0-1.3s, exit/dissolve ~1.0s, quiet ~0.5s. All
-three scenes share the clock, so the section breathes as one; if scenes are
-far apart on the page, desync them instead (C7).
+For the two-actor (disintermediation) topology:
+
+- An actor is a BODY of 2-6 stacked modules with one distinguishing feature -
+  never a symbol of a machine, never a face, hands, eyes or a mascot. The
+  exemplar builds ONE wedge body (two chamfered modules, the front one offset
+  one axis-step) and uses it TWICE, differentiated only by pose and by the
+  glyph on its single black face. The reader gets "these are two of the same
+  kind of thing" for free.
+- Exactly one face per actor is the black aperture, and it carries the
+  identifying glyph: a lens (ring + centre dot + two diagonal ticks) says
+  sensor, a franked badge says payment. A sensor is not a face - that is why it
+  reads as a machine and not as a character.
+- Point the black face where the body is GOING; the aperture doubles as a
+  direction cue and does the work an arrowhead would otherwise do.
+- Pose one actor square on the grid (edges exactly on the axes) and the other
+  genuinely re-posed in 3D (three edge families off-axis) - not rolled in the
+  picture plane. One on-grid body anchors the projection; the off-grid one
+  reads as in flight.
+- **Parallel travel, not convergence**: the exemplar moves both bodies the
+  same distance along the same axis with the same curve, the follower starting
+  550 ms later. There is no meeting point, no handshake, no approval beat -
+  which is precisely the claim ("no human approving the transaction"). Reserve
+  convergence for a claim that is actually about two things meeting.
+- Keep a whole number of empty cells between the actors and put NOTHING in the
+  gap. The empty span is the argument.
+
+### A2f. Motion grammar for the register
+
+- **Rigid transforms only** (see A2's legal-transform list). No bob, no float,
+  no tilt wobble, no idle secondary loop: the exemplar spends 1133 ms of its
+  5 s loop with nothing on screen moving at all. Stillness is allowed to be the
+  largest phase, and it is what makes the one motion that does happen carry
+  the meaning.
+- **Three curves with fixed meanings**: LINEAR = an indifferent process
+  (a tracer that does not care about you); EASE-OUT ~ `1-(1-t)^1.5` over
+  ~580 ms = something arriving and settling; EASE-IN-OUT = a body moving under
+  its own power. Use different curves for entry and exit on purpose - the
+  exemplar's plates arrive eased and leave on a dead-linear translate.
+- **Stagger grammar**: irregular gaps (300 / 800 / 200 ms) read as the scene
+  dictating the pace; exactly regular gaps (100 / 100 / 100 ms) read as one
+  decision being obeyed. Both are hand-timed; never randomised.
+- **Tense rule**: a permanent property loops as a palindrome that re-pins to
+  the first frame within a pixel; a process the user suffers is a one-way
+  traverse that enters off one card edge and leaves by another and never
+  returns to a start.
+- No entrance scale, no spring, no pop: a plate's bounding box stays constant
+  to +/-2 px while it fades and drops. Scale reads as motion toward the camera
+  and breaks the isometric contract.
+- No success state anywhere: nothing checks off, counts up, turns green or
+  completes, unless completion IS the claim.
+
+### A2g. Timing the register
+
+Measured off the exemplar (5.017 s loop, 60 fps, three cards on one shared
+clock): enter 1.0-1.6 s eased, hold 0.65-1.27 s, exit/close 1.0-1.47 s, quiet
+0.6-0.95 s including the loop seam. All three scenes share the clock, so the
+section breathes as one; if scenes are far apart on the page, desync them
+instead (C7). Per-card shapes measured: card 1 one-way traverse 4.2 s at
+constant velocity; card 2 palindrome out 1.62 s / hold 0.65 s / back 1.61 s
+re-pinning within 0.05 px; card 3 open 1.5 s / hold 1.27 s / close 1.47 s /
+closed hold 0.95 s.
 
 ### A3. How these were made - and the production route
 
