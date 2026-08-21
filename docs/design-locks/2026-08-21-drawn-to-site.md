@@ -170,6 +170,8 @@ with a single lit comet arc rotating linearly (ambient register), three mono
 lines right. All five clear the illustration bar (specific · layered · shaped
 light · one line · two distances · one object), so no direction ships bare.
 
+QA (R4, screens 21-30): 1440×900 ✓ · 1280×720 ✓ · 500×844 ✓ (the same max-width:720px rules at a wider viewport) · tells 0 · codes 0 · em dashes 0 · no screen scrolls · behaviour as locked: beat or interaction on 21, 23, 24, 25, 26, 27, 28, 30 and still on 22, 29 · grounds 6 light / 4 dark · every value on screen traced to a file: 51 references and the 22/19/5/5 mode split from the matrix, the 5 proven pairings and 3 clashes from the blend rules, the seven container widths from the production measurements, 28 lock rows from the ledger itself.
+
 QA: 1440×900 ✓ (all twenty) · 1280×720 ✓ (all twenty) · 390×844 ✓ (the first nine, in-browser at 375) and 500×844 ✓ (the eleven catalog screens, headless - the same `max-width:720px` rules, at a wider viewport) · tells 0 · no screen scrolls at any size · kinds and devices unique · em dashes 0 · refs compared: the eleven from R1/R2 plus designbynavneet-2089, LexnLin-2024, marcelkargul-2090148 + local-marcel-isometric, mnowakdesign-2089684, recentdesign-2089, cabralorenzo-2090, insporadesign-2088123, jeetnirnejak-2089, 0xSero-2090, Triopixels-2089, yurygok-2089624, AlexandruDranga-2090, kevserctk-2090, piyushsphere-2089714
 
 BUG (fixed): the transport was first rendered into a `const chrome` binding, which collides with Chrome's global `chrome` and threw `SyntaxError: Identifier 'chrome' has already been declared` in headless - every screen rendered blank. Caught because the QA loop renders instead of trusting the code.
