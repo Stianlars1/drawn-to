@@ -15,6 +15,9 @@ capture is a screen recording of a video player (player chrome visible at frames
 1 and 841, timestamp "0:01 / 0:28"). fps is only bounded to [30.0, 32.3]. Report
 motion in frames. See `measuring.md` § 2.
 
+Media: `references/media/local-stashr-dark-bento/frames_1/` - 141 frames sampled
+every 6th from the 842-frame capture, 1200 px wide.
+
 Plate shipped with the skill: `assets/features/dark-bento-scenes.jpg`.
 
 ## What we see

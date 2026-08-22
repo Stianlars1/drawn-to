@@ -1,4 +1,9 @@
-# heavy, third-party media archive - never published (copyright of the original authors)
+# Third-party reference media. The SKILL ships a reduced archive
+# (skills/drawn-to/references/media/ - extracted frames and stills only, at
+# reduced resolution, under the terms in that folder's NOTICE). What is never
+# published is the heavy source material it was derived from:
+skills/drawn-to/references/media/**/*.mp4
+skills/drawn-to/references/media/**/video_*
 references/media/
 # local scratch / OS
 .DS_Store

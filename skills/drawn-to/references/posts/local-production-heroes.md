@@ -17,7 +17,7 @@ are the owner's own, at a ~1840 CSS-px browser width; the numbers below come
 from a second pass at exactly **1440x900** with a computed-style probe, because
 a retina capture reads type larger than it is.
 
-Media: `references/media/local-production-heroes/` (full captures, gitignored).
+Media: `references/media/local-production-heroes/` (full captures, shipped with the skill).
 Reference plates shipped with the skill: `assets/heroes/*.jpg` (1440-wide,
 chrome cropped) and `assets/plates/zone-*.svg` (own layout diagrams, CC0, geometry only).
 

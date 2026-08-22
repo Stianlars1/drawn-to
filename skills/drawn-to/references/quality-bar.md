@@ -388,9 +388,9 @@ Judge the render, not the code. Never from a thumbnail.
       brightest.
    6. Check the field against `gradient-fields.md` § 1: run the trough test and
       the off-axis test on your own output.
-4. **Compare to the references** - if the media archive exists locally
-   (`references/media/<full-slug>/`, populated by `scripts/fetch-posts.sh`;
-   never committed), open 2–3 frames of the references the lock file cites,
+4. **Compare to the references** - the media archive ships with the skill at
+   `references/media/<full-slug>/` (frames only; the source videos are not
+   included). Open 2–3 frames of the references the lock file cites,
    side by side with the render. Same ground value? Same separation physics?
    Same density, or is the render busier? Same quality of line and light, or
    is the render cheaper? If the render loses the comparison, it is not done.

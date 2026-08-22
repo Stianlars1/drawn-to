@@ -28,7 +28,9 @@ drawn-to/                 ← THE SKILL (portable, self-contained, lightweight)
     posts/                  per-reference deep dives (51)
 references/               ← heavy archive (NOT part of the skill)
   media/                    downloaded post media + extracted frames (~260 MB)
-  _index.json               structured summary of the first 45 analyses (later refs: posts/ only)
+  (moved) _index.json       now skills/drawn-to/references/_index.json - FROZEN at the
+                            first 45 analyses, no longer generated or read; matrix.md
+                            plus posts/ are the live index
 scripts/
   validate-library.py       library integrity check (citations, frontmatter,
                             matrix, SKILL read-order) - run before publishing
@@ -52,6 +54,6 @@ implementation must serve, à la refetch.sh's Q1-Q25.
 ## Regenerating / extending the library
 
 New saved post → append its id to the fetch script pattern
-(`fxtwitter` API → `references/media/`), extract frames (ffmpeg, 2-6 fps),
+(`fxtwitter` API → `skills/drawn-to/references/media/`), extract frames (ffmpeg, 2-6 fps),
 run one analysis agent with the template in `docs/plans/2026-08-20-taste-skill.md`,
 then refresh the synthesis docs if the new reference shifts a pattern.
