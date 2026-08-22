@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "outputDirectory": "docs",
+  "outputDirectory": "site",
   "cleanUrls": true,
   "trailingSlash": false
 }

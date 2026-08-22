@@ -1,5 +1,5 @@
 ---
-task: Drawn To - project landing page (GitHub Pages, docs/index.html)
+task: Drawn To - project landing page (Vercel, site/index.html)
 product: Drawn To, an agent skill that locks design direction from a measured taste library
 features: measured library · weighted interview · lock file · illustration engine · scroll-scrub · animation craft · polish moments
 target: this repo, docs/
@@ -180,7 +180,7 @@ leader labels running past the frame, and a crown that did not obey the light.
 
 ## Build R1 - what shipped (2026-08-21, rebuilt through the skill)
 
-One file, `docs/index.html`: `100svh`, `overflow:hidden`, no scroll, no sections.
+One file, `site/index.html`: `100svh`, `overflow:hidden`, no scroll, no sections.
 Every screen carries brand · GitHub · H1 · one sub line · the copy command · one
 signature visual · the direction label; three numbers in A, C, E only. Engine
 kept as locked: View Transitions cross-fade 700 ms / blur 2 px, auto 5 s, hash
@@ -264,3 +264,23 @@ screen-27 image sitting at screen 1's filename, which reads as screen 1 having
 changed when it had not. Prefix the case (`lower-a.png` / `upper-A.png`) or the
 run will report the wrong screen as verified. That failure is silent: nothing
 errors, the image is simply of a different screen.
+
+---
+
+## Revision R8 - hosting and location (2026-08-22)
+
+Two facts in this file changed after it was written; the rows above are the
+design record and stand, these are the corrections.
+
+- The page moved from `docs/index.html` to **`site/index.html`**, with its
+  assets alongside at `site/assets/`. `docs/` had been carrying the site AND the
+  project's working notes under one name; it now means documentation only.
+- Hosting moved from GitHub Pages to **Vercel**, served from `site/` via
+  `vercel.json`. Pages is disabled, so `stianlars1.github.io/drawn-to` no longer
+  resolves. `.vercelignore` keeps the skill, the scripts and the 91 MB media
+  archive out of the deployment: the uploaded source is the 1.9 MB site.
+
+OPEN, unchanged by this revision: the page states **52 references** in five
+places, and the library is at 57. The count is data, not copy - `C.sheet`
+carries exactly 52 tokens and two screens are built from it - so correcting it
+means adding five tokens with their family membership, not a find and replace.
