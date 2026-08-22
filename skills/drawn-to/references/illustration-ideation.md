@@ -87,6 +87,8 @@ not a mood:
 | **Arrangement** - how the primitives are placed | raked vertical stack · single horizontal baseline · diagonal staircase (+55, +30 per step) · free 2D scatter · orthogonal series on a baseline · occluding two-plane stack · cropped gallery · exploded flat parts grid |
 | **Depth encoding** - how the third dimension is spent | opacity + width steps · overlap + scale · tone along one axis · real Z bands · none (deliberately flat) |
 | **Symmetry** | 4-fold radial · single vertical mirror · asymmetric · hard-cropped by the frame |
+| **Stage** | object-to-cell area 25 % · 45 % · 70 %, and the anchor: centred · bleeds one edge · bleeds a corner · spans full height. Also whether the illustration crosses into a neighbouring cell |
+| **Copy relation** | copy below · beside · above · absent |
 
 adriankuleszo-2089887 states it most plainly: every card is assigned a
 different SPATIAL ARRANGEMENT VERB - stack in depth, place two widths side by
@@ -97,7 +99,7 @@ Triopixels-2089 varies primitive, arrangement, depth and even whether the card
 keeps the shared sky at all, while the shell and the shadow never move.
 
 So: hold the FINISH rigid (one hairline weight, one radius family, one ramp,
-one accent, one shell, one shadow) and spend all the variety on the dials. A
+one accent, one shell, one shadow) and spend all the variety on the dials. **No two cells may share a Stage notch** - that single constraint is what stops six well-drawn cells reading as six identical squares. A
 set where the finish varies and the objects rhyme is the exact inversion of
 what the corpus does.
 
@@ -114,6 +116,28 @@ build if any value in the Device column repeats:
 If a set cannot produce N distinct devices, the set is too big: cut it to the
 number of genuinely different mechanisms, or ship the cells typographically
 with no illustration at all (`quality-bar.md` § 3). Never pad with a repeat.
+
+## Sequence sets - the set law inverts
+
+Everything above assumes SIBLINGS: parallel claims, each arguing its own thing.
+A **sequence** - a numbered "how it works" row, a pipeline, an onboarding path -
+is the opposite case, and running the sibling rules on it produces three
+unrelated drawings where the reader needed one process.
+
+In a sequence the cells are STAGES of one thing, so:
+
+- **One shared connective element runs through every cell** - a trace, a spine,
+  a rail, a shared baseline. It enters cell 1 from off-stage and leaves cell N
+  off-stage.
+- **The cell grammar repeats deliberately.** Same frame, same anchor, same
+  scale. Repetition is the point; it is what makes the change legible.
+- **Variation is carried only by what sits at the node**, never by the frame.
+- **The swap test does not apply.** Replace it with the **ORDER test**: shuffle
+  the cells. The row must become WRONG. If shuffling changes nothing, the steps
+  are not sequential and should ship as parallel claims under the ordinary set
+  law.
+- A number index is legitimate here and is the one place a numeric eyebrow does
+  not count against the page's eyebrow budget.
 
 ## How to actually build one - isolate, magnify, squint, assemble
 
@@ -145,6 +169,8 @@ grows; and grain over the illustration zone, masked to fade out before the
 text, so the figure sits on a surface rather than floating on a flat fill.
 
 And the values: write the real ones or do not write any. A drawing that prints
+
+**Every number, readout and percentage must argue FOR the claim.** C10 governs whether a value is PLAUSIBLE; nothing governed whether it is FAVOURABLE, and the skill shipped `SECURED 15%` twice as an exemplar. A security readout at 15 % argues that 85 % of the thing is unsecured. Read every value back as a sentence before it goes in the drawing.
 a filename, a row count, a duration or a device name is making a checkable
 claim. `docs/design-locks/2026-08-21.md` when the file is
 `...-drawn-to-site.md`, a firmness ladder with three states when the product
@@ -191,9 +217,47 @@ if any condition fails, ship NO illustration).
 | **Safety / containment** | "nothing leaks · isolated" | **Enclosure + rebound**: a boundary as the hero, an attempt that bounces off | draw the attempt, not just the wall - a wall alone is décor |
 | **Composability** | "bring your own · swap any part" | **Socket**: one standard receptacle, interchangeable parts hovering in the plug order | the socket geometry must repeat exactly across parts |
 | **Continuity** | "no downtime · always on" | **Relay**: overlapping spans where one carries while another is replaced | the overlap is the whole argument - show it |
+| **Accuracy / precision** | "99.9 % match · no false positives" | **Target and grouping**: the mark plus the scatter around it | draw the MISS you avoid; a bullseye with no scatter argues nothing |
+| **Ownership / control** | "your keys · your data · you decide" | **Instrument panel you hold**: controls at hand scale, the data at a stated distance | the operator's position is in frame, and the distance to the data is legible |
+| **Cost / economy** | "a tenth of the price" | **Two stacks at true relative scale** | the saving must BE the visible difference; a percentage label is not a picture |
+| **Simplicity** | "one step instead of nine" | **Step count collapsed**: both chains drawn at the same pitch | draw the old count too, or there is nothing to collapse against |
+| **Reversibility** | "undo anything · nothing is destructive" | **The undone move**: the ghost of the prior state persists and is reachable | the ghost must look retrievable, not discarded |
+| **Transparency** | "see exactly what it does" | **Cut-away**: the same object drawn twice, sealed and sectioned | both halves in one frame, same scale, same orientation |
+| **Learnability** | "productive on day one" | **The novice's path**: one continuous route, no branches | any fork argues complexity, which is the opposite claim |
+| **Durability** | "still running after five years" | **Wear that did not happen**: age the surroundings, not the object | if the object ages too, the claim inverts |
 
 Two features in one set may share a topology only if their payloads differ in
 kind; three cards with three Gauntlets is one idea repeated.
+
+**If a feature will not classify, that is a COPY defect, not a drawing problem -
+go back to Q0 and get a claim with an antagonist in it. Never pick a device
+first and reason backwards.**
+
+### Step 2b - reframe: generate 4-6 candidate topologies before choosing one
+
+Step 2 is a 1:1 lookup, and a lookup is why four concepts for one feature come
+back as four drawings of one idea. Before choosing a row, run these six
+operators. Each one legally RE-CLASSIFIES the same claim into a different row of
+the table above, which is what makes the resulting concepts genuinely different
+rather than differently finished.
+
+1. **Consequence** - draw what the claim causes downstream, not the claim
+   itself. Encryption becomes the interceptor's empty haul.
+2. **Inversion** - draw the world WITHOUT the feature, at the same scale.
+   "Connects to 200 sources" becomes the one connector you would hand-build and
+   the 199 you would not.
+3. **Scale shift** - swap the population for the single instance, or the single
+   instance for the population.
+4. **Unit of measure** - find the product's natural unit and count it in frame.
+   40 ms drawn to scale against the 2 400 ms it replaces.
+5. **Antagonist-as-hero** - promote the defeated thing to the subject: the maze,
+   the middleman, the wait.
+6. **Container swap** - argue the capability through the receptacle rather than
+   the contents: a socket, a key-ring, an adapter.
+
+**Hard rule: four concepts must use four DIFFERENT topologies.** Two concepts
+sharing a topology are one concept in two registers - that is a restyle. Cut one
+and reframe again.
 
 ### Step 3 - cast the scene: actor · payload · terrain · antagonist
 
@@ -332,6 +396,36 @@ Composition devices, each with its construction recipe. Values assume the
 locked family's ground; all depth via lightness steps + inset highlights  - 
 no hard borders inside illustrations.
 
+> **Source-bias warning.** Eleven of the entries below come from ONE reference
+> (`local-feature-graphics`, a dark hardware-instrument register) and five more
+> from `flohoeller-2090`. Picking four concepts straight out of this catalog
+> therefore produces four instrument-register concepts by default, which is a
+> restyle wearing four hats. **Derive the topology first (Step 2b), then consult
+> the catalog to BUILD what the cast already named.** If a topology has no entry
+> here, that is a gap in the catalog, not a reason to change the topology.
+
+**Topology index - which device realises which scene.**
+
+| Topology | Devices that realise it | Devices that CANNOT, and why |
+|---|---|---|
+| Gauntlet | obstruction at architectural scale, payload at label scale, route clipped at both ends with no start or end marker, tracer at constant velocity | dial, badge - a gauge has no route, so nothing can fail to arrive |
+| Two actors / exchange | two bodies of the SAME construction, one aperture face each pointing where the body is going, a whole number of empty cells between them, and nothing in the gap | hub-and-spoke - a hub reintroduces the intermediary the claim removed |
+| Open the host | host authored closed first, interior authored in place and 100 % occluded, reveal by subtraction only | exploded stack - an explosion argues assembly, not "already inside" |
+| Closed cycle | a ring the fault enters, deforms and recovers from; no operator in frame | cursor demo, instrument panel - both put a human in the loop |
+| Enclosure + rebound | boundary as hero, probe on a stated incidence angle, deflection at the mirrored angle, a residue mark at the impact point so the attempt is legible in the poster frame, and NO success state anywhere on the wall | shield glyph - a badge asserts safety instead of showing an attempt |
+| Socket | one receptacle geometry repeated exactly across every part, parts hovering in plug order along one axis | free-floating tiles - without a shared receptacle there is no composability claim |
+| Relay | two overlapping spans, the overlap measured in the same unit as the span; the handover IS the poster frame | progress bar - a single span cannot overlap itself |
+| Compressed distance | both routes share one start line, the reference length drawn rather than implied, a dimension chain with real values at both ends | counter alone - a number with no distance is a stat, not a picture |
+| Field | one module tiled past the frame edge with one instance singled out | a finite grid with a visible last row, which argues a list |
+| Target and grouping | mark plus scatter, scatter drawn first | bullseye alone |
+| Instrument panel you hold | controls at hand scale, data at a stated distance | dashboard screenshot - no hand, no ownership |
+| Two stacks at true scale | both stacks in frame, same unit | pie chart |
+| Step count collapsed | old chain and new chain at the same pitch | one chain |
+| The undone move | ghost of the prior state, reachable | undo icon |
+| Cut-away | the same object sealed and sectioned, same scale and orientation | exploded view |
+| The novice's path | one continuous unbranched route | flowchart |
+| Wear that did not happen | aged surroundings, pristine object | a shiny object alone |
+
 - **Dial / gauge**: segmented ring (conic-gradient mask or SVG stroke-dash),
   seven-segment readout, cable entering/exiting (1px path + node dots).
   Speed, time, thresholds. (local-feature-graphics "00:10 Max Speed".)
@@ -395,10 +489,40 @@ no hard borders inside illustrations.
   only white tiles), and graph-paper patches may run two densities (8px fine
   inside 32px coarse) when confined to a diagram zone. (flohoeller-2090.)
 
-## QI - the proposal protocol (runs per feature, after QS)
+## QI - the proposal protocol (runs in TWO passes, after QS)
 
-For feature-card/bento tasks, after the section variant locks: take the real
-feature list from Q0 and, for EACH feature, present 2-4 concepts:
+Run as written below. Read the two-pass structure first: the old single-pass
+form contained a live contradiction - it asked for concepts spanning at least
+two metaphor registers per feature, while the fit-method, Step 7 and
+`practitioner-methods.md` all require ONE register per SET. Running it literally
+produced a set that the skill's own quality bar then failed.
+
+**Pass 1 - the set direction.** Propose 3-4 DIRECTIONS, not concepts. Each
+direction = one method from `practitioner-methods.md` (M1-M5) + one register +
+one material system. Sketch each direction across ALL features in one line
+apiece, so the owner sees the whole row before choosing anything. The owner
+answers with weights; one direction locks; the set register contract (Step 7) is
+written into the lock file at the end of Pass 1, with literal values.
+
+```
+Pass 1 - four directions for the five features:
+A. Instrument set (M3 · instrument register · dark hardware, one accent)
+   capture = phone mid-scan · recognise = screwed plate w/ traces · search = lit dial ·
+   reuse = coin button + terminating trace · sync = twin gauges on one shaft
+B. One world re-lit (M1 · isometric register · paper-white, one stroke weight)
+   one workshop drawn once; each card is the same room under a different light
+C. Self-demo (M4 · product-fragment register · the real UI, desynced loops)
+   each card is the actual product doing the verb, captions demoted outside
+D. Drawing sheet (M5 · blueprint register · 1px line-art, mono, radius 0)
+   each card is FIG.n of one technical document
+```
+
+**Pass 2 - per-feature concepts, inside the locked direction.** Now propose 2-4
+concepts per feature that differ ONLY by topology and hero object - never by
+register, never by finish. This is where Step 2b's reframing operators do the
+work.
+
+For each feature, present:
 
 ```
 QI2 - "Encrypted infrastructure":
@@ -413,9 +537,48 @@ C. Skeleton request log - window skeleton, every row's payload column
    motion: hover decrypts the hovered row.  (register: product-fragment · build S)
 ```
 
+**Concept divergence table - fill it before presenting.** Mirrors the set table
+that already works at build time. If the Topology column repeats, or the Device
+column repeats, stop and reframe; Register MAY repeat because Pass 1 locked it.
+
+| Concept | Reframing (Step 2b) | Topology | Method | Register | Device | Hero object | Deliberately absent | Build cost |
+|---|---|---|---|---|---|---|---|---|
+| A | - (direct) | | | | | | | |
+| B | consequence | | | | | | | |
+| C | inversion | | | | | | | |
+| D | container swap | | | | | | | |
+
+**Build cost, defined in element counts.** **S** = one hero object, under ~20 SVG
+elements, no loop. **M** = hero + an evidence layer, ~20-60 elements, one loop or
+one hover. **L** = depth-sorted solids, ~60+ elements, a choreographed
+multi-body loop on a shared clock. Note which topologies weaken without motion:
+*never-arrives* and *opens-and-closes* are much weaker as stills, so if the
+motion budget is zero, reframe rather than shipping a frozen version.
+
+**Evidence chips - the geometry, since they are the most visible element in the
+anchor plates.** One or two chips maximum, never three. Each chip = a
+semantic-colour icon square + a bold claim of 2-4 words + one grey proof line
+carrying a real value. Chips anchor OFF the hero's top edge and overhang its
+silhouette rather than sitting politely beside it. The icon colour is semantic
+and may differ from the card accent. Chips stack with a small z-offset and the
+rear chip is NOT dimmed.
+
 Rules:
 - Concepts must span at least two metaphor registers - variety is the point;
   never three variants of the same device.
+  **Scope note (two-pass form):** this rule belongs to **Pass 1**, where the
+  DIRECTIONS legitimately span registers so the owner can choose one. Inside
+  Pass 2 the register is already locked and concepts diverge by topology and
+  hero object instead. Applying it to Pass 2 is what produced sets that failed
+  their own register contract.
+- **Generate across METHODS, not across styles.** Before writing the concepts,
+  open `practitioner-methods.md` and draw each concept from a DIFFERENT method:
+  one atom in three topologies (M2) · a purpose-built instrument caught
+  mid-action (M3) · the real product fragment performing the verb (M4) · the
+  feature as a numbered technical drawing (M5) · one world re-lit (M1). Four
+  concepts from one method are four restyles of one idea, which is the single
+  most common way this stage fails. Then let the locked blend strike the ones it
+  makes illegal and present only the survivors with weights.
 - Every concept carries its **claim sentence** (with the antagonist named) and
   its **scene topology** from the derivation ladder; across the set, no two
   features get the same topology unless their payloads differ in kind.
@@ -433,6 +596,36 @@ Rules:
   say so and why it earns it.
 - Owner answers with weights as always; a pick may graft a runner-up's
   ingredient ("A, men med C sin hover-dekryptering").
+**A worked FAILURE, because this is the stage that fails quietly.** Four
+concepts for one breadth claim - "connects to two hundred sources":
+
+```
+A. Quincunx tile grid   - many logo tiles around one hub tile
+B. Depth-stacked catalog - source cards receding in opacity and blur
+C. Isometric tiled plaza - source tiles laid out on an iso ground plane
+D. Numbered source index - a mono list with a count at the top
+```
+
+Four devices. Four registers. It looks like a spread of options and it is not.
+Run the divergence table: A, B and C all classify as **Field** (one module
+multiplied), and all three argue the identical sentence - "there are a lot of
+them". Only D moves, and D is a list, not a picture. The Topology column has one
+value in three rows; the row that should have caught this is the one the table
+exists for.
+
+The fix is Step 2b, not a fifth device. Reframe:
+- *inversion* -> the ONE connector you would hand-build, and the 199 you would
+  not: two objects, wildly unequal effort. Topology = **Two stacks at true
+  scale**.
+- *consequence* -> a single query fanning out and returning as one merged
+  answer. Topology = **Relay**.
+- *container swap* -> one socket, and any of two hundred plugs fits it.
+  Topology = **Socket**.
+- *antagonist-as-hero* -> the integration backlog as an architectural obstacle
+  the payload crosses in one beat. Topology = **Gauntlet**.
+
+Four topologies, four different sentences, one register. That is a proposal.
+
 - Record picks as QI-rows in the lock file (QI1, QI2, … one per feature). Each
   QI row carries `topology`, `loop asserts`, `absent`, and `swap test: fails on
   <siblings> (correct)`. A QI row without a swap test is not locked.

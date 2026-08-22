@@ -131,6 +131,8 @@ asking and shipping alike.
 | AX13 Page architecture | "Page width, air between sections, and the order of sections" | - |
 | AX14 Nav | "Top bar: plain on the page, floating rounded bar, or bar with a rule?" | Linear vs Raycast vs Vite |
 | AX15 Buttons | "Buttons: pills, squarish, or light-with-ring?" | Linear vs Vercel vs Raycast |
+| AX4b Gradient role | "If there is a coloured field, what job does it do - the page, one card, a panel inside a card - and where is the light coming from?" | - |
+| QC Card anatomy | "For these cards, which anatomy?" (2-3 named, with a photo/field/micro option) | - |
 | AX16a First screen: field | "Does something fill the whole first screen behind the words, or is it empty except for the words and the product?" | - |
 | AX16b First screen: composition | "Which of these first screens are you drawn to, and how much of each?" (five plain descriptions, no brand names) | - |
 | AX17 Render tier | "Should that background be a still, a light drawn layer, or a live one that costs a bit of bundle and battery?" | - |
@@ -244,6 +246,16 @@ blue #2F5BE7-#3B82F6 · signal orange/amber #ed6917-#F5A11E · zero-accent
 (luminance only) · owner-supplied brand hue. Semantic green/red/amber allowed
 on top; never a second decorative hue.
 
+**AX4b - Gradient role** (fires whenever ANY surface carries a gradient, not only
+when an atmosphere family is in the blend; `gradient-fields.md`)
+Which job does the field do: page ground · card ground · bounded panel inside a
+card · text scrim · border or seam · payload / light event inside an
+illustration · none. Then the source: **where is the light, in percentages of
+the box** - and it may not be the centre unless the brief asked for symmetry.
+Records a `FIELD:` line - kind (G1-G16) · source position · the luminance
+function · the chroma function · grain % · banding budget in px per channel
+step. "None" is always available and is correct more often than not.
+
 **AX5 - Texture layer** (`graphic-language.md`)
 Grain 2-6% on gradients (mandatory when gradients exist, C9) · halftone 8px
 pitch · pixel-mosaic 8-10px cells · blueprint grid 40-80px at 4-8% contrast,
@@ -289,6 +301,8 @@ field / WebGL · painting matte (80-140px frame only) · structured light
 `isometric-and-light.md` §B) · isometric scene (line-art or soft-shaded  - 
 `isometric-and-light.md` §A). Where it recurs (2-3
 scales minimum), and where its dark mass parks relative to text.
+Also available: card-scale bounded field (`gradient-fields.md` G3) - legal with or without an atmosphere family in the blend.
+
 
 **AX11 - Card anatomy** (only for cards/bento tasks; `layout-language.md`)
 Visual-area ratio 55-80% (mode 65-70) · caption inside vs demoted outside ·
@@ -386,6 +400,27 @@ pair twice. Present them as a numbered running order the owner can reorder.)
   runner-up's named ingredient may be grafted (say which).
 - QS locks are recorded like Q locks, in the same table, numbered QS1, QS2, …
 
+## QC - Card anatomy (runs between QS and QI, for any card/bento task)
+
+QS settles the SECTION. QI settles the PICTURE. Nothing settled the CARD, and
+AX11 was the one axis in the bank written as a flat comma list with no named
+options, no evidence and no "choose when" - six independent decisions on one
+line. QC is the mechanism that answers it.
+
+Works exactly like QS: filter the thirteen card anatomies in
+`layout-language.md` § 5 by the locked blend and the locked axes, present 2-3
+survivors with an anatomy line, its measured values, its evidence slug and a
+"choose when" hint, and take weights. Then confirm the six **card dials**
+(`layout-language.md` § 5a) - Ground · Chrome · Text position · Footer band ·
+Aspect · Emphasis - and note which of them siblings are allowed to vary on,
+remembering the governing clause: geometry may vary when the finish is rigid, or
+the finish may vary when the geometry is rigid, never both.
+
+For a small-cell row, also settle the rung on the cell scale ladder
+(`layout-language.md` § 5b), because it decides which layers exist at all.
+
+Record as QC1, QC2 … in the lock file, one per card kind on the page.
+
 ## QI - Per-feature illustration proposals (feature-card/bento tasks)
 
 After the section variant locks: for EACH real feature from Q0, propose 2-4
@@ -428,6 +463,8 @@ status: locking | locked | shipped
 | QS1 | Hero variant | <recipe name> | anatomy + ingredient consequences |
 | AX16a | First screen: field | field owns the page / no field | container backgrounds forbidden on the hero |
 | AX16b | First screen: composition | 70 three zones / 30 product shelf | zone map, what crosses the fold |
+| AX4b | Gradient role | card ground, G3 clipped box | overflow:hidden rect, source at 91 % x |
+| QC1 | Card anatomy | veil-split photographic | media 3/2, split 73.8/26.2, radius 0 |
 
 Inherited from blend (not asked): AX2 separation = 1px alpha dividers, …
 Constants enforced: C1-C12 (see drawn-to SKILL.md).
@@ -440,6 +477,10 @@ contain no repeated value - a repeat is a build stop, `quality-bar.md` § 3b):
 |---|---|---|---|---|---|
 RENDER: <T0-T6> · <what draws the field> · dpr <cap> · poster <path>
         · stops: io+hidden+rM+saveData · gate: <why this tier>   (render-tiers.md)
+FIELD:  kind <G1-G16> · source <x %, y %> · V <function> · chroma <function>
+        · grain <%> · banding <px per channel step>        (gradient-fields.md)
+CELLS:  anatomy <n> · ladder rung <cell width band> · layers kept <L1-L9>
+        · dials varied <list>                              (layout-language.md 5, 5a, 5b)
 FOLD:   crosses the fold: <media only> · top edge <y / % of viewport>
         · message intact at 1440×900 and 1280×720             (quality-bar.md § 3c)
 POLISH: applied <list> · gated <list>            (polish-moments.md)

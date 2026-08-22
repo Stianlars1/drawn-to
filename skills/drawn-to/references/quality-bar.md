@@ -116,6 +116,43 @@ owner close the tab; the skill's whole job is that they never appear.
   without grain (C9); stock-looking isometric cubes; three floating cards at
   an angle. These read as decoration, and decoration reads as generated.
 
+**Measured tells added 2026-08-22.** Each of these shipped in a reference the
+owner likes, so being loved is not a defence.
+
+- **Text pushed through an isometric transform without a read-back.** A
+  notification badge's numeral renders upside down in the hero position of a
+  card, in all 182 frames, because the glyph went through the top-plane transform
+  with its disc. Any glyph landing on an iso plane is re-read for orientation;
+  prefer counter-rotating to skewing numerals.
+- **A missing brand name left in body copy** - "Keep tools like  , Airtable, or
+  Notion perfectly updated", double space and dangling comma, live in every
+  frame. Read the copy at 2x before shipping the render.
+- **Six third-party logos baked into one decorative diorama.** Trademark
+  exposure, and the card dates itself the moment any of them rebrands. Use your
+  own abstract mark for the thing you control and abstract everything else.
+- **Mirror-paired ornament.** Eight floating squircles placed in four exact
+  mirror pairs about the tile's centre is decoration placed by reflection, not
+  composition.
+- **A symmetric light source.** A trough parabola whose vertex sits within 3
+  percentage points of 50 % of width means nobody decided where the light was
+  (`gradient-fields.md` § 1).
+- **Two siblings sharing one photograph** in a three-up row (measured 0.47/255
+  mean absolute difference). In a set the ground may repeat - it is register -
+  but the object may not, because it is the argument.
+- **A near-invisible gradient.** A CTA pill with a 6-level channel delta across
+  67 px costs a stop list and buys nothing. Either commit or use a flat fill.
+- **A readout that argues against its own claim** - "SECURED 15%".
+- **A stroke that never appears at delivered size.** Rings and haze at +10 and +3
+  luminance on a #1f201f field sit below the safe band for 8-bit dark UI: they
+  vanish on cheap panels and under "reduce transparency".
+- **Tinted display type below threshold.** A per-word-tinted headline measured
+  1.30 / 1.67 / 1.84:1 on white. The concept was the best move on its sheet; the
+  execution made the operative word functionally invisible. Keep the idea, raise
+  every tint about 35 % toward its hue's darker end.
+- **Equal insets on a card that has both a control row and a copy block.** The
+  measured reference insets its control row 1.40x further than its copy; equal
+  insets read as a template (`layout-language.md` § 5 archetype 12).
+
 ## 2. Budgets - per screen, per direction
 
 The content model is a CEILING, not a floor. An airy direction renders fewer
@@ -132,10 +169,13 @@ cut removes a message, never when it removes words.
 | Stats / proof numbers | 0 or 3 · tabular · one line | pick the three that argue; the rest go to the README |
 | Nav | brand + ≤ 4 links + 1 action | cut links |
 | Signature visual | 1 per screen, specific to the product (C2) | none beats a weak one |
+| Object-to-canvas ratio | an OUTPUT of the claim, never an input | see below |
 | Running-text measure | 45–75 ch · never < 40 ch | widen the column or cut the copy |
 | Hero paragraph | ≤ 4 lines | cut |
 | Fold | first impression fits 100 svh at 1440×900 AND 1280×720; stacks cleanly at 390×844 | re-compose; reduce; never just shrink type |
 | Card aspect | the hero card/mat fits inside the fold with ≥ 48 px air top and bottom | cut content inside the card, not the air around it |
+
+**The object-count law.** Object-to-canvas ratio is an output of the claim, never a target. Measured across one three-card row: ~51 % when the claim is a whole surface, ~43 % when it is a document under review, ~4.8 % when it is a single action. **Do not normalise siblings toward a similar fill level** - the 10.7x spread IS the argument, and evening it out is what makes a row of cards read as a template.
 
 Single-screen pages (100 vw × 100 svh, no scroll) are a legitimate and often
 superior answer for a product with one message; the budgets above are then
@@ -156,13 +196,18 @@ An illustration or light field ships only if ALL of these hold:
    (C2). If it would fit any SaaS page, it is décor.
 2. **Layered** - ≥ 3 layers of depth (ground · mid · focal) or one object with
    ≥ 3 levels of detail (silhouette · construction lines · labels/values).
+   **Relief below 280 px of cell width:** the layer stack is capped by the cell
+   scale ladder (`layout-language.md` § 5b) - 2 layers is the ceiling at 200-280,
+   and 1 at <= 60. Judge against the ladder, not against 3.
 3. **Shaped light** - falloff has a direction and an edge (slab, beam, arc,
    ring with a lit side); never a centered symmetric blob. Every gradient
    carries 2–6 % grain (C9). Dark grounds: no drop shadows (C3).
 4. **Consistent line** - one hairline weight (0.75–1 px), one accent (C1),
    tabular numerals in any label (C5), real values in any annotation (C10).
 5. **Two distances** - something to read at 2 m (the silhouette) and something
-   to discover at 20 cm (the detail). A shape that is fully understood in one
+   to discover at 20 cm (the detail).
+   **Suspended below ~200 px of object width** - there is no 20 cm tier to
+   discover at that size, so the 2 m silhouette is the whole test. A shape that is fully understood in one
    glance is a logo, not an illustration.
 6. **One per frame** - one signature object per screen, or one per CELL in a
    multi-cell set (feature trio, bento, gallery). Two competing objects inside
@@ -193,6 +238,42 @@ ground is a strong, legitimate answer; a weak object is the single fastest way
 to look generated. Devices and construction: `illustration-ideation.md`,
 `isometric-and-light.md`, `graphic-language.md`.
 
+**Conditions 10-16, measured 2026-08-22.** These are the small things that
+separate a drawing from a diagram, and every one of them was measured off a
+reference the owner saved.
+
+10. **One dash grammar.** ONE dash pitch per scene, serving connectors, ground
+    lanes, drop-lines, footprint ellipses and extrusion rails alike (measured
+    8.2 CSS: dash 4.25 / gap 3.95). Activity is encoded by stroke COLOUR only. A
+    second dash pattern in the same scene is a fail.
+11. **Two stroke weights, fixed ratio.** 0.7 CSS hairline and 1.4 CSS
+    foreground, 2:1 - and the hairline must be FINER than the surrounding UI
+    chrome's 1 px border, so the illustration sits visually behind the frame
+    rather than fighting it.
+12. **Welded connectors.** A dashed path terminates on a NAMED vertex of the
+    geometry it connects, and re-solves when that geometry moves. Check: compare
+    the path's shape between the two extreme frames of the loop - it must
+    CHANGE, not merely shift. A path that only translates was never attached.
+13. **Materials encode state; size never does.** A fixed three-state code
+    (pending / live / done) spelled in ONE property - the measured reference puts
+    it in the side wall alone. Encoding state by size or position is forbidden:
+    it collides with hierarchy.
+14. **Lift furniture.** When an object leaves a surface: a dashed footprint
+    ellipse at its rest position, two parallel vertical rails one object-diameter
+    apart spanning the travel, and NO scale change (mask area constant at
+    238-246 px across the loop = a pure translate). Three pieces of furniture to
+    sell one 40 px lift, and no drop shadow (`isometric-and-light.md` § A2h).
+15. **Clip the world.** Size the illustration so it bleeds past the cell's bottom
+    edge and let `overflow: hidden` crop it; target 2.0-2.5 CSS px of ink still
+    running at the clipping edge. A drawing that stops politely inside its cell
+    reads as a sticker.
+16. **Projection spec, stated.** True 30.0 degree isometric means dy/dx = 0.577,
+    verified by fitting a line to the straight run of any tile edge with the
+    corner arcs excluded (measured +0.5774 +/- 0.0017, rms 0.235 over 62 rows).
+    2:1 dimetric is 0.5 and is a different object. State which one, and state the
+    radius convention with it (`isometric-and-light.md` § A2h, the convention
+    trap).
+
 ## 3b. The set bar - 2 or more illustrations on one screen or in one section
 
 § 3 judges ONE illustration. Three illustrations that each pass § 3 can still
@@ -203,6 +284,10 @@ layered, line-consistent, and the row read as one device photocopied.
 
 A set of 2+ illustrations ships only if ALL of these hold, on top of § 3 per
 cell:
+
+**Relief clauses.** § 3b.1 and § 3b.3 are suspended for chip-scale rows (plates <= 60 px, `layout-language.md` § 5 archetype 10), where the graphic is an index mark rather than an argument.
+
+**§ 3b-seq - sequence sets.** In a numbered process row or a pipeline the cells are STAGES of one thing, so the sibling rules invert: the cell grammar repeats deliberately, one shared connective element runs through every cell, and the swap test does not apply. It is replaced by the **ORDER test** - shuffle the cells and the row must become wrong. If shuffling changes nothing, the steps are not sequential and belong under the ordinary set law (`illustration-ideation.md` § Sequence sets).
 
 1. **No device repeats.** Every cell names a different device from
    `illustration-ideation.md` § Device catalog. Two cells may share a family;
@@ -288,6 +373,21 @@ Judge the render, not the code. Never from a thumbnail.
    squint at the row at 25 % zoom (§ 3b.3). A MISSING table is itself a
    failure - the set was never designed. Go back to
    `illustration-ideation.md` § The set law before re-rendering.
+3c. **The card-scale pass** (any page carrying cards or a bento). The loop above
+   renders three viewports and squints the row at 25 %, and never inspects ONE
+   cell up close - which is exactly where hairline, texture-pitch, label
+   legibility and padding defects live.
+   1. Render one cell alone at 1x and at 2x. Anything unreadable at 2x is
+      decoration at 1x.
+   2. Any guide tier measuring below about 2:1 against its ground has already
+      disappeared at delivered size.
+   3. Padding parity across siblings, measured, not eyeballed.
+   4. State pass: rest, hover, `focus-visible`, pressed.
+   5. Sample all four edges before writing a "gradient border" - the one case
+      measured turned out to be a uniform 1 px border whose BOTTOM edge was
+      brightest.
+   6. Check the field against `gradient-fields.md` § 1: run the trough test and
+      the off-axis test on your own output.
 4. **Compare to the references** - if the media archive exists locally
    (`references/media/<full-slug>/`, populated by `scripts/fetch-posts.sh`;
    never committed), open 2–3 frames of the references the lock file cites,

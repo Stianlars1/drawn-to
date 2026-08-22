@@ -1,6 +1,18 @@
 # Graphic Language - How Features Are Depicted Non-Verbally
 
-Synthesized from 45 reverse-engineered references. Citation ids = author + leading digits of the post id (7 digits where an author has colliding prefixes). UNIVERSAL = pattern present in a large share of the corpus (count given). FAMILY = trait of one visual family only.
+Synthesized from 45 reverse-engineered references.
+
+> **Corpus note (2026-08-22).** The census counts in this file were computed on
+> the first 45 references and have not been re-derived. The library now holds 57
+> (`matrix.md`). Twelve references are therefore NOT reflected in the ratios
+> above: 0xhammermann-2090, flohoeller-2090, marcelkargul-2089371 /-2089404
+> /-2090509 /-1952697, local-feature-graphics, local-production-heroes,
+> local-chatsheet-iso-bento, local-stashr-dark-bento, local-vite-feature-sheet
+> and local-keep-photographic-trio. The named patterns hold - the newer
+> references corroborate rather than contradict them - but treat every "n/45"
+> as a floor, not a total, and read the newer posts directly before citing a
+> ratio.
+ Citation ids = author + leading digits of the post id (7 digits where an author has colliding prefixes). UNIVERSAL = pattern present in a large share of the corpus (count given). FAMILY = trait of one visual family only.
 
 ---
 
@@ -105,3 +117,32 @@ Materials by type:
 23. Contrast materials to tell before/after: grainy, 2–6°-rotated, page-curled paper = messy input; crisp borderless white card = product output; z-order and vertical position diagram the pipeline (adriankuleszo-2090).
 24. Fade, never hard-crop: dissolve marquee edges with ~60px mask-image gradients, alpha-mask illustration stacks over their last ~40%, opacity-ramp repeated logo rows 1.0 → 0.35 toward both edges (LexnLin-2024, adriankuleszo-2090, piyushsphere-2089).
 25. Repeat one compositional signature across a set (3-item diagonal stagger at ~50px x-offset per step, identical card geometry, one shared accent motif) so five cards read as one system; allow exactly one dark #333 anchor element per set (_heyrico-2090).
+
+---
+
+## Measured corrections (2026-08-22)
+
+The originals above stay as written; these are re-measurements that supersede
+them for building.
+
+**Halftone (Tier B).** § 3 and rule 13 give halftone as pitch ~8 px / dot ~3 px /
+~30 % coverage. Measured by FFT and dot run-length on a 2549 px board: pitch
+**5.95 px horizontal / 6.10 px vertical**, square grid, zero rotation; dot
+**2.62-3.08 px**; ink coverage **14.2-14.5 %** in the saturated zones, falling to
+**6.6 %** where the field goes near-white - the dots DISSOLVE, they do not fade.
+Screening also costs value: the screened slab's V falls 237 -> 197 across the
+same ramp where the unscreened slab holds V at 100 %.
+
+**Sheen stripes (Tier B).** Rule 13 gives them as "~60 px wide at 6-10 % white
+alpha". The alpha is right (measured sigma 16.68 L = 6.5 % and 25.15 L = 9.9 %);
+the PERIOD is 200 px on a 2549 px board (**7.8 % of container width**) and 275 px
+on a feature card (**10.8 %**), at 45 degrees. Express it as a percentage of the
+container - at a fixed 60 px it reads as hatching rather than as light.
+
+**Texture pitch scales with the cell (Tier B).** A 4 px crosshatch calibrated on
+a 596 CSS px card is a materially different object in a 250 px one. Scale pitch
+with cell width, with ONE exception: inside a SET, hold pitch constant across
+differently-sized cells - a shared pitch is what makes a wide card and a narrow
+card read as one material.
+
+Full gradient and light-field catalog: `gradient-fields.md`.

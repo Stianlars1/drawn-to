@@ -1,4 +1,4 @@
-# Taste matrix - all 53 references
+# Taste matrix - all 57 references
 
 Auto-generated from the repo's `references/_index.json` (per-post deep dives in `posts/<slug>.md`; source media archived in the repo at `references/media/<slug>/` - not shipped with the skill folder).
 
@@ -60,6 +60,11 @@ Auto-generated from the repo's `references/_index.json` (per-post deep dives in 
 | 52 | [0xhammermann-2090](posts/0xhammermann-2090450716380831921.md) | feature-cards | light | full-choreography | sharp(0-4) | airy | isometric | Three feature cards, three isometric worlds - a form-maze, two machines transacting, a block city that opens to show the protocol inside |
 
 | 53 | [local-production-heroes](posts/local-production-heroes.md) | hero | mixed | sequence | mixed | airy | shader | Five production first screens measured at 1440x900 - particle field, filmed bokeh, no field at all, WebGL shafts, one emissive object |
+
+| 54 | [local-chatsheet-iso-bento](posts/local-chatsheet-iso-bento.md) | bento | light | full-choreography | sharp(0) | airy | isometric | Hairline 3+2 lattice, one 182-frame harmonic-locked isometric diorama per cell, one pinned anchor each |
+| 55 | [local-stashr-dark-bento](posts/local-stashr-dark-bento.md) | bento | dark | full-choreography | medium(10-16) | balanced | ui-fragment | Near-black 6-col bento; lattice-and-bezier hub, a cursor that filters and files, whole decorative layer inside 16 luminance |
+| 56 | [local-vite-feature-sheet](posts/local-vite-feature-sheet.md) | section-set | dark | micro | sharp(0-4) | airy | isometric | 1px drafting-sheet rows; grainy purple light-leak fields alternating with true-30deg isometrics; one tile lifts and is annotated, never shadowed |
+| 57 | [local-keep-photographic-trio](posts/local-keep-photographic-trio.md) | feature-cards | light | none | sharp(0) | airy | photo | Photographic grounds hard-cut by a 0.68 white veil; object size equals the claim's count - 51% / 43% / 4.8% |
 ## Distribution
 
 - **Kind** (first 45): component 14 · section-set 6 · feature-cards 7 · resource 5 · brand 3 · full-page 3 · bento 2 · hero 2 · illustration-set 2 · dashboard 2

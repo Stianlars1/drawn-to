@@ -1,7 +1,7 @@
 ---
 name: drawn-to
 description: >-
-  A design-direction system for coding agents: a measured taste library (53
+  A design-direction system for coding agents: a measured taste library (57
   references reverse-engineered frame by frame into 12 constants and 8 style
   families), a plain-language interview answered with weights instead of forced
   picks, and a lock file every visual decision must serve. Use BEFORE designing
@@ -36,11 +36,18 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    with reference evidence; the owner reweights. § Q1.
 4. **Axis locks** - interactive questions ONLY where the blend diverges;
    multi-select + weights, one at a time, evidence-cited. § Axis question bank.
-5. **Section variants (QS) + illustration proposals (QI)** - for each section
+5. **Section variants (QS) + card anatomy (QC) + illustration proposals (QI)** - for each section
    in scope, offer 2-3 concrete composition variants from
    `references/recipes.md`, filtered by the locked blend; redesigns always
-   include "keep structure, reskin to the locks". For feature-card work,
-   then propose 2-4 creative illustration concepts PER FEATURE
+   include "keep structure, reskin to the locks". Then settle the CARD before the picture:
+   QC filters the thirteen card anatomies in `layout-language.md` § 5 by the
+   locked blend, takes weights, and confirms the six card dials (§ 5a) and the
+   cell-scale rung (§ 5b) - `question-flow.md` § QC. For feature-card work,
+   then run QI in TWO passes: Pass 1 proposes 3-4 whole-set DIRECTIONS (one
+   method from `practitioner-methods.md` + one register + one material system,
+   sketched across every feature) and locks one; Pass 2 proposes 2-4 concepts
+   per feature that differ only by topology and hero object. Before writing any
+   concepts
    (`references/illustration-ideation.md`): run the derivation ladder (claim
    shape → scene topology → cast → what the loop asserts), apply the SWAP TEST
    to every concept (mounted on a sibling feature it must argue the wrong
@@ -75,6 +82,11 @@ owner's measured taste, and it beats trained-default aesthetics every time.
 3. `references/question-flow.md` - the lock-in protocol and axis question bank.
 4. `references/recipes.md` - named composition variants per section kind
    (hero, feature grid, bento, pricing, footer, CTA…) for the QS stage.
+   Sixteen reference plates showing the RANGE of feature presentation ship
+   inside the skill at `assets/features/` and need no media archive - open them
+   before the QS stage; the index and the per-plate verdicts sit at the head of
+   that file's § Feature section - grid/cards. Two of the sixteen are
+   counter-examples and are labelled as such.
 5. `references/production-formula.md` - page-scale architecture measured off
    seven famous production sites (containers, air, running order, nav,
    buttons, closing CTA); feeds AX13-AX15 and full-page sanity checks.
@@ -106,6 +118,13 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    engine: fit-method (verb → metaphor register → hero + evidence), device
    catalog with construction recipes, the QI proposal protocol, HTML/CSS/SVG
    build guidance; read before proposing or building feature graphics.
+   `references/practitioner-methods.md` - HOW the strongest work in the corpus
+   gets generated, reconstructed per designer into executable moves: the re-lit
+   asset (one world, many lightings, every secondary effect derived from one
+   source), one atom in three topologies, the instrument per feature, every card
+   demonstrates itself, and the page as a technical document. Read at the QI
+   stage - proposals drawn from DIFFERENT methods are genuinely different;
+   proposals drawn from one method are restyles of each other.
    `references/animation-craft.md` - implementation doctrine (Emil Kowalski /
    Apple fluid-interfaces distillation): the animate-at-all gate, tool
    ladder, property rules, curve/duration tables, spring + gesture physics,
@@ -138,7 +157,18 @@ owner's measured taste, and it beats trained-default aesthetics every time.
    choreography), `references/graphic-language.md` (UI-fragments, line-art,
    texture, shaders, mock craft), `references/color-type.md` (palettes,
    chroma quarantine, dual-mode, typography).
-7. `references/matrix.md` - index of every reference (53 at last count);
+   `references/gradient-fields.md` - light as a buildable device at CARD scale as
+   well as page scale: the two-function authoring doctrine (one luminance
+   function + one chroma function, never a stop list), the four archetypes, the
+   four source tests (trough · off-axis · saturation arc · hue gate), sixteen
+   measured kinds with construction primitives, and the grain and banding rules.
+   Read whenever any surface is about to carry a gradient - C9 bans the naive
+   two-stop ramp and this is what replaces it.
+   `references/measuring.md` - how to read a value off a capture without
+   inventing it: the provenance tiers (A/B/C/D), the six procedural errors that
+   produced about thirty wrong numbers in one verification pass, and the
+   read-back to run before a value ships.
+7. `references/matrix.md` - index of every reference (57 at last count);
    `references/posts/<slug>.md` - per-reference deep dives (look up on demand
    when a lock cites one). Slug convention: citations use author + the first 4
    digits of the post id (7 digits where an author's ids collide, e.g.
@@ -237,6 +267,18 @@ owner's measured taste, and it beats trained-default aesthetics every time.
 - Persistent chrome (transport controls, toggles, progress) holds ONE position
   and ONE skin across every screen - never nested in a container whose width
   changes per direction, or it jumps on every transition.
+- The reference plates in `assets/features/` are the one piece of visual
+  evidence that ships WITH the skill; the media archive is optional, the plates
+  are not. Open them at the QS and QC stages. Two of the sixteen are
+  counter-examples - `photographic-ground-trio.jpg` reuses one photograph across
+  two siblings and `gradient-sheet.jpg` carries two tiles that fail the tells.
+  Copy the METHOD, never the instance.
+- Every value you write into a doc carries a provenance tier and was measured by
+  the protocol in `references/measuring.md`. Solve the capture scale before
+  quoting px, gate hue at chroma >= 12, never audit grain or banding from a
+  JPEG, and write "not measurable from these frames" rather than a plausible
+  number. A fabricated value is worse than a missing one: nothing downstream
+  questions it.
 - Look before you build: when the media archive is present locally, open the
   frames of the references the locks cite BEFORE writing the screen and AGAIN
   during visual QA (`quality-bar.md` § 4). Text analyses carry the values;
@@ -295,9 +337,17 @@ the text analyses.
    `FOLD:` line (what crosses the fold, top edge, message intact at both
    desktop sizes). A field shipped without a poster, or a hero whose message is
    cut by the fold, is reported as unfinished.
+4c. Fields and cells (any page with a gradient or a card grid): the `FIELD:`
+   line (kind G1-G16 · source position in percentages · the luminance function ·
+   the chroma function · grain % · banding budget) and the `CELLS:` line
+   (anatomy · ladder rung · layers kept · which dials siblings vary on). A
+   gradient with a light vertex within 3 points of centre, or a small cell built
+   by scaling a large one down, is reported as unfinished.
 5. References: which family docs / posts backed the choices.
-   Illustration sets: each QI row's topology + what its loop asserts + its
-   poster frame + its swap-test and read-back results; one register contract
+   Illustration sets: the Pass-1 direction (method + register + material
+   system) and, per feature, each QI row's topology + what its loop asserts + its
+   poster frame + its swap-test and read-back results; the concept divergence
+   table with no repeated Topology and no repeated Device; one register contract
    for the whole set, written as literal values, with the built set verified
    for parity (grid, module, stroke, face values, loop length).
 6. Polish pass: numbers / state text / toggles / confirmations / loading /
