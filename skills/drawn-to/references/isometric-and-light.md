@@ -575,3 +575,91 @@ glass tiles). In AX10 "structured light" is now a named asset option.
 - **marcelkargul-1952697 - Chatsheet hero (video)**: soft-shaded iso
   conveyor, A1 second register; motion: linear conveyor along the iso
   axis, tiles bob, dotted paths converge; serif H1.
+
+---
+
+## A2h. Lift, gap and annotation - the hover contract
+
+Measured off a shipped isometric tile grid where one tile lifts on hover
+(Tier A; plate `assets/features/iso-tile-lift.jpg`). Every value here was
+re-measured by an adversarial pass, and several of the first-pass numbers did
+not survive - see the end of this section.
+
+**Draw-twice extrusion.** Draw the SAME transformed rounded path twice: the lower
+copy filled with the side colour, the upper copy translated up by the thickness.
+The exposed sliver IS the side ribbon, and it arrives with a geometrically exact
+rounded corner where the two front faces meet. This is why resting side faces can
+be perfectly flat solid fills (#08060C, sd 0.000, no grain, no gradient), and why
+a hover ribbon can carry a texture with zero extra geometry: swap the lower
+copy's fill from a solid to a clipped `<image>`.
+
+**Radius before projection, never after.** k = **0.214 of the source square side**
+(0.207-0.221 by two independent routes). The projected corner is an ELLIPSE arc
+with semi-axes 1.2247·k·a horizontal and 0.7071·k·a vertical - ratio sqrt(3):1,
+major axis horizontal (32.5 x 18.7 reference px at the measured k·a = 26.5).
+Rounding a hand-drawn rhombus with a uniform circular radius is the most reliable
+tell of a faked isometric.
+
+**The radius convention trap.** "Radius = 20 % of the side" is convention-free;
+"radius = 13 CSS px" is not. Built with the 2D
+`matrix(0.86603 0.5 -0.86603 0.5 cx cy)`, the source side is the projected edge
+length (124.0 ref = 51.7 CSS) and the radius is 26.5 ref = 11.0 CSS. Built with
+`rotateX(54.7356deg) rotateZ(45deg)`, the source side is 152.8 ref. **State both
+conventions or the implementer ships a corner 20 % too round.**
+(`rotateX(60deg)` gives 26.57 degrees and is simply wrong for true isometric.)
+
+**Lift contract.** Translate straight up in screen space - measured horizontal
+drift 0-1 px. Distance 48 ref px = 20 CSS = **0.39 of the rhombus height** =
+2.3x the tile thickness. Express interaction distances as ratios of the object so
+they survive responsive scaling.
+
+**Annotate the delta instead of adding a shadow.** The measured cluster contains
+literally zero shadow pixels: the ground inside the lifted tile's footprint reads
+exactly (22,23,28) across 2 940 px, min = max. Instead there are three 1 px dashed
+vertical extension lines, period 13.0 ref px at a **1:1 duty cycle** (6.5 on /
+6.5 off, i.e. `stroke-dasharray: 2.7 2.7` at a 5.4 CSS period), colour #504E58 ~
+rgba(255,255,255,0.25), each masked
+`linear-gradient(to bottom, opaque, transparent)` over its own length. A lift with
+a soft drop shadow underneath is the default instinct, and it flips the register
+from technical drawing to floating UI card in one step.
+
+**Carry the principle, not the reference's own sloppiness.** In the measured frame
+those three lines are NOT derived from a footprint rhombus - their x spacings are
+97.04 and 87.43 where a rhombus requires equal spacings, and their zero-crossings
+differ by 11.6 px where a rhombus requires 0. Derive yours from the real footprint
+vertices. (The same frame also renders the lifted tile 1.8 % larger than its
+resting siblings, 190.0 vs 186.83 ref silhouette width - a pure translate should
+not change silhouette width at all.)
+
+**Tiles do not touch.** Lattice pitch 128-130 against an edge length of 124.0
+leaves a ~5.5 ref px perpendicular gap (2.3 CSS), verified by occlusion: the
+exposed side ribbon between neighbours measures 6.0 px where the full thickness is
+21.16.
+
+**Chroma-not-value separation.** Ground rgb(22,23,28) with G > R; face
+rgb(24,22,30) with R > G. Two luminance units apart and clearly separate, because
+the difference is hue, not brightness. The side face is DARKER than the ground.
+Grain lives on the objects (sd 2.2 on top faces) and not on the page (sd 0.000) -
+the reverse of the usual noise overlay, and the reason the tiles read as material.
+
+### The three isometric registers, side by side
+
+They disagree on purpose. Pick one per set and hold it.
+
+| | paper-white heavy-contour | soft-shaded periwinkle | matte dark technical |
+|---|---|---|---|
+| Faces | flat, three-value ladder, third value refused per object | horizontal white -> #B1CDFF ramp with grain over it | flat, per-object grain sd 2.2 |
+| Depth | occlusion only | occlusion + 1-3 % blurred silhouette shadows | occlusion only, zero shadows |
+| Strokes | ONE weight per card, colour assigns role | two weights, 0.7 / 1.4 CSS at 2:1 | rim highlight only, +7 per channel over ~3 AA rows |
+| Shadows | flat, non-compounding, zero blur | soft, offset down-right, hugging the silhouette | none at all |
+| Separation | value | value | **chroma** - 2 luminance units apart |
+| Source | 0xhammermann-2090 | chatsheet | vite |
+
+---
+
+## Card scale
+
+Path B above is written for heroes and closing CTAs, where the light IS the
+subject. The card-scale catalog, the source test and the sixteen measured kinds
+are in `gradient-fields.md` - a field at card scale is legal, and it is the
+answer to "we need a gradient card ground without shipping the two-stop tell".

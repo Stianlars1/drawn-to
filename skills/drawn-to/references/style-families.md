@@ -2,6 +2,18 @@
 
 Synthesis of 45 reverse-engineered X/Twitter design references. Companion to the lock-in skill: §1 lists invariants that become silent defaults; §2 defines the families offered as blend weights; §3 defines how families combine; §4 accounts for outliers.
 
+> **Corpus note (2026-08-22).** The census counts in this file were computed on
+> the first 45 references and have not been re-derived. The library now holds 57
+> (`matrix.md`). Twelve references are therefore NOT reflected in the ratios
+> above: 0xhammermann-2090, flohoeller-2090, marcelkargul-2089371 /-2089404
+> /-2090509 /-1952697, local-feature-graphics, local-production-heroes,
+> local-chatsheet-iso-bento, local-stashr-dark-bento, local-vite-feature-sheet
+> and local-keep-photographic-trio. The named patterns hold - the newer
+> references corroborate rather than contradict them - but treat every "n/45"
+> as a floor, not a total, and read the newer posts directly before citing a
+> ratio.
+
+
 **Citation convention:** `author-XXXX` = author + first 4 digits of the numeric id. Where one author has colliding ids, 7 digits are used (`basit_designs-2089627` vs `basit_designs-2089995`; `adriankuleszo-2089253/2089328/2089887`; `mnowakdesign-2089321/2089684`; `yurygok-2089624/2089981`; `_heyfaisal-2089369/2089734`).
 
 Corpus shape: 20 light, 16 dark, 5 dual-theme, 4 mixed. 27/45 contain motion (15 full-choreography, 8 sequence, 4 micro).

@@ -1,6 +1,6 @@
 # Section recipes
 
-Concrete, named composition variants per section kind, distilled from the 45-reference corpus. Companion to `style-families.md` (families F1–F8, the 12 constants) and `layout-language.md` (grids, card anatomy). Citations use the same slug convention.
+Concrete, named composition variants per section kind, distilled from the reference corpus (the named variants below were derived on the first 45; five more were added 2026-08-22 from references 54-57 and are marked with their tier). Companion to `style-families.md` (families F1–F8, the 12 constants) and `layout-language.md` (grids, card anatomy). Citations use the same slug convention.
 
 **How the skill uses this doc.** After the blend and axis locks are settled, walk the sections in scope. For each section kind: (1) filter this kind's variants by family compatibility with the chosen blend - a variant whose **Families** line clashes with the dominant family is not offered; (2) present 2–3 surviving variants as a weighted question in the QS stage, using each variant's name + one-line essence as the option label and **Choose when** as the hint; (3) on selection, build from **Anatomy** + **Ingredients**, with the 12 constants applied silently. For **redesigns**, always add one more option - *"keep current structure, reskin to the locks"* - and, before asking, map each existing section onto its nearest recipe here so the question reads "your current hero is closest to Centered Stack; keep it, or switch to …". The 12 constants (chroma quarantine, show-the-feature, separation ladder, motion registers, etc.) are assumed everywhere below and never restated per variant.
 
@@ -97,6 +97,32 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
 
 ## Feature section - grid/cards
 
+
+**Reference plates ship with this skill.** Sixteen 1440-wide plates at
+`assets/features/` show the RANGE of feature presentation and need no media
+archive. Open them before the QS stage. Rights and rules of use:
+`assets/features/NOTICE.md`.
+
+| Plate | Anatomy it demonstrates | Verdict |
+|---|---|---|
+| `self-demo-loop-grid.jpg` | Self-Demo Loop Grid | standard |
+| `mirrored-bento.jpg` | Mirrored 60/40 + Dark Finale | standard |
+| `fig-plate-grid.jpg` | FIG-Plate Shared-Border Grid | standard |
+| `vignette-grid.jpg` | Caption-Free Vignette Grid | standard |
+| `punched-chip-iso.jpg` · `punched-chip-iso-services.jpg` | Punched-Chip 3+2 | standard |
+| `iso-automation-grid.jpg` | Hairline Lattice Bento (below) | standard |
+| `dark-bento-scenes.jpg` | Compressed-Band Dark Bento (below) | standard |
+| `iso-tile-lift.jpg` | Drawing-Sheet Rows + the iso hover contract | standard |
+| `photographic-ground-trio.jpg` | Veil-Split Photographic Trio (below) | standard, with one filler tell: cards 2 and 3 are the SAME photograph (mean abs diff 0.47/255 over 66 626 px after sub-pixel alignment) and card 2 is 95.19 % untouched photograph carrying one 148.8 x 36.7 CSS chip |
+| `instrument-illustrations-1…4.jpg` | the per-feature illustration bar (`illustration-ideation.md`) | standard |
+| `split-cta-card.jpg` | `layout-language.md` § 5 archetype 4 | standard |
+| `gradient-sheet.jpg` | six landing grounds as a light-field study | **2 of 6 are counter-examples** - the Metricly and BugScout tiles; the per-tile audit is in `posts/marcelkargul-2089371829492203776.md` |
+
+Two of the sixteen are in the folder partly as counter-examples. Being loved is
+not a defence: `photographic-ground-trio.jpg` reuses one photograph across two
+siblings, and `gradient-sheet.jpg` carries two tiles that fail the tells in
+`quality-bar.md` § 1. Copy the METHOD, never the instance.
+
 ### Self-Demo Loop Grid - every card is a working fragment animating its own headline
 - **Anatomy:** 3 equal cards (~343–578px), gap 24–34px, equal heights. Card: #fff, radius 24px, 1px #eef0f3 hairline, shadow 0 8px 30px rgba(16,24,40,0.06); inner elements radius 12–16px. Visual area 70–80%; captions demoted OUTSIDE the card - 17px/700 title ~20px below the card edge + one 13px muted sentence on the page bg. In-card text-strip variant: 70/30 visual/text with a hard edge, title ~26px + exactly 2 description lines (AlexandruDranga-2090).
 - **Ingredients:** each card's loop literally enacts its verb (reorder = organize, type-on = effortless input, zip-suction = handoff) with realistic data (versioned filenames, plausible counts). Loops on non-commensurate periods (2.45/2.5/5/7.4s/continuous). Typewriter 105ms/char type, 45ms/char delete; marquees 35px/s linear with 60px fade masks; springs cubic-bezier(0.34,1.56,0.64,1) only for discrete acts. Optional camera tour: zoom ~2.2×, dolly 600–800ms ease-in-out, dwell 1.5–2s per card, loop back to the opening frame (adriankuleszo-2089253, adriankuleszo-2089328 Droxy).
@@ -124,6 +150,31 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
 - **Evidence:** _heyrico-2090.
 - **Families:** F3+F6 native. F2 adaptation: add the caption-outside layer (17px/700 + 13px muted, 20px below) per the caption-demotion law.
 - **Choose when:** illustration-set moment (showcase, gallery, secondary features) where captions would add noise.
+
+### Drawing-Sheet Rows - a 1px drafting frame, media flush, text inset
+- **Anatomy:** persistent 1px container rules running the FULL page height - they are page furniture, not cell borders - meeting in plain T-junctions with no radius and no corner treatment. Base grid 6 columns, feature cells span 3 (~600 CSS px each). Rows are content-sized, not fixed (457 and 442 slice-px measured in one grid). **Text is inset ~36 CSS px from the rule; media is flush to it** - the field panels' last row sits directly on the row divider. That single inconsistency is the whole layout idea. Rules are violet-tinted grey #35303A, not neutral: a neutral rgba(255,255,255,0.1) reads dead against this ground. Heading pure white at ~20px; body peak rgb(141,133,150) on a 23.7 CSS line pitch; mono labels ~13-14px with a 1px dotted leader (1 dot / 2 gap) running past the text, 8.9 slice below the baseline.
+- **Ingredients:** two registers, never mixed inside one cell. Speed and size claims get a **receipt** - a real terminal or CI panel with a right-aligned numeric column - on a full-bleed photographic light-leak field (`gradient-fields.md` G16). Structure claims get a **technical isometric** on the flat ground. Ground #16171C at sd 0.000: grain lives on the OBJECTS (sd 2.2 on tile faces), not on the page, which is the reverse of the usual noise overlay and is exactly why the tiles read as material. Hover contract for the isometric: `isometric-and-light.md` § A2h.
+- **At 390:** columns collapse to one; the full-height rules survive as a single left rule; the receipt panels re-crop to their numeric column rather than scaling.
+- **Evidence:** vite (Tier A); plate `assets/features/iso-tile-lift.jpg`.
+- **Families:** F1 + F4 native. F5 inversion: same rules on paper at #c9c9c9.
+- **Choose when:** developer-tool or infra page; the audience reads output; the page should feel like a drawing sheet rather than a card deck.
+
+### Veil-Split Photographic Trio - the photograph tints its own caption
+- **Anatomy:** three 429.2 x 390.1 CSS cards (aspect 1.100) at a 6.9 CSS border-centre separation, so three separate dashed rects read as one continuous frame across the row even though each border genuinely breaks at the gutter. Per card: a 1px dashed hairline (#E4E4E0-#E8E7E2, period 4.014 CSS, dash 2.2-2.6 / gap 1.4-1.8, contrast 1.18-1.21:1 on #FAFAFA), four solid 5.08-5.26 CSS #9B8860 corner squares anchored flush and extending inward, a 7.38 CSS flat #FFFFFF mount, then the veil-split inner rectangle (`layout-language.md` § 5 archetype 8). Radius 0 on card, mount, media, split and text panel - **the only rounding in the row is on the three floating objects** (chip ~8.9, kanban columns 6.20, video frame 6.0-6.5).
+- **Ingredients: object count equals claim count.** "Kanban view" -> a whole board at 51.08 % of the media area. "Annotate on the image" -> one framed sharp photo at 43.4 %. "One click, one bundle" -> exactly one 148.8 x 36.7 CSS chip at 4.79 %, with 95.19 % of the frame left as untouched photograph. The 10.7x spread IS the argument; do not normalise siblings toward each other. The chip is dead centre horizontally and deliberately not vertically (147.9 above / 91.9 below = 1.610, centre at 60.2 % of media height) - a dead-centre object in a large empty field reads as a placeholder.
+- **Anti-tell, mandatory:** the reference ships cards 2 and 3 on the identical photograph and grades card 1's grain 5-7x heavier than its siblings. Ground MAY repeat (it is register); the object may NOT (it is argument); grain is measured per card and matched across the set.
+- **At 390:** one column; the media keeps `aspect-ratio: 3/2` and the veil split holds at 26.20 %; corner squares stay 5 CSS (they are a mark, not a scale).
+- **Evidence:** keep (Tier A); plate `assets/features/photographic-ground-trio.jpg`.
+- **Families:** F5 + F2 native; F6 adaptation swaps the dashed frame for one soft shadow, never both.
+- **Choose when:** a brand with real photography, three claims of genuinely different weight, and copy short enough to hold one title line and exactly two body lines on all three cards.
+
+### Micro-Chip Row - a supporting list, not a feature moment
+- **Anatomy:** 4-up of 48 x 48 CSS chip cells (`layout-language.md` § 5 archetype 10) at 312 CSS column pitch; copy 9 words / 54 chars. No illustration, by design.
+- **Ingredients:** the plate is an index mark - one glyph at 38 % of plate width, a 1px hairline brighter on the top and left only, no gradient, no shadow, no second colour. The swap test does not apply at this scale (`quality-bar.md` § 3b relief clause).
+- **At 390:** 2-up; never 1-up, which turns an index into a feature list.
+- **Evidence:** small-cell census (Tier C - ratios only).
+- **Families:** any.
+- **Choose when:** a supporting list of supported formats, regions or document types under a heavier feature section. **Never as the page's flagship feature moment.**
 
 ---
 
@@ -156,6 +207,23 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
 - **Evidence:** marcelkargul-2090148.
 - **Families:** F1 (warm variant) + F4 native. Zero accent hue by design.
 - **Choose when:** services/capabilities section for a design-literate audience; illustrations must be animation-ready.
+
+
+### Hairline Lattice Bento - one ruled rectangle, no cards
+- **Anatomy:** `layout-language.md` § Bento anatomy 4. ONE bordered rectangle 1131.5 CSS wide, hairline-ruled inside; row 1 into three equal 376 px cells, row 2 into two 564.5 px cells whose divider sits on the container's exact midpoint and therefore misaligns with row 1 - that misalignment is what makes it a bento. Radius 0, no shadow, no gap, no fill tint, no hover affordance.
+- **Ingredients:** the whole roundness, depth, gradient and shadow budget is spent INSIDE the drawings. **One dash grammar** at 8.2 CSS pitch (dash 4.25 / gap 3.95) serves connectors, ground lanes, actor drop-lines, footprint ellipses and lift rails alike, with activity encoded by stroke colour only (#313942 active, #C8D6EE inactive); a second dash pattern anywhere in the scene is a fail. **Exactly two stroke weights**, 0.7 and 1.4 CSS in a 2:1 ratio, with the hairline FINER than the 1 px cell border so the drawings sit visually behind the chrome. Three-state material code spelled in the SIDE WALL and never in size: pending = white top face + grain + 0.7px pale outline + #F0F2F8 wall · live = horizontal #FFFFFF->#B1CDFF top ramp + 1.4px #4A79D4 outline + #3C79FC wall · done = the same ramp with a #091733 wall. Motion: one master loop with every oscillator on an integer division of it (`motion-grammar.md` § harmonic lock).
+- **At 390:** the lattice becomes a single column of full-width cells; the internal rhythm (31 / 37.5 / 48.5) is preserved and the drawings drop their L5/L6 layers per § 5b.
+- **Evidence:** chatsheet, 182 frames (Tier B); plate `assets/features/iso-automation-grid.jpg`.
+- **Families:** F2 + F4 native. Clashes with F6 (pebble radii against radius 0).
+- **Choose when:** 4-6 automations or capabilities that share one world; a light editorial page that must read as one instrument set rather than five cards.
+
+### Compressed-Band Dark Bento - the whole decorative layer inside 16 luminance
+- **Anatomy:** `layout-language.md` § Bento anatomy 5. 6-column grid, row 1 three span-2 tiles at aspect 0.9932, row 2 two span-3 tiles at 1.2957, on a 1152 px container with a 16 px gap. Ground #151515, fill #1f201f, uniform 1px #252525 border, true circular corner arc, zero drop shadows. Heading ink >= #eeeeee, body >= #9b9b9b (65 % of heading at peak).
+- **Ingredients:** every decorative layer lives inside a 16-luminance band over the card fill - dot grid +5 to +30 at the dot core, rings +10 dimming outward, connectors +16 - and the only saturated colour in the section is the payload in flight. White is rationed to exactly two jobs: the primary CTA and the saved artifact. The many-to-one cell is built as a hub-lattice card (§ 5 archetype 13), never as a circle of logos. **One cell carries a simulated cursor and only one, gated by whose verb it is: cursor when the heading's verb belongs to the USER, no cursor when it belongs to the SYSTEM.** Every loop resolves on a named artifact - three tags, a folder called "X Designs", a dated answer with a source - never on a reset.
+- **At 390:** span-2 and span-3 both become full width; the hub lattice keeps its three bezier connectors and drops the outer ring.
+- **Evidence:** stashr (Tier A - ratios and frames; the capture is a screen recording of a video player, so absolute px and fps are not derivable); plate `assets/features/dark-bento-scenes.jpg`.
+- **Families:** F1 native, F8 for the payload light. Clashes with F6.
+- **Choose when:** a dark product page with about five features, at least one of which is a real multi-step user action worth re-enacting.
 
 ---
 

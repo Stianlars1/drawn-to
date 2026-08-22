@@ -123,3 +123,35 @@ What actually changes across a theme pair - never a naive invert:
 23. Dim unit glyphs ($, %, M, h/m, "/ 03") to ~40% opacity or a muted gray inside hero numerals; type up-deltas as a caret "^" rather than an arrow icon (yurygok-2089624, piyushsphere-2088, basit_designs-2089627).
 24. Make every visible number reconcile (sums, shares, ratios) and disclose truncated axes in mono caps ("SCALE 50-100") - numeric honesty is part of the type system (yurygok-2089624, yurygok-2089981).
 25. Overlay 2–6% grain/stipple on every large gradient or blur field so color reads as printed material, not render - this applies in both modes (devxnuj-2090, basit_designs-2089995, piyushsphere-2088, insporadesign-2087895, _heyrico-2090).
+
+---
+
+## 6. Gradient systems
+
+Construction, the four archetypes and the sixteen measured kinds live in
+`gradient-fields.md`. The short form, for palette decisions:
+
+| Archetype | Luminance | Chroma |
+|---|---|---|
+| Value-pinned chroma ramp | pinned 99.8-100 % | S climbs, one RGB channel pinned |
+| Hue-locked value ramp | full 0-100 % | hue locked inside ~3.5 deg, S arcs through the mid-tone |
+| Chroma-only field | pinned 96-99.5 % | S 6-29 %, hue sweeping |
+| Channel-clamped photograph | photographic | one RGB channel clamped <= 8 |
+
+The four source checks, by name: **trough test** (a real source makes the field
+non-monotonic) · **off-axis test** (a light vertex within 3 pp of 50 % means
+nobody decided) · **saturation arc** (flat S is an overlay) · **hue gate** (read
+hue only where chroma >= 12).
+
+Chroma quarantine (C1) is unaffected: a field is the ONE place chroma lives, and
+a page carrying a field spends its accent budget there.
+
+**MEASURED CORRECTION (2026-08-22, Tier B).** § 3 states that the page ambient
+bloom re-tints with each slide's hue via an 80-120 px blurred copy of the artwork
+at 25-35 % opacity. Re-measured across all three slides of insporadesign-2087:
+the page reads exactly #F7F6F2 at (20,20) on **every** slide - there is no
+page-wide re-tint. What exists is local and it is a DARKENING, not a bloom:
+-46 L below the card, -14 L sideways, -13 L above, reaching 72 / 71 / 54
+frame-px, with the hue derived from the card (#D2C8AD under amber, #C5C9D5 under
+indigo). The original line stays as the observation; build from this one
+(`gradient-fields.md` G13).

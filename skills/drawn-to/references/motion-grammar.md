@@ -2,6 +2,18 @@
 
 Synthesized from 45 reverse-engineered X/Twitter design references. Motion census: **27/45 contain motion** (15 full-choreography, 8 sequence, 4 micro); 18 are static - and even the statics are staged as frozen interaction moments or "animation-ready" separable planes (piyushsphere-2089, marcelkargul-2090148, _heyrico-2090, adriankuleszo-2090).
 
+> **Corpus note (2026-08-22).** The census counts in this file were computed on
+> the first 45 references and have not been re-derived. The library now holds 57
+> (`matrix.md`). Twelve references are therefore NOT reflected in the ratios
+> above: 0xhammermann-2090, flohoeller-2090, marcelkargul-2089371 /-2089404
+> /-2090509 /-1952697, local-feature-graphics, local-production-heroes,
+> local-chatsheet-iso-bento, local-stashr-dark-bento, local-vite-feature-sheet
+> and local-keep-photographic-trio. The named patterns hold - the newer
+> references corroborate rather than contradict them - but treat every "n/45"
+> as a floor, not a total, and read the newer posts directly before citing a
+> ratio.
+
+
 Citation convention: slugs shortened to `author-first4digits`; a 5th digit is added only where an author has two posts sharing the first 4 (e.g. adriankuleszo-2089253 = …2089253, adriankuleszo-2089328 = …2089328, adriankuleszo-2089887 = …2089887; basit_designs-2089627 = …2089627, basit_designs-2089995 = …2089995; marcelkargul-2089632 = tabs, marcelkargul-2090148 = iso cards; _heyfaisal-2089369 = delete morph, _heyfaisal-2089734 = FLOWAI).
 
 ---
@@ -215,3 +227,77 @@ Addendum - hover-light grammar (flohoeller-2090)
   then persist composed. One one-shot light-sweep along a connector is
   allowed as it first draws, then it rests as a static hairline. Distinct
   from in-view entrances: pointer-proximity triggered, runs once.
+
+---
+
+## Board motion - measured additions (2026-08-22)
+
+Distilled from two full-choreography feature boards analysed frame by frame
+(182 frames and 842 frames). Tiers: **A** = adversarially re-measured, **B** =
+scale solved, **C** = ratios and frame counts only.
+
+**Harmonic lock (Tier B).** On an ambient board, every oscillator's period is an
+exact integer division of the master loop - 182/1, 182/2, 182/3. Verified by FFT
+of the temporal stack: one cell returns k = 2 at 60 % of its moving pixels,
+another k = 3 at 62 %. **That lock, not a crossfade, is why a multi-cell loop has
+no visible seam.** Test your own: the dominant k must be a small integer.
+
+**Anchor pinning (Tier B).** Name the ONE object per cell that cannot move, and
+pin it to sub-pixel accuracy for the whole loop; animate everything else relative
+to it. Verification: template-match the anchor against frame 1 - residual under
+1.0 at every frame (measured 0.00 for one tile across all 182 frames, centroid
+drift under 0.3 px for another). Without an anchor the cell reads as drifting
+even when every element is individually correct.
+
+**Dwell budget (Tier B).** One discrete event per loop per cell; everything else
+is a hold or a slow float. The measured event occupies **24 % of the loop** and
+the other 76 % is a dead hold. A loop that RESTS - 5.15 s of complete stillness
+measured between pulse rounds on the second board - is a legitimate and calming
+choice that generators never make.
+
+**Unison over stagger (Tier B).** For a multi-cell board, default to UNISON:
+every satellite peak clusters at 49-58 % of the loop. Staggering five cells reads
+as noise. Stagger belongs inside one cell, not across a grid.
+
+**Three easings, named and distinguished.** "ease-in-out" was covering all three:
+- **Raised cosine** for ambient hover. Verify against normalised 0.077 / 0.26 /
+  0.62 / 0.84 / 0.96 at t = 0.18 / 0.36 / 0.55 / 0.73 / 0.91.
+- **easeInOut of power ~2.4 with dwells at both ends** for lane slides, roughly
+  `cubic-bezier(0.65, 0, 0.35, 1)`.
+- **Front-loaded settle** for a pop: `cubic-bezier(0.22, 1, 0.36, 1)` or a
+  critically damped spring.
+
+**Carousel step (Tier A).** 58 frames per slot with an exponential ease-out whose
+per-frame displacement decays at a constant ratio of ~0.82 (time constant ~5
+frames, settling over ~26): 118, 107, 85, 72, 64, 50, 43, 36, 30, 24, 20, 16, 13,
+10, 8, 7, 5, 4, 3, 3, 2, 2, 1, 1, 1, 1. That decay curve IS the character of the
+motion; a linear slide with an ease-out tail is not the same object.
+
+**Orbit (Tier A).** 3.1292 degrees per frame, linear, no easing (straight-line fit
+residual rms 0.732 deg over 65 frames), full revolution 115.04 frames, two dots
+exactly antipodal. Ambient register: never ease an infinite loop (C6).
+
+**Round-robin pulse (Tier A).** One item in flight at a time, fixed interval
+(8.4 frames), fixed round length (50.5 frames for six marks), **always inward
+toward the hub**, each pulse fading in and out over 3-5 frames so it never
+occupies the whole path. A path fully covered by its own pulse stops reading as a
+path.
+
+**Cursor choreography (Tier A).** Travel with a hard ease-out - about 90 % of the
+distance in the first third, then a 4-6 frame settle of 10 / 5 / 5 px. Dwell
+1.5-2.0 s on the control. A consequence must be visible within 6 frames of the
+click. And the gate that decides whether a cursor appears at all: **cursor when
+the heading's verb belongs to the USER, no cursor when it belongs to the
+SYSTEM.**
+
+**Lift furniture (Tier B).** When an object leaves a surface: a dashed footprint
+ellipse at its rest position, two parallel vertical rails one object-diameter
+apart spanning the travel, and NO scale change on the object - mask area measured
+constant at 238-246 px across the whole loop, i.e. a pure `translateY`. Three
+pieces of furniture to sell one 40 px translate, and it is far more convincing
+than a shadow.
+
+**Report motion in FRAMES when the capture is a screen recording of a player.**
+One of these boards yielded an fps range of [30.0, 32.3] and nothing narrower;
+every second-based figure derived from a guessed 30.07 fps was wrong
+(`measuring.md`).
