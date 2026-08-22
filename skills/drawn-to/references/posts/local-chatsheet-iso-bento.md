@@ -14,8 +14,8 @@ Tier B - the capture scale was solved from DPR-2 metadata and is corroborated by
 the sibling reference, but it has not been independently re-measured. Ratios are
 safe; absolute CSS px carry the tier.
 
-Media: `references/media/local-chatsheet-iso-bento/frames_1/` - 46 frames sampled
-every 4th from the 182-frame loop, 1200 px wide.
+Media: `references/media/local-chatsheet-iso-bento/frames_1/` - 30 frames evenly
+sampled across the 182-frame loop, first and last included, 1200 px wide.
 
 Plate shipped with the skill: `assets/features/iso-automation-grid.jpg`.
 
