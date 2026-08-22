@@ -9,3 +9,6 @@ references/media/
 .DS_Store
 node_modules/
 .eval-output/
+
+# the packaged skill, rebuilt on demand for zip upload
+skills/drawn-to.zip
