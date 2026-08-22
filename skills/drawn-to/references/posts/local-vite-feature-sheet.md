@@ -14,6 +14,9 @@ Tier A - every value below was independently re-measured by an adversarial pass,
 which overturned eleven of the first-pass figures (they are listed at the end so
 they are never written again).
 
+Media: `references/media/local-vite-feature-sheet/` - the hover-state still plus
+six slices of the full-page capture.
+
 Plate shipped with the skill: `assets/features/iso-tile-lift.jpg`.
 
 ## What we see

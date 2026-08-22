@@ -9,7 +9,7 @@ Checks:
      colliding authors are errors.
   3. Every file named in drawn-to/SKILL.md's read-order exists.
   4. matrix.md row count equals the number of posts.
-  5. (warn only) cited slugs without a media dir in references/media/.
+  5. (warn only) posts without a media dir in drawn-to/references/media/.
 
 Exit 0 = clean (warnings allowed), 1 = errors.
 """
@@ -19,7 +19,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SKILL = ROOT / "skills" / "drawn-to"
 REFS = SKILL / "references"
 POSTS = REFS / "posts"
-MEDIA = ROOT / "references" / "media"
+MEDIA = REFS / "media"
 
 errors, warnings = [], []
 

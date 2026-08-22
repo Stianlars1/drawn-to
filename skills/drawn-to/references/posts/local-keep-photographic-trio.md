@@ -13,6 +13,9 @@ tags: [photographic-ground, veil-split, crop-marks, dashed-frame, micro-card, ob
 Tier A - independently re-measured. Where the source file was too small to
 resolve a claim, that is said rather than guessed.
 
+Media: `references/media/local-keep-photographic-trio/` - one still at 1500 px,
+which is the resolution floor noted at the end of this file.
+
 Plate shipped with the skill: `assets/features/photographic-ground-trio.jpg`.
 
 ## What we see

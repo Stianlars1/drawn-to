@@ -1,6 +1,6 @@
 # Taste matrix - all 57 references
 
-Auto-generated from the repo's `references/_index.json` (per-post deep dives in `posts/<slug>.md`; source media archived in the repo at `references/media/<slug>/` - not shipped with the skill folder).
+Per-post deep dives in `posts/<slug>.md`; the source frames for each reference ship with the skill in `media/<slug>/`, named to match. (`_index.json` is a frozen legacy summary of the first 45 analyses and is no longer generated or read - the posts and this table are the live index.)
 
 | # | Ref | Kind | Mode | Motion | Radius | Density | Illustration | What it is |
 |--|-----|------|------|--------|--------|---------|--------------|------------|

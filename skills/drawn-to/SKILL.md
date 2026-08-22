@@ -303,16 +303,24 @@ owner's measured taste, and it beats trained-default aesthetics every time.
 
 ## Visual evidence
 
-The source media for every reference - photos and extracted video frames  - 
-lives in the taste repo at
-`/Users/stian/Documents/claudee/my_taste/references/media/<full-slug>/`
-(deliberately not shipped inside this skill folder - the originals stay their
-authors'). Any clone can rebuild it locally with `scripts/fetch-posts.sh`
-from the repo root (fxtwitter fetch + ffmpeg frame extraction, per slug or in
-batch); the folder is git-ignored. On a machine that has it,
-open the media to verify a claim or calibrate a value before locking or
-implementing; the per-post analyses in `references/posts/` are the portable
-evidence, the media is ground truth. Guardrails: references are vocabulary,
+The source media for every reference - photos and extracted video frames -
+ships WITH this skill at `references/media/<full-slug>/`, one directory per
+reference, named to match its post file in `references/posts/`. Paths in this
+skill are relative to the skill folder, so the archive travels wherever the
+skill is installed and there is nothing to set up.
+
+What is here and what is not: the extracted FRAMES and the still captures are
+included; the source videos they were extracted from are not (they are large
+and redundant - `scripts/fetch-posts.sh` in the taste repo re-fetches them from
+the fxtwitter API on demand). Frames are archived at reduced resolution, enough
+to read density, line quality and light shape, not enough to reproduce anyone's
+artwork.
+
+Open the media to verify a claim or calibrate a value before locking or
+implementing, and again during visual QA; the per-post analyses in
+`references/posts/` carry the measured values, the media is ground truth for
+the two things a build most often gets wrong - density and the quality of
+line. Guardrails: references are vocabulary,
 not templates - adapt patterns and values, never clone a reference's
 composition or brand into a project; a lock cites the pattern, never "make it
 look like this image". Without media access the skill is fully functional on

@@ -151,7 +151,7 @@ Brief: *five features for a macOS clipboard tool, dark, no tokens yet.* Discover
 
 This ships one person's taste, measured. The pipeline is the reusable part:
 
-1. **Fetch** a reference (X post, site capture, video) into `references/media/` - never committed; the originals stay the authors'.
+1. **Fetch** a reference (X post, site capture, video) into `skills/drawn-to/references/media/` - extracted frames and reduced-resolution stills ship with the skill under the terms in that folder's `NOTICE.md`; the source videos stay out.
 2. **Analyze** frame by frame with the per-post template (layout · card anatomy · type & color · graphic language · motion timeline · why saved · extractable rules). Values, not adjectives.
 3. **Synthesize** - families, constants, devices - and cite slugs everywhere.
 4. **Validate** - `python3 scripts/validate-library.py` checks every citation resolves, every post has frontmatter, the matrix is consistent. CI runs it on every push.

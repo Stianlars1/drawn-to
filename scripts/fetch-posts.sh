@@ -1,7 +1,8 @@
 #!/bin/bash
 # Fetch X post metadata + media via fxtwitter API into references/media/
 set -u
-BASE="/Users/stian/Documents/claudee/my_taste/references"
+REPO="$(cd "$(dirname "$0")/.." && pwd)"
+BASE="$REPO/skills/drawn-to/references"
 META="$BASE/media/_meta"
 mkdir -p "$META"
 
@@ -61,11 +62,14 @@ for id in $IDS; do
 done
 
 # Parse + download media
+export MEDIA_META="$META"
+export MEDIA_DIR="$BASE/media"
+
 python3 - <<'PYEOF'
 import json, os, subprocess, glob
 
-META = "/Users/stian/Documents/claudee/my_taste/references/media/_meta"
-MEDIA = "/Users/stian/Documents/claudee/my_taste/references/media"
+META = os.environ["MEDIA_META"]
+MEDIA = os.environ["MEDIA_DIR"]
 
 for path in sorted(glob.glob(f"{META}/*.json")):
     tid = os.path.basename(path)[:-5]
@@ -103,4 +107,14 @@ for path in sorted(glob.glob(f"{META}/*.json")):
                 continue
         got.append(f"{mtype}{i}:{os.path.getsize(fn)//1024}KB")
     print(f"{slug} | {len(media)} media [{', '.join(got)}] | {text}")
+
+    # Minimise the stored metadata before it is published: keep provenance,
+    # drop the author profile the API returns (followers, location, avatar...).
+    a = t.get("author") or {}
+    json.dump({
+        "id": t.get("id"), "url": t.get("url"),
+        "author": {"screen_name": a.get("screen_name"), "name": a.get("name"), "url": a.get("url")},
+        "created_at": t.get("created_at"), "text": t.get("text"), "lang": t.get("lang"),
+        "media": [{"type": m.get("type"), "width": m.get("width"), "height": m.get("height")} for m in media],
+    }, open(path, "w"), indent=1, ensure_ascii=False)
 PYEOF

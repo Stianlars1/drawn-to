@@ -12,8 +12,8 @@ is rich in: a well-drawn figure, in a box, beside a column of copy.
 
 That composition is the one thing none of the five do.
 
-Media: `references/media/local-production-heroes/` (owner's own captures at
-1440-class widths; gitignored like the rest of the archive).
+Media: `references/media/local-production-heroes/` (the owner's own captures at
+1440-class widths, shipped with the skill).
 
 **Plates that ship with the skill** (no media archive required):
 

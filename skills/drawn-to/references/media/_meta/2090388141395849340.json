@@ -1,0 +1,19 @@
+{
+ "id": "2090388141395849340",
+ "url": "https://x.com/flohoeller/status/2090388141395849340",
+ "author": {
+  "screen_name": "flohoeller",
+  "name": "Flo",
+  "url": "https://x.com/flohoeller"
+ },
+ "created_at": "Thu Aug 20 10:39:05 +0000 2026",
+ "text": "Minimal hover interactions, built w/ Claude Code",
+ "lang": "en",
+ "media": [
+  {
+   "type": "video",
+   "width": 3840,
+   "height": 2160
+  }
+ ]
+}

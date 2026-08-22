@@ -93,4 +93,4 @@ keeping product truth in the data.
 7. Connect hero objects to the card with faint traces/spines so they sit IN
    the card, not pasted on it.
 
-Media: `references/media/local-feature-graphics/` in the taste repo (4 jpegs).
+Media: `references/media/local-feature-graphics/` (4 jpegs, shipped with the skill).
