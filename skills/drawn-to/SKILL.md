@@ -303,11 +303,35 @@ owner's measured taste, and it beats trained-default aesthetics every time.
 
 ## Visual evidence
 
-The source media for every reference - photos and extracted video frames -
-ships WITH this skill at `references/media/<full-slug>/`, one directory per
-reference, named to match its post file in `references/posts/`. Paths in this
-skill are relative to the skill folder, so the archive travels wherever the
-skill is installed and there is nothing to set up.
+The skill ships two trees of images. They answer different questions, and
+reaching for the wrong one wastes time.
+
+| | `assets/` | `references/media/` |
+|---|---|---|
+| Size | ~1.9 MB, 28 files | ~40 MB, 58 directories |
+| Addressed by | **role** - what the image teaches | **identity** - which reference |
+| Named | `iso-tile-lift.jpg`, `zone-three-zone.svg` | `basit_designs-2017899338953900190/` |
+| Open it when | you are about to build a KIND of thing and need to see the standard | a lock cites a slug and you want to check that reference |
+
+`assets/` has three parts. `plates/zone-*.svg` are own CC0 layout diagrams -
+geometry only, never style, stamped as such. `heroes/` is five first screens
+with the browser chrome cropped away. `features/` is sixteen plates chosen for
+RANGE across mode, device and cell size, two of them counter-examples. Rights
+and rules of use in the NOTICE beside each.
+
+`references/media/` is the archive: one directory per reference, named to match
+its post file in `references/posts/` and its row in `references/matrix.md`.
+
+**They overlap in one place, deliberately.** The five captures in
+`assets/heroes/` and the five in `references/media/local-production-heroes/` are
+the same screens: the archive keeps them whole, with the browser chrome, because
+that is what an archive is for; the plates are cropped to the viewport because
+that is what you want to look at while composing. If you are measuring, use the
+archive. If you are judging, use the plate.
+
+
+Paths in this skill are relative to the skill folder, so both trees travel
+wherever the skill is installed and there is nothing to set up.
 
 What is here and what is not: the extracted FRAMES and the still captures are
 included; the source videos they were extracted from are not (they are large
