@@ -1,0 +1,14 @@
+# The site is docs/. Everything below is repo material that must never be
+# uploaded to a CDN.
+
+# The reference media archive - 91 MB of frames the site never serves.
+skills/drawn-to/references/media/
+
+# The skill itself, its scripts, and the working notes.
+skills/
+scripts/
+.github/
+docs/plans/
+docs/design-locks/
+docs/launch/
+docs/MERGE-NOTES-*.md
