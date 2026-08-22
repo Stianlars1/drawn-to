@@ -34,6 +34,13 @@ Two agents, the same model, the same five-feature brief, the same empty folder. 
 npx skills add Stianlars1/drawn-to
 ```
 
+Or as a Claude Code plugin:
+
+```
+/plugin marketplace add Stianlars1/drawn-to
+/plugin install drawn-to@drawn-to
+```
+
 Works in Claude Code, Codex CLI, Cursor, GitHub Copilot, Gemini CLI and every host that reads `SKILL.md`.
 Manual: copy `skills/drawn-to/` into your project's skills directory (`.claude/skills/`, `.agents/skills/`, …).
 ChatGPT: paste `SKILL.md` + `references/style-families.md` as project instructions.

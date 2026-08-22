@@ -1,0 +1,51 @@
+{
+  "name": "drawn-to",
+  "owner": {
+    "name": "Stian Larsen",
+    "contact": "github.com/Stianlars1"
+  },
+  "metadata": {
+    "description": "A design-direction system for coding agents, built from 57 references reverse-engineered frame by frame"
+  },
+  "plugins": [
+    {
+      "name": "drawn-to",
+      "source": "./",
+      "description": "Give your coding agent a trained eye. A measured taste library - 57 references, 12 constants, 8 style families - plus a plain-language interview answered with weights instead of forced picks, and a lock file every visual decision has to serve. Ships its own visual evidence.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Stian Larsen"
+      },
+      "homepage": "https://drawn-to.vercel.app",
+      "repository": "https://github.com/Stianlars1/drawn-to",
+      "license": "MIT",
+      "category": "design",
+      "keywords": [
+        "design",
+        "design-system",
+        "ui",
+        "frontend",
+        "landing-page",
+        "hero",
+        "feature-cards",
+        "bento",
+        "illustration",
+        "motion",
+        "taste"
+      ],
+      "tags": [
+        "design",
+        "design-system",
+        "ui",
+        "frontend",
+        "landing-page",
+        "hero",
+        "feature-cards",
+        "bento",
+        "illustration",
+        "motion",
+        "taste"
+      ]
+    }
+  ]
+}
