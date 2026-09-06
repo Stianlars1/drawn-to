@@ -48,6 +48,24 @@ Ask for a design direction, invoke Drawn To explicitly, continue from an
 existing design lock, or request a review against that lock. The skill has
 separate routes for those tasks. It also has a library-maintenance route.
 
+To update an existing global skill installation:
+
+```sh
+npx skills update drawn-to --global --yes
+```
+
+For an existing Claude Code plugin installation:
+
+```sh
+claude plugin marketplace update drawn-to
+claude plugin update drawn-to@drawn-to
+```
+
+Start a new session after updating so the host loads the current instructions.
+The [GitHub releases](https://github.com/Stianlars1/drawn-to/releases) also provide
+a complete skill ZIP. See [release maintenance](docs/releasing.md) for the
+source, installation and publication checks.
+
 ## How it works
 
 For a new direction, discovery reads existing project facts and infrastructure.

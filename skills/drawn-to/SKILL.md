@@ -6,6 +6,8 @@ description: >-
   direction, "my taste", "min stil", visual alternatives, or reviewing UI against
   an existing direction. Also supports maintaining this reference library.
   A project's own approved design system and the user's explicit choices take precedence.
+metadata:
+  version: "1.1.0"
 ---
 
 # Drawn To
