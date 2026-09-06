@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-06T14:58:36.996Z",
+  "browser": "152.0.7977.82",
+  "checks": [
+    "All 45 routes render without horizontal overflow at 1440x900",
+    "Form keys stay local; action preview, catalog navigation and reload preserve state",
+    "Clipboard failure and success feedback reflect the actual outcome",
+    "All five GPU scenes stop and dispose; rapid navigation leaves no late canvas",
+    "Particle release changes the field; forced WebGL2 backend renders",
+    "Poster-only material and particle controls switch to decoded matching stills",
+    "Changing reduced motion while the scene is open stops rendering",
+    "Mobile Save-Data uses a usable poster without a renderer"
+  ],
+  "particleBackend": "webgpu",
+  "errors": []
+}

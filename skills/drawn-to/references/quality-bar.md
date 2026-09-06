@@ -53,6 +53,23 @@ scoped C1-C12 defaults live in `style-families.md`.
 - Persistent controls in a carousel or cycling presentation retain a stable
   position unless their movement conveys an explicit state change.
 
+## Reference craft calibration
+
+A clean layout and working controls are only part of the result. For a
+reference-led task, identify the qualities that made the selected work strong:
+spatial hierarchy, image quality, model detail, reflection structure, light,
+texture, typography and motion. Compare those qualities directly in the render.
+Matching the broad family, palette or aperture shape is not enough if the
+reference's distinctive depth and finish have disappeared.
+
+Distinguish **functional pass**, **coherent art direction** and **reference-level
+finish** in the review. If the result is merely competent while the reference is
+richly constructed, state the specific gap and iterate on it. Do not hide that
+gap behind compliance with the brief, and do not invent one when the work
+already holds up. Original composition is welcome; lower craft is not the price
+of originality. Compare a whole screen, actual-size detail and meaningful motion
+phases. See `three-dimensional-craft.md` for model/material/light diagnostics.
+
 ## 2. Budgets follow the kind of surface
 
 Set the budgets in the lock, based on product content and target viewports.

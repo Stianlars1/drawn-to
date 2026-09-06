@@ -25,6 +25,8 @@ decides which technology draws it and what that costs.
 
 ---
 
+For modeled objects and optical material, also read [three-dimensional-craft.md](three-dimensional-craft.md). Renderer choice does not replace visual craft.
+
 ## 1. The ladder - take the lowest tier that holds
 
 Use the lowest-complexity option that serves the locked material and the

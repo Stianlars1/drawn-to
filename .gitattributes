@@ -1,0 +1,2 @@
+# Preserve upstream vendor formatting and identify bundled dependencies.
+site/vendor/three/** -whitespace linguist-vendored

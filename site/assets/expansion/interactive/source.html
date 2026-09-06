@@ -1,0 +1,23 @@
+<!doctype html><html><head><style>*{box-sizing:border-box}body{margin:0;background:transparent}canvas{display:block}</style><script type="importmap">{"imports":{"three":"../../../vendor/three/three.module.min.js"}}</script></head><body><script type="module">
+import * as THREE from '../../../vendor/three/three.module.min.js';
+import {RoomEnvironment} from '../../../vendor/three/addons/environments/RoomEnvironment.js';
+window.THREE=THREE;
+const renderer=new THREE.WebGLRenderer({alpha:true,antialias:true,preserveDrawingBuffer:true});
+renderer.setSize(900,700);renderer.setPixelRatio(1);renderer.setClearColor(0,0);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.0;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.VSMShadowMap;
+document.body.appendChild(renderer.domElement);
+const scene=new THREE.Scene();
+const env=new THREE.PMREMGenerator(renderer);scene.environment=env.fromScene(new RoomEnvironment(),.04).texture;
+const camera=new THREE.OrthographicCamera(-3.7,3.7,2.87,-2.87,.1,100);camera.position.set(6,6,9);camera.lookAt(0,.15,0);
+const area=new THREE.DirectionalLight(0xffffff,2.6);area.position.set(-3,7,4);area.castShadow=true;area.shadow.mapSize.set(1024,1024);area.shadow.camera.left=-6;area.shadow.camera.right=6;area.shadow.camera.top=6;area.shadow.camera.bottom=-6;area.shadow.normalBias=.025;area.shadow.bias=-.0003;area.shadow.radius=13;area.shadow.blurSamples=16;scene.add(area);
+const fill=new THREE.DirectionalLight(0xcde9df,1);fill.position.set(6,2,-4);scene.add(fill);scene.add(new THREE.AmbientLight(0xffffff,.2));
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(200,200),new THREE.ShadowMaterial({opacity:.11}));floor.rotation.x=-Math.PI/2;floor.position.y=-.63;floor.receiveShadow=true;scene.add(floor);
+const group=new THREE.Group();scene.add(group);
+function roundedRect(x,y,w,h,r){const s=new THREE.Shape();s.moveTo(x+r,y);s.lineTo(x+w-r,y);s.quadraticCurveTo(x+w,y,x+w,y+r);s.lineTo(x+w,y+h-r);s.quadraticCurveTo(x+w,y+h,x+w-r,y+h);s.lineTo(x+r,y+h);s.quadraticCurveTo(x,y+h,x,y+h-r);s.lineTo(x,y+r);s.quadraticCurveTo(x,y,x+r,y);return s;}
+function plate(material,y,rotation){const shape=roundedRect(-1.52,-1.14,3.04,2.28,.32);const hole=roundedRect(-.85,-.52,1.7,1.04,.2);shape.holes.push(new THREE.Path(hole.getPoints()));const geo=new THREE.ExtrudeGeometry(shape,{steps:1,depth:.14,bevelEnabled:true,bevelThickness:.065,bevelSize:.07,bevelSegments:8,curveSegments:32});geo.computeVertexNormals();const mesh=new THREE.Mesh(geo,material);mesh.rotation.x=-Math.PI/2;mesh.rotation.z=rotation;mesh.position.y=y;mesh.castShadow=true;mesh.receiveShadow=true;group.add(mesh);return mesh;}
+const jade=new THREE.MeshPhysicalMaterial({color:0x124b35,metalness:.2,roughness:.22,clearcoat:1,clearcoatRoughness:.14,reflectivity:.7});
+const jadeLight=new THREE.MeshPhysicalMaterial({color:0x246b4c,metalness:.09,roughness:.28,clearcoat:1,clearcoatRoughness:.1,reflectivity:.6});
+plate(jade,-.45,.08);plate(jadeLight,.13,-.13);group.rotation.y=-.48;group.position.y=.1;
+const brushCanvas=document.createElement('canvas');brushCanvas.width=1024;brushCanvas.height=256;const brushContext=brushCanvas.getContext('2d');let seed=83;const random=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};for(let y=0;y<256;y++){const value=Math.round(175+random()*65);brushContext.fillStyle=`rgb(${value},${value},${value})`;brushContext.fillRect(0,y,1024,1);for(let j=0;j<12;j++){const light=Math.round(180+random()*60);brushContext.fillStyle=`rgba(${light},${light},${light},.25)`;brushContext.fillRect(random()*1024,y,40+random()*240,1);}}const brush=new THREE.CanvasTexture(brushCanvas);brush.wrapS=brush.wrapT=THREE.RepeatWrapping;
+window.setMode=(mode)=>{if(mode==='metal'){group.children.forEach((mesh,i)=>{mesh.material=new THREE.MeshPhysicalMaterial({color:i?0x9ba297:0x17201a,metalness:.98,roughness:i?.3:.25,roughnessMap:brush,bumpMap:brush,bumpScale:.005,anisotropy:.65,clearcoat:.22});});renderer.toneMappingExposure=1.05;}renderer.render(scene,camera);};
+renderer.render(scene,camera);window.ready=true;
+</script></body></html>

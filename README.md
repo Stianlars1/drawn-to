@@ -17,6 +17,13 @@ defaults organize the evidence; they do not force every project into one look.
 See the [current reference index](skills/drawn-to/references/matrix.md) and the
 [September expansion](skills/drawn-to/references/september-expansion.md).
 
+The [local showcase](docs/showcase.md) now contains 45 screens, including 15 new
+reference-led compositions, original character/landscape artwork, spatial image
+flow, live Three.js materials, an original GLB and a native WebGPU particle study.
+Three independent output trials informed a stricter visual review and retest.
+Working controls and a coherent direction are assessed separately from the
+references' material, lighting and motion finish.
+
 ## Install
 
 ```sh
@@ -90,6 +97,7 @@ skills/drawn-to/
     isometric-and-light.md           projection, material and structured light
     gradient-fields.md               field construction and measurement limits
     render-tiers.md                  renderer choice, poster and runtime gates
+    three-dimensional-craft.md       modeled materials, light, GPU and output lessons
     motion-grammar.md                temporal structure and interaction
     animation-craft.md               implementation mechanics
     animation-recipes.md             component recipes to adapt and verify
@@ -106,6 +114,9 @@ scripts/
   fetch-posts.py · fetch-posts.sh     original downloads to the ignored local archive
   library.py · rebuild-index.py      canonical index generation
   validate-library.py                index, source, citation and asset checks
+  build-showcase-data.py             current showcase library count
+  export-showcase-model.mjs          original GLB from shared geometry
+  verify-showcase.mjs                browser integration and renderer lifecycle checks
 ```
 
 ## Evidence and limits
