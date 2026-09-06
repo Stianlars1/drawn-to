@@ -16,7 +16,17 @@ language, (B) light with geometry instead of blob gradients. Media:
 
 ## Path A - Isometric objects
 
-### A1. Three registers
+Choose the register before applying its construction rules. The flat blueprint,
+paper-white, soft-shaded and dark technical examples deliberately disagree on
+faces, stroke weight, shadows and motion. These are recipes, not universal bans
+on rendering, smooth materials or physical dark objects casting shadows.
+
+**Measurement scope.** Values below are inherited from the cited post analyses,
+not newly verified source tokens. Preserve the capture scale and uncertainty
+given there. Legacy `L`/luminance readings and grain sd describe decoded samples;
+use `measuring.md` for quantities and source limits, especially with JPEG frames.
+
+### A1. Register examples
 
 **Blueprint iso (dark, monochrome)** - the Services bento, marcelkargul-2090148:
 - Objects are 1px line-art on a visible isometric graph-paper grid (~24px
@@ -47,8 +57,9 @@ language, (B) light with geometry instead of blob gradients. Media:
   section feel like a product" comment in the post.
 
 **Paper-white iso (light, one stroke weight, zero chroma)** - `0xhammermann-2090`,
-a three-card feature section where every card carries its own iso scene. All
-values below are measured off the 301-frame source, not estimated:
+a three-card feature section where every card carries its own iso scene.
+The source analysis reports the following measurements from a 301-frame capture;
+its scale assumptions and reconstruction inferences still apply:
 
 - Ground: pure white card on a white page; separation is a 1 CSS px #D2D2D2
   card border and nothing else, square corners, `overflow: hidden`. The stage
@@ -56,10 +67,9 @@ values below are measured off the 301-frame source, not estimated:
   subject, clipped by the card.
 - Objects are drawn like architectural plans, not renders: FLAT faces, no
   gradients anywhere on an object, in a four-step ladder - `#FFFFFF` ·
-  `#E8E8E8` · `#CECECE` · `#0B0B0B` - and exactly ONE face per card goes
-  black, carrying a white glyph. That black face is the focal and it is
-  always the surface the feature acts through (the machine's aperture, the
-  parcel's frank). Two blacks means two claims.
+  `#E8E8E8` · `#CECECE` · `#0B0B0B` - with black assigned to the focal ROLE, such as an aperture or payload.
+  This role can occupy several objects: the two-actor card has one black face
+  per body. Do not confuse one focal role with a literal one-face-per-card cap.
 - **Refuse the third face value.** The conventional contract (top lightest,
   left mid, right darkest) is what turns a drawing into a render. This
   register tints ONE plane and lets the rest go pure white: card 1 tints only
@@ -90,22 +100,23 @@ values below are measured off the 301-frame source, not estimated:
   re-weight the drawing; `stroke-linejoin: miter`, `stroke-miterlimit: 8`,
   butt caps. Weights stay CONSTANT for every object regardless of its size -
   constancy is what makes it a print drawing rather than a perspective render.
-- Contact: card 2 uses a hard, flat isometric polygon at `#E8E8E8` with
+- Contact in this register: card 2 uses a hard, flat isometric polygon at `#E8E8E8` with
   literally ZERO blur (its edge profile is a 2-device-px antialias ramp and
   nothing more), every edge on +/-30 deg or vertical - the shadow belongs to
   the same drawing system as the object, which a soft radial blob never does.
   It is rigidly parented: offset constant to +/-0.35 px and area constant to
-  0.4% across the whole loop; it never scales, softens or fades. Card 3 uses
+  0.4% across the whole loop; the recorded translation keeps that relationship; a grounded-bob treatment
+  uses a different shadow relation (A2). Card 3 uses
   ONE soft plate (#F6F6F6 to #F3F3F3, 8-10 px edge) for the whole
   composition rather than one per module. Card 1 has no shadow at all - a
   scene of architecture standing on its own plan does not need one.
-  Whichever you choose: put every shadow in one group with a single group
-  opacity and `isolation: isolate` (or union the paths before filling) so two
-  overlapping shadows never darken each other. Compounding shadows are the
+  For non-compounding flat shadows, draw opaque same-color shapes into one
+  group and apply opacity to the group once, or union their paths before
+  filling. `isolation: isolate` alone does not prevent alpha accumulation
+  between translucent children. Compounding shadows are the
   fastest way to turn a print drawing into a render.
-- Grain: none. This register is a print drawing; C9's grain rule applies to
-  gradients, and the only gradient allowed here is the light falling into an
-  opened interior (A2c).
+- Finish: clean flat faces in this register. Its opened interior uses a tonal
+  ramp (A2c); do not add grain merely because that ramp is a gradient.
 
 ### A1a. The ground grid and the shared world origin
 
@@ -166,28 +177,121 @@ unrelated drawings. Lock these once for the whole set:
   rotateZ(45deg)` on a stage (2:1-ish), children built as flat planes with
   `translateZ`. Cheaper for animated stacks; SVG for line textures.
 - Lighting order is a contract: top lightest · left mid · right darkest
-  (one light from upper-left), consistent for every object on the page. In the
+  (one light from upper-left), consistent within that material system. In the
   paper-white register the contract is deliberately REDUCED to two values (or
-  one tint) - see A1a's "refuse the third face value"; whichever you pick,
-  every object on the page obeys the same one.
+  one tint) - see A1's "refuse the third face value"; whichever you pick,
+  every object in that set follows its chosen material contract.
 - Textures: hatch = `<pattern>` of 1px lines at the face's angle, 4-6px
   pitch, opacity 6-8%; stipple = `feTurbulence baseFrequency .9 + feColorMatrix`
   masked to the face, 3-6%; dashed guides `stroke-dasharray 3 4`; handles =
   4-6px squares with 1px stroke.
 - Motion: translate along an iso axis = (dx, dx·0.5 for 2:1, dx·0.577 for
   30°); assembly = separable planes fading/sliding in (graphic-language R8);
-  conveyor = linear `translate` loop with period = one item pitch; never ease
-  an infinite iso loop (C6).
-- **Legal transforms on an iso solid**: translate along an iso axis, translate
-  on screen-Y (altitude), opacity, stroke-width, gradient stops. Nothing else.
-  Never scale (a 1.05 hover on an iso object is immediately wrong - it breaks
-  the projection), never rotate or skew a solid in the picture plane (it
-  breaks the one-camera contract; a genuinely re-posed object is re-drawn in
-  3D, not rolled). A bob is translateY only, and the contact shadow STAYS
-  WHERE IT IS - a shadow that bobs with the object reads as a floating
-  sticker. Animate the `<g transform>` via WAAPI or CSS with
-  `transform-box: fill-box` and an explicit `transform-origin: 0 0`. Never
-  animate the grid: the world does not slide under the camera.
+  a steady conveyor can use a linear `translate` loop with period = one item
+  pitch. Periodic semantic scenes may ease, pause or share a clock; preserve
+  their intended continuity instead of forcing every repeated motion linear.
+- **For a fixed-scale drawing on a fixed grid**, move solids along projected
+  world axes or screen-Y for altitude. Uniform scaling preserves the angles of
+  the projection but changes the object-to-grid scale; use it only when that
+  size change is intended. A rigid world rotation needs re-projected geometry,
+  not an arbitrary 2D skew. Material state may change opacity/stroke/fill when
+  the selected register permits it. For an object bobbing above a fixed ground,
+  leave the contact shadow on the ground and change it only according to the
+  intended light; a whole assembly translating across the ground may carry its
+  shadow with it. Keep the grid fixed for these technical-drawing recipes.
+  To animate SVG, preserve the projection on an outer group and animate an
+  inner group, with explicit `transform-box` and `transform-origin`, so a CSS
+  transform does not replace the projection transform.
+
+### A2a. The generator - plan-space construction for a suitable subject
+
+A2 gives the projection choices; this procedure demonstrates a plate-based
+blueprint or light-paper object. Use the separate paper-white and dark technical
+contracts for those registers. A subject needs a meaningful physical form;
+landscapes and brand illustrations do not have to become machinery.
+
+**1. Plan space, then project.** Author every face as a flat rectangle in plan
+coordinates and project once. 2:1 dimetric:
+
+```js
+const project = (x, y) => [x - y, (x + y) / 2]; // 2:1 plan -> screen
+const plateCorners = (width, depth) =>
+  [[0, 0], [width, 0], [width, depth], [0, depth]]
+    .map(([x, y]) => project(x, y));
+const place = ([x, y], originX, originY) => [originX + x, originY + y];
+```
+
+A plate of footprint W x D uses `plateCorners(W, D)`.
+Anything drawn ON that plate (a bar, a window, a chip) is a plan rect run
+through the same `project` - so it lands in the plate's plane automatically and
+you never hand-skew a polygon. Vertical extrusion is the same face offset by
+-h on screen y; a translation along an iso axis is `(dx, dx*0.5)`.
+
+**2. Choose the arrangement.** Four cover almost everything:
+
+| Arrangement | Build | Reads as |
+|---|---|---|
+| **Exploded stack** | N copies of one plate, screen-y offset by a constant rise, dashed vertical guides through the shared corners | layers, versions, revisions, a file's sections |
+| **Board** | one large plate + smaller plates/prisms standing on it, dashed leader lines between them | a system, a dashboard, a machine |
+| **Conveyor** | plates repeating along one iso axis with a constant pitch, linear translate loop | a pipeline, a queue, a flow |
+| **Fan** | 3-5 plates re-posed in plan space and projected, sharing an anchor | options, variants, a catalog |
+
+**3. Map the subject to the object** - what to draw for a given feature:
+
+| Subject | Object | Detail that sells it |
+|---|---|---|
+| An app / a screen flow | exploded stack of screen plates | each plate carries its own wireframe bars (title bar, body bars, one control) |
+| A UI surface / component | one plate + floating fragments above it on short posts | the fragment is the real control (a chip, a row, a toggle), not a rectangle |
+| A data flow / pipeline | conveyor of plates along one axis, nodes as small prisms | dotted connector paths that converge into one core |
+| Storage / a database | stacked slabs of unequal height | a cut-away wedge with stipple interior on one slab |
+| A file / a document | exploded stack, one plate per section | mono indices at the plate's right corner, a rise dimension at the left |
+| A network / integrations | board with tiles on dashed bezier orbits | one tile lifted off the plane with its shadow on the ground grid |
+| A build / compile step | two plates plus an extruded arrow between them | the arrow drawn as a real 3-face extrusion, never a 2D glyph |
+
+**4. Material, per mode.** Re-derive, never invert (dual-theme rule):
+
+| Layer | Dark blueprint | Light paper |
+|---|---|---|
+| Ground | #0A0A0C-#232323 | #EDEDED-#F4F2EC |
+| Ground grid | 1 px dashed white at 4-6 %, `stroke-dasharray 1 7` | 1 px dashed #D8D5CE, same pitch |
+| Guides (tier 1) | #3F3F43, `dasharray 3 4` | #CFCCC4, same |
+| Outlines (tier 2) | #6E6E72-#8E8E93 | #A9A69E-#8C8A83 |
+| Focal (tier 3) | ONE white edge, 1.4 px | ONE near-black edge #2A2A28, 1.4 px |
+| Faces | rgba(255,255,255,.02-.05) | #FFFFFF -> #E9E7E1, 1-2 % per face |
+| Depth | opacity dimming 25-40 % | opacity dimming + a soft contact shadow under the lowest plate only |
+| Handles | 6 px square, bg-filled, 1 px focal stroke | same, filled with the paper colour |
+| Labels | mono 10 px, #6E6E72 (focal row lighter) | mono 10 px, #8C8A83 (focal row darker) |
+
+The table is one proposed material mapping. For this lighting choice, keep
+its face order consistent across the set. The paper-white register deliberately
+refuses the three-face ladder; other physical materials can use other lighting,
+including contact shadows on dark grounds.
+
+**5. The annotation kit** (this is what makes it read measured, not decorative):
+- mono index at one corner of each plate ("01".."05"), tabular, focal row
+  one step brighter;
+- ONE dimension chain with real ticks - two 12 px cross-ticks joined by a
+  vertical, labelled with the actual value ("52");
+- dashed guides that OVERSHOOT the object by 18-24 px on both ends;
+- selection handles on the focal plate only - four is the whole budget;
+- never more than one dimension and one index system per object.
+
+**6. Worked example (shipped 2026-08-21, direction G).** Subject: the lock
+file. Arrangement: exploded stack. `W 300 · D 210 · rise 52 · cx 300 · cy 224`,
+viewBox 660 x 500. Five plates; each carries three plan-space bars at
+`(30,34,176,16)`, `(30,64,116,9)`, `(30,96,92,26)` - headline, sub line,
+command - so every plate is visibly a page. Focal = the top plate: face at
+5 % white, near edge in white 1.4 px, four handles, index "01" brighter.
+Guides run through all four shared corners, overshooting 22 px below and 18 px
+above. One rise dimension at the left, value 52. Ground: dashed iso grid at
+5 % white, `dasharray 1 7`, 60 px pitch, extended past the frame on both axes.
+Owner verdict: "her oser det kvalitet og detaljer".
+
+**7. Failure modes.** A cube with no plan-space content is a stock icon. Two
+dimension systems fight. Handles on every plate read as noise. Faces with
+strong gradients on dark break the flat-tone rule (C3/C4). If the subject has
+no physical object to draw, do not invent machinery - use a UI fragment
+instead (`illustration-ideation.md`).
 
 ### A2b. Module architecture - building scenes instead of objects
 
@@ -205,10 +309,12 @@ WORLD per card, from one unit cell:
   doubled outlines read as clip art and the silhouette dies.
 - Corners: an L-turn in a wall is one mitre on the top face plus one vertical
   seam; do not overlap two runs (the double contour shows).
-- Sorting is painter's algorithm on (x + y + z) of each solid's NEAREST-to-
-  camera corner, not its centroid - centroid sorting flips on long runs. Draw
-  far to near; within one solid: top fill, left fill, right fill, then seams,
-  then the silhouette. Occlusion comes from opaque fills plus draw order - a
+- Draw far to near using the chosen camera/world convention. A scalar
+  corner-depth key can work for simple separated modules, but neither a
+  centroid nor `(x + y + z)` universally sorts long or intersecting solids.
+  Verify overlapping projected bounds; split geometry or use explicit depth
+  bands when one total object order cannot resolve occlusion. Within a solid,
+  fill visible faces first, then draw seams and silhouette once. Occlusion comes from opaque fills plus draw order - a
   near solid's white fill must fully cover the far solid's contour. Never fake
   depth by fading, blurring or shrinking a solid.
 - Touching vs overlapping: two solids that TOUCH merge into one silhouette
@@ -217,8 +323,8 @@ WORLD per card, from one unit cell:
   makes a cluster read as a pile of stickers.
 - A MOVING payload that must pass behind static geometry gets depth bands: cut
   the scene into z-bands at the wall lines and put the payload's group between
-  them, or clip the payload against the near wall's silhouette path. Sorting
-  alone cannot do it, because the payload's sort key changes mid-animation.
+  them, or clip the payload against the near wall's silhouette path. Recompute ordering as it moves, or use these depth bands; a fixed DOM
+  order cannot follow a changing depth relationship.
 - Heights carry meaning: vary tower heights in a small set (1, 1.5, 2, 3
   units) so a cluster reads as a city rather than a chart; keep the set small
   or it reads as noise.
@@ -381,86 +487,84 @@ constant velocity; card 2 palindrome out 1.62 s / hold 0.65 s / back 1.61 s
 re-pinning within 0.05 px; card 3 open 1.5 s / hold 1.27 s / close 1.47 s /
 closed hold 0.95 s.
 
-### A2b. The generator - build ANY subject as an iso object
+### A2h. Lift, gap and annotation - the dark technical hover contract
 
-A2 gives the values; this gives the procedure. Everything below is
-mode-agnostic: pick the material row for dark or light, then build.
+Measured off a shipped isometric tile grid where one tile lifts on hover
+(Tier A; plate `assets/features/iso-tile-lift.jpg`). The source analysis reports an independent remeasurement. Keep the stated
+reference-to-CSS scale when using its geometry; the pixel samples do not by
+themselves recover source grain, fills or authored CSS.
 
-**1. Plan space, then project.** Author every face as a flat rectangle in plan
-coordinates and project once. 2:1 dimetric:
+**Draw-twice extrusion.** Draw the SAME transformed rounded path twice: the lower
+copy filled with the side colour, the upper copy translated up by the thickness.
+The exposed sliver IS the side ribbon, and it arrives with a geometrically exact
+rounded corner where the two front faces meet. This is why resting side faces can
+be reconstructed as flat fills (sampled #08060C, decoded sd 0.000), and why
+a hover ribbon can carry a texture with zero extra geometry: swap the lower
+copy's fill from a solid to a clipped `<image>`.
 
-    const px = (x, y) => [x - y, (x + y) / 2];        // plan -> screen
-    const at = (p, dy) => `${cx + p[0]},${dy + p[1]}`; // place at a stack level
+**Radius before projection, never after.** k = **0.214 of the source square side**
+(0.207-0.221 by two independent routes). The projected corner is an ELLIPSE arc
+with semi-axes 1.2247·k·a horizontal and 0.7071·k·a vertical - ratio sqrt(3):1,
+major axis horizontal (32.5 x 18.7 reference px at the measured k·a = 26.5).
+Rounding a hand-drawn rhombus with a uniform circular radius is the most reliable
+tell of a faked isometric.
 
-A plate of footprint W x D has corners `[[0,0],[W,0],[W,D],[0,D]].map(px)`.
-Anything drawn ON that plate (a bar, a window, a chip) is a plan rect run
-through the same `px` - so it lands in the plate's plane automatically and
-you never hand-skew a polygon. Vertical extrusion is the same face offset by
--h on screen y; a translation along an iso axis is `(dx, dx*0.5)`.
+**The radius convention trap.** "Radius = 20 % of the side" is convention-free;
+"radius = 13 CSS px" is not. Built with the 2D
+`matrix(0.86603 0.5 -0.86603 0.5 cx cy)`, the source side is the projected edge
+length (124.0 ref = 51.7 CSS) and the radius is 26.5 ref = 11.0 CSS. Built with
+`rotateX(54.7356deg) rotateZ(45deg)`, the source side is 152.8 ref. **State both
+conventions or the implementer ships a corner 20 % too round.**
+(`rotateX(60deg)` gives 26.57 degrees and is simply wrong for true isometric.)
 
-**2. Choose the arrangement.** Four cover almost everything:
+**Lift contract.** Translate straight up in screen space - measured horizontal
+drift 0-1 px. Distance 48 ref px = 20 CSS = **0.39 of the rhombus height** =
+2.3x the tile thickness. Express interaction distances as ratios of the object so
+they survive responsive scaling.
 
-| Arrangement | Build | Reads as |
-|---|---|---|
-| **Exploded stack** | N copies of one plate, screen-y offset by a constant rise, dashed vertical guides through the shared corners | layers, versions, revisions, a file's sections |
-| **Board** | one large plate + smaller plates/prisms standing on it, dashed leader lines between them | a system, a dashboard, a machine |
-| **Conveyor** | plates repeating along one iso axis with a constant pitch, linear translate loop | a pipeline, a queue, a flow |
-| **Fan** | 3-5 plates rotated slightly around a shared anchor, overlapping | options, variants, a catalog |
+**This register annotates the delta instead of adding a shadow.** The sampled
+cluster shows no detectable shadow in the reported patch: the ground inside the lifted tile's footprint reads
+exactly (22,23,28) across 2 940 px, min = max. Instead there are three 1 px dashed
+vertical extension lines, period 13.0 ref px at a **1:1 duty cycle** (6.5 on /
+6.5 off, i.e. `stroke-dasharray: 2.7 2.7` at a 5.4 CSS period), colour #504E58 ~
+rgba(255,255,255,0.25), each masked
+`linear-gradient(to bottom, opaque, transparent)` over its own length. A lift with
+a soft drop shadow underneath is the default instinct, and it flips the register
+from technical drawing to floating UI card in one step.
 
-**3. Map the subject to the object** - what to draw for a given feature:
+**Carry the principle, not the reference's own sloppiness.** In the measured frame
+those three lines are NOT derived from a footprint rhombus - their x spacings are
+97.04 and 87.43 where a rhombus requires equal spacings, and their zero-crossings
+differ by 11.6 px where a rhombus requires 0. Derive yours from the real footprint
+vertices. (The same frame also renders the lifted tile 1.8 % larger than its
+resting siblings, 190.0 vs 186.83 ref silhouette width - a pure translate should
+not change silhouette width at all.)
 
-| Subject | Object | Detail that sells it |
-|---|---|---|
-| An app / a screen flow | exploded stack of screen plates | each plate carries its own wireframe bars (title bar, body bars, one control) |
-| A UI surface / component | one plate + floating fragments above it on short posts | the fragment is the real control (a chip, a row, a toggle), not a rectangle |
-| A data flow / pipeline | conveyor of plates along one axis, nodes as small prisms | dotted connector paths that converge into one core |
-| Storage / a database | stacked slabs of unequal height | a cut-away wedge with stipple interior on one slab |
-| A file / a document | exploded stack, one plate per section | mono indices at the plate's right corner, a rise dimension at the left |
-| A network / integrations | board with tiles on dashed bezier orbits | one tile lifted off the plane with its shadow on the ground grid |
-| A build / compile step | two plates plus an extruded arrow between them | the arrow drawn as a real 3-face extrusion, never a 2D glyph |
+**Tiles do not touch.** Lattice pitch 128-130 against an edge length of 124.0
+leaves a ~5.5 ref px perpendicular gap (2.3 CSS), verified by occlusion: the
+exposed side ribbon between neighbours measures 6.0 px where the full thickness is
+21.16.
 
-**4. Material, per mode.** Re-derive, never invert (dual-theme rule):
+**Subtle channel differences.** Recorded ground rgb(22,23,28) has G > R;
+face rgb(24,22,30) has R > G. Both have low RGB-range chroma (6 and 8), so these
+samples do not establish stable hue or prove that hue alone makes them legible.
+The side-face sample is darker. Decoded texture sd was 2.2 on top faces and
+0.000 on the sampled page; this suggests a textured-object reconstruction, not
+proof that source grain was absent from the page. Verify separation at delivered size.
 
-| Layer | Dark blueprint | Light paper |
-|---|---|---|
-| Ground | #0A0A0C-#232323 | #EDEDED-#F4F2EC |
-| Ground grid | 1 px dashed white at 4-6 %, `stroke-dasharray 1 7` | 1 px dashed #D8D5CE, same pitch |
-| Guides (tier 1) | #3F3F43, `dasharray 3 4` | #CFCCC4, same |
-| Outlines (tier 2) | #6E6E72-#8E8E93 | #A9A69E-#8C8A83 |
-| Focal (tier 3) | ONE white edge, 1.4 px | ONE near-black edge #2A2A28, 1.4 px |
-| Faces | rgba(255,255,255,.02-.05) | #FFFFFF -> #E9E7E1, 1-2 % per face |
-| Depth | opacity dimming 25-40 % | opacity dimming + a soft contact shadow under the lowest plate only |
-| Handles | 6 px square, bg-filled, 1 px focal stroke | same, filled with the paper colour |
-| Labels | mono 10 px, #6E6E72 (focal row lighter) | mono 10 px, #8C8A83 (focal row darker) |
+### Register comparison - three detailed examples
 
-Lighting order never changes: top lightest, left mid, right darkest, one
-light from upper-left, for every object on the page.
+They disagree on purpose. Pick one per set and hold it.
 
-**5. The annotation kit** (this is what makes it read measured, not decorative):
-- mono index at one corner of each plate ("01".."05"), tabular, focal row
-  one step brighter;
-- ONE dimension chain with real ticks - two 12 px cross-ticks joined by a
-  vertical, labelled with the actual value ("52");
-- dashed guides that OVERSHOOT the object by 18-24 px on both ends;
-- selection handles on the focal plate only - four is the whole budget;
-- never more than one dimension and one index system per object.
+| | paper-white heavy-contour | soft-shaded periwinkle | matte dark technical |
+|---|---|---|---|
+| Faces | flat, three-value ladder, third value refused per object | horizontal white -> #B1CDFF ramp with grain over it | flat, per-object grain sd 2.2 |
+| Depth | occlusion only | occlusion + 1-3 % blurred silhouette shadows | occlusion only, zero shadows |
+| Strokes | ONE weight per card, colour assigns role | two weights, 0.7 / 1.4 CSS at 2:1 | rim highlight only, +7 per channel over ~3 AA rows |
+| Shadows | flat, non-compounding, zero blur | soft, offset down-right, hugging the silhouette | none at all |
+| Separation | face-value contrast | tonal contrast | subtle RGB differences plus rim/occlusion; verify at delivered size |
+| Source | 0xhammermann-2090 | chatsheet | vite |
 
-**6. Worked example (shipped 2026-08-21, direction G).** Subject: the lock
-file. Arrangement: exploded stack. `W 300 · D 210 · rise 52 · cx 300 · cy 224`,
-viewBox 660 x 500. Five plates; each carries three plan-space bars at
-`(30,34,176,16)`, `(30,64,116,9)`, `(30,96,92,26)` - headline, sub line,
-command - so every plate is visibly a page. Focal = the top plate: face at
-5 % white, near edge in white 1.4 px, four handles, index "01" brighter.
-Guides run through all four shared corners, overshooting 22 px below and 18 px
-above. One rise dimension at the left, value 52. Ground: dashed iso grid at
-5 % white, `dasharray 1 7`, 60 px pitch, extended past the frame on both axes.
-Owner verdict: "her oser det kvalitet og detaljer".
-
-**7. Failure modes.** A cube with no plan-space content is a stock icon. Two
-dimension systems fight. Handles on every plate read as noise. Faces with
-strong gradients on dark break the flat-tone rule (C3/C4). If the subject has
-no physical object to draw, do not invent machinery - use a UI fragment
-instead (`illustration-ideation.md`).
 
 ### A3. How these were made - and the production route
 
@@ -471,10 +575,11 @@ After Effects), exported as SVG and, per his caption, "ready for animation"
 - Static hero/CTA/bento art: author in Figma (or generate SVG directly) →
   inline SVG with the gray tiers as CSS variables so it re-themes.
 - Animated: build in code with the A2 vocabulary (SVG groups per plane,
-  CSS/WAAPI on transforms), or Rive for rich scenes; never ship video for
-  line-art.
-- Never raster: iso line-art must stay crisp at any DPR (`vector-effect:
-  non-scaling-stroke`).
+  CSS/WAAPI on transforms), or Rive for rich scenes; prefer vector output when crisp responsive line-work is the priority;
+  an authored video may be appropriate when the approved material needs it.
+- For responsive line-art, SVG preserves geometry;
+  `vector-effect: non-scaling-stroke` holds a chosen CSS stroke width. A raster
+  treatment is valid when its delivered resolution suits the chosen material.
 
 ### A4. Where it fits (lock guidance)
 
@@ -490,9 +595,9 @@ After Effects), exported as SVG and, per his caption, "ready for animation"
 
 ## Path B - Structured light (why these gradients look expensive)
 
-A radial blob gradient looks cheap for four reasons: no shape, no direction,
-saturation everywhere, no grain. Every "expensive" example here gives light
-GEOMETRY:
+These technical-light references give the field geometry that relates to an
+object. Use their shaped falloff when that is the selected direction. A soft,
+symmetric or smooth field can serve another material without these devices:
 
 1. **Shaped falloff** - the gradient follows a form: a curved horizon band
    (Metricly: lavender→blue with a lighter arc rim; LeadBurst: navy→blue
@@ -511,13 +616,15 @@ GEOMETRY:
    prism + a tight radial base + the dot field lit by proximity; hero = teal
    radar rings around cyan hex prisms, red threat dots with 2-3 tight
    rings, 1px connectors with rounded corners to mono label chips.
-4. **Chroma rationing** - one hue family + white/black; a second hue only
-   semantic (red = threat) or as thin spectrum strokes (ribbons, gradient
-   text) at <3% surface area. Light pages keep 60-80% white.
-5. **Grain + banding control** - 2-6% noise over every field (C9); pastels
-   at low chroma; no hard stops except deliberate slabs.
-6. **One light source** - tile shadows tint toward it, glows sit under
-   objects, rays point away from it; everything agrees on one position.
+4. **Chroma roles** - the listed examples often use one light hue plus
+   neutrals, sometimes semantic red or thin spectrum ribbons. Use the palette
+   allowed by the approved material rather than a universal area cap.
+5. **Finish + banding control** - grain, dither or smooth falloff according
+   to the material. Report the actual parameter units and inspect the final
+   output; measured pixel sigma is not a noise-opacity setting.
+6. **Coherent lighting** - shadows, glows and rays should agree with the
+   chosen source positions. A single source is a useful simple recipe; multiple
+   sources and symmetric lighting can also be deliberate.
 7. **Objects sit IN the light** - glass tiles with tinted shadows, hex
    prisms with a lit top face, an envelope with ribbons passing through; the
    gradient is an environment, not wallpaper.
@@ -539,10 +646,11 @@ GEOMETRY:
   silhouette, brightness multiplied by a radial mask from the source.
 - Ribbons: SVG paths 2-3px with gradient strokes + a blurred duplicate
   (glow) at 30%; 3-5 ribbons in spectrum hues through one object.
-- Tinted shadows for glass tiles: `0 12px 32px -8px rgba(hue, .18)`; top
+- Tinted shadows for glass tiles: `0 12px 32px -8px hsl(var(--light-h) 50% 30% / .18)`; top
   face `linear-gradient(180deg, #fff, #f0f3ff)`; 1px border white/60.
-- Always: grain layer (feTurbulence) over the field, and check the field
-  on a real display - banding shows in 8-bit exports.
+- If grain is selected, use a static texture or suitable filter. In every
+  finish, check the field at delivered size after final encoding, including
+  whether banding is visible; do not add grain solely because a gradient exists.
 
 ### B2. Where it fits
 
@@ -575,85 +683,6 @@ glass tiles). In AX10 "structured light" is now a named asset option.
 - **marcelkargul-1952697 - Chatsheet hero (video)**: soft-shaded iso
   conveyor, A1 second register; motion: linear conveyor along the iso
   axis, tiles bob, dotted paths converge; serif H1.
-
----
-
-## A2h. Lift, gap and annotation - the hover contract
-
-Measured off a shipped isometric tile grid where one tile lifts on hover
-(Tier A; plate `assets/features/iso-tile-lift.jpg`). Every value here was
-re-measured by an adversarial pass, and several of the first-pass numbers did
-not survive - see the end of this section.
-
-**Draw-twice extrusion.** Draw the SAME transformed rounded path twice: the lower
-copy filled with the side colour, the upper copy translated up by the thickness.
-The exposed sliver IS the side ribbon, and it arrives with a geometrically exact
-rounded corner where the two front faces meet. This is why resting side faces can
-be perfectly flat solid fills (#08060C, sd 0.000, no grain, no gradient), and why
-a hover ribbon can carry a texture with zero extra geometry: swap the lower
-copy's fill from a solid to a clipped `<image>`.
-
-**Radius before projection, never after.** k = **0.214 of the source square side**
-(0.207-0.221 by two independent routes). The projected corner is an ELLIPSE arc
-with semi-axes 1.2247·k·a horizontal and 0.7071·k·a vertical - ratio sqrt(3):1,
-major axis horizontal (32.5 x 18.7 reference px at the measured k·a = 26.5).
-Rounding a hand-drawn rhombus with a uniform circular radius is the most reliable
-tell of a faked isometric.
-
-**The radius convention trap.** "Radius = 20 % of the side" is convention-free;
-"radius = 13 CSS px" is not. Built with the 2D
-`matrix(0.86603 0.5 -0.86603 0.5 cx cy)`, the source side is the projected edge
-length (124.0 ref = 51.7 CSS) and the radius is 26.5 ref = 11.0 CSS. Built with
-`rotateX(54.7356deg) rotateZ(45deg)`, the source side is 152.8 ref. **State both
-conventions or the implementer ships a corner 20 % too round.**
-(`rotateX(60deg)` gives 26.57 degrees and is simply wrong for true isometric.)
-
-**Lift contract.** Translate straight up in screen space - measured horizontal
-drift 0-1 px. Distance 48 ref px = 20 CSS = **0.39 of the rhombus height** =
-2.3x the tile thickness. Express interaction distances as ratios of the object so
-they survive responsive scaling.
-
-**Annotate the delta instead of adding a shadow.** The measured cluster contains
-literally zero shadow pixels: the ground inside the lifted tile's footprint reads
-exactly (22,23,28) across 2 940 px, min = max. Instead there are three 1 px dashed
-vertical extension lines, period 13.0 ref px at a **1:1 duty cycle** (6.5 on /
-6.5 off, i.e. `stroke-dasharray: 2.7 2.7` at a 5.4 CSS period), colour #504E58 ~
-rgba(255,255,255,0.25), each masked
-`linear-gradient(to bottom, opaque, transparent)` over its own length. A lift with
-a soft drop shadow underneath is the default instinct, and it flips the register
-from technical drawing to floating UI card in one step.
-
-**Carry the principle, not the reference's own sloppiness.** In the measured frame
-those three lines are NOT derived from a footprint rhombus - their x spacings are
-97.04 and 87.43 where a rhombus requires equal spacings, and their zero-crossings
-differ by 11.6 px where a rhombus requires 0. Derive yours from the real footprint
-vertices. (The same frame also renders the lifted tile 1.8 % larger than its
-resting siblings, 190.0 vs 186.83 ref silhouette width - a pure translate should
-not change silhouette width at all.)
-
-**Tiles do not touch.** Lattice pitch 128-130 against an edge length of 124.0
-leaves a ~5.5 ref px perpendicular gap (2.3 CSS), verified by occlusion: the
-exposed side ribbon between neighbours measures 6.0 px where the full thickness is
-21.16.
-
-**Chroma-not-value separation.** Ground rgb(22,23,28) with G > R; face
-rgb(24,22,30) with R > G. Two luminance units apart and clearly separate, because
-the difference is hue, not brightness. The side face is DARKER than the ground.
-Grain lives on the objects (sd 2.2 on top faces) and not on the page (sd 0.000) -
-the reverse of the usual noise overlay, and the reason the tiles read as material.
-
-### The three isometric registers, side by side
-
-They disagree on purpose. Pick one per set and hold it.
-
-| | paper-white heavy-contour | soft-shaded periwinkle | matte dark technical |
-|---|---|---|---|
-| Faces | flat, three-value ladder, third value refused per object | horizontal white -> #B1CDFF ramp with grain over it | flat, per-object grain sd 2.2 |
-| Depth | occlusion only | occlusion + 1-3 % blurred silhouette shadows | occlusion only, zero shadows |
-| Strokes | ONE weight per card, colour assigns role | two weights, 0.7 / 1.4 CSS at 2:1 | rim highlight only, +7 per channel over ~3 AA rows |
-| Shadows | flat, non-compounding, zero blur | soft, offset down-right, hugging the silhouette | none at all |
-| Separation | value | value | **chroma** - 2 luminance units apart |
-| Source | 0xhammermann-2090 | chatsheet | vite |
 
 ---
 

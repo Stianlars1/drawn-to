@@ -10,9 +10,9 @@ the one-liner column in `../matrix.md`.
 
 - **Extracted video frames** at reduced resolution (`frames_*/f_NNN.jpg`), enough
   to read density, line quality, light shape and motion timing. **Capped at 10 frames per
-  reference and 800 px wide**, evenly sampled across the original capture with
-  the first and last frame always kept, so a loop can still be checked for
-  closure.
+  source video and 800 px wide**, evenly sampled across the original capture with
+  the first and last sampled frame always kept, so the recording
+  span remains represented. This sparse set does not prove loop closure.
   The per-post analyses were written against the full captures; the measured
   values in them are not re-derivable from this subset, and are not meant to be.
   The archive is for calibrating density and quality of line, not for re-running
@@ -26,16 +26,12 @@ the one-liner column in `../matrix.md`.
 
 ## What is deliberately not here
 
-- **The source videos.** They are large (193 MB across 31 files in the full
-  archive) and redundant once frames are extracted. `scripts/fetch-posts.sh` in
+- **The source videos.** They remain in the local original archive for replay and denser analysis. `scripts/fetch-posts.py` in
   the taste repo re-fetches them from the fxtwitter API on demand. They are
   git-ignored by pattern.
-- **Full-resolution originals.** Nothing here is at a resolution that would let
-  anyone reproduce the original artwork.
+- **Full-resolution originals.** The package uses reduced study images; reduction does not grant reuse rights.
 - **Every frame of every capture, and full resolution.** The 10-frame cap and
-  the 800 px width keep the whole skill under the 50 MB ceiling that skill
-  directories enforce on an installable package - measured on a checkout, which
-  costs roughly twice the content. Stills are held at 1200 px.
+  the 800 px width keep the skill within this repository's 50 MiB payload target. Installer limits vary; Git checkout overhead is not a portable-skill size measurement. Stills are held at 1200 px.
 
 ## Rights
 
@@ -63,6 +59,11 @@ issue on the repository and it will be removed.
 
 ## Regenerating
 
-`scripts/fetch-posts.sh` from the taste repo root re-fetches metadata and media
-into this folder by post id, then extracts frames with ffmpeg. Paths in the
+`scripts/fetch-posts.py` from the taste repo root re-fetches metadata and media
+into ignored `references/media/` at repository root by post id. Frame
+extraction and reduced packaging are separate curation steps. Paths in the
 script are derived from its own location, so a clone works without editing.
+
+The September batch includes per-source `evidence.json` manifests with original
+hashes, source metadata and archive sample names. Text-only resources can have
+no media directory when explicitly marked in their post metadata.

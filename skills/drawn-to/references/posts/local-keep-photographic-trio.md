@@ -1,11 +1,16 @@
 ---
-slug: local-keep-photographic-trio
-url: (local capture - a three-card feature row using photography as the card ground)
-author: unknown
-kind: feature-cards
-mode: light
-motion: none
-tags: [photographic-ground, veil-split, crop-marks, dashed-frame, micro-card, object-count-law, light]
+slug: "local-keep-photographic-trio"
+url: "(local capture - a three-card feature row using photography as the card ground)"
+author: "unknown"
+kind: "feature-cards"
+mode: "light"
+motion: "none"
+tags: ["photographic-ground", "veil-split", "crop-marks", "dashed-frame", "micro-card", "object-count-law", "light"]
+order: 57
+summary: "Photographic grounds hard-cut by a 0.68 white veil; object size equals the claim's count - 51% / 43% / 4.8%"
+radius: "sharp(0)"
+density: "airy"
+illustration: "photo"
 ---
 
 # The photograph tints its own caption - and one card is 95 % empty

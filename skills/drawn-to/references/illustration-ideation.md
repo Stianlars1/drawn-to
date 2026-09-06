@@ -1,9 +1,11 @@
 # Illustration ideation - inventing the graphic for each feature
 
-The skill must not only pick styles; for feature-card work it must PROPOSE the
-illustrations: 2-4 genuinely creative concepts per feature, each buildable in
-HTML/CSS/SVG at design-engineer grade. This doc is the method, the device
-catalog, and the proposal protocol (the QI stage). Evidence anchors:
+Use this method for newly designed explanatory feature graphics. Propose unresolved
+choices through `qi-protocol.md`; approved scenes proceed directly to implementation
+and verification. For brand illustration, mascots, landscapes and collections,
+use the role-specific criteria in `quality-bar.md` and `september-expansion.md`.
+Do not invent an antagonist, metric or UI fragment for artwork whose job is identity.
+Evidence anchors:
 local-feature-graphics (the fit-method exemplar), adriankuleszo-2089887
 (diegetic chrome), marcelkargul-2090148 (isometric line-art), 0xSero-2090
 (blueprint plates), LexnLin-2089 (mechanism diagrams), yurygok-2089624
@@ -11,13 +13,13 @@ local-feature-graphics (the fit-method exemplar), adriankuleszo-2089887
 
 ## The fit-method (how a concept is derived, per feature)
 
-1. **Extract the VERB and the claim.** Not the noun, never an icon. "Instant
+1. **Extract the action or meaning the image should explain.** "Instant
    verification" → *verifying, fast*; "Encrypted infrastructure" →
    *protecting, continuously*; "Global" → *everywhere at once*. If the copy
-   has a measurable claim (256-bit, 190+ regions, <10s), the number belongs
-   IN the illustration as a readout.
-2. **Choose the metaphor register** - decided ONCE for the whole set, never
-   per card (C-rule: one material system for the whole set). The register says
+   has a supported measurable claim (256-bit, 190+ regions, <10s), a readout
+   can help when the image has room and the value belongs to the explanation.
+2. **Reuse or choose the set register** - one coherent material system unless
+   the approved direction deliberately assigns different roles. The register says
    how everything is drawn; it does not say what is on stage. Pick it after
    the ladder's Steps 1-3 have run for every feature, so it is chosen to serve
    the hardest scene in the set:
@@ -35,14 +37,13 @@ local-feature-graphics (the fit-method exemplar), adriankuleszo-2089887
      grid - blueprint line-art (dark) or soft-shaded (light); conveyors for
      flows (marcelkargul-2090148, marcelkargul-1952697; full craft in
      `isometric-and-light.md`).
-3. **Compose: one hero object + orbiting evidence.** The hero performs the
-   verb; 1-3 evidence chips carry the proof (checklists, alerts, readouts,
-   key-value tables) with product-true microcopy (C10). Faint traces/frames
-   tie the hero to the card edges so it sits IN the card.
-4. **Accent = the living datum.** Grayscale everything; the one accent marks
-   what the feature acts on (the scanned face, the progress arc, the pins).
+3. **Compose the explanation.** A main object with nearby evidence is useful
+   for an instrument; a real UI fragment or sequence can explain itself without
+   orbiting chips. Add readouts, traces or frames only for a relevant role.
+4. **Give color a role.** One accent on the active datum is a useful technical
+   treatment. Preserve other approved palette and semantic roles.
 5. **The derivation ladder below has already decided what is on stage** -
-   claim + antagonist → claim shape → topology → cast, run per feature BEFORE
+   claim/context → explanatory relationship → topology → cast, run for new scenes before
    any device is picked. The register only decides how it is drawn, and the
    device catalog is consulted LAST, to build what the cast already named.
    Picking a device first and back-filling a claim is exactly how
@@ -52,29 +53,28 @@ local-feature-graphics (the fit-method exemplar), adriankuleszo-2089887
    opportunity per `motion-grammar.md` (a loop that enacts the verb, a hover
    state-change, or a scrub beat).
 
-## The set law - a device is spent when it is used
+## The set law - choose the relationship before enforcing variety
 
 Any surface carrying TWO OR MORE illustrations at once - a feature trio, a
 bento, a card grid, a gallery wall, a feature-trio screen inside a catalog -
 is a SET, and a set has rules a single illustration does not:
 
-1. **One device, one cell.** Each cell names its device from the catalog
-   below, and no device may appear twice in the same set. "Skeleton bars in a
-   frame" is ONE device; three drawings of grey bars inside a thin rectangle
-   are that device three times, whatever the bars are supposed to mean.
-2. **Different objects inside one register.** Step 2 decides the register ONCE
-   for the whole set, and that is right: the register governs the MATERIAL
-   SYSTEM (projection, line weight, ramp, accent, grain). It never governs the
-   objects. Inside one register the objects must diverge, or the set has one
-   idea wearing three labels. Where a set legitimately spans two registers, say
-   so in the set table and hold the finish constant across both.
-3. **Verbs before drawings.** Run step 1 per cell and write the verbs down
-   first - read / weigh / bind. If two cells produce the same verb, the COPY
-   is the defect: fix the feature list, not the drawing.
-4. **Same finish, different object.** One line weight, one ramp, one accent
-   across the set; a different hero object in every cell.
+1. **Name the relationship:** independent feature claims, stages of a sequence,
+   views inside one shared world, a collection, or an identity system.
+2. **Independent claims:** distinguish each claim through objects, relationships
+   or behavior. A shared primitive can recur when its role is meaningfully
+   different. Apply swap/read-back tests; do not require N unrelated devices.
+3. **Sequences and previews:** preserve continuity. Reuse the same object and
+   test whether changing the order breaks the story (disarto_max-2093019).
+4. **Collections and identity:** repeating apertures or a brand atom organizes
+   different content (basit_designs-2095862, DmitryLepisov-2093247). Test the
+   consistency of the system and the distinctness of its contents.
+5. **One explicit set contract:** projection, finish, shape roles and motion.
+   Use one register unless the approved direction names a coherent reason for
+   more. Diversity across proposal directions is not forced diversity inside
+   the selected one.
 
-**How the corpus actually does it - the four dials.** Measured off the four
+**Variation dials in four explanatory sets.** Measured off the four
 sets the owner saved for exactly this reason (Triopixels-2089, LexnLin-2024,
 adriankuleszo-2089887, 0xSero-2090): every one of them varies each card by ONE
 NOTCH on three or four independent dials, and no two cards in a set share a
@@ -83,7 +83,7 @@ not a mood:
 
 | Dial | Notches seen in the corpus |
 |---|---|
-| **Primitive** - the one shape vocabulary a cell owns and never borrows | wide row · keycap · small pill · bare circle node · vertical bar · circle+diagonal · axis-aligned rectangle · noisy polyline + dotted leader · arc + filled square |
+| **Primitive** - the shape vocabulary a cell uses | wide row · keycap · small pill · bare circle node · vertical bar · circle+diagonal · axis-aligned rectangle · noisy polyline + dotted leader · arc + filled square |
 | **Arrangement** - how the primitives are placed | raked vertical stack · single horizontal baseline · diagonal staircase (+55, +30 per step) · free 2D scatter · orthogonal series on a baseline · occluding two-plane stack · cropped gallery · exploded flat parts grid |
 | **Depth encoding** - how the third dimension is spent | opacity + width steps · overlap + scale · tone along one axis · real Z bands · none (deliberately flat) |
 | **Symmetry** | 4-fold radial · single vertical mirror · asymmetric · hard-cropped by the frame |
@@ -98,46 +98,47 @@ the symmetry while holding every stroke at exactly 1 px and every radius at 0.
 Triopixels-2089 varies primitive, arrangement, depth and even whether the card
 keeps the shared sky at all, while the shell and the shadow never move.
 
-So: hold the FINISH rigid (one hairline weight, one radius family, one ramp,
-one accent, one shell, one shadow) and spend all the variety on the dials. **No two cells may share a Stage notch** - that single constraint is what stops six well-drawn cells reading as six identical squares. A
-set where the finish varies and the objects rhyme is the exact inversion of
-what the corpus does.
+For a set with one selected finish, keep that finish coherent and vary the
+relevant dials. Shared alignment helps comparison; repeated framing helps
+sequences and collections. Only vary material where the approved contract calls
+for it, rather than using restyling to conceal an unclear explanation.
 
-The set law is checked as a table, not as a feeling. BEFORE writing any
-markup, write this table into the lock file - one row per cell - and stop the
-build if any value in the Device column repeats:
+Record new scene decisions in the existing lock, reusing approved rows. The
+following example compares three independent claims in one technical-paper
+register; judge repetition against the declared relationship:
 
 | Cell | Verb (step 1) | Register (step 2) | Device (catalog) | Hero object |
 |---|---|---|---|---|
-| Discover | reads before it asks | mechanism | mini-flow spine | repo node fanning into three extracted chips |
-| Interview | weighs, never forces | bespoke chart form | DIP-switch weight bank | the 70/20/10 sliders mid-throw |
-| Lock | binds a decision | blueprint plate | screwed plate + seal | the numbered lock row, stamped |
+| Discover | reads before it asks | technical-paper | mini-flow spine | repo node fanning into three extracted chips |
+| Interview | weighs, never forces | technical-paper | DIP-switch weight bank | the 70/20/10 sliders mid-throw |
+| Lock | binds a decision | technical-paper | screwed plate + seal | the numbered lock row, stamped |
 
-If a set cannot produce N distinct devices, the set is too big: cut it to the
-number of genuinely different mechanisms, or ship the cells typographically
-with no illustration at all (`quality-bar.md` § 3). Never pad with a repeat.
+If independent claims remain visually interchangeable, revise their specific
+objects/relationships or use clear typography. Repetition in sequences,
+collections and identity systems is judged by continuity and meaning.
 
 ## Sequence sets - the set law inverts
 
-Everything above assumes SIBLINGS: parallel claims, each arguing its own thing.
+Unlike independent claims, a sequence preserves one thing through changing states.
 A **sequence** - a numbered "how it works" row, a pipeline, an onboarding path -
 is the opposite case, and running the sibling rules on it produces three
 unrelated drawings where the reader needed one process.
 
 In a sequence the cells are STAGES of one thing, so:
 
-- **One shared connective element runs through every cell** - a trace, a spine,
-  a rail, a shared baseline. It enters cell 1 from off-stage and leaves cell N
-  off-stage.
+- **Keep a recognizable connective relationship** - the same object, stable
+  preview, shared baseline or a visible trace/rail where useful. A form preview
+  does not need a drawn line crossing every screen.
 - **The cell grammar repeats deliberately.** Same frame, same anchor, same
   scale. Repetition is the point; it is what makes the change legible.
-- **Variation is carried only by what sits at the node**, never by the frame.
+- Vary the state that explains progress; change the frame only when the task
+  or responsive layout needs it.
 - **The swap test does not apply.** Replace it with the **ORDER test**: shuffle
   the cells. The row must become WRONG. If shuffling changes nothing, the steps
   are not sequential and should ship as parallel claims under the ordinary set
   law.
-- A number index is legitimate here and is the one place a numeric eyebrow does
-  not count against the page's eyebrow budget.
+- A meaningful step index can orient the user. Its count and placement follow
+  the flow; there is no global numeric-eyebrow quota.
 
 ## How to actually build one - isolate, magnify, squint, assemble
 
@@ -146,37 +147,28 @@ straight into the page and read as slop, one built this way and the owner
 called it "akkurat sånn skillen vår skal klare". The difference was not talent
 or taste. It was the working method, and it is four steps:
 
-1. **Isolate.** One standalone file per cell - `discover.html`, not
-   `page.html`. Nothing else on the canvas, no page chrome, no siblings. A
-   figure built inside a finished page inherits that page's compromises and
-   never gets looked at on its own.
-2. **Magnify.** Render each figure alone at 2-3x its delivered size and READ
-   it. Every label, every tick, every hairline. Anything you cannot read at 2x
-   is decoration at 1x, and the guide tier that measures below about 2:1 on
-   its ground has already disappeared at delivered size - check it, do not
-   assume it.
-3. **Squint.** Put the cells side by side at 25 % with the type hidden. If two
-   silhouettes rhyme, one of them is not designed yet. This is the set bar
-   test (`quality-bar.md` § 3b.3) run BEFORE assembly, where it is still cheap
-   to change the device.
-4. **Assemble last.** Only then paste into the page, and re-render the whole
-   screen to check the figures against the copy and the fold.
+1. **Isolate when useful.** Inspect a complex new figure in a standalone view or
+   component preview. Reuse the project's preview setup rather than requiring
+   a separate HTML file for every cell or rebuilding an approved scene.
+2. **Inspect at delivery size and magnify.** Check meaningful labels and geometry
+   at 1x, then at 2-3x for construction defects. Decorative scaffolding can be
+   faint; essential content needs measured contrast and actual-size readability.
+3. **Compare the set using its relationship.** For independent claims, check
+   whether the images explain different things. For a sequence, collection or
+   identity, check continuity and recognizable content. Similar silhouettes can
+   be intentional (`quality-bar.md` § 3b).
+4. **Check in context.** Re-render with copy, neighboring elements and responsive
+   crops. A good isolated figure can still crowd a heading or action.
 
-Two properties of the good build are worth naming because they are cheap and
-almost always skipped: `vector-effect="non-scaling-stroke"` on every SVG child,
-so a 1 px hairline stays 1 px at any scale instead of thickening as the figure
-grows; and grain over the illustration zone, masked to fade out before the
-text, so the figure sits on a surface rather than floating on a flat fill.
+For SVG work, `vector-effect="non-scaling-stroke"` can hold the chosen CSS stroke
+width through resizing; use it on stroked shapes when that is the intended
+contract. Grain is a material choice, not a prerequisite for grounding a figure.
 
-And the values: write the real ones or do not write any. A drawing that prints
-
-**Every number, readout and percentage must argue FOR the claim.** C10 governs whether a value is PLAUSIBLE; nothing governed whether it is FAVOURABLE, and the skill shipped `SECURED 15%` twice as an exemplar. A security readout at 15 % argues that 85 % of the thing is unsecured. Read every value back as a sentence before it goes in the drawing.
-a filename, a row count, a duration or a device name is making a checkable
-claim. `docs/design-locks/2026-08-21.md` when the file is
-`...-drawn-to-site.md`, a firmness ladder with three states when the product
-has two, a device called "switch bank" that is not in the catalog below - each
-of those was caught by an adversarial pass, and each would have been caught by
-the author opening the file instead of recalling it.
+Read numerical and textual evidence as claims. Do not alter real values to make
+them flattering. Clearly fictional demo values should illustrate the intended
+state: `SECURED 15%` is poor evidence for complete protection, but may describe
+work still in progress. Check filenames, states and supported capabilities
+against product truth before treating them as illustration detail.
 
 ## From claim to scene - the derivation ladder (run per feature, before any device is picked)
 
@@ -188,21 +180,17 @@ that would sit equally well on any of the sibling cards.
 Worked exemplar throughout: `0xhammermann-2090` (x402, three cards, one iso
 register, three different scene topologies).
 
-### Step 1 - write the claim as one sentence with an antagonist
+### Step 1 - write the explanatory claim and its context
 
-Not the headline; the argument under it. "Filling out a form is a maze that
-the payment never gets through" · "Two machines can transact with nothing
-between them" · "The payment layer is already inside HTTP". If you cannot name
-what the feature is arguing AGAINST (friction, a middleman, a migration, a
-leak, a wait), the illustration will have nothing to depict.
+Write what the image should make understandable. For a problem/solution claim,
+name the obstacle it removes: a wait, a middleman, a leak or an unnecessary step.
+For a capability, comparison or evolving preview, describe the actual action or
+state instead. An antagonist is a useful reframing tool, not a universal requirement.
 
-If you cannot name the antagonist, the defect is in the COPY, not in the
-illustration. Take it back to Q0 and ask the owner what this feature removes,
-replaces or prevents. Do not proceed on "it is fast and easy" - a claim with no
-antagonist produces the pretty-but-interchangeable object every time, and the
-swap test will catch it three hours later. If the owner confirms there is
-genuinely no antagonist, that feature ships type-only (`quality-bar.md` § 3:
-if any condition fails, ship NO illustration).
+Reuse an approved claim. Ask only if missing product meaning prevents an accurate
+explanation; do not restart Q0 merely because a claim lacks an antagonist. A
+feature can use a clear product fragment, purposeful metaphor or typographic
+treatment. Do not silently delete requested artwork (`quality-bar.md` § 3).
 
 ### Step 2 - classify the claim shape; the shape picks the scene topology
 
@@ -226,20 +214,18 @@ if any condition fails, ship NO illustration).
 | **Learnability** | "productive on day one" | **The novice's path**: one continuous route, no branches | any fork argues complexity, which is the opposite claim |
 | **Durability** | "still running after five years" | **Wear that did not happen**: age the surroundings, not the object | if the object ages too, the claim inverts |
 
-Two features in one set may share a topology only if their payloads differ in
-kind; three cards with three Gauntlets is one idea repeated.
+Independent features can share a topology when their contents or behavior make
+their different claims clear. Sequences and shared worlds often reuse it by design.
 
-**If a feature will not classify, that is a COPY defect, not a drawing problem -
-go back to Q0 and get a claim with an antagonist in it. Never pick a device
-first and reason backwards.**
+If none of these examples fits, derive a suitable relationship from the actual
+feature. The table is not exhaustive. Ask only for missing product facts, rather
+than changing a clear claim to fit the catalog.
 
-### Step 2b - reframe: generate 4-6 candidate topologies before choosing one
+### Step 2b - reframe when explanatory alternatives are needed
 
-Step 2 is a 1:1 lookup, and a lookup is why four concepts for one feature come
-back as four drawings of one idea. Before choosing a row, run these six
-operators. Each one legally RE-CLASSIFIES the same claim into a different row of
-the table above, which is what makes the resulting concepts genuinely different
-rather than differently finished.
+The topology table suggests relationships, not a mandatory 1:1 lookup. When
+new explanatory alternatives would help, these operators can show the same
+capability from different angles while preserving the selected material:
 
 1. **Consequence** - draw what the claim causes downstream, not the claim
    itself. Encryption becomes the interceptor's empty haul.
@@ -255,13 +241,14 @@ rather than differently finished.
 6. **Container swap** - argue the capability through the receptacle rather than
    the contents: a socket, a key-ring, an adapter.
 
-**Hard rule: four concepts must use four DIFFERENT topologies.** Two concepts
-sharing a topology are one concept in two registers - that is a restyle. Cut one
-and reframe again.
+Offer enough distinct alternatives to resolve the actual decision. Different
+topologies can help compare explanations; the same topology may still yield
+meaningful composition alternatives. Approved scenes do not repeat this exercise.
 
 ### Step 3 - cast the scene: actor · payload · terrain · antagonist
 
-Name all four in writing before drawing. The x402 set:
+Name the relevant roles; an absent actor or antagonist can be recorded as none.
+The x402 explanatory set illustrates four possible roles:
 
 | Card | Actor | Payload | Terrain | Antagonist |
 |---|---|---|---|---|
@@ -292,23 +279,26 @@ The hold matters as much as the move: the interior of an opened host needs
 ~1.0-1.3 s of stillness or the reveal cannot be read. A never-arrives loop
 must fail LATE (past the midpoint) or it reads as a glitch, not as friction.
 
-Two set-level rules:
-- **No two cards in a set may use the same rhetorical shape.** The exemplar
-  runs never-arrives / passes-directly / opens-and-closes. Three different
-  topologies animated with the same rhetoric still read as one card shown
-  three times.
+For a moving set:
+- Distinguish independent claims through what happens, without requiring a
+  unique rhetorical shape in every card. The exemplar uses never-arrives /
+  passes-directly / opens-and-closes; a sequence or shared-world scene can
+  deliberately repeat the action while its state changes.
 - **Name each loop's POSTER FRAME** - the single frame the loop degrades to
-  under `prefers-reduced-motion`, and the frame every screenshot will capture.
+  under `prefers-reduced-motion`; ordinary screenshots can capture other phases.
   It is chosen for the CLAIM, not for being the settled end state: a
   never-arrives loop whose settled state is the dissolved payload would argue
   that the friction resolved, so its poster frame is the payload at its
   deepest point in the terrain. An opens-and-closes loop posters at full open,
   not closed.
 
-### Step 5 - the swap test (mandatory; the concept fails if it passes)
+### Step 5 - the relationship-specific test
 
-Mount each concept on its sibling features and write the sentence it would then
-be arguing. If a concept survives the swap, it is decoration - redesign it.
+For independent explanatory claims, mount the image on a sibling feature and
+read back what it would explain. A meaningful mismatch supports specificity; an
+interchangeable image may need clearer content. For sequences use the ORDER
+test; for collections, identity or shared worlds use continuity/consistency
+(`quality-bar.md` § 3b), not a forced swap failure.
 
 Worked example from the exemplar: put card 3's opening block-city on card 2 and
 it argues "machines are inside the infrastructure", which is not the claim
@@ -317,22 +307,24 @@ objects on card 1 and the maze's friction disappears - the section then has no
 problem to solve; put card 1's maze on card 3 and it argues that HTTP is an
 obstacle, the exact opposite of "already built in".
 
-Record the result in the lock file on the QI row: `swap test: fails on cards
-2, 3 (correct)`. A QI row without a swap test is not locked.
+Record the applicable test and its result in the lock: for example, a swap
+mismatch for independent claims, an order result for a sequence, or consistency
+for a collection. Reuse existing valid results when the relevant scene has not changed.
 
 ### Step 5b - the read-back test
 
 The swap test catches an illustration that fits everywhere. This catches the
 opposite failure: one that is non-transferable but argues nothing legible.
 
-Cover the headline and the body. Look at the illustration alone - cold, after a
-break, or through someone else - and write the ONE sentence it argues. Compare
-it word for word with the claim sentence from Step 1.
-- Vaguer than the claim ("something about payments") → the scene is under-cast:
-  the antagonist or the payload is not actually in the frame. Add the missing
-  role, do not add detail.
-- A DIFFERENT sentence → the topology is wrong; go back to Step 2.
-The two tests fail in opposite directions, so run both, always.
+For explanatory artwork, cover the surrounding copy and state what the image
+communicates. Compare its meaning with the intended claim; it need not recover
+the exact wording or details that belong in an accessible caption.
+- Vaguer than the intended meaning ("something about payments") → identify
+  which action, relationship or piece of content is missing; add that information.
+- A conflicting meaning → reconsider the scene. Different wording alone is not
+  a failure when the explanation is accurate.
+Use read-back alongside the relationship test when the artwork explains a feature.
+For identity or scenery, use the role-specific composition criteria instead.
 
 ### Step 6 - the absence check
 
@@ -344,7 +336,9 @@ leave the hole, and keep it empty.
 
 ### Step 7 - the set register contract (what makes N illustrations one family)
 
-Lock these ONCE for the whole set; vary only topology and payload:
+Record the properties the selected set actually shares. The following suit a
+shared-world technical drawing; omit inapplicable fields or retain deliberate
+differences for other relationships:
 
 - one projection and one grid origin (all cards read as one world),
 - one module scale (the unit block/cell is identical in every card),
@@ -352,13 +346,13 @@ Lock these ONCE for the whole set; vary only topology and payload:
 - one line-weight hierarchy (silhouette / seam / annotation),
 - one focal rule - e.g. exactly one black element per card, always the thing
   the feature acts on,
-- one motion register (same easing family, same loop length, same hold), and
-  a shared clock if the cards are visible together,
+- a motion contract: independent periods for unrelated activity, or a shared
+  clock/hold structure when coordinated events or a common world need one,
 - one payload typography (the labels are the same component everywhere).
 
-Variety comes from the scene topology, never from restyling. If the three
-illustrations need three different rendering styles to feel distinct, the
-topologies were too similar - go back to Step 2.
+Within an approved single-register set, vary meaningful content or composition
+instead of changing the finish by accident. A deliberately mixed set follows
+its documented roles; multiple registers are neither required nor inherently wrong.
 
 **The register row carries VALUES, not adjectives.** Write it into the lock
 file as literals, because this is what every QI row will be built and measured
@@ -380,21 +374,24 @@ check that grid pitch and phase, module size, stroke weight and face values
 match across every card. A set that drifts by a few percent per card reads as
 three drawings by three people.
 
-## The fit-method runs at BUILD time
+## During implementation
 
-QI below is the PROPOSAL stage and it is skippable in exactly one case: the
-owner delegated the picks. The fit-method is not skippable and has no
-condition. Before the first line of markup for any illustration - proposed or
-delegated, new build or edit, hero or cell - steps 1-5 above run per cell and
-the set table above is written to the lock file. An illustration with no row
-in that table has not been designed, it has been decorated; building it is a
-defect regardless of how it looks.
+Read the approved lock first. Preserve accepted scenes and do not restart QI or
+the derivation ladder merely to continue an implementation or edit its styling.
+For a newly introduced explanatory scene, derive the missing meaning/composition
+and record its decision with the appropriate relationship test. Explicitly
+delegated choices can be decided within scope without asking again.
+
+For a brand, character, landscape, identity or collection, record its actual role
+and use the matching QA criteria. A static footer can be fully complete without
+a feature claim, antagonist, motion loop, evidence chips or explanatory set table.
+Review-only work reads and reports; it does not write the lock or artwork.
 
 ## Device catalog (pick, combine, subvert)
 
-Composition devices, each with its construction recipe. Values assume the
-locked family's ground; all depth via lightness steps + inset highlights  - 
-no hard borders inside illustrations.
+The following devices are technical/explanatory examples, not a closed catalog.
+Apply each construction only to its named material. Opaque bodies, outline
+drawings and product fragments can use different depth, border and shadow models.
 
 > **Source-bias warning.** Eleven of the entries below come from ONE reference
 > (`local-feature-graphics`, a dark hardware-instrument register) and five more
@@ -489,151 +486,18 @@ no hard borders inside illustrations.
   only white tiles), and graph-paper patches may run two densities (8px fine
   inside 32px coarse) when confined to a diagram zone. (flohoeller-2090.)
 
-## QI - the proposal protocol (runs in TWO passes, after QS)
+## Proposing a set
 
-Run as written below. Read the two-pass structure first: the old single-pass
-form contained a live contradiction - it asked for concepts spanning at least
-two metaphor registers per feature, while the fit-method, Step 7 and
-`practitioner-methods.md` all require ONE register per SET. Running it literally
-produced a set that the skill's own quality bar then failed.
+For owner-facing alternatives use [qi-protocol.md](qi-protocol.md). The fit-method above still applies when choices are delegated.
 
-**Pass 1 - the set direction.** Propose 3-4 DIRECTIONS, not concepts. Each
-direction = one method from `practitioner-methods.md` (M1-M5) + one register +
-one material system. Sketch each direction across ALL features in one line
-apiece, so the owner sees the whole row before choosing anything. The owner
-answers with weights; one direction locks; the set register contract (Step 7) is
-written into the lock file at the end of Pass 1, with literal values.
+## Building them
 
-```
-Pass 1 - four directions for the five features:
-A. Instrument set (M3 · instrument register · dark hardware, one accent)
-   capture = phone mid-scan · recognise = screwed plate w/ traces · search = lit dial ·
-   reuse = coin button + terminating trace · sync = twin gauges on one shaft
-B. One world re-lit (M1 · isometric register · paper-white, one stroke weight)
-   one workshop drawn once; each card is the same room under a different light
-C. Self-demo (M4 · product-fragment register · the real UI, desynced loops)
-   each card is the actual product doing the verb, captions demoted outside
-D. Drawing sheet (M5 · blueprint register · 1px line-art, mono, radius 0)
-   each card is FIG.n of one technical document
-```
+Choose DOM/SVG for live UI or explanatory diagrams. Use original raster,
+prerendered motion or other media when the approved direction needs a character,
+photographic collection or illustrated landscape. Keep operational text and
+controls accessible in the DOM. The following suggestions concern vector/UI
+feature graphics, not a prohibition on raster media.
 
-**Pass 2 - per-feature concepts, inside the locked direction.** Now propose 2-4
-concepts per feature that differ ONLY by topology and hero object - never by
-register, never by finish. This is where Step 2b's reframing operators do the
-work.
-
-For each feature, present:
-
-```
-QI2 - "Encrypted infrastructure":
-A. Shield knob - knob + tick arc, accent arc at the claim's %, seven-segment
-   "SECURED" band; motion: arc draws + LCD counts on first view.
-   (register: instrument · build M)
-B. Sealed pipeline - mini-flow spine where the middle node is a closed vault
-   plate w/ screws; chips: "AES-256 · at rest + in transit"; motion: pulse
-   travels the spine, linear, 4s loop.  (register: mechanism · build M)
-C. Skeleton request log - window skeleton, every row's payload column
-   scrambled to mono cipher glyphs except one decrypted row in accent;
-   motion: hover decrypts the hovered row.  (register: product-fragment · build S)
-```
-
-**Concept divergence table - fill it before presenting.** Mirrors the set table
-that already works at build time. If the Topology column repeats, or the Device
-column repeats, stop and reframe; Register MAY repeat because Pass 1 locked it.
-
-| Concept | Reframing (Step 2b) | Topology | Method | Register | Device | Hero object | Deliberately absent | Build cost |
-|---|---|---|---|---|---|---|---|---|
-| A | - (direct) | | | | | | | |
-| B | consequence | | | | | | | |
-| C | inversion | | | | | | | |
-| D | container swap | | | | | | | |
-
-**Build cost, defined in element counts.** **S** = one hero object, under ~20 SVG
-elements, no loop. **M** = hero + an evidence layer, ~20-60 elements, one loop or
-one hover. **L** = depth-sorted solids, ~60+ elements, a choreographed
-multi-body loop on a shared clock. Note which topologies weaken without motion:
-*never-arrives* and *opens-and-closes* are much weaker as stills, so if the
-motion budget is zero, reframe rather than shipping a frozen version.
-
-**Evidence chips - the geometry, since they are the most visible element in the
-anchor plates.** One or two chips maximum, never three. Each chip = a
-semantic-colour icon square + a bold claim of 2-4 words + one grey proof line
-carrying a real value. Chips anchor OFF the hero's top edge and overhang its
-silhouette rather than sitting politely beside it. The icon colour is semantic
-and may differ from the card accent. Chips stack with a small z-offset and the
-rear chip is NOT dimmed.
-
-Rules:
-- Concepts must span at least two metaphor registers - variety is the point;
-  never three variants of the same device.
-  **Scope note (two-pass form):** this rule belongs to **Pass 1**, where the
-  DIRECTIONS legitimately span registers so the owner can choose one. Inside
-  Pass 2 the register is already locked and concepts diverge by topology and
-  hero object instead. Applying it to Pass 2 is what produced sets that failed
-  their own register contract.
-- **Generate across METHODS, not across styles.** Before writing the concepts,
-  open `practitioner-methods.md` and draw each concept from a DIFFERENT method:
-  one atom in three topologies (M2) · a purpose-built instrument caught
-  mid-action (M3) · the real product fragment performing the verb (M4) · the
-  feature as a numbered technical drawing (M5) · one world re-lit (M1). Four
-  concepts from one method are four restyles of one idea, which is the single
-  most common way this stage fails. Then let the locked blend strike the ones it
-  makes illegal and present only the survivors with weights.
-- Every concept carries its **claim sentence** (with the antagonist named) and
-  its **scene topology** from the derivation ladder; across the set, no two
-  features get the same topology unless their payloads differ in kind.
-- Every concept passes the **swap test** before it is shown to the owner: state,
-  in one line per sibling feature, the wrong claim this concept would make if it
-  were mounted there. A concept that would work fine on a sibling is decoration;
-  redesign it rather than presenting it.
-- Every concept states what the loop **asserts** (never-arrives / crosses in one
-  beat / passes directly / opens and closes / absorbs / multiplies / assembles)
-  and what it deliberately leaves absent.
-- Every concept names: metaphor rationale (one line: why it argues THIS
-  claim), hero object, evidence chips w/ actual microcopy, accent use, the
-  one motion opportunity + its register (C6), and build cost (S/M/L).
-- The whole set shares ONE material system; if a concept breaks register,
-  say so and why it earns it.
-- Owner answers with weights as always; a pick may graft a runner-up's
-  ingredient ("A, men med C sin hover-dekryptering").
-**A worked FAILURE, because this is the stage that fails quietly.** Four
-concepts for one breadth claim - "connects to two hundred sources":
-
-```
-A. Quincunx tile grid   - many logo tiles around one hub tile
-B. Depth-stacked catalog - source cards receding in opacity and blur
-C. Isometric tiled plaza - source tiles laid out on an iso ground plane
-D. Numbered source index - a mono list with a count at the top
-```
-
-Four devices. Four registers. It looks like a spread of options and it is not.
-Run the divergence table: A, B and C all classify as **Field** (one module
-multiplied), and all three argue the identical sentence - "there are a lot of
-them". Only D moves, and D is a list, not a picture. The Topology column has one
-value in three rows; the row that should have caught this is the one the table
-exists for.
-
-The fix is Step 2b, not a fifth device. Reframe:
-- *inversion* -> the ONE connector you would hand-build, and the 199 you would
-  not: two objects, wildly unequal effort. Topology = **Two stacks at true
-  scale**.
-- *consequence* -> a single query fanning out and returning as one merged
-  answer. Topology = **Relay**.
-- *container swap* -> one socket, and any of two hundred plugs fits it.
-  Topology = **Socket**.
-- *antagonist-as-hero* -> the integration backlog as an architectural obstacle
-  the payload crosses in one beat. Topology = **Gauntlet**.
-
-Four topologies, four different sentences, one register. That is a proposal.
-
-- Record picks as QI-rows in the lock file (QI1, QI2, … one per feature). Each
-  QI row carries `topology`, `loop asserts`, `absent`, and `swap test: fails on
-  <siblings> (correct)`. A QI row without a swap test is not locked.
-- Lock the **set register contract** once (projection, module scale, value
-  ladder, line weights, focal rule, motion register, payload type) as its own
-  row - it governs every QI row and is what makes N illustrations one family.
-
-## Building them (HTML/CSS/SVG, no raster)
 
 - Layered divs + gradients first: surfaces = lightness-step backgrounds +
   `inset 0 1px 0 rgba(255,255,255,0.06)` top highlight + soft outer glow at
@@ -646,8 +510,10 @@ Four topologies, four different sentences, one register. That is a proposal.
 - Screws: 4-6px radial-gradient dots at plate corners; cables: 1px paths w/
   3px junction dots at both ends.
 - Skeleton bars: 4-6% lightness rounded bars, widths varied 35-85%.
-- Grain on any gradient ≥ card scale (C9): SVG feTurbulence at 2-6%.
-- Motion per `motion-grammar.md`: ambient linear, interactions 200-450ms
-  ease-out, loops close frame-perfectly, hold states measurably static.
+- For a grained vector material, static SVG turbulence is one option. Choose
+  the finish and parameter units; smooth gradients do not require grain (C9).
+- Motion per the approved event: steady drift may use a linear driver, periodic
+  scenes may ease/share a clock, and interaction must remain responsive. Check
+  the intended loop boundary and composed static fallback (`motion-grammar.md`).
 - Adapt patterns, never clone: the catalog is vocabulary; the product's own
   domain must produce the nouns (its data, its objects, its numbers).

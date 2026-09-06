@@ -1,0 +1,44 @@
+{
+  "slug": "AdityaSur11-2096160317458030911",
+  "source_url": "https://x.com/AdityaSur11/status/2096160317458030911",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "url": "https://pbs.twimg.com/media/HRcMMu1bAAAqheX.jpg?name=orig",
+      "type": "photo",
+      "sha256": "df77304b502612c298b394a46c76bbdcc4604e10528fa54fa48bb39df701aeaa",
+      "bytes": 944675,
+      "dimensions": [
+        2185,
+        4096
+      ],
+      "archive_file": "photo_1.jpg"
+    },
+    {
+      "file": "photo_2.jpg",
+      "url": "https://pbs.twimg.com/media/HRcMMvBbkAAD-HK.jpg?name=orig",
+      "type": "photo",
+      "sha256": "f1c832ad67b7a997a83c47b7c3af912186fc43e6598f3cb51b99bcb28f0d4241",
+      "bytes": 991823,
+      "dimensions": [
+        2185,
+        4096
+      ],
+      "archive_file": "photo_2.jpg"
+    },
+    {
+      "file": "photo_3.jpg",
+      "url": "https://pbs.twimg.com/media/HRcMMuzboAAn0Y1.jpg?name=orig",
+      "type": "photo",
+      "sha256": "9b4898a818eae22079c5b4d5de41092c18cc527ed7478e929fe6dc85d695e954",
+      "bytes": 1182230,
+      "dimensions": [
+        2185,
+        4096
+      ],
+      "archive_file": "photo_3.jpg"
+    }
+  ]
+}

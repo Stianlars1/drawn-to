@@ -9,13 +9,15 @@ useful than any one screen.
 
 Each entry below is one practitioner's method, reconstructed from every
 reference of theirs in the library, written as moves you can execute. Use it at
-the QI stage in `illustration-ideation.md`: after the claim is written and the
-scene topology is chosen, pick a method and run its moves to get a concept that
-has a spine instead of a style.
+new-direction stage in `qi-protocol.md`. For explanatory features,
+`illustration-ideation.md` supplies the claim/scene derivation. Other roles choose
+a method that serves identity, composition or content; approved sets keep their
+existing method without reopening proposals.
 
-None of this replaces the derivation ladder. The ladder decides WHAT the picture
-must argue; a method decides HOW that argument gets drawn, and supplies the
-moves that keep a SET coherent.
+For an explanatory image, the derivation ladder identifies what it should
+communicate and the method suggests how to draw it. Character, landscape,
+collection and identity methods below serve their own roles and do not require
+a technical claim or antagonist.
 
 ---
 
@@ -220,24 +222,46 @@ and the product's credibility is technical.
 
 ---
 
-## How to use these in the QI stage
+## Choosing and applying a method
 
-When proposing concepts for a feature set, do NOT propose four variations of one
-method. Propose across methods - that is what makes the options genuinely
-different rather than restyled:
+In Pass 1 of `qi-protocol.md`, compare relevant whole-set methods when a new
+direction is needed. For a technical feature set, M2 topology, M3 instrument,
+M4 self-demo and M5 plate offer different approaches. M6-M9 below broaden the
+choices for character, identity, editorial terrain and collections.
 
-| Concept | Method | What changes |
-|---|---|---|
-| A | M2 topology | one atom, a different arrangement per feature |
-| B | M3 instrument | a purpose-built device per feature, mid-action |
-| C | M4 self-demo | the real UI fragment performing the verb |
-| D | M5 plate | the feature as a numbered technical drawing |
+After the owner selects a direction, Pass 2 develops unresolved scenes within
+that chosen method/material. Multiple concepts from one method are expected;
+their content or composition should make the actual decision clear. Deliberate
+mixtures need explicit roles, not a rule forcing unrelated registers per cell.
+Existing approved sets skip the choice stage and proceed to their relevant QA.
 
-Then let the locked blend decide which of the four is even legal (M5 clashes
-with a soft pastel direction; M4 needs a motion budget; M2 needs the product to
-have a mark worth centring; M3 needs a hardware metaphor that is not a lie), and
-present only the survivors with weights.
+## M6. A character inhabits the interface - DesignByMoein
 
-One method per SET. Mixing M2 and M3 across siblings is the same defect as
-mixing registers - it is what makes a row of illustrations look commissioned
-from four different people.
+Use one original cast and a consistent material/light setup. Place the body
+behind a UI ledge, hands in front and contact shadow on the receiving surface.
+The same cast can rest in a footer scene. Keep practical text and controls still
+while small gestures supply personality. Evidence: DesignByMoein-2095937 and
+DesignByMoein-2096289. This is identity illustration, not a forced mechanism.
+
+## M7. One brand atom across scales - DmitryLepisov and adriankuleszo
+
+Identify the recognizable silhouette/negative-space rule, test it as a small
+functional glyph, then expand it into a richer material or motion treatment.
+Show both in context. Evidence: DmitryLepisov-2093247 and
+adriankuleszo-2096048. Cohesion comes from the atom, variety from each output's
+job; avoid shrinking a glossy large render directly into a favicon.
+
+## M8. The artwork shapes the reading space - AdityaSur11
+
+Compose connected terrain and reserve quiet sky before placing footer type.
+Use shared paper/ink and a detail ladder from large landmark to fine mark.
+Keep text outside the image. Evidence: AdityaSur11-2096160. The original medium
+and artist's construction process are unknown; this is a transferable method
+inferred from the visible relationship, not a claim about their workflow.
+
+## M9. Still anchors, moving collection - basit_designs
+
+Lock the text, mark and action positions. Choose one image aperture, then vary
+subject, scale and path in the remaining space. Inspect every extreme of the
+motion envelope and compose a no-motion arrangement. Evidence:
+basit_designs-2095862. Repeated apertures create coherence, not a failed set.

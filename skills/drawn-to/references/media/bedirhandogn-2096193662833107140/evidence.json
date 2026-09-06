@@ -1,0 +1,20 @@
+{
+  "slug": "bedirhandogn-2096193662833107140",
+  "source_url": "https://x.com/bedirhandogn/status/2096193662833107140",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "url": "https://pbs.twimg.com/media/HRcsm-jWwAAK7Yi.jpg?name=orig",
+      "type": "photo",
+      "sha256": "3af08570636366cb2598e957703181d370af186be19808b4b4162b372ccce10d",
+      "bytes": 300010,
+      "dimensions": [
+        4096,
+        2560
+      ],
+      "archive_file": "photo_1.jpg"
+    }
+  ]
+}

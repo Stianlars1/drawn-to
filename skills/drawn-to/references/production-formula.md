@@ -1,4 +1,4 @@
-# Production formula - seven famous sites, measured live
+# Production references - historical page-scale measurements
 
 Origin: the refetch.sh redesign research (August 2026) - computed values read
 off the live pages of Linear, Vercel, Raycast, Resend, Codex, Vite and Notion
@@ -20,7 +20,7 @@ buttons, closing CTA and footer - and to sanity-check any full-page build.
   64/400/-0.06em; H2 56/450/-0.06em; body Geist 16; mono feature lists.
   Radii 6/8; borders as box-shadow 0 0 0 1px rings; cards #0a0a0a on black.
   Buttons 32/40 r6/8. Motion .1/.15s cubic-bezier(.4,0,.2,1). Hero: tiny H1
-  left, one lit object centre, 3 mono lines right; 2x2 bento r12 outlined.
+  left, one lit object centre, 3 sans lines right; 2x2 bento r12 outlined.
 - **Raycast** - bg #07080a; container 1204 (lg 1280), grid gap 32. H1 64/600
   centered; section heads = 20/500 white+grey line pairs, centered; body 18.
   Radii 12/16; borders rgba(255,255,255,.06-.08); glass = inset 0 1px 0
@@ -71,15 +71,15 @@ grammar and the crop contract). What DRAWS those fields lives in
 WebGL, which is not a fact any value in this file exposes. Read those two
 before building any first screen; read this one for everything below the fold.
 
-## The cross-site formula (all seven do this)
+## Recurring page-scale patterns (adapt to the brief)
 
 1. One container, 1200-1400px, gutters 24-40.
 2. Big air: 96-128px section padding or 208px margins; rhythm varies (dense
    bento, then a breathing chapter, then a full-bleed frame).
-3. Three type sizes only: H1 60-96, H2 48-56, feature title 20-30; weights
-   400-600 (never heavier than 600 on dark); tracking -0.02..-0.06em; lh
+3. Common type hierarchy: H1 60-96, H2 48-56, feature title 20-30; weights
+   400-600 (other approved display voices can use more weight); tracking -0.02..-0.06em; lh
    1.0-1.1. Body 15-18 grey (55-65% white), lh 1.5-1.65, 55-65ch.
-4. Mono for meta everywhere: numbers, labels, FIG tags, install hints, counts.
+4. Mono is a recurring technical metadata voice, not a requirement for numbers, labels, FIG tags, install hints, counts.
 5. Borders 1px white-alpha 5-15% (or tinted alpha), often box-shadow rings;
    shadows rare and soft; glass = inset 1px top highlight.
 6. Radii 6-8 controls / 12-16 cards / 20-24 device frames; nested radius =
@@ -90,8 +90,9 @@ before building any first screen; read this one for everything below the fold.
    sometimes staged in its OS.
 9. 6-9 sections: hero -> proof/logos -> 2-4 feature chapters -> one
    how-it-works/developer section -> social proof -> centered CTA -> footer.
-10. Hero = headline + 1-line sub + 2 buttons (+ mono hint) + ONE signature
-    visual (lit object, 3D cube, staged desktop, aurora).
+10. Hero composition varies: heading, suitable support and a clear next
+    action; zero, one or two hero buttons in the five probed hero examples.
+    Product evidence, bounded media and a type-led screen are also valid.
 11. Centered closing 2-line CTA + pills; then a structured footer.
 
 ## Mapping to the style families
@@ -111,5 +112,5 @@ only where facts are presented.
    border alpha, type size/weight/tracking, motion duration/curve) and map
    them onto the project's confirmed tokens. Never introduce a value the
    scale does not have without adding it to the scale.
-4. Check against the lock file; if the decision is new, ask one question and
-   record the lock.
+4. Check against the lock. Record routine choices inside the approved direction;
+   ask only when a consequential unresolved decision would change it.

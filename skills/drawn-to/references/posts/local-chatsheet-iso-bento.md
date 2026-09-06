@@ -1,11 +1,16 @@
 ---
-slug: local-chatsheet-iso-bento
-url: (local capture, 182 frames at 3456x2168 - the automation grid of the Chatsheet site; hero of the same product is marcelkargul-1952697)
-author: marcelkargul
-kind: bento
-mode: light
-motion: full-choreography
-tags: [bento, hairline-lattice, isometric, soft-shaded, harmonic-loop, anchor-pinning, dash-grammar, light, per-feature-scene]
+slug: "local-chatsheet-iso-bento"
+url: "(local capture, 182 frames at 3456x2168 - the automation grid of the Chatsheet site; hero of the same product is marcelkargul-1952697)"
+author: "marcelkargul"
+kind: "bento"
+mode: "light"
+motion: "full-choreography"
+tags: ["bento", "hairline-lattice", "isometric", "soft-shaded", "harmonic-loop", "anchor-pinning", "dash-grammar", "light", "per-feature-scene"]
+order: 54
+summary: "Hairline 3+2 lattice, one 182-frame harmonic-locked isometric diorama per cell, one pinned anchor each"
+radius: "sharp(0)"
+density: "airy"
+illustration: "isometric"
 ---
 
 # Hairline lattice, one isometric diorama per automation

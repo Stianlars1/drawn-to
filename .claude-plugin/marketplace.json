@@ -5,13 +5,13 @@
     "contact": "github.com/Stianlars1"
   },
   "metadata": {
-    "description": "A design-direction system for coding agents, built from 57 references reverse-engineered frame by frame"
+    "description": "A design-direction skill with a curated visual reference library and weighted choices"
   },
   "plugins": [
     {
       "name": "drawn-to",
       "source": "./",
-      "description": "Give your coding agent a trained eye. A measured taste library - 57 references, 12 constants, 8 style families - plus a plain-language interview answered with weights instead of forced picks, and a lock file every visual decision has to serve. Ships its own visual evidence.",
+      "description": "Establish a design direction, continue an approved design or review UI against its lock. A curated reference library supports varied composition, type, illustration, material and motion, with portable visual evidence.",
       "version": "1.0.0",
       "author": {
         "name": "Stian Larsen"

@@ -1,11 +1,16 @@
 ---
-slug: local-feature-graphics
-url: (local save - four sections of one FaceID/identity-verification landing)
-author: unknown (likely Figma-crafted)
-kind: feature-cards
-mode: mixed
-motion: none
-tags: [per-feature-illustration, instrument-panel, hardware-metaphor, skeleton-phone, evidence-chips, lcd-type, dark-ui, light-ui]
+slug: "local-feature-graphics"
+url: "(local save - four sections of one FaceID/identity-verification landing)"
+author: "unknown (likely Figma-crafted)"
+kind: "feature-cards"
+mode: "mixed"
+motion: "none"
+tags: ["per-feature-illustration", "instrument-panel", "hardware-metaphor", "skeleton-phone", "evidence-chips", "lcd-type", "dark-ui", "light-ui"]
+order: 46
+summary: "Per-feature instrument illustrations for one identity product (local save)"
+radius: "mixed"
+density: "airy"
+illustration: "ui-fragment"
 ---
 
 # Per-feature instrument illustrations, one identity product

@@ -1,0 +1,56 @@
+{
+  "slug": "LexnLin-2096045877760795063",
+  "source_url": "https://x.com/LexnLin/status/2096045877760795063",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "url": "https://pbs.twimg.com/media/HRameZ4aAAA043x.jpg?name=orig",
+      "type": "photo",
+      "sha256": "6c2f3afce8a3ce21b921045b952b33ae8bb43b26a0db566b86ef19ef4dc0f009",
+      "bytes": 124799,
+      "dimensions": [
+        1348,
+        961
+      ],
+      "archive_file": "photo_1.jpg"
+    },
+    {
+      "file": "photo_2.jpg",
+      "url": "https://pbs.twimg.com/media/HRamfAdb0AA8LR4.jpg?name=orig",
+      "type": "photo",
+      "sha256": "a35b36c0005a7e6feccfd7465879e039f425765ad95cc428cb1c391a1905e3da",
+      "bytes": 92303,
+      "dimensions": [
+        1348,
+        1078
+      ],
+      "archive_file": "photo_2.jpg"
+    },
+    {
+      "file": "photo_3.jpg",
+      "url": "https://pbs.twimg.com/media/HRamfgCaUAAvIVe.jpg?name=orig",
+      "type": "photo",
+      "sha256": "2291e7372019b4463b86d6c434be73f8a1007424d65b1517dc3c5ad5599ed245",
+      "bytes": 134458,
+      "dimensions": [
+        1348,
+        1121
+      ],
+      "archive_file": "photo_3.jpg"
+    },
+    {
+      "file": "photo_4.jpg",
+      "url": "https://pbs.twimg.com/media/HRamf-HbIAAfr1T.jpg?name=orig",
+      "type": "photo",
+      "sha256": "d4f3a30efffda9dc2f329df60fabce6a625c618603278fe41e3ac9f7cdc0e20d",
+      "bytes": 59337,
+      "dimensions": [
+        1348,
+        820
+      ],
+      "archive_file": "photo_4.jpg"
+    }
+  ]
+}

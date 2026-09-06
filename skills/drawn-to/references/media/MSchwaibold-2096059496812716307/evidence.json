@@ -1,0 +1,80 @@
+{
+  "slug": "MSchwaibold-2096059496812716307",
+  "source_url": "https://x.com/MSchwaibold/status/2096059496812716307",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "url": "https://video.twimg.com/amplify_video/2096059086446202880/vid/avc1/3248x2160/5RVH4OvhQyJbrtkV.mp4?tag=29",
+      "type": "video",
+      "sha256": "0e136edebe8abdc8b226b31eb0da48f753516206352a43d523738f90da242a8d",
+      "bytes": 32076323,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3248,
+            "height": 2160,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "27.550000",
+            "nb_frames": "1653"
+          }
+        ],
+        "format": {
+          "duration": "27.550000"
+        }
+      },
+      "sampling": {
+        "filter": "fps=3",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_1/f_010.jpg",
+            "sample_time_seconds": 3.0
+          },
+          {
+            "file": "frames_1/f_019.jpg",
+            "sample_time_seconds": 6.0
+          },
+          {
+            "file": "frames_1/f_028.jpg",
+            "sample_time_seconds": 9.0
+          },
+          {
+            "file": "frames_1/f_037.jpg",
+            "sample_time_seconds": 12.0
+          },
+          {
+            "file": "frames_1/f_047.jpg",
+            "sample_time_seconds": 15.333333
+          },
+          {
+            "file": "frames_1/f_056.jpg",
+            "sample_time_seconds": 18.333333
+          },
+          {
+            "file": "frames_1/f_065.jpg",
+            "sample_time_seconds": 21.333333
+          },
+          {
+            "file": "frames_1/f_074.jpg",
+            "sample_time_seconds": 24.333333
+          },
+          {
+            "file": "frames_1/f_083.jpg",
+            "sample_time_seconds": 27.333333
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/MSchwaibold-2096059496812716307-video_1.jpg"
+    }
+  ]
+}

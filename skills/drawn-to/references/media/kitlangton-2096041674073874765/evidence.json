@@ -1,0 +1,80 @@
+{
+  "slug": "kitlangton-2096041674073874765",
+  "source_url": "https://x.com/kitlangton/status/2096041674073874765",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "url": "https://video.twimg.com/amplify_video/2096041195088871424/vid/avc1/3534x2160/o42lwK8_R9RoeyGd.mp4?tag=29",
+      "type": "video",
+      "sha256": "c0c8fd99cc2324b0c8cc4fbf7318752ff111ad82bf998370234d5ca7b37e3504",
+      "bytes": 10391816,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3534,
+            "height": 2160,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "24.966667",
+            "nb_frames": "1498"
+          }
+        ],
+        "format": {
+          "duration": "25.024000"
+        }
+      },
+      "sampling": {
+        "filter": "fps=3",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_1/f_009.jpg",
+            "sample_time_seconds": 2.666667
+          },
+          {
+            "file": "frames_1/f_017.jpg",
+            "sample_time_seconds": 5.333333
+          },
+          {
+            "file": "frames_1/f_026.jpg",
+            "sample_time_seconds": 8.333333
+          },
+          {
+            "file": "frames_1/f_034.jpg",
+            "sample_time_seconds": 11.0
+          },
+          {
+            "file": "frames_1/f_042.jpg",
+            "sample_time_seconds": 13.666667
+          },
+          {
+            "file": "frames_1/f_050.jpg",
+            "sample_time_seconds": 16.333333
+          },
+          {
+            "file": "frames_1/f_059.jpg",
+            "sample_time_seconds": 19.333333
+          },
+          {
+            "file": "frames_1/f_067.jpg",
+            "sample_time_seconds": 22.0
+          },
+          {
+            "file": "frames_1/f_075.jpg",
+            "sample_time_seconds": 24.666667
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/kitlangton-2096041674073874765-video_1.jpg"
+    }
+  ]
+}

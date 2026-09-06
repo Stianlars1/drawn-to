@@ -1,0 +1,20 @@
+{
+  "slug": "LexnLin-2076422557180608888",
+  "source_url": "https://x.com/LexnLin/status/2076422557180608888",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "url": "https://pbs.twimg.com/media/HNDvPf3WUAASbRg.jpg",
+      "type": "article-image",
+      "sha256": "6df4b612876ca6b5e68a3f9da64e36e7529563a26b3fc5a1682bf579d38e5a9f",
+      "bytes": 321983,
+      "dimensions": [
+        1983,
+        793
+      ],
+      "archive_file": "photo_1.jpg"
+    }
+  ]
+}

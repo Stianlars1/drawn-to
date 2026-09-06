@@ -1,0 +1,80 @@
+{
+  "slug": "adriankuleszo-2096048196988580223",
+  "source_url": "https://x.com/adriankuleszo/status/2096048196988580223",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "url": "https://video.twimg.com/amplify_video/2096048169666973696/vid/avc1/1080x1080/3o3lmHBUJ_6KWTY4.mp4?tag=16",
+      "type": "video",
+      "sha256": "60eb1eafe2080b5e8b59121aeb3be2f125fee45961d6ed5dedc6de7a62b3bb50",
+      "bytes": 484101,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1080,
+            "height": 1080,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "8.000000",
+            "nb_frames": "480"
+          }
+        ],
+        "format": {
+          "duration": "8.000000"
+        }
+      },
+      "sampling": {
+        "filter": "fps=6",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_1/f_006.jpg",
+            "sample_time_seconds": 0.833333
+          },
+          {
+            "file": "frames_1/f_011.jpg",
+            "sample_time_seconds": 1.666667
+          },
+          {
+            "file": "frames_1/f_017.jpg",
+            "sample_time_seconds": 2.666667
+          },
+          {
+            "file": "frames_1/f_022.jpg",
+            "sample_time_seconds": 3.5
+          },
+          {
+            "file": "frames_1/f_027.jpg",
+            "sample_time_seconds": 4.333333
+          },
+          {
+            "file": "frames_1/f_032.jpg",
+            "sample_time_seconds": 5.166667
+          },
+          {
+            "file": "frames_1/f_038.jpg",
+            "sample_time_seconds": 6.166667
+          },
+          {
+            "file": "frames_1/f_043.jpg",
+            "sample_time_seconds": 7.0
+          },
+          {
+            "file": "frames_1/f_048.jpg",
+            "sample_time_seconds": 7.833333
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/adriankuleszo-2096048196988580223-video_1.jpg"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "slug": "pqoqubbw-2093012429240431093",
+  "source_url": "https://x.com/pqoqubbw/status/2093012429240431093",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "url": "https://video.twimg.com/amplify_video/2093012416582021124/vid/avc1/950x720/bBW7AqZI1LWaEUip.mp4?tag=14",
+      "type": "video",
+      "sha256": "d9bd51623bb3fac4b8ec3fd07db55d1be18d1730d5f2ec6e47d736278d694d27",
+      "bytes": 233252,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 950,
+            "height": 720,
+            "r_frame_rate": "120/1",
+            "avg_frame_rate": "740/13",
+            "duration": "7.150000",
+            "nb_frames": "407"
+          }
+        ],
+        "format": {
+          "duration": "7.150000"
+        }
+      },
+      "sampling": {
+        "filter": "fps=6",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_1/f_006.jpg",
+            "sample_time_seconds": 0.833333
+          },
+          {
+            "file": "frames_1/f_010.jpg",
+            "sample_time_seconds": 1.5
+          },
+          {
+            "file": "frames_1/f_015.jpg",
+            "sample_time_seconds": 2.333333
+          },
+          {
+            "file": "frames_1/f_020.jpg",
+            "sample_time_seconds": 3.166667
+          },
+          {
+            "file": "frames_1/f_024.jpg",
+            "sample_time_seconds": 3.833333
+          },
+          {
+            "file": "frames_1/f_029.jpg",
+            "sample_time_seconds": 4.666667
+          },
+          {
+            "file": "frames_1/f_034.jpg",
+            "sample_time_seconds": 5.5
+          },
+          {
+            "file": "frames_1/f_038.jpg",
+            "sample_time_seconds": 6.166667
+          },
+          {
+            "file": "frames_1/f_043.jpg",
+            "sample_time_seconds": 7.0
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/pqoqubbw-2093012429240431093-video_1.jpg"
+    }
+  ]
+}

@@ -1,11 +1,16 @@
 ---
-slug: local-stashr-dark-bento
-url: (local capture, 842 frames - a dark feature bento for "Stashr"; the capture is a screen recording of a video player, so absolute px and fps are not derivable)
-author: unknown
-kind: bento
-mode: dark
-motion: full-choreography
-tags: [bento, dark, hub-lattice, cursor-demo, dot-grid, compressed-band, payload-light, ui-fragment, ratios-only]
+slug: "local-stashr-dark-bento"
+url: "(local capture, 842 frames - a dark feature bento for \"Stashr\"; the capture is a screen recording of a video player, so absolute px and fps are not derivable)"
+author: "unknown"
+kind: "bento"
+mode: "dark"
+motion: "full-choreography"
+tags: ["bento", "dark", "hub-lattice", "cursor-demo", "dot-grid", "compressed-band", "payload-light", "ui-fragment", "ratios-only"]
+order: 55
+summary: "Near-black 6-col bento; lattice-and-bezier hub, a cursor that filters and files, whole decorative layer inside 16 luminance"
+radius: "medium(10-16)"
+density: "balanced"
+illustration: "ui-fragment"
 ---
 
 # Compressed-band dark bento - the decorative layer inside 16 luminance

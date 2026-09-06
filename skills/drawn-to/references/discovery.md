@@ -8,8 +8,8 @@ locks.
 ## What to read (in order; skip what doesn't exist)
 
 1. **Prior locks**: `docs/design-locks/*.md` in the target project. If a lock
-   file covers this task area, resume it - confirm it still stands instead of
-   re-asking; never re-litigate a lock silently.
+   file covers this task area, resume it within the current request; ask only if current evidence
+   reveals a consequential conflict. Do not re-approve an existing approval.
 2. **Own-skill check**: if the repo carries its own locked design skill
    (refetch-design class, usually `.claude/skills/*design*`), STOP - that
    skill governs; Drawn To only fills what it leaves open.
@@ -20,8 +20,8 @@ locks.
    copy). In a monorepo, include the app package's docs.
 5. **Design system**: token/theme files (`globals.css`, `*tokens*`,
    `tailwind.config.*`, `theme.*`, design-system dirs), font setup. Record
-   what exists - adoption is the owner's call in Q0, never automatic (see
-   Trust model below).
+   what exists; adopt infrastructure by default and distinguish visual-state
+   choices as described in the Trust model below.
 6. **Existing UI**: the page/section tree (`app/` or `pages/`), section and
    component names, and one representative page's markup - enough to know
    what already exists and how it is built.
@@ -34,7 +34,7 @@ during implementation, when a specific fragment needs product truth (C2/C10).
 
 ## What to extract - the product-truth brief
 
-- What the product IS and DOES: the real feature list (4-6, priority guess).
+- What the product IS and DOES: the real feature list and any documented priorities; mark unknown priorities.
 - Audience, and the tone + language of existing copy.
 - Data domain for fragments: what a record/entity actually looks like.
 - Existing visual state: tokens, colors, radii, fonts in use; which sections

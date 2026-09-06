@@ -1,104 +1,104 @@
 #!/usr/bin/env python3
-"""Validate the Drawn To taste library.
+"""Validate index consistency, local references, sources and portable evidence."""
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
+import json
+import re
+import sys
+from library import SKILL, REFS, entries, render
 
-Checks:
-  1. Every post in drawn-to/references/posts/ has frontmatter with the
-     required keys (slug, url, kind, mode, motion) and slug matches filename.
-  2. Every reference-doc citation slug (author-NNNN…) prefix-matches a post
-     file. Unknown citations are errors; ambiguous 4-digit citations for
-     colliding authors are errors.
-  3. Every file named in drawn-to/SKILL.md's read-order exists.
-  4. matrix.md row count equals the number of posts.
-  5. (warn only) posts without a media dir in drawn-to/references/media/.
 
-Exit 0 = clean (warnings allowed), 1 = errors.
-"""
-import re, sys, pathlib, collections
+def validate(skill=SKILL):
+    refs = skill / 'references'
+    errors = []
+    try:
+        rows = entries(refs)
+    except (ValueError, OSError) as exc:
+        return [str(exc)], 0
+    names = {r['slug'] for r in rows}
+    authors = {n.rsplit('-', 1)[0] for n in names if re.search(r'-\d+$', n)}
+    for name, expected in zip(('matrix.md', '_index.json'), render(rows)):
+        if not (refs / name).exists() or (refs / name).read_text() != expected:
+            errors.append(f'{name}: generated index drift; run scripts/rebuild-index.py')
+    for row in rows:
+        slug = row['slug']
+        if not (refs / 'media' / slug).is_dir() and row.get('media_status') != 'text-only':
+            errors.append(f'{slug}: missing media directory')
+        m = re.search(r'-(\d{19})$', slug)
+        if m and m[1] not in row['url']:
+            errors.append(f'{slug}: source URL does not contain its post id')
+    docs = list(skill.rglob('*.md'))
+    for doc in docs:
+        text = doc.read_text()
+        rel = doc.relative_to(skill)
+        for n, line in enumerate(text.splitlines(), 1):
+            if '\u2014' in line and 'NEVER' not in line and 'Em dashes (' not in line:
+                errors.append(f'{rel}:{n}: em dash conflicts with owner copy preference')
+        # Explicit Markdown links must resolve relative to the document.
+        for target in re.findall(r'!?\[[^\]]*\]\(([^)]+)\)', text):
+            target = target.strip().split(' "', 1)[0].strip('<>')
+            parsed = urlsplit(target)
+            if parsed.scheme or not parsed.path or any(x in target for x in ('<slug>', '<task>', '...')):
+                continue
+            path = doc.parent / unquote(parsed.path)
+            if not path.exists():
+                errors.append(f'{rel}: missing Markdown target {target}')
+        # Backticked concrete paths to the portable asset trees.
+        for target in re.findall(r'`((?:assets|references)/(?:[A-Za-z0-9_.*/-]+))`', text):
+            if '<' in target or '...' in target:
+                continue
+            # Literal format examples use placeholder names and are not citations.
+            if any(s in target for s in ('/slug', '/frame_', '/f_NNN', '/video_N')):
+                continue
+            if '*' in target:
+                found = list(skill.glob(target))
+            else:
+                found = (skill / target).exists()
+            if not found:
+                errors.append(f'{rel}: missing named path {target}')
+        for author, digits in re.findall(r'\b([A-Za-z0-9_]+)-(\d{4,19})\b', text):
+            if author not in authors and len(digits) != 19:
+                continue
+            matches = [n for n in names if n.startswith(f'{author}-{digits}')]
+            if len(matches) != 1:
+                errors.append(f'{rel}: citation {author}-{digits} resolves to {len(matches)} posts')
+    source_path = refs / 'sources.json'
+    if source_path.exists():
+        batch = json.loads(source_path.read_text())
+        seen = set()
+        for source in batch['references']:
+            slug = source['slug']
+            if slug in seen or slug not in names:
+                errors.append(f'sources.json: duplicate or unindexed source {slug}')
+            seen.add(slug)
+            evidence_path = refs / source['evidence']
+            if not evidence_path.exists():
+                errors.append(f'{slug}: missing evidence manifest')
+                continue
+            evidence = json.loads(evidence_path.read_text())
+            if evidence.get('slug') != slug:
+                errors.append(f'{slug}: evidence join key mismatch')
+            for asset in evidence['assets']:
+                if not re.fullmatch(r'[a-f0-9]{64}', asset.get('sha256', '')):
+                    errors.append(f'{slug}/{asset["file"]}: missing original hash')
+                paths = [x['file'] for x in asset.get('sampling', {}).get('archive', [])]
+                if asset.get('archive_file'):
+                    paths.append(asset['archive_file'])
+                for path in paths:
+                    if not (evidence_path.parent / path).is_file():
+                        errors.append(f'{slug}: missing evidence file {path}')
+        requested = {re.search(r'/status/(\d+)', u)[1] for u in batch['request_urls'] if '/status/' in u}
+        indexed = {r['slug'].rsplit('-', 1)[-1] for r in batch['references']}
+        if requested != indexed:
+            errors.append('sources.json: requested post coverage mismatch')
+    payload = sum(p.stat().st_size for p in skill.rglob('*') if p.is_file())
+    if payload > 50 * 1024 * 1024:
+        errors.append(f'Portable skill exceeds project 50 MiB budget: {payload / 1024**2:.2f} MiB')
+    return sorted(set(errors)), len(rows)
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
-SKILL = ROOT / "skills" / "drawn-to"
-REFS = SKILL / "references"
-POSTS = REFS / "posts"
-MEDIA = REFS / "media"
-
-errors, warnings = [], []
-
-# --- 1. posts frontmatter ---------------------------------------------------
-post_files = sorted(POSTS.glob("*.md"))
-post_names = [p.stem for p in post_files]
-REQUIRED = ("slug:", "url:", "kind:", "mode:", "motion:")
-for p in post_files:
-    head = p.read_text().split("---")
-    if len(head) < 3:
-        errors.append(f"{p.name}: missing frontmatter block")
-        continue
-    fm = head[1]
-    for key in REQUIRED:
-        if key not in fm:
-            errors.append(f"{p.name}: frontmatter missing '{key}'")
-    m = re.search(r"slug:\s*(\S+)", fm)
-    if m and m.group(1) != p.stem:
-        errors.append(f"{p.name}: slug '{m.group(1)}' != filename")
-
-# --- 2. citation integrity ---------------------------------------------------
-# collision map: author + first-4 prefixes that are ambiguous
-prefix_count = collections.Counter()
-for name in post_names:
-    m = re.match(r"(.+)-(\d+)$", name)
-    if m:
-        prefix_count[(m.group(1), m.group(2)[:4])] += 1
-
-CITE = re.compile(r"\b([A-Za-z_][A-Za-z0-9_]*)-(\d{4,19})\b")
-IGNORE_AUTHORS = {"claude", "gpt", "sonnet", "opus", "haiku"}  # model ids etc.
-doc_files = [f for f in REFS.glob("*.md")] + [SKILL / "SKILL.md"]
-for doc in doc_files:
-    text = doc.read_text()
-    for m in CITE.finditer(text):
-        author, digits = m.group(1), m.group(2)
-        if author.lower() in IGNORE_AUTHORS:
-            continue
-        # plausible reference citation only if author matches a known post author
-        if not any(n.startswith(author + "-") for n in post_names):
-            continue
-        matches = [n for n in post_names if n.startswith(f"{author}-{digits}")]
-        if not matches:
-            errors.append(f"{doc.name}: citation '{author}-{digits}' matches no post")
-        elif len(matches) > 1:
-            errors.append(
-                f"{doc.name}: citation '{author}-{digits}' ambiguous ({len(matches)} posts) - use 7 digits"
-            )
-
-# --- 3. SKILL.md read-order files -------------------------------------------
-skill_text = (SKILL / "SKILL.md").read_text()
-for ref in re.findall(r"`references/([A-Za-z0-9_.-]+\.md)`", skill_text):
-    if not (REFS / ref).exists():
-        errors.append(f"SKILL.md names references/{ref} - file missing")
-
-# --- 4. matrix row count ------------------------------------------------------
-matrix = (REFS / "matrix.md").read_text()
-rows = re.findall(r"^\|\s*\d+\s*\|", matrix, flags=re.M)
-if len(rows) != len(post_files):
-    errors.append(f"matrix.md has {len(rows)} rows but posts/ has {len(post_files)} files")
-for link in re.findall(r"\]\(posts/([^)]+)\)", matrix):
-    if not (POSTS / link).exists():
-        errors.append(f"matrix.md links posts/{link} - file missing")
-
-# --- 5. media presence (warn) -------------------------------------------------
-for name in post_names:
-    if not (MEDIA / name).is_dir():
-        warnings.append(f"no media dir for {name} (ok if intentionally text-only)")
-
-# --- 6. copy rule: ALWAYS "-", NEVER an em dash (owner rule; generated-copy tell) ---
-EM = "\u2014"
-for doc in sorted(SKILL.rglob("*.md")):
-    for i, line in enumerate(doc.read_text().splitlines(), 1):
-        if EM in line and "NEVER" not in line and "Em dashes (" not in line:
-            errors.append(f"{doc.relative_to(SKILL)}:{i}: em dash in text - use '-'")
-
-# --- report -------------------------------------------------------------------
-for w in warnings:
-    print(f"WARN  {w}")
-for e in errors:
-    print(f"ERROR {e}")
-print(f"\n{len(post_files)} posts · {len(errors)} errors · {len(warnings)} warnings")
-sys.exit(1 if errors else 0)
+if __name__ == '__main__':
+    errors, count = validate()
+    for error in errors:
+        print('ERROR', error)
+    print(f'{count} references; {len(errors)} errors')
+    sys.exit(bool(errors))

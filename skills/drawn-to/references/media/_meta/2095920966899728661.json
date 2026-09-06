@@ -1,0 +1,34 @@
+{
+ "id": "2095920966899728661",
+ "url": "https://x.com/LexnLin/status/2095920966899728661",
+ "author": {
+  "screen_name": "LexnLin",
+  "name": "Leon Lin",
+  "url": "https://x.com/LexnLin"
+ },
+ "created_at": "Fri Sep 04 17:04:33 +0000 2026",
+ "text": "Frontend with GPT Astra will go insane because image to code is already really good with sol and is probably going to be a lot crazier with astra\n\nI mean look at this, with a few reference images (generated using images 2.0), gpt sol made a pretty nice website in one shot:",
+ "lang": "en",
+ "media": [
+  {
+   "type": "photo",
+   "width": 4023,
+   "height": 2734
+  },
+  {
+   "type": "photo",
+   "width": 4012,
+   "height": 2735
+  },
+  {
+   "type": "photo",
+   "width": 4021,
+   "height": 2735
+  },
+  {
+   "type": "photo",
+   "width": 4007,
+   "height": 2730
+  }
+ ]
+}

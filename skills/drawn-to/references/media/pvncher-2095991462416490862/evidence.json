@@ -1,0 +1,44 @@
+{
+  "slug": "pvncher-2095991462416490862",
+  "source_url": "https://x.com/pvncher/status/2095991462416490862",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "url": "https://pbs.twimg.com/media/HRZz7xaWAAMTfPd.jpg",
+      "type": "article-image",
+      "sha256": "26b53ccb2817c639669ac1429b0c1d93b0331c1ff3ece5fa215d2af9dd71bcfa",
+      "bytes": 127956,
+      "dimensions": [
+        1983,
+        793
+      ],
+      "archive_file": "photo_1.jpg"
+    },
+    {
+      "file": "photo_2.jpg",
+      "url": "https://pbs.twimg.com/media/HRZ0MiYaIAAeAdI.jpg",
+      "type": "article-image",
+      "sha256": "34f067c0f6b23fc00649421087837d19c4fa1a1b20feee5a2357f73e55e0b4b9",
+      "bytes": 134107,
+      "dimensions": [
+        1440,
+        1276
+      ],
+      "archive_file": "photo_2.jpg"
+    },
+    {
+      "file": "photo_3.jpg",
+      "url": "https://pbs.twimg.com/media/HRZ0VrCbwAAtwtk.jpg",
+      "type": "article-image",
+      "sha256": "0e2a979562b26e39eb9d4123576e8be9d460bd206bb5dfcc470a63bd472ec776",
+      "bytes": 119520,
+      "dimensions": [
+        1440,
+        1201
+      ],
+      "archive_file": "photo_3.jpg"
+    }
+  ]
+}

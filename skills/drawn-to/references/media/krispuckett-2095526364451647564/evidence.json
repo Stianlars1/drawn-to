@@ -1,0 +1,80 @@
+{
+  "slug": "krispuckett-2095526364451647564",
+  "source_url": "https://x.com/krispuckett/status/2095526364451647564",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "url": "https://video.twimg.com/amplify_video/2095526187355471872/vid/avc1/3014x1604/k_8Yyqw1tsehFg6Q.mp4?tag=29",
+      "type": "video",
+      "sha256": "4501f6d9c5442ba55137266154a97b41b9c545142913d94404b62c0c6cce057e",
+      "bytes": 15449993,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3014,
+            "height": 1604,
+            "r_frame_rate": "240/1",
+            "avg_frame_rate": "105120/2273",
+            "duration": "18.941667",
+            "nb_frames": "876"
+          }
+        ],
+        "format": {
+          "duration": "18.941667"
+        }
+      },
+      "sampling": {
+        "filter": "fps=3",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_1/f_007.jpg",
+            "sample_time_seconds": 2.0
+          },
+          {
+            "file": "frames_1/f_013.jpg",
+            "sample_time_seconds": 4.0
+          },
+          {
+            "file": "frames_1/f_020.jpg",
+            "sample_time_seconds": 6.333333
+          },
+          {
+            "file": "frames_1/f_026.jpg",
+            "sample_time_seconds": 8.333333
+          },
+          {
+            "file": "frames_1/f_032.jpg",
+            "sample_time_seconds": 10.333333
+          },
+          {
+            "file": "frames_1/f_038.jpg",
+            "sample_time_seconds": 12.333333
+          },
+          {
+            "file": "frames_1/f_045.jpg",
+            "sample_time_seconds": 14.666667
+          },
+          {
+            "file": "frames_1/f_051.jpg",
+            "sample_time_seconds": 16.666667
+          },
+          {
+            "file": "frames_1/f_057.jpg",
+            "sample_time_seconds": 18.666667
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/krispuckett-2095526364451647564-video_1.jpg"
+    }
+  ]
+}

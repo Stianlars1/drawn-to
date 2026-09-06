@@ -16,7 +16,7 @@ Synthesized from 45 reverse-engineered references.
 
 ---
 
-## 1. The dominant device: UI-fragments as illustration - UNIVERSAL, 28/45
+## 1. The dominant device: UI-fragments as illustration - frequent in the initial sample, 28/45
 
 23/45 references use `ui-fragment` as their primary illustration axis (LexnLin-2024, basit_designs-2017, AlexandruDranga-2090, piyushsphere-2088, adriankuleszo-2089887, _heyrico-2090, mnowakdesign-2089321, designbynavneet-2089, yurygok-2089981, _heyfaisal-2089734, mnowakdesign-2089684, ImranUxi-2089, flornkm-2089, LexnLin-2089, toolfolio-2089, jeetnirnejak-2089, insporadesign-2088, cabralorenzo-2090, yurygok-2089624, Triopixels-2089, adriankuleszo-2089328, adriankuleszo-2089253, mickces-2088); 5 more use the device under a different primary axis (0xSero-2090, adriankuleszo-2090, piyushsphere-2089, helvetiica-2089, kevserctk-2090). **Zero references in the corpus depict a feature with an icon + blurb, stock illustration, or abstract metaphor.** The feature is always shown as the product doing the feature: a real kanban dragging a card (AlexandruDranga-2090), a radar instrument with orbiting contacts (basit_designs-2017), a code window mid-string-swap (piyushsphere-2089), an invoice table as the hero's only "product shot" (adriankuleszo-2090). Fragments are rendered at real-component fidelity: hairline borders, layered chips, avatar rings, speech-bubble tails (LexnLin-2024). Fragments are typically oversized - cropped at ~80% scale by the container (basit_designs-2017), never full shrunken screenshots (_heyrico-2090).
 
@@ -47,7 +47,7 @@ Exactly one full-contrast hero per scene; everything else ghosted: alternates at
 
 ---
 
-## 3. Texture layer - UNIVERSAL for gradients (11/45 grain), FAMILY for print artifacts
+## 3. Texture layer - common in the initial gradient examples (11/45 grain), FAMILY for print artifacts
 
 - **Grain on every large gradient - 11/45.** 2–3% monochrome grain over all gradients, visible at 4x zoom, kills banding + adds print feel (devxnuj-2090); stipple noise σ≈4–6 (piyushsphere-2088); 4–6% film grain baked into the shader so blur reads as lens defocus (insporadesign-2087); ~20% noise on mesh shapes (kail_designs-2089); grain toggle as a first-class tool parameter (alaymanguy-2088); film grain as the unifying finish over 3D dashboard reels (mnowakdesign-2089684); 2–3% grain on illustrated paper so input reads physical vs clean output UI (adriankuleszo-2090). Deliberate exceptions: zero grain on premium glow shaders where perfectly smooth falloff is the point (madebylalit-2088, its_sslvr-2088).
 - **Halftone screens - 3/45.** Black square-grid dots, pitch ~8px, dot ~3px (~30% coverage), no rotation, clipped to exact rectangles over the hottest gradient zone = "printed ink" (basit_designs-2089995); ~4px woven halftone/CRT mesh over blurred photo (_heyrico-2090); perspective CRT dot-matrix where each dot is an RGB sub-pixel cluster, hero band only (0xSero-2090).
@@ -90,9 +90,14 @@ Materials by type:
 
 ---
 
-## Rules
+## Recipes by visual role
 
-1. Depict every feature as the product performing it - a working UI fragment, mechanism diagram, or instrument. Never an icon + blurb, never stock illustration, never abstract metaphor (28/45; 0xSero-2090, adriankuleszo-2089887, LexnLin-2024).
+These numbered examples apply to their named source/register. For identity,
+landscape, character and collection roles, use `september-expansion.md` and the
+role-specific bar in `quality-bar.md`; do not force every artwork into a UI fragment.
+
+
+1. Feature explanations should carry real product meaning through UI, a mechanism or a purposeful metaphor. Brand and editorial artwork serve a different role and need not pretend to be a product mechanism.
 2. Render fragments oversized and crop them off 1–2 container edges (or gradient-mask the outermost items to 0) to imply a larger canvas; never shrink a full screenshot to fit (_heyrico-2090, adriankuleszo-2089887, piyushsphere-2088).
 3. Allow exactly one full-contrast hero per scene; ghost alternates to 15–40% opacity and encode stack depth as opacity steps (1 / 0.7 / 0.45), not size (adriankuleszo-2089887, 0xSero-2090, Triopixels-2089).
 4. In mock dashboards, skeleton-gray every element except the 3–5 selling data points, and give ONLY those the accent hue (LexnLin-2089).
@@ -103,8 +108,8 @@ Materials by type:
 9. Label plates and specs with a mono numbering system: "FIG.1" in 11px mono #454545 16–20px from the corner, plus 01–04 / 1.1–2.3 cross-references, or slashed-zero series counters "01 / 03" (0xSero-2090, piyushsphere-2088, devxnuj-2090).
 10. Deploy design-tool measurement as the only ornament: dotted leader lines between mono keys and values, dashed guides extended past the object to the container edge, cyan padding overlays at ~35% alpha, live px readouts in mono pills, "+" crosshairs in blueprint-grid corners (ImranUxi-2089, marcelkargul-2090148, yurygok-2089624).
 11. Confine blueprint/dot-grid textures to a faded band behind or outside the content (radial or linear fade), 40–80px cells at 4–8% contrast - never full-bleed at full strength (LexnLin-2089, yurygok-2089981, adriankuleszo-2090).
-12. Overlay 2–6% monochrome grain (noise σ≈4–6) on every large gradient to kill banding and add print texture; skip grain only on premium glow shaders where smooth falloff is the point (devxnuj-2090, piyushsphere-2088, insporadesign-2087; exception madebylalit-2088).
-13. For print-authority moments, clip a black halftone screen (8px pitch, 3px dot, square grid, no rotation) to an exact rectangle over the hottest gradient zone; add 45° sheen stripes ~60px wide at 6–10% white alpha (basit_designs-2089995).
+12. Select grain, screening or a smooth finish for the material. JPEGs can show decoded texture but cannot establish the original grain amplitude.
+13. For the measured print slab, the screen has roughly 5.95/6.10 native-frame-pixel pitch, 2.62-3.08 native-pixel dots and about 14% coverage in saturated regions. Sheen period is about 7.8-10.8% of the container. These are source-space readings, not universal CSS tokens.
 14. Process photographic assets into owned textures - pixel-mosaic grids (~8–10px cells), 2–3px dither fields, ~4px halftone mesh - rather than pasting raw photos or naked gradients (kevserctk-2090, piyushsphere-2089, _heyrico-2090).
 15. Keep page chrome grayscale and quarantine ALL chroma inside one signature image/shader/texture asset; reuse that single asset at ≥3 scales (hero, card surface, footer banner) to bind the page (kevserctk-2090, _heyfaisal-2089734, basit_designs-2089995).
 16. When using blurred photography under flat UI, push blur to 40–80px, then re-texture with grain or halftone, and park the composition's dark mass behind the text block so white type survives without a scrim (_heyrico-2090, insporadesign-2087).
@@ -115,15 +120,16 @@ Materials by type:
 21. Invent one fictional client brand per page and thread its mockups through every card; salt with 9:41 status bars, percentages, bit-counts, and diegetic microcopy inside the fake UI instead of captions (adriankuleszo-2089887, _heyrico-2090).
 22. Use real third-party logos (full color inside white squircle tiles, radius ≈28%) for integration stories, embedded diegetically inside the illustrated screens; tint trust-bar logos one gray (#7E8AA0-class) and optically size-match them (_heyrico-2090, marcelkargul-2090148, adriankuleszo-2089253).
 23. Contrast materials to tell before/after: grainy, 2–6°-rotated, page-curled paper = messy input; crisp borderless white card = product output; z-order and vertical position diagram the pipeline (adriankuleszo-2090).
-24. Fade, never hard-crop: dissolve marquee edges with ~60px mask-image gradients, alpha-mask illustration stacks over their last ~40%, opacity-ramp repeated logo rows 1.0 → 0.35 toward both edges (LexnLin-2024, adriankuleszo-2090, piyushsphere-2089).
+24. Choose an edge treatment for the composition: dissolve marquee edges with ~60px mask-image gradients, alpha-mask illustration stacks over their last ~40%, opacity-ramp repeated logo rows 1.0 → 0.35 toward both edges (LexnLin-2024, adriankuleszo-2090, piyushsphere-2089).
 25. Repeat one compositional signature across a set (3-item diagonal stagger at ~50px x-offset per step, identical card geometry, one shared accent motif) so five cards read as one system; allow exactly one dark #333 anchor element per set (_heyrico-2090).
 
 ---
 
 ## Measured corrections (2026-08-22)
 
-The originals above stay as written; these are re-measurements that supersede
-them for building.
+The active recipes above use these corrected readings. Values retain the
+original evidence limitations and do not become CSS measurements merely because
+a second reviewer inspected them.
 
 **Halftone (Tier B).** § 3 and rule 13 give halftone as pitch ~8 px / dot ~3 px /
 ~30 % coverage. Measured by FFT and dot run-length on a 2549 px board: pitch
@@ -146,3 +152,11 @@ differently-sized cells - a shared pitch is what makes a wide card and a narrow
 card read as one material.
 
 Full gradient and light-field catalog: `gradient-fields.md`.
+
+## New visual roles
+
+See `september-expansion.md` for character-led cream UI (DesignByMoein),
+serif and engraved landscape (AdityaSur11), circular image collections (Basit),
+paired 3D/flat identity (DmitryLepisov) and physical schedule illustration
+(nilseller). These keep the library from treating technical line-art as the
+only way to make an authored image.

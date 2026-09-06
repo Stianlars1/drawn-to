@@ -1,0 +1,20 @@
+{
+  "slug": "nilseller-2093007384465531068",
+  "source_url": "https://x.com/nilseller/status/2093007384465531068",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "url": "https://pbs.twimg.com/media/HQuWKLXbAAEF0D9.jpg?name=orig",
+      "type": "photo",
+      "sha256": "375261918301810e3b0ba9b50f025379b2db7af685110f42b2e7d0ad1f9d1949",
+      "bytes": 1169075,
+      "dimensions": [
+        4096,
+        2680
+      ],
+      "archive_file": "photo_1.jpg"
+    }
+  ]
+}

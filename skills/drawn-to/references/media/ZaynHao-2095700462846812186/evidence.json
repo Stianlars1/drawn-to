@@ -1,0 +1,80 @@
+{
+  "slug": "ZaynHao-2095700462846812186",
+  "source_url": "https://x.com/ZaynHao/status/2095700462846812186",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "url": "https://video.twimg.com/amplify_video/2095700015528431616/vid/avc1/2934x2160/to28AgVFm5rh65Bg.mp4?tag=29",
+      "type": "video",
+      "sha256": "812cd8f9ff0e7dc8e926b8fd5f64f3163dc735692c647fec264c0ea07f6d9549",
+      "bytes": 18534085,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 2934,
+            "height": 2160,
+            "r_frame_rate": "240/1",
+            "avg_frame_rate": "857800/17449",
+            "duration": "87.245000",
+            "nb_frames": "4289"
+          }
+        ],
+        "format": {
+          "duration": "87.245000"
+        }
+      },
+      "sampling": {
+        "filter": "fps=1.5",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_1/f_015.jpg",
+            "sample_time_seconds": 9.333333
+          },
+          {
+            "file": "frames_1/f_030.jpg",
+            "sample_time_seconds": 19.333333
+          },
+          {
+            "file": "frames_1/f_044.jpg",
+            "sample_time_seconds": 28.666667
+          },
+          {
+            "file": "frames_1/f_059.jpg",
+            "sample_time_seconds": 38.666667
+          },
+          {
+            "file": "frames_1/f_073.jpg",
+            "sample_time_seconds": 48.0
+          },
+          {
+            "file": "frames_1/f_088.jpg",
+            "sample_time_seconds": 58.0
+          },
+          {
+            "file": "frames_1/f_102.jpg",
+            "sample_time_seconds": 67.333333
+          },
+          {
+            "file": "frames_1/f_117.jpg",
+            "sample_time_seconds": 77.333333
+          },
+          {
+            "file": "frames_1/f_131.jpg",
+            "sample_time_seconds": 86.666667
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/ZaynHao-2095700462846812186-video_1.jpg"
+    }
+  ]
+}

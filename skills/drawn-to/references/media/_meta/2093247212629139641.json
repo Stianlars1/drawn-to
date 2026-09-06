@@ -1,0 +1,19 @@
+{
+ "id": "2093247212629139641",
+ "url": "https://x.com/DmitryLepisov/status/2093247212629139641",
+ "author": {
+  "screen_name": "DmitryLepisov",
+  "name": "Dmitry Lepisov",
+  "url": "https://x.com/DmitryLepisov"
+ },
+ "created_at": "Fri Aug 28 08:00:00 +0000 2026",
+ "text": "Branding shouldn’t disappear when you open the product.\n\nFor @responsiveio we created a custom icon system that carries the brand into the UI. \nDistinctive, but still clear and functional.\n\nHere’s how it actually lives inside the product 👇",
+ "lang": "en",
+ "media": [
+  {
+   "type": "video",
+   "width": 1600,
+   "height": 1200
+  }
+ ]
+}

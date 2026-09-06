@@ -43,7 +43,7 @@ White #FFFFFF, edge to edge, no gradient anywhere. Behind everything, several
 hundred tiny dashes - roughly 2 x 8 px, each at its own rotation - scattered
 across the whole viewport in blue, red, orange, purple and yellow, denser at
 the left and lower edges, thinning through the middle so the headline sits in
-clear air. Centred logo lockup, then an H1 at roughly 112 px / 500 over two
+clear air. Centred logo lockup, then an H1 measured at 72 px / 450 at 1440x900 over two
 lines, black, tracking about -0.03em, measure about 1150. Two pills: black
 filled with a monitor glyph, and white outlined. Nothing else.
 **The move:** the only "graphic" is a particle field with no shape and no
@@ -51,7 +51,7 @@ gradient, and it earns the whole page because the type is enormous and the
 field is genuinely edge to edge.
 
 ### Codex - one photograph, thrown out of focus, and the type sits on it
-A full-bleed image in periwinkle and white at extreme optical blur - real
+A full-bleed video in periwinkle and white at extreme optical blur - real
 bokeh, a dark violet mass upper right, a bright diagonal streak lower left,
 film grain visible across it. Centred app icon in a white rounded square with
 one soft shadow. "Codex" at about 64 px. One sub line. One black pill. A logo
@@ -71,11 +71,11 @@ enough, the correct field is none, and the confidence of an empty black screen
 with one headline reads as expensive.
 
 ### Raycast - shaped light at full strength, and the type is inside it
-#000 with a floating rounded nav inside the container. The hero is six or seven
+#07080A with a floating rounded nav inside the container. The hero is six or seven
 huge diagonal shafts in red, running upper left to lower right at roughly 55
 degrees, each with a **dithered, noisy falloff** at its edges rather than a
 clean gradient stop, with dark blue-black bleeding between them. Centred white
-H1 about 72 px / 700 over two lines, directly on the shafts. Two-line sub. Two
+H1 measured at 64 px / 600 at 1440x900 over two lines, directly on the shafts. Two-line sub. Two
 light pills. A mono install hint under them.
 **The move:** one hue at full energy, given geometry and direction, with the
 falloff dithered so it reads as light through atmosphere rather than a CSS
@@ -85,75 +85,68 @@ already dark.
 ### Vercel - one object, and the bloom does all the work
 #000. Small strip with a pill above the fold. H1 about 64 px / 400, tracking
 -0.06em, two lines, LEFT. Two pills. In the centre, ten white dots in a
-triangle, each roughly 20 px with a real halo, on pure black. Three mono grey
+triangle, each roughly 20 px with a real halo, on pure black. Three sans gray
 lines right. Logo row at the foot.
 **The move:** the object is ten circles. It works entirely because each one
 carries genuine bloom on a true black ground - the light is emitted, not drawn.
 
 ---
 
-## The shared formula
+## What transfers from these five
 
-1. **Nothing is in a box.** No card, no panel, no container background behind
-   the hero copy. Three of the five run a field edge to edge and set the type
-   directly on it; the other two run no field at all. A figure in a frame
-   beside a copy column appears in none of them.
-2. **The field is the page, or there is no field.** There is no middle setting
-   where a decorative panel sits next to the words.
-3. **The optics are real.** Blur is 40-120 px, not 8. Falloff is dithered or
-   grained, never a clean stop. Any light source carries bloom. Depth of field
-   is genuine - something is out of focus.
-4. **Type is bigger than a section headline.** 64-112 px on the first screen,
-   weight 400-700, tracking -0.02 to -0.06em, one or two lines, left or centred
-   but never justified into a narrow measure.
-5. **Exactly two buttons.** One filled, one outlined or ghost. Pills or 6-8 px
-   rounded rects, 40-52 px tall.
-6. **Colour is one hue at high energy, or many hues at low density, or none.**
-   Raycast is one red at full strength; Antigravity is five hues at 1 % surface
-   area; Linear and Vercel are achromatic. None of them uses a two-stop brand
-   gradient, which is the shape most generated heroes reach for first.
+These five historic production captures demonstrate several ways to put type,
+product and atmosphere in one first screen. They are examples, not an exhaustive
+hero grammar. Their measured H1 sizes at 1440x900 are 64-72 px and their button
+counts range from zero to two. Wider type/image relationships are documented in
+`september-expansion.md`, including image-first and bounded split heroes.
+
+A full field needs transparent overlaid containers where the field should show.
+A bounded field can deliberately stop at a container edge (Raycast does), and
+a split hero can deliberately give product evidence its own panel. State the
+extent and reading zone in the lock. Choose color, finish and optical depth for
+the actual material, not because every hero must glow or blur.
 
 ## Optics - the values the corpus was missing
 
-| Effect | Values that read as real |
+| Effect | Implementation starting points (not source measurements) |
 |---|---|
 | Out-of-focus field | `blur(56-120px)`; push `saturate(2.5-4.5)` after blurring, because blurring desaturates; add `contrast(1.1-1.2)` to recover the mass |
 | Dithered falloff | mask the field with a radial or linear gradient AND lay 4-8 % grain over it; a clean gradient stop is the tell |
 | Bloom on a light source | duplicate the lit path under the sharp one at 2-3x the stroke width, `blur(4-8px)`, opacity .25-.40; never a uniform glow around the whole object |
 | Depth of field | one layer sharp, one layer blurred, SAME content - the pair is what reads as a lens rather than a filter |
 | Particle field | 2-10 px marks, random rotation, 0.5-2 % surface coverage, denser at two edges so the centre stays clear for type |
-| Grain | 4-8 % over the field, `mix-blend-mode: overlay`, always (C9) |
-| True black | Raycast and Vercel both use #000, not #0A0A0A - bloom needs true black under it to read as emitted |
+| Grain | optional, tuned for the chosen material and output; not inferred from JPEGs |
+| True black | Vercel uses #000; Raycast's probed ground is #07080A. Choose compositing and black level together |
 
 ## Recipe - Field Hero
 
 - **Anatomy:** one 100 svh screen. A field at `position:absolute; inset:0` and
   z-index 0, edge to edge, with NO container painting over it. The copy sits at
   z-index 2 in a container whose background is `transparent`. Brand top-left,
-  one action top-right. H1 64-112 px, one or two lines. One sub line. Two
-  buttons, or one capture control. Nothing else.
+  one action top-right. Start from the approved type scale (the five measured examples use
+  64-72 px at 1440x900). Use the required action count, including zero hero
+  buttons when the next action is already clear.
 - **The load-bearing rule:** the container must not be a surface. An opaque
   column background is what silently prevents every full-bleed field - the
   field renders and only shows in the margins.
 - **Ingredients:** pick the field from the four the corpus shows - out-of-focus
   photograph, dithered light shafts, particle scatter, or nothing at all. Give
   it ONE light direction and put any object IN that light, lit from the same
-  side. Grain over everything. If the product has a strong screenshot, prefer
+  side. Choose the finish for that material; do not add grain to operational text. If the product has a strong screenshot, prefer
   no field and let the restraint carry it (Linear).
 - **Evidence:** the five above; optics table for values.
 - **Families:** F3 Staged Atmosphere native; F1 Editorial Monochrome for the
   no-field variants; F8 Emissive Signal when the field is bloom on true black.
-- **Choose when:** the first screen of anything, when the job is to make a
+- **Choose when:** an atmospheric first screen serves the approved brief and the job is to make a
   visitor stop before they read. Not for a screen whose job is to explain -
   use One-Screen Poster or a section recipe.
 
-## What this file changes about the skill's instincts
+## Composition before effects
 
-Before it, the skill's default first screen was "figure beside copy, both
-inside a container" - correct at section scale, wrong at hero scale, and it
-produced three near misses in a row. After it, the first question for any
-first screen is: **does the field own the page, or is there no field?** There
-is no third answer, and a container with a background is a defect.
+Choose whether the screen is type-led, a product shelf, image-first, a split
+of copy and evidence, a bounded material or a full-screen field. The object,
+type and action need a deliberate relationship. No single composition is a
+prerequisite for a good hero.
 
 ---
 
@@ -163,8 +156,8 @@ The section above was read off captures. On 2026-08-21 the same five heroes
 were re-opened live at exactly 1440x900 and probed for computed styles,
 bounding boxes and drawing technology. Screenshots taken on a wide display read
 type larger than it is; the probe is the ground truth, and it corrected five
-values that had been eyeballed. Both passes stay: the reading above is what the
-screens ARGUE, the table below is what they MEASURE.
+values that had been eyeballed. The reading above has been reconciled with those probes. The table below
+records that historical snapshot; it is not a claim about today's live pages.
 
 ## The measured plate - all five at 1440x900
 
@@ -184,7 +177,7 @@ screens ARGUE, the table below is what they MEASURE.
 | Button skin | `#121317` fill / `rgba(183,191,217,.1)` + 1px `rgba(33,34,38,.06)` | `#000` fill | - | `#E6E6E6` + ring `0 0 0 2px rgba(0,0,0,.5)` + glow `0 0 14px rgba(255,255,255,.19)` | `#EDEDED` fill / `#0A0A0A` + ring |
 | Field tech | WebGL2, DPR 2 | `<video>` 2560² + canvas 2d | none | WebGL, 1200-wide box | WebGL2, overscan, DPR 1.48, screen |
 
-**Five corrections to part one, from the probe.** They matter because each one
+**Probe findings reconciled in part one.** They matter because each one
 would otherwise be built wrong:
 
 1. **The H1s are 64-72 px at 1440, not 96-112.** Every one of the five sits in a
@@ -221,8 +214,8 @@ of the five is one cell of the pair.
   fall over. Reads as a system.
 
 **Axis 2 - what fills the rest of the screen.**
-- **The field** (Antigravity, Codex, Raycast) - it goes to the edges and the
-  type sits on it.
+- **The field** (Antigravity, Codex, Raycast) - its extent is deliberately
+  full-width or bounded, and the type sits in its reading zone.
 - **The product** (Linear) - a real screenshot, one frame, crossing the fold.
 - **One lit object** (Vercel) - a single emissive thing in its own zone.
 
@@ -239,7 +232,8 @@ must be said at once and none of them is a paragraph.
 15 / 400 grey; the "New / Coding Sessions ->" link sits on the **same baseline**
 at the right end of the container. It is not a badge, it is not above the H1,
 and it takes the eyebrow's job without being one - which is how a page ships a
-"what's new" hook while keeping the 0-1 eyebrow budget (`quality-bar.md` § 2).
+"what's new" hook without adding an overline. Use this as a hierarchy example,
+not a global eyebrow quota (`quality-bar.md` § 2).
 
 **Product shelf** (Linear, measured). Below the copy, one real product frame,
 container-wide or full-bleed, top edge at ~54 % of viewport height (y 490 of
@@ -247,9 +241,10 @@ container-wide or full-bleed, top edge at ~54 % of viewport height (y 490 of
 
 ## The crop contract - what may cross the fold
 
-`quality-bar.md` § 1 bans content cut by the fold. Linear and Codex both cut
-content at the fold on purpose, and the difference is not taste, it is which
-LAYER gets cut. Both rules are true, and this is the seam between them.
+For a first impression designed around the fold, check what meaning the initial
+view preserves (`quality-bar.md` § 2). Linear and Codex deliberately crop product
+media. Their following patterns are examples, not a ban on scrolling, partial
+collection items or every card whose border crosses a viewport edge.
 
 **May cross the fold.** A product shelf or a field. Its top edge lands at
 50-65 % of viewport height, it shows at least its own frame edge plus two or
@@ -260,41 +255,26 @@ the top edge is anchored to the copy, so the fraction changes with viewport
 height and both readings are correct. The invariant is the top edge and the
 cut quality, never a percentage.
 
-**Never crosses the fold.** The message. Headline, sub, buttons, the announcement
-row, and any card whose own border or corner radius is severed - a cut card
-reads as a layout bug, because a card is a closed object and the fold is not
-one of its edges. A signature object that only makes sense whole (Vercel's dot
-triangle) is a message, not a shelf.
+**Protect the intended first-view message.** Keep the necessary text, action and
+meaningful portion of the image available. A signature object that only makes
+sense whole needs more protection than repeating product rows or collection
+items. A border crossing the fold is not by itself proof of a layout bug.
 
 Test in one line: **crop the media, never the meaning.** If a visitor who never
 scrolls has lost an idea, the cut is wrong. If they have only lost more of the
 same thing, the cut is the invitation.
 
-## Type as the object
+## Type as the object - a measured example
 
-`quality-bar.md` § 2 budgets a headline at <= 6 words and <= 2 lines.
-Antigravity ships **eight** words - "Experience liftoff with the next-gen agent
-platform" - over two lines at 72 px, and it is the strongest type on any of the
-five. The budget is not wrong; the case is exempt, and the exemption has
-conditions.
+Antigravity's eight-word heading spans two lines at 72px on a roughly 1150px
+measure. A sparse particle field leaves the reading zone clear. This shows how
+large type can carry the first screen without a separate product object.
 
-**The headline may run to 9 words / 2 lines when ALL of these hold:**
-
-1. It is the ONLY object on the screen. No product frame, no lit object, no
-   illustration, no card. The field, if any, has a hole in it where the type
-   sits (Antigravity's particle density thins through the middle band precisely
-   for this).
-2. It is set at **>= 72 px** at 1440 and holds one designed break -
-   `text-wrap: balance` plus an explicit `<br>` at the planned split, with no
-   orphan on either line.
-3. The measure is wide: 1000-1200 px, centred. A long headline in a 600 px
-   column is the failure the budget exists to prevent; the same words across
-   1150 px are a poster.
-4. There is no eyebrow, and the sub line is absent or a single short line.
-
-Fail any one and the 6-word budget applies again. In particular: a long
-headline NEXT TO an object is never the exemption - it is two things competing,
-which is the § 3 "one object" rule under a different name.
+Use the relationship when it serves the brief: sufficient measure, deliberate
+line breaks and a clear hierarchy between type and imagery. The example does
+not create a six-word ceiling, a nine-word exemption or a minimum type size for
+other heroes. Check actual breaks and readability at each target width
+(`quality-bar.md` § 1-2), including a split or image-led editorial composition.
 
 ## Archetypes are a layer under the families
 
@@ -308,20 +288,17 @@ is fixed, the signature visual changes by family.
 
 Consequences for the interview:
 
-- **Never name a site in the question.** Ask in plain language - "type on the
-  left with one lit thing holding the centre", "the product itself as a shelf
-  under the words", "one field edge to edge with the words on top" - the same
-  rule that keeps F1-F8 out of the owner's questions
-  (`question-flow.md` § Question phrasing).
-- **Name the site in the RATIONALE, and when the owner names it first.** "That
-  composition is what Linear's first screen does; in your locked blend it comes
-  out like this" is useful and honest. A menu of brand names is not a question,
-  it is a moodboard.
+- Ask about visible relationships in plain language: "type at the left with
+  evidence beside it", "the product as a shelf" or "an image setting the
+  scene". Link a relevant named reference when useful; keep internal ledger
+  codes out of the question (`question-flow.md` § Question phrasing).
+- Explain what transfers from a reference rather than treating its brand name
+  as a complete design specification.
 - **Weights, not a pick.** Archetypes blend the way families do: 60 % left-
   anchored spine + 30 % type-as-object + 10 % product shelf is a legal answer
   and produces a real screen (large left type, no object, a shelf entering
   low). The one illegal blend is two SPINES at full weight - centred and
   left-anchored at 50/50 is not a composition, it is an unresolved layout.
-- **The field question comes first** and is still binary (part one): field or
-  no field. Archetype weights are asked after it, because "no field" removes
-  three of the answers.
+- First settle the relevant relationship: full field, bounded imagery, split
+  copy/evidence, image-first, product shelf or type-led. Ask only about choices
+  still open; an approved composition does not repeat this step.

@@ -1,0 +1,80 @@
+{
+  "slug": "socoloffalex-2095936925668438206",
+  "source_url": "https://x.com/socoloffalex/status/2095936925668438206",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "url": "https://video.twimg.com/amplify_video/2095936875668066307/vid/avc1/3480x2160/bQdcPbrEoNYi2aog.mp4?tag=29",
+      "type": "video",
+      "sha256": "e44e4de67c2bd29e33c0e6d34e1415c8a22641119315ab67b778e657eb70d6d4",
+      "bytes": 30418815,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3480,
+            "height": 2160,
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "duration": "27.533333",
+            "nb_frames": "826"
+          }
+        ],
+        "format": {
+          "duration": "27.562086"
+        }
+      },
+      "sampling": {
+        "filter": "fps=3",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_1/f_010.jpg",
+            "sample_time_seconds": 3.0
+          },
+          {
+            "file": "frames_1/f_019.jpg",
+            "sample_time_seconds": 6.0
+          },
+          {
+            "file": "frames_1/f_028.jpg",
+            "sample_time_seconds": 9.0
+          },
+          {
+            "file": "frames_1/f_037.jpg",
+            "sample_time_seconds": 12.0
+          },
+          {
+            "file": "frames_1/f_047.jpg",
+            "sample_time_seconds": 15.333333
+          },
+          {
+            "file": "frames_1/f_056.jpg",
+            "sample_time_seconds": 18.333333
+          },
+          {
+            "file": "frames_1/f_065.jpg",
+            "sample_time_seconds": 21.333333
+          },
+          {
+            "file": "frames_1/f_074.jpg",
+            "sample_time_seconds": 24.333333
+          },
+          {
+            "file": "frames_1/f_083.jpg",
+            "sample_time_seconds": 27.333333
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/socoloffalex-2095936925668438206-video_1.jpg"
+    }
+  ]
+}

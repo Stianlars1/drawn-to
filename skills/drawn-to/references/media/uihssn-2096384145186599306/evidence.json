@@ -1,0 +1,56 @@
+{
+  "slug": "uihssn-2096384145186599306",
+  "source_url": "https://x.com/uihssn/status/2096384145186599306",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "url": "https://pbs.twimg.com/media/HRfaMQTasAAYInD.jpg?name=orig",
+      "type": "photo",
+      "sha256": "affbdc0714afaaee0de2d7a40f810c72fd0f49aabbbe9c88417e6ffcc5743b05",
+      "bytes": 543489,
+      "dimensions": [
+        4096,
+        2913
+      ],
+      "archive_file": "photo_1.jpg"
+    },
+    {
+      "file": "photo_2.jpg",
+      "url": "https://pbs.twimg.com/media/HRfaMQEbMAAViFl.jpg?name=orig",
+      "type": "photo",
+      "sha256": "f535e580953f1f47812bbfb6011df41ce5ce9d46e2667a1a638c6c96cf8ff45c",
+      "bytes": 603985,
+      "dimensions": [
+        4096,
+        2913
+      ],
+      "archive_file": "photo_2.jpg"
+    },
+    {
+      "file": "photo_3.jpg",
+      "url": "https://pbs.twimg.com/media/HRfaMQFaYAAJdWf.jpg?name=orig",
+      "type": "photo",
+      "sha256": "52a9f14b378aa0fd3e3a0109f349b27ff464f9b4efa55ef13f543b230178a865",
+      "bytes": 296485,
+      "dimensions": [
+        4096,
+        2913
+      ],
+      "archive_file": "photo_3.jpg"
+    },
+    {
+      "file": "photo_4.jpg",
+      "url": "https://pbs.twimg.com/media/HRfaMQUbkAAzqpM.jpg?name=orig",
+      "type": "photo",
+      "sha256": "51de522d455dda53f462e941175bc7a19f99d13393a6c56e5a0674a98c12692f",
+      "bytes": 569566,
+      "dimensions": [
+        4096,
+        2913
+      ],
+      "archive_file": "photo_4.jpg"
+    }
+  ]
+}

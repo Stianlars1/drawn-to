@@ -1,11 +1,16 @@
 ---
-slug: local-production-heroes
-url: (owner captures + live probes - antigravity.google, openai.com/codex, linear.app, raycast.com, vercel.com/home)
-author: Google, OpenAI, Linear, Raycast, Vercel
-kind: hero
-mode: mixed
-motion: sequence
-tags: [first-screen, field, webgl, video-ground, particle-field, light-shafts, emissive-object, product-shelf, three-zone-baseline, measured]
+slug: "local-production-heroes"
+url: "(owner captures + live probes - antigravity.google, openai.com/codex, linear.app, raycast.com, vercel.com/home)"
+author: "Google, OpenAI, Linear, Raycast, Vercel"
+kind: "hero"
+mode: "mixed"
+motion: "sequence"
+tags: ["first-screen", "field", "webgl", "video-ground", "particle-field", "light-shafts", "emissive-object", "product-shelf", "three-zone-baseline", "measured"]
+order: 53
+summary: "Five production first screens measured at 1440x900 - particle field, filmed bokeh, no field at all, WebGL shafts, one emissive object"
+radius: "mixed"
+density: "airy"
+illustration: "shader"
 ---
 
 # Five production first screens, captured and probed

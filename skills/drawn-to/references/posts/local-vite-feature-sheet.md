@@ -1,11 +1,16 @@
 ---
-slug: local-vite-feature-sheet
-url: https://vite.dev (local full-page capture + a hover-state capture)
-author: Vite
-kind: section-set
-mode: dark
-motion: micro
-tags: [drafting-sheet, hairline-frame, isometric, hover-lift, light-leak-plate, receipt-panel, dark, developer-tool]
+slug: "local-vite-feature-sheet"
+url: "https://vite.dev (local full-page capture + a hover-state capture)"
+author: "Vite"
+kind: "section-set"
+mode: "dark"
+motion: "micro"
+tags: ["drafting-sheet", "hairline-frame", "isometric", "hover-lift", "light-leak-plate", "receipt-panel", "dark", "developer-tool"]
+order: 56
+summary: "1px drafting-sheet rows; grainy purple light-leak fields alternating with true-30deg isometrics; one tile lifts and is annotated, never shadowed"
+radius: "sharp(0-4)"
+density: "airy"
+illustration: "isometric"
 ---
 
 # The drawing sheet - 1px rules, media flush, text inset, one tile that lifts

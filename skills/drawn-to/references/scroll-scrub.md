@@ -4,7 +4,7 @@ Reverse-engineered from the shipped implementation in the refetch.sh repo
 (`refetch-website/src/components/refetch/stage/` + `src/app/sections/hero.css`,
 `chapters.css`, `manifesto.css`). Zero animation libraries: native CSS
 scroll-driven animations (`animation-timeline`, `view-timeline`, `@property`)
-plus ~100 lines of React for the interactive takeover. This is the owner's
+plus React for the interactive takeover (about 100 lines in the source example). This is the owner's
 favorite motion device - a product flow told as a scrubbable scene.
 
 ## What it is
@@ -27,8 +27,10 @@ isn't possible.
    46-62%, hover 68-78%, peek 86-92%) so each beat reads before the next  - 
    the scene breathes instead of morphing continuously.
 4. **One element owns all state**: every pose is a number on the stage root;
-   everything below derives via `calc()`/`clamp()`/`color-mix()`. React never
-   animates anything.
+   descendants derive via `calc()`/`clamp()`/`color-mix()` in this recipe.
+   Keep inheritance within the stage; changing inherited custom properties can
+   cause descendant style work, so profile it rather than assuming compositor-only
+   animation. Direct transforms can be cheaper for simple independent elements.
 5. **Three drivers, one source of truth**: the same registered properties are
    driven by the scroll timeline, by keyboard-set scene attributes (ordinary
    CSS transitions interpolate them), or held at the final pose. No drift
@@ -49,8 +51,10 @@ Everything in the scene reads them: `clip-path: inset(0 calc((1 - var(--p-fill))
 inner window out of a longer scalar), accent blends via
 `color-mix(in srgb, var(--rf-accent) calc(var(--p-fill) * 100%), var(--rf-control))`.
 
-**2. One keyframe track.** A single `@keyframes` with %-stops; each property
-appears only at the stops that change it and holds between. `animation: scene
+**2. One keyframe track.** A single `@keyframes` with %-stops. Repeat a
+property's value at both ends of each intended hold; omitting it at intermediate
+stops does not create a hold, because CSS interpolates that property between
+its own specified stops. `animation: scene
 linear both;` - linear, because pacing belongs to the stop spacing.
 
 **3. The sticky run + view timeline.** Geometry is three numbers:
@@ -64,8 +68,7 @@ linear both;` - linear, because pacing belongs to the stop spacing.
 
 The run wraps the stage; a `::after` spacer of `--rf-scrub-len` gives it
 length (a sticky box cannot travel into its parent's padding). The run gets
-`view-timeline: --hero block`; the stage gets `position: sticky; inset-block-
-start: var(--rf-stick-top)` and:
+`view-timeline: --hero block`; the stage gets `position: sticky; inset-block-start: var(--rf-stick-top)` and:
 
 ```css
 animation-timeline: --hero;
@@ -123,8 +126,9 @@ matches the HTML.
    keyboard driver still live. No spacer ⇒ no dead scroll.
 3. `prefers-reduced-motion`: poses still change state, nothing travels
    (translations zeroed); entrances collapse to fades via a travel token.
-4. The final pose must carry the full pitch alone - it is the still most
-   visitors' screenshots will show.
+4. Name the static poster pose that carries the pitch, usually the final
+   pose. A semantic scene may need another pose (an opened host, for example).
+   Do not assume the recorded end frame or an arbitrary paused frame is the poster.
 
 ## Smaller-scale reuse (same idea, fewer numbers)
 
@@ -133,8 +137,9 @@ matches the HTML.
   composite crosses the viewport; final pose held where unsupported.
 - **Word-lit paragraph**: the paragraph is the timeline (`view-timeline:
   --thesis`); each word animates opacity over
-  `animation-range: cover calc(10% + var(--i) * 0.9%) / calc(19% + var(--i) * 0.9%)`
-  - index-driven stagger with zero JS.
+  `animation-range: cover calc(10% + var(--i) * 0.9%) cover calc(19% + var(--i) * 0.9%)`
+  - index-driven stagger with zero JS. Start/end values are whitespace-
+  separated, not slash-separated ([CSSWG syntax](https://drafts.csswg.org/scroll-animations-1/#animation-range)).
 - **Entrance reveals**: one staged entrance on first paint (semantic chunks
   100ms apart via `--rf-chunk` indexes), never per-line cascades.
 

@@ -1,0 +1,24 @@
+{
+ "id": "2095700462846812186",
+ "url": "https://x.com/ZaynHao/status/2095700462846812186",
+ "author": {
+  "screen_name": "ZaynHao",
+  "name": "Zayn Hao",
+  "url": "https://x.com/ZaynHao"
+ },
+ "created_at": "Fri Sep 04 02:28:21 +0000 2026",
+ "text": "这大概是本周最精彩的文章了。\n\n如果你是工程师、设计师，可能非常适合阅读。\n\nFey 原创始人加入到 Wealthsimple 后，如何将代码工程和 UI 设计带领到下一个级别。\n\n其中，我最喜欢的是文章这些可实时交互的 UI 小控件，可以直接感受到这些组件的设计质量与愉悦。",
+ "lang": "zh",
+ "media": [
+  {
+   "type": "video",
+   "width": 3172,
+   "height": 2334
+  }
+ ],
+ "quote": {
+  "author": "brotzky",
+  "url": "https://x.com/brotzky/status/2095504081188192740",
+  "text": "One year ago, @Wealthsimple acquired Fey.\n\nHere's what it's actually been like as founders: what we built, what surprised us, and what's next.\n\nhttps://performance.dev/wealthsimple-year-one"
+ }
+}

@@ -1,0 +1,80 @@
+{
+  "slug": "DesignByMoein-2095937596665024817",
+  "source_url": "https://x.com/DesignByMoein/status/2095937596665024817",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "url": "https://video.twimg.com/amplify_video/2095936618373025792/vid/avc1/1920x1080/5-PZGQ-h-LkgQ9vX.mp4?tag=29",
+      "type": "video",
+      "sha256": "ea40ffb52d11292998dcf2e34408be1d13d4f377d367b21516ac9c71bf949430",
+      "bytes": 823626,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "duration": "5.933333",
+            "nb_frames": "178"
+          }
+        ],
+        "format": {
+          "duration": "5.933333"
+        }
+      },
+      "sampling": {
+        "filter": "fps=6",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_1/f_005.jpg",
+            "sample_time_seconds": 0.666667
+          },
+          {
+            "file": "frames_1/f_009.jpg",
+            "sample_time_seconds": 1.333333
+          },
+          {
+            "file": "frames_1/f_013.jpg",
+            "sample_time_seconds": 2.0
+          },
+          {
+            "file": "frames_1/f_017.jpg",
+            "sample_time_seconds": 2.666667
+          },
+          {
+            "file": "frames_1/f_020.jpg",
+            "sample_time_seconds": 3.166667
+          },
+          {
+            "file": "frames_1/f_024.jpg",
+            "sample_time_seconds": 3.833333
+          },
+          {
+            "file": "frames_1/f_028.jpg",
+            "sample_time_seconds": 4.5
+          },
+          {
+            "file": "frames_1/f_032.jpg",
+            "sample_time_seconds": 5.166667
+          },
+          {
+            "file": "frames_1/f_036.jpg",
+            "sample_time_seconds": 5.833333
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/DesignByMoein-2095937596665024817-video_1.jpg"
+    }
+  ]
+}

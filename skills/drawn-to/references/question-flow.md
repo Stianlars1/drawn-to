@@ -2,7 +2,9 @@
 
 Turns a task brief into a locked design direction through interactive, weighted
 questions, then into a per-project lock file that implementation must serve.
-Modeled on the refetch.sh Q1-Q25 process; generalized to the whole taste library.
+Use this flow for a new direction or consequential choices that remain open.
+Approved continuation uses `lock-file.md`; review-only uses `quality-bar.md`.
+Reuse known facts and choices instead of reopening this interview.
 
 ## Protocol rules
 
@@ -16,18 +18,19 @@ Modeled on the refetch.sh Q1-Q25 process; generalized to the whole taste library
    several options at once; forcing a single choice is the failure mode this
    skill exists to fix. Always allow answers like "70% A + 20% B + 10% C", and
    say so in the question. A single pick is just a 100% weight.
-   *Exclusive axes:* some axes are physically exclusive per surface (AX2
-   separation: "pick ONE per surface"). There, weights mean a **scale or
-   surface split** (e.g. 70% = page cards, 30% = one special section), never a
-   mix on one surface - say this in the question when the axis is exclusive.
+   *Conflicting choices:* explain how weighted ingredients apply to distinct
+   roles or surfaces when they cannot occupy the same role. A hairline and a
+   contact shadow may coexist with different jobs; do not invent exclusivity
+   from the family names.
    *Weights that don't sum to 100 are queried, never silently normalized.*
    Every lock also records **firmness**: `must-have` / `prefer` / `open`  - 
    so later trade-offs know which locks may flex and which never do.
-3. **Options cite evidence.** Each option names 1-2 reference slugs (see slug
-   convention in SKILL.md) and, where apt, a famous site, plus one line of
-   concrete values (hex/px/ms) - never adjectives alone.
-4. **Never ask about the constants** (C1-C12 in SKILL.md). They are enforced
-   silently in every direction.
+3. **Options cite evidence.** Use descriptive reference links and concrete
+   visible differences. Keep reference IDs and detailed measurements in the
+   ledger; the owner should not need internal codes to answer.
+4. Apply the scoped defaults in `style-families.md` where they fit. Do not
+   interview about routine craft; ask if a consequential choice remains open.
+   The owner's new references can legitimately change the default direction.
 5. **Inheritance - ask only where the blend leaves a fork.** For each axis:
    look up each blended family's value in the dimension docs and weight it by
    the blend percentage. Inherit without asking only if BOTH hold:
@@ -40,26 +43,13 @@ Modeled on the refetch.sh Q1-Q25 process; generalized to the whole taste library
    as inherited when only one legal option remains, otherwise ask.
    Target 5-9 questions for a single section, 9-14 for a full page or site
    (QS section-variant questions included in the budget).
-6. **Warn on clashes and mode conflicts.** If a requested blend pairs clashing
-   families (`style-families.md` § Blend behavior lists all four), state the
-   clash reason and offer resolutions - the generic rule plus any pair-specific
-   ones:
-   *Generic:* the dominant family keeps the page; the clashing family gets
-   either (a) ONE contained surface where it applies its own physics internally
-   (e.g. a surface-inverted dark finale card - adriankuleszo-2089887,
-   kevserctk-2090 Pro tier), or (b) demotion to a ≤10% non-physics garnish
-   (type/meta/one ornament only), or (c) substitution by its same-register
-   counterpart in the required mode (F1 Editorial Monochrome ⇄ F2 Ink & Air are
-   dark/light counterparts).
-   *Pair-specific:* Tactile Instruments resolves by scale (component inside any
-   host); Blueprint Sheet demotes to ≤10% garnish; two Staged Atmosphere assets
-   → one asset reused at multiple scales; Paper & Print × Emissive Signal →
-   pick one material metaphor.
-   *Mode conflicts:* also warn when a requested family's ground band
-   contradicts the locked mode (F1 and F8 are dark-ground systems; F5/F6 light)
-   - offer the counterpart or the contained-surface resolution.
-   *Bookkeeping:* a rejected blend consumes no Q number and is not logged; the
-   re-answer revises the same question.
+6. **Resolve actual material and mode conflicts.** Family combinations are not
+   intrinsically illegal. Explain a real conflict in plain language: competing
+   depth cues, incompatible geometry, unreadable contrast or an asset that does
+   not work in the required mode. Offer a role/surface split, a material
+   adaptation or a different ingredient. Let the owner's weights and brief
+   determine the resolution; do not cap a family at 10% just because the
+   original corpus used it as garnish. A correction revises the same question.
 7. **Never guess, never substitute your own preference.** An unanswered
    question is an open question. If the owner says "just decide", pick the
    dominant family's value and mark the lock `(delegated)`.
@@ -75,8 +65,8 @@ BOOKKEEPING, not interview language. Rules:
 - **Ask in plain words.** Lead every question and option with what it looks
   like, in one sentence a non-designer understands: "Skarpe hjørner og tynne
   lysende skillelinjer - som Linear" - not "AX2 separasjonsfysikk, eksklusiv
-  per flate". Codes and slugs may follow in parentheses for the ledger; they
-  are never required to answer.
+  per flate". Keep codes and slugs in the ledger. In questions, link the example using a
+  descriptive name instead.
 - **Famous anchors beat slugs in options.** "som Linear / som Raycast / som
   Stripe light" communicates; `basit_designs-2017` belongs in the lock file.
 - **One decision per question, max 2 lines per option.** If an option needs
@@ -88,7 +78,7 @@ BOOKKEEPING, not interview language. Rules:
   failure.
 - **Conflicts from multi-picks are resolved, not re-asked.** When the owner
   picks more than a slot can hold (three concepts, two blends), apply the
-  constants (C11: one focus) to propose ONE concrete resolution and ask for
+  intended hierarchy and roles to propose a concrete resolution and ask for
   a yes/adjust - never open a fresh abstract question about the conflict.
 - **Offer "anbefalt" batching on QI**: after the first 1-2 features, offer
   "vil du velge per feature, eller ta mine anbefalinger for resten og
@@ -119,11 +109,11 @@ asking and shipping alike.
 | AX1 Ground & mode | "Dark or light page - and which black/white exactly?" | - |
 | AX2 Separation | "How do surfaces separate: thin lines, tone steps, or one soft shadow?" | Linear lines vs Stripe shadow |
 | AX3 Radius | "Sharp corners, slightly rounded, or pebble-round?" | Prime Intellect vs Linear vs Amie |
-| AX4 Accent | "The one accent color - which, and where is it allowed?" | - |
+| AX4 Palette roles | "Which colors carry the brand, content, categories and state?" | - |
 | AX5 Texture | "Any texture: grain, halftone, blueprint grid - or flat?" | - |
 | AX6 Graphic device | "How do we picture each feature: real UI pieces, diagrams, line-art, light?" | - |
 | AX7 Motion budget | "How much motion: none, hover only, entrances, full scenes, scroll-driven?" | - |
-| AX8 Type voices | "Display type: clean grotesque, a serif moment, or playful bold?" | - |
+| AX8 Type voices | "Which type roles fit: serif-led, clean sans, mixed voices or bold display?" | - |
 | AX9 Meta layer | "Number the pieces (FIG.01, 1.0) or keep it clean?" | - |
 | AX10 Atmosphere asset | "If there is one big visual - gradient, photo, shader, light - which one?" | - |
 | AX11 Card anatomy | "How much of each card is picture vs text, and where does text sit?" | - |
@@ -133,13 +123,13 @@ asking and shipping alike.
 | AX15 Buttons | "Buttons: pills, squarish, or light-with-ring?" | Linear vs Vercel vs Raycast |
 | AX4b Gradient role | "If there is a coloured field, what job does it do - the page, one card, a panel inside a card - and where is the light coming from?" | - |
 | QC Card anatomy | "For these cards, which anatomy?" (2-3 named, with a photo/field/micro option) | - |
-| AX16a First screen: field | "Does something fill the whole first screen behind the words, or is it empty except for the words and the product?" | - |
-| AX16b First screen: composition | "Which of these first screens are you drawn to, and how much of each?" (five plain descriptions, no brand names) | - |
+| AX16a First screen: relationship | "Does this need full-screen imagery, a bounded image, split evidence, a product shelf or type on its own?" | - |
+| AX16b First screen: composition | "Which of these relevant compositions are you drawn to, and what would you combine?" | - |
 | AX17 Render tier | "Should that background be a still, a light drawn layer, or a live one that costs a bit of bundle and battery?" | - |
 | QS | "For this section, which composition?" (2-3 named variants) | - |
 | QI | "For this feature, which illustration idea?" (2-4 concepts) | - |
 | Qf | "Build in phases with check-ins, or straight through?" | - |
-| C1-C12 | never mentioned - enforced silently | - |
+| C1-C12 | scoped craft defaults, discussed only when a real decision remains | - |
 
 ## Q0 - Scope (facts, not style; discovery runs first)
 
@@ -153,24 +143,19 @@ ask ONLY what discovery couldn't answer of the following:
   feature work, the format (grid/bento vs alternating rows) and item count;
   for a full page/site, the section inventory (sets the question budget).
 - **Page shape** (landing pages): one screen (100 vw × 100 svh, no scroll -
-  one message, one signature visual, hard budgets from `quality-bar.md`) ·
+  one reading path and budgets chosen for the content) ·
   short scroll (3-5 sections) · long-form. Fewer screens is the stronger
   default for a product with one message; ask, don't assume the long page.
-- **Single or set?** If the answer is "one screen", ask whether it is ONE
-  screen or a SET of screens the visitor moves between (a catalog: cycling
-  directions, a component gallery, a style system, a portfolio). A set changes
-  the whole build: `recipes.md` § One-Screen Catalog takes over, each screen
-  gets its own screen KIND, its own device and its own slice of the content,
-  and the only thing repeated across screens is the chrome. Asking this is
-  what prevents a set from shipping as one poster rendered N times
-  (`quality-bar.md` § 1). If it IS a set, also settle: how many screens, how
-  the visitor moves (auto-cycle, arrows, both), and which slices of the
-  product each screen may argue - the slice list is content, so it comes from
-  the owner, never invented.
-- **Product truth**: product + audience one-liner, AND the real feature list
-  (4-6 items, priority order) plus the data domain (what a record/file/request
-  actually looks like). C2/C10 need this - fragments depict real capability
-  with plausible data; presentation is invented, capability never.
+- **Single view or several related views?** If unresolved, identify the
+  relationship: independent claims, an ordered process, a shared world, an
+  image collection or a showcase of different directions. A sequence preserves
+  its object/preview; a collection may repeat its aperture and controls. Use
+  `recipes.md`'s One-Screen Catalog only when the purpose is to demonstrate
+  range. Then settle the needed view count, navigation and actual content.
+- **Product/content truth**: product, audience and the actual content needed
+  for this surface. Feature explanations need the relevant capabilities and
+  data shapes; a footer or collection may instead need links, brand material
+  and an image inventory. Invent presentation, not capability or customers.
 - **Target project path**: where the lock file and code live
   (`<target>/docs/design-locks/`).
 - **Existing design system**: primitives (color/spacing/radius/type/motion
@@ -183,11 +168,12 @@ ask ONLY what discovery couldn't answer of the following:
   new tokens too, they say so.
 - **Mode requirement**: dark / light / both. (Both ⇒ dual-theme rules from
   `color-type.md`: re-derive materials per mode, never invert.)
-- **Copy language**: site copy language (C10 diegetic microcopy and the
-  fictional client brand are content decisions - a Norwegian product needs a
-  plausible Norwegian client, not translated chrome).
+- **Copy language**: the language and voice of the actual surface. If fictional
+  demo data is needed, identify it as such and fit it to the product domain;
+  no fictional client is required for a footer, collection or ordinary UI.
 - **Constraints only, not style**: performance budget, reduced-motion
-  requirements, target framework (ask; assume Next.js only if unstated).
+  requirements, target framework (discover from the project; ask if an implementation needs
+  a framework choice and none is established).
   Stylistic motion appetite is NOT collected here - that is AX7.
 - **Delivery depth**: exploration only (locks, no build) · design spec ·
   full implementation · implementation + visual QA pass. Determines where
@@ -198,15 +184,20 @@ ask ONLY what discovery couldn't answer of the following:
 From Q0, propose 2-3 candidate blends. Format each option as:
 
 ```
-A. 70% F1 Editorial Monochrome + 20% F3 Staged Atmosphere + 10% F4 Blueprint
-   → divider-cut dark bento, one smoke/chrome asset, mono FIG meta
-   (basit_designs-2017 + refetch.sh recipe)
+A. Mostly dark editorial, with atmospheric imagery and a little technical drawing.
+   Thin dividers, one material family and restrained labels.
+   Suggested mix: 70% editorial + 20% atmosphere + 10% technical drawing.
 ```
 
+Choose distinct compositions as well as palettes. Read `september-expansion.md`
+when the brief calls for warmth, serif, illustration, identity systems,
+onboarding or kinetic collections. The families are starting points, not a
+closed menu. Keep reference IDs and technical values in the ledger.
+
 Rules for proposing:
-- Dominant family owns ground, separation system, radius family. Secondary
-  (≤30%) contributes texture + graphic device. Tertiary (≤10%) is one ornament
-  layer only.
+- A useful starting blend gives the dominant family the main structure and
+  lets other ingredients supply material, typography or imagery. Assign actual
+  roles to the weights; the original 70/20/10 pattern is not a fixed cap.
 - Prefer proven pairings: F1+F4 (dark technical), F2+F3 (light SaaS default),
   F1+F3 (refetch blend), F6+F5 (warm print), F6+F2 (warm HR/consumer  - 
   adriankuleszo-2089253 belongs to both), F7 inside any host, F8 garnish on F1.
@@ -219,48 +210,46 @@ Rules for proposing:
 
 Ask only the divergent ones (rule 5). Each axis lists its options with source
 values - pull full detail from the dimension docs before writing the question.
-Conditional axes fire when the named family is **present in the blend at any
-weight** - a 10% F3 asset still needs its AX10 lock; sub-threshold
-contributions are never designed unlocked. At very low weights (≤10%) the
-question may collapse to confirming the anchor reference's values.
+Read an axis when its decision applies to the surface. A small ingredient may
+need a material decision, but an already specified choice does not become a new
+question because its family appears in the blend. Record routine choices within
+the approved direction; ask only about consequential unresolved alternatives.
 
 **AX1 - Ground & mode** (`color-type.md`)
 Dark editorial #080808-#101013 · dark object-stage #1f1f1f-#232323 · light warm
 #F7F6F2-ish · light pure #fff/#FAFAFA · tinted wash (#dbf3ff-class) · both.
 
-**AX2 - Separation physics** (`layout-language.md`) - exclusive per surface
-(rule 2): 1px alpha dividers (dark, rgba(255,255,255,.06-.12)) ·
-lightness-steps 2-6% borderless · light hairlines #ececf0-class · borderless +
-one soft shadow (alpha ≤.14, blur ≥3× offset, hue-tinted) · thick sticker
-outline (playful lane).
+**AX2 - Surface separation** (`layout-language.md`)
+Choose useful boundary/depth roles: hairline · tone step · contact shadow ·
+material edge · deliberate outline · no drawn boundary. Combine them where they
+do different jobs. Source values are reconstruction examples; actual contrast
+and the approved material determine the implementation.
 
-**AX3 - Radius family** (`layout-language.md`)
-Sharp 0 (radius only on buttons 6-8px) · small 2-8 · medium 10-16 (corpus
-default) · large 20-28 · squircle 13-15% of width · always as a 3-tier nested
-system (outer = inner + padding). Note: F1 forks between sharp-0 and soft-card
-sub-modes - always asked when F1 dominates.
+**AX3 - Shape family** (`layout-language.md`)
+Sharp, gently rounded, pill, squircle or a deliberate mixture by role. Use the
+existing scale and only as many tiers as the product needs. Concentric
+outer = inner + padding applies to equal-offset circular corners, not all
+shapes. Ask about a fork only when the brief or existing lock has not resolved it.
 
-**AX4 - Accent** (`color-type.md`)
-One hue for all interactive/active/measured elements. Corpus bands: product
-blue #2F5BE7-#3B82F6 · signal orange/amber #ed6917-#F5A11E · zero-accent
-(luminance only) · owner-supplied brand hue. Semantic green/red/amber allowed
-on top; never a second decorative hue.
+**AX4 - Palette roles** (`color-type.md`)
+Choose the brand, content, category and semantic roles. Neutral-plus-one-accent
+is a useful technical option; multiple coherent hues and colorful imagery are
+also available. Reuse established brand choices and verify essential contrast.
 
-**AX4b - Gradient role** (fires whenever ANY surface carries a gradient, not only
-when an atmosphere family is in the blend; `gradient-fields.md`)
-Which job does the field do: page ground · card ground · bounded panel inside a
-card · text scrim · border or seam · payload / light event inside an
-illustration · none. Then the source: **where is the light, in percentages of
-the box** - and it may not be the centre unless the brief asked for symmetry.
-Records a `FIELD:` line - kind (G1-G16) · source position · the luminance
-function · the chroma function · grain % · banding budget in px per channel
-step. "None" is always available and is correct more often than not.
+**AX4b - Gradient/field role** (when a field is part of this surface;
+`gradient-fields.md`)
+Decide its job and extent: page ground · card ground · bounded panel · text
+scrim · border/seam · material/light event · none. Source position matters when
+the field depicts a source; centre, edge and offscreen positions are all valid.
+Directionless or graphic fields need no invented light position. Record the
+named color quantities/functions, chosen finish and output observations in the
+optional `FIELD:` line from `lock-file.md`. HSV V is not relative luminance;
+grain opacity, noise amplitude and pixel sigma have different units.
 
-**AX5 - Texture layer** (`graphic-language.md`)
-Grain 2-6% on gradients (mandatory when gradients exist, C9) · halftone 8px
-pitch · pixel-mosaic 8-10px cells · blueprint grid 40-80px at 4-8% contrast,
-confined · dither strips · none (flat editorial). Often pre-assigned by blend
-mechanics (secondary family) - ask only if >1 legal option remains.
+**AX5 - Finish** (`graphic-language.md`)
+Smooth · grain/stipple · halftone · pixels · a confined grid/hatch · photographic
+texture · flat. Select for the intended material and delivered scale, not as a
+mandatory repair for gradients. Reuse the locked finish when it is established.
 
 **AX6 - Graphic device for features** (`graphic-language.md`)
 UI fragments w/ real data (corpus default) · skeleton fragments (3-5 selling
@@ -275,34 +264,29 @@ sequence (entrances + one ambient layer) · full choreography (semantic loops on
 desynced periods, cursor tours, camera moves) · scroll-scrubbed product scene
 (the flow told by the visitor's scroll - pinned stage or per-composite
 mini-beats; implementation recipe in `scroll-scrub.md`; max ONE long pinned
-run per page). Always split ambient (linear) vs interaction (eased) per C6;
-loops close frame-perfectly per C7. Q0 constraints (perf, reduced-motion) cap
+run per page). Distinguish continuous drift, periodic semantic scenes and user interaction
+per C6; authored loops need continuity per C7. Q0 constraints (perf, reduced-motion) cap
 this axis; they do not answer it. Whatever level locks, implementation follows
 `animation-craft.md` (gate, curves, springs, interruptibility, never-ship).
 
 **AX8 - Type voices** (`color-type.md`)
-Display grotesque 400-500 @ −1..−3% tracking (default) · display serif moment
-(earned exception, 5/45) · playful 700+ (kail-lane only). The corpus measures
-metrics, not typefaces - do NOT invent a font question. Faces come from
-project tokens; if greenfield, default to a grotesque meeting the metrics
-(Inter, Geist, Instrument Sans class) + a mono for the data voice (Geist Mono,
-JetBrains Mono, Berkeley Mono class - convention, not corpus-measured) and note
-the choice `(delegated)` unless the owner raises fonts.
+A clean grotesque, a serif-led editorial system, a restrained mixed-type
+system, handwritten annotations or purposeful bold display. Faces and scales
+come from established project tokens where available. If the choice is open,
+show relevant reference treatments and ask in plain language; never invent
+owner delegation. Updating numbers need stable advances, not necessarily mono.
 
 **AX9 - Meta/numbering layer** (only if F1, F4, or F5 is in the blend)
 FIG.n plates · 1.0/1.1 spec indices · 01/03 slashed-zero chips · none.
 Numbering must encode a real sequence, never decoration.
 
-**AX10 - Atmosphere asset** (only if F3 is in the blend)
-Which SINGLE asset: generated mesh gradient (shadergradient.co, 3 stops,
-grain on) · processed photo (blur 40-80px + pixel-mosaic/halftone) · shader
-field / WebGL · painting matte (80-140px frame only) · structured light
-(shaped falloff + line-work + rings/rays from one source  - 
-`isometric-and-light.md` §B) · isometric scene (line-art or soft-shaded  - 
-`isometric-and-light.md` §A). Where it recurs (2-3
-scales minimum), and where its dark mass parks relative to text.
-Also available: card-scale bounded field (`gradient-fields.md` G3) - legal with or without an atmosphere family in the blend.
-
+**AX10 - Atmosphere/image system** (when this role is present)
+Choose the actual material: smooth or textured gradient · photograph/film ·
+painting/illustrated landscape · shader field · structured light · isometric
+scene · another supplied asset. Decide full-field, bounded, split or repeated
+placement using the composition. One asset reused at several scales is one
+cohesion technique; related images, poses or scenes can form a system too.
+No fixed grain, blur, matte thickness or reuse count is required.
 
 **AX11 - Card anatomy** (only for cards/bento tasks; `layout-language.md`)
 Visual-area ratio 55-80% (mode 65-70) · caption inside vs demoted outside ·
@@ -313,9 +297,9 @@ mixed spans · per-card accent vs shared accent.
 pure components)
 Tone: sober-technical (yurygok-2089624 telemetry) · confident-plain (Linear
 register) · witty mono captions ("CLICK TO WORRY AGAIN", mickces-2088) ·
-warm-friendly (F6 lane). Plus: the fictional client brand's name (one, threaded
-through the whole section - adriankuleszo-2089887 "Identiq"), and the copy
-language from Q0. Numbers must reconcile; filenames versioned.
+warm-friendly (F6 lane), or the established product voice. Use the copy
+language from Q0. Add clearly fictional, internally consistent demo content only
+where a product fragment needs it; ordinary copy needs no invented client.
 
 **AX13 - Page architecture** (full pages/sites only; `production-formula.md`)
 Container 1200-1400px · section air 96-128px padding or 208px margins ·
@@ -337,16 +321,15 @@ split rides AX3/C8.
 
 **AX16 - The first screen** (any task whose scope includes a hero or a
 one-screen page; `hero-atmosphere.md`, plates in `assets/plates/zone-*.svg`)
-Asked as **two questions in order**, never as a menu of site names.
+Settle the relationship first, then composition details only if they remain open.
+Use plain descriptions and relevant references, including named sites when useful.
 
-*16a, binary, asked first:* does something fill the whole first screen behind
-the words, or is the screen empty except for the words and the product? There
-is no third answer. "No field" removes three of the 16b options and is the
-strongest answer whenever the product's own screenshot can carry the page.
+*16a, extent and relationship:* full-screen field, bounded media panel,
+side-by-side copy and evidence, image-first composition, or no atmosphere?
+Select using the product and supplied references. Full bleed is one option,
+not a prerequisite for a hero.
 
-*16b, weighted multi-select, only if 16a said there IS a field, or if the
-screen needs a shape either way:* which of these compositions, and in what
-mix -
+*16b, composition:* offer relevant arrangements, including examples such as:
 - scattered marks across the whole screen, thinning in the middle so the words
   sit in clear air, and the words are the only object (particle field)
 - one photographic or filmed surface, thrown far out of focus, with the words,
@@ -358,12 +341,12 @@ mix -
 - an almost empty screen with the words small at the left, one glowing object
   holding the middle, and a short column of text at the right (three zones)
 
-Weights blend the way families do (70/20/10 is a legal answer). The one
-illegal blend is two SPINES at equal weight: centred and left-anchored at
-50/50 is not a composition. Name a production site only in the RATIONALE, or
-when the owner names it first - never as an option label.
+A bounded illustration, side-by-side evidence or an image-first scene is also
+available. If weighted ingredients imply conflicting alignment, describe how
+they occupy different roles or resolve the main reading spine; do not treat
+50/50 itself as an invalid answer.
 
-**AX17 - Render tier and motion budget** (only if AX16a said there IS a field,
+**AX17 - Render tier and motion budget** (only if the composition includes a field,
 or any hero object moves; `render-tiers.md`)
 Usually NOT a question: take the lowest tier that holds and state it. Ask only
 when the owner has a constraint the tiers trade against - bundle size, a
@@ -383,13 +366,13 @@ owner's standing preference) · straight through, review at the end.
 
 The axes lock the STYLE; QS locks the COMPOSITION. For each section in scope
 (from Q0's section inventory), in page order:
-(For a SET of screens - Q0 "single or set" - the unit is a SCREEN, not a
-section: propose a screen KIND + device + content slice per screen from
-`recipes.md` § One-Screen Catalog, and never offer the same kind-and-device
-pair twice. Present them as a numbered running order the owner can reorder.)
+(For several views, use the relationship chosen in Q0. Sequences preserve
+continuity, collections keep coherent browsing, and a range showcase can vary
+screen kind and device using `recipes.md` § One-Screen Catalog. Present the
+relevant running order without forcing every view to change its frame.)
 
-- Filter `recipes.md` by the locked blend (each recipe lists its native
-  families) and the locked axes; present 2-3 genuinely different variants as
+- Select or adapt recipes by the approved material, content and axes; native
+  family tags are clues, not exclusions. Present useful distinct variants as
   one weighted question (QS1, QS2, …), each with its anatomy line, values, and
   evidence slugs.
 - REDESIGNS: always include "keep current structure, reskin to the locks" as
@@ -407,14 +390,14 @@ AX11 was the one axis in the bank written as a flat comma list with no named
 options, no evidence and no "choose when" - six independent decisions on one
 line. QC is the mechanism that answers it.
 
-Works exactly like QS: filter the thirteen card anatomies in
-`layout-language.md` § 5 by the locked blend and the locked axes, present 2-3
-survivors with an anatomy line, its measured values, its evidence slug and a
-"choose when" hint, and take weights. Then confirm the six **card dials**
+Use `layout-language.md` § 5 for relevant card examples, adapting them to the
+locked content and material. Present a few useful alternatives only where the
+anatomy remains open; distinguish observed values from proposed build tokens. Then confirm the six **card dials**
 (`layout-language.md` § 5a) - Ground · Chrome · Text position · Footer band ·
 Aspect · Emphasis - and note which of them siblings are allowed to vary on,
-remembering the governing clause: geometry may vary when the finish is rigid, or
-the finish may vary when the geometry is rigid, never both.
+keeping a recognizable relationship across the set. Geometry and finish may
+vary together when the approved roles make that useful; do not impose change
+or uniformity solely to satisfy a dial count.
 
 For a small-cell row, also settle the rung on the cell scale ladder
 (`layout-language.md` § 5b), because it decides which layers exist at all.
@@ -423,94 +406,12 @@ Record as QC1, QC2 … in the lock file, one per card kind on the page.
 
 ## QI - Per-feature illustration proposals (feature-card/bento tasks)
 
-After the section variant locks: for EACH real feature from Q0, propose 2-4
-creative illustration concepts per the protocol in `illustration-ideation.md`
-(fit-method: verb → metaphor register → hero object + evidence chips; concepts
-must span ≥2 registers; each names its motion opportunity and build cost).
-Weighted picks as always; grafting a runner-up's ingredient is legal. Locks
-recorded as QI1, QI2, … one row per feature. The whole set shares one
-material system - lock that first if the blend leaves it open.
+Use [qi-protocol.md](qi-protocol.md). Pass 1 offers distinct whole-set
+methods/material directions. Once one direction is approved, Pass 2 varies
+the scene and hero object for each feature within that set contract. A single
+register is valid; do not require multiple registers in every feature.
+Record each accepted choice and any remaining delegated freedom.
 
 ## The lock file
 
-Write to `docs/design-locks/YYYY-MM-DD-<task>.md` in the TARGET project (path
-from Q0; create the dir). If no target project exists yet, write it in the
-current directory and say so - move it when the project is scaffolded. Create
-it when Q1 locks; update after every single lock - never batch at the end.
-Q0 facts live in the frontmatter. In an explicitly stated dry-run/simulation,
-show the file content instead of writing it.
-
-```markdown
----
-task: <what is being built>
-product: <one-liner>
-features: <the real feature list from Q0>
-target: <project path>
-blend: 70% F1 + 20% F3 + 10% F4
-mode: dark
-language: <site copy language>
-constraints: <perf / reduced-motion / framework>
-status: locking | locked | shipped
----
-
-# Design locks - <task>
-
-| # | Axis | Locked | Consequences |
-|---|------|--------|--------------|
-| Q1 | Blend | 70/20/10 F1/F3/F4 | ground #0A0C10, 1px alpha dividers, radius 0+8 |
-| Q2 | Accent | #3B82F6 | interactive+measured only; green/red semantic |
-| … | | | |
-| QS1 | Hero variant | <recipe name> | anatomy + ingredient consequences |
-| AX16a | First screen: field | field owns the page / no field | container backgrounds forbidden on the hero |
-| AX16b | First screen: composition | 70 three zones / 30 product shelf | zone map, what crosses the fold |
-| AX4b | Gradient role | card ground, G3 clipped box | overflow:hidden rect, source at 91 % x |
-| QC1 | Card anatomy | veil-split photographic | media 3/2, split 73.8/26.2, radius 0 |
-
-Inherited from blend (not asked): AX2 separation = 1px alpha dividers, …
-Constants enforced: C1-C12 (see drawn-to SKILL.md).
-References consulted: basit_designs-2017, 0xSero-2090, …
-
-SET TABLES (one per surface carrying 2+ illustrations; the Device column must
-contain no repeated value - a repeat is a build stop, `quality-bar.md` § 3b):
-
-| Surface | Cell | Verb | Register | Device | Hero object |
-|---|---|---|---|---|---|
-RENDER: <T0-T6> · <what draws the field> · dpr <cap> · poster <path>
-        · stops: io+hidden+rM+saveData · gate: <why this tier>   (render-tiers.md)
-FIELD:  kind <G1-G16> · source <x %, y %> · V <function> · chroma <function>
-        · grain <%> · banding <px per channel step>        (gradient-fields.md)
-CELLS:  anatomy <n> · ladder rung <cell width band> · layers kept <L1-L9>
-        · dials varied <list>                              (layout-language.md 5, 5a, 5b)
-FOLD:   crosses the fold: <media only> · top edge <y / % of viewport>
-        · message intact at 1440×900 and 1280×720             (quality-bar.md § 3c)
-POLISH: applied <list> · gated <list>            (polish-moments.md)
-QA: 1440×900 ✓ · 1280×720 ✓ · 390×844 ✓ · tells 0 · budgets ✓ · refs compared: <slugs or "text only">   (quality-bar.md)
-```
-
-Each locked row carries its firmness (`must-have`/`prefer`/`open`) in the
-Locked cell. **Revisions never erase**: a changed lock keeps its row, its
-state becomes `revised (<reason>)`, and the replacement is added as a new
-row - the ledger is history, not just current state.
-
-## During implementation
-
-- Any surface with 2+ illustrations: run the fit-method per cell and write its
-  set table BEFORE markup (`illustration-ideation.md` § The set law). Devices
-  must be unique within the surface and across the page. This runs even when
-  the picks were delegated or QI was skipped - QI is the owner's choice of
-  concept, the fit-method is how any concept is derived.
-
-- Before any visual decision, check the lock file. Every visual change must
-  serve a named lock; a change that serves no lock is unsanctioned taste  - 
-  propose a new lock instead of sneaking it in.
-- Pull exact values from the dimension docs; look up cited `posts/<slug>.md`
-  when a lock needs deeper detail (a specific hover, a loop structure) - slugs
-  are id prefixes, find files by prefix match (`posts/basit_designs-2017*.md`).
-- Content is a ceiling: per direction, cut copy before shrinking type or
-  narrowing the measure (`quality-bar.md` § 2 budgets). Ask only when a cut
-  removes a message.
-- Before presenting: the visual QA loop (`quality-bar.md` § 4 - render at
-  full size, walk the tells and budgets, compare to the cited frames, fix),
-  then the polish pass, then the output checklist from SKILL.md. The QA and
-  POLISH lines go into the lock file; a screen that was never rendered at
-  full size is handed off as unrendered, not verified.
+Use [lock-file.md](lock-file.md) for the template, revision rules and implementation record.

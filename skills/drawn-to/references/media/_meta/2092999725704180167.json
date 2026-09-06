@@ -1,0 +1,24 @@
+{
+ "id": "2092999725704180167",
+ "url": "https://x.com/hugorcd/status/2092999725704180167",
+ "author": {
+  "screen_name": "hugorcd",
+  "name": "Hugo",
+  "url": "https://x.com/hugorcd"
+ },
+ "created_at": "Thu Aug 27 15:36:35 +0000 2026",
+ "text": "So excited to see this being released!\n\nI've been playing with it quite a bit over the past few weeks and it's absolutely amazing; I encourage you to try it as soon as possible. Absolute ship by @matiNotFound 🫲🫱",
+ "lang": "en",
+ "media": [
+  {
+   "type": "video",
+   "width": 1920,
+   "height": 1080
+  }
+ ],
+ "quote": {
+  "author": "vercel",
+  "url": "https://x.com/vercel/status/2092999180780556643",
+  "text": "We built https://vgpu.sh to ship shaders on https://vercel.com. Now it's open source.\n\n▪︎ Minimal agent-first WebGPU library\n▪︎ Run in the browser or headless Node.js\n▪︎ Render in CPU sandboxes and CI tests\n▪︎ Create reusable .wgsl modules"
+ }
+}

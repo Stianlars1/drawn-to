@@ -1,0 +1,80 @@
+{
+  "slug": "kail_designs-2092890288595607560",
+  "source_url": "https://x.com/kail_designs/status/2092890288595607560",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "url": "https://video.twimg.com/amplify_video/2092889614793220096/vid/avc1/3620x2160/YYqgZ16n1SLVxQRo.mp4?tag=29",
+      "type": "video",
+      "sha256": "8c99a573a3b8258c8d5a515cdfac4770322e28dbb4905d1474444dbf79c77108",
+      "bytes": 88922743,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3620,
+            "height": 2160,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "84.366667",
+            "nb_frames": "5062"
+          }
+        ],
+        "format": {
+          "duration": "84.366667"
+        }
+      },
+      "sampling": {
+        "filter": "fps=1.5",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_1/f_015.jpg",
+            "sample_time_seconds": 9.333333
+          },
+          {
+            "file": "frames_1/f_029.jpg",
+            "sample_time_seconds": 18.666667
+          },
+          {
+            "file": "frames_1/f_043.jpg",
+            "sample_time_seconds": 28.0
+          },
+          {
+            "file": "frames_1/f_057.jpg",
+            "sample_time_seconds": 37.333333
+          },
+          {
+            "file": "frames_1/f_071.jpg",
+            "sample_time_seconds": 46.666667
+          },
+          {
+            "file": "frames_1/f_085.jpg",
+            "sample_time_seconds": 56.0
+          },
+          {
+            "file": "frames_1/f_099.jpg",
+            "sample_time_seconds": 65.333333
+          },
+          {
+            "file": "frames_1/f_113.jpg",
+            "sample_time_seconds": 74.666667
+          },
+          {
+            "file": "frames_1/f_127.jpg",
+            "sample_time_seconds": 84.0
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/kail_designs-2092890288595607560-video_1.jpg"
+    }
+  ]
+}

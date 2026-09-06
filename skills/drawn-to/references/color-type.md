@@ -8,14 +8,14 @@ Corpus split: 20 light / 16 dark / 5 both / 4 mixed.
 
 ## 1. Dominant strategy: monochrome shell + one accent
 
-**UNIVERSAL.** 21/45 are tagged exactly `monochrome+1accent` in the index (LexnLin-2024, basit_designs-2017, piyushsphere-2088, kevserctk-2090, adriankuleszo-2090, adriankuleszo-2089887, adriankuleszo-2089328, xchylerdrenth-2090, designbynavneet-2089, yurygok-2089624, yurygok-2089981, arknow91-2089, _heyfaisal-2089369, _heyfaisal-2089734, LexnLin-2089, toolfolio-2089, jeetnirnejak-2089, GrahamPaterson-2089, ImranUxi-2089, flornkm-2089, recentdesign-2089). Counting close variants - monochrome + semantic-only hue (0xSero-2090), monochrome zero-accent (marcelkargul-2090148), luminance-only (marcelkargul-2089632, insporadesign-2088123), mono + state hues (helvetiica-2089), mono + boundary hues (its_sslvr-2088), pure #000/#fff + photo chroma (piyushsphere-2089), warm-neutral + 1 painterly accent (TheKartikBansal-2089), accent-tinted neutrals (mnowakdesign-2089321), neutral + 1 slab/artwork (basit_designs-2089995, kevserctk-2090), field + 1 accent (basit_designs-2089627, Triopixels-2089, adriankuleszo-2089253), category-dot mono (mickces-2088), white + neon annulus (madebylalit-2087815) - **37/45 run a chroma-rationed neutral shell**. Zero references use multi-hue decorative color on UI chrome.
+**Frequent in the first 45-reference sample.** 21/45 are tagged exactly `monochrome+1accent` in the index (LexnLin-2024, basit_designs-2017, piyushsphere-2088, kevserctk-2090, adriankuleszo-2090, adriankuleszo-2089887, adriankuleszo-2089328, xchylerdrenth-2090, designbynavneet-2089, yurygok-2089624, yurygok-2089981, arknow91-2089, _heyfaisal-2089369, _heyfaisal-2089734, LexnLin-2089, toolfolio-2089, jeetnirnejak-2089, GrahamPaterson-2089, ImranUxi-2089, flornkm-2089, recentdesign-2089). Counting close variants - monochrome + semantic-only hue (0xSero-2090), monochrome zero-accent (marcelkargul-2090148), luminance-only (marcelkargul-2089632, insporadesign-2088123), mono + state hues (helvetiica-2089), mono + boundary hues (its_sslvr-2088), pure #000/#fff + photo chroma (piyushsphere-2089), warm-neutral + 1 painterly accent (TheKartikBansal-2089), accent-tinted neutrals (mnowakdesign-2089321), neutral + 1 slab/artwork (basit_designs-2089995, kevserctk-2090), field + 1 accent (basit_designs-2089627, Triopixels-2089, adriankuleszo-2089253), category-dot mono (mickces-2088), white + neon annulus (madebylalit-2087815) - **37/45 run a chroma-rationed neutral shell**. Zero references use multi-hue decorative color on UI chrome.
 
 Observed single accents (each the ONLY saturated hue in its UI layer): blue family dominates - #3B82F6 (GrahamPaterson-2089, LexnLin-2089), #3770E9 (_heyfaisal-2089734), #2F9BF6 (ImranUxi-2089), #2349DA (Triopixels-2089), #2684E6/#1E74E5 (adriankuleszo-2089887), #2F5BE7 (adriankuleszo-2089253), #34a2d5 (adriankuleszo-2090), #2563eb (adriankuleszo-2089328). Orange/amber second - #f2760f (jeetnirnejak-2089), #FF4D00 (toolfolio-2089), #ed6917 (LexnLin-2024), #F0A818/#F5A11E (yurygok-2089624, yurygok-2089981), #ffb43c (recentdesign-2089). Then teal #2CB6D8 (basit_designs-2017), red #E0113A (_heyfaisal-2089369), #d2303e (mnowakdesign-2089321), violet #a78bfa (adriankuleszo-2089328), lavender #C0A0EC (basit_designs-2089627).
 
 ### Chroma-quarantine patterns (where color IS allowed to live)
 
 1. **Imagery/texture quarantine** - text and chrome strictly grayscale, all chroma inside a photographic/shader/texture layer: split cards with grayscale text half vs gradient image half (piyushsphere-2088), one pixel-mosaic aurora reused 3× as the page's only color (kevserctk-2090), one blue ink-marble texture at every scale (_heyfaisal-2089734), all chroma delegated to theme-matched photography on pure #000/#fff grounds (piyushsphere-2089), painting mattes + semantic states only (designbynavneet-2089), one gradient slab covering 28–47% of an otherwise 90% near-white board (basit_designs-2089995), grainy mesh wallpaper behind a monochrome app shell (toolfolio-2089), assets' own glow as the only page color (kail_designs-2089), saturated shader card on a #f7f6f2 neutral page (insporadesign-2087895), color arriving only through interactive scenes on a monochrome resting page (mickces-2088), saturation quarantined inside UI-fragment tags/labels (AlexandruDranga-2090, LexnLin-2024).
-2. **Semantic-only hue** - color = information, never decoration: green #a9e494 / red #c25b52 / amber #dcc17e only on scores and terminal `$` (0xSero-2090); green #41974c = connected, yellow #eaed48 = unverified, all else grayscale (helvetiica-2089); green reserved exclusively for status - #1D9847 button, #61FF6B dot, #34B368 delta (Triopixels-2089); #22c55e deltas as the only extra hue (adriankuleszo-2089328); lime=live, red=failed, amber=budget held constant system-wide (yurygok-2089624).
+2. Pick a coherent palette for the brand and data roles; the corpus bands below are examples, not the set of permitted hues.
 3. **Accent-per-card / per-section** - one hue owns one container, never mixed: amber/violet/lime one per card, applied only to the actionable datum (yurygok-2089981); amber card 1, lime cards 3–4 (yurygok-2089624); one accent hue per site across 4 sites (adriankuleszo-2089328); one accent per section, photo cards each a single monochrome mesh (basit_designs-2017); one dominant hue field per card + one shared warm motif (_heyrico-2090).
 4. **Zone hues** - hue mapped to value ranges: <30 = orange #C9661C, 30–75 = green #35A25B, >75 = blue #3E63F2, recoloring the whole active tick run + pill dot in one swap (cabralorenzo-2090).
 5. **Kind hues** - a fixed small hue-set naming categories: 8 category dots (crimson #e91337, amber #ee9300, green #26bd76, blue #1a7ef0, cyan #17a8e8, violet #7b5bef, teal #14b8a6, magenta #c026d3) as the sole idle color (mickces-2088); PlayStation glyph canon #50de88/#d95dbb/#bf4e6c appearing only on interaction (arknow91-2089); tag/status kind-hues inside neutral cards (AlexandruDranga-2090); semantic neon set green/red/violet/orange one-hue-per-message (mnowakdesign-2089684).
@@ -24,7 +24,8 @@ Observed single accents (each the ONLY saturated hue in its UI layer): blue fami
 
 ## 2. Dark-mode palette engineering
 
-**Grounds are never #000 flat and never gray-800.** Observed page grounds cluster in two bands:
+**Ground examples for the technical/editorial lane.** True black and other
+neutral systems are valid when their material and contrast roles call for them. Observed page grounds cluster in two bands:
 - Editorial black #04–#11: #040607 (recentdesign-2089), #050408 (madebylalit-2088541), #060608–#0B0B0E (mnowakdesign-2089684), #080808 (helvetiica-2089), #090909 (LexnLin-2089), #09090B (kail_designs-2089), #0a0a0a–#0e0e0e (0xSero-2090), #0A0C10 (basit_designs-2017), #0a0710 violet-tinted (adriankuleszo-2089328), #0F0F0F (marcelkargul-2089632), #101012 (yurygok-2089624, yurygok-2089981), #101010 (ImranUxi-2089), #101113 (xchylerdrenth-2090).
 - Charcoal object stage #15–#23: #151515 (insporadesign-2088123), #1f1f1f (its_sslvr-2088), #1f2326 blue-tinted gunmetal (arknow91-2089), #1C1C1E surfaces (yurygok-2089981), #232323 (marcelkargul-2090148).
 
@@ -50,7 +51,7 @@ Observed single accents (each the ONLY saturated hue in its UI layer): blue fami
 
 **Neutrals hue-shifted toward the background.** Body text #6e8895 (blue-gray) on #dbf3ff instead of neutral #6b7280; status-pill dots are saturated steps of their own text colors (adriankuleszo-2090). Handle grays warm-tinted #99968d / #8a877e on cream, never pure gray (TheKartikBansal-2089).
 
-**Tinted page backgrounds echoing card hues.** Page bg tinted 2–6% per-card to echo that card's gradient - ivory for the orange card, pale sage for the green card (piyushsphere-2088); page ambient bloom re-tints with each slide's hue via a blurred copy of the artwork at 80–120px blur, 25–35% opacity (insporadesign-2087895); #F0F5FE page under a lavender→sky panel (adriankuleszo-2089253); one flat #dbf3ff wash with depth from element lighting only, no bg gradient (adriankuleszo-2090).
+**Tinted page backgrounds echoing card hues.** Page bg tinted 2–6% per-card to echo that card's gradient - ivory for the orange card, pale sage for the green card (piyushsphere-2088); the insporadesign-2087895 recording supports a local hue-related contact shadow, with the sampled page edge unchanged (corrected details in `gradient-fields.md` G13); #F0F5FE page under a lavender→sky panel (adriankuleszo-2089253); one flat #dbf3ff wash with depth from element lighting only, no bg gradient (adriankuleszo-2090).
 
 **Pastel accents with usage-weighted ratios.** Four pastels #ffc6ef / #98c0fe / #9598ff / #ffc8a9 that NEVER carry text, presented as palette bars whose widths encode usage (neutrals ~60%: white ~29% + charcoal ~29%; pastels ~9% each) (devxnuj-2090). One pastel field per card + one shared warm accent motif (_heyrico-2090). Periwinkle #C8D6FB→#8FA5F5 gradient envelope with max one saturated indigo #2349DA element per card (Triopixels-2089). One neutral family at three temperatures - sage/taupe/tan - with saturation quarantined to tags (AlexandruDranga-2090).
 
@@ -84,11 +85,12 @@ What actually changes across a theme pair - never a naive invert:
 
 **Weight discipline - display at 400–500, hierarchy by scale + value.** Display type at regular 400 weight, 56–72px, −1 to −2% tracking (xchylerdrenth-2090); nothing bolder than 500 on the page, H2 ~30px/400 (basit_designs-2017); 500-weight headings as editorial restraint on dark (adriankuleszo-2089328); H1 72px/500 with ~−2% tracking (kevserctk-2090); weight locked at ~500, hierarchy by scale jumps 12→14→24→~100px, no bold anywhere (devxnuj-2090); H1 64px/500 (_heyfaisal-2089734); 40px/500 titles (piyushsphere-2088). Display tracking across corpus: −0.01 to −0.03em (LexnLin-2089 at −0.03em, adriankuleszo-2089887 at −0.02em, adriankuleszo-2090 at −0.02em, designbynavneet-2089 at −2%).
 
-**Mono-for-data vs sans-for-prose** (13/45 explicit: yurygok-2089624, yurygok-2089981, 0xSero-2090, ImranUxi-2089, mickces-2088, cabralorenzo-2090, jeetnirnejak-2089, piyushsphere-2088, piyushsphere-2089, devxnuj-2090, xchylerdrenth-2090, GrahamPaterson-2089, recentdesign-2089). The split is strict: grotesque sans for titles/insights/buttons, monospace for every numeral, axis label, chip, status line, token name, and code. Live values in ~12px mono pills, derived values in accent blue (ImranUxi-2089); real token names in mono chips - `text-xlarge-medium`, `strong-fg` (GrahamPaterson-2089); ranges written "900→500 Hz" (mickces-2088); slashed-zero mono for series indexes "01 / 03" (piyushsphere-2088) and dial values (jeetnirnejak-2089); zero-padded 7-segment "005 / 084 / 100" for stable width while counting (recentdesign-2089).
+**Mono-for-data vs sans-for-prose** (13/45 explicit: yurygok-2089624, yurygok-2089981, 0xSero-2090, ImranUxi-2089, mickces-2088, cabralorenzo-2090, jeetnirnejak-2089, piyushsphere-2088, piyushsphere-2089, devxnuj-2090, xchylerdrenth-2090, GrahamPaterson-2089, recentdesign-2089). This is one technical type system: grotesque for prose and mono for data/code.
+Other roles may use serif or proportional tabular figures under the approved direction. Live values in ~12px mono pills, derived values in accent blue (ImranUxi-2089); real token names in mono chips - `text-xlarge-medium`, `strong-fg` (GrahamPaterson-2089); ranges written "900→500 Hz" (mickces-2088); slashed-zero mono for series indexes "01 / 03" (piyushsphere-2088) and dial values (jeetnirnejak-2089); zero-padded 7-segment "005 / 084 / 100" for stable width while counting (recentdesign-2089).
 
 **Mono-caps metadata grammar.** Uppercase mono at 11–13px with +0.05–0.12em tracking is the corpus's connective tissue: "[ DEVELOPER PLATFORM ]", "→ 0.1", "BLOG / PRODUCT" at +8–10% (xchylerdrenth-2090); microcaps eyebrow-left/counter-right + provenance footers "FINISHED 12 MIN AGO · 4m 08s" at ~0.08em (yurygok-2089981); footer status strings "AUTOSCALE ON · 3 WORKERS" +8–12% (yurygok-2089624); FIG.1–4 plate labels + triple numbering 01–04 / 01/02 / 1.1–2.3 at ~0.05–0.1em (0xSero-2090); spaced-uppercase scene captions at 11px/0.2em - "CLICK TO WORRY AGAIN" (mickces-2088); letterspaced lowercase typewriter mono +6% with fig. numbers and 01/02/03 chips (devxnuj-2090); uppercase labels at 0.06em (cabralorenzo-2090); 11px caps +0.08em column labels (jeetnirnejak-2089); self-teaching chart keys "ONE DOT = ONE SAMPLED PROMPT", "SCALE 50-100" (yurygok-2089981); mono spec index "1.0 / 1.1 / 1.2" + sans labels (piyushsphere-2089).
 
-**Serif moments (5/45)** - serif is an earned exception, never the system: high-contrast display serif ~60px carrying every numeral and product noun while sans carries every label - an editorial inversion (basit_designs-2089627); ~66px editorial serif headline over sans body (piyushsphere-2089); one serif logotype ("Recline") supplying all brand warmth in a grotesque system (designbynavneet-2089); serif product wordmarks with one colored terminal character (LexnLin-2089); script-over-serif logotype (kail_designs-2089).
+**Serif moments (5/45)** - these early examples use serif as a contrasting voice; later references also support serif-led systems: high-contrast display serif ~60px carrying every numeral and product noun while sans carries every label - an editorial inversion (basit_designs-2089627); ~66px editorial serif headline over sans body (piyushsphere-2089); one serif logotype ("Recline") supplying all brand warmth in a grotesque system (designbynavneet-2089); serif product wordmarks with one colored terminal character (LexnLin-2089); script-over-serif logotype (kail_designs-2089).
 
 **Numeral craft.** Tabular-nums to kill width jitter, demonstrated and practiced (ImranUxi-2089, mnowakdesign-2089684); hero numerals ~40px with unit glyphs ($, M, %, h/m) dimmed to ~40% opacity - "1.13M", "$2,180" (yurygok-2089624); KPI as 44–48px white numeral + same-size muted unit word "18.4 K median" (yurygok-2089981); superscript unit at ~40% inside ~150px stat numerals (basit_designs-2017); % suffix demoted to ~20px #9A9891 beside a 52px mono numeral (cabralorenzo-2090); caret "^" as the typographic up-delta instead of an arrow icon (basit_designs-2089627); every visible number reconciles - rows sum to the hero total, shares sum to 100% (yurygok-2089624).
 
@@ -96,62 +98,76 @@ What actually changes across a theme pair - never a naive invert:
 
 ---
 
-## Rules
+## Applying the palette and type references
 
-1. Build every page as a monochrome/neutral shell plus exactly ONE saturated accent hue in the UI layer; all remaining chroma must live in imagery, texture, or semantic states (21/45 exact, 37/45 family - see §1).
-2. Pick the accent from the corpus's proven bands: product blue #2F5BE7–#3B82F6, signal orange/amber #ed6917–#F5A11E, or an off-family single hue (teal #2CB6D8, red #E0113A); never introduce a second decorative hue (0xSero-2090, _heyfaisal-2089734, yurygok-2089981).
-3. Quarantine chroma structurally: grayscale text half vs full-color image half with a hard seam (piyushsphere-2088); one signature texture/artwork reused ≥3× as the page's only color (kevserctk-2090, _heyfaisal-2089734); saturation confined inside UI-fragment tags and status chips (AlexandruDranga-2090, LexnLin-2024).
-4. Reserve fixed semantic hues and never repurpose them: green = success/live/connected, red = fail/destructive, amber = warning/budget/mid (0xSero-2090, yurygok-2089624, helvetiica-2089, Triopixels-2089).
-5. When a layout has multiple data cards, give each card ONE accent and gray out every non-critical value - including unremarkable table cells (yurygok-2089981, basit_designs-2017, _heyrico-2090).
-6. Set dark grounds at #040607–#101113 (editorial) or #1f1f1f–#232323 (object stage), never #000 flat and never untinted gray-800 (basit_designs-2017, yurygok-2089624, its_sslvr-2088, marcelkargul-2090148).
-7. Draw dark-mode structure with near-threshold 1px borders: #15181D on #0A0C10, #202020 on #0a0a0a, or rgba(255,255,255,0.06–0.12) - +4–8 luma max, dashed for inner sub-splits; never #333 borders, never shadows (basit_designs-2017, 0xSero-2090, LexnLin-2089, ImranUxi-2089).
-8. Where borders are absent, separate dark planes by 2–5% lightness steps (#232323→#2E2E2E; #080808→#1d1d1d→#2a2a2a) or a stepped band ramp lightening downward (#1C1C1E→#28282A→#303032→#343436); reuse the page token inside chips so they read punched-through (marcelkargul-2090148, helvetiica-2089, yurygok-2089981).
-9. Tint the entire dark neutral ramp toward the accent hue - surfaces AND text whites (wine: #0f0408/#251017/#371923 with text #f4e8ec; warm: #1a1710; blue: #1f2326) - never ship pure-gray dark surfaces under a colored accent (mnowakdesign-2089321, TheKartikBansal-2089, arknow91-2089).
-10. In fully monochrome dark scenes, use luminance as the accent: idle at ~2–4% value steps or ~1.2:1 hairlines, active = white text/bar/bloom; state change is a grey→white (or grey→amber) swap, never a resize (marcelkargul-2089632, insporadesign-2088123, arknow91-2089, recentdesign-2089).
-11. Keep neon-dark frames ≥95% under ~15% luminance and attach a same-hue bloom (8–24px, ~35% opacity) to every accent so color reads as a light source, concentrated at the element's active edge (mnowakdesign-2089684, marcelkargul-2089632).
-12. Set light grounds warm (#F2F1EE, #f7f6f2, #F1F0EC, #f9f9f9) and ink as charcoal or a hue-matched dark (#3b3b3b, #3A3A3A, #0e2a38 petrol, #110340 navy) - never pure #000 headings on pure #fff (devxnuj-2090, _heyfaisal-2089734, adriankuleszo-2090, cabralorenzo-2090).
-13. Hue-shift light-mode grays toward the background field (body #6e8895 on blue #dbf3ff, warm #99968d on cream) and tint the page background 2–6% toward each card's accent so cards sit in their own atmosphere (adriankuleszo-2090, TheKartikBansal-2089, piyushsphere-2088).
-14. Never set text on pastels; pastels are mounting fields and imagery only, and their palette should be usage-weighted (~60% neutrals / ~40% accents), with at most one dark anchor element per set (devxnuj-2090, _heyrico-2090).
-15. For theme pairs: re-derive materials per mode (glass-over-photo dark → solid-white+shadow light), demote decorative accents to gray in light mode, keep status hues constant with flipped luminance across 3 tokens (text/fill/border, borders desaturated on dark), and swap textures/photography per theme rather than recoloring one asset (piyushsphere-2089, mnowakdesign-2089321, TheKartikBansal-2089).
-16. Verify every texture and pattern on both #ffffff and near-black before shipping; design assets invertible by construction (xchylerdrenth-2090, toolfolio-2089).
-17. Split two-line or two-phrase headlines by gray value, not size: lead #fff/#0b0b0b, tail #858989–#9a9a9a at identical size and weight; or drop the trailing phrase to ~55% opacity (piyushsphere-2089, xchylerdrenth-2090, basit_designs-2089995).
-18. Set display type at weight 400–500, 56–72px, tracking −1 to −3%; build all hierarchy from scale jumps and a 3–4 step gray ramp (#fff > #929292 > #555 dark; two grays max in light), never from bold/black weights (xchylerdrenth-2090, 0xSero-2090, kevserctk-2090, devxnuj-2090, adriankuleszo-2089887).
-19. Run a strict two-voice type system: grotesque sans for titles/prose/buttons, monospace for every numeral, label, axis, chip, token, and status line; write live values in mono pills and mark derived values in the accent (yurygok-2089981, ImranUxi-2089, GrahamPaterson-2089).
-20. Voice all metadata in 11–13px uppercase mono at +0.05–0.12em tracking - plate labels (FIG.1), spec indexes (1.0/1.1), status footers ("APPLIES WITHIN 30s"), scene captions - as the system's connective tissue (0xSero-2090, yurygok-2089624, xchylerdrenth-2090, mickces-2088).
-21. Use serif only as an earned exception: one display serif for headlines/numerals or one serif logotype inside an otherwise grotesque system; never as body text (basit_designs-2089627, piyushsphere-2089, designbynavneet-2089, LexnLin-2089).
-22. Set all animated or updating numerals in tabular/mono figures (slashed zeros, zero-padded where counting) so widths never jitter (ImranUxi-2089, jeetnirnejak-2089, recentdesign-2089).
-23. Dim unit glyphs ($, %, M, h/m, "/ 03") to ~40% opacity or a muted gray inside hero numerals; type up-deltas as a caret "^" rather than an arrow icon (yurygok-2089624, piyushsphere-2088, basit_designs-2089627).
-24. Make every visible number reconcile (sums, shares, ratios) and disclose truncated axes in mono caps ("SCALE 50-100") - numeric honesty is part of the type system (yurygok-2089624, yurygok-2089981).
-25. Overlay 2–6% grain/stipple on every large gradient or blur field so color reads as printed material, not render - this applies in both modes (devxnuj-2090, basit_designs-2089995, piyushsphere-2088, insporadesign-2087895, _heyrico-2090).
+1. **Choose color roles.** A neutral shell with one accent suits many technical
+   examples; coherent multi-hue palettes, semantic color and colorful imagery
+   are also valid. Use the approved brand and content rather than treating the
+   historical blue/orange bands as a permitted-color list.
+2. **Apply quarantine where it helps.** A grayscale text region beside colorful
+   art, as in piyushsphere-2088, is one way to protect readability. An image
+   family reused across the page can supply cohesion, but no fixed reuse count
+   or one-image limit applies to a collection or editorial sequence.
+3. **Keep state meaning consistent.** Conventional green/red/amber can help
+   communicate status. Other brand and category roles can use these hues too;
+   labels, icons and context distinguish meaning without relying on color alone.
+4. **Separate surfaces for their material.** Flat dark UI often uses lines or
+   tone steps; physical objects can use contact shadows. True black, neutral
+   gray and hue-tinted grounds are all available. Use measured contrast and
+   the approved visual role instead of a forbidden-hex list.
+5. **Use the source-specific dark treatments intentionally.** Banded cards
+   (yurygok), punched-through chips (marcelkargul) and concentrated bloom
+   (emissive examples) are different recipes. Do not attach glow to every
+   accent or force all dark surfaces into a narrow encoded-brightness band.
+6. **Relate paper, ink and imagery.** The warm light examples use charcoal,
+   petrol or navy ink and sometimes background-related neutrals. Black on
+   white and readable text on pastel fields are also valid. Check the actual
+   foreground/background combination at the delivered size.
+7. **Verify required modes.** For a light/dark pair, preserve semantic meaning
+   and adapt material, contrast and imagery as needed. A single-mode footer
+   does not need an invented opposite theme. Swapping photographs or using
+   different panel materials is an option, not a universal requirement.
+8. **Assign type to roles.** Grotesque plus mono is a technical pairing;
+   serif-led editorial, purposeful bold and restrained handwriting are other
+   coherent directions. Metadata can use the established type system. The
+   historical 11-13px tracked mono examples are source treatments, not a rule
+   for every label, caption or unit.
+9. **Build hierarchy through several channels.** Size, weight, space, color
+   and alignment work together. A two-tone headline is one source device;
+   one-color or differently sized phrases can serve another approved direction.
+   Inspect wrapping and essential contrast rather than forcing a gray split.
+10. **Keep numbers correct and stable.** Updating figures need stable advances
+    and exact formatting; proportional tabular figures can do this without a
+    monospace face. Keep units/signs readable. Dimmed units, zero-padding and
+    caret deltas are optional source styles, not numerical requirements.
+11. **Name the actual color quantity.** HSV V, encoded brightness and relative
+    luminance are different. Use relative luminance for contrast; use the
+    source's stated space/units for material reconstruction (`measuring.md`).
+12. **Choose the finish.** Smooth, grainy, stippled, screened and pixelated
+    surfaces are legitimate. Inspect the final output and preserve source
+    limitations; JPEG texture cannot establish original grain amplitude.
 
 ---
 
 ## 6. Gradient systems
 
-Construction, the four archetypes and the sixteen measured kinds live in
-`gradient-fields.md`. The short form, for palette decisions:
+Field construction and the corrected local-shadow reading live in
+[gradient-fields.md](gradient-fields.md). HSV value is not relative luminance;
+name the actual color quantity. Choose the finish for the material, and measure
+text contrast independently of texture or apparent brightness.
 
-| Archetype | Luminance | Chroma |
-|---|---|---|
-| Value-pinned chroma ramp | pinned 99.8-100 % | S climbs, one RGB channel pinned |
-| Hue-locked value ramp | full 0-100 % | hue locked inside ~3.5 deg, S arcs through the mid-tone |
-| Chroma-only field | pinned 96-99.5 % | S 6-29 %, hue sweeping |
-| Channel-clamped photograph | photographic | one RGB channel clamped <= 8 |
+## 7. Wider type and color directions
 
-The four source checks, by name: **trough test** (a real source makes the field
-non-monotonic) · **off-axis test** (a light vertex within 3 pp of 50 % means
-nobody decided) · **saturation arc** (flat S is an overlay) · **hue gate** (read
-hue only where chroma >= 12).
-
-Chroma quarantine (C1) is unaffected: a field is the ONE place chroma lives, and
-a page carrying a field spends its accent budget there.
-
-**MEASURED CORRECTION (2026-08-22, Tier B).** § 3 states that the page ambient
-bloom re-tints with each slide's hue via an 80-120 px blurred copy of the artwork
-at 25-35 % opacity. Re-measured across all three slides of insporadesign-2087:
-the page reads exactly #F7F6F2 at (20,20) on **every** slide - there is no
-page-wide re-tint. What exists is local and it is a DARKENING, not a bloom:
--46 L below the card, -14 L sideways, -13 L above, reaching 72 / 71 / 54
-frame-px, with the hue derived from the card (#D2C8AD under amber, #C5C9D5 under
-indigo). The original line stays as the observation; build from this one
-(`gradient-fields.md` G13).
+- **Serif-led paper:** AdityaSur11-2096160 uses serif navigation/body and blue
+  illustrated ink on cream. A serif need not be confined to one display word.
+- **Warm character system:** DesignByMoein-2095937 / DesignByMoein-2096289
+  combine bolder sans, quiet handwriting, cream surfaces and an orange mascot.
+- **Editorial mixed type:** uihssn-2096384 combines serif/italic and sans to
+  change emphasis. Match x-height, baseline and reading order; inspect each
+  phrase for contrast instead of assuming decorative color is readable.
+- **Functional numbers:** kitlangton-2096041 demonstrates stable changing
+  values. Tabular advances, separators, signs, precision and locale matter;
+  a second monospace family is optional.
+- **Material color:** basit_designs-2095821 carries many hues in one ribbon;
+  DmitryLepisov-2093247 gives functional categories different icon colors.
+  A shared geometry or material can unify a palette with more than one hue.

@@ -1,0 +1,256 @@
+{
+  "slug": "hugorcd-2092999725704180167",
+  "source_url": "https://x.com/hugorcd/status/2092999725704180167",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "url": "https://video.twimg.com/amplify_video/2092999683534692352/vid/avc1/1920x1080/ykTyixwLpTcTVHuQ.mp4?tag=29",
+      "type": "video",
+      "sha256": "35ecb369da0fe1b0d07c3c557432f2df8649d5e940173348ef5a1ec69074c716",
+      "bytes": 2748604,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "duration": "4.766667",
+            "nb_frames": "143"
+          }
+        ],
+        "format": {
+          "duration": "4.766667"
+        }
+      },
+      "sampling": {
+        "filter": "fps=6",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_1/f_004.jpg",
+            "sample_time_seconds": 0.5
+          },
+          {
+            "file": "frames_1/f_007.jpg",
+            "sample_time_seconds": 1.0
+          },
+          {
+            "file": "frames_1/f_010.jpg",
+            "sample_time_seconds": 1.5
+          },
+          {
+            "file": "frames_1/f_013.jpg",
+            "sample_time_seconds": 2.0
+          },
+          {
+            "file": "frames_1/f_017.jpg",
+            "sample_time_seconds": 2.666667
+          },
+          {
+            "file": "frames_1/f_020.jpg",
+            "sample_time_seconds": 3.166667
+          },
+          {
+            "file": "frames_1/f_023.jpg",
+            "sample_time_seconds": 3.666667
+          },
+          {
+            "file": "frames_1/f_026.jpg",
+            "sample_time_seconds": 4.166667
+          },
+          {
+            "file": "frames_1/f_029.jpg",
+            "sample_time_seconds": 4.666667
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/hugorcd-2092999725704180167-video_1.jpg"
+    },
+    {
+      "file": "site_video_1.mp4",
+      "url": "https://vgpu.sh/examples/eve/eve-hero-1080p.mp4",
+      "type": "site-video",
+      "sha256": "b8a2b7a9e541ef4090295823d4a0872e16c82599f0a52bc5e843989961a754a3",
+      "bytes": 5565131,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3492,
+            "height": 1130,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "30.000000",
+            "nb_frames": "1800"
+          }
+        ],
+        "format": {
+          "duration": "30.000000"
+        }
+      },
+      "sampling": {
+        "filter": "fps=2",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_site_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_site_1/f_008.jpg",
+            "sample_time_seconds": 3.5
+          },
+          {
+            "file": "frames_site_1/f_014.jpg",
+            "sample_time_seconds": 6.5
+          },
+          {
+            "file": "frames_site_1/f_021.jpg",
+            "sample_time_seconds": 10.0
+          },
+          {
+            "file": "frames_site_1/f_027.jpg",
+            "sample_time_seconds": 13.0
+          },
+          {
+            "file": "frames_site_1/f_034.jpg",
+            "sample_time_seconds": 16.5
+          },
+          {
+            "file": "frames_site_1/f_040.jpg",
+            "sample_time_seconds": 19.5
+          },
+          {
+            "file": "frames_site_1/f_047.jpg",
+            "sample_time_seconds": 23.0
+          },
+          {
+            "file": "frames_site_1/f_053.jpg",
+            "sample_time_seconds": 26.0
+          },
+          {
+            "file": "frames_site_1/f_060.jpg",
+            "sample_time_seconds": 29.5
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/hugorcd-2092999725704180167-site_video_1.jpg"
+    },
+    {
+      "file": "site_eve-dev-home.png",
+      "url": "https://vgpu.sh/examples/eve/eve-dev-home.png",
+      "type": "site-image",
+      "sha256": "12ddc4bf02d7121caec007fe9712ab4a941a6bc80961191df8db4c7d6be5cba5",
+      "bytes": 80752,
+      "dimensions": [
+        1440,
+        900
+      ],
+      "archive_file": "site_eve-dev-home.jpg"
+    },
+    {
+      "file": "site_eve-billboard-8k.png",
+      "url": "https://vgpu.sh/examples/eve/eve-billboard-8k.png",
+      "type": "site-image",
+      "sha256": "dfe466fcdbbe276099eaa6cda426041a7c592fad764ed8bb8fe6a6588ded477d",
+      "bytes": 2867394,
+      "dimensions": [
+        8081,
+        2614
+      ],
+      "archive_file": "site_eve-billboard-8k.jpg"
+    },
+    {
+      "file": "site_hudson-yards-billboard.svg",
+      "url": "https://vgpu.sh/examples/eve/hudson-yards-billboard.svg",
+      "type": "site-image",
+      "sha256": "a1b010d7345a35411dd1aab965ce16cd1b7ded0680f6c0a81e16fb29bef45b60",
+      "bytes": 16928,
+      "archive_file": null
+    },
+    {
+      "file": "site_depth-estimation.card.png",
+      "url": "https://vgpu.sh/examples/depth-estimation.card.png",
+      "type": "site-image",
+      "sha256": "059037bd138b957bfe7ebe1c53264c9fc896774c9bb05c4585caff02df196f80",
+      "bytes": 560913,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "archive_file": "site_depth-estimation.card.jpg"
+    },
+    {
+      "file": "site_fft-ocean-surface.card.png",
+      "url": "https://vgpu.sh/examples/fft-ocean-surface.card.png",
+      "type": "site-image",
+      "sha256": "c1a9b4fbc2b3d6aa08a5bb2010f07ce0a4b6e166d9f1ca094291154da268c495",
+      "bytes": 776938,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "archive_file": "site_fft-ocean-surface.card.jpg"
+    },
+    {
+      "file": "site_raymarched-fractal.card.png",
+      "url": "https://vgpu.sh/examples/raymarched-fractal.card.png",
+      "type": "site-image",
+      "sha256": "46c9b57b66c41ebccb275d58dd1a8edc26921d6f0d807e09840c25bac3771a0f",
+      "bytes": 398504,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "archive_file": "site_raymarched-fractal.card.jpg"
+    },
+    {
+      "file": "site_nextjs-flare.card.png",
+      "url": "https://vgpu.sh/examples/nextjs-flare.card.png",
+      "type": "site-image",
+      "sha256": "3af0a50c82ad7f337907c54b5789b61aef4f793039daa4eaf756d33afadd13ff",
+      "bytes": 491090,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "archive_file": "site_nextjs-flare.card.jpg"
+    },
+    {
+      "file": "site_vgpu-live.png",
+      "url": "https://vgpu.sh/",
+      "type": "browser-capture",
+      "sha256": "653dc44764cf60ebe561a8b8a5dfeafe49e2a5dbe6047417023ac704518375ec",
+      "bytes": 1169881,
+      "dimensions": [
+        1200,
+        819
+      ],
+      "archive_file": "site_vgpu-live.jpg"
+    },
+    {
+      "file": "site_vgpu-live-1440.png",
+      "url": "https://vgpu.sh/",
+      "type": "browser-capture",
+      "sha256": "9d476515a9ac71d2bdec0af4d0ee942a9e406f1f7d53dfb162f961083f8a7eb2",
+      "bytes": 2099065,
+      "dimensions": [
+        1440,
+        5728
+      ],
+      "archive_file": "site_vgpu-live-1440.jpg"
+    }
+  ]
+}

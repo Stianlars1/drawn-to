@@ -1,0 +1,80 @@
+{
+  "slug": "basit_designs-2095862418518008252",
+  "source_url": "https://x.com/basit_designs/status/2095862418518008252",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "url": "https://video.twimg.com/amplify_video/2095862322531299328/vid/avc1/2944x2160/i-kl7iLR90yIRXRx.mp4?tag=29",
+      "type": "video",
+      "sha256": "05eae08f13f66622527b4f3781fa54576e08ed0a536c8e8c1fe5bf52fb321cb0",
+      "bytes": 9543200,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 2944,
+            "height": 2160,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "456600/7603",
+            "duration": "12.671667",
+            "nb_frames": "761"
+          }
+        ],
+        "format": {
+          "duration": "12.671667"
+        }
+      },
+      "sampling": {
+        "filter": "fps=3",
+        "numbering": "one-based output samples; not decoded native frame numbers",
+        "archive": [
+          {
+            "file": "frames_1/f_001.jpg",
+            "sample_time_seconds": 0.0
+          },
+          {
+            "file": "frames_1/f_005.jpg",
+            "sample_time_seconds": 1.333333
+          },
+          {
+            "file": "frames_1/f_009.jpg",
+            "sample_time_seconds": 2.666667
+          },
+          {
+            "file": "frames_1/f_013.jpg",
+            "sample_time_seconds": 4.0
+          },
+          {
+            "file": "frames_1/f_017.jpg",
+            "sample_time_seconds": 5.333333
+          },
+          {
+            "file": "frames_1/f_022.jpg",
+            "sample_time_seconds": 7.0
+          },
+          {
+            "file": "frames_1/f_026.jpg",
+            "sample_time_seconds": 8.333333
+          },
+          {
+            "file": "frames_1/f_030.jpg",
+            "sample_time_seconds": 9.666667
+          },
+          {
+            "file": "frames_1/f_034.jpg",
+            "sample_time_seconds": 11.0
+          },
+          {
+            "file": "frames_1/f_038.jpg",
+            "sample_time_seconds": 12.333333
+          }
+        ]
+      },
+      "gallery_contact_sheet": "contact-sheets/basit_designs-2095862418518008252-video_1.jpg"
+    }
+  ]
+}

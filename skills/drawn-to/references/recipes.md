@@ -2,13 +2,35 @@
 
 Concrete, named composition variants per section kind, distilled from the reference corpus (the named variants below were derived on the first 45; five more were added 2026-08-22 from references 54-57 and are marked with their tier). Companion to `style-families.md` (families F1–F8, the 12 constants) and `layout-language.md` (grids, card anatomy). Citations use the same slug convention.
 
-**How the skill uses this doc.** After the blend and axis locks are settled, walk the sections in scope. For each section kind: (1) filter this kind's variants by family compatibility with the chosen blend - a variant whose **Families** line clashes with the dominant family is not offered; (2) present 2–3 surviving variants as a weighted question in the QS stage, using each variant's name + one-line essence as the option label and **Choose when** as the hint; (3) on selection, build from **Anatomy** + **Ingredients**, with the 12 constants applied silently. For **redesigns**, always add one more option - *"keep current structure, reskin to the locks"* - and, before asking, map each existing section onto its nearest recipe here so the question reads "your current hero is closest to Centered Stack; keep it, or switch to …". The 12 constants (chroma quarantine, show-the-feature, separation ladder, motion registers, etc.) are assumed everywhere below and never restated per variant.
+**How to use this document.** For a new direction, select relevant compositions
+by content, role and material; the family tags describe natural starting points,
+not forbidden combinations. Offer alternatives for unresolved decisions through
+`question-flow.md`. For an approved continuation, build from the accepted recipe
+without rerunning that interview. In a redesign, keeping the current structure
+is a useful option when it serves the brief.
 
-Evidence density varies by kind: heroes, feature grids, bentos, and component demos are richly covered; **pricing has exactly one direct reference** and **closing CTA is mostly observed fused into footers or hero devices** - variants there marked **(derived)** are extrapolated from the closest evidence, not observed whole.
+Each named recipe retains its source's detailed anatomy as an example. Its
+counts, materials and timing are not requirements for unrelated surfaces. Apply
+the scoped defaults in `style-families.md` and the role-specific checks in
+`quality-bar.md`; preserve an explicit brief over a historical example.
+
+Evidence density varies by kind: heroes, feature grids, bentos, and component demos are richly covered; **the initial sample had one direct pricing reference; newer examples below broaden it** and **closing CTA is mostly observed fused into footers or hero devices** - variants there marked **(derived)** are extrapolated from the closest evidence, not observed whole.
 
 ---
 
 ## Hero
+
+### Kinetic Collection - moving image crops around stationary reading anchors
+- **Anatomy:** a consistent aperture family carries heterogeneous images; the headline, mark and action keep their positions while the collection moves.
+- **Evidence:** basit_designs-2095862. The source demonstrates two phone presentations, not a general responsive specification.
+- **Families:** F2 host, photographic collection as content.
+- **Choose when:** portfolio/cultural/visual work provides relevant imagery. Protect the whole text/action zone through every motion phase and compose a static fallback.
+
+### Image-First Editorial - artwork establishes the scene before the words
+- **Anatomy:** substantial leading image or processed landscape, then an aligned headline/action/proof zone; typography and imagery have separate reading space.
+- **Evidence:** uihssn-2096384 photo_1; arch-frieze variants in LexnLin-2096045 and LexnLin-2095920.
+- **Families:** F5 or F2 with a deliberate image system.
+- **Choose when:** the source image has real editorial or product meaning. A split evidence panel is also valid; do not turn every hero into a full-bleed field.
 
 ### Centered Stack - the badge → H1 → sub → CTAs → media spine
 - **Anatomy:** container ~1200px. Badge pill ~24px tall (icon + 11px caps at +0.1em) → 24px → H1 56–72px/500–600, line-height 1.05–1.15, tracking −1 to −2%, 2 lines → 24–28px → subhead 16–20px, max-width 480–640px → 40–48px → CTA pair, gap 12–16px (pill radius for marketing chrome) → 64–80px → full-width media panel ~3:1, radius 24px. Nav ~65–72px: logo left, links center, pill CTA right.
@@ -61,18 +83,18 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
 - **Families:** F3 native; F1 for the no-field variants; F8 when the field is bloom on true black.
 - **Choose when:** the first screen of anything, where the job is to stop a visitor before they read. Not when the screen must explain - that is One-Screen Poster or a section recipe.
 
-### One-Screen Catalog - many screens, one chrome, a DIFFERENT content model per screen
+### One-Screen Catalog - a showcase of different directions
 - **Why it exists:** shipped 2026-08-21 after a nine-screen cycle read generic. Every screen was a One-Screen Poster, so nine locked directions rendered the same headline, the same sub line and the same command nine times. The directions were distinct; the PAGE was monotonous. A catalog is not a poster repeated - it is a set of screens that each argue a different part of the product in a different register.
-- **Anatomy:** one persistent chrome (brand top-left · one link top-right · direction label bottom-left (the direction's PLAIN name - "ink & air",
+- **Anatomy for a range showcase:** one persistent chrome (brand top-left · one link top-right · direction label bottom-left (the direction's PLAIN name - "ink & air",
   "paper & print" - never its family code or blend, which live in the lock
-  file) · transport bottom-right) wrapping a body that changes KIND per screen. Every screen is still 100 vw x 100 svh, no scroll. The chrome is the only thing that repeats; the body must not.
-- **Screen kinds** (one per screen; a kind may recur only when BOTH the device and the content slice differ - never the same pair twice):
+  file) · transport bottom-right) wrapping varied content examples. A one-screen showcase can target 100svh when its content fits; accessible scrolling remains available when needed. This is not the default structure for a sequence or image collection.
+- **Possible showcase screen kinds** (vary what the demonstration needs; a kind may recur when its content or behavior makes the comparison useful):
 
   | Kind | Body | Budget deltas vs the poster |
   |---|---|---|
   | Poster | H1 + one sub line + the capture control + ONE signature visual | the base budgets (`quality-bar.md` § 2) |
-  | Feature trio | 3 cells, each a working fragment + title + <=3 spec lines; no H1, or one 2-word section head | no H1 needed; 3 titles <= 3 words; body <= 3 lines/cell · 3 cells = 3 DIFFERENT devices, >=2 registers (set law) |
-  | Bento 2x2 | 4 outlined cells, one carrying a media panel | one cell is the focal, the other three ghosted (C11) · 4 cells = 4 DIFFERENT devices (set law) |
+  | Feature trio | several explanatory cells with concise headings | one coherent register; distinguish actual claims, without requiring unrelated devices |
+  | Bento 2x2 | related cells with a clear hierarchy | preserve readable content; repetition follows independent claims, sequence or collection roles |
   | Ledger / spec sheet | 8-14 rows: mono index, label, dotted leader, value | rows are DATA - every value must reconcile (C10) |
   | Gallery / swatch wall | 6-9 plates or chips, captions demoted outside | no captions inside the plates |
   | Metrics | ONE bespoke chart form invented for this data (never a stock bar chart) | 0 prose; axis labels mono |
@@ -81,15 +103,15 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
   | Chapters | a numbered index rail + one morphing panel | index <= 6 rows |
   | Closing | one display-size statement + the capture control | <= 8 words, one lit element |
 
-- **Content law:** the shared invariants across the catalog are the brand, the direction label and the product's identity - NOT the headline and not the CTA. The direction label is a plain name; a screen that prints "F2 85 + F4 15" or "Constant C2" has leaked the ledger into the page (`quality-bar.md` § 1). Each screen renders a different SLICE of the product's real material (what it does, what it outputs, what it measured, what it enforces). If two screens carry the same sentence, one of them is wrong.
-- **Device law:** each screen names a different device from
-  `illustration-ideation.md` § Device catalog. Two screens may share a family;
-  they may not share a device. A screen whose KIND carries several cells
-  (feature trio, bento 2x2, gallery) names a device PER CELL, not per screen,
-  and those cell devices are spent for the whole catalog too - one device is
-  used exactly once on the page, cells included. Record the device per screen
-  AND per cell in the lock file as a set table
-  (`illustration-ideation.md` § The set law).
+- **Content relationship:** for a range showcase, vary enough content and
+  composition to demonstrate the intended differences. Controlled A/B studies
+  may deliberately hold content constant. A sequence keeps its evolving object;
+  a collection repeats frames while contents change. They do not need to prove
+  variety by replacing their content model on every view.
+- **Device relationship:** use the corresponding set test in
+  `quality-bar.md` § 3b. Independent claims need meaningful distinction;
+  sequences, shared worlds, collections and identities may reuse devices.
+  A device is not spent after one use on a page.
 - **Ingredients:** the chrome uses the host direction's separation physics on every screen (hairline in F1, one soft shadow in F6, 1 px frame in F5). The transport control is chrome, not content: it never takes an accent hue and never animates on cycle.
 - **Evidence:** the failure mode is the anchor - nine identical posters, owner verdict "litt generisk". Kinds map to the section recipes below: Feature trio = FIG-Plate Shared-Border Grid / Pebble Dissolve Grid; Bento = Divider-Cut Bento; Ledger = the print ledger sheet (basit_designs-2089995) and yurygok-2089624's dotted leaders; Metrics = yurygok-2089624 bespoke chart forms; Instrument = F7 (cabralorenzo-2090, jeetnirnejak-2089); Chapters = Numbered Index + Photo Panels.
 - **Families:** any. The catalog is a container, not a style.
@@ -170,7 +192,7 @@ siblings, and `gradient-sheet.jpg` carries two tiles that fail the tells in
 
 ### Micro-Chip Row - a supporting list, not a feature moment
 - **Anatomy:** 4-up of 48 x 48 CSS chip cells (`layout-language.md` § 5 archetype 10) at 312 CSS column pitch; copy 9 words / 54 chars. No illustration, by design.
-- **Ingredients:** the plate is an index mark - one glyph at 38 % of plate width, a 1px hairline brighter on the top and left only, no gradient, no shadow, no second colour. The swap test does not apply at this scale (`quality-bar.md` § 3b relief clause).
+- **Ingredients:** the plate is an index mark - one glyph at 38 % of plate width, a 1px hairline brighter on the top and left only, no gradient, no shadow, no second colour. Use the collection/identity consistency check for this role (`quality-bar.md` § 3b), not a feature swap test.
 - **At 390:** 2-up; never 1-up, which turns an index into a feature list.
 - **Evidence:** small-cell census (Tier C - ratios only).
 - **Families:** any.
@@ -268,7 +290,16 @@ siblings, and `gradient-sheet.jpg` carries two tiles that fail the tells in
 
 ## Pricing
 
-Corpus is thin here: **one direct pricing reference** (kevserctk-2090). Variant 1 is observed; 2 and 3 are derived from the closest structural evidence and marked as such.
+The initial pricing reference was kevserctk-2090; the later character pricing
+adds another direct example. Surface-Inversion Pair and Warm Character Pricing
+are observed compositions; Divider-Cut Tier Table and Banded Meter Card are
+derived adaptations, not additional observed pricing pages.
+
+### Warm Character Pricing - a restrained comparison with one inhabiting figure
+- **Anatomy:** aligned plan cards and comparable rows; one quiet character at a card ledge, information static; a small tinted chip and dark CTA emphasize one plan.
+- **Evidence:** DesignByMoein-2095937. See `september-expansion.md` for the behind-body/in-front-hands relationship.
+- **Families:** warm-neutral F6 + F2; no extreme squircle required.
+- **Choose when:** an approachable product has an established character identity. Keep prices, labels and choice targets clear; a character is optional, not a substitute for pricing information.
 
 ### Surface-Inversion Pair - the featured tier is a geometric clone with the artwork as its skin
 - **Anatomy:** centered H2 ~48px/500 + subhead → 2-segment Monthly/Annual toggle ~290×48px (active segment white with hairline border, radius 10) → two equal cards ~460px wide, gap 24px, radius 14px, padding 32px. Card order: plan name 20px/600 → price ~48px/700 + "/month" 16px/600 → 2-line description 16px → full-width CTA ~56px tall, radius 8 → 6 feature rows (40px circular check chip + 16px label, row gap 20px). The Pro card is a pixel-identical geometric clone of Starter with only the surface swapped to the page's signature artwork, all text flipped white, CTA solid white - no badge, no scale change, no accent border.
@@ -354,6 +385,18 @@ Thin as a standalone kind: in the corpus the closing beat is usually fused into 
 
 ## Footer
 
+### Illustrated Landscape Close - navigation sits in the sky above a connected scene
+- **Anatomy:** quiet type/link groups in reserved negative space; connected landscape rising from the lower edge; one coherent ink/paper system.
+- **Evidence:** AdityaSur11-2096160; compare TheKartikBansal-2094873 for a more processed/pixel landscape.
+- **Families:** F5 editorial illustration, with serif allowed throughout.
+- **Choose when:** the brand benefits from place, craft or an editorial ending. Recompose the scene for viewport width; keep text as real DOM content.
+
+### Character Footer - one familiar figure supplies the warmth
+- **Anatomy:** brand and small character scene at one side, ordinary link columns and newsletter action alongside, legal row below.
+- **Evidence:** DesignByMoein-2096289, paired with its pricing sibling.
+- **Families:** warm-neutral F6 + F2.
+- **Choose when:** a recurring mascot is part of the actual identity. Maintain contact shadows, scale and lighting; animate the figure only within the chosen motion budget.
+
 ### Watermark Close - the brand mark oversized, cropped, at whisper opacity
 - **Anatomy:** footer container with 40px top corners; 4 zones top-to-bottom: link columns (optional) → display-size email ~34px → full-width 1px hairline → legal line. The signature: the logo mark blown up to 350–450px, cropped by an edge, at 2–12% opacity - as gray watermark over texture (LexnLin-2089), dark-on-dark embossed relief at ~4% lightness delta (helvetiica-2089), ghost glyph at 2–3% luminance (basit_designs-2089995), ~400px #d9d9d9 mark cropped by the banner edge (devxnuj-2090), or a ~350px gaussian-blurred icon at 3–4% echoing state (marcelkargul-2089632).
 - **Ingredients:** optionally swap the page's background texture for a richer one here only (quilted dark glass, LexnLin-2089) - the footer may be the page's most material moment.
@@ -406,3 +449,17 @@ Thin as a standalone kind: in the corpus the closing beat is usually fused into 
 - **Evidence:** ImranUxi-2089 (interfaces.dev).
 - **Families:** F1+F4 native.
 - **Choose when:** teaching/comparing interaction details; changelog or "craft" pages demonstrating quality claims.
+
+## Onboarding and configuration
+
+### Action and Result - a stable preview beside a short form
+- **Anatomy:** neighboring task and preview planes; clear progress, a narrow form and a stable next action; the preview evolves with the same underlying object.
+- **Evidence:** disarto_max-2093019 (stills, so live binding is a proposed implementation).
+- **Families:** F1 for the source's dark mood; relationship works in other modes.
+- **Choose when:** the preview explains the consequence of user input. Use the sequence/ORDER test, keep form and preview state consistent, and test actual narrow-screen focus and keyboard behavior.
+
+### Identity at Two Scales - expressive showcase beside functional use
+- **Anatomy:** large material/icon rendition paired with the small operational version in context; preserve one recognizable geometric atom.
+- **Evidence:** DmitryLepisov-2093247; multi-surface brand board in adriankuleszo-2096048.
+- **Families:** F2/F7 for a tangible showcase, or the brand's own approved system.
+- **Choose when:** teaching or presenting an identity system. Scale changes the detail budget; the functional icon does not inherit showcase animation.

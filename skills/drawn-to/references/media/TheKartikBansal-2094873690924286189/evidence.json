@@ -1,0 +1,56 @@
+{
+  "slug": "TheKartikBansal-2094873690924286189",
+  "source_url": "https://x.com/TheKartikBansal/status/2094873690924286189",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "url": "https://pbs.twimg.com/media/HRJ8LahawAAF-ZJ.jpg?name=orig",
+      "type": "photo",
+      "sha256": "b70c6a19cf5e1ecc9c2ad2576f18a66c475f6f5b1f93a43290a8a785a5c2828e",
+      "bytes": 783525,
+      "dimensions": [
+        2880,
+        1776
+      ],
+      "archive_file": "photo_1.jpg"
+    },
+    {
+      "file": "photo_2.jpg",
+      "url": "https://pbs.twimg.com/media/HRJ8Vf6aMAAMuEg.jpg?name=orig",
+      "type": "photo",
+      "sha256": "7e6673d549181c60dafa5ffb21536cf31f3e38096574a6f2dec22e0c2af044f2",
+      "bytes": 60158,
+      "dimensions": [
+        1133,
+        1200
+      ],
+      "archive_file": "photo_2.jpg"
+    },
+    {
+      "file": "photo_3.jpg",
+      "url": "https://pbs.twimg.com/media/HRJ8ZaSb0AAXudF.jpg?name=orig",
+      "type": "photo",
+      "sha256": "942df2f9ae1f096c5f1108163656b05571331c09764a7240684c4709fd4d0016",
+      "bytes": 135363,
+      "dimensions": [
+        1200,
+        800
+      ],
+      "archive_file": "photo_3.jpg"
+    },
+    {
+      "file": "photo_4.jpg",
+      "url": "https://pbs.twimg.com/media/HRJ8ccxaAAA0hcx.jpg?name=orig",
+      "type": "photo",
+      "sha256": "40a93c7ff48a4fe807f407eb4c0bd8d570b65604188a2189f4e8c5eee906df7b",
+      "bytes": 69556,
+      "dimensions": [
+        1200,
+        800
+      ],
+      "archive_file": "photo_4.jpg"
+    }
+  ]
+}

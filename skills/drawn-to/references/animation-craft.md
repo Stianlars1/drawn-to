@@ -38,10 +38,11 @@ Two failure modes; the worse one is animating what shouldn't animate.
 
 1. **CSS transition** - hover, press, class/attribute state toggles.
 2. **CSS `@starting-style`** - entry on mount, no JS.
-3. **CSS animation** - predetermined motion that must stay smooth while the
-   main thread is busy (runs off-thread; rAF-based JS drops frames under load).
-4. **WAAPI** `element.animate()` - programmatic control, CSS performance,
-   zero bundle.
+3. **CSS animation** - predetermined motion. Compositor-eligible properties
+   can stay smooth during main-thread work; CSS alone does not make every
+   property off-thread. Profile paint/layout-heavy animation.
+4. **WAAPI** `element.animate()` - programmatic control with no library bundle;
+   rendering cost still depends on the animated properties and browser.
 5. **Motion (motion.dev)** - springs, layout/exit animations, gesture values.
 
 Never install a motion library for a fade. If the task is really a component
@@ -50,20 +51,26 @@ of hand-rolling focus management around a div.
 
 ## 3. Properties
 
-- Animate **`transform` and `opacity` only** (GPU; skip layout+paint).
-  `clip-path` is the sanctioned third (§7). `height` tolerated only for
-  accordions - keep those ≤200ms since they cost layout every frame.
+- Prefer **transform and opacity** when they express the intended change and
+  can be composited. Clip-path, filter, color and geometry changes are valid
+  when needed by the chosen effect; measure their paint/layout cost. Accordions
+  and meaningful resizes can animate measured dimensions or use suitable
+  layout primitives. Keep affected regions and durations proportionate.
 - **Never `scale(0)`**; enter from `scale(0.9-0.97)` + `opacity: 0`  - 
   nothing real appears from nothing.
 - **`transform-origin` at the trigger** for popovers/dropdowns/menus/
   tooltips (`var(--transform-origin)` in Base UI). Modals exempt: centered.
 - **Percentages in `translate()`** move by the element's own size  - 
   `translateY(100%)` hides any drawer regardless of height. Prefer over px.
-- In Motion, **use the full transform string** - `x`/`y`/`scale` shorthands
-  run on the main thread and drop frames under load:
-  `animate={{ transform: "translateX(100px)" }}`.
-- **Never drive a child's transform via a CSS variable on the parent** - it
-  recalcs styles for every child; set `transform` on the element directly.
+- For Motion under load, inspect how the installed version renders the chosen
+  properties. A full transform string such as
+  `animate={{ transform: "translateX(100px)" }}` can be appropriate; shorthand
+  values remain useful for gestures and composition. Choose using actual cost
+  and behavior rather than assuming every shorthand drops frames.
+- Set independent transforms on the element when practical. Inherited custom
+  properties can cause descendant style work, but shared pose scalars are
+  useful for a coordinated scene (`scroll-scrub.md`). Limit their scope to that
+  stage, register properties where interpolation needs it, and profile the result.
 - `transition: all` is always a defect - name the properties.
 
 ## 4. Curves and durations
@@ -159,7 +166,8 @@ decorative pointer-tracking (interpolate via `useSpring`, never bind raw).
 
 ## 7. clip-path toolkit
 
-`inset(t r b l)` eats in from each side; hardware-accelerated.
+`inset(t r b l)` clips in from each side. Compositing support and cost depend on
+the browser and effect; do not assume every clip-path animation is accelerated.
 
 - **Tab indicator with perfect color sync**: duplicate the tab list, style
   the copy as active, clip it to the active tab, animate the clip
@@ -173,9 +181,10 @@ decorative pointer-tracking (interpolate via `useSpring`, never bind raw).
 
 ## 8. Masking and polish
 
-- A crossfade that reads as two overlapping objects: add `filter: blur(2px)`
+- A crossfade that reads as two overlapping objects can use `filter: blur(2px)`
   + slight opacity dip during the transition - the eye merges them into one
-  transformation. Keep blur <20px (Safari). (Corpus twin: insporadesign-2087's
+  transformation. Keep the blur area/radius small and profile it, particularly
+  on the target Safari/device combination. (Corpus twin: insporadesign-2087's
   defocus-between-slides.)
 - Modal + backdrop animate opacity together so they read as one surface.
 - Match motion to the component's personality - a toast may run `ease` and
@@ -207,15 +216,16 @@ popover, tooltip, modal, drawer, toast, accordion, stagger, hold-to-confirm,
 tab indicator, scroll reveal, drag-to-dismiss, blur masking, WAAPI - live in
 `animation-recipes.md`. When the request matches one, start from the recipe.
 
-## Never ship
+## Implementation failures to check
 
-`transition: all` · `scale(0)` entrances · `ease-in` on UI · built-in
-ease-out on deliberate motion · animation on keyboard/100+-per-day actions ·
-UI >300ms without cause · center-origin trigger popovers · keyframes on
-rapid triggers · animating width/height/margin/top/left · Motion shorthand
-props under load · ungated hover motion · missing reduced-motion ·
-everything entering at once · symmetric press/release on deliberate actions ·
-input locked during a transition · gesture snap ignoring velocity.
+Unnecessary `transition: all` · animation that delays frequent input · movement
+that conceals state · unprofiled large paint/layout work · accidental trigger
+origins · rapid effects that jump instead of retargeting · hover without an
+equivalent focus/touch path · missing reduced-motion handling · input locked
+during a transition · gesture settling that ignores release velocity.
+
+A property or library shorthand is not itself a failure: judge the effect
+against the approved purpose, interruption behavior and measured rendering cost.
 
 ## Corpus cross-checks
 

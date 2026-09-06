@@ -1,0 +1,44 @@
+{
+  "slug": "PostiauxCharles-2095509261908382083",
+  "source_url": "https://x.com/PostiauxCharles/status/2095509261908382083",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "url": "https://pbs.twimg.com/media/HRS-ghWXwAAPO1c.jpg?name=orig",
+      "type": "photo",
+      "sha256": "10b7c4576248b9069ec4eda01e86d928fa4a1bcecf78b615ebdf7930487376d7",
+      "bytes": 144857,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "archive_file": "photo_1.jpg"
+    },
+    {
+      "file": "photo_2.jpg",
+      "url": "https://pbs.twimg.com/media/HRS-gh2bAAAJw13.jpg?name=orig",
+      "type": "photo",
+      "sha256": "86c6f3896bfaa8c77f0295decf7fff1c96dc76c03f19727464c99552b6f102dc",
+      "bytes": 205719,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "archive_file": "photo_2.jpg"
+    },
+    {
+      "file": "photo_3.jpg",
+      "url": "https://pbs.twimg.com/media/HRS-gh4aMAAcqFr.jpg?name=orig",
+      "type": "photo",
+      "sha256": "779e1be842733e6c68a2bad40aaa4b5829b8a73b25aba75ca49a39843650ebcc",
+      "bytes": 180104,
+      "dimensions": [
+        2400,
+        1800
+      ],
+      "archive_file": "photo_3.jpg"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
 <title>Drawn To - give your agent taste</title>
 <meta name="description" content="A measured taste library and a lock-in interview for coding agents. One screen, nine locked directions, cycling.">
 <meta property="og:title" content="Drawn To - give your agent taste">
-<meta property="og:description" content="A measured taste library and a lock-in interview for coding agents. 57 references · 12 constants · 8 families.">
+<meta property="og:description" content="A measured taste library and a lock-in interview for coding agents. A curated visual library, scoped craft defaults and weighted design directions.">
 <meta property="og:image" content="assets/social-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="assets/social-card.png">
@@ -984,7 +984,7 @@ const C = {
     e:['Twelve constants.','Eight families. Enforced always, asked never.'],
     f:['It reads your repo first.','Discovery runs before any question, so you never explain what the code already says.'],
     g:['One lock file.','Every visual decision serves a row you can point at.'],
-    h:['Show it, never describe it.','Not one icon-and-paragraph card in forty-five references.'],
+    h:['Show it, never describe it.','Give each feature meaningful visual evidence.'],
     i:['Taste, in one command.',''],
     t:['Give your agent taste.','']
   },
@@ -1044,7 +1044,7 @@ const C = {
     '4-7':['no','Ink against emitted light','Zero co-occurrence. Printed ink and light that radiates are contradictory material metaphors - one is pigment on a sheet, the other is a source.']
   },
   run: [['p','npx skills add Stianlars1/drawn-to'],
-        ['o','<b>added</b> skills/drawn-to <u>57 references</u>, 12 constants, 8 families'],
+        ['o','<b>added</b> skills/drawn-to <u>85 references</u>, 12 craft defaults, 8 starting families'],
         ['sp',''],
         ['p','redesign the pricing section'],
         ['o','<b>reads</b> README.md, docs/, design tokens <u>3 found</u>'],
@@ -1502,7 +1502,7 @@ const SCREEN = {
   m: f => `<div class="mosaic" aria-hidden="true"></div><div class="grain"></div><div class="col">${TOP()}<div class="stage"><h2 class="head${f?' first':''}">Eight families</h2><div class="plates">${C.fams.map(([id,nm,sw,ct])=>`<div class="pl"><span class="id">${id}</span><div class="sw">${sw.map(c=>`<i style="background:${c}"></i>`).join('')}</div><h3>${nm}</h3><small>${ct} references</small></div>`).join('')}</div></div>${BOTTOM('m')}</div>`,
 
   /* N - metrics, one bespoke chart form invented for this data (yurygok-2089624) */
-  n: f => `<div class="col">${TOP()}<div class="stage"><h2 class="head${f?' first':''}">Where the fifty-seven sit</h2><p class="headsub">Membership by family. A reference belongs to one or two, so the dots outnumber the corpus.</p><div class="plot">${C.fams.map(([,nm,,ct])=>`<span class="fid">${nm}</span><span class="dots">${Array.from({length:ct},()=>'<i></i>').join('')}</span><span class="ct">${ct}</span>`).join('')}</div></div>${BOTTOM('n')}</div>`,
+  n: f => `<div class="col">${TOP()}<div class="stage"><h2 class="head${f?' first':''}">The original family sample</h2><p class="headsub">Historical family membership in the initial sample. Newer references extend the library beyond these groups.</p><div class="plot">${C.fams.map(([,nm,,ct])=>`<span class="fid">${nm}</span><span class="dots">${Array.from({length:ct},()=>'<i></i>').join('')}</span><span class="ct">${ct}</span>`).join('')}</div></div>${BOTTOM('n')}</div>`,
 
   /* O - one frozen product fragment, held mid-answer with real values */
   o: f => `<div class="col">${TOP()}<div class="body" style="justify-content:center"><div class="frag"><div class="bar"><span>drawn-to · question 3 of 8</span><span>weighted multi-select</span></div><div class="q">Which directions should the blend carry?</div><div class="opts"><div class="op on"><span class="box"></span><span>Editorial Monochrome</span><span class="wt">70</span></div><div class="op on"><span class="box"></span><span>Staged Atmosphere</span><span class="wt">20</span></div><div class="op on"><span class="box"></span><span>Blueprint Sheet</span><span class="wt">10</span></div><div class="op"><span class="box"></span><span>Soft Pastel Stage</span><span class="wt">0</span></div></div><div class="ft"><span>clash check: none</span><span><b>100</b> / 100</span></div></div></div>${BOTTOM('o')}</div>`,
@@ -1532,7 +1532,7 @@ const SCREEN = {
   x: f => `<div class="col">${TOP()}<div class="body"><div class="knob">${KNOB()}</div><div><h2 class="head${f?' first':''}">When it stops</h2><div class="stops">${C.stops.map(function(st,i){return '<button type="button" data-stop="'+i+'" aria-pressed="'+(i===0)+'"><i>'+st[0]+'</i><span>'+st[1]+'<small>'+st[2]+'</small></span></button>';}).join('')}</div></div></div>${BOTTOM('x')}</div>`,
 
   /* 25 - gallery. Fifty-one tiles, one per post; the fill is the mode it was read in. */
-  y: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">Read frame by frame, all fifty-seven</h2><div class="sheetgrid">${C.sheet.split(' ').map(function(t){return '<span class="t '+t[1]+'"><i style="width:'+({b:14,s:11,f:9,c:7,h:13,i:8,d:12,r:5,l:10}[t[0]]||9)+'px;height:'+({b:4,s:9,f:9,c:4,h:3,i:7,d:8,r:5,l:6}[t[0]]||5)+'px"></i></span>';}).join('')}<i class="scan"></i></div><div class="leg"><span><em style="background:#FFFDF9"></em><b>25</b> light</span><span><em style="background:#26251F;border-color:#26251F"></em><b>21</b> dark</span><span><em style="background:linear-gradient(135deg,#FFFDF9 0 50%,#26251F 50% 100%)"></em><b>5</b> both</span><span><em style="background:#FFFDF9;background-image:repeating-linear-gradient(45deg,#C7C3B7 0 1px,transparent 1px 5px)"></em><b>6</b> mixed</span><span>the mark inside is what the post shows</span></div></div>${BOTTOM('y')}</div>`,
+  y: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">An earlier 57-reference snapshot</h2><div class="sheetgrid">${C.sheet.split(' ').map(function(t){return '<span class="t '+t[1]+'"><i style="width:'+({b:14,s:11,f:9,c:7,h:13,i:8,d:12,r:5,l:10}[t[0]]||9)+'px;height:'+({b:4,s:9,f:9,c:4,h:3,i:7,d:8,r:5,l:6}[t[0]]||5)+'px"></i></span>';}).join('')}<i class="scan"></i></div><div class="leg"><span><em style="background:#FFFDF9"></em><b>25</b> light</span><span><em style="background:#26251F;border-color:#26251F"></em><b>21</b> dark</span><span><em style="background:linear-gradient(135deg,#FFFDF9 0 50%,#26251F 50% 100%)"></em><b>5</b> both</span><span><em style="background:#FFFDF9;background-image:repeating-linear-gradient(45deg,#C7C3B7 0 1px,transparent 1px 5px)"></em><b>6</b> mixed</span><span>the mark inside is what the post shows</span></div></div>${BOTTOM('y')}</div>`,
 
   /* 26 - matrix. Eight families against themselves; the marks are measured co-occurrence. */
   z: f => `<div class="col">${TOP()}<div class="body"><div class="mx"><span></span>${C.fams8.map(function(n){return '<span class="hd"><span>'+n.split(' ')[0]+'</span></span>';}).join('')}${C.fams8.map(function(n,r){return '<span class="rw">'+n+'</span>'+C.fams8.map(function(_,c){

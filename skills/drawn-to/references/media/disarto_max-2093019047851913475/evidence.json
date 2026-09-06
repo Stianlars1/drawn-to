@@ -1,0 +1,56 @@
+{
+  "slug": "disarto_max-2093019047851913475",
+  "source_url": "https://x.com/disarto_max/status/2093019047851913475",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "url": "https://pbs.twimg.com/media/HQvlkIRXoAAu585.jpg?name=orig",
+      "type": "photo",
+      "sha256": "b4a64bca2950a7447233ce9d7dae300469f9c4b91bed0bd77ed82e52ea908741",
+      "bytes": 222621,
+      "dimensions": [
+        4096,
+        3072
+      ],
+      "archive_file": "photo_1.jpg"
+    },
+    {
+      "file": "photo_2.jpg",
+      "url": "https://pbs.twimg.com/media/HQvlsopX0AAy_y1.jpg?name=orig",
+      "type": "photo",
+      "sha256": "8d60fdf106a3b6492053939ab8d9da17ff91b8852f7c2cfc0b2f6255a83f8c17",
+      "bytes": 216093,
+      "dimensions": [
+        4096,
+        3072
+      ],
+      "archive_file": "photo_2.jpg"
+    },
+    {
+      "file": "photo_3.jpg",
+      "url": "https://pbs.twimg.com/media/HQvls9XWEAA2XjQ.jpg?name=orig",
+      "type": "photo",
+      "sha256": "e1abe2daa53781b7e4857fcb1264ea2a15a888ac301504e4cf482d78fa0499f0",
+      "bytes": 199356,
+      "dimensions": [
+        4096,
+        3072
+      ],
+      "archive_file": "photo_3.jpg"
+    },
+    {
+      "file": "photo_4.jpg",
+      "url": "https://pbs.twimg.com/media/HQvltQVWAAAucEg.jpg?name=orig",
+      "type": "photo",
+      "sha256": "138e80531a4ffe271465f83f4641c74694afc5e8f02232f1232f247944b51f08",
+      "bytes": 226883,
+      "dimensions": [
+        4096,
+        3072
+      ],
+      "archive_file": "photo_4.jpg"
+    }
+  ]
+}

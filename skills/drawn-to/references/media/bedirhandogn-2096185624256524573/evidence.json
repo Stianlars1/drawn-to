@@ -1,0 +1,44 @@
+{
+  "slug": "bedirhandogn-2096185624256524573",
+  "source_url": "https://x.com/bedirhandogn/status/2096185624256524573",
+  "reviewed": "2026-09-06",
+  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "url": "https://pbs.twimg.com/media/HRckYgOaAAARokm.jpg?name=orig",
+      "type": "photo",
+      "sha256": "bc4e51634e3d811a1c9e105a1fe0d102b3a82458ace9d45e1bf47d3584e32504",
+      "bytes": 280266,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "archive_file": "photo_1.jpg"
+    },
+    {
+      "file": "photo_2.jpg",
+      "url": "https://pbs.twimg.com/media/HRckZzabAAAscUI.jpg?name=orig",
+      "type": "photo",
+      "sha256": "2603c759e5d8222fe4676a8beec45c00ed33f92b5c063b0dcaf17d968a016c71",
+      "bytes": 251285,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "archive_file": "photo_2.jpg"
+    },
+    {
+      "file": "photo_3.jpg",
+      "url": "https://pbs.twimg.com/media/HRckZywbUAAbG4A.jpg?name=orig",
+      "type": "photo",
+      "sha256": "824bfb7136a5b8fd4d4c9618f9929e138a302b14879c7e8e57fc41181b0289a7",
+      "bytes": 211907,
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "archive_file": "photo_3.jpg"
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "review_date": "2026-09-06",
+  "request_urls": [
+    "https://x.com/LexnLin/status/2076422557180608888",
+    "https://x.com/LexnLin/status/2096045877760795063",
+    "https://x.com/LexnLin/status/2095920966899728661",
+    "https://x.com/MSchwaibold/status/2096059496812716307",
+    "https://x.com/DesignByMoein/status/2096289484577071567",
+    "https://x.com/DesignByMoein/status/2095937596665024817",
+    "https://x.com/pvncher/status/2095991462416490862",
+    "https://x.com/krispuckett/status/2095994089917522241",
+    "https://x.com/ZaynHao/status/2095700462846812186",
+    "https://x.com/PostiauxCharles/status/2095509261908382083",
+    "https://x.com/bedirhandogn/status/2096193662833107140/photo/1",
+    "https://x.com/PostiauxCharles/status/2095509261908382083/photo/1",
+    "https://x.com/PostiauxCharles/status/2095509261908382083/photo/2",
+    "https://x.com/PostiauxCharles/status/2095509261908382083/photo/3",
+    "https://x.com/bedirhandogn/status/2096185624256524573/photo/1",
+    "https://x.com/bedirhandogn/status/2096185624256524573",
+    "https://x.com/bedirhandogn/status/2096185624256524573",
+    "https://x.com/bedirhandogn/status/2096185624256524573/photo/1",
+    "https://x.com/bedirhandogn/status/2096185624256524573/photo/2",
+    "https://x.com/bedirhandogn/status/2096185624256524573/photo/3",
+    "https://x.com/kitlangton/status/2096041674073874765",
+    "https://x.com/MSchwaibold/status/2096059496812716307",
+    "https://x.com/krispuckett/status/2095526364451647564",
+    "https://x.com/basit_designs/status/2095821165306732974",
+    "https://x.com/TheKartikBansal/status/2094873690924286189",
+    "https://x.com/oguzyagizkara/status/2093733361168662668",
+    "https://x.com/pqoqubbw/status/2093012429240431093",
+    "https://x.com/DmitryLepisov/status/2093247212629139641",
+    "https://x.com/disarto_max/status/2093019047851913475/photo/1",
+    "https://x.com/disarto_max/status/2093019047851913475/photo/2",
+    "https://x.com/disarto_max/status/2093019047851913475/photo/3",
+    "https://x.com/disarto_max/status/2093019047851913475/photo/4",
+    "https://x.com/hugorcd/status/2092999725704180167",
+    "https://x.com/kail_designs/status/2092890288595607560",
+    "https://x.com/nilseller/status/2093007384465531068/photo/1",
+    "https://vgpu.sh/",
+    "https://x.com/adriankuleszo/status/2096048196988580223",
+    "https://x.com/uihssn/status/2096384145186599306",
+    "https://x.com/socoloffalex/status/2095936925668438206",
+    "https://x.com/basit_designs/status/2095862418518008252",
+    "https://x.com/AdityaSur11/status/2096160317458030911"
+  ],
+  "normalization": "Repeated photo URLs share their post; the joined photo/1https:// URL was split at the second scheme.",
+  "references": [
+    {
+      "slug": "LexnLin-2076422557180608888",
+      "url": "https://x.com/LexnLin/status/2076422557180608888",
+      "requested_urls": [
+        "https://x.com/LexnLin/status/2076422557180608888"
+      ],
+      "owner_label": null,
+      "post_media": 0,
+      "article_images": 1,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/LexnLin-2076422557180608888/evidence.json"
+    },
+    {
+      "slug": "LexnLin-2096045877760795063",
+      "url": "https://x.com/LexnLin/status/2096045877760795063",
+      "requested_urls": [
+        "https://x.com/LexnLin/status/2096045877760795063"
+      ],
+      "owner_label": null,
+      "post_media": 4,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/LexnLin-2096045877760795063/evidence.json"
+    },
+    {
+      "slug": "LexnLin-2095920966899728661",
+      "url": "https://x.com/LexnLin/status/2095920966899728661",
+      "requested_urls": [
+        "https://x.com/LexnLin/status/2095920966899728661"
+      ],
+      "owner_label": null,
+      "post_media": 4,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/LexnLin-2095920966899728661/evidence.json"
+    },
+    {
+      "slug": "MSchwaibold-2096059496812716307",
+      "url": "https://x.com/MSchwaibold/status/2096059496812716307",
+      "requested_urls": [
+        "https://x.com/MSchwaibold/status/2096059496812716307",
+        "https://x.com/MSchwaibold/status/2096059496812716307"
+      ],
+      "owner_label": null,
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/MSchwaibold-2096059496812716307/evidence.json"
+    },
+    {
+      "slug": "DesignByMoein-2096289484577071567",
+      "url": "https://x.com/DesignByMoein/status/2096289484577071567",
+      "requested_urls": [
+        "https://x.com/DesignByMoein/status/2096289484577071567"
+      ],
+      "owner_label": "veldig kult",
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/DesignByMoein-2096289484577071567/evidence.json"
+    },
+    {
+      "slug": "DesignByMoein-2095937596665024817",
+      "url": "https://x.com/DesignByMoein/status/2095937596665024817",
+      "requested_urls": [
+        "https://x.com/DesignByMoein/status/2095937596665024817"
+      ],
+      "owner_label": "veldig kult",
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/DesignByMoein-2095937596665024817/evidence.json"
+    },
+    {
+      "slug": "pvncher-2095991462416490862",
+      "url": "https://x.com/pvncher/status/2095991462416490862",
+      "requested_urls": [
+        "https://x.com/pvncher/status/2095991462416490862"
+      ],
+      "owner_label": null,
+      "post_media": 0,
+      "article_images": 3,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/pvncher-2095991462416490862/evidence.json"
+    },
+    {
+      "slug": "krispuckett-2095994089917522241",
+      "url": "https://x.com/krispuckett/status/2095994089917522241",
+      "requested_urls": [
+        "https://x.com/krispuckett/status/2095994089917522241"
+      ],
+      "owner_label": null,
+      "post_media": 2,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/krispuckett-2095994089917522241/evidence.json"
+    },
+    {
+      "slug": "ZaynHao-2095700462846812186",
+      "url": "https://x.com/ZaynHao/status/2095700462846812186",
+      "requested_urls": [
+        "https://x.com/ZaynHao/status/2095700462846812186"
+      ],
+      "owner_label": null,
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/ZaynHao-2095700462846812186/evidence.json"
+    },
+    {
+      "slug": "PostiauxCharles-2095509261908382083",
+      "url": "https://x.com/PostiauxCharles/status/2095509261908382083",
+      "requested_urls": [
+        "https://x.com/PostiauxCharles/status/2095509261908382083",
+        "https://x.com/PostiauxCharles/status/2095509261908382083/photo/1",
+        "https://x.com/PostiauxCharles/status/2095509261908382083/photo/2",
+        "https://x.com/PostiauxCharles/status/2095509261908382083/photo/3"
+      ],
+      "owner_label": null,
+      "post_media": 3,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/PostiauxCharles-2095509261908382083/evidence.json"
+    },
+    {
+      "slug": "bedirhandogn-2096193662833107140",
+      "url": "https://x.com/bedirhandogn/status/2096193662833107140",
+      "requested_urls": [
+        "https://x.com/bedirhandogn/status/2096193662833107140/photo/1"
+      ],
+      "owner_label": null,
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/bedirhandogn-2096193662833107140/evidence.json"
+    },
+    {
+      "slug": "bedirhandogn-2096185624256524573",
+      "url": "https://x.com/bedirhandogn/status/2096185624256524573",
+      "requested_urls": [
+        "https://x.com/bedirhandogn/status/2096185624256524573/photo/1",
+        "https://x.com/bedirhandogn/status/2096185624256524573",
+        "https://x.com/bedirhandogn/status/2096185624256524573",
+        "https://x.com/bedirhandogn/status/2096185624256524573/photo/1",
+        "https://x.com/bedirhandogn/status/2096185624256524573/photo/2",
+        "https://x.com/bedirhandogn/status/2096185624256524573/photo/3"
+      ],
+      "owner_label": null,
+      "post_media": 3,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/bedirhandogn-2096185624256524573/evidence.json"
+    },
+    {
+      "slug": "kitlangton-2096041674073874765",
+      "url": "https://x.com/kitlangton/status/2096041674073874765",
+      "requested_urls": [
+        "https://x.com/kitlangton/status/2096041674073874765"
+      ],
+      "owner_label": null,
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/kitlangton-2096041674073874765/evidence.json"
+    },
+    {
+      "slug": "krispuckett-2095526364451647564",
+      "url": "https://x.com/krispuckett/status/2095526364451647564",
+      "requested_urls": [
+        "https://x.com/krispuckett/status/2095526364451647564"
+      ],
+      "owner_label": null,
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/krispuckett-2095526364451647564/evidence.json"
+    },
+    {
+      "slug": "basit_designs-2095821165306732974",
+      "url": "https://x.com/basit_designs/status/2095821165306732974",
+      "requested_urls": [
+        "https://x.com/basit_designs/status/2095821165306732974"
+      ],
+      "owner_label": "veldig kult",
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/basit_designs-2095821165306732974/evidence.json"
+    },
+    {
+      "slug": "TheKartikBansal-2094873690924286189",
+      "url": "https://x.com/TheKartikBansal/status/2094873690924286189",
+      "requested_urls": [
+        "https://x.com/TheKartikBansal/status/2094873690924286189"
+      ],
+      "owner_label": "velfig kult",
+      "post_media": 4,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/TheKartikBansal-2094873690924286189/evidence.json"
+    },
+    {
+      "slug": "oguzyagizkara-2093733361168662668",
+      "url": "https://x.com/oguzyagizkara/status/2093733361168662668",
+      "requested_urls": [
+        "https://x.com/oguzyagizkara/status/2093733361168662668"
+      ],
+      "owner_label": null,
+      "post_media": 2,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/oguzyagizkara-2093733361168662668/evidence.json"
+    },
+    {
+      "slug": "pqoqubbw-2093012429240431093",
+      "url": "https://x.com/pqoqubbw/status/2093012429240431093",
+      "requested_urls": [
+        "https://x.com/pqoqubbw/status/2093012429240431093"
+      ],
+      "owner_label": null,
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/pqoqubbw-2093012429240431093/evidence.json"
+    },
+    {
+      "slug": "DmitryLepisov-2093247212629139641",
+      "url": "https://x.com/DmitryLepisov/status/2093247212629139641",
+      "requested_urls": [
+        "https://x.com/DmitryLepisov/status/2093247212629139641"
+      ],
+      "owner_label": "velig kult",
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/DmitryLepisov-2093247212629139641/evidence.json"
+    },
+    {
+      "slug": "disarto_max-2093019047851913475",
+      "url": "https://x.com/disarto_max/status/2093019047851913475",
+      "requested_urls": [
+        "https://x.com/disarto_max/status/2093019047851913475/photo/1",
+        "https://x.com/disarto_max/status/2093019047851913475/photo/2",
+        "https://x.com/disarto_max/status/2093019047851913475/photo/3",
+        "https://x.com/disarto_max/status/2093019047851913475/photo/4"
+      ],
+      "owner_label": "elsker",
+      "post_media": 4,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/disarto_max-2093019047851913475/evidence.json"
+    },
+    {
+      "slug": "hugorcd-2092999725704180167",
+      "url": "https://x.com/hugorcd/status/2092999725704180167",
+      "requested_urls": [
+        "https://x.com/hugorcd/status/2092999725704180167"
+      ],
+      "owner_label": null,
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/hugorcd-2092999725704180167/evidence.json",
+      "owner_note": "vgpu.sh",
+      "related_urls": [
+        "https://vgpu.sh/"
+      ]
+    },
+    {
+      "slug": "kail_designs-2092890288595607560",
+      "url": "https://x.com/kail_designs/status/2092890288595607560",
+      "requested_urls": [
+        "https://x.com/kail_designs/status/2092890288595607560"
+      ],
+      "owner_label": "kuuult",
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/kail_designs-2092890288595607560/evidence.json"
+    },
+    {
+      "slug": "nilseller-2093007384465531068",
+      "url": "https://x.com/nilseller/status/2093007384465531068",
+      "requested_urls": [
+        "https://x.com/nilseller/status/2093007384465531068/photo/1"
+      ],
+      "owner_label": null,
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/nilseller-2093007384465531068/evidence.json"
+    },
+    {
+      "slug": "adriankuleszo-2096048196988580223",
+      "url": "https://x.com/adriankuleszo/status/2096048196988580223",
+      "requested_urls": [
+        "https://x.com/adriankuleszo/status/2096048196988580223"
+      ],
+      "owner_label": "sykt kult",
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/adriankuleszo-2096048196988580223/evidence.json"
+    },
+    {
+      "slug": "uihssn-2096384145186599306",
+      "url": "https://x.com/uihssn/status/2096384145186599306",
+      "requested_urls": [
+        "https://x.com/uihssn/status/2096384145186599306"
+      ],
+      "owner_label": "veldig kult",
+      "post_media": 4,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/uihssn-2096384145186599306/evidence.json"
+    },
+    {
+      "slug": "socoloffalex-2095936925668438206",
+      "url": "https://x.com/socoloffalex/status/2095936925668438206",
+      "requested_urls": [
+        "https://x.com/socoloffalex/status/2095936925668438206"
+      ],
+      "owner_label": "kult",
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/socoloffalex-2095936925668438206/evidence.json"
+    },
+    {
+      "slug": "basit_designs-2095862418518008252",
+      "url": "https://x.com/basit_designs/status/2095862418518008252",
+      "requested_urls": [
+        "https://x.com/basit_designs/status/2095862418518008252"
+      ],
+      "owner_label": "elsker",
+      "post_media": 1,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/basit_designs-2095862418518008252/evidence.json"
+    },
+    {
+      "slug": "AdityaSur11-2096160317458030911",
+      "url": "https://x.com/AdityaSur11/status/2096160317458030911",
+      "requested_urls": [
+        "https://x.com/AdityaSur11/status/2096160317458030911"
+      ],
+      "owner_label": "sykt kult",
+      "post_media": 3,
+      "article_images": 0,
+      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
+      "evidence": "media/AdityaSur11-2096160317458030911/evidence.json"
+    }
+  ]
+}

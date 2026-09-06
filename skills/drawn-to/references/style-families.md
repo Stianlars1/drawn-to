@@ -1,88 +1,129 @@
 # Style Families
 
-Synthesis of 45 reverse-engineered X/Twitter design references. Companion to the lock-in skill: §1 lists invariants that become silent defaults; §2 defines the families offered as blend weights; §3 defines how families combine; §4 accounts for outliers.
+Eight useful starting families, drawn from the reference library. The live
+census is in [matrix.md](matrix.md); the original family membership lists below
+are historical examples from the first 45 sources, not a complete classification
+or a frequency ranking of the current collection. New references may change a
+family or support another direction. See [september-expansion.md](september-expansion.md)
+for newer directions, favorites and the reason for their inclusion.
 
-> **Corpus note (2026-08-22).** The census counts in this file were computed on
-> the first 45 references and have not been re-derived. The library now holds 57
-> (`matrix.md`). Twelve references are therefore NOT reflected in the ratios
-> above: 0xhammermann-2090, flohoeller-2090, marcelkargul-2089371 /-2089404
-> /-2090509 /-1952697, local-feature-graphics, local-production-heroes,
-> local-chatsheet-iso-bento, local-stashr-dark-bento, local-vite-feature-sheet
-> and local-keep-photographic-trio. The named patterns hold - the newer
-> references corroborate rather than contradict them - but treat every "n/45"
-> as a floor, not a total, and read the newer posts directly before citing a
-> ratio.
-
-
-**Citation convention:** `author-XXXX` = author + first 4 digits of the numeric id. Where one author has colliding ids, 7 digits are used (`basit_designs-2089627` vs `basit_designs-2089995`; `adriankuleszo-2089253/2089328/2089887`; `mnowakdesign-2089321/2089684`; `yurygok-2089624/2089981`; `_heyfaisal-2089369/2089734`).
-
-Corpus shape: 20 light, 16 dark, 5 dual-theme, 4 mixed. 27/45 contain motion (15 full-choreography, 8 sequence, 4 micro).
-
----
+Citation keys are author plus a unique prefix of the post ID. Full IDs in
+`posts/` are canonical. Counts attached to old membership lists describe that
+initial set only. Do not infer statistical certainty or owner preference from
+how many times a motif happened to be saved.
 
 ## The constants
 
-Invariants across (nearly) the whole corpus. These are skill defaults - never ask about them, always enforce them.
+The C1-C12 identifiers remain stable for existing locks. They now name scoped
+craft defaults; they are not universal laws of design. Explicit user choices
+and established product requirements take precedence. Record deliberate
+variation in the lock instead of forcing it back into a historical example.
 
-### C1. Quarantine chroma; allow at most one accent hue in the UI layer - 45/45 quarantine, 38/45 hold to ≤1 accent
-The shell (page, cards, text, chrome) is neutral; all remaining color lives in exactly one of: a signature artwork/texture, semantic states, or photography. 38/45 hold the UI chrome to one accent family or zero (LexnLin-2024, basit_designs-2017, piyushsphere-2088, kevserctk-2090, 0xSero-2090, xchylerdrenth-2090, yurygok-2089624, yurygok-2089981, ImranUxi-2089, _heyfaisal-2089734, _heyfaisal-2089369, toolfolio-2089, jeetnirnejak-2089, GrahamPaterson-2089, marcelkargul-2090148 - zero accent, marcelkargul-2089632 - luminance only, insporadesign-2088123, mickces-2088, cabralorenzo-2090, recentdesign-2089, helvetiica-2089, TheKartikBansal-2089, basit_designs-2089627, basit_designs-2089995, Triopixels-2089, madebylalit-2087, mnowakdesign-2089321, designbynavneet-2089, adriankuleszo-2090249, adriankuleszo-2089887, adriankuleszo-2089328, LexnLin-2089, arknow91-2089, flornkm-2089, its_sslvr-2088, piyushsphere-2089714, kevserctk-2090, alaymanguy-2088).
-- Rule: pick one accent hex; every interactive/active/measured element uses it; second hues only as semantic states (green=success, red=fail, amber=warn - 0xSero-2090, yurygok-2089624, Triopixels-2089, helvetiica-2089).
-- Multi-hue exceptions are still quarantined: multiple neons but each strictly semantic (mnowakdesign-2089684); 4 pastels that never sit under text (devxnuj-2090); one hue field per card + one shared warm accent (_heyrico-2090).
+### C1. Give color a role
 
-### C2. Show the feature; never icon + paragraph - 33/45; 0/45 counter-examples
-Features are depicted as working product fragments, mechanisms, or frozen interactions: real kanban/zip/annotation loops (AlexandruDranga-2090), skeleton dashboards where only 3-5 selling data points render (LexnLin-2089), CLI diagrams with real commands (0xSero-2090), frozen mid-edit code with an I-beam cursor (piyushsphere-2089714), a dial that IS the illustration (jeetnirnejak-2089), docs you verify by hovering (GrahamPaterson-2089), sounds demoed inside the UI they serve (mickces-2088). Not one reference in 45 uses icon+blurb feature cards.
-- Rule: every feature card's visual is a plausible fragment of the product doing that feature, salted with realistic data.
+A neutral shell plus one accent is a strong technical/editorial default. Color
+may also identify categories, carry photography, express an illustration's ink
+system or belong to one multicolored material. A coherent palette can contain
+several hues. State which elements may carry them; do not make status depend on
+color alone. Examples: basit_designs-2017, DmitryLepisov-2093247,
+AdityaSur11-2096160, basit_designs-2095821.
 
-### C3. Separation ladder: hairlines, tone steps, or one soft shadow - never mid-contrast borders - 45/45
-- Dark (16/16): 1px rgba(255,255,255,0.06–0.12) dividers (basit_designs-2017 #15181D on #0A0C10; LexnLin-2089; yurygok-2089624 #2A2A2A) or 2–6% lightness fill-steps with zero borders (marcelkargul-2090148 #232323→#2E2E2E; helvetiica-2089 #1d1d1d on #080808; mnowakdesign-2089684 page→card→chip +4%/step). Zero drop shadows on dark, 16/16.
-- Light (19/20): 1px #ececf0/#E5E7EB-class hairlines (LexnLin-2024, mickces-2088, adriankuleszo-2089887) or borderless + one soft wide shadow with alpha ≤0.14 and blur ≥3× offset (Triopixels-2089 `0 24px 48px -12px rgba(50,70,130,0.14)`; LexnLin-2024 `0 8px 30px rgba(16,24,40,0.06)`; piyushsphere-2088 rgba(0,0,0,0.04)). Sole exception: playful 2px ink outline + 4px hard offset shadow (kail_designs-2089, whirrls only).
-- Rule: never use #333/#ccc-class visible borders; on dark never use shadows; tint light-mode shadows toward the ambient hue (adriankuleszo-2090249 rgba(30,90,120,0.10)).
+### C2. Make visual evidence serve the content
 
-### C4. Hierarchy by size and gray value, weight 400–600 - 35/45 (5 exceptions, 5 n/a)
-Display weight stays 400–600 (xchylerdrenth-2090 at 400; basit_designs-2017 "nothing bolder than 500"; kevserctk-2090 H1 72px/500; _heyfaisal-2089734 64px/500). Hierarchy devices: 3–4 step gray ramps (dark #EDEDED/#8b8e93/#5d5e60; light #111/#555/#9aa), two-tone headlines at one size (piyushsphere-2089714 #fff→#898989; xchylerdrenth-2090; its_sslvr-2088 700-white over 400-grey), title and body at the same size differentiated by color alone (0xSero-2090), trailing phrases at ~55% opacity (basit_designs-2089995). Tracking on display: −1 to −3%.
-- Rule: reach for a gray step or a size jump before ever reaching for bold. 700+ is allowed only in the playful lane (kail_designs-2089, marcelkargul-2090148 titles).
+Feature graphics should explain the real feature. Icon-and-paragraph cards are
+not a substitute for product evidence, but icons in navigation, trust notes,
+checklists or a compact inventory are legitimate. Brand landscapes, mascots and
+portfolio imagery serve identity or content, not a mechanism they never claim
+to demonstrate. Examples: LexnLin-2024, oguzyagizkara-2093733,
+DesignByMoein-2096289. Apply the test that fits the illustration's role.
 
-### C5. Two-voice type: one grotesque + a mono data voice - mono explicit in 15/45, tracked microcaps in 22/45
-Monospace carries every numeral, label, axis, status line, and index: slashed-zero indices "01 / 03" (piyushsphere-2088), spec numbering 1.0/1.1 (piyushsphere-2089714), token chips (GrahamPaterson-2089), telemetry footers "AUTOSCALE ON · 3 WORKERS" (yurygok-2089624), instrument numerals (cabralorenzo-2090, jeetnirnejak-2089, recentdesign-2089), ledger rows and fig. numbers (devxnuj-2090), witty stage captions (mickces-2088). Microcap layer: uppercase 11–13px at +0.06–0.1em tracking (0xSero-2090, yurygok-2089981 0.08em, cabralorenzo-2090 0.06em, adriankuleszo-2089887 +0.08em).
-- Rule: numerals always tabular/mono so widths never jitter (ImranUxi-2089, jeetnirnejak-2089, recentdesign-2089 zero-padded "005").
+### C3. Separate surfaces according to their material
 
-### C6. Two motion registers, never mixed - 27/27 motion refs
-Ambient/material motion is strictly linear constant-velocity: 60°/s radar (basit_designs-2017), 18°/s orb ring (madebylalit-2087), ~15°/s hue orbit (madebylalit-2088), 35px/s marquee (LexnLin-2024), ~10px/s shader drift (insporadesign-2087), ~1 luma/150ms mist morph (basit_designs-2089627). Interaction motion is short and eased: 150–800ms, ease-out entrances. Easing an infinite loop creates a seam heartbeat (madebylalit-2087) - never do it.
-- Exit faster than enter for UI state (tab underline 650ms out-enter / 400ms in-exit, marcelkargul-2089632; goo merge ~20% faster than split, _heyfaisal-2089369) - EXCEPT physical light, which decays slower than it ignites (200ms on / 350ms off, insporadesign-2088123).
-- Springs only for discrete physical acts, ≤1 overshoot ~4–10%, energy dissipated as contraction not wobble (flornkm-2089, LexnLin-2024 cubic-bezier(0.34,1.56,0.64,1), jeetnirnejak-2089, arknow91-2089). Documentation/inspector UI gets zero springs (GrahamPaterson-2089, ImranUxi-2089).
+Hairlines and tone steps suit flat dark UI; subtle shadows can ground light
+surfaces. Physical dark objects can cast contact shadows, and a dark card on a
+light ground can be elevated. Choose line, tone and shadow roles deliberately;
+do not derive contrast from a hardcoded forbidden hex. Examples:
+marcelkargul-2090148, nilseller-2093007, TheKartikBansal-2094873.
 
-### C7. Loops close frame-perfectly; concurrent loops desync - 17/27 explicit seamless loops, 6/27 multi-period
-Last frame equals first frame (arknow91-2089, flornkm-2089, madebylalit-2087, its_sslvr-2088, recentdesign-2089, AlexandruDranga-2090, adriankuleszo-2089253 fades back to its intro blank); interactive state fully resets on mouse-out (insporadesign-2088123). Concurrent loops run on non-commensurate periods so nothing beats in unison: 2.45/2.5/5/7.4s (LexnLin-2024), ~2s/~3.3s/footage-synced (AlexandruDranga-2090), 2.33s breath vs 24s hue orbit (madebylalit-2088).
+### C4. Build hierarchy deliberately
 
-### C8. Radii come in stepped families, nested concentrically - ~20 refs explicit, 0 counter-examples
-Outer radius = inner radius + padding (12+8=20, ImranUxi-2089). Tiers: 24 outer / 12–16 inner (LexnLin-2024); 8/12/16/24 (_heyfaisal-2089734); 24/16/10–12/pill (designbynavneet-2089); 50/33/22 logical (TheKartikBansal-2089); card 20–24 / inner 4–8 / buttons pill - "three tiers, never one" (yurygok-2089981). The sharp-zero pole is a family trait, not a violation (0xSero-2090, xchylerdrenth-2090, basit_designs-2089995, devxnuj-2090 all radius 0 with radius only on buttons).
-- Rule: define 3 radius tiers per project; never one radius everywhere; pill vs ~8–12px = marketing chrome vs component UI (kevserctk-2090, designbynavneet-2089).
+Size, weight, spacing and contrast work together. The technical/editorial
+400-600 tendency is one voice, not a cap. Bold warm pricing, a large serif
+headline and a small quiet grotesque all belong in this library. Select the
+hierarchy for the audience and content. Examples: DesignByMoein-2095937,
+uihssn-2096384, adriankuleszo-2096048.
 
-### C9. Texture every large gradient: 2–6% grain or a print/pixel process - 11/13 gradient-bearing refs
-Stipple noise σ≈4–6 (piyushsphere-2088), 2–3% monochrome grain (devxnuj-2090, adriankuleszo-2090249), 4–6% film grain baked into shaders (insporadesign-2087), grain toggle as a product feature (alaymanguy-2088), halftone 8px pitch/3px dot (basit_designs-2089995), 8–10px pixel-mosaic cells (kevserctk-2090), grain+halftone over photo blur (_heyrico-2090). Exceptions are deliberate: perfectly smooth falloff as a premium-shader statement (madebylalit-2088, its_sslvr-2088).
-- Rule: a flat un-grained CSS gradient is the single loudest generic-AI tell in this corpus. Never ship one at card scale or larger.
+### C5. Assign typefaces to roles
 
-### C10. Diegetic, realistic microcopy - zero lorem in 45/45; explicit realism device in 18/45
-Versioned filenames ("client-delivery-v3.zip", AlexandruDranga-2090), "9:41" status bars and "99,8% Biometric Match" (adriankuleszo-2089887), arithmetic that reconciles (450K+330K+255K+95K=1.13M, yurygok-2089624), real shell commands and hyperparameters (0xSero-2090), real token names (GrahamPaterson-2089), live Hz/duration rows written by every interaction (mickces-2088), plausible ops telemetry ("exit 137 · oom at 08:41 · retry 2 of 3", yurygok-2089624).
-- Rule: content fidelity is part of the visual style. Invent one fictional client brand and thread it through a whole section (adriankuleszo-2089887 "Identiq").
+Grotesque plus mono is a useful technical pairing. Serif may lead an entire
+editorial system, including readable body/navigation copy; handwriting can be
+a small separate annotation voice. Updating numbers need stable advances and
+correct formatting, which can use tabular figures in a proportional font.
+Examples: AdityaSur11-2096160, DesignByMoein-2095937, kitlangton-2096041.
 
-### C11. Opacity is the attention system: one full-contrast focal, siblings ghosted 15–45% - 12/45
-One hero per composition at full contrast; alternates at 15–30% (adriankuleszo-2089887), stacked fragments dimmed 25–40% (0xSero-2090), row-states 100/60/35% (xchylerdrenth-2090), stack depth 1/0.7/0.45 (Triopixels-2089), inactive carousel slides 35% (ImranUxi-2089), edge-fading logo rows 1.0→0.35 (piyushsphere-2089714), disabled controls dimmed to ~25% - never hidden (insporadesign-2087).
+### C6. Let the kind of movement choose its timing
 
-### C12. When the background is alive, the page ships composed at t=0
-Zero entrance choreography over ambient fields (basit_designs-2089627, LexnLin-2024, Triopixels-2089). When entrances exist, they are word-group blur-reveals in reading order: blur(12px)→0 + fade + ~8px rise, 400–500ms per group, 100–150ms stagger, ease-out (adriankuleszo-2089253, ImranUxi-2089).
+Steady drift often uses a linear time driver. Responsive state changes use
+interruptible easing or springs. Repeated characters, breathing, pendulums and
+semantic scenes can use eased periodic motion. A linear clock does not imply
+constant screen-space velocity. Examples: DesignByMoein-2096289,
+basit_designs-2095862, kitlangton-2096041; mechanics in animation-craft.md.
+
+### C7. Make repetition intentional
+
+Authored loops should close without a visible discontinuity in position or
+velocity; exact duplicate first/last frames can add a stutter. Independent
+ambient loops may desynchronize, while related semantic events can share one
+period. A recording's start/end is not automatically a loop boundary. Repeated
+collection apertures and sequence previews are valid (basit_designs-2095862,
+disarto_max-2093019); distinguish them from interchangeable feature art.
+
+### C8. Use coherent shape families
+
+Relate nested corners to padding where concentric geometry applies. The
+outer = inner + padding relationship describes equal-offset circular corners,
+not every squircle, pill or composition. Use only as many tiers as the product
+needs; sharp, soft and intentionally mixed material systems are all available.
+
+### C9. Choose the surface finish
+
+Grain, halftone, stipple and pixels can give a large field character. Smooth
+reflective or shaded material can also be intentional. Choose texture for the
+material, not as a universal repair for a gradient. Inspect banding at delivery
+size; source JPEGs do not establish the authored grain amplitude.
+
+### C10. Keep content truthful and internally consistent
+
+Use the actual product's capability, correct arithmetic and meaningful labels.
+Clearly fictional demo data may fill a known shape, but do not invent customers,
+results, guarantees or integrations. Product evidence outranks a visual trick.
+
+### C11. Make emphasis readable
+
+A clear focal hierarchy helps. Ghost decorative scaffolding if appropriate,
+but preserve essential copy, controls and state information. Opacity percentages
+are not contrast measurements. Solid objects usually need occlusion and shading
+rather than transparency to communicate depth.
+
+### C12. The page is useful before and without motion
+
+Essential content and actions are available at the initial state and through
+reduced-motion/failure fallbacks. Entrances, character gestures and editorial
+reveals are optional choices; blur-reveal is not the only permitted entrance.
+A calm composed frame should work without watching a full demo loop.
 
 ---
 
 ## Families
 
-Eight families. Every reference belongs to 1–2. The refetch.sh gold standard (80% Editorial Monochrome / 15% Staged Atmosphere / 5% Blueprint) maps to families F1, F3, F4 below.
+Eight starting families. Early references were grouped into one or two;
+new sources may add roles and directions beyond that initial grouping. The refetch.sh gold standard (80% Editorial Monochrome / 15% Staged Atmosphere / 5% Blueprint) maps to families F1, F3, F4 below.
 
 ### F1. Editorial Monochrome - the dark divider-cut editorial system, Linear-grade
 Structure is felt, not seen: near-threshold hairlines cut a black field into a bento; a 3-step gray ramp does all hierarchy; one accent; ambient linear motion.
 - **Members (14):** basit_designs-2017 (anchor), 0xSero-2090, xchylerdrenth-2090, LexnLin-2089, yurygok-2089624, yurygok-2089981, marcelkargul-2090148, marcelkargul-2089632, helvetiica-2089, ImranUxi-2089, mnowakdesign-2089321, piyushsphere-2089714, adriankuleszo-2089328 (Datawizz quadrant), its_sslvr-2088.
 - **Ground:** #080808–#101013 (#0A0C10 basit_designs-2017, #090909 LexnLin-2089, #101012 yurygok-2089624, #101113 xchylerdrenth-2090); warm variant #232323 (marcelkargul-2090148). Surfaces +2–6%: #101113/#131316/#1d1d1d.
-- **Separation:** 1px rgba(255,255,255,0.06–0.09) dividers at +4–8 luma, dashed for inner sub-splits (basit_designs-2017); or pure fill-steps (marcelkargul-2090148, helvetiica-2089); etched grooves 1px #0A0A0A + 1px #161616 highlight (marcelkargul-2089632); stepped-gray bands lightening downward #1C1C1E→#343436 (yurygok-2089981). Zero shadows, always.
+- **Separation:** 1px rgba(255,255,255,0.06–0.09) dividers at +4–8 luma, dashed for inner sub-splits (basit_designs-2017); or pure fill-steps (marcelkargul-2090148, helvetiica-2089); etched grooves 1px #0A0A0A + 1px #161616 highlight (marcelkargul-2089632); stepped-gray bands lightening downward #1C1C1E→#343436 (yurygok-2089981). Flat editorial surfaces use no drop shadow; physical objects are judged by their material.
 - **Radius:** two sub-modes - shared-border grid at radius 0 (0xSero-2090, xchylerdrenth-2090: radius only on buttons 6–8px) or soft cards 12–24px with 8–12px media panels (LexnLin-2089, yurygok-2089624).
 - **Type:** display 400–500 weight, 54–72px, −1 to −3% tracking; ramp #EDEDED/#8b8e93/#5d5e60; two-tone sentences; mono metadata at +8–12% tracking ("[ SECTION ]", "→ 0.1", "FIG.1").
 - **Texture:** blueprint grid 56–80px cells at ≤8% white, confined outside the container or in viz zones (LexnLin-2089, basit_designs-2017, yurygok-2089624); dither/pixel strips (piyushsphere-2089714); embossed logo relief at ~4% lightness delta (helvetiica-2089); watermark logos ~450px at 12% opacity (LexnLin-2089).
@@ -108,8 +149,8 @@ Charcoal ink on near-white; separation by whitespace and tone steps; one accent;
 All page energy comes from a single reused environmental asset - mist, aurora, marble, shader field, blurred macro photo, oil painting - while the UI stays grayscale.
 - **Members (15):** basit_designs-2089627 (anchor), kevserctk-2090, _heyfaisal-2089734, piyushsphere-2088, piyushsphere-2089714, designbynavneet-2089, devxnuj-2090, _heyrico-2090, its_sslvr-2088, insporadesign-2087, madebylalit-2087, madebylalit-2088, toolfolio-2089, alaymanguy-2088, basit_designs-2017.
 - **The asset discipline:** ONE signature asset reused at 2–3+ scales - aurora 3× across hero/pricing/footer (kevserctk-2090), marble at every scale (_heyfaisal-2089734), one flower macro across five cards (_heyrico-2090), one gradient ramp rotated/mirrored/cropped (basit_designs-2089995-adjacent). Never invent per-section gradients.
-- **Construction values:** photographic blur 40–80px pushed past recognition (_heyrico-2090, devxnuj-2090); 3 color stops max for generated gradients (alaymanguy-2088); grain 2–6% always (C9); process the asset to own it - pixel mosaic 8–10px cells (kevserctk-2090), halftone, dither.
-- **Composition rules:** park the asset's dark mass behind the text block so white type never needs a scrim (insporadesign-2087, its_sslvr-2088); continue the field through device screens so hardware reads as glass (basit_designs-2089627); use artwork only as a thin 80–140px matte around product windows, never behind text (designbynavneet-2089); let the page bloom with a blurred copy of the artwork at 25–35% opacity (insporadesign-2087); allow transient illegibility as a designed phase (~2s per loop, its_sslvr-2088).
+- **Construction values:** photographic blur 40–80px pushed past recognition (_heyrico-2090, devxnuj-2090); 3 color stops max for generated gradients (alaymanguy-2088); optional material-appropriate texture (C9); process the asset to own it - pixel mosaic 8–10px cells (kevserctk-2090), halftone, dither.
+- **Composition rules:** park the asset's dark mass behind the text block so white type never needs a scrim (insporadesign-2087, its_sslvr-2088); continue the field through device screens so hardware reads as glass (basit_designs-2089627); use artwork only as a thin 80–140px matte around product windows, never behind text (designbynavneet-2089); use the local hue-matched contact shadow observed in insporadesign-2087; no page-wide re-tint was confirmed; the poster study includes transient illegibility; preserve the material but keep essential website text readable throughout.
 - **Motion register:** ambient in-place morph (~1/255 luma per 150ms, zero pan, basit_designs-2089627); shader idle drift ~10px/s; palette-uniform lerp 900–1200ms through intermediate hues instead of crossfade (insporadesign-2087); constant-velocity revolutions ~10–24s/loop (its_sslvr-2088, madebylalit-2087); no entrance choreography (C12).
 - **Choose when:** heroes, brand moments, pricing emphasis (surface-inversion Pro card, kevserctk-2090), posters, AI/ambient states, anywhere emotional register matters more than information density.
 - **Closest famous:** Raycast, Reflect, Apple Intelligence ambient glow, Rive marketing.
@@ -191,7 +232,10 @@ The owner answers taste questions as weighted blends (refetch.sh = 80% Editorial
 - **F7 Tactile Instruments inside any page family** - components adopt the host's ground (toolfolio-2089 dark shell over atmosphere wallpaper; cabralorenzo-2090 warm light; recentdesign-2089 HUD dark). Tactile is a component-scale family: blend it by scale, not by surface.
 - **F8 Emissive Signal as garnish on F1 Editorial Monochrome** - marcelkargul-2089632 (one glowing indicator on a #0F0F0F system), helvetiica-adjacent state colors. One lit element per screen.
 
-**Clashes (zero co-occurrence in 45 refs - warn if requested together):**
+**Potential tensions in the initial sample (absence is not incompatibility):**
+
+Resolve an actual material/geometry conflict, not a family-name combination.
+A requested mixture can work when its roles and scale are explicit.
 - **Soft Pastel Stage × Blueprint Sheet** - squircle/shadow/pastel vs radius-0/hairline/mono are opposite separation systems.
 - **Soft Pastel Stage × Editorial Monochrome** - shadow-borne softness vs near-threshold hairline structure; pick one separation physics per surface.
 - **Paper & Print × Emissive Signal** - printed ink and emitted light are contradictory material metaphors.
@@ -205,7 +249,7 @@ The owner answers taste questions as weighted blends (refetch.sh = 80% Editorial
 
 All 45 references cluster into the families above. The following contribute something beyond a surface style and should be surfaced by the skill as resources/lessons rather than only as style exemplars:
 
-- **alaymanguy-2088 (ShaderGradient)** - production tooling for Staged Atmosphere: 3-stop constraint, grain toggle, `loopDuration` perfect loops, URL-serialized presets, `@shadergradient/react`. The default answer to "animated mesh gradient without a 10MB video".
+- **alaymanguy-2088 (ShaderGradient)** - production tooling for Staged Atmosphere: 3-stop constraint, grain toggle, `loopDuration` perfect loops, URL-serialized presets, `@shadergradient/react`. One candidate when its current API and capabilities fit the project.
 - **ImranUxi-2089 (interfaces.dev)** - a craft curriculum that doubles as constants-verification: concentric radii (outer = inner + padding), tabular-nums, border-not-shadow on dark, text-wrap balance, optical padding, transition-over-keyframe, entrance stagger values. Cite it when enforcing C3/C5/C8.
 - **GrahamPaterson-2089** - the documentation pattern itself (docs as live inspector, shared-token highlighting, behavioral guideline copy with fallback paths). Reusable for the owner's own design-system docs, independent of family.
 - **toolfolio-2089 (rareui.com)** - component registry plus the film grammar for demoing components: cursor-driven (never autoplay), expo-out camera zooms with motion blur, ~3s per feature, one-line mono hint per demo.

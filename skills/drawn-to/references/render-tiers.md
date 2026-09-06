@@ -1,8 +1,7 @@
 # Render tiers - what actually draws the field
 
-Why this file exists: `hero-atmosphere.md` says a first screen is a field with
-the type set directly on it, and gives the optics values that make a field read
-as real. It does not say what DRAWS it. On 2026-08-21 the five production
+`hero-atmosphere.md` describes first-screen composition. This file covers
+what DRAWS a selected field or object and how to keep it responsive. On 2026-08-21 the five production
 heroes the owner points at were probed live at 1440x900 and the answer was not
 CSS:
 
@@ -28,19 +27,20 @@ decides which technology draws it and what that costs.
 
 ## 1. The ladder - take the lowest tier that holds
 
-Each tier is cheaper, more debuggable, more accessible and more likely to
-survive a browser than the one below it. Promotion needs a REASON, written into
-the lock file. "It would look cooler in three.js" is not a reason.
+Use the lowest-complexity option that serves the locked material and the
+project. These are implementation routes, not a universal cost ranking: asset
+size, animation, resolution, browser and existing dependencies change the cost.
+Record the reason for a heavier route in the lock file. "It would look cooler in three.js" is not a reason.
 
 | Tier | Technology | Native to | Cost signature |
 |---|---|---|---|
 | **T0** | A still image (or a hand-authored SVG) | any field that never moves | one decode, zero frames |
 | **T1** | CSS - gradients, `mask-image`, `filter`, `mix-blend-mode`, `@property`, keyframes | shaped light, slabs, arcs, rings, hairline scaffolds, dot grids, tone steps | compositor only if you animate transform/opacity; a large animated `filter: blur()` is NOT compositor-only |
-| **T2** | SVG - `feTurbulence`, `feGaussianBlur`, `mask`, `pattern`, path animation | grain, halftone, line-art, redlines, anything that must stay crisp at any DPR | filter primitives are CPU-rasterised; a full-viewport `feTurbulence` re-run per frame is a stall |
+| **T2** | SVG - `feTurbulence`, `feGaussianBlur`, `mask`, `pattern`, path animation | grain, halftone, line-art, redlines, anything that must stay crisp at any DPR | filter cost depends on the browser, area and caching; a full-viewport `feTurbulence` recomputed each frame can be expensive |
 | **T3** | Canvas 2D | particle marks up to ~2 000, per-frame compositing of a video or image, dither passes | fill-rate bound; every `drawImage` of a full-viewport source is a full-frame blit |
 | **T4** | Raw WebGL - one quad, one fragment shader | full-viewport per-pixel work: animated bloom, dithered falloff, fluid/mist, > 2 000 marks | one draw call, but you pay `resolution x DPR^2` fragments EVERY frame |
-| **T5** | three.js / React Three Fiber | real geometry, camera, lights, materials, an imported model | + ~150 KB gz runtime, a scene graph, and a second render loop |
-| **T6** | A prerendered motion asset - video, Lottie, Rive, Spline | optical realism (bokeh, film grain, real light), or motion an animator authored by hand | bytes and decode instead of GPU; a 2560² h264 loop is ~1-3 MB |
+| **T5** | three.js / React Three Fiber | real geometry, camera, lights, materials, an imported model | runtime and scene-graph cost vary by imports/version; coordinate rendering with the app |
+| **T6** | Authored motion - video, Lottie, Rive, Spline | optical realism (bokeh, film grain, real light), or motion an animator authored by hand | video spends bytes/decode; Lottie, Rive and Spline still render at runtime; measure the delivered asset |
 
 ### The promotion gates
 
@@ -55,22 +55,22 @@ Move UP one tier only when one of these is true. Cite the gate in the lock file.
   more than ~2 000 marks. This is the gate Antigravity, Raycast and Vercel all
   passed.
 - **T4 -> T5** there is real 3D: perspective geometry, a camera that moves, a
-  light that shades a surface, or a model file. **A flat field is never
-  three.js.** A gradient, a bloom, a shaft, a particle plane and an isometric
-  drawing are all 2D problems - iso is a projection, not a scene
-  (`isometric-and-light.md` § A1: it is drawn, not rendered).
+  light that shades a surface, or a model file. A flat field usually does not justify adding a 3D engine. Reusing an
+  existing renderer can be cheaper than introducing another pipeline. An
+  isometric illustration can be drawn in 2D or rendered from an orthographic
+  3D scene; choose by its geometry, motion and assets (`isometric-and-light.md`).
 - **any -> T6** the motion is authored rather than computed (a designer's Rive
   or Lottie), or optical realism is required and is cheaper filmed than
   simulated. Codex is the reference: real bokeh, real film grain, real
-  depth of field, from a camera, because no shader gets there for less.
+  depth of field, from a camera, when the selected footage achieves the required look at lower total cost.
 
 ### The demotion checks (run before you write the first line)
 
 - Does it move? No -> T0/T1/T2. A still field is a still field, however
   expensive it looks.
-- Is it one shape with a falloff? -> T1. A slab, a beam, an arc and a lit ring
-  are `linear-gradient` / `radial-gradient` / `conic-gradient` plus one
-  `mask-image` plus grain. Reaching for a shader here is the giveaway.
+- Is it one shape with a falloff? -> T1. A slab, beam, arc or lit ring often needs only CSS gradients and a mask.
+  Add grain only for the selected finish; use a shader if its animation or
+  an existing pipeline warrants one.
 - Is the product's own UI the visual? -> no field at all (Linear). The strongest
   hero in the set renders nothing.
 
@@ -88,7 +88,7 @@ left at the default.
   **1.25-1.5** even on DPR 2. Measured: Vercel runs 1.48. Soft light has no
   high-frequency detail to lose, and the clamp cuts fragment count by ~55 %.
 - Crisp geometric fields (particle marks with hard edges, line-art, text-like
-  shapes): **DPR 2**, no clamp. Measured: Antigravity runs 2.0. Clamping here
+  shapes): **up to DPR 2** as a starting cap; inspect detail on the target display. Measured: Antigravity runs 2.0. Clamping here
   produces visible aliasing on every mark.
 - Phones: clamp one step further (1.0-1.25) or drop to the poster (§ 3).
 
@@ -99,8 +99,8 @@ canvas.height = Math.round(rect.height * dpr)
 ```
 
 **Fill rate.** 1440x900 at DPR 2 is 5.2 Mpx per frame; at 1.5 it is 2.9 Mpx.
-Budget one full-viewport fragment pass. **Never two full-viewport canvases** -
-composite inside one shader instead.
+Budget one full-viewport fragment pass. Prefer one coordinated full-viewport renderer; multiple
+canvases need a measured reason, and combining passes does not eliminate their cost.
 
 **Overscan, not clipping.** A bloom clipped by the viewport shows a hard edge
 the moment the window is resized. Vercel oversizes the canvas past every edge
@@ -108,27 +108,64 @@ the moment the window is resized. Vercel oversizes the canvas past every edge
 off-screen pixels. Overscan by ~10 % of the shorter axis, and set
 `pointer-events: none` so the field never eats a click.
 
-**Emitted light needs true black.** `mix-blend-mode: screen` over `#000` is how
-Vercel's dots read as emitted rather than drawn - screen over a non-black
-ground lifts the whole page and the effect dies. If the ground is not `#000`,
-composite normally and build the bloom into the shader
-(`hero-atmosphere.md` optics table, C3: no drop shadows on dark).
+**Screen blending and the ground.** Vercel uses screen over black. For each
+normalized channel, screen is `1 - (1 - source) * (1 - backdrop)`: a black
+source leaves any backdrop unchanged, not only #000. Residual non-black pixels
+in a supposedly empty source lift the ground. Choose screen, additive or normal
+compositing for the intended material and check the result. Bloom is emitted
+light; a physical dark object can also cast a contact shadow.
 
-**Stop conditions - all four are mandatory, not optional.**
+**Animation eligibility - one decision for all four conditions.**
+
+Observe the stable field container, not a canvas hidden by the poster path.
+This helper is called after the live renderer is ready. `start()` and `stop()`
+must be idempotent; `start()` paints a valid frame before revealing the live
+layer, and `usePoster()` hides it so the authored background remains visible.
+Use the same gate for canvas rAF, video playback or a CSS animation driver.
 
 ```js
-const io = new IntersectionObserver(([e]) => e.isIntersecting ? start() : stop())
-io.observe(canvas)                                    // 1. off screen  -> stop
-document.addEventListener('visibilitychange',         // 2. tab hidden  -> stop
-  () => document.hidden ? stop() : start())
-matchMedia('(prefers-reduced-motion: reduce)')        // 3. reduced     -> poster frame
-  .matches && renderOnce()
-navigator.connection?.saveData && usePoster()         // 4. save-data   -> poster
+function watchFieldMotion({ target, start, stop, usePoster }) {
+  const motion = matchMedia('(prefers-reduced-motion: reduce)')
+  const connection = navigator.connection
+  let inView = false, disposed = false
+
+  const reconcile = () => {
+    if (disposed) return
+    const eligible = inView && !document.hidden &&
+      !motion.matches && !connection?.saveData
+    if (eligible) start()
+    else {
+      stop()
+      usePoster()
+    }
+  }
+  const io = new IntersectionObserver(([entry]) => {
+    inView = entry.isIntersecting
+    reconcile()
+  })
+  io.observe(target)
+  document.addEventListener('visibilitychange', reconcile)
+  motion.addEventListener('change', reconcile)
+  connection?.addEventListener?.('change', reconcile)
+  reconcile()
+
+  return () => {
+    disposed = true
+    io.disconnect()
+    document.removeEventListener('visibilitychange', reconcile)
+    motion.removeEventListener('change', reconcile)
+    connection?.removeEventListener?.('change', reconcile)
+    stop()
+    usePoster()
+  }
+}
 ```
 
-Reduced motion means **render one frame and hold it**, never "freeze wherever
-it happened to be" and never "fade out to nothing". The held frame is a
-composition someone chose - it is the poster (`animation-craft.md`, C12).
+Return this disposer from the mounting effect and separately release renderer
+resources. Browsers without `navigator.connection` supply no Save-Data signal;
+the other gates still work. A decode/context failure stays on the poster and
+must not attach this watcher until the live renderer is usable. Reduced motion
+uses the named composed poster, not an arbitrary paused animation frame.
 
 ---
 
@@ -142,16 +179,17 @@ Order of operations for every field above T2:
    pass `quality-bar.md` § 3, the animated version will not save it.
 2. **Ship the poster as the ground.** The canvas mounts on top and fades in
    over 300-400 ms when its first frame is ready. Nothing pops.
-3. **The type is never inside the canvas.** The H1 is DOM text above the field
-   in paint order. Text in a canvas has no LCP, no selection, no screen reader
-   and no font fallback. This also means the hero's largest paint lands
-   immediately regardless of when the field initialises.
+3. **The type is never inside the canvas.** Keep the H1 as DOM text above the field for selection, semantics and
+   assistive technology. Load it independently of the field module; actual LCP
+   still depends on fonts, resource loading and which element is largest.
 4. **No WebGL context, decode failure, `save-data`, reduced motion, or a
    phone under the budget** -> the poster stays and nothing else happens. All
    five paths land on the same still, so all five are already designed.
 5. **Never block first paint on the field.** Dynamic-import the field module;
-   `loading="lazy"` for a video ground is wrong (it is the LCP element) but
-   `preload="none"` plus a poster is right until the field is in view.
+   load the visible poster promptly. A video poster or frame can be an LCP
+   candidate. `preload="none"` is a hint and does not prevent an autoplaying
+   video from fetching; set its source/play state only when eligible if avoiding
+   that fetch matters, and handle a rejected `play()` promise with the poster.
 
 ```html
 <div class="field" style="background-image:url(/field-poster.avif)">
@@ -164,7 +202,7 @@ Order of operations for every field above T2:
 
 ## 4. Recipes - the corpus's effects, per tier
 
-### Grain (C9, mandatory on every large gradient)
+### Grain (when the selected material uses it)
 
 **T1, tiled PNG/AVIF** - cheapest, works everywhere, no filter cost:
 ```css
@@ -184,10 +222,11 @@ static layer, never animate its attributes:
 the grain must move with the field:
 ```glsl
 float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
-col += (hash(gl_FragCoord.xy + uTime) - .5) * 0.06;   // 6 % grain
+col += (hash(gl_FragCoord.xy + uTime) - .5) * 0.06;   // +/-0.03 channel amplitude before clipping
 ```
-Corpus range: 2-6 % over gradients (C9), 4-8 % over a photographic or light
-field (`hero-atmosphere.md`).
+The snippets use proposed effect settings. Overlay opacity, shader amplitude
+and decoded-pixel sigma are different quantities (`measuring.md`); do not copy a
+reported grain percentage into an unrelated parameter. A smooth material needs no grain.
 
 ### Bloom on true black (Vercel's dots)
 
@@ -199,14 +238,14 @@ has structure:
              0 0 24px 8px rgba(255,255,255,.22),
              0 0 72px 24px rgba(255,255,255,.08)}
 ```
-**T4** when it must animate: draw the source, then a separate additive pass at
+**T4** when the animation needs per-pixel work: draw the source, then an additive pass at
 2-3x radius, and composite the canvas with `mix-blend-mode: screen` over `#000`.
 Bloom belongs at the light source, never spread evenly over the object
 (`style-families.md` F8, `color-type.md`).
 
 ### Dithered falloff (Raycast's shafts)
 
-A clean gradient stop is the tell. Two ways to break it:
+If the selected shaft treatment needs a noisy edge, two options are:
 
 **T1+T2** static: `linear-gradient` bands, `mask-image` for the falloff, grain
 layer over the whole thing at 6-8 %.
@@ -222,8 +261,9 @@ float a = step(d, falloff);          // falloff = your 0..1 gradient
 
 Density is the design, not the count. Marks 2-10 px, random rotation, 0.5-2 %
 surface coverage, denser at two edges so the centre stays clear for the type
-(`hero-atmosphere.md`). Drift is ambient: **linear, constant velocity, no
-easing** (C6), periods non-commensurate so the field never pulses (C7).
+(`hero-atmosphere.md`). Independent steady drift can use a linear time driver and differing periods.
+Periodic breathing or coordinated events can ease and share a clock; check the
+intended loop seam and motion rather than requiring every mark to move linearly.
 
 - **T3 canvas 2D** up to ~2 000 marks. One path per mark, `setTransform` per
   mark, no shadows.
@@ -244,11 +284,12 @@ Filmed beats simulated. Codex ships a 2560x2560 mp4 at `object-fit: cover`,
 muted, looped, autoplaying, with a 2D canvas pass over it.
 
 ```html
-<video autoplay muted loop playsinline preload="none"
+<video muted loop playsinline preload="none"
        poster="/field-poster.avif" class="field"></video>
 ```
-`playsinline` is not optional (iOS fullscreens without it), `muted` is what
-makes `autoplay` legal, and the poster is the reduced-motion answer. If a still
+For inline background playback use `playsinline` and `muted`; these help
+meet browser playback policy but do not guarantee playback. Set the source and
+call `play()` through the eligibility gate; catch rejection and retain the poster. If a still
 must stand in for the video, the optics come from the table in
 `hero-atmosphere.md`: `blur(56-120px) saturate(2.5-4.5) contrast(1.1-1.2)`,
 because blurring desaturates and the saturate pass is what puts the mass back.
@@ -268,18 +309,29 @@ write it in the lock file. Construction recipes for the shapes themselves:
 
 ### Raw WebGL - one quad, one fragment shader (T4)
 
-The whole tier is this. No library, ~40 lines, one draw call.
+Renderer-loop excerpt, not a standalone WebGL setup. `link` must compile/link
+GLSL ES 3.00 sources and check errors; `quad` must upload six vec2 vertices.
+Handle a null context by retaining the poster before this code runs. Attribute
+`a` is the vertex position. Update the backing size on resize; this loop sets
+the matching viewport. Delete buffers/programs on disposal and use the poster
+on context loss. Attach the shared eligibility gate to its start/stop functions.
 
 ```js
 const gl = canvas.getContext('webgl2', {alpha:true, antialias:false,
                                         powerPreference:'low-power'})
 const prog = link(gl, VERT, FRAG)                 // VERT: gl_Position = vec4(a,0,1)
-gl.bindBuffer(gl.ARRAY_BUFFER, quad(gl))          // two triangles, clip space
+const buffer = quad(gl)                         // two triangles, clip space
+gl.useProgram(prog)
+gl.bindBuffer(gl.ARRAY_BUFFER, buffer)
+const position = gl.getAttribLocation(prog, 'a')
+gl.enableVertexAttribArray(position)
+gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0)
 const uT = gl.getUniformLocation(prog,'uTime')
 const uR = gl.getUniformLocation(prog,'uRes')
 
 let raf = 0, t0 = performance.now()
 const frame = now => {
+  gl.viewport(0, 0, canvas.width, canvas.height)
   gl.uniform1f(uT, (now - t0) / 1000)
   gl.uniform2f(uR, canvas.width, canvas.height)
   gl.drawArrays(gl.TRIANGLES, 0, 6)
@@ -297,7 +349,7 @@ content; opaque is cheaper.
 
 ```jsx
 const Scene = dynamic(() => import('./Scene'), {ssr:false,
-  loading: () => <img src="/field-poster.avif" alt="" />})
+  loading: () => null})                         // this component mounts INSIDE Canvas
 
 <Canvas
   dpr={[1, 1.5]}                    // clamp, never uncapped
@@ -308,24 +360,24 @@ const Scene = dynamic(() => import('./Scene'), {ssr:false,
 </Canvas>
 ```
 
-`frameloop="demand"` is the difference between a 3D object that costs nothing
-at rest and one that burns a core forever. Dispose geometries and materials on
-unmount, or a route change leaks the whole scene. The camera does not move on
-scroll: a rotating or parallaxing camera over a drawn object is a listed tell
-(`quality-bar.md` § 1).
+Keep the DOM poster behind the Canvas, not inside the R3F scene graph.
+`frameloop="demand"` avoids continuous draws while a scene is unchanged; an
+animated scene must invalidate as needed through the same eligibility gate. Dispose geometries and materials on
+unmount, or a route change leaks the whole scene. A fixed camera is a register choice for technical
+drawings. Real 3D scenes may move their camera when that serves the approved direction.
 
 ### Authored motion (T6)
 
-- **Lottie** - vector, tiny, but every frame is CPU-rasterised: fine for a
-  120x120 mark, wrong for a full-viewport field. Use `lottie-light`, and
-  `renderer: 'canvas'` when the layer count is high.
+- **Lottie** - runtime vector animation; cost depends on renderer, layers,
+  masks and animated properties. Choose a compatible player/build and compare
+  SVG and canvas when layer count or area is high; measure on target devices.
 - **Rive** - a state machine, so it can respond to hover/scroll/state without a
   re-export. The right choice when the designer owns the motion AND the motion
-  has states. ~100 KB runtime.
+  has states. Check the chosen renderer/runtime bundle size.
 - **Spline** - fastest path to a 3D object, heaviest payload (often > 1 MB plus
   a runtime). Acceptable for one signature object with a poster; never for a
   background field.
-- **Video** - the only honest way to ship real optics. h264 for reach, plus a
+- **Video** - a direct way to preserve filmed optics. h264 for reach, plus a
   webm/av1 source for size. Always `poster`, `muted`, `playsinline`, `loop`.
 
 ---
@@ -347,14 +399,13 @@ Add these to the walk in `quality-bar.md` § 1 for any page carrying a field:
   janks on a laptop.
 - **Two full-viewport canvases**, or a canvas plus a large animated CSS
   `filter: blur()` over the same area.
-- **three.js for a flat field.** A gradient, a bloom, a shaft field or an
-  isometric drawing loaded a 3D engine. The bundle is visible in the network
-  tab and the reviewer will look.
-- **A gradient with a clean stop** and no grain or dither anywhere (C9).
+- **An added rendering engine without a need.** Prefer an existing suitable
+  pipeline or simpler implementation; record and measure the reason for adding one.
+- **A field whose delivered banding or texture conflicts with the selected material.** Smooth gradients are valid.
 - **Bloom as a uniform ring** around an object instead of concentrated at the
   light source.
-- **`mix-blend-mode: screen` over a non-black ground**, which greys out the
-  whole page.
+- **A blend layer that unintentionally lifts the ground**, usually because its
+  nominally empty pixels are not black/transparent. Check the actual composite.
 - **A field that eats clicks** - `pointer-events: none` missing.
 - **"60fps" claimed but never measured.** Record the number: DPR used, canvas
   size, and the frame time you observed.

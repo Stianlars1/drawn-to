@@ -20,7 +20,11 @@ Citation convention: slugs shortened to `author-first4digits`; a 5th digit is ad
 
 ## 1. Core thesis: motion IS the feature (semantic motion)
 
-**UNIVERSAL - 21/27 motion refs.** In this taste, animation is never decoration: every loop, hover, and transition literally enacts the capability being sold. The test is stated verbatim in the owner's gold reference: "each feature is understandable from the animation ALONE without reading the text" (LexnLin-2024). Mute the copy and the pitch must survive.
+**Explanatory motion - observed in 21/27 early motion references.** When an
+animation explains a feature, its behavior should help communicate that capability.
+LexnLin-2024 demonstrates features with their copy covered. A character gesture,
+image collection, atmosphere or interface transition can instead serve identity,
+composition or orientation; it need not enact a marketing verb.
 
 Catalog of semantic-motion devices observed:
 
@@ -45,7 +49,8 @@ Corollary for statics: features staged as **frozen micro-interactions** - I-beam
 ## 2. Loop engineering
 
 ### 2a. Desynchronized concurrent periods - 7 refs
-Multiple loops run simultaneously on deliberately non-aligned clocks so the composition never beats in unison:
+These examples use deliberately different clocks for independent activity.
+Coordinated scenes may instead share a period or phase:
 - **2.45s / 2.5s / 5s / 7.4s / continuous** - five cards, co-prime-ish (LexnLin-2024)
 - **~2s / ~3.3s / footage-synced (11.6s)** - three cards (AlexandruDranga-2090)
 - **6.0s radar / 3.0s-per-pitch marquee / ~15px/s smoke drift** (basit_designs-2017)
@@ -55,13 +60,16 @@ Multiple loops run simultaneously on deliberately non-aligned clocks so the comp
 - **ambient dial loop persists through camera moves** (adriankuleszo-2089253)
 
 ### 2b. Seamless-loop closure - 16/27 verified
-Last frame equals first frame, engineered rather than hoped for:
+The cycle boundary is continuous in pose and velocity, engineered rather than hoped for:
 - End state pixel-identical to frame 1 (flornkm-2089, arknow91-2089, marcelkargul-2089632 "frame 36 = frame 1", its_sslvr-2088, madebylalit-2087 "frame-perfect seam", recentdesign-2089, Triopixels-2089, _heyfaisal-2089369)
 - Closure techniques: fade out to the intro's blank state (~800ms) and restart (adriankuleszo-2089253); camera returns to its opening wide shot (adriankuleszo-2089328, Triopixels-2089); full state reset on container mouse-out (insporadesign-2088); exact integer revolutions per loop - one 360° per 20s (madebylalit-2087), one field revolution per 10.5s (its_sslvr-2088); `loopDuration`-driven math, never open-ended time accumulation (alaymanguy-2088); non-commensurate periods as the alternative to closure for indefinite states (madebylalit-2088)
 - Counter-example logged as a defect: dial demo starts at 62, ends at 3 - "loop is not seamless" (cabralorenzo-2090)
 
-### 2c. Two motion registers - 13/27, the corpus's sharpest discipline
-**Ambient register = constant velocity, zero easing. Interaction register = short and eased.** Never mixed (basit_designs-2017: "Generic AI pages ease everything, which makes ambience feel like UI and UI feel like soup").
+### 2c. Steady drift, periodic action and interaction
+Steady rotation and marquees often use linear timing. Breathing, pendulums and
+semantic scenes can ease or pause within a repeated period. Interaction should
+respond promptly and retarget cleanly. A linear clock does not imply constant
+screen-space velocity; choose timing from the event, as the examples below show.
 - Ambient linear values: radar 60°/s (basit_designs-2017); gradient field ~34°/s (its_sslvr-2088); orb ring 18°/s = 1 rev/20s (madebylalit-2087); hue orbit ~15°/s (madebylalit-2088); marquee ~35px/s (LexnLin-2024); marquee 1 icon-pitch (~86px)/3s (basit_designs-2017); smoke ~15px/s; shader crest ~10px/s (insporadesign-2087); camera drift 5–15px/s (mnowakdesign-2089684); mist morph ~1.4/255 luma per 167ms, zero pan (basit_designs-2089627); shader uSpeed < 1 - "drift, never demand attention" (alaymanguy-2088)
 - Why linear: "any ease would create a visible heartbeat at the seam" (madebylalit-2087)
 - Interaction register: 200–450ms eased, detailed in §3–4.
@@ -73,7 +81,7 @@ Last frame equals first frame, engineered rather than hoped for:
 
 | Easing | Where it belongs | Measured instances |
 |---|---|---|
-| **Linear / constant velocity** | ALL infinite ambient motion: rotations, marquees, drifts, shader time, scroll-scrubbed effects | 60°/s radar (basit_designs-2017); 18°/s orb (madebylalit-2087); 35px/s marquee (LexnLin-2024); scroll-linked word highlight "scrubbed, no easing" (adriankuleszo-2089328); scroll peel scroll-linked not time-based (kail_designs-2089) |
+| **Linear driver** | steady rotations/marquees or direct scroll progress where that is the intended relationship | 60°/s radar (basit_designs-2017); 18°/s orb (madebylalit-2087); 35px/s marquee (LexnLin-2024); scroll-linked word highlight "scrubbed, no easing" (adriankuleszo-2089328); scroll peel scroll-linked not time-based (kail_designs-2089) |
 | **Ease-out** | Entrances, hover-in, reveals, camera settling - the default interaction curve | word blur-reveal 400–500ms (adriankuleszo-2089253, ImranUxi-2089); tab underline enter 650ms `cubic-bezier(0.16,1,0.3,1)` (marcelkargul-2089632); goo split 350–450ms (_heyfaisal-2089369); chips fade+rise 300ms (AlexandruDranga-2090); tooltip 150–200ms (GrahamPaterson-2089); carousel slide 450ms, long deceleration tail (ImranUxi-2089); screen push 400–450ms (helvetiica-2089) |
 | **Ease-in** | Exits and "suction"/absorption - exits are faster than entrances | tab underline exit 400ms vs 650ms enter (marcelkargul-2089632); chips converge into zip pill ~450ms "ease-in then snap" (AlexandruDranga-2090); goo merge ~20% faster than split (_heyfaisal-2089369) |
 | **Spring / overshoot** | ONLY discrete physical acts and programmatic corrections: shuffles, fissions, drops, pops, motorized snaps | row shuffle `cubic-bezier(0.34,1.56,0.64,1)` 400–450ms, ~4–6px overshoot (LexnLin-2024); dial fission stiffness ~180 / damping ~18, 4–6px overshoot (arknow91-2089); Auto correction ~10% overshoot, ~1.2s settle (jeetnirnejak-2089); cube tumble stiffness ~120 / damping ~14, 1–2 oscillations, 500–700ms (recentdesign-2089); character pop scale 0→1.06→1, ~400ms, ONE overshoot (mickces-2088); nav dot slide ~400ms spring (toolfolio-2089); icon pop 0.6→1 ~250ms slight overshoot (adriankuleszo-2089328); knob release ~stiffness 300 / damping 30 - energy dissipates as width contraction, NOT bounce (flornkm-2089) |
@@ -117,7 +125,7 @@ The corpus treats the cursor as a directed actor (~14/27 motion refs feature a v
 
 - **The tour:** simulated cursor tours a grid in the same rotational direction as the ambient element (radar CCW → tour BR→BL→TL→TR), with narrative pacing - slow pass ~800ms/cell, fast pass ~450ms/cell, then rest - firing one-shot ~430ms icon anims as it passes (basit_designs-2017).
 - **Presentational pace:** a drag choreography takes a deliberate ~2.8s, cursor arcs with slight bob, dragged item tilts ±8° following drag direction, spring-smoothed cursor easing (adriankuleszo-2089253).
-- **Cursor-driven, never autoplay:** hovers, typing, and clicks drive every demo; ~3s per feature, expo-out camera zooms with motion blur between beats (toolfolio-2089).
+- **Cursor-directed tour (toolfolio):** staged hovers, typing, and clicks drive the demo; ~3s per feature, expo-out camera zooms with motion blur between beats (toolfolio-2089).
 - **Pre-hover attraction:** the surface deforms toward the cursor from ~150–200px away, 10–15% of radius, ~100–150ms spring lag - reaction before contact (arknow91-2089).
 - **Cursor as composition:** oversized ~56px black arrow with white outline and drop shadow, part of the frame (_heyfaisal-2089369); custom rounded blue translucent triangle (adriankuleszo-2089253); system grab/grabbing hand as the ONLY affordance for wheel controls (cabralorenzo-2090).
 - **Tooltips:** fade+slide in 150–200ms ease-out with 8–12px translate, anchored to cursor; dwell 2–3s for comprehension (GrahamPaterson-2089); tooltip text swaps in place with no layout shift (insporadesign-2088); tooltip follows cursor over heatmap cells (toolfolio-2089).
@@ -158,57 +166,61 @@ What hover NEVER does:
 
 ---
 
-## 8. Restraint rules
+## 8. Restraint techniques in the cited scenes
 
 - **"Hold state measurably static."** Glow-region luminance flat across 7 consecutive frames - zero idle pulsing, "confidence" (marcelkargul-2089632). Leave ~500ms of full rest between consecutive state changes in a loop (marcelkargul-2089632).
-- **Structure never moves; only materials move.** Layout, type, and cursors stay fixed while chrome renders, smoke, and gradients flow inside them (basit_designs-2017); slide transitions move NOTHING positionally - opacity, blur, and shader uniforms only (insporadesign-2087).
+- **Still reading anchors.** In basit_designs-2017, layout and type stay fixed while chrome renders, smoke and gradients flow inside them; slide transitions move NOTHING positionally - opacity, blur, and shader uniforms only (insporadesign-2087).
 - **Ambient motion sits just above the perception threshold:** ~3° per frame ring rotation, "alive, not spinning" (madebylalit-2087); mist at ~1.4/255 luma per 167ms - "motion you feel rather than watch" (basit_designs-2089627).
-- **One ambient layer per section** maximum (Triopixels-2089); backgrounds drift, never demand attention (alaymanguy-2088).
+- **A restrained ambient budget** keeps the Triopixels and alaymanguy examples calm.
+  A kinetic collection can have several moving items inside one protected envelope.
 - **Springs are rationed** to pointer-driven and physical moments; plain fallbacks stay 180–250ms ease-out with zero deformation (flornkm-2089); documentation and teaching UI get no springs at all (GrahamPaterson-2089, ImranUxi-2089).
 - **Sinusoidal, overshoot-free cadence for stare-at states** - calibrated for a 30s+ gaze (madebylalit-2088).
-- **Static must be complete.** 18/45 refs carry zero motion and still read finished; three animated refs deliberately ship composed at t=0 (basit_designs-2089627, AlexandruDranga-2090, Triopixels-2089). Reduced-motion expectation follows: every choreography must degrade to its settled end-state frame without losing the pitch - the corpus's statics prove the layouts work frozen (piyushsphere-2089 stages the same semantics as stills).
+- **Static must be complete.** 18/45 refs carry zero motion and still read finished; three animated refs deliberately ship composed at t=0 (basit_designs-2089627, AlexandruDranga-2090, Triopixels-2089). For reduced motion, select a composed frame that preserves the intended meaning, rather than always using the final frame - the corpus's statics prove the layouts work frozen (piyushsphere-2089 stages the same semantics as stills).
 - **State honesty even in demos:** disabled controls actually gray out and rewrite their captions (mickces-2088); chevrons dim to ~25% at range ends instead of hiding (insporadesign-2087, jeetnirnejak-2089); values clamp visibly and stay where released - no snap-back (cabralorenzo-2090).
 - **Interruptibility:** any touch cancels a scripted intro (jeetnirnejak-2089); prefer transitions over keyframes for anything a user can interrupt mid-flight (ImranUxi-2089); press states are stable, holdable poses - commit on release so gestures are cancelable (flornkm-2089).
 
 ---
 
-## Rules
+## Applying the motion references
 
-1. **Make every animation a literal demo of its headline verb** - reorder = organize, type-on = effortless input, fork = forecast. If the copy were muted, the loop alone must pitch the feature (LexnLin-2024, AlexandruDranga-2090, mnowakdesign-2089684).
-2. **Split motion into two registers and never mix them:** ambient = strictly linear constant velocity (rotations 15–60°/s, marquees ~35px/s or 1 item/3s, drifts 5–15px/s); interaction = 200–450ms eased (basit_designs-2017, madebylalit-2087, LexnLin-2024).
-3. **Give every concurrent loop its own period** (e.g. 2.45s / 2.5s / 5s / 7.4s / continuous, or 2s / 3.3s / footage-synced); for indefinite states use non-commensurate periods (2.33s + 24s) so the loop never visibly repeats (LexnLin-2024, AlexandruDranga-2090, madebylalit-2088).
-4. **Close every loop frame-perfectly:** end state = frame 1, via exact integer revolutions, a fade back to the intro blank, a camera return to the opening shot, or full state reset on mouse-out (madebylalit-2087, adriankuleszo-2089253, insporadesign-2088, arknow91-2089).
-5. **Default interaction curve = ease-out enter (300–650ms), ease-in exit ~20–40% faster** (tab: 650ms in / 400ms out; goo merge 20% faster than split); invert only for light, which ignites fast (~200ms) and decays slow (~350ms) (marcelkargul-2089632, _heyfaisal-2089369, insporadesign-2088).
-6. **Reserve springs for discrete physical acts** - shuffle, fission, drop, motorized correction - at ~4–6px or ~10% overshoot, one oscillation (stiffness 120–300, damping 14–30); dissipate energy as squash/contraction, never cartoon bounce; docs and inspector UI get zero springs (LexnLin-2024, arknow91-2089, flornkm-2089, jeetnirnejak-2089, GrahamPaterson-2089).
-7. **Never tween a direct-manipulation value:** numerals track the pointer 1:1 per frame; save easing for secondary instruments, which chase with ~100ms distinct lags (cabralorenzo-2090, jeetnirnejak-2089, recentdesign-2089).
-8. **Stagger siblings 60–180ms (sweet spot 100–150ms); stagger sections 400–800ms; never animate two hierarchy levels at once** (adriankuleszo-2089253, ImranUxi-2089, mnowakdesign-2089684).
-9. **Run single-cause state changes on one synchronized clock with zero internal stagger** - bar, text, gradient, glow together - so the change reads as electricity, not choreography (marcelkargul-2089632, insporadesign-2088).
-10. **Sequence with causality:** content leads shape by 1 frame; position lands 80–100ms before color; text exits with the blur and re-enters 250–300ms after refocus, description trailing title ~130ms; reverse the open order on close (_heyfaisal-2089369, flornkm-2089, insporadesign-2087, arknow91-2089).
-11. **Typewrite at ~105ms/char, delete at ~45ms/char (2–3x faster), hold ≥1.5s before deleting, always show a caret** (LexnLin-2024).
-12. **Ride the value with the motion:** attach the % chip to the progress-bar draw-head; ease count-ups in lockstep with the control driving them, ending together with an ease-out settle; count through real intermediates and zero-pad or use tabular-nums to kill width jitter (mnowakdesign-2089684, adriankuleszo-2089253, recentdesign-2089, ImranUxi-2089).
-13. **Direct demos with a cursor, not autoplay:** scripted cursor with narrative pacing (slow pass ~800ms/stop, fast pass ~450ms, rest), one-shot ~430ms micro-anims fired en route, ~3s dwell per feature; cancel any scripted intro on pointer-down (basit_designs-2017, toolfolio-2089, jeetnirnejak-2089).
-14. **Start reacting before contact:** deform toward the cursor from ~150–200px away (10–15% of radius, 100–150ms spring lag); ignite pressed controls <100ms; relax ~300ms after release (arknow91-2089, recentdesign-2089).
-15. **Make hover enact the feature's real state change** (color + label + layout + saturation, 300–400ms ease-out) **and reverse it symmetrically at the same duration** - never a generic scale/lift, never a snap on leave (Triopixels-2089).
-16. **Render hover light directionally:** 1px gradient border brightest on one edge fading up the sides + ≤8% directional wash; cast shadows away from the fake source; in monochrome systems change luminance only (#8A8A8A→#FFF), never hue (basit_designs-2017, insporadesign-2088, marcelkargul-2089632).
-17. **Reveal headlines as word-group blur cascades:** blur(12px)→0 + fade + ~8px rise, 400–500ms per group, 100–150ms stagger, reading order, ease-out, no overshoot; body and CTAs resolve last (adriankuleszo-2089253, ImranUxi-2089).
-18. **Tour static sections with one continuous camera:** zoom ~700ms ease-in-out, dolly 700–800ms, pull back ~900ms (or expo-out ~600ms with motion blur for film tone); dwell 1.5–3s; keep ambient loops running through every move; end where you started (adriankuleszo-2089253, toolfolio-2089, adriankuleszo-2089328).
-19. **Scrub scroll-driven effects linearly with scroll position** (word highlights, hero peels, sticky step rails) - never convert them to time-based tweens (adriankuleszo-2089328, kail_designs-2089).
-20. **Draw charts left→right in 700–1500ms ease-in-out; pop markers only as the head passes; flare at fork points before branching; concentrate bloom at draw-heads and fill-fronts, never spread it evenly** (mnowakdesign-2089684, adriankuleszo-2089328).
-21. **Scale feedback with velocity, not position:** gel dents, content blur (0 at rest → 8–12px mid-flight → crisp within 100ms of settle), and motion trails (2–3 ghosts, ~120ms decay) all track speed (recentdesign-2089, _heyfaisal-2089369, jeetnirnejak-2089).
-22. **Hold states dead still:** no idle pulsing on active indicators (luminance flat), ~500ms full rest between loop events, at most one ambient layer per section, ambient amplitude just above perception (~3°/frame, ~1 luma level/150ms) (marcelkargul-2089632, Triopixels-2089, madebylalit-2087, basit_designs-2089627).
-23. **Skip entrance choreography when the background is alive** - ship the page composed at t=0 and let one ambient material carry the life (basit_designs-2089627, AlexandruDranga-2090).
-24. **Keep demos honest:** true disabled states with rewritten captions, dimmed (25%) not hidden range-end controls, visible clamps, no snap-back, real data written by every interaction; regenerate procedural visuals per replay when the claim is "generative" (mickces-2088, insporadesign-2087, cabralorenzo-2090, jeetnirnejak-2089).
-25. **Design every choreography to degrade to a named POSTER FRAME** - usually the settled final frame, which must carry the full pitch (the corpus's frozen-interaction statics prove it). But NOT when the loop's argument is failure or friction: a never-arrives loop whose settled state is the dissolved payload argues that the problem resolved - the opposite of its claim. Every semantic loop names its poster frame at concept time (`illustration-ideation.md` § Step 4) and `prefers-reduced-motion` renders exactly that frame (0xhammermann-2090). Use CSS transitions (not keyframes) for anything a user can interrupt mid-flight (piyushsphere-2089, marcelkargul-2090148, ImranUxi-2089, flornkm-2089).
+1. **Name the event and role.** A feature demo explains capability; a collection
+   arranges content around still anchors; a character expresses identity;
+   functional feedback communicates state. Use the corresponding QA criteria.
+2. **Choose its timing.** A steady marquee or rotation commonly uses a linear
+   driver. A repeated character gesture or semantic cycle can ease and hold.
+   Responsive interaction uses a curve or spring suited to interruption.
+3. **Choose the relationship between clocks.** Independent activity can use
+   different periods. Related events, sequences and shared worlds can run in
+   unison or with deliberate phase offsets. A fixed one-period-per-cell rule
+   would erase meaningful synchronization.
+4. **Check the actual loop boundary.** Preserve continuity of pose and intended
+   velocity. A source recording's start/end need not be a loop boundary, and
+   duplicating the first frame at the end can create a stutter. For an authored
+   loop, test the transition itself and choose its static poster separately.
+5. **Select rather than accumulate recipes.** The measured easing, duration,
+   cursor, gesture and light treatments above belong to their source events.
+   Keep the approved motion budget; no automatic blur entrance, camera tour,
+   cursor actor or spring is required for a static or differently composed page.
+6. **Keep direct input honest.** Canonical values update immediately. A visual
+   follower may smooth or spring if it stays understandable; it must not delay
+   the real value, obscure an error or make the control inaccessible.
+7. **Preserve causality and reading space.** Motion can show where a state came
+   from or how an object changes. Inspect extremes so moving collection items,
+   overlays and gestures do not cover essential text/actions.
+8. **Use a complete fallback and combined stop conditions.** Name the poster
+   for a semantic loop, or a useful static arrangement for a collection. Honor
+   reduced motion and interruptions; use `render-tiers.md` for background
+   renderer eligibility and `animation-craft.md` for implementation mechanics.
 
 ## Addendum - isometric scenes (0xhammermann-2090)
 
 - The camera NEVER moves: no rotate, no dolly, no scroll parallax between grid
   and objects, no scene rotation. The world opens, slides or fills instead.
   Full construction and transform contract: `isometric-and-light.md` § A2, A2f.
-- Across one set of sibling loops, no two may use the same rhetorical shape
-  (never-arrives / crosses-in-one-beat / passes-directly / opens-and-closes /
-  absorbs / multiplies / assembles). Desyncing periods (§ 2a) is not enough -
-  three loops with the same argument read as one card shown three times.
+- This exemplar distinguishes its independent claims with different rhetoric
+  (never-arrives / passes-directly / opens-and-closes). Preserve meaningful
+  distinction when transferring that method; a sequence or shared-world scene
+  may deliberately repeat an action as its state evolves.
 - Stillness is a legal phase and often the largest one (the exemplar holds
   1133 ms with nothing moving); idle bobs, floats and pulses are the
   generated-motion tell.
@@ -236,11 +248,12 @@ Distilled from two full-choreography feature boards analysed frame by frame
 (182 frames and 842 frames). Tiers: **A** = adversarially re-measured, **B** =
 scale solved, **C** = ratios and frame counts only.
 
-**Harmonic lock (Tier B).** On an ambient board, every oscillator's period is an
-exact integer division of the master loop - 182/1, 182/2, 182/3. Verified by FFT
+**Harmonic lock (Tier B).** On this coordinated board, the reported oscillator
+periods are integer divisions of its master loop - 182/1, 182/2, 182/3. Verified by FFT
 of the temporal stack: one cell returns k = 2 at 60 % of its moving pixels,
 another k = 3 at 62 %. **That lock, not a crossfade, is why a multi-cell loop has
-no visible seam.** Test your own: the dominant k must be a small integer.
+no visible seam.** For a reconstruction of this shared cycle, compare period and phase directly;
+an FFT bin index alone is not a general loop-quality test.
 
 **Anchor pinning (Tier B).** Name the ONE object per cell that cannot move, and
 pin it to sub-pixel accuracy for the whole loop; animate everything else relative
@@ -255,9 +268,10 @@ the other 76 % is a dead hold. A loop that RESTS - 5.15 s of complete stillness
 measured between pulse rounds on the second board - is a legitimate and calming
 choice that generators never make.
 
-**Unison over stagger (Tier B).** For a multi-cell board, default to UNISON:
-every satellite peak clusters at 49-58 % of the loop. Staggering five cells reads
-as noise. Stagger belongs inside one cell, not across a grid.
+**Unison in a shared-world board (Tier B).** This source clusters satellite
+peaks at 49-58% of the loop. Preserve that coordinated relationship when using
+this recipe. Independent feature demos or another approved choreography may
+use stagger or different periods instead.
 
 **Three easings, named and distinguished.** "ease-in-out" was covering all three:
 - **Raised cosine** for ambient hover. Verify against normalised 0.077 / 0.26 /
@@ -275,7 +289,7 @@ motion; a linear slide with an ease-out tail is not the same object.
 
 **Orbit (Tier A).** 3.1292 degrees per frame, linear, no easing (straight-line fit
 residual rms 0.732 deg over 65 frames), full revolution 115.04 frames, two dots
-exactly antipodal. Ambient register: never ease an infinite loop (C6).
+exactly antipodal. Ambient register: avoid accidental stop/start seams in steady drift; eased periodic gestures are valid (C6).
 
 **Round-robin pulse (Tier A).** One item in flight at a time, fixed interval
 (8.4 frames), fixed round length (50.5 frames for six marks), **always inward
@@ -301,3 +315,12 @@ than a shadow.
 One of these boards yielded an fps range of [30.0, 32.3] and nothing narrower;
 every second-based figure derived from a guessed 30.07 fps was wrong
 (`measuring.md`).
+
+## Repetition follows the event
+
+A linear clock can drive nonlinear motion. Drift, a character's repeated gesture,
+a shared-world mechanism and direct input have different timing needs. The
+Moein character loops (DesignByMoein-2095937 / DesignByMoein-2096289) are eased
+periodic action; the brand board (adriankuleszo-2096048) has reveal/hold/exit.
+Do not turn either into a constant-speed rotation. Separate capture duration
+from an authored loop, and use presentation timestamps for variable-rate video.
