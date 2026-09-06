@@ -3,10 +3,11 @@ import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { createRequire } from 'node:module';
+import { verifyAtelier } from './verify-atelier.mjs';
 
 const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
-const base = process.argv[2] || 'http://127.0.0.1:8756/';
+const base = process.argv[2] || 'http://127.0.0.1:8757/';
 const reportPath = process.argv[3] || '.eval-output/showcase-verification.json';
 const browser = await chromium.launch({
   headless: true,
@@ -19,7 +20,10 @@ try {
   const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
   const page = await context.newPage();
   const errors = [];
+  const failedResources = [];
   page.on('pageerror', error => errors.push(error.message));
+  page.on('response',response=>{if(response.status()>=400&&!response.url().endsWith('/favicon.ico'))failedResources.push({url:response.url(),status:response.status()});});
+  page.on('console',message=>{if(message.type()==='error'&&/THREE|GLSL|WebGLProgram|shader/i.test(message.text()))errors.push(message.text());});
   const visit = async (id, extra = '') => {
     await page.goto(`${base}?v=${id}&still${extra}`);
     await page.waitForFunction(id => document.querySelector('#app').dataset.mounted === id, id);
@@ -28,12 +32,14 @@ try {
 
   await visit('a');
   const pages = await page.evaluate(() => [...ORDER]);
-  assert.equal(pages.length, 45);
+  assert.equal(pages.length, 55);
+  assert.equal(new Set(pages).size,55);
+  assert.deepEqual(pages.slice(0,4),['optical-type','night-garden','woven-spectrum','character-close']);
   for (const id of pages) {
     await visit(id, '&t=0');
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, id);
   }
-  report.checks.push('All 45 routes render without horizontal overflow at 1440x900');
+  report.checks.push('All 55 unique routes render without horizontal overflow at 1440x900');
 
   await visit('action-result');
   await page.locator('#xi-project').focus();
@@ -44,10 +50,10 @@ try {
   assert.equal(await page.locator('[data-ui="project-name"]').innerText(), 'Aster House');
   await page.locator('body').click({ position: { x: 15, y: 15 } });
   await page.keyboard.press('ArrowRight');
-  await page.waitForFunction(() => document.documentElement.dataset.variant === 'pixel-plan');
-  assert.ok(page.url().includes('v=pixel-plan'));
+  await page.waitForFunction(() => document.documentElement.dataset.variant === 'glass-identity');
+  assert.ok(page.url().includes('v=glass-identity'));
   await page.reload();
-  assert.equal(await page.evaluate(() => document.documentElement.dataset.variant), 'pixel-plan');
+  assert.equal(await page.evaluate(() => document.documentElement.dataset.variant), 'glass-identity');
   report.checks.push('Form keys stay local; action preview, catalog navigation and reload preserve state');
 
   await visit('a');
@@ -63,6 +69,7 @@ try {
   await page.locator('.copy').first().click();
   await page.waitForFunction(() => document.querySelector('.copy').dataset.state === 'done');
   assert.match(await page.evaluate(() => window.__copied), /npx skills add/);
+  assert.equal(await page.locator('.copy').first().getAttribute('aria-label'),'Copy install command');
   report.checks.push('Clipboard failure and success feedback reflect the actual outcome');
 
   for (const id of gpuPages) {
@@ -115,6 +122,8 @@ try {
   await page.waitForTimeout(150);
   assert.equal(await page.locator('[data-model-host]').evaluate(e => e.__gpuState.frames), frame);
   report.checks.push('Changing reduced motion while the scene is open stops rendering');
+  await page.emulateMedia({reducedMotion:'no-preference'});
+  await verifyAtelier({page,visit,base,browser,report});
   await context.close();
 
   const saveContext = await browser.newContext({ viewport: { width: 390, height: 844 } });
@@ -130,7 +139,9 @@ try {
   await saveContext.close();
   report.checks.push('Mobile Save-Data uses a usable poster without a renderer');
   assert.deepEqual(errors, []);
+  assert.deepEqual(failedResources, []);
   report.errors = errors;
+  report.failedResources = failedResources;
   await mkdir(dirname(reportPath), { recursive: true });
   await writeFile(reportPath, JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify(report, null, 2));

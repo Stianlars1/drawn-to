@@ -1,0 +1,65 @@
+[
+  {
+    "asset": "night-garden.webp",
+    "original": "exec-7fb99bc4-e207-4e60-abc1-c7f07665183d.png",
+    "generator": "OpenAI built-in imagegen",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "9228cd24a5d64c0cd864ded11f60480de7755e25b7f6f32c9662305676f92b4e",
+    "encoding": "lossless WebP; RGB pixels verified unchanged",
+    "sourceImages": []
+  },
+  {
+    "asset": "red-chamber.webp",
+    "original": "exec-10299c53-6a68-4bcb-b8e2-00df6a564d43.png",
+    "generator": "OpenAI built-in imagegen",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "fecf11e004e7b05781c08b556a6c40ff32e306493f987e13eedd93be415cdad5",
+    "encoding": "lossless WebP; RGB pixels verified unchanged",
+    "sourceImages": []
+  },
+  {
+    "asset": "paper-theatre.webp",
+    "original": "exec-b1d5258f-77ad-46e5-b8b5-43ef8dccfd66.png",
+    "generator": "OpenAI built-in imagegen",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "be195010b2ccc395dbe4abd3a0beba37dfd4e17761cdce849c40236e0c730c57",
+    "encoding": "lossless WebP; RGB pixels verified unchanged",
+    "sourceImages": []
+  },
+  {
+    "asset": "living-terrarium.webp",
+    "original": "exec-1b63df84-5e50-4c0f-a901-5c7dd9ed9dfe.png",
+    "generator": "OpenAI built-in imagegen",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "ea11e698d40e601af22dfdbb99c053af579b5ed065b6e5645b38fc655c95e9cd",
+    "encoding": "lossless WebP; RGB pixels verified unchanged",
+    "sourceImages": []
+  },
+  {
+    "asset": "specimen-cabinet.webp",
+    "original": "exec-3bcd6ecf-1d6c-4b1c-aed8-54fb3c90b1ef.png",
+    "generator": "OpenAI built-in imagegen",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "b4687b9dad62d24009e2dcbbe52ae84293a8869cae39f714be35864893d0d02c",
+    "encoding": "lossless WebP; RGB pixels verified unchanged",
+    "sourceImages": []
+  },
+  {
+    "asset": "paper-cutout.webp",
+    "original": "exec-79aad2f1-0093-49c1-a588-ecd1fcc85cd5.png",
+    "generator": "OpenAI built-in imagegen edit",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "f407bf0e6e313ece493505880c6c72c8e0bd219dd62f6d098e17f80579ab2cb9",
+    "encoding": "lossless WebP with alpha",
+    "sourceImages": [
+      "exec-b1d5258f-77ad-46e5-b8b5-43ef8dccfd66.png"
+    ],
+    "edit": "Isolate the original paper book against transparent background with contact shadow."
+  }
+]

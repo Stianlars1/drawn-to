@@ -1,0 +1,170 @@
+[
+  {
+    "name": "optical-type-0",
+    "id": "optical-type",
+    "value": 0,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "optical-type-1",
+    "id": "optical-type",
+    "value": 0.5,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "optical-type-2",
+    "id": "optical-type",
+    "value": 1,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "woven-spectrum-0",
+    "id": "woven-spectrum",
+    "value": 0,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "woven-spectrum-1",
+    "id": "woven-spectrum",
+    "value": 0.5,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "woven-spectrum-2",
+    "id": "woven-spectrum",
+    "value": 1,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "aperture-control-0",
+    "id": "aperture-control",
+    "value": 0,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "aperture-control-1",
+    "id": "aperture-control",
+    "value": 0.5,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "aperture-control-2",
+    "id": "aperture-control",
+    "value": 1,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "chromatic-relief-0",
+    "id": "chromatic-relief",
+    "value": 0,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "chromatic-relief-1",
+    "id": "chromatic-relief",
+    "value": 0.5,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "chromatic-relief-2",
+    "id": "chromatic-relief",
+    "value": 1,
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "optical-type-0-mobile",
+    "id": "optical-type",
+    "value": 0,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "name": "optical-type-1-mobile",
+    "id": "optical-type",
+    "value": 0.5,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "name": "optical-type-2-mobile",
+    "id": "optical-type",
+    "value": 1,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "name": "woven-spectrum-0-mobile",
+    "id": "woven-spectrum",
+    "value": 0,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "name": "woven-spectrum-1-mobile",
+    "id": "woven-spectrum",
+    "value": 0.5,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "name": "woven-spectrum-2-mobile",
+    "id": "woven-spectrum",
+    "value": 1,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "name": "aperture-control-0-mobile",
+    "id": "aperture-control",
+    "value": 0,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "name": "aperture-control-1-mobile",
+    "id": "aperture-control",
+    "value": 0.5,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "name": "aperture-control-2-mobile",
+    "id": "aperture-control",
+    "value": 1,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "name": "chromatic-relief-0-mobile",
+    "id": "chromatic-relief",
+    "value": 0,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "name": "chromatic-relief-1-mobile",
+    "id": "chromatic-relief",
+    "value": 0.5,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "name": "chromatic-relief-2-mobile",
+    "id": "chromatic-relief",
+    "value": 1,
+    "width": 390,
+    "height": 844
+  }
+]

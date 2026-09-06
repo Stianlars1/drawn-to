@@ -17,9 +17,11 @@ defaults organize the evidence; they do not force every project into one look.
 See the [current reference index](skills/drawn-to/references/matrix.md) and the
 [September expansion](skills/drawn-to/references/september-expansion.md).
 
-The [local showcase](docs/showcase.md) now contains 45 screens, including 15 new
-reference-led compositions, original character/landscape artwork, spatial image
-flow, live Three.js materials, an original GLB and a native WebGPU particle study.
+The [showcase](https://drawn-to.vercel.app) now contains 55 screens. Its curated
+opening interleaves ten newer material-rich scenes with the previous expansion:
+optical typography, folded metal, a physical aperture, cinematic artwork, a paper
+world, a specimen cabinet and more. It also includes an original GLB, spatial
+image flow and a native WebGPU particle study. See the [implementation notes](docs/showcase.md).
 Three independent output trials informed a stricter visual review and retest.
 Working controls and a coherent direction are assessed separately from the
 references' material, lighting and motion finish.
@@ -134,6 +136,7 @@ scripts/
   validate-library.py                index, source, citation and asset checks
   build-showcase-data.py             current showcase library count
   export-showcase-model.mjs          original GLB from shared geometry
+  export-studio-posters.mjs          reproducible desktop/mobile studio frames
   verify-showcase.mjs                browser integration and renderer lifecycle checks
 ```
 

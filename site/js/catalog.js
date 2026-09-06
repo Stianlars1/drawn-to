@@ -94,7 +94,14 @@ const C = {
 };
 const EXTRA_PAGES = (window.DrawnToPages || []).sort((a,b) => a.order-b.order);
 Object.assign(C.names, Object.fromEntries(EXTRA_PAGES.map(page => [page.id,page.name])));
-const ORDER = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D', ...EXTRA_PAGES.map(page => page.id)];
+const LEGACY_ORDER = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D'];
+const chronological = [...LEGACY_ORDER, ...EXTRA_PAGES.map(page => page.id)];
+const registered = new Set(chronological);
+const opening = window.DrawnToOpening || [];
+if (registered.size !== chronological.length || new Set(opening).size !== opening.length || opening.some(id => !registered.has(id))) {
+  throw new Error('The curated catalog contains a duplicate or unknown page.');
+}
+const ORDER = [...opening, ...chronological.filter(id => !opening.includes(id))];
 const WITH_NUMS = new Set(['f','t']);   /* three numbers in the bottom bar; c composes its own inside the mat */
 const TOTAL = String(ORDER.length).padStart(2,'0');
 const motionQuery = matchMedia('(prefers-reduced-motion: reduce)');
@@ -108,7 +115,7 @@ const ICONS = `<svg class="i-copy" viewBox="0 0 16 16" fill="none" stroke="curre
 const CMD = () => `<span class="cmd"><span class="p">$</span>${C.cmd}<button type="button" class="copy" data-state="idle" aria-label="Copy install command" onclick="copyCmd(this)"><span class="swap"><span class="w1">copy</span><span class="w2">copied</span></span><span class="ico">${ICONS}</span></button></span>`;
 /* I - the command IS the instrument: bezel, recessed track, machined cap, lit indicator window */
 const CMD_HW = () => `<div class="hw"><div class="track"><button type="button" class="cap" data-state="idle" aria-label="Copy install command" onclick="copyCmd(this)"><span class="p">$</span>${C.cmd}<span class="win" aria-hidden="true"><i></i></span></button></div></div>`;
-const TOP = () => `<div class="top"><a class="brand" href="#">Drawn To</a><a class="gh" href="${C.repo}">GitHub</a></div>`;
+const TOP = () => `<div class="top"><a class="brand" href="#${ORDER[0]}">Drawn To</a><a class="gh" href="${C.repo}">GitHub</a></div>`;
 const NUMS = (cls) => `<span class="${cls||'nums'}">${C.nums.map(([n,l])=>`<b data-count="${n}">${n}</b> ${l}`).join(' &middot; ')}</span>`;
 function arrow(d){ return `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="${d}"/></svg>`; }
 const PREV = () => `<button type="button" class="cb" data-act="prev" aria-label="Previous direction">${arrow('M9.5 3.5 5 8l4.5 4.5')}</button>`;
@@ -591,7 +598,7 @@ const SCREEN = {
 const EXTRA_MAP = new Map(EXTRA_PAGES.map(page => [page.id,page]));
 for (const page of EXTRA_PAGES) SCREEN[page.id] = () => {
   const theme=page.theme;
-  return `<div class="xp-shell" style="--xp-bg:${theme.background};--xp-ink:${theme.ink};--xp-muted:${theme.muted};--xp-accent:${theme.accent}"><header class="xp-header"><a class="xp-brand" href="#a">Drawn To</a><a class="xp-github" href="${C.repo}">GitHub ↗</a></header><section class="xp-stage xp-${page.id}">${page.render({command:C.cmd})}</section><footer class="xp-footer">${String(ORDER.indexOf(page.id)+1).padStart(2,'0')} / ${TOTAL} · ${page.name}</footer></div>`;
+  return `<div class="xp-shell" style="--xp-bg:${theme.background};--xp-ink:${theme.ink};--xp-muted:${theme.muted};--xp-accent:${theme.accent}"><header class="xp-header"><a class="xp-brand" href="#${ORDER[0]}">Drawn To</a><a class="xp-github" href="${C.repo}">GitHub ↗</a></header><section class="xp-stage xp-${page.id}">${page.render({command:C.cmd})}</section><footer class="xp-footer">${String(ORDER.indexOf(page.id)+1).padStart(2,'0')} / ${TOTAL} · ${page.name}</footer></div>`;
 }
 let extraAbort=null, extraCleanup=null, renderGeneration=0;
 
@@ -760,12 +767,13 @@ function setPaused(p){
   live.textContent = paused ? 'Cycle paused' : 'Cycle running';
 }
 async function copyCmd(btn){
-  const originalLabel=btn.getAttribute('aria-label');
+  const originalLabel=btn.dataset.copyLabel||btn.getAttribute('aria-label');
+  btn.dataset.copyLabel=originalLabel;
   try {
     if(!navigator.clipboard) throw new Error('Clipboard unavailable');
     await navigator.clipboard.writeText(C.cmd);
     if(!btn.isConnected) return;
-    btn.dataset.state='done'; live.textContent='Copied';
+    btn.dataset.state='done';btn.setAttribute('aria-label',originalLabel);live.textContent='Copied';
   } catch {
     if(!btn.isConnected) return;
     btn.dataset.state='idle';
@@ -790,6 +798,11 @@ dock.addEventListener('click', function(e){
   const b = e.target.closest('.cb'); if (!b) return;
   if (b.dataset.act === 'toggle') setPaused(!paused); else next(b.dataset.act === 'next' ? 1 : -1);
 });
+function holdForInteraction(event){
+  if(!paused && event.target.closest('button,input,textarea,select,[contenteditable=true],[data-studio-host]')) setPaused(true);
+}
+app.addEventListener('pointerdown',holdForInteraction);
+app.addEventListener('focusin',holdForInteraction);
 addEventListener('keydown', function(e){
   if(e.defaultPrevented || e.target.closest('input,textarea,select,[contenteditable=true],[role=slider],[role=tablist],[role=menu]') || (e.target.closest('.xp-stage') && e.target.closest('button,a'))) return;
   if (e.key === 'ArrowRight') next(1);
@@ -804,7 +817,7 @@ motionQuery.addEventListener('change',()=>{
 });
 document.addEventListener('visibilitychange',()=>document.hidden?stopTimer():startTimer());
 addEventListener('hashchange',()=>{
-  const key=location.hash.slice(1)||'a';
+  const key=location.hash.slice(1)||ORDER[0];
   if(ORDER.includes(key)){idx=ORDER.indexOf(key);go(key);startTimer();}
 });
 render(ORDER[idx]);

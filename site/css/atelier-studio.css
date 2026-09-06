@@ -1,0 +1,63 @@
+.at-sr{position:absolute!important;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.at-eyebrow{font:10px/1.5 'Geist Mono',monospace;letter-spacing:.08em;color:var(--xp-muted)}
+.at-studio{position:absolute;inset:0;min-width:0;min-height:0}
+.at-studio picture,.at-poster,.at-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.at-poster{object-fit:fill}.at-canvas{z-index:1}.at-studio[data-ready=true] picture{visibility:hidden}.at-studio[data-fallback=true] picture{visibility:visible}
+.at-control{width:260px;color:var(--xp-ink)}
+.at-continuous{display:grid;grid-template-columns:1fr auto;gap:12px;font-size:12px;align-items:center}
+.at-continuous output{font-family:'Geist Mono',monospace;font-size:11px;font-variant-numeric:tabular-nums;color:var(--xp-muted)}
+.at-continuous input{grid-column:1/-1;width:100%;height:20px;appearance:none;-webkit-appearance:none;background:transparent;cursor:ew-resize;margin:0}
+.at-continuous input::-webkit-slider-runnable-track{height:3px;background:color-mix(in srgb,var(--xp-ink) 20%,transparent);border-radius:3px}
+.at-continuous input::-webkit-slider-thumb{appearance:none;width:15px;height:15px;margin-top:-6px;border-radius:50%;background:var(--xp-ink);border:2px solid var(--xp-bg);box-shadow:0 0 0 1px color-mix(in srgb,var(--xp-ink) 25%,transparent)}
+.at-continuous input::-moz-range-track{height:3px;background:color-mix(in srgb,var(--xp-ink) 20%,transparent)}
+.at-continuous input::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--xp-ink);border:2px solid var(--xp-bg)}
+.at-presets{display:flex;gap:4px;margin-top:10px}
+.at-presets button{flex:1;background:transparent;color:var(--xp-muted);border:1px solid color-mix(in srgb,var(--xp-ink) 17%,transparent);border-radius:4px;padding:8px 9px;font-size:10px;cursor:pointer;min-height:34px}
+.at-presets button[aria-pressed=true]{background:var(--xp-ink);color:var(--xp-bg);border-color:var(--xp-ink)}
+[data-studio-fallback=true] .at-continuous{display:none}
+.at-motion{background:transparent;border:0;color:var(--xp-muted);text-decoration:underline;text-underline-offset:4px;font-size:11px;padding:10px 0;cursor:pointer}
+.at-motion[hidden]{display:none}
+.xp-optical-type .at-studio{bottom:132px;cursor:crosshair}
+.at-optical-bottom{position:absolute;bottom:16px;left:24px;right:24px;display:flex;align-items:end;justify-content:space-between;gap:28px;z-index:2}
+.at-optical-bottom>p{font-size:28px;line-height:1.15;letter-spacing:-.045em}
+.at-optical-hint{font-size:12px;line-height:1.5;color:var(--xp-muted);margin-left:auto;margin-right:7vw}
+.xp-woven-spectrum .at-studio{top:-20px;right:-48px;bottom:25px;left:140px}
+.at-woven-copy{position:absolute;left:30px;bottom:48px;z-index:2;pointer-events:none}
+.at-woven-copy h1{font-size:clamp(40px,4.4vw,64px);letter-spacing:-.055em;line-height:1.03;margin:18px 0 20px}
+.at-woven-copy p{font-size:13px;line-height:1.6;color:var(--xp-muted)}
+.at-woven-controls{position:absolute;right:22px;bottom:13px;display:flex;align-items:end;gap:30px;z-index:2}
+.at-woven-controls .at-control{width:230px}
+.xp-aperture-control{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(320px,.65fr);gap:30px;align-items:center}
+.at-aperture-art{position:relative;height:100%;min-width:0}
+.at-aperture-art .at-studio{inset:15px -35px 45px -25px}
+.at-instrument-caption{position:absolute;bottom:26px;left:0;right:0;text-align:center;font:10px 'Geist Mono',monospace;letter-spacing:.12em;color:var(--xp-muted)}
+.at-aperture-copy{padding:20px 20px 20px 12px}
+.at-aperture-copy h1{font-size:clamp(42px,4.7vw,68px);line-height:1.01;letter-spacing:-.057em;margin:22px 0 25px}
+.at-aperture-copy>p{font-size:14px;line-height:1.7;color:var(--xp-muted);margin-bottom:38px}
+.at-aperture-copy .at-control{width:min(280px,100%)}
+.at-fine-note{display:block;margin-top:20px;font-size:10px;color:var(--xp-muted)}
+.at-relief-heading{display:flex;justify-content:space-between;align-items:center;padding:15px 30px;position:relative;z-index:2}
+.at-relief-heading h1{font-size:clamp(40px,5.2vw,77px);font-weight:500;letter-spacing:-.055em;line-height:1}
+.at-relief-heading h1 em{font-family:'Instrument Serif',serif;font-weight:400}
+.at-relief-heading p{font-size:13px;line-height:1.6;color:var(--xp-muted)}
+.xp-chromatic-relief .at-studio{top:80px;bottom:95px;left:2%;right:2%}
+.at-relief-bottom{position:absolute;bottom:8px;left:30px;right:30px;display:flex;align-items:end;justify-content:space-between;gap:30px}
+.at-relief-bottom .at-control{width:300px}
+@media(max-height:760px) and (min-width:721px){.at-aperture-copy h1{font-size:48px}.at-aperture-copy>p{margin-bottom:22px}.at-aperture-copy h1{margin:16px 0}.at-woven-copy{bottom:35px}.at-woven-copy h1{font-size:44px}.at-relief-heading h1{font-size:55px}.at-relief-bottom{bottom:0}.xp-chromatic-relief .at-studio{top:70px;bottom:88px}.xp-optical-type .at-studio{bottom:125px}}
+@media(max-width:720px){
+ .at-control{width:100%}.at-presets button{min-height:39px;font-size:10px}
+ .at-optical-bottom{left:0;right:0;bottom:8px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+ .at-optical-bottom>p{font-size:22px}.at-optical-hint{margin:0;justify-self:end;font-size:11px}
+ .at-optical-bottom .at-control{grid-column:1/-1}.xp-optical-type .at-studio{bottom:220px;left:-8px;right:-8px}
+ .xp-woven-spectrum .at-studio{left:-20px;right:-20px;top:-10px;bottom:205px}
+ .at-woven-copy{left:0;bottom:150px}.at-woven-copy .at-eyebrow{font-size:8px}.at-woven-copy h1{font-size:36px;margin:12px 0}.at-woven-copy p{display:none}
+ .at-woven-controls{left:0;right:0;bottom:3px;gap:16px;align-items:end}.at-woven-controls .at-control{width:100%}.at-woven-controls .at-motion{width:64px;flex-shrink:0;font-size:10px}
+ .xp-aperture-control{display:flex;flex-direction:column;gap:0;align-items:stretch}
+ .at-aperture-art{position:absolute;top:108px;height:390px;left:-10px;right:-10px}.at-aperture-art .at-studio{inset:0}.at-instrument-caption{display:none}
+ .at-aperture-copy{padding:0;display:flex;flex-direction:column;height:100%}.at-aperture-copy .at-eyebrow{font-size:9px}
+ .at-aperture-copy h1{font-size:37px;line-height:1.01;margin:12px 0;max-width:330px}.at-aperture-copy h1 br{display:none}.at-aperture-copy h1 br:after{content:' '}
+ .at-aperture-copy>p{font-size:12px;line-height:1.6;margin-top:auto;margin-bottom:18px}.at-aperture-copy .at-control{width:100%}.at-fine-note{font-size:9px;margin-top:12px}
+ .at-relief-heading{padding:7px 0;display:block}.at-relief-heading h1{font-size:46px;max-width:320px}.at-relief-heading p{font-size:12px;margin-top:18px}
+ .xp-chromatic-relief .at-studio{left:-20px;right:-20px;top:100px;bottom:140px}.at-relief-bottom{left:0;right:0;bottom:1px;gap:12px}.at-relief-bottom>.at-eyebrow{display:none}.at-relief-bottom .at-control{width:100%}.at-relief-bottom .at-motion{font-size:10px;flex-shrink:0;width:64px}
+}
+@media(prefers-reduced-motion:reduce){.at-motion{display:none}}
