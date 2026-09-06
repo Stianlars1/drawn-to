@@ -1,0 +1,31 @@
+Use this visual direction: Warm illustrated choices
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#warm-choices
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the 55-slide showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+Three substantial warm onboarding choice cards sit beneath a short welcoming heading and a compact mode selector. A small original bird peeks over the card row. Each card has its own title, one clear promise, a concise checklist and a choice action; the chosen card has a distinct warm surface.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Warm ivory and burgundy, dark brown editorial type and carefully tuned pink/cream surfaces. The clay-like peeking bird is a small tactile character, with soft volume, eyes, feathers and grounded overlap. Cards use fine borders, controlled corner radii and barely lifted shadows. Selected state must read through surface, label and action together.
+
+BEHAVIOR
+Explore, Specify and Build are real selectable states. Update title, explanation and outcome together without moving the whole layout. Keyboard and touch expose the same result.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+The original character is site/assets/expansion/editorial/peeking-bird.png. Inspect its placement and the three card surfaces in the implementation; keep the illustration at this supporting scale.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/DesignByMoein-2095937596665024817.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/editorial.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/extra-editorial.css
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Do not substitute a beige card and generic outline icons for the illustration. Match the still-life quality and keep all choices and outcome visible on mobile.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

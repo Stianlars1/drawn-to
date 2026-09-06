@@ -293,7 +293,7 @@ Two equal ~460px cards, gap 24px, radius 14px; the featured tier is a pixel-iden
 - Full-width banner reusing the page's one signature artwork (~3.2:1, r16) (kevserctk-2090); giant navy arc rising from the bottom edge (kail_designs-2089 whirrls).
 
 ### Numbering / meta layers (8–10/45; family A/C signature)
-Always monospace, always a size tier below body:
+In these technical examples, monospace sits below body scale. Other established type systems can carry metadata too:
 - FIG.1–FIG.4 plate labels + triple numbering - nav 01–04, sections 01/02, specs 1.1–2.3 - cross-referencing the page like a spec document (0xSero-2090).
 - Spec-sheet feature index: mono "1.0/1.1/1.2" 15px + sans label 18px; inactive rows at 45% opacity with chevron (piyushsphere-2089).
 - Slashed-zero mono series counter "01 / 03" ~22px, current black, "/ 03" at 40% gray (piyushsphere-2088).
@@ -309,28 +309,44 @@ Apply these to the referenced anatomy, not every page. The approved brief and
 scoped defaults in `style-families.md` choose the relevant material and density.
 
 
-1. Set the content column to ~1200px (1200–1225 measured) on a 1440 viewport; use 700–1000px only for single-column playground/tool pages (LexnLin-2089, kevserctk-2090, marcelkargul-2090148, adriankuleszo-2089887, mickces-2088).
-2. Flat dark editorial UI commonly separates with hairlines or tone steps. Physical dark objects can use contact shadows; judge the actual material.
-3. Light mode borderless cards: exactly one wide soft shadow - alpha 0.04–0.14, blur 24–60px (blur ≥3× the y-offset), tinted toward the palette hue, e.g. `0 24px 48px -12px rgba(50,70,130,0.14)` (Triopixels-2089, adriankuleszo-2090, adriankuleszo-2089253).
-4. Draw every structural line at 1px; sub-splits go 1px dashed (4/4px). Reserve ≥2px outlines for deliberate sticker/ink styles only (basit_designs-2017, 0xSero-2090; exceptions TheKartikBansal-2089, kail_designs-2089).
-5. For dark editorial bento, cut regions from one surface: two full-height 1px rails framing a ~985px column, dividers at +4–8 luma of bg, radius 0, no card fills, no gaps (basit_designs-2017, 0xSero-2090).
-6. In shared-border grids, neighbors share ONE 1px divider - never two adjacent borders (0xSero-2090).
-7. In gap bentos, use one gutter token (16 or 24px) for both panel padding and card gaps; keep all cards in a row exactly equal height (adriankuleszo-2089887, marcelkargul-2090148).
-8. Split 2-card rows 60/40 (~690/462 at 1168px) and mirror the next row 40/60; close multi-row grids with a full-width, surface-inverted finale card (adriankuleszo-2089887, Triopixels-2089).
-9. For 3+2 grids: three ~392px cards then two ~596px wide cards, uniform 24px gap (marcelkargul-2090148, _heyfaisal-2089734).
-10. Build a 3-tier radius hierarchy, never one radius: 24 page / 16 card / 12 button / 8 nested tile, or concentric outer = inner + padding (_heyfaisal-2089734, ImranUxi-2089, yurygok-2089981, TheKartikBansal-2089).
-11. Split button radius by context: full pill for marketing chrome (nav, hero CTAs), 8–12px rects inside components and cards (kevserctk-2090, designbynavneet-2089).
-12. Reserve radius 0 for editorial/blueprint sections and squircle (13–15% of card width, continuous corners) for soft light cards; never mix the two in one section (0xSero-2090, basit_designs-2089995 vs Triopixels-2089).
-13. Give feature cards 55–80% visual area (target ~65–70%); cap copy at title + 2 description lines (LexnLin-2024, AlexandruDranga-2090, 0xSero-2090, LexnLin-2089).
-14. Demote captions outside or below the visual - on the page background 20px below the card, or below a text-free media panel with a 28px gap; never overlay text on a busy zone (LexnLin-2024, piyushsphere-2089, adriankuleszo-2089253).
-15. Engineer dead air: anchor title to card top and desc+CTA to card bottom leaving 30–45% of the card empty; on posters keep 55–65% empty with content in ≤3 clusters (piyushsphere-2088, basit_designs-2089995, devxnuj-2090).
-16. Bleed repeatable content off 1–2 card edges and fade the outermost items (opacity ramp 1.0→0.35 or a 40–60px alpha mask); crop deliberately where the anatomy calls for a hard edge, or fade repeats and never shrink whole screenshots to fit (adriankuleszo-2089887, _heyrico-2090, piyushsphere-2089, LexnLin-2024).
-17. On component stages, size the element at 30–57% of canvas width on a flat field and give it ≥80% negative space (flornkm-2089, arknow91-2089, insporadesign-2087, madebylalit-2088).
-18. Stage heroes as a centered stack: badge → H1 56–72px/1.05–1.15/−2% → subhead max-width 480–640px → CTA pair (gap 12–16px) → media; rhythm 24 / 28 / 40–48 / 64–80px (kevserctk-2090, adriankuleszo-2090, basit_designs-2089627).
-19. Header a section as: 11–13px caps eyebrow (+6–10% tracking) → 44–56px H2 (−2 to −3%) → 15–16px subhead, 48–120px above the grid; pad sections 96–120px vertically and skip decorative dividers between sections (Triopixels-2089, adriankuleszo-2089887, LexnLin-2089, kevserctk-2090).
-20. Add a mono meta layer: number cards/sections with FIG.n, 01/03, or 1.0/1.1 indices at 11–15px mono, current index full-contrast, siblings at 40–45% (0xSero-2090, piyushsphere-2088, piyushsphere-2089, xchylerdrenth-2090).
-21. Mat the page as an object when presenting: float it as a 16–33px-radius card inset 18–48px on a flat outer canvas or full-bleed texture (_heyfaisal-2089734, basit_designs-2089627, marcelkargul-2090148, toolfolio-2089).
-22. Keep background grids/dot fields outside or behind content at ≤8% contrast, radially or linearly faded - 19–80px pitch depending on scale (LexnLin-2089, adriankuleszo-2090, yurygok-2089624, recentdesign-2089).
-23. Close pages with a watermark: brand mark 350–450px at 2–12% opacity (or 4% embossed lightness delta on dark), cropped by an edge (LexnLin-2089, helvetiica-2089, basit_designs-2089995, devxnuj-2090).
-24. Build data cards on one banded skeleton - header 8 / stat 12 / viz 42 / detail 24 / footer 14% of height, 28px side inset, surfaces lightening downward #1C1C1E→#343436 - and reuse it across every visualization type (yurygok-2089624, yurygok-2089981).
-25. Emphasize a featured card by surface inversion only: clone the sibling's exact geometry and swap the fill (artwork or dark surface); no badges, no scale changes, no accent borders (kevserctk-2090, adriankuleszo-2089887). **Rule 25 governs EMPHASIS - how one card is ranked above its siblings. It does not forbid variation**; the legal axes of variation are the six card dials in § 5a.
+1. Choose a container that serves the reading and media. Around 1200px at a
+   1440 viewport recurs in the early examples; narrow editorial columns,
+   full-bleed scenes and larger workbenches are also valid.
+2. Separate flat editorial regions with tone or a shared hairline; give
+   physical objects appropriate contact shadows. One soft light-card shadow
+   is an economical starting point, not a limit on material layers.
+3. For a shared-border grid, adjacent regions share one divider. A gap grid
+   uses a deliberate gutter. Neither requires a single fixed radius or ratio.
+4. Use the row proportions the content needs. The cited 60/40 mirror,
+   3+2 arrangement and full-width closing panel are distinct recipes, not a
+   required sequence for every page.
+5. Relate nested corners to their actual geometry. Equal-offset circular
+   corners can use outer radius = inner radius + padding. A sharp frame can
+   contain a rounded object when their roles are clear.
+6. Give a feature enough visual area to explain its claim. The early 55-80%
+   media examples are useful calibration; do not delete descriptions or
+   shrink drawings below readability to hit a percentage.
+7. Caption imagery in a quiet adjacent region or an intentionally protected
+   area inside the image. Inspect real contrast through all motion states.
+8. Compose empty space around the reading path and visual subject. A fixed
+   empty-area quota does not prove hierarchy or balance.
+9. Repeat and crop decorative content deliberately. Essential UI, complete
+   feature sets and original visual evidence must remain available on mobile.
+   Recompose, provide a clear detail view, or allow readable scrolling instead
+   of hiding items to fit the desktop poster shape.
+10. Choose among centred stacks, split heroes, editorial fields, architectural
+    grids and image-led scenes using the selected direction. Eyebrows, mono
+    labels, CTA pairs and watermarks are optional devices with specific roles.
+11. On dark technical charts, subdued guides can support brighter data.
+    Decorative opacity is not text contrast. Labels, units and controls still
+    need readable foreground/background combinations.
+12. Match an illustration set through camera, material, light and drawing
+    grammar while its subjects explain different things. Repeated collection
+    apertures can be intentional; interchangeable feature scenes cannot.
+13. Rank a featured card using the channel appropriate to the product:
+    surface, outline, label, placement or scale. Preserve alignment and avoid
+    misleading emphasis. The original surface-inversion example is one option.
+14. Validate the actual responsive composition, not just document overflow.
+    Inspect child bounds, line wrapping, clip/mask regions, fixed navigation
+    and every interactive state. Test the true phone viewport; a wider capture
+    using the same media query can still hide a defect.

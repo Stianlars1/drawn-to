@@ -171,7 +171,7 @@ Halftone ink, crop marks, paper grain, mats and hairline frames: screens pretend
 - **Members (5):** basit_designs-2089995 (anchor), devxnuj-2090, AlexandruDranga-2090, piyushsphere-2088, adriankuleszo-2090249.
 - **Artifact kit:** black halftone dots 8px pitch / 3px dot / ~30% coverage clipped to exact rectangles (basit_designs-2089995); 45° sheen stripes ~60px wide at 6–10% white alpha; ~14px-pitch paper speck grids on ONE panel per board; stipple grain σ≈4–6 on gradients (piyushsphere-2088); dashed crop-mark borders overshooting corners + 7px solid corner squares #937d46 (AlexandruDranga-2090); paper sheets at 2–6° rotations with page curls and 2–3% film grain vs perfectly clean output UI - material contrast as before/after (adriankuleszo-2090249); white mats with 1px #ececec hairlines, radius 0, no shadows (basit_designs-2089995, devxnuj-2090).
 - **Chroma:** 85–90% of every board near-white; one gradient ramp reused via rotation/mirror/crop covering 28–47% of the container; ghost watermarks at 2–3% luminance.
-- **Type:** charcoal ink #3b3b3b (never #000); weight locked ~500, hierarchy by scale jumps 12→14→24→~100px (devxnuj-2090); mono ledger metadata (fig. 01, slashed-zero "01 / 03", est. dates, 01/02/03 chips in 1px circles); sentence-case headlines ending with a period; ~240px deliberate dead-air between title block and description (piyushsphere-2088).
+- **Type:** charcoal ink #3b3b3b in the cited example; weight locked ~500, hierarchy by scale jumps 12→14→24→~100px (devxnuj-2090); mono ledger metadata (fig. 01, slashed-zero "01 / 03", est. dates, 01/02/03 chips in 1px circles); sentence-case headlines ending with a period; ~240px deliberate dead-air between title block and description (piyushsphere-2088).
 - **Signature contrast engine:** soft organic blur vs hard 1px hairline geometry, restated in every tile; hairlines switch color exactly where they cross an image edge (gray #c9c9c9 on paper, white ~70% over imagery) (devxnuj-2090).
 - **Motion register:** essentially static; when animated, loops stay semantic and desynced (AlexandruDranga-2090).
 - **Choose when:** brand boards, editorial marketing, numbered series cards, portfolio/identity work - the "generate this kind of visual for typical sections" wish the owner recorded (basit_designs-2089995 owner note).
@@ -184,7 +184,7 @@ Pastel or warm-neutral color fields, extreme squircle rounding, borderless shado
 - **Radius:** the extreme pole - 13–15% of card width, continuous-corner squircle (Triopixels-2089 48–64px at 420px); ~7% of width (_heyrico-2090); iOS-icon 28–32% on avatars/tiles (TheKartikBansal-2089); radii step 50→33→22.
 - **Separation:** zero borders; one wide soft shadow per card (`0 24px 48px -12px rgba(50,70,130,0.14)`, Triopixels-2089) or a thick solid sticker outline replacing elevation entirely (24px ring flipping #fff↔#000 with theme, TheKartikBansal-2089).
 - **Signature seam move:** the gradient dissolves into the text zone - no divider, no image/text seam anywhere (Triopixels-2089).
-- **Neutrals:** one family at multiple temperatures (sage/taupe/tan, AlexandruDranga-2090); warm-tinted inversions - cream #f2efe8 ↔ warm near-black #1a1710, never neutral #121212 (TheKartikBansal-2089); neutrals hue-shifted toward the bg (#6e8895 body on blue, adriankuleszo-2090249).
+- **Neutrals:** one family at multiple temperatures (sage/taupe/tan, AlexandruDranga-2090); warm-tinted inversions - cream #f2efe8 ↔ warm near-black #1a1710, rather than neutral #121212 in that example (TheKartikBansal-2089); neutrals hue-shifted toward the bg (#6e8895 body on blue, adriankuleszo-2090249).
 - **Accent:** one indigo/blue (#2349DA Triopixels-2089, #2F5BE7 adriankuleszo-2089253) or warm accent (#E8442E at ~2% surface area); green strictly for status (#1D9847/#61FF6B/#34B368).
 - **Motion register:** bespoke semantic hover choreography per card, 300–400ms ease-out, symmetric on exit (Triopixels-2089); one ambient drift layer (±10–14px over 4–6s); spring-smoothed drag demos.
 - **Choose when:** consumer-friendly SaaS, HR/collab/support products, approachable premium, anywhere Editorial Monochrome would read cold.
@@ -218,28 +218,35 @@ Near-invisible resting states that ignite; bloom concentrated where the action i
 
 The owner answers taste questions as weighted blends (refetch.sh = 80% Editorial Monochrome / 15% Staged Atmosphere / 5% Blueprint Sheet). The corpus itself blends the same way - many references are two families in one artifact.
 
-**Blend mechanics (derived from every dual-membership reference):**
-- The dominant family owns ground, separation system, and radius family. The secondary (≤30%) contributes the texture and graphic device. A tertiary (≤10%) is one ornament layer only: a blueprint grid, one lit element, one print artifact.
-- Staged Atmosphere contributes exactly ONE asset per page, reused at multiple scales - never two atmospheres (kevserctk-2090 aurora ×3; _heyfaisal-2089734 one marble everywhere).
-- Blueprint Sheet almost never leads; it garnishes (grid outside the container at ~5% contrast, LexnLin-2089; corner crosses in viz zones only, yurygok-2089624).
+**Blend mechanics (starting choices, not percentage limits):**
+- Give the dominant direction responsibility for the page's hierarchy and
+  surfaces. State what each secondary influence contributes. Weights express
+  the user's preference; they do not cap the allowable number of images,
+  materials or ideas at 30% or 10%.
+- Reusing one atmospheric asset can unify a page (kevserctk-2090,
+  _heyfaisal-2089734). A collection, chapter sequence or cinematic comparison
+  can need several distinct assets. Their lighting and composition still need
+  a coherent direction.
+- Blueprint can annotate a scene or lead an entire technical/architectural
+  presentation. Choose its role from the content, not its historical frequency.
 
-**Proven pairings (co-occurrence inside single references):**
+**Documented pairings in the early sample:**
 - **F1 Editorial Monochrome + F4 Blueprint Sheet** - 6 refs (0xSero-2090, xchylerdrenth-2090, yurygok-2089624, yurygok-2089981, marcelkargul-2090148, ImranUxi-2089). The native dark-technical blend; blueprint mono/numbering slots directly into the gray ramp.
-- **F2 Ink & Air + F3 Staged Atmosphere** - 5 refs (kevserctk-2090, _heyfaisal-2089734, designbynavneet-2089, GrahamPaterson-adjacent, basit_designs-2089995). Grayscale light shell + one chroma asset = the highest-frequency light-page recipe in the corpus.
+- **F2 Ink & Air + F3 Staged Atmosphere** - 5 refs (kevserctk-2090, _heyfaisal-2089734, designbynavneet-2089, GrahamPaterson-adjacent, basit_designs-2089995). A grayscale light shell and one chromatic asset form a recurring early composition.
 - **F1 Editorial Monochrome + F3 Staged Atmosphere** - 3 refs (basit_designs-2017 smoke/chrome inside divider bento; piyushsphere-2089714 photography under hairline frames; its_sslvr-2088 shader posters on a dark editorial stage). The refetch blend itself.
 - **F6 Soft Pastel Stage + F5 Paper & Print** - 2 refs (AlexandruDranga-2090 crop marks around warm-neutral animated cards; adriankuleszo-2090249 grainy paper inside a pastel wash). Reconciliation rule: keep outer cards near-square (≤6–10px) when print artifacts frame them.
-- **F6 Soft Pastel Stage + F2 Ink & Air** - dual-membership evidence (adriankuleszo-2089253 belongs to both): warm consumer pages take F6 ground/radius/shadow with F2 ink, caption discipline and hairline sub-panels. The natural HR/consumer blend.
+- **F6 Soft Pastel Stage + F2 Ink & Air** - dual-membership evidence (adriankuleszo-2089253 belongs to both): warm consumer pages take F6 ground/radius/shadow with F2 ink, caption discipline and hairline sub-panels. A useful option for a warm consumer brief.
 - **F7 Tactile Instruments inside any page family** - components adopt the host's ground (toolfolio-2089 dark shell over atmosphere wallpaper; cabralorenzo-2090 warm light; recentdesign-2089 HUD dark). Tactile is a component-scale family: blend it by scale, not by surface.
-- **F8 Emissive Signal as garnish on F1 Editorial Monochrome** - marcelkargul-2089632 (one glowing indicator on a #0F0F0F system), helvetiica-adjacent state colors. One lit element per screen.
+- **F8 Emissive Signal as garnish on F1 Editorial Monochrome** - marcelkargul-2089632 (one glowing indicator on a #0F0F0F system), helvetiica-adjacent state colors. One restrained lit element is an option; several can work when their roles are clear.
 
 **Potential tensions in the initial sample (absence is not incompatibility):**
 
 Resolve an actual material/geometry conflict, not a family-name combination.
 A requested mixture can work when its roles and scale are explicit.
-- **Soft Pastel Stage × Blueprint Sheet** - squircle/shadow/pastel vs radius-0/hairline/mono are opposite separation systems.
-- **Soft Pastel Stage × Editorial Monochrome** - shadow-borne softness vs near-threshold hairline structure; pick one separation physics per surface.
-- **Paper & Print × Emissive Signal** - printed ink and emitted light are contradictory material metaphors.
-- **Two Staged Atmosphere assets on one page** - breaks the single-asset discipline that makes pages read "complete, whole" (kevserctk-2090 owner note).
+- **Soft Pastel Stage × Blueprint Sheet** - soft objects and precise drafting marks need distinct surface and annotation roles.
+- **Soft Pastel Stage × Editorial Monochrome** - a soft object can sit inside a crisp editorial frame; give each depth cue a clear owner.
+- **Paper & Print × Emissive Signal** - distinguish the printed surface from an actual light source; they can share one scene.
+- **Several atmospheric assets** - check their relationship, lighting and crop. The one-asset discipline belongs to some early examples, not every collection.
 
 **Dual-theme rule:** the same skeleton may carry dark and light, but materials are re-derived per mode, never inverted: glass-over-photo ↔ solid-white+shadow (piyushsphere-2089714), accent demoted to gray in light mode (mnowakdesign-2089321 #d2303e→#98989e), warm-tinted inversion (TheKartikBansal-2089), theme-matched photography - dusk for dark, daylight for light (piyushsphere-2089714).
 
@@ -247,7 +254,7 @@ A requested mixture can work when its roles and scale are explicit.
 
 ## Coverage check
 
-All 45 references cluster into the families above. The following contribute something beyond a surface style and should be surfaced by the skill as resources/lessons rather than only as style exemplars:
+The initial 45 references were grouped into the families above. The following early references contribute something beyond a surface style and should be surfaced by the skill as resources/lessons rather than only as style exemplars:
 
 - **alaymanguy-2088 (ShaderGradient)** - production tooling for Staged Atmosphere: 3-stop constraint, grain toggle, `loopDuration` perfect loops, URL-serialized presets, `@shadergradient/react`. One candidate when its current API and capabilities fit the project.
 - **ImranUxi-2089 (interfaces.dev)** - a craft curriculum that doubles as constants-verification: concentric radii (outer = inner + padding), tabular-nums, border-not-shadow on dark, text-wrap balance, optical padding, transition-over-keyframe, entrance stagger values. Cite it when enforcing C3/C5/C8.

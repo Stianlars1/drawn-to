@@ -20,13 +20,13 @@ Two failure modes; the worse one is animating what shouldn't animate.
 
 | Frequency of exposure | Verdict |
 | --- | --- |
-| 100+ times/day (keyboard shortcuts, command palette, core nav) | No animation. Ever. |
+| Very frequent (keyboard shortcuts, command palette, core nav) | Immediate response; omit motion that adds delay or distraction |
 | Tens of times/day (hovers, list nav, frequent toggles) | Near-imperceptible or nothing |
 | Occasional (modals, drawers, toasts, settings) | Standard animation |
 | Rare / first-time (onboarding, success, empty states) | The delight budget lives here |
 
-- Keyboard-initiated actions are a disqualifier, not a judgment call
-  (Raycast opens with no animation - correct at hundreds of uses/day).
+- Keyboard input gets the same clear state feedback as pointer input. Keep
+  focus and response immediate; a short transition can still explain the change.
 - Name the purpose in ONE word before building: feedback · spatial
   consistency · state indication · bridging a jarring change · explanation
   (marketing only) · delight (rare-tier only). Can't name it → don't build it.
@@ -56,8 +56,9 @@ of hand-rolling focus management around a div.
   when needed by the chosen effect; measure their paint/layout cost. Accordions
   and meaningful resizes can animate measured dimensions or use suitable
   layout primitives. Keep affected regions and durations proportionate.
-- **Never `scale(0)`**; enter from `scale(0.9-0.97)` + `opacity: 0`  - 
-  nothing real appears from nothing.
+- For ordinary UI, a subtle scale such as `0.9-0.97` can avoid an exaggerated
+  entrance. Use another range when the selected motion or physical metaphor
+  calls for it; do not turn this default into a universal geometry rule.
 - **`transform-origin` at the trigger** for popovers/dropdowns/menus/
   tooltips (`var(--transform-origin)` in Base UI). Modals exempt: centered.
 - **Percentages in `translate()`** move by the element's own size  - 
@@ -75,8 +76,8 @@ of hand-rolling focus management around a div.
 
 ## 4. Curves and durations
 
-Token trio (built-ins are too weak; never hand-roll new curves - take them
-from easing.dev / easings.co):
+Example curve tokens. Choose an established curve or tune one to the actual
+distance and behavior; built-in easing can be adequate. Verify the result:
 
 ```css
 --ease-out:    cubic-bezier(0.23, 1, 0.32, 1);   /* strong UI ease-out - the corpus's easeOutQuint (Raycast, refetch) */

@@ -53,8 +53,9 @@ below is a catalog of optional treatments, not a list to apply everywhere.
 | **Nothing matches** | Don't invent - leave static, or ask. Static is a legitimate answer (animation-craft gate). | |
 
 Tie-break: prefer the lighter transition (resize over panel, dropdown over
-modal, success check over a celebration modal). If the element is hit 100+
-times a day (shortcuts, command palette), the gate wins: no motion.
+modal, success check over a celebration modal). For very frequent
+interactions, omit motion that delays response or distracts from repeated work.
+Keyboard and pointer users still receive clear immediate state feedback.
 
 ## Text effect families (animate-text) - pick by unit, not by mood
 

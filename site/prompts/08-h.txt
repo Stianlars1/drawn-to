@@ -1,0 +1,33 @@
+Use this visual direction: Emissive signal
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#h
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the 55-slide showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A sparse dark page with centred type and one physical-looking action slot. A thin amber line under the slot provides the single luminous event.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Near-black #08080a, soft silver type and amber #ffb43c. Build a small bright source, a wider low-opacity halo and a dark recessed surround. Keep the rim and slot visible through the glow; body copy needs sufficient contrast independently of the atmospheric effect.
+
+BEHAVIOR
+Use local light and label feedback on press/copy. If a signal sweeps, its bright head and softer tail must stay on the same line and stop at rest.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/arknow91-2089955524007674031.md
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/insporadesign-2088123952136638508.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/catalog.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/catalog.css
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/legacy-polish.css
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Bloom must not wash out the action label. Check close-up edge sharpness, silhouette at a distance and contrast on both desktop and phone.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

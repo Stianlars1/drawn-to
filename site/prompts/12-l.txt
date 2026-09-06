@@ -1,0 +1,33 @@
+Use this visual direction: Print ledger
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#l
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the 55-slide showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A framed sheet presents twelve carefully aligned rows. Narrow serif title, small document metadata, row numbers, dotted leaders and a right-aligned value column create the hierarchy. A thin print band closes the sheet.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Warm gray board, white paper, charcoal text, faded red row numbers and minute halftone. Keep baseline alignment and dotted leader density exact. Values use tabular mono. Let subtle paper edges supply the depth.
+
+BEHAVIOR
+Primarily a still reading surface. If the content uses sample or historical data, keep that label visible at every breakpoint.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/basit_designs-2089995658640122065.md
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/yurygok-2089624786213237049.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/catalog.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/catalog.css
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/legacy-polish.css
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Read every row at mobile scale. Align the last digits; retain the source/date qualifier; do not invent counts to make the ledger look authoritative.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

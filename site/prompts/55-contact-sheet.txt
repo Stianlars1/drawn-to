@@ -1,0 +1,31 @@
+Use this visual direction: The things you keep
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#contact-sheet
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the 55-slide showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A dark film-editor composition balances large serif/sans words on the left with one large selected photograph, bounded by perforated film rails. A bottom strip presents six richly different image thumbnails. Caption and selected-frame count stay aligned with the main image.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Charcoal-green #191c1b, soft ivory type and a pale acid-green accent. Image frames have restrained borders and precise gutters. Contrast chrome/velvet, a night garden, paper, glass/foliage, studio materials and engraved ink without forcing them through one color filter.
+
+BEHAVIOR
+Selecting a thumbnail updates the large image, caption and selected state. Left/right controls reorder the selected frame within the strip and correctly disable at either end. The main image opens a detail dialog. Preserve focus during reordering and report position accessibly.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+The source lists six original images in site/js/expansion/atelier-collection.js. Preserve comparable subject and material diversity, with optimized but inspectable image resolution.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/LexnLin-2095920966899728661.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/atelier-collection.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/atelier-collection.css
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Check all six actual image crops and their selection states. Do not replace detailed originals with low-resolution thumbnails or gradient placeholders.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

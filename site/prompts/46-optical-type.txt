@@ -1,0 +1,34 @@
+Use this visual direction: Optical type / liquid glass
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#optical-type
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the 55-slide showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+Oversized two-line black typography fills an ivory optical specimen. A single thick oblate glass lens overlaps the words; thin horizontal registration lines and a small acid-yellow mark provide optical reference points. Keep the enormous typography and lens as the entire visual event. The bottom contains two quiet captions and one compact lens-position control.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Ivory #f5f5f0, near-black #20231f and transparent slightly cyan-absorbing glass. The lens magnifies and bends the letterforms behind it, with a rounded meniscus-like edge, sharp elongated softbox reflections, a faint cyan rim, clear dark/light internal boundaries and a soft offset contact shadow. Actual implementation: a Three.js physical glass sphere scaled roughly 1.08/.97/.44, transmission 1, roughness .015, thickness 1.25, IOR 1.48, dispersion .028 and clearcoat 1, viewed orthographically over a CanvasTexture typography plane. Those are this showcase implementation values, not claims about the source author.
+
+BEHAVIOR
+Horizontal drag or slider moves the lens across the words; pointer height influences vertical position. Real refraction moves with it. Text behind the lens is a scene texture; preserve equivalent semantic DOM text. It is demand-rendered: no idle animation loop is needed after settling. Keep three composed fallback positions and a separate portrait crop.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/DmitryLepisov-2093247212629139641.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/studio.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/atelier-studio.css
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/atelier/runtime.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/atelier/materials.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/atelier/scenes/optical.js
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Compare the same lens position against the live scene at 1440x900, 1280x720 and 390x844. Inspect letter distortion, rim width, highlight shape, shadow offset and lens scale. A frosted rectangle, backdrop blur or glossy CSS bubble is below this target. Reuse the actual optical implementation if needed to preserve the effect.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

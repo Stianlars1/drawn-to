@@ -59,7 +59,7 @@ buttons, closing CTA and footer - and to sanity-check any full-page build.
 
 ## The first screen is a different problem
 
-The values above are page-scale architecture and they hold. They do NOT
+The values above record the archived page-scale architecture. They do NOT
 describe how these sites compose their FIRST screen, and that gap produced
 three failed landing screens on 2026-08-21 before it was noticed. Hero-scale
 composition, the optics values that make a field read as real, and the Field
@@ -73,7 +73,8 @@ before building any first screen; read this one for everything below the fold.
 
 ## Recurring page-scale patterns (adapt to the brief)
 
-1. One container, 1200-1400px, gutters 24-40.
+1. These examples often use one 1200-1400px container and 24-40px gutters.
+   Choose the actual width from content, imagery and target viewports.
 2. Big air: 96-128px section padding or 208px margins; rhythm varies (dense
    bento, then a breathing chapter, then a full-bleed frame).
 3. Common type hierarchy: H1 60-96, H2 48-56, feature title 20-30; weights
@@ -81,9 +82,10 @@ before building any first screen; read this one for everything below the fold.
    1.0-1.1. Body 15-18 grey (55-65% white), lh 1.5-1.65, 55-65ch.
 4. Mono is a recurring technical metadata voice, not a requirement for numbers, labels, FIG tags, install hints, counts.
 5. Borders 1px white-alpha 5-15% (or tinted alpha), often box-shadow rings;
-   shadows rare and soft; glass = inset 1px top highlight.
+   shadows rare and soft in the flat UI examples. An inset top highlight is
+   a surface cue; it does not recreate thick optical glass or refraction.
 6. Radii 6-8 controls / 12-16 cards / 20-24 device frames; nested radius =
-   outer - padding.
+   outer - padding where equal-offset circular geometry applies.
 7. Motion .1-.2s hover, .3s panels, ease-out; hover changes brightness/
    border/glow, not position (Vite's iso lift is the deliberate exception).
 8. Product visuals are real UI, framed once, often bleeding off an edge,

@@ -1,0 +1,31 @@
+Use this visual direction: An explanatory menu
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#menu-preview
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the 55-slide showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A light editorial intro leads to a small source control, a compact menu and a larger adjacent preview. Hover/focus/selection makes the consequences of an option visible before commitment.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Warm white #f8f7f2, forest-gray ink and quiet green selection. Menu rows have distinct miniature composition icons, short descriptive text and a small arrow. The preview is a real miniature page with a browser rim and well-drawn content.
+
+BEHAVIOR
+Hero, feature and onboarding options produce different preview layouts. Support pointer, roving keyboard selection, Escape close and focus return. Avoid changing the menu width or leaving preview state inconsistent.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/pqoqubbw-2093012429240431093.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/interactive.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/extra-interactive.css
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Check the menu open and closed at narrow widths. Tiny previews must still show a recognizable composition rather than arbitrary gray bars.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

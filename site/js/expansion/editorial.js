@@ -110,15 +110,9 @@
       reference: "AdityaSur11-2096160317458030911",
       theme: cream,
       render() {
-        return `<section class="ed-scenic"><div class="ed-scenic-copy"><h1>Make it yours.</h1><p>A visual direction should feel like<br>somewhere you want to stay.</p></div><div class="ed-scenic-next"><p>Begin with a point of view.</p><button class="ed-text-button" data-start>Copy a starting prompt <span aria-hidden="true">↗</span></button><a href="${repo}/tree/main/skills/drawn-to/references">Walk through the library <span aria-hidden="true">↗</span></a><p class="ed-status" role="status"></p></div><img class="ed-scenic-art" src="${assets}garden-panorama.png" alt="An original blue engraving of a garden house, mature oak and quiet shoreline."><span class="ed-scenic-note">A direction, thoughtfully inhabited.</span></section>`;
+        return `<section class="ed-scenic"><div class="ed-scenic-copy"><h1>Make it yours.</h1><p>A visual direction should feel like<br>somewhere you want to stay.</p></div><div class="ed-scenic-next"><p>Begin with a point of view.</p><button class="ed-text-button" data-start data-style-copy>Copy this style prompt <span aria-hidden="true">↗</span></button><a href="${repo}/tree/main/skills/drawn-to/references">Walk through the library <span aria-hidden="true">↗</span></a><p class="ed-status" role="status"></p></div><img class="ed-scenic-art" src="${assets}garden-panorama.png" alt="An original blue engraving of a garden house, mature oak and quiet shoreline."><span class="ed-scenic-note">A direction, thoughtfully inhabited.</span></section>`;
       },
       mount(root, { signal }) {
-        copyAction(
-          root,
-          "[data-start]",
-          "Use Drawn To to help me find a visual direction that fits my project. Start by understanding what it is for and the people it should serve.",
-          signal,
-        );
         return () => {};
       },
     },
@@ -129,7 +123,7 @@
       reference: "DesignByMoein-2095937596665024817",
       theme: warm,
       render() {
-        return `<section class="ed-choices"><header><h1>A direction for<br>where you are.</h1><p>Choose the kind of help your idea needs.</p></header><div class="ed-mode-tabs" aria-label="Choose a working mode">${modes.map((m, i) => `<button data-mode="${i}" aria-pressed="${i === 1}">${m.name}</button>`).join("")}</div><div class="ed-choice-grid"><div class="ed-peeker" aria-hidden="true"><img src="${assets}peeking-bird.png" alt=""></div>${modes.map((m, i) => `<article class="ed-choice-card" data-card="${i}" data-selected="${i === 1}"><div class="ed-choice-top"><h2>${m.name}</h2><span class="ed-choice-chosen">Selected</span></div><p class="ed-choice-headline">${m.headline}</p><p class="ed-choice-description">${m.description}</p><ul>${m.lines.map((line) => `<li><span aria-hidden="true">✓</span>${line}</li>`).join("")}</ul><button data-mode="${i}" aria-pressed="${i === 1}">Choose ${m.name}<span aria-hidden="true">↗</span></button></article>`).join("")}</div><div class="ed-choice-prompt"><p data-mode-summary>Turn your chosen direction into a written design lock.</p><button class="ed-text-button" data-copy-mode>Copy this prompt <span aria-hidden="true">↗</span></button><p class="ed-status" role="status"></p></div></section>`;
+        return `<section class="ed-choices"><header><h1>A direction for<br>where you are.</h1><p>Choose the kind of help your idea needs.</p></header><div class="ed-mode-tabs" aria-label="Choose a working mode">${modes.map((m, i) => `<button data-mode="${i}" aria-pressed="${i === 1}">${m.name}</button>`).join("")}</div><div class="ed-choice-grid"><div class="ed-peeker" aria-hidden="true"><img src="${assets}peeking-bird.png" alt=""></div>${modes.map((m, i) => `<article class="ed-choice-card" data-card="${i}" data-selected="${i === 1}"><div class="ed-choice-top"><h2>${m.name}</h2><span class="ed-choice-chosen">Selected</span></div><p class="ed-choice-headline">${m.headline}</p><p class="ed-choice-description">${m.description}</p><ul>${m.lines.map((line) => `<li><span aria-hidden="true">✓</span>${line}</li>`).join("")}</ul><button data-mode="${i}" aria-pressed="${i === 1}">Choose ${m.name}<span aria-hidden="true">↗</span></button></article>`).join("")}</div><div class="ed-choice-prompt"><p data-mode-summary>Turn your chosen direction into a written design lock.</p><button class="ed-text-button" data-copy-mode>Copy this workflow <span aria-hidden="true">↗</span></button><p class="ed-status" role="status"></p></div></section>`;
       },
       mount(root, { signal }) {
         let selected = 1;

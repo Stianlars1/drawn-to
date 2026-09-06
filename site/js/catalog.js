@@ -12,7 +12,7 @@ const C = {
     e:['Twelve craft defaults.','Eight starting families. A direction chosen for your project.'],
     f:['It reads your repo first.','Discovery runs before any question, so you never explain what the code already says.'],
     g:['One lock file.','Every visual decision serves a row you can point at.'],
-    h:['Show it, never describe it.','Give each feature meaningful visual evidence.'],
+    h:['A signal worth noticing.','One small source. A clear next step.'],
     i:['Taste, in one command.',''],
     t:['Give your agent taste.','']
   },
@@ -20,14 +20,14 @@ const C = {
           f:'ink & air', g:'isometric blueprint', h:'emissive signal', i:'tactile instrument',
           j:'divider-cut trio', k:'pebble trio', l:'print ledger', m:'mosaic gallery', n:'emissive metrics',
           o:'frozen interaction', p:'chapters', q:'outlined bento', r:'instrument hud', s:'paper slips',
-          t:'editorial close', u:'proof diptych', v:'the refusals', w:'two registers', x:'stop conditions',
-          y:'contact sheet', z:'clash matrix', A:'a real run', B:'works with', C:'the measured page', D:'both modes'},
+          t:'editorial close', u:'proof diptych', v:'the correction ledger', w:'two registers', x:'stop conditions',
+          y:'contact sheet', z:'blend matrix', A:'an example run', B:'works with', C:'the measured page', D:'both modes'},
   steps: [['01','Discover','Reads tokens, docs and product truth before a single question.',['1.1 prior lock files','1.2 design tokens','1.3 product source']],
           ['02','Interview','Plain-language questions answered with weights, never forced picks.',['2.1 blend proposal','2.2 axis locks','2.3 section variants']],
           ['03','Lock','Every visual decision serves a row you can point at.',['3.1 firmness per row','3.2 revisions add','3.3 nothing erased']]],
   out: [['Lock file','One markdown ledger per project. Every row carries firmness and consequence.',[['docs/design-locks/','',18,26],['cross-fade · 700 ms','g',56,150]]],
         ['Illustration concepts','Two to four concepts per feature, each with a construction recipe.',[['comet arc · 15°/s','',26,40],['iso 2:1 · rise 52','g',44,138]]],
-        ['Animation specs','Curves, durations and stop conditions, read off the frames.',[['blur 12 → 0 · 460 ms','',20,34],['linear · never eased','g',52,142]]]],
+        ['Animation specs','Curves, durations and stop conditions, read off the frames.',[['blur 12 → 0 · 460 ms','',20,34],['steady carrier · eased response','g',52,142]]]],
   consts: [['01','Quarantine the colour','45/45'],['02','Show the feature','33/45'],['03','Separation ladder','45/45'],
            ['04','Hierarchy by size and gray','35/45'],['05','Two voices, one mono','22/45'],['06','Two motion registers','27/27'],
            ['07','Loops close frame-perfectly','17/27'],['08','Stepped radius families','20/45'],['09','Texture every gradient','11/13'],
@@ -48,31 +48,31 @@ const C = {
         ['02','Brief','"Here is what I found - correct?" Corrections are taken as free facts, and only the gaps become questions.',[['5-8','lines of brief'],['1','batched exchange']]],
         ['03','Blend','Two or three directions from the eight families, answered with weights instead of a single pick. Clashes are named, and the scale-split resolution is offered before anything is built.',[['70','Editorial Monochrome'],['20','Staged Atmosphere'],['10','Blueprint Sheet']]],
         ['04','Lock','One plain-language question per open axis, each recorded the moment it is answered, with a firmness and a consequence.',[['must-have','or prefer, per row'],['0','rows ever deleted']]],
-        ['05','Variants','Two or three compositions per section, filtered by the locked blend; for feature work, two to four illustration concepts per feature.',[['32','section recipes'],['2-4','concepts per feature']]],
-        ['06','Build','Every visual change serves a named row. Then the quality bar, the visual check at three sizes, and the polish pass.',[['3','viewports rendered'],['0','tells allowed']]]],
-  refuse: [['01','an em dash anywhere in copy'],['02','an eyebrow label above every heading'],
-           ['03','a headline over six words'],['04','three calls to action in one view'],
-           ['05','a stat strip with five numbers'],['06','a centred blob passed off as light'],
-           ['07','conic stripes passed off as rays'],['08','a glyph inside a ring as the object'],
-           ['09','icon-and-paragraph feature cards'],['10','a gradient with no grain on it']],
-  stops: [['01','While the screen is off',"An ambient loop runs only while its screen is on stage. Off screen it is stopped, not merely hidden - a paused loop still costs a frame."],
-          ['02','While the pointer is over it',"Hover pauses the loop under the cursor, so a visitor who stops to read is never fighting motion they did not ask for."],
-          ['03','When motion is reduced',"The system setting wins outright. Loops stop, transitions collapse to zero, and every screen lands on the pose it was designed to hold."],
-          ['04','When the loop closes',"Concurrent loops run on periods that share no common multiple, so the page never falls into unison and starts beating."]],
+        ['05','Variants','Two or three compositions per section, filtered by the locked blend; for feature work, two to four illustration concepts per feature.',[['varied','section recipes'],['2-4','concepts per feature']]],
+        ['06','Build','Every visual change serves a named row. Then the quality bar, the visual check at three sizes, and the polish pass.',[['3','viewports rendered'],['checked','actual output']]]],
+  refuse: [['01','essential content clipped on mobile'],['02','a button with no working action'],
+           ['03','a number with no stated source'],['04','a diagram that explains nothing'],
+           ['05','body copy lost in the background'],['06','glass without thickness or refraction'],
+           ['07','light without a coherent direction'],['08','motion that fights the reader'],
+           ['09','a fallback that loses the composition'],['10','a claim that the render cannot support']],
+  stops: [['01','When the page is hidden',"Stop frame requests and timers while the tab is hidden. Resume deliberately when it becomes visible."],
+          ['02','When you take control',"A demonstration yields to a click, touch or keyboard choice. Your selection stays yours."],
+          ['03','When motion is reduced',"Honor the system preference. Keep a complete resting composition and immediate working controls."],
+          ['04','When nothing is changing',"Static scenes render on demand. Once the response has settled, there is no reason to request another frame."]],
   sheet: 'bl sd fl fl sl bl bl cl hl fd bm il bd fd sb cb cb sl cd cd fl dd rd cl sd rb cl rm cl cd rl dd hm cd fd fl sm fl id fl rb cd cl cd cl fm fd hd sd sl hl fl hm bl bd sd fl',
   fams8: ['Editorial Monochrome','Ink & Air','Staged Atmosphere','Blueprint Sheet','Paper & Print','Soft Pastel Stage','Tactile Instruments','Emissive Signal'],
   pairs: {
-    '0-3':['ok','Structure and its paratext','Six references run them together. The blueprint numbering and mono labels drop straight into the editorial gray ramp, because both are built from hairlines and radius zero.'],
-    '1-2':['ok','The light page recipe','Five references. A grayscale light shell with one atmospheric asset is the highest-frequency light composition in the whole corpus.'],
-    '0-2':['ok','The dark page recipe','Three references. Smoke, chrome or photography carried inside a divider-cut editorial frame - one asset, reused, never invented per section.'],
-    '5-4':['ok','Warm neutral with print artifacts','Two references. Reconciliation rule: keep the outer cards near-square when crop marks frame them, or the squircle fights the register mark.'],
-    '5-1':['ok','The consumer lane','One reference belongs to both. Take the pastel ground, radius and shadow, then the ink discipline and the caption rules on top.'],
-    '5-3':['no','Opposite separation physics','Zero co-occurrence in the corpus. Squircle, shadow and pastel against radius zero, hairline and mono - the two systems separate surfaces in contradictory ways.'],
-    '5-0':['no','Two ways to separate a surface','Zero co-occurrence. Shadow-borne softness against near-threshold hairline structure. Pick one physics per surface; a page cannot hold both.'],
-    '4-7':['no','Ink against emitted light','Zero co-occurrence. Printed ink and light that radiates are contradictory material metaphors - one is pigment on a sheet, the other is a source.']
+    '0-3':['ok','Structure and its annotations','Editorial hierarchy and blueprint linework share an economical vocabulary. Use the drawing to explain something, and let the text remain the reading anchor.'],
+    '1-2':['ok','A light page with atmosphere','A quiet light shell gives a richer image room to carry material, light and emotion. Keep its crop and the reading area deliberately composed.'],
+    '0-2':['ok','A dark page with a focal scene','Editorial structure can frame smoke, chrome or photography. Match the surrounding values and preserve the asset’s depth.'],
+    '5-4':['ok','Softness and print detail','Warm soft surfaces can carry paper grain and printed registration marks. Decide which marks belong to paper and which belong to the interface.'],
+    '5-1':['ok','Soft ground, clear reading','Pastel atmosphere and disciplined ink can share one composition. Use contrast and spacing to keep the soft surface useful.'],
+    '5-3':['no','Choose the role of each surface','Soft volumes and precise drafting lines can coexist. Give the object its physical surface and the measurements their own annotation layer.'],
+    '5-0':['no','Reconcile the separation','A soft object can live in an editorial frame. Make the contact shadow belong to the object, and the hairline belong to the page.'],
+    '4-7':['no','Distinguish ink from light','Printed paper and emitted light can share a scene if their sources and boundaries are clear. Judge the composition; a missing archive pairing is not a ban.']
   },
   run: [['p','npx skills add Stianlars1/drawn-to'],
-        ['o','<b>added</b> skills/drawn-to <u>85 references</u>, 12 craft defaults, 8 starting families'],
+        ['o',`<b>added</b> skills/drawn-to <u>${window.DrawnToLibrary.total} references</u>, 12 craft defaults, 8 starting families`],
         ['sp',''],
         ['p','redesign the pricing section'],
         ['o','<b>reads</b> README.md, docs/, design tokens <u>3 found</u>'],
@@ -115,7 +115,8 @@ const ICONS = `<svg class="i-copy" viewBox="0 0 16 16" fill="none" stroke="curre
 const CMD = () => `<span class="cmd"><span class="p">$</span>${C.cmd}<button type="button" class="copy" data-state="idle" aria-label="Copy install command" onclick="copyCmd(this)"><span class="swap"><span class="w1">copy</span><span class="w2">copied</span></span><span class="ico">${ICONS}</span></button></span>`;
 /* I - the command IS the instrument: bezel, recessed track, machined cap, lit indicator window */
 const CMD_HW = () => `<div class="hw"><div class="track"><button type="button" class="cap" data-state="idle" aria-label="Copy install command" onclick="copyCmd(this)"><span class="p">$</span>${C.cmd}<span class="win" aria-hidden="true"><i></i></span></button></div></div>`;
-const TOP = () => `<div class="top"><a class="brand" href="#${ORDER[0]}">Drawn To</a><a class="gh" href="${C.repo}">GitHub</a></div>`;
+const STYLE_ACTIONS = () => `<div class="scene-prompt-actions"><button type="button" data-style-copy>Copy this prompt</button><button type="button" data-style-preview aria-label="Preview this style prompt" title="Preview prompt">↗</button></div>`;
+const TOP = () => `<div class="top"><a class="brand" href="#${ORDER[0]}">Drawn To</a><div class="scene-actions">${STYLE_ACTIONS()}<a class="gh" href="${C.repo}">GitHub</a></div></div>`;
 const NUMS = (cls) => `<span class="${cls||'nums'}">${C.nums.map(([n,l])=>`<b data-count="${n}">${n}</b> ${l}`).join(' &middot; ')}</span>`;
 function arrow(d){ return `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="${d}"/></svg>`; }
 const PREV = () => `<button type="button" class="cb" data-act="prev" aria-label="Previous direction">${arrow('M9.5 3.5 5 8l4.5 4.5')}</button>`;
@@ -164,8 +165,8 @@ const CORE = () => `<svg class="core" viewBox="52 84 470 600" fill="none" aria-l
   <rect id="sw" x="354" y="234" width="150" height="5" fill="#f9f9f9" stroke="#3A3F4B" stroke-width=".8"/>
   <path stroke="#242832" d="M354 148.0h150M354 246.0h150"/>
 </g>
-<text class="lb hot" x="120" y="634">one reference per lamina</text>
-<text class="lb dim" x="120" y="650">44 of them measured to the hex</text>
+<text class="lb hot" x="120" y="634">archived study · 52 laminae</text>
+<text class="lb dim" x="120" y="650">44 recorded grounds · August 2026</text>
 </svg>`;
 
 /* E - one lit object: a thin ring with a single comet arc, linear rotation (ambient register) */
@@ -231,7 +232,7 @@ const BELT = (n) => {
   const set = n ? C.tools.slice(4).concat(C.tools.slice(0,4)) : C.tools;
   const one = set.map(function(t){ return '<i><b></b>' + t + '</i>'; }).join('') +
     '<i class="q">anything that reads a skill file</i>';
-  return '<div class="track">' + one + one + '</div>';
+  return '<div class="track"><span class="belt-set">' + one + '</span><span class="belt-set" aria-hidden="true">' + one + '</span></div>';
 };
 
 const KNOB = () => {
@@ -503,17 +504,17 @@ const FIGS = {
 </svg>`
 };
 const GAUGE = () => {
-  const N=60, on=51, cx=300, cy=250, r1=168, r2=196, t=[];
+  const N=100, on=window.DrawnToLibrary.total, cx=300, cy=250, r1=168, r2=196, t=[];
   for(let i=0;i<N;i++){ const a=Math.PI*(1.055 + .89*i/(N-1)), c=Math.cos(a), v=Math.sin(a);
     t.push(`<path class="tk${i<on?' on':''}" d="M${(cx+c*r1).toFixed(1)} ${(cy+v*r1).toFixed(1)}L${(cx+c*r2).toFixed(1)} ${(cy+v*r2).toFixed(1)}" stroke-width="${i<on?2.2:1.4}" stroke-linecap="round"/>`); }
   const ae=Math.PI*(1.055+.89*(on-1)/(N-1));
   return `<svg class="gauge" viewBox="0 0 600 330" fill="none" aria-hidden="true">
     <defs><filter id="gb" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter></defs>
     <circle cx="${(cx+Math.cos(ae)*182).toFixed(1)}" cy="${(cy+Math.sin(ae)*182).toFixed(1)}" r="13" fill="rgba(255,180,60,.45)" filter="url(#gb)"/>
-    <g>${t.join('')}</g>
-    <text class="rd" x="${cx}" y="244" text-anchor="middle">51</text>
+    <path d="M98 215A207 207 0 0 1 502 215" stroke="#4a4235" stroke-width="1"/><path d="M144 226A160 160 0 0 1 456 226" stroke="#2d302e" stroke-width="1"/><g>${t.join('')}</g>
+    <text class="rd" x="${cx}" y="244" text-anchor="middle">${on}</text>
     <text class="un" x="${cx}" y="270" text-anchor="middle">REFERENCES</text>
-    <text class="sp" x="${cx}" y="302" text-anchor="middle">setpoint 45 · ceiling 60</text>
+    <text class="sp" x="${cx}" y="302" text-anchor="middle">library snapshot · scale 0–100</text>
   </svg>`;
 };
 const SCREEN = {
@@ -537,34 +538,34 @@ const SCREEN = {
   l: f => `<div class="col">${TOP()}<div class="body"><div class="sheet"><div class="hd"><h2>The original twelve</h2><span>historical sample · now scoped by context</span></div><div class="rows">${C.consts.map(([k2,t2,v])=>`<div class="r"><span class="k">${k2}</span><span class="t"><span>${t2}</span><i></i></span><span class="v">${v}</span></div>`).join('')}</div><div class="band" aria-hidden="true"></div></div></div>${BOTTOM('l')}</div>`,
 
   /* M - gallery of family plates over one processed chroma field (kevserctk-2090) */
-  m: f => `<div class="mosaic" aria-hidden="true"></div><div class="grain"></div><div class="col">${TOP()}<div class="stage"><h2 class="head${f?' first':''}">Eight families</h2><div class="plates">${C.fams.map(([id,nm,sw,ct])=>`<div class="pl"><span class="id">${id}</span><div class="sw">${sw.map(c=>`<i style="background:${c}"></i>`).join('')}</div><h3>${nm}</h3><small>${ct} references</small></div>`).join('')}</div></div>${BOTTOM('m')}</div>`,
+  m: f => `<div class="mosaic" aria-hidden="true"></div><div class="grain"></div><div class="col">${TOP()}<div class="stage"><h2 class="head${f?' first':''}">Eight families</h2><div class="plates">${C.fams.map(([id,nm,sw,ct])=>`<div class="pl"><span class="id">${id}</span><div class="sw">${sw.map(c=>`<i style="background:${c}"></i>`).join('')}</div><h3>${nm}</h3><small>starting vocabulary</small></div>`).join('')}</div></div>${BOTTOM('m')}</div>`,
 
   /* N - metrics, one bespoke chart form invented for this data (yurygok-2089624) */
   n: f => `<div class="col">${TOP()}<div class="stage"><h2 class="head${f?' first':''}">The original family sample</h2><p class="headsub">Historical family membership in the initial sample. Newer references extend the library beyond these groups.</p><div class="plot">${C.fams.map(([,nm,,ct])=>`<span class="fid">${nm}</span><span class="dots">${Array.from({length:ct},()=>'<i></i>').join('')}</span><span class="ct">${ct}</span>`).join('')}</div></div>${BOTTOM('n')}</div>`,
 
-  /* O - one frozen product fragment, held mid-answer with real values */
-  o: f => `<div class="col">${TOP()}<div class="body" style="justify-content:center"><div class="frag"><div class="bar"><span>drawn-to · question 3 of 8</span><span>weighted multi-select</span></div><div class="q">Which directions should the blend carry?</div><div class="opts"><div class="op on"><span class="box"></span><span>Editorial Monochrome</span><span class="wt">70</span></div><div class="op on"><span class="box"></span><span>Staged Atmosphere</span><span class="wt">20</span></div><div class="op on"><span class="box"></span><span>Blueprint Sheet</span><span class="wt">10</span></div><div class="op"><span class="box"></span><span>Soft Pastel Stage</span><span class="wt">0</span></div></div><div class="ft"><span>clash check: none</span><span><b>100</b> / 100</span></div></div></div>${BOTTOM('o')}</div>`,
+  /* O - one illustrative product fragment, held mid-answer */
+  o: f => `<div class="col">${TOP()}<div class="body" style="justify-content:center"><div class="frag"><div class="bar"><span>example · question 3 of 8</span><span>weighted multi-select</span></div><div class="q">Which directions should the blend carry?</div><div class="opts"><div class="op on"><span class="box"></span><span>Editorial Monochrome</span><span class="wt">70</span></div><div class="op on"><span class="box"></span><span>Staged Atmosphere</span><span class="wt">20</span></div><div class="op on"><span class="box"></span><span>Blueprint Sheet</span><span class="wt">10</span></div><div class="op"><span class="box"></span><span>Soft Pastel Stage</span><span class="wt">0</span></div></div><div class="ft"><span>clash check: none</span><span><b>100</b> / 100</span></div></div></div>${BOTTOM('o')}</div>`,
 
   /* P - chapters: numbered index rail + one panel (piyushsphere-2089714) */
-  p: f => `<div class="col">${TOP()}<div class="body"><div class="chap"><div class="rail">${C.six.map(([ix,lb],i)=>`<div class="st${i===2?' on':''}" data-step="${i}" role="button" tabindex="0"><span class="ix">${ix}</span><span class="lb">${lb}</span></div>`).join('')}</div><div class="panel" data-swap="in"><div class="swapzone"><div><h3>${C.six[2][1]}</h3><p>${C.six[2][2]}</p><ul class="spec">${C.six[2][3].map(([k,v])=>`<li><b>${k}</b>${v}</li>`).join('')}</ul></div></div></div></div></div>${BOTTOM('p')}</div>`,
+  p: f => `<div class="col">${TOP()}<div class="body"><div class="chap"><div class="rail">${C.six.map(([ix,lb],i)=>`<button type="button" class="st${i===2?' on':''}" data-step="${i}" aria-pressed="${i===2}"><span class="ix">${ix}</span><span class="lb">${lb}</span></button>`).join('')}</div><div class="panel" data-swap="in"><div class="swapzone"><div><h3>${C.six[2][1]}</h3><p>${C.six[2][2]}</p><ul class="spec">${C.six[2][3].map(([k,v])=>`<li><b>${k}</b>${v}</li>`).join('')}</ul></div></div></div></div></div>${BOTTOM('p')}</div>`,
 
   /* Q - 2x2 outlined bento, one focal and three ghosted (C11) */
-  q: f => `<div class="col">${TOP()}<div class="stage"><h2 class="head${f?' first':''}">Beyond the direction</h2><div class="bento">${C.pillars.map(([t2,p2,ml,fo])=>`<div class="bc${fo?' focal':''}"><h3>${t2}</h3><p>${p2}</p><ul class="ml">${ml.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}</div></div>${BOTTOM('q')}</div>`,
+  q: f => `<div class="col">${TOP()}<div class="stage"><h2 class="head${f?' first':''}">Beyond the direction</h2><div class="bento">${C.pillars.map(([t2,p2,ml,fo],ix)=>`<div class="bc${fo?' focal':''}">${window.DrawnToLegacyDetail(ix)}<h3>${t2}</h3><p>${p2}</p><ul class="ml">${ml.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}</div></div>${BOTTOM('q')}</div>`,
 
   /* R - instrument HUD: segmented gauge reading the corpus (recentdesign-2089) */
-  r: f => `<div class="col">${TOP()}<div class="body" style="justify-content:center;gap:26px">${GAUGE()}<div class="reads"><span>FAMILIES <b>08</b></span><span>CONSTANTS <b>12</b></span><span>RECIPES <b>32</b></span></div></div>${BOTTOM('r')}</div>`,
+  r: f => `<div class="col">${TOP()}<div class="body" style="justify-content:center;gap:26px">${GAUGE()}<div class="reads"><span>FAMILIES <b>08</b></span><span>DEFAULTS <b>12</b></span><span>SCENES <b>${TOTAL}</b></span></div></div>${BOTTOM('r')}</div>`,
 
   /* S - gallery of paper slips: revisions never erase (AlexandruDranga-2090) */
   s: f => `<div class="grain"></div><div class="col">${TOP()}<div class="stage"><h2 class="head${f?' first':''}">Revisions add, never erase</h2><div class="slips">${C.rev.map(([rv,t2,p2])=>`<div class="slip"><i class="cm2 a"></i><i class="cm2 b"></i><span class="rv">${rv}</span><h3>${t2}</h3><p>${p2}</p></div>`).join('')}</div></div>${BOTTOM('s')}</div>`,
 
   /* 21 - comparison. One frame, one travelling divider: the only variable is the library. */
-  u: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">Same model. Same brief.</h2><p class="headsub">Two agents, the same five-feature brief, the same empty folder. One had a well-engineered skill with an empty knowledge layer. The other had this library.</p><div class="diptych"><img src="assets/proof-same-model-same-brief.jpg" alt="Left: a competent anonymous dark bento built without a taste library. Right: the same model with a divider-cut, radius-zero, numbered section carrying instrument illustrations."><i class="cut"><img src="assets/proof-same-model-same-brief.jpg" alt=""></i><i class="bar"></i></div><div class="dcap"><span>without the library</span><span><b>one variable</b></span><span>with it</span></div></div>${BOTTOM('u')}</div>`,
+  u: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">Two earlier approaches.</h2><p class="headsub">An archived comparison from the first library experiments. Look at how the second approach gives each feature its own visual evidence.</p><span class="compare-hint">Swipe to compare both treatments →</span><div class="diptych" data-scroll-region tabindex="0" role="region" aria-label="Archived visual comparison"><img src="assets/proof-same-model-same-brief.jpg" alt="Left: a competent anonymous dark bento built without a taste library. Right: the same model with a divider-cut, radius-zero, numbered section carrying instrument illustrations."></div><div class="dcap"><span>earlier treatment</span><span><b>archived example</b></span><span>with reference studies</span></div></div>${BOTTOM('u')}</div>`,
 
   /* 22 - ledger of refusals. The rule through each line is the device. */
-  v: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">What it will not ship</h2><div class="no">${C.refuse.map(function(r){return '<i><em>'+r[0]+'</em><s>'+r[1]+'</s></i>';}).join('')}</div><p class="nofoot">ten of them, checked against every render before handoff</p></div>${BOTTOM('v')}</div>`,
+  v: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">What the review catches</h2><div class="no">${C.refuse.map(function(r){return '<i><em>'+r[0]+'</em><s>'+r[1]+'</s></i>';}).join('')}</div><p class="nofoot">observable problems · reviewed in the actual render</p></div>${BOTTOM('v')}</div>`,
 
   /* 23 - metrics. Two runners, and the argument is that one never accelerates. */
-  w: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">Two registers, never mixed.</h2><div class="reg"><div class="a"><div class="lab"><span><b>ambient</b> &middot; the background is alive</span><span>linear &middot; constant velocity &middot; 4 s</span></div><div class="tr">${[1,2,3,4,5,6,7].map(function(i){return '<i class="tk" style="left:'+(i*12.5)+'%"></i>';}).join('')}<i class="dot"></i></div></div><div class="b"><div class="lab"><span><b>interaction</b> &middot; something answered you</span><span>eased &middot; 150-800 ms &middot; 2.6 s cycle</span></div><div class="tr">${[1,2,3,4,5,6,7].map(function(i){return '<i class="tk" style="left:'+(i*12.5)+'%"></i>';}).join('')}<i class="dot"></i></div></div></div><p class="regfoot">an eased loop reads as a machine pretending to breathe &middot; never ease an infinite loop</p></div>${BOTTOM('w')}</div>`,
+  w: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">Give motion a purpose.</h2><div class="reg"><div class="a"><div class="lab"><span><b>ambient</b> &middot; the background is alive</span><span>linear &middot; constant velocity &middot; 4 s</span></div><div class="tr">${[1,2,3,4,5,6,7].map(function(i){return '<i class="tk" style="left:'+(i*12.5)+'%"></i>';}).join('')}<i class="dot"></i></div></div><div class="b"><div class="lab"><span><b>interaction</b> &middot; something answered you</span><span>eased traverse &middot; held endpoint &middot; 2.6 s cycle</span></div><div class="tr">${[1,2,3,4,5,6,7].map(function(i){return '<i class="tk" style="left:'+(i*12.5)+'%"></i>';}).join('')}<i class="dot"></i></div></div></div><p class="regfoot">two examples, not two laws · choose the timing that serves the action</p></div>${BOTTOM('w')}</div>`,
 
   /* 24 - instrument. A rotary with four detents; the reading is the stop condition. */
   x: f => `<div class="col">${TOP()}<div class="body"><div class="knob">${KNOB()}</div><div><h2 class="head${f?' first':''}">When it stops</h2><div class="stops">${C.stops.map(function(st,i){return '<button type="button" data-stop="'+i+'" aria-pressed="'+(i===0)+'"><i>'+st[0]+'</i><span>'+st[1]+'<small>'+st[2]+'</small></span></button>';}).join('')}</div></div></div>${BOTTOM('x')}</div>`,
@@ -574,19 +575,19 @@ const SCREEN = {
 
   /* 26 - matrix. Eight families against themselves; the marks are measured co-occurrence. */
   z: f => `<div class="col">${TOP()}<div class="body"><div class="mx"><span></span>${C.fams8.map(function(n){return '<span class="hd"><span>'+n.split(' ')[0]+'</span></span>';}).join('')}${C.fams8.map(function(n,r){return '<span class="rw">'+n+'</span>'+C.fams8.map(function(_,c){
-      if (r===c) return '<button class="c self" disabled></button>';
+      if (r===c) return '<span class="c self" aria-hidden="true"></span>';
       var k = C.pairs[r+'-'+c] || C.pairs[c+'-'+r];
-      return '<button type="button" class="c '+(k?k[0]:'')+'" data-p="'+(k?(C.pairs[r+'-'+c]?r+'-'+c:c+'-'+r):'')+'">'+(k&&k[0]==='ok'?'<i></i>':'')+'</button>';
-    }).join('');}).join('')}</div><div class="read"><span class="k">HOVER A CELL</span><h3 id="mxh">Which blends the corpus actually contains</h3><p id="mxp">Eight families, twenty-eight possible pairs. Five are proven by references that use both at once. Three never co-occur, and the reason is always physics, not taste.</p><span class="tag" id="mxt">5 proven &middot; 3 clash &middot; 20 untested</span></div></div>${BOTTOM('z')}</div>`,
+      return '<button type="button" class="c '+(k?k[0]:'')+'" data-p="'+(k?(C.pairs[r+'-'+c]?r+'-'+c:c+'-'+r):'')+'" data-row="'+r+'" data-column="'+c+'" tabindex="'+(r===0&&c===1?'0':'-1')+'" aria-label="'+n+' with '+C.fams8[c]+'">'+(k&&k[0]==='ok'?'<i></i>':'')+'</button>';
+    }).join('');}).join('')}</div><div class="read"><span class="k">EXPLORE A PAIR</span><h3 id="mxh">How two vocabularies meet</h3><p id="mxp">Eight starting families, twenty-eight possible pairs. Some share an established vocabulary; others need a deliberate material or layout decision.</p><span class="tag" id="mxt">5 documented &middot; 3 to reconcile &middot; 20 unassessed</span></div></div>${BOTTOM('z')}</div>`,
 
   /* 27 - frozen interaction. A real run, one line at a time. */
-  A: f => `<div class="col">${TOP()}<div class="body"><div class="term"><div class="bar"><i></i><i></i><i></i><span>a real run</span></div><div class="log">${C.run.map(function(l,i){return l[0]==='sp'?'<div class="sp"></div>':'<div class="'+l[0]+'" data-i="'+i+'">'+(l[0]==='p'?'<em>$</em>':'')+l[1]+'</div>';}).join('')}</div></div></div>${BOTTOM('A')}</div>`,
+  A: f => `<div class="col">${TOP()}<div class="body"><div class="term"><div class="bar"><i></i><i></i><i></i><span>an illustrative workflow</span></div><div class="log">${C.run.map(function(l,i){return l[0]==='sp'?'<div class="sp"></div>':'<div class="'+l[0]+'" data-i="'+i+'">'+(l[0]==='p'?'<em>$</em>':'')+l[1]+'</div>';}).join('')}</div></div></div>${BOTTOM('A')}</div>`,
 
   /* 28 - marquee. Two belts, opposite directions, linear; the last chip is the real claim. */
-  B: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">It runs wherever the agent reads its skills.</h2><p class="headsub">A folder of markdown and nothing else. No runtime, no service, no account.</p><div class="belt">${BELT(0)}</div><div class="belt r">${BELT(1)}</div></div>${BOTTOM('B')}</div>`,
+  B: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">It runs wherever the agent reads its skills.</h2><p class="headsub">Portable instructions, visual references and practical recipes. Bring them to an agent that supports skills.</p><div class="belt">${BELT(0)}</div><div class="belt r">${BELT(1)}</div></div>${BOTTOM('B')}</div>`,
 
   /* 29 - spec sheet. Seven measured containers as dimension chains, longest first. */
-  C: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">Measured off the shipped pages.</h2><p class="headsub">Container widths read at 1440 from seven production sites. Nothing here is a preference; it is what they actually set.</p><div class="meas">${C.sites.map(function(st){return '<div class="m'+(st[0]==='Vercel'?' hot':'')+'"><span class="s">'+st[0]+'</span><span class="ch"><i style="width:'+((st[1]-1100)/(1440-1100)*82+18).toFixed(1)+'%"></i></span><span class="v">'+st[1]+'</span></div>';}).join('')}</div><div class="cfoot"><span>one container <b>1200-1400</b></span><span>section air <b>96-208</b></span><span>three type sizes <b>only</b></span><span>body grey, never white</span></div></div>${BOTTOM('C')}</div>`,
+  C: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">A study in proportion.</h2><p class="headsub">Seven container measurements from the August 2026 archive, viewed at 1440px. Historical observations, not limits for your project.</p><div class="meas">${C.sites.map(function(st){return '<div class="m'+(st[0]==='Vercel'?' hot':'')+'"><span class="s">'+st[0]+'</span><span class="ch"><i style="width:'+(st[1]/1440*100).toFixed(1)+'%"></i></span><span class="v">'+st[1]+'</span></div>';}).join('')}</div><div class="cfoot"><span>shared scale <b>0–1440 px</b></span><span>snapshot <b>August 2026</b></span><span>adapt to <b>content &amp; viewport</b></span></div></div>${BOTTOM('C')}</div>`,
 
   /* 30 - comparison. Not one skeleton dimmed: two skeletons, each material re-derived. */
   D: f => `<div class="col">${TOP()}<div class="body"><h2 class="head${f?' first':''}">Both modes, re-derived.</h2><div class="pair"><div class="sk lt"><span class="cap">LIGHT</span>${[0,1,2,3].map(function(i){return '<div class="row" data-m="'+i+'"><b style="width:'+[62,48,70,54][i]+'%"></b><b class="'+(i===1?'ac':'')+'" style="width:'+[38,26,44,32][i]+'%"></b></div>';}).join('')}</div><div class="mid">${C.modes.map(function(m,i){return '<button type="button" data-mode="'+i+'" aria-pressed="'+(i===1)+'"><i>'+m[0]+'</i><span>'+m[1]+'</span></button>';}).join('')}</div><div class="sk dk"><span class="cap">DARK</span>${[0,1,2,3].map(function(i){return '<div class="row" data-m="'+i+'"><b style="width:'+[62,48,70,54][i]+'%"></b><b class="'+(i===1?'ac':'')+'" style="width:'+[38,26,44,32][i]+'%"></b></div>';}).join('')}</div></div><p class="dfoot" id="dfoot">${C.modes[1][2]} &nbsp;/&nbsp; ${C.modes[1][3]}</p></div>${BOTTOM('D')}</div>`,
@@ -598,7 +599,7 @@ const SCREEN = {
 const EXTRA_MAP = new Map(EXTRA_PAGES.map(page => [page.id,page]));
 for (const page of EXTRA_PAGES) SCREEN[page.id] = () => {
   const theme=page.theme;
-  return `<div class="xp-shell" style="--xp-bg:${theme.background};--xp-ink:${theme.ink};--xp-muted:${theme.muted};--xp-accent:${theme.accent}"><header class="xp-header"><a class="xp-brand" href="#${ORDER[0]}">Drawn To</a><a class="xp-github" href="${C.repo}">GitHub ↗</a></header><section class="xp-stage xp-${page.id}">${page.render({command:C.cmd})}</section><footer class="xp-footer">${String(ORDER.indexOf(page.id)+1).padStart(2,'0')} / ${TOTAL} · ${page.name}</footer></div>`;
+  return `<div class="xp-shell" style="--xp-bg:${theme.background};--xp-ink:${theme.ink};--xp-muted:${theme.muted};--xp-accent:${theme.accent}"><header class="xp-header"><a class="xp-brand" href="#${ORDER[0]}">Drawn To</a><div class="scene-actions">${STYLE_ACTIONS()}<a class="xp-github" href="${C.repo}">GitHub ↗</a></div></header><section class="xp-stage xp-${page.id}">${page.render({command:C.cmd})}</section><footer class="xp-footer">${String(ORDER.indexOf(page.id)+1).padStart(2,'0')} / ${TOTAL} · ${page.name}</footer></div>`;
 }
 let extraAbort=null, extraCleanup=null, renderGeneration=0;
 
@@ -616,8 +617,9 @@ dock.innerHTML = CTL(paused);
 
 /* per-screen ambient beats. Ambient register only: constant cadence, eased swap,
    nothing that re-stages the screen on arrival (C12), everything stopped under reduced motion. */
-let beats = [];
+let beats = [], beatTimeouts = [];
 function stopBeats(){ beats.forEach(clearInterval); beats = []; }
+function stopBeatTimeouts(){beatTimeouts.forEach(clearTimeout);beatTimeouts=[];}
 const BEAT = {
   a: function(){
     const head=document.getElementById('head'), lead=document.getElementById('leader'),
@@ -652,39 +654,34 @@ const BEAT = {
     document.querySelector('.mid').addEventListener('click', function(e){
       const b = e.target.closest('button'); if (b) pick(+b.dataset.mode);
     });
+    pick(1);
     if (reduce) return;
     var n = 1;
     beats.push(setInterval(function(){ n = (n + 1) % C.modes.length; pick(n); }, 3000));
   },
   z: function(){
-    const cells = document.querySelectorAll('.mx .c[data-p]'), h = document.getElementById('mxh'), pEl = document.getElementById('mxp'), t = document.getElementById('mxt');
-    const marked = [].filter.call(cells, function(c){ return c.dataset.p; });
-    if (!marked.length) return;
-    function show(c){
-      cells.forEach(function(x){ x.classList.remove('on'); });
-      if (!c){ return; }
-      c.classList.add('on');
-      const k = C.pairs[c.dataset.p];
-      h.textContent = k[1]; pEl.textContent = k[2];
-      t.textContent = k[0] === 'ok' ? 'proven by the corpus' : 'zero co-occurrence';
-      t.className = 'tag ' + k[0];
+    const matrix=document.querySelector('.mx'),cells=[...matrix.querySelectorAll('button')];
+    const heading=document.getElementById('mxh'),description=document.getElementById('mxp'),tag=document.getElementById('mxt');
+    function show(cell){
+      cells.forEach(other=>{other.classList.toggle('on',other===cell);other.tabIndex=other===cell?0:-1;});
+      const pair=C.pairs[cell.dataset.p];
+      heading.textContent=pair?.[1]||cell.getAttribute('aria-label');
+      description.textContent=pair?.[2]||'This pair has no detailed assessment in the early sample. Explore a composition, then judge how the surfaces, type and material work together.';
+      tag.textContent=pair?(pair[0]==='ok'?'documented vocabulary':'needs reconciliation'):'not yet assessed';
+      tag.className='tag '+(pair?.[0]||'');
     }
-    document.querySelector('.mx').addEventListener('mouseover', function(e){ const c = e.target.closest('.c[data-p]'); if (c && c.dataset.p) show(c); });
-    if (reduce) return;
-    var i = 0;
-    beats.push(setInterval(function(){ show(marked[i % marked.length]); i++; }, 2800));
+    for(const type of ['mouseover','focusin','click'])matrix.addEventListener(type,event=>{const cell=event.target.closest('button');if(cell)show(cell);});
+    matrix.addEventListener('keydown',event=>{
+      if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;
+      const cell=event.target.closest('button');if(!cell)return;event.preventDefault();event.stopPropagation();
+      if(event.key==='Home'||event.key==='End'){cells[event.key==='Home'?0:cells.length-1].focus();return;}
+      const dx=event.key==='ArrowLeft'?-1:event.key==='ArrowRight'?1:0,dy=event.key==='ArrowUp'?-1:event.key==='ArrowDown'?1:0;
+      let row=+cell.dataset.row,column=+cell.dataset.column;
+      for(let i=0;i<8;i++){row=(row+dy+8)%8;column=(column+dx+8)%8;const next=matrix.querySelector(`[data-row="${row}"][data-column="${column}"]`);if(next){next.focus();break;}}
+    });
   },
   A: function(){
-    const lines = document.querySelectorAll('.term .log div[data-i]');
-    if (!lines.length) return;
-    if (reduce){ lines.forEach(function(l){ l.classList.add('in'); }); return; }
-    var n = 0;
-    function step(){
-      if (n >= lines.length){ n = 0; lines.forEach(function(l){ l.classList.remove('in'); }); return; }
-      lines[n].classList.add('in'); n++;
-    }
-    step();
-    beats.push(setInterval(step, 620));
+    document.querySelectorAll('.term .log div[data-i]').forEach(line=>line.classList.add('in'));
   },
   x: function(){
     const stops = document.querySelectorAll('.stops button'), ptr = document.querySelector('.knob .ptr'), dets = document.querySelectorAll('.knob .det');
@@ -707,15 +704,17 @@ const BEAT = {
     const zone = panel.querySelector('.swapzone');
     let i = 2;
     function paint(n){
+      stopBeatTimeouts();
       i = (n + C.six.length) % C.six.length;
-      rail.querySelectorAll('.st').forEach(function(el,k){ el.classList.toggle('on', k === i); });
+      rail.querySelectorAll('.st').forEach(function(el,k){ el.classList.toggle('on', k === i); el.setAttribute('aria-pressed',String(k===i)); });
       panel.dataset.swap = 'out';
-      setTimeout(function(){
+      const commit=()=>{
         const st = C.six[i];
         zone.innerHTML = '<div><h3>' + st[1] + '</h3><p>' + st[2] + '</p><ul class="spec">' +
           st[3].map(function(kv){ return '<li><b>' + kv[0] + '</b>' + kv[1] + '</li>'; }).join('') + '</ul></div>';
         panel.dataset.swap = 'in';
-      }, reduce ? 0 : 180);
+      };
+      if(reduce)commit();else beatTimeouts.push(setTimeout(commit,180));
     }
     rail.addEventListener('click', function(e){ const st = e.target.closest('.st'); if (st) paint(+st.dataset.step); });
     rail.addEventListener('keydown', function(e){
@@ -730,7 +729,7 @@ const BEAT = {
 function render(v){
   const generation=++renderGeneration;
   extraAbort?.abort(); extraCleanup?.(); extraAbort=null; extraCleanup=null;
-  stopBeats();
+  stopBeats();stopBeatTimeouts();
   delete app.dataset.mountError;
   delete app.dataset.mounted;
   document.documentElement.dataset.variant = v;
@@ -799,12 +798,13 @@ dock.addEventListener('click', function(e){
   if (b.dataset.act === 'toggle') setPaused(!paused); else next(b.dataset.act === 'next' ? 1 : -1);
 });
 function holdForInteraction(event){
-  if(!paused && event.target.closest('button,input,textarea,select,[contenteditable=true],[data-studio-host]')) setPaused(true);
+  if(event.target.closest('button,input,textarea,select,[contenteditable=true],[data-studio-host]')){if(!paused)setPaused(true);stopBeats();}
 }
+document.addEventListener('drawnto:prompt-open',()=>{setPaused(true);stopBeats();});
 app.addEventListener('pointerdown',holdForInteraction);
 app.addEventListener('focusin',holdForInteraction);
 addEventListener('keydown', function(e){
-  if(e.defaultPrevented || e.target.closest('input,textarea,select,[contenteditable=true],[role=slider],[role=tablist],[role=menu]') || (e.target.closest('.xp-stage') && e.target.closest('button,a'))) return;
+  if(document.querySelector('.style-dialog[open]') || e.defaultPrevented || e.target.closest('input,textarea,select,[contenteditable=true],[role=slider],[role=tablist],[role=menu],[data-scroll-region]') || e.target.closest('button,a,[role=button]')) return;
   if (e.key === 'ArrowRight') next(1);
   else if (e.key === 'ArrowLeft') next(-1);
   else if (e.key === ' ' && !e.target.closest('button,a,[role="button"]') && !reduce){ e.preventDefault(); setPaused(!paused); }
@@ -815,7 +815,7 @@ motionQuery.addEventListener('change',()=>{
   dock.innerHTML=CTL(paused);
   render(ORDER[idx]);
 });
-document.addEventListener('visibilitychange',()=>document.hidden?stopTimer():startTimer());
+document.addEventListener('visibilitychange',()=>{document.documentElement.dataset.hidden=String(document.hidden);if(document.hidden){stopTimer();stopBeats();}else startTimer();});
 addEventListener('hashchange',()=>{
   const key=location.hash.slice(1)||ORDER[0];
   if(ORDER.includes(key)){idx=ORDER.indexOf(key);go(key);startTimer();}

@@ -187,3 +187,17 @@ For vgpu, read the current [official documentation](https://vgpu.sh/) or its CLI
 for the installed version before using a remembered snippet. The locally listed
 skill snapshot was 0.3.1 while package metadata reported 0.4.0 during this run;
 version drift is a reason to inspect, not to guess the API.
+
+## Implementation calibration from the showcase
+
+For a selected existing effect, use the exact contract in
+[showcase-prompts.md](showcase-prompts.md) and its linked source. Optical type
+uses a physical glass mesh in front of a typography texture; woven light uses
+separate thickened strips and angle-dependent material response. Their apparent
+depth comes from actual geometry and light. A frosted CSS container does not
+reproduce either. Preserve a semantic reading layer alongside canvas text.
+
+Cinematic garden, paper theatre and terrarium scenes instead use detailed
+original raster art with specific crop/magnifier interactions. Do not promise
+free camera movement or arbitrary DOM refraction merely because the still looks
+three-dimensional. Choose and explain the actual rendering contract.

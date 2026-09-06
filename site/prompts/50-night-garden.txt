@@ -1,0 +1,31 @@
+Use this visual direction: A cinematic night garden
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#night-garden
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the 55-slide showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A full-bleed nocturnal garden surrounds a small warmly illuminated glass pavilion reflected in still water. Large warm-white editorial words sit in protected dark space on the left. The pavilion, its reflection and the distant tree canopy form three depth layers; quiet view controls sit along the bottom.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Deep teal-blue #102129, warm amber interior light, silver-green foliage and creamy serif emphasis. The image must contain actual window mullions, thin glass reflections, roof edges, interior glow, planting at several distances and an imperfect but coherent water reflection. Use soft atmosphere to separate distant trees, not a generic dark overlay that erases all detail.
+
+BEHAVIOR
+Whole / Glass & light / Reflections selects intentional crops of the same original scene and changes the caption. This showcase uses detailed raster artwork with controlled CSS reframing, not a real-time 3D garden. Keep any transition gentle; reduced motion switches directly.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+The original high-detail scene is site/assets/atelier/night-garden.webp. Inspect it before implementation. Reuse it where its license permits, or create an original scene matching its depth and detail; CSS alone cannot invent the pictured architecture.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/uihssn-2096384145186599306.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/atelier-editorial.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/atelier-editorial.css
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Compare full-size glass edges, warm interior, foreground foliage and reflection ripples. Preserve the pavilion and reading area on mobile with a separately considered crop. A stock forest photo plus a glow cannot meet the target.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

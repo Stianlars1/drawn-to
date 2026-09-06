@@ -77,7 +77,7 @@ export async function verifyAtelier({page,visit,base,browser,report}) {
   await visit('specimen-cabinet');
   await page.getByRole('button',{name:'Inspect Amber resin',exact:true}).click();
   assert.equal(await page.getByRole('dialog',{name:'Amber resin',exact:true}).isVisible(),true);
-  await page.keyboard.press('Escape');await page.locator('dialog').waitFor({state:'detached'});
+  await page.keyboard.press('Escape');await page.locator('.at-inspector').waitFor({state:'detached'});
   assert.equal(await page.getByRole('button',{name:'Inspect Amber resin',exact:true}).evaluate(element=>element===document.activeElement),true);
   await visit('contact-sheet');
   const selectedImage=await page.locator('.at-contact-main>img').getAttribute('src');
@@ -87,7 +87,7 @@ export async function verifyAtelier({page,visit,base,browser,report}) {
   await page.getByRole('button',{name:'View A world in paper',exact:true}).click();
   await page.getByRole('button',{name:'Inspect selected frame',exact:true}).click();
   assert.equal(await page.getByRole('dialog',{name:'A world in paper',exact:true}).isVisible(),true);
-  await page.keyboard.press('Escape');await page.locator('dialog').waitFor({state:'detached'});
+  await page.keyboard.press('Escape');await page.locator('.at-inspector').waitFor({state:'detached'});
   await visit('red-chamber');
   await page.locator('[data-red-detail]').click();
   assert.equal(await page.locator('.xp-red-chamber').getAttribute('data-detail'),'true');

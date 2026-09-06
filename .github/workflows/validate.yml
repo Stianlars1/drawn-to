@@ -11,3 +11,7 @@ jobs:
         with: { python-version: "3.12" }
       - name: Validate the taste library
         run: python3 scripts/validate-library.py
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - name: Verify generated showcase prompts
+        run: node scripts/build-showcase-prompts.mjs --check

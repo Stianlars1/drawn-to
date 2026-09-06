@@ -26,6 +26,11 @@ Three independent output trials informed a stricter visual review and retest.
 Working controls and a coherent direction are assessed separately from the
 references' material, lighting and motion finish.
 
+Each of the **55 showcase scenes** now offers **Copy this prompt**: a specific
+brief for that scene's composition, materials, light, effects and level of detail,
+with reference and implementation links. Preview it before taking the direction
+to your own project. [Explore the showcase](https://drawn-to.vercel.app/?still).
+
 ## Install
 
 ```sh

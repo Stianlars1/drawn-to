@@ -187,3 +187,17 @@ a working interaction, source-code inspection and an inferred implementation.
 The owner's screenshot establishes what their viewport shows; compare the
 conditions when it differs from yours. A missing capture or inaccessible tool
 is an explicit limitation, never a filled-in checkmark.
+
+## Reusing and reviewing a showcase direction
+
+Use [showcase-prompts.md](showcase-prompts.md) for the exact scene contract.
+A copyable prompt must preserve the scene's particular composition, material
+and effect, with a truthful asset/implementation trail. Test copying and manual
+fallback on every registered scene. Review the description against the actual
+source and render; a valid URL alone does not establish visual fidelity.
+
+For responsive polish, inspect the children inside clipped stages as well as
+document scroll width. Count meaningful cards and diagrams before and after
+reflow. A hidden third card, missing diagram or offscreen selected row is a
+regression even if the body has no overflow. Preserve dated archive labels on
+mobile, and distinguish example terminal/data content from captured results.

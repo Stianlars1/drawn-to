@@ -165,3 +165,28 @@ variation. These are visual judgments, not conclusions from passing tests.
 This local validation does not cover physical mobile devices, Safari/Firefox,
 a full screen-reader audit or measured GPU frame time. The original 30 screens
 were not newly art-directed or exhaustively visually reviewed in this expansion.
+
+## Per-scene style prompts
+
+Every scene has a header copy action and a readable prompt preview. These are
+visual direction briefs, separate from install commands and workflow prompts.
+They describe the selected composition, material/light/type, behavior, asset
+requirements and real source implementation, with focused acceptance checks.
+
+Edit `skills/drawn-to/references/showcase-styles.json`, then run:
+
+```sh
+node scripts/build-showcase-prompts.mjs
+node scripts/build-showcase-prompts.mjs --check
+node scripts/verify-prompts.mjs http://127.0.0.1:8758/ .eval-output/prompts.json
+```
+
+The browser check uses the same `PLAYWRIGHT_MODULE` and `CHROME_EXECUTABLE`
+options as the main verification. It checks all 55 clipboard exports, every
+header at three sizes, denied clipboard/manual recovery, loading failure,
+legacy mobile content preservation and repaired control behavior.
+
+The original thirty styles are refined in `site/css/legacy-polish.css`; bespoke
+bento drawings live in `site/js/legacy-details.js`. Keep historical measurements
+labelled and preserve complete content on mobile. The archived comparison uses
+a horizontally inspectable image on narrow screens, with a visible swipe hint.

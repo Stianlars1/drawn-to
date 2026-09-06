@@ -69,12 +69,24 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
 
 ---
 
-### One-Screen Poster - the whole page is one 100 svh screen, one message, one signature visual
-- **Anatomy:** `min-height:100svh`, no scroll, no sections. Brand top-left, one link/action top-right (nav = 2 items). H1 ≤ 6 words on ONE designed line break (`text-wrap:balance` + `<br>`), 48–96px by family → 16–24px → one sub line ≤ 120 chars → 32–40px → the install/capture control (one) → the rest of the screen belongs to ONE signature visual. Bottom edge: one discreet mono line (direction label, version, or three tabular numbers) - the only mono caps on the page. Everything fits the fold at 1440×900 AND 1280×720 with ≥ 48px air top and bottom; at 390×844 the visual moves below the copy or becomes the ground.
-- **Ingredients:** the signature visual carries the family: F1 = a measured blueprint plate (redline with real values), F3/F8 = one shaped light (beam, arc, lit ring - never a centred blob), F5 = a paper mat with one gradient slab + halftone + crop marks, F6 = the horizon gradient with 3% grain and one soft surface, Vercel-register = one lit object with H1 small at left and mono lines at right. Zero eyebrows, ≤ 2 CTAs, 0 or 3 numbers. Polish: copy control with reserved width + success state; count-up once. If the page cycles directions (view transitions), entrances run on first paint only - each new skin arrives composed (C12).
-- **Evidence:** its_sslvr-2088 (poster register), basit_designs-2017 (one lit line on near-black), marcelkargul-2089371 (structured light as the only object); budgets from `quality-bar.md` § 2.
-- **Families:** every family can render it; the visual changes, the skeleton does not. Clash: F4 + F6 on one screen (blueprint over pastel) - pick one.
-- **Choose when:** the product has one message and the visual can carry it (a skill, a tool, a launch); when every added section would dilute; when the page must be judged at a glance. Not for products that must explain a workflow - use Scrubbed Product Stage or a short-scroll page.
+### One-Screen Poster - one composed message and a signature visual
+- **Anatomy:** a viewport-height composition when content fits, with brand,
+  a concise reading path, a clear action and a distinctive visual. Compose
+  type scale, line breaks and negative space for the selected direction.
+  A short headline is useful, not a fixed word-count law.
+- **Ingredients:** the visual may be optical glass, a cinematic landscape,
+  paper construction, technical drawing, shaped light or a tactile control.
+  Set its actual asset and rendering requirements before building. Preserve
+  a complete still frame and readable semantic content.
+- **Responsive:** recompose at 1440x900, 1280x720 and 390x844. A complex
+  composition can use a bounded detail view or readable scrolling when it
+  cannot fit without hiding evidence. Keep navigation clear of the artwork.
+- **Evidence:** the original its_sslvr-2088 poster and basit_designs-2017
+  light study, plus the specific implementations in [showcase-prompts.md](showcase-prompts.md).
+- **Families:** any coherent direction or intentional blend. A technical
+  annotation can coexist with a soft physical object when their roles are clear.
+- **Choose when:** one message and one visual event can carry the surface.
+  Use a longer page when the product requires a fuller explanation.
 
 ### Field Hero - the field owns the page, or there is no field
 - **Anatomy, ingredients, optics and evidence:** `hero-atmosphere.md` in full. Summary: one 100 svh screen, a field at inset 0 and z-index 0 edge to edge, copy at z-index 2 in a `background: transparent` container, H1 64-112 px on one or two lines, one sub line, two controls, nothing else.
@@ -96,12 +108,12 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
   | Feature trio | several explanatory cells with concise headings | one coherent register; distinguish actual claims, without requiring unrelated devices |
   | Bento 2x2 | related cells with a clear hierarchy | preserve readable content; repetition follows independent claims, sequence or collection roles |
   | Ledger / spec sheet | 8-14 rows: mono index, label, dotted leader, value | rows are DATA - every value must reconcile (C10) |
-  | Gallery / swatch wall | 6-9 plates or chips, captions demoted outside | no captions inside the plates |
-  | Metrics | ONE bespoke chart form invented for this data (never a stock bar chart) | 0 prose; axis labels mono |
-  | Frozen interaction | one product fragment held mid-gesture with real values | no marketing copy inside the fragment |
-  | Instrument | one component rendered as hardware, operable 1:1 | the component IS the screen; <= 1 caption |
-  | Chapters | a numbered index rail + one morphing panel | index <= 6 rows |
-  | Closing | one display-size statement + the capture control | <= 8 words, one lit element |
+  | Gallery / swatch wall | a curated group of plates, objects or images | captions stay in readable, deliberate regions |
+  | Metrics | a chart chosen for the actual data and comparison | truthful values, readable labels and enough explanation |
+  | Frozen interaction | one product fragment held in a useful state | label illustrative data; do not imply nonworking controls work |
+  | Instrument | a component whose physical metaphor supports its action | exact controls, state and readable explanations |
+  | Chapters | a numbered index rail + one changing panel | preserve the longest content and all selectable chapters |
+  | Closing | a clear final statement and useful next action | let the chosen material or artwork complete the direction |
 
 - **Content relationship:** for a range showcase, vary enough content and
   composition to demonstrate the intended differences. Controlled A/B studies
@@ -112,6 +124,10 @@ Evidence density varies by kind: heroes, feature grids, bentos, and component de
   `quality-bar.md` § 3b. Independent claims need meaningful distinction;
   sequences, shared worlds, collections and identities may reuse devices.
   A device is not spent after one use on a page.
+- **Exporting a direction:** give each scene its own copyable visual contract
+  with precise effects, asset requirements and implementation references. See
+  [showcase-prompts.md](showcase-prompts.md). The export must match the scene
+  currently displayed, including truthful limits of the rendering technique.
 - **Ingredients:** the chrome uses the host direction's separation physics on every screen (hairline in F1, one soft shadow in F6, 1 px frame in F5). The transport control is chrome, not content: it never takes an accent hue and never animates on cycle.
 - **Evidence:** the failure mode is the anchor - nine identical posters, owner verdict "litt generisk". Kinds map to the section recipes below: Feature trio = FIG-Plate Shared-Border Grid / Pebble Dissolve Grid; Bento = Divider-Cut Bento; Ledger = the print ledger sheet (basit_designs-2089995) and yurygok-2089624's dotted leaders; Metrics = yurygok-2089624 bespoke chart forms; Instrument = F7 (cabralorenzo-2090, jeetnirnejak-2089); Chapters = Numbered Index + Photo Panels.
 - **Families:** any. The catalog is a container, not a style.

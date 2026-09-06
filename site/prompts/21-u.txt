@@ -1,0 +1,32 @@
+Use this visual direction: Editorial comparison
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#u
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the 55-slide showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A sober dark comparison page gives two visual treatments equal image space under a short shared title. Fine divider, restrained captions and the source/context note support an honest visual comparison.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Near-black, silver sans and tabular mono captions. Let actual detailed visual work inside the frame provide the texture and complexity. Use a thin blue divider; do not dim away the evidence just to create motion.
+
+BEHAVIOR
+If offering a reveal interaction, use actual before and after images aligned to the same content, with a keyboard-operable control. A static diptych is preferable when only one composite archive image exists.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+Use two original or authorized comparison images. The showcase archive asset is site/assets/proof-same-model-same-brief.jpg; inspect its provenance before reuse.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- This is an original/synthesized Drawn To study. No single historical source attribution is asserted.
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/catalog.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/catalog.css
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/legacy-polish.css
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Both sides must be inspectable on mobile. State whether this is an archived example or a controlled evaluation; do not claim causal proof without a documented protocol.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

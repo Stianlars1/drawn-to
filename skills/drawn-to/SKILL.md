@@ -7,7 +7,7 @@ description: >-
   an existing direction. Also supports maintaining this reference library.
   A project's own approved design system and the user's explicit choices take precedence.
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Drawn To
@@ -21,6 +21,7 @@ product, audience and current brief determine which parts apply.
 | Task | Start here | Outcome |
 |---|---|---|
 | New direction or substantive redesign | [discovery](references/discovery.md), then [question flow](references/question-flow.md) and relevant [families](references/style-families.md) | Weighted direction, composition and open questions recorded in a lock |
+| Reuse a specific showcase scene or export its style | [showcase prompts](references/showcase-prompts.md), then its exact visual contract | Preserve the chosen scene’s composition, craft and signature effect while clarifying product gaps |
 | Continue an approved direction | Existing project lock, [lock file](references/lock-file.md), then only the relevant dimension docs below | Implement within the approval; ask only about a consequential unresolved choice |
 | Review existing UI | Existing lock and [quality bar](references/quality-bar.md), plus cited frames | Findings per lock: served, violated or not specified; review-only does not edit UI or lock files |
 | Explore supplied references | Inspect the supplied media, [measuring](references/measuring.md), relevant library entries | Original alternatives grounded in observed properties; new references may widen the families |

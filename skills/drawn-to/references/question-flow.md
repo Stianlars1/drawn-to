@@ -31,18 +31,13 @@ Reuse known facts and choices instead of reopening this interview.
 4. Apply the scoped defaults in `style-families.md` where they fit. Do not
    interview about routine craft; ask if a consequential choice remains open.
    The owner's new references can legitimately change the default direction.
-5. **Inheritance - ask only where the blend leaves a fork.** For each axis:
-   look up each blended family's value in the dimension docs and weight it by
-   the blend percentage. Inherit without asking only if BOTH hold:
-   (a) one value carries ≥70% of total blend weight, and
-   (b) the dominant family resolves the axis to a single value/sub-mode.
-   If the dominant family itself forks (e.g. F1 radius: sharp-0 shared-border
-   vs soft cards 12-24), ask. Record inherited axes in the lock file under
-   "Inherited from blend". Blend mechanics also pre-assign: secondary family →
-   texture + graphic device source, tertiary → one ornament layer; treat those
-   as inherited when only one legal option remains, otherwise ask.
-   Target 5-9 questions for a single section, 9-14 for a full page or site
-   (QS section-variant questions included in the budget).
+5. **Inheritance - ask only where a consequential choice remains open.**
+   Use the accepted scene, existing lock and weighted direction to settle what
+   they actually specify. Weights do not mechanically derive one legal radius,
+   renderer or material. Record clear inherited choices and ask about genuine
+   forks. Do not impose a minimum question count or a fixed role on secondary
+   and tertiary influences. A user-selected showcase look is already a direction;
+   use `showcase-prompts.md` and ask only for missing product/placement gaps.
 6. **Resolve actual material and mode conflicts.** Family combinations are not
    intrinsically illegal. Explain a real conflict in plain language: competing
    depth cues, incompatible geometry, unreadable contrast or an asset that does
@@ -54,8 +49,9 @@ Reuse known facts and choices instead of reopening this interview.
    question is an open question. If the owner says "just decide", pick the
    dominant family's value and mark the lock `(delegated)`.
 8. **Sibling locks may seed proposals.** If the brief says "like <project X>"
-   and X has a known lock (e.g. refetch.sh = 80% F1 + 15% F3 + 5% F4), present
-   X's blend as candidate A, labeled as such - still ask, never auto-apply.
+   and X has a known lock (e.g. refetch.sh = 80% F1 + 15% F3 + 5% F4), reuse the
+   requested qualities when the user has clearly selected them; otherwise
+   offer the known blend as a labelled candidate. Do not reopen an explicit choice.
 
 ## Question phrasing - the owner must never need the nomenclature
 
