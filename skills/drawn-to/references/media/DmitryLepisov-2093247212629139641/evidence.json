@@ -1,15 +1,47 @@
 {
   "slug": "DmitryLepisov-2093247212629139641",
+  "reviewed": "2026-09-07",
   "source_url": "https://x.com/DmitryLepisov/status/2093247212629139641",
-  "reviewed": "2026-09-06",
-  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
   "assets": [
     {
       "file": "video_1.mp4",
-      "url": "https://video.twimg.com/amplify_video/2092998604407332864/vid/avc1/1600x1200/ug6eKKakCfVkiBpv.mp4?tag=29",
-      "type": "video",
-      "sha256": "9399cf68a4e756ddf04a6fe9055f7e77c4dbd439a56742876c130fb678809b26",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2092998604407332864/vid/avc1/1600x1200/ug6eKKakCfVkiBpv.mp4?tag=29",
       "bytes": 2507014,
+      "sha256": "9399cf68a4e756ddf04a6fe9055f7e77c4dbd439a56742876c130fb678809b26",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 24,
+        "archive": [
+          {
+            "file": "video_1-sample-01.jpg",
+            "time_seconds": 0.08
+          },
+          {
+            "file": "video_1-sample-04.jpg",
+            "time_seconds": 1.234
+          },
+          {
+            "file": "video_1-sample-07.jpg",
+            "time_seconds": 2.388
+          },
+          {
+            "file": "video_1-sample-10.jpg",
+            "time_seconds": 3.542
+          },
+          {
+            "file": "video_1-sample-13.jpg",
+            "time_seconds": 4.696
+          },
+          {
+            "file": "video_1-sample-16.jpg",
+            "time_seconds": 5.85
+          }
+        ]
+      },
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -27,54 +59,7 @@
         "format": {
           "duration": "6.000000"
         }
-      },
-      "sampling": {
-        "filter": "fps=6",
-        "numbering": "one-based output samples; not decoded native frame numbers",
-        "archive": [
-          {
-            "file": "frames_1/f_001.jpg",
-            "sample_time_seconds": 0.0
-          },
-          {
-            "file": "frames_1/f_005.jpg",
-            "sample_time_seconds": 0.666667
-          },
-          {
-            "file": "frames_1/f_009.jpg",
-            "sample_time_seconds": 1.333333
-          },
-          {
-            "file": "frames_1/f_013.jpg",
-            "sample_time_seconds": 2.0
-          },
-          {
-            "file": "frames_1/f_017.jpg",
-            "sample_time_seconds": 2.666667
-          },
-          {
-            "file": "frames_1/f_020.jpg",
-            "sample_time_seconds": 3.166667
-          },
-          {
-            "file": "frames_1/f_024.jpg",
-            "sample_time_seconds": 3.833333
-          },
-          {
-            "file": "frames_1/f_028.jpg",
-            "sample_time_seconds": 4.5
-          },
-          {
-            "file": "frames_1/f_032.jpg",
-            "sample_time_seconds": 5.166667
-          },
-          {
-            "file": "frames_1/f_036.jpg",
-            "sample_time_seconds": 5.833333
-          }
-        ]
-      },
-      "gallery_contact_sheet": "contact-sheets/DmitryLepisov-2093247212629139641-video_1.jpg"
+      }
     }
   ]
 }

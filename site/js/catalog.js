@@ -504,7 +504,7 @@ const FIGS = {
 </svg>`
 };
 const GAUGE = () => {
-  const N=100, on=window.DrawnToLibrary.total, cx=300, cy=250, r1=168, r2=196, t=[];
+  const on=window.DrawnToLibrary.total, N=Math.max(100,Math.ceil(on/25)*25), cx=300, cy=250, r1=168, r2=196, t=[];
   for(let i=0;i<N;i++){ const a=Math.PI*(1.055 + .89*i/(N-1)), c=Math.cos(a), v=Math.sin(a);
     t.push(`<path class="tk${i<on?' on':''}" d="M${(cx+c*r1).toFixed(1)} ${(cy+v*r1).toFixed(1)}L${(cx+c*r2).toFixed(1)} ${(cy+v*r2).toFixed(1)}" stroke-width="${i<on?2.2:1.4}" stroke-linecap="round"/>`); }
   const ae=Math.PI*(1.055+.89*(on-1)/(N-1));
@@ -514,7 +514,7 @@ const GAUGE = () => {
     <path d="M98 215A207 207 0 0 1 502 215" stroke="#4a4235" stroke-width="1"/><path d="M144 226A160 160 0 0 1 456 226" stroke="#2d302e" stroke-width="1"/><g>${t.join('')}</g>
     <text class="rd" x="${cx}" y="244" text-anchor="middle">${on}</text>
     <text class="un" x="${cx}" y="270" text-anchor="middle">REFERENCES</text>
-    <text class="sp" x="${cx}" y="302" text-anchor="middle">library snapshot · scale 0–100</text>
+    <text class="sp" x="${cx}" y="302" text-anchor="middle">library snapshot · scale 0–${N}</text>
   </svg>`;
 };
 const SCREEN = {

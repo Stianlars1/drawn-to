@@ -1,0 +1,32 @@
+Use this visual direction: Material laboratory / a precise kind of feeling
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#chamber-control
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the multi-scene showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A dense but disciplined dark instrument console sits beneath a technical heading. A large response plot, physical knobs, illumination switch, state selector and distribution meter occupy different module shapes in one continuous grid.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Anthracite-green planes, tiny warm orange indicators, crisp inset borders, machined knob faces, radial ticks and tabular or mono numbers. Use directional surface light, restrained bevels and honest units/relative values. Each module has a useful distinct anatomy.
+
+BEHAVIOR
+Excitation, damping and angle controls update the visible local model and curve. Illumination and character controls show actual state changes. This is an interactive local study, not a connected industrial controller. All controls have native keyboard input.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+This scene is native HTML/CSS/SVG. Preserve the layered control construction and meaningful local data model rather than using a screenshot of a dashboard.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/SebCornelius-2092618652994744578.md
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/xchylerdrenth-2093008935800517016.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/motion-instruments.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/motion-instruments.css
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+No decorative nonworking knobs or invented live-equipment claims. Verify values and graph response, selected state, contrast and complete mobile control coverage. Keep the instrument density without making labels microscopic.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

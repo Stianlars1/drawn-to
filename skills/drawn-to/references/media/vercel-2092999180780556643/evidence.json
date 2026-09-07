@@ -1,0 +1,65 @@
+{
+  "slug": "vercel-2092999180780556643",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/vercel/status/2092999180780556643",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2092999146655645696/vid/avc1/998x720/NAL4EoflkVZzCxu1.mp4?tag=14",
+      "bytes": 4020793,
+      "sha256": "eb165b7b9b16e35901389140d1ff69fb9870101402d07245c5459376ff83d3c2",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 202,
+        "archive": [
+          {
+            "file": "video_1-sample-01.jpg",
+            "time_seconds": 0.08
+          },
+          {
+            "file": "video_1-sample-04.jpg",
+            "time_seconds": 10.121
+          },
+          {
+            "file": "video_1-sample-07.jpg",
+            "time_seconds": 20.161
+          },
+          {
+            "file": "video_1-sample-10.jpg",
+            "time_seconds": 30.202
+          },
+          {
+            "file": "video_1-sample-13.jpg",
+            "time_seconds": 40.243
+          },
+          {
+            "file": "video_1-sample-16.jpg",
+            "time_seconds": 50.283
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 998,
+            "height": 720,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "50.433333",
+            "nb_frames": "3026"
+          }
+        ],
+        "format": {
+          "duration": "50.433333"
+        }
+      }
+    }
+  ]
+}

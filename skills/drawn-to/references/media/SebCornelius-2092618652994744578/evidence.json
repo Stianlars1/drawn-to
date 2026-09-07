@@ -1,0 +1,20 @@
+{
+  "slug": "SebCornelius-2092618652994744578",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/SebCornelius/status/2092618652994744578",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQp5QxhbIAAs8de.jpg?name=orig",
+      "bytes": 313950,
+      "sha256": "612a321c51e9cba0ae93fc8f5b852c140259c7aa3a39f4fc3fe3f03f8842452d",
+      "dimensions": [
+        3840,
+        2160
+      ],
+      "archive_file": "photo_1.jpg"
+    }
+  ]
+}

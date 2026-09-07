@@ -3,17 +3,17 @@ import assert from 'node:assert/strict';
 export async function verifyAtelier({page,visit,base,browser,report}) {
   const studios=['optical-type','woven-spectrum','aperture-control','chromatic-relief'];
   await page.goto(base+'?still');
-  await page.waitForFunction(()=>document.querySelector('#app').dataset.mounted==='optical-type');
-  assert.match(await page.locator('.xp-footer').innerText(),/^01 \/ 55/);
+  await page.waitForFunction(()=>document.querySelector('#app').dataset.mounted==='auric-orbit');
+  assert.match(await page.locator('.xp-footer').innerText(),/^01 \/ 70/);
   await page.getByRole('button',{name:'Previous direction',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('#app').dataset.mounted==='D');
   await page.getByRole('button',{name:'Next direction',exact:true}).click();
-  await page.waitForFunction(()=>document.querySelector('#app').dataset.mounted==='optical-type');
+  await page.waitForFunction(()=>document.querySelector('#app').dataset.mounted==='auric-orbit');
   await visit('night-garden');
   await page.getByRole('link',{name:'Drawn To',exact:true}).click();
-  await page.waitForFunction(()=>document.querySelector('#app').dataset.mounted==='optical-type');
-  assert.ok(page.url().includes('v=optical-type'));
-  report.checks.push('The root opens the new optical scene; home and wraparound follow the curated sequence');
+  await page.waitForFunction(()=>document.querySelector('#app').dataset.mounted==='auric-orbit');
+  assert.ok(page.url().includes('v=auric-orbit'));
+  report.checks.push('The root opens the new mineral scene; home and wraparound follow the curated sequence');
 
   await page.goto(base+'?v=aperture-control');
   await page.waitForFunction(()=>document.querySelector('#app').dataset.mounted==='aperture-control');

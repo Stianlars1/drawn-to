@@ -11,6 +11,10 @@ jobs:
         with: { python-version: "3.12" }
       - name: Validate the taste library
         run: python3 scripts/validate-library.py
+      - name: Verify direct and quoted-article media extraction
+        run: python3 scripts/test-fetch-media.py
+      - name: Verify generated showcase counts
+        run: python3 scripts/build-showcase-data.py --check
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
       - name: Verify generated showcase prompts

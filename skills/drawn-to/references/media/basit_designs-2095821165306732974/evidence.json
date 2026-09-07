@@ -1,15 +1,47 @@
 {
   "slug": "basit_designs-2095821165306732974",
+  "reviewed": "2026-09-07",
   "source_url": "https://x.com/basit_designs/status/2095821165306732974",
-  "reviewed": "2026-09-06",
-  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
   "assets": [
     {
       "file": "video_1.mp4",
-      "url": "https://video.twimg.com/amplify_video/2095820269516681216/vid/avc1/2340x2160/A8BJJQgb61uIdhMD.mp4?tag=29",
-      "type": "video",
-      "sha256": "e4142010a9715dcc906d044361e2e399d4464437b2cb254450c249ac380ed4e4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2095820269516681216/vid/avc1/2340x2160/A8BJJQgb61uIdhMD.mp4?tag=29",
       "bytes": 14109143,
+      "sha256": "e4142010a9715dcc906d044361e2e399d4464437b2cb254450c249ac380ed4e4",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 61,
+        "archive": [
+          {
+            "file": "video_1-sample-01.jpg",
+            "time_seconds": 0.08
+          },
+          {
+            "file": "video_1-sample-04.jpg",
+            "time_seconds": 3.064
+          },
+          {
+            "file": "video_1-sample-07.jpg",
+            "time_seconds": 6.048
+          },
+          {
+            "file": "video_1-sample-10.jpg",
+            "time_seconds": 9.032
+          },
+          {
+            "file": "video_1-sample-13.jpg",
+            "time_seconds": 12.016
+          },
+          {
+            "file": "video_1-sample-16.jpg",
+            "time_seconds": 15.0
+          }
+        ]
+      },
       "probe": {
         "programs": [],
         "stream_groups": [],
@@ -27,54 +59,7 @@
         "format": {
           "duration": "15.150000"
         }
-      },
-      "sampling": {
-        "filter": "fps=3",
-        "numbering": "one-based output samples; not decoded native frame numbers",
-        "archive": [
-          {
-            "file": "frames_1/f_001.jpg",
-            "sample_time_seconds": 0.0
-          },
-          {
-            "file": "frames_1/f_006.jpg",
-            "sample_time_seconds": 1.666667
-          },
-          {
-            "file": "frames_1/f_011.jpg",
-            "sample_time_seconds": 3.333333
-          },
-          {
-            "file": "frames_1/f_016.jpg",
-            "sample_time_seconds": 5.0
-          },
-          {
-            "file": "frames_1/f_021.jpg",
-            "sample_time_seconds": 6.666667
-          },
-          {
-            "file": "frames_1/f_025.jpg",
-            "sample_time_seconds": 8.0
-          },
-          {
-            "file": "frames_1/f_030.jpg",
-            "sample_time_seconds": 9.666667
-          },
-          {
-            "file": "frames_1/f_035.jpg",
-            "sample_time_seconds": 11.333333
-          },
-          {
-            "file": "frames_1/f_040.jpg",
-            "sample_time_seconds": 13.0
-          },
-          {
-            "file": "frames_1/f_045.jpg",
-            "sample_time_seconds": 14.666667
-          }
-        ]
-      },
-      "gallery_contact_sheet": "contact-sheets/basit_designs-2095821165306732974-video_1.jpg"
+      }
     }
   ]
 }

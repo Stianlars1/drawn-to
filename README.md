@@ -17,19 +17,24 @@ defaults organize the evidence; they do not force every project into one look.
 See the [current reference index](skills/drawn-to/references/matrix.md) and the
 [September expansion](skills/drawn-to/references/september-expansion.md).
 
-The [showcase](https://drawn-to.vercel.app) now contains 55 screens. Its curated
-opening interleaves ten newer material-rich scenes with the previous expansion:
-optical typography, folded metal, a physical aperture, cinematic artwork, a paper
-world, a specimen cabinet and more. It also includes an original GLB, spatial
+The [showcase](https://drawn-to.vercel.app) now contains 70 screens. Fifteen new
+motion and material studies lead the curated opening: mineral orbs, mechanical
+inspection, optical architecture, signal fields, illustration and sound. They
+are followed by optical typography, folded metal, cinematic artwork, a paper
+world and the earlier collection. It also includes an original GLB, spatial
 image flow and a native WebGPU particle study. See the [implementation notes](docs/showcase.md).
 Three independent output trials informed a stricter visual review and retest.
 Working controls and a coherent direction are assessed separately from the
 references' material, lighting and motion finish.
 
-Each of the **55 showcase scenes** now offers **Copy this prompt**: a specific
+Each of the **70 showcase scenes** now offers **Copy this prompt**: a specific
 brief for that scene's composition, materials, light, effects and level of detail,
 with reference and implementation links. Preview it before taking the direction
 to your own project. [Explore the showcase](https://drawn-to.vercel.app/?still).
+
+The [motion expansion](docs/motion-expansion.md) adds optical/mineral orbs, an
+inspectable camera, authored shader films, phosphor displays, illustrated worlds
+and playable instruments. The library now contains 104 references.
 
 ## Install
 

@@ -1,0 +1,31 @@
+Use this visual direction: Tactile terrain / soft ground and clear intention
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#terrain-interface
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the multi-scene showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A warm light feature surface keeps a concise heading and three-item choice rail at left, a considered miniature collection interface at right and rich coral terrain across the foreground. The terrain overlaps only the nonessential base of the product frame.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Cream, warm charcoal ink, coral-orange suede fibers and fine white/ivory interface planes. Use a small tactile mark, quiet rules, precise tabular details and layered window edges. The hills need fine fibers, uneven crests, self-shadowed folds and warm light; a flat orange curve is not equivalent.
+
+BEHAVIOR
+The feature choices update the collection title, message and visual surface specimens, with a stable active rail marker. Keep the state operable by keyboard and touch. Recompose the preview and terrain independently on phones.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+The original terrain is site/assets/motion/terrain-interface.webp. Background and masked foreground share that image's crop. Keep its fiber quality and lighting coherent if replacing it.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/sinvpasha-2092537706446299362.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/motion-editorial.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/motion-editorial.css
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+The foreground must not hide essential controls or the selected outcome. Compare fiber detail and contact relationships close up. The miniature UI remains a legible original example rather than copied customer data.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

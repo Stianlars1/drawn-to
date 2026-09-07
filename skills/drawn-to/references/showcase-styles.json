@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "description": "Implementation-specific visual contracts for the 55 Drawn To showcase scenes. References identify transferable vocabulary; they do not assert source author implementation or exact copying.",
+  "description": "Implementation-specific visual contracts for the 70 Drawn To showcase scenes. References identify transferable vocabulary; they do not assert source author implementation or exact copying.",
   "styles": [
     {
       "id": "a",
@@ -933,6 +933,268 @@
         "site/css/atelier-collection.css"
       ],
       "art": "The source lists six original images in site/js/expansion/atelier-collection.js. Preserve comparable subject and material diversity, with optimized but inspectable image resolution."
+    },
+    {
+      "id": "auric-orbit",
+      "name": "Auric orbit / mineral light",
+      "composition": "An oversized irregular mineral orb dominates a blue-black stage, with a wide spare editorial statement on the left. Two very fine orbital arcs and tiny scattered specks wrap around its silhouette. Use the large rough form, quiet negative space and warm text as the hierarchy; keep the material controls at the lower edge.",
+      "surface": "Charcoal mineral with actual geometric relief, muted metallic inclusions, narrow warm gold veins and tiny granular detail. The veins and stone have different roughness and metallic response. A coherent studio light catches ridges and leaves occluded valleys. Large neutral sans and a humane serif emphasis provide contrast. Do not substitute a smooth gradient sphere or uniform emission.",
+      "behavior": "Mineral, Awakened and Glacial select three actual material/light states. Inner light adjusts the glow of the veins. Slow rotation and fine-pointer movement reveal surface relief; pause and reduced motion retain a composed object. The actual showcase uses a displaced Three.js mesh and original procedural material code.",
+      "checks": "Inspect the full silhouette, vein thickness, ridge highlights, dark valleys and transition between materials. All three states must remain recognizable at phone size. Verify hidden-tab stop, disposal, matching posters and actual CPU/GPU workload.",
+      "references": [
+        "zzzzshawn-2096548536972370319"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-rendered.js",
+        "site/css/motion-rendered.css",
+        "site/js/motion/runtime.js",
+        "site/js/motion/scenes/auric.js"
+      ],
+      "art": "The original effect is code-native. Read its geometry and physical material construction. No Orbkit/XorDev shader source was copied; preserve that distinction and check source licenses before substituting a third-party shader."
+    },
+    {
+      "id": "camera-obscura",
+      "name": "Camera obscura / the inspectable object",
+      "composition": "A pale technical studio balances a large camera model, a compact top-left statement, a narrow right specimen column and a bottom inspection strip. The camera should have enough visual area to inspect, with a visible grounding shadow and spare technical annotations.",
+      "surface": "Graphite body, silver and warm metal rings, fine grip texture, translucent green-tinted optics, concentric barrel lips, knurling, tiny fasteners, top dials, circuitry and engraved-looking labels. Model contact interfaces and edge bevels. The visual quality comes from the relationships between parts and materials, not a claimed polygon or part count.",
+      "behavior": "Assembled, Exploded and Inside expose different physical configurations. Separation moves coherent subassemblies along the lens/body axis. Pointer motion offers a restrained inspection angle. Internal circuitry and lens layers remain registered; the actual renderer is Three.js with instanced repeated details and physical materials.",
+      "checks": "Inspect all three configurations and the largest separation. No detached labels, intersecting iris leaves, ungrounded parts or clipping in portrait. Controls must expose real changes and every fallback must preserve its selected configuration.",
+      "references": [
+        "omarsar0-2096339043919237288"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-rendered.js",
+        "site/css/motion-rendered.css",
+        "site/js/motion/scenes/camera.js",
+        "site/js/motion/runtime.js"
+      ],
+      "art": "The camera model is original procedural geometry in the cited source. Reuse compatible source or create a comparably detailed model. The reference author's component counts are not acceptance targets or verified facts about this model."
+    },
+    {
+      "id": "plasma-study",
+      "name": "A mineral interior / changing optical surface",
+      "composition": "A very large blue-green orb occupies the main field of a warm ivory page. A quiet editorial statement, ample air and compact palette/energy controls let its internal-looking surface patterns hold the attention.",
+      "surface": "A crisp spherical limb, view-sensitive pale highlight, dark blue-green regions, pale golden filaments and subtle violet clouding. Fine field detail compresses toward the edge. The shader constructs a sphere-like projected surface with original procedural turbulence and shading; this is not arbitrary DOM refraction or a measured volumetric simulation.",
+      "behavior": "Lagoon, Violet and Ember change the material palette, while excitation changes its luminous energy. Slow coherent field evolution continues within the fixed silhouette. Pointer input shifts its orientation; pause, reduced motion and matching posters remain useful.",
+      "checks": "Compare boundary sharpness, highlight placement, dense-versus-open regions and color relationships. Avoid a flat painted disc, a simple CSS blur bubble or a bright white rim that erases the material. Test parameter extremes and temporal stability.",
+      "references": [
+        "zzzzshawn-2096548536972370319"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-rendered.js",
+        "site/css/motion-rendered.css",
+        "site/js/motion/scenes/plasma.js",
+        "site/js/motion/shader.js",
+        "site/js/motion/runtime.js"
+      ],
+      "art": "The internal field is an original fragment shader. Its architecture and look are explicitly separate from the reference collection's licensed shader implementations."
+    },
+    {
+      "id": "phosphor-field",
+      "name": "Phosphor field / life between pixels",
+      "composition": "A broad luminous display plate stretches beneath a short, technical typographic heading on a nearly black ground. Keep the graphic as one large field, with small mode/density controls below rather than enclosing it in a generic metrics dashboard.",
+      "surface": "Cool green-to-cyan emission, tiny stable cells, dark gutters, a visible unlit matrix, restrained glow and a slight perspective skew. The waveform or bars must be recognizable at a distance while individual cells reward close inspection. Use a mono technical heading and exact labels.",
+      "behavior": "Wave, Columns and Orbit produce distinctly different signal geometry in the same display material. Cell density adjusts the matrix. A shared shader clock evolves the signal while text stays fixed; pause and reduced motion hold a composed state.",
+      "checks": "Inspect fine cell separation and broader emission independently. No moire, flicker or shimmering gutters at the delivered DPR. Verify that each mode produces substantial visual change and does not cover its controls.",
+      "references": [
+        "mnowakdesign-2091952693279436862",
+        "eve_bouff-2096417545096200466"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-rendered.js",
+        "site/css/motion-rendered.css",
+        "site/js/motion/scenes/phosphor.js",
+        "site/js/motion/shader.js"
+      ],
+      "art": "Use the actual procedural signal and cell-mask construction as the baseline. A dot texture placed over a blurry static line does not match this material."
+    },
+    {
+      "id": "silver-tide",
+      "name": "Silver tide / an authored moving surface",
+      "composition": "A wide dark sea of reflective waves fills the page beneath a sparse meditative heading. The horizon provides a quiet upper reading area, while a small right note and bottom light/pace controls balance the large surface.",
+      "surface": "Blue-black water, sharp silver reflection fragments, darker troughs and a coherent low horizon. The Afterglow state adds warm amber light. Layer long swells and finer ripples so this looks like a continuous reflective surface rather than large blurry sine bumps.",
+      "behavior": "The ordinary showcase plays an original 16-second loop on intentional hover or explicit playback. Silver and Afterglow select two matched films; Pace changes playback rate. Video bytes are deferred until needed. Reduced motion and Save-Data retain selectable matching posters. The films are rendered deterministically from the original shader, which can also be inspected live through the source capture route.",
+      "checks": "Compare wave detail, horizon, specular shape and loop boundary. Confirm hover leave pauses, playback works by button/keyboard, hidden tabs stop, source switching does not show a stale frame, and no video downloads before it is needed.",
+      "references": [
+        "vercel-2092999180780556643"
+      ],
+      "implementation": [
+        "site/js/motion/film.js",
+        "site/js/motion/scenes/tide.js",
+        "scripts/export-motion-film.mjs",
+        "site/assets/motion/films/provenance.json",
+        "site/js/expansion/motion-rendered.js",
+        "site/css/motion-rendered.css"
+      ],
+      "art": "Use the original encoded films under site/assets/motion/films/ and matched posters, or reproduce them with the linked shader/export pipeline. The authored wave function has a 16-second analytic period; omit the duplicate final frame when exporting."
+    },
+    {
+      "id": "cloud-chamber",
+      "name": "Cloud chamber / a window into elsewhere",
+      "composition": "A monumental limestone and bronze arch rises above a reflective pool and walkway. A live glass sphere with very fine metallic rings is anchored inside the opening. Large dark architectural type sits in the reserved sky on wide screens. Portrait uses a separately composed image region to keep the words clear.",
+      "surface": "Porous stone, warm bronze edges, cool sky, atmospheric distance, water reflection and thick clear glass. The sphere's environment must agree with the pictured landscape. Avoid an unrelated rectangular studio reflection that makes the live object feel pasted in.",
+      "behavior": "Clear, Warm and Cool vary the optical centre. Slow ring movement and subtle pointer response reveal it without moving the architecture or copy. The actual scene combines original raster environment art with live Three.js optics, not a freely traversable 3D world.",
+      "checks": "At wide and portrait sizes the sphere must remain within the architectural opening. Check glass edge, scene reflection, grounding, text contrast and all fallback states. Preserve the walkway and layered environment detail.",
+      "references": [
+        "JameslabiQ-2096555751133376528"
+      ],
+      "implementation": [
+        "site/js/motion/scenes/cloud.js",
+        "site/js/motion/runtime.js",
+        "site/js/expansion/motion-rendered.js",
+        "site/css/motion-rendered.css"
+      ],
+      "art": "The original environment is site/assets/motion/cloud-chamber.webp. It was authored with an empty opening for the live optical centre. Reuse compatible artwork or create an equally detailed original environment; keep background crop and live-object coordinates coupled."
+    },
+    {
+      "id": "ember-portrait",
+      "name": "Ember portrait / character in the details",
+      "composition": "An oversized synthetic portrait occupies the right and much of the vertical field; strong uppercase type sits in clear darker space to the left. A quiet material caption and three inspection views finish the scene. On mobile recompose around the face and keep the message in a protected lower region.",
+      "surface": "Matte graphite ceramic, layered dark metal, amber curved visor, tiny mesh, gaskets, braiding, fasteners and subtle surface wear. The face and enclosure have different roughness. Long reflected light shapes and warm internal glints provide depth. This is a richly authored object portrait, not a glossy toy.",
+      "behavior": "Portrait, The visor and The mechanism move between deliberate crops and change the explanatory caption. Subtle pointer-based reframing supports inspection. The actual asset is raster artwork; do not promise unrestricted orbit or moving facial geometry without a new model/film.",
+      "checks": "Inspect visor mesh, metal seams and cable detail at full size. All selected crops preserve readable text and visible controls. Keep the portrait's material contrast and personality when adapting it to another subject.",
+      "references": [
+        "_heyfaisal-2096513753865240860"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-editorial.js",
+        "site/css/motion-editorial.css",
+        "site/js/expansion/motion-shared.js"
+      ],
+      "art": "The original asset is site/assets/motion/ember-portrait.webp. If adapting the subject, create a comparably detailed original portrait with copy space; generic stock imagery or a flat vector head is below this target."
+    },
+    {
+      "id": "terrain-interface",
+      "name": "Tactile terrain / soft ground and clear intention",
+      "composition": "A warm light feature surface keeps a concise heading and three-item choice rail at left, a considered miniature collection interface at right and rich coral terrain across the foreground. The terrain overlaps only the nonessential base of the product frame.",
+      "surface": "Cream, warm charcoal ink, coral-orange suede fibers and fine white/ivory interface planes. Use a small tactile mark, quiet rules, precise tabular details and layered window edges. The hills need fine fibers, uneven crests, self-shadowed folds and warm light; a flat orange curve is not equivalent.",
+      "behavior": "The feature choices update the collection title, message and visual surface specimens, with a stable active rail marker. Keep the state operable by keyboard and touch. Recompose the preview and terrain independently on phones.",
+      "checks": "The foreground must not hide essential controls or the selected outcome. Compare fiber detail and contact relationships close up. The miniature UI remains a legible original example rather than copied customer data.",
+      "references": [
+        "sinvpasha-2092537706446299362"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-editorial.js",
+        "site/css/motion-editorial.css"
+      ],
+      "art": "The original terrain is site/assets/motion/terrain-interface.webp. Background and masked foreground share that image's crop. Keep its fiber quality and lighting coherent if replacing it."
+    },
+    {
+      "id": "sunlit-field",
+      "name": "Sunlit field / an illustrated atlas",
+      "composition": "A large editorial serif statement occupies the pale sky above a richly drawn agricultural valley. Engraved clouds, layered mountains, fields, water, a pavilion and foreground grasses form one connected landscape. Small inspection links and a restrained compass-like detail complete the page.",
+      "surface": "Warm golden paper, olive ink, dusty teal distance, ochre highlights and subtle printed irregularity. The drawing needs several scales of line density, stipple, material texture and finely observed small structures. The type belongs to the printed world rather than a generic SaaS header.",
+      "behavior": "The valley, The water and The shelter select intentional crops and captions from one original scene. Keep movement gentle and remove travel under reduced motion. The landscape remains fully composed at rest.",
+      "checks": "Compare fine grasses, irrigation lines, architectural edges, field rhythm and distant mountain separation. Protect the text in every crop and preserve a meaningful portrait composition.",
+      "references": [
+        "Talhadesignn-2093215721954377839"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-editorial.js",
+        "site/css/motion-editorial.css"
+      ],
+      "art": "The original illustration is site/assets/motion/sunlit-field.webp. Create or use authorized imagery with similar linework and depth; a flat vector farm or unrelated photograph cannot carry this direction."
+    },
+    {
+      "id": "chamber-control",
+      "name": "Material laboratory / a precise kind of feeling",
+      "composition": "A dense but disciplined dark instrument console sits beneath a technical heading. A large response plot, physical knobs, illumination switch, state selector and distribution meter occupy different module shapes in one continuous grid.",
+      "surface": "Anthracite-green planes, tiny warm orange indicators, crisp inset borders, machined knob faces, radial ticks and tabular or mono numbers. Use directional surface light, restrained bevels and honest units/relative values. Each module has a useful distinct anatomy.",
+      "behavior": "Excitation, damping and angle controls update the visible local model and curve. Illumination and character controls show actual state changes. This is an interactive local study, not a connected industrial controller. All controls have native keyboard input.",
+      "checks": "No decorative nonworking knobs or invented live-equipment claims. Verify values and graph response, selected state, contrast and complete mobile control coverage. Keep the instrument density without making labels microscopic.",
+      "references": [
+        "SebCornelius-2092618652994744578",
+        "xchylerdrenth-2093008935800517016"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-instruments.js",
+        "site/css/motion-instruments.css"
+      ],
+      "art": "This scene is native HTML/CSS/SVG. Preserve the layered control construction and meaningful local data model rather than using a screenshot of a dashboard."
+    },
+    {
+      "id": "quiet-frequency",
+      "name": "Quiet frequency / a playable modular rack",
+      "composition": "A dark audio instrument pairs an expressive editorial heading and explicit listening action with a broad scope and four carefully fitted modules. The waveform is the largest evidence region; knobs, echo diagram and level strips supply finer detail.",
+      "surface": "Deep green-black, warm silver/ivory, fine panel rims, restrained status lights, concentric dial markings and quiet mono labels. Waveform, filter, echo and output modules share a material language but each shows different information.",
+      "behavior": "Start listening creates an actual local Web Audio tone. Frequency, filter openness, echo and level change the sound; the scope reads the analyser. Stop, hidden-tab handling and unmount cleanup suspend or close the audio. Sound never starts merely because the page appears. Reduced motion keeps useful controls without a travelling trace.",
+      "checks": "Verify actual audio-node state, accurate controls, zero autoplay, bounded gain and cleanup. The scope must correspond to the signal rather than decorative random motion. Preserve the complete control set on mobile.",
+      "references": [
+        "emilwidlund-2093066923693011027"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-instruments.js",
+        "site/css/motion-instruments.css"
+      ],
+      "art": "The audio and scope are generated locally. Use original synthesis and scene code; do not import the reference's samples, private project state or brand identity."
+    },
+    {
+      "id": "common-clock",
+      "name": "A shared rhythm / a living technical diagram",
+      "composition": "A left editorial explanation balances a large light drawing sheet. One small dimensional lead object dispatches to four distinct process specimens, with curved routes, small colored packets, a merged result and one progress strip.",
+      "surface": "Warm paper, precise green-gray lines, pale modeled node faces, small specimen labels and a restrained set of signal colors. The diagram needs coherent routing, consistent projection, different internal drawings and readable status, not generic connected icons.",
+      "behavior": "A single six-second clock coordinates dispatch, work and return. Packets travel on real SVG route geometry; status updates at semantic stages. Watch/Stop is explicit, and the completed frame remains useful. Reduced motion presents a complete result immediately.",
+      "checks": "Packet positions, selected nodes, captions and progress must agree. Test stopping, replay, navigation cleanup and hidden tabs. Do not claim actual agent work or numerical productivity results from this illustrative sequence.",
+      "references": [
+        "jeetnirnejak-2092611495448445101",
+        "mehmetozsoyart-2092607949734543818"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-instruments.js",
+        "site/css/motion-instruments.css"
+      ],
+      "art": "Use coherent native vector geometry and one shared logical clock. The original artwork and demonstration copy are in the cited implementation."
+    },
+    {
+      "id": "vector-foundry",
+      "name": "Vector foundry / a line can hold a world",
+      "composition": "An editorial paper-and-blueprint surface balances a large narrow serif statement with an isometric ruled wave sheet. Fine ground projection, a specimen index, measured-looking annotation and a small seal frame the drawing.",
+      "surface": "Warm paper, muted blue-green line ranks, crisp contour edges and a carefully proportioned 2:1-like projection. The form is made from coherent continuous paths; its outer and internal lines must describe the same surface. Detail is structural rather than textured 3D decoration.",
+      "behavior": "Flat, Ripple and Surge select the wave's character and a continuous height control changes its amplitude. Native SVG paths derive from one parametric surface; there is no 3D library requirement. Motion follows a single phase and stops when hidden or reduced.",
+      "checks": "Inspect the outline and ruling through maximum amplitude, motion extremes and portrait reflow. No broken joins, differing projections or unnecessary SVG remounting each frame. Keep the dimension-like annotations truthful to the illustration's role.",
+      "references": [
+        "kairevicius-2090424600886759913",
+        "its_sslvr-2092129852514029770"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-instruments.js",
+        "site/css/motion-instruments.css"
+      ],
+      "art": "This is an original native SVG projection. Read the shared surface equation and point projection rather than replacing the drawing with a static image."
+    },
+    {
+      "id": "thermal-type",
+      "name": "Thermal type / typography in heated air",
+      "composition": "A large luminous heat chamber occupies the right of a cool gray page while bold technical type sits in the quiet region at left. The amber opening and concentric hardware create a physical explanation for a small local shimmer in the words.",
+      "surface": "Dark titanium, radial fins, fine fasteners, polished ring edges and glowing striated ceramic. The type is sharp at rest and uses a restrained local displacement only when engaged. Preserve the hard-material and hot-light contrast.",
+      "behavior": "Hovering the words or pressing Hold the heat engages an original SVG turbulence/displacement effect; leaving or releasing returns the text to clarity. Keep semantic text, keyboard input and a clear reduced-motion state. The image is original raster artwork and the text distortion is live.",
+      "checks": "The message must remain readable during the effect. Test release, hidden tabs, rapid toggles and reduced motion. On mobile give the text its own clear region and keep the material opening visible.",
+      "references": [
+        "RobertJohns-2090832456081608791"
+      ],
+      "implementation": [
+        "site/js/expansion/motion-editorial.js",
+        "site/css/motion-editorial.css"
+      ],
+      "art": "The original asset is site/assets/motion/thermal-type.webp. The source effect is a bounded text filter; it does not imply a modeled engine, heat simulation or copied Hermeus implementation."
+    },
+    {
+      "id": "morph-study",
+      "name": "Morph study / a shape for the change",
+      "composition": "A warm mint editorial field places a large expressive heading beside a clear three-dimensional particle structure. Small shape and formation controls sit below. The point cloud must resolve into recognizable geometry, with enough density and contrast to hold its own against the type.",
+      "surface": "Deep green fine points on a pale mint ground, with subtle depth from point distribution, overlap and restrained rotation. Avoid diffuse low-contrast dust that loses the chosen shape. The type is an editorial serif voice, while controls and labels stay quiet and precise.",
+      "behavior": "Sphere, Current and Loop use stable particles to move among authored target geometries. Formation changes how tightly they resolve. The transition retargets from the current positions, and pause/reduced motion provide an intentional completed state. Keep text outside the rendering layer.",
+      "checks": "Compare the resting target and transition separately. No accidental intermediate stall, abrupt stale shape, chaotic particle reassignment or weak mobile contrast. Test reversals, formation extremes and resource disposal.",
+      "references": [
+        "semochkin_alex-2091816203383664688"
+      ],
+      "implementation": [
+        "site/js/motion/scenes/morph.js",
+        "site/js/motion/runtime.js",
+        "site/js/expansion/motion-rendered.js",
+        "site/css/motion-rendered.css"
+      ],
+      "art": "The targets and particle transitions are original code. Preserve point identity and authored geometry instead of importing third-party brand illustrations or source screenshots."
     }
   ]
 }

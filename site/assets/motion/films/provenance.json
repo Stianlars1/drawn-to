@@ -1,0 +1,24 @@
+[
+  {
+    "file": "silver-tide-0.mp4",
+    "mode": 0,
+    "frames": 384,
+    "fps": 24,
+    "duration": 16,
+    "source": "site/js/motion/scenes/tide.js",
+    "loop": "Analytic 16-second periodic wave field; final duplicate frame omitted.",
+    "bytes": 7573781,
+    "encoding": "H.264, yuv420p, 24 fps, CRF 26, 4 Mb/s maximum target, faststart"
+  },
+  {
+    "file": "silver-tide-1.mp4",
+    "mode": 1,
+    "frames": 384,
+    "fps": 24,
+    "duration": 16,
+    "source": "site/js/motion/scenes/tide.js",
+    "loop": "Analytic 16-second periodic wave field; final duplicate frame omitted.",
+    "bytes": 7383998,
+    "encoding": "H.264, yuv420p, 24 fps, CRF 26, 4 Mb/s maximum target, faststart"
+  }
+]

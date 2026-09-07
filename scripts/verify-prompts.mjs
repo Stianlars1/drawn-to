@@ -13,7 +13,7 @@ try{
  const context=await browser.newContext({viewport:{width:1440,height:900},permissions:['clipboard-read','clipboard-write'],reducedMotion:'reduce'});
  const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const visit=async id=>{await page.goto(`${base}?v=${id}&still&gpu=off`);await page.waitForFunction(id=>document.querySelector('#app').dataset.mounted===id,id);};
- await visit('a');const ids=await page.evaluate(()=>[...ORDER]);assert.equal(ids.length,55);
+ await visit('a');const ids=await page.evaluate(()=>[...ORDER]);assert.equal(ids.length,70);
  const copied=new Set();
  for(const id of ids){
   await visit(id);const button=page.locator('.scene-prompt-actions [data-style-copy]');
@@ -27,7 +27,7 @@ try{
  await page.locator('.scene-prompt-actions [data-style-copy]').click();
  await page.waitForTimeout(1800);
  assert.equal(await page.locator('.scene-prompt-actions [data-style-copy]').innerText(),'Copy this prompt');
- report.checks.push('All 55 header actions write their unique complete prompt to the real browser clipboard.');
+ report.checks.push('All 70 header actions write their unique complete prompt to the real browser clipboard.');
  for(const [width,height]of [[1440,900],[1280,720],[390,844]]){
   await page.setViewportSize({width,height});
   for(const id of ids){await visit(id);const result=await page.evaluate(()=>{
@@ -38,7 +38,7 @@ try{
    });assert.deepEqual(result,{overflow:false,contained:true,overlap:false},`${id} ${width}`);}
   report.viewports.push({width,height,routes:ids.length});
  }
- report.checks.push('Prompt headers fit all 55 scenes at desktop, short desktop and phone sizes.');
+ report.checks.push('Prompt headers fit all 70 scenes at desktop, short desktop and phone sizes.');
  await visit('optical-type');await page.locator('[data-style-preview]').click();
  const initial=await page.locator('.style-text').inputValue();await page.waitForFunction(()=>document.querySelector('.style-text').value.includes('IOR 1.48'));
  const text=await page.locator('.style-text').inputValue();assert.ok(text.includes('CanvasTexture'));assert.ok(text.includes('scenes/optical.js'));

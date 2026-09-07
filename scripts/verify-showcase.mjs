@@ -32,14 +32,14 @@ try {
 
   await visit('a');
   const pages = await page.evaluate(() => [...ORDER]);
-  assert.equal(pages.length, 55);
-  assert.equal(new Set(pages).size,55);
-  assert.deepEqual(pages.slice(0,4),['optical-type','night-garden','woven-spectrum','character-close']);
+  assert.equal(pages.length, 70);
+  assert.equal(new Set(pages).size,70);
+  assert.deepEqual(pages.slice(0,4),['auric-orbit','cloud-chamber','camera-obscura','phosphor-field']);
   for (const id of pages) {
     await visit(id, '&t=0');
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, id);
   }
-  report.checks.push('All 55 unique routes render without horizontal overflow at 1440x900');
+  report.checks.push('All 70 unique routes render without horizontal overflow at 1440x900');
 
   await visit('action-result');
   await page.locator('#xi-project').focus();

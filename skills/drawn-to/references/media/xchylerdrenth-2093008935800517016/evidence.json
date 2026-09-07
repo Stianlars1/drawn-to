@@ -1,0 +1,44 @@
+{
+  "slug": "xchylerdrenth-2093008935800517016",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/xchylerdrenth/status/2093008935800517016",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQvchONaMAE26vw.jpg?name=orig",
+      "bytes": 190442,
+      "sha256": "e8eeed9e9cef006f0d92b3716b202471769e5d768af591b72c1294abf705d349",
+      "dimensions": [
+        1920,
+        1920
+      ],
+      "archive_file": "photo_1.jpg"
+    },
+    {
+      "file": "photo_2.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQvchSUbcAAmlPS.jpg?name=orig",
+      "bytes": 146521,
+      "sha256": "02798a3633abd65f3b7ec118f478a8d2a8d4dfa4ebc8d1bff70d562d12cdb77f",
+      "dimensions": [
+        1920,
+        1920
+      ],
+      "archive_file": "photo_2.jpg"
+    },
+    {
+      "file": "photo_3.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQvchSZagAAP3d8.jpg?name=orig",
+      "bytes": 113189,
+      "sha256": "954a32bc390f124ff726ef010a9cef59aa3717044de1dfc5f32e41c5d13a618e",
+      "dimensions": [
+        1920,
+        1920
+      ],
+      "archive_file": "photo_3.jpg"
+    }
+  ]
+}

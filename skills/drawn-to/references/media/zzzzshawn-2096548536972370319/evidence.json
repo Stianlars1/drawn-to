@@ -1,0 +1,65 @@
+{
+  "slug": "zzzzshawn-2096548536972370319",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/zzzzshawn/status/2096548536972370319",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2096547253112741888/vid/avc1/1920x1064/fZEFlAGH-zuoCnrP.mp4?tag=29",
+      "bytes": 43447096,
+      "sha256": "6daaa42e63436a401b257594b300cafc34b3e08c4d3351cbf4f56c8f96c28d9e",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 321,
+        "archive": [
+          {
+            "file": "video_1-sample-01.jpg",
+            "time_seconds": 0.08
+          },
+          {
+            "file": "video_1-sample-04.jpg",
+            "time_seconds": 16.094
+          },
+          {
+            "file": "video_1-sample-07.jpg",
+            "time_seconds": 32.108
+          },
+          {
+            "file": "video_1-sample-10.jpg",
+            "time_seconds": 48.122
+          },
+          {
+            "file": "video_1-sample-13.jpg",
+            "time_seconds": 64.136
+          },
+          {
+            "file": "video_1-sample-16.jpg",
+            "time_seconds": 80.15
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1064,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "45970/803",
+            "duration": "80.300000",
+            "nb_frames": "4597"
+          }
+        ],
+        "format": {
+          "duration": "80.300000"
+        }
+      }
+    }
+  ]
+}

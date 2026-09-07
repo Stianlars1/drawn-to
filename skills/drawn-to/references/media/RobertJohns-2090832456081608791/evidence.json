@@ -1,0 +1,65 @@
+{
+  "slug": "RobertJohns-2090832456081608791",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/RobertJohns/status/2090832456081608791",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2090832390952525824/vid/avc1/1320x2398/V8aIAmkQFwr6VAkY.mp4?tag=29",
+      "bytes": 4163204,
+      "sha256": "168133f624695965c369e7865bca284f37531f45ae391a084239aec1c334e436",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 80,
+        "archive": [
+          {
+            "file": "video_1-sample-01.jpg",
+            "time_seconds": 0.0
+          },
+          {
+            "file": "video_1-sample-04.jpg",
+            "time_seconds": 3.483333
+          },
+          {
+            "file": "video_1-sample-07.jpg",
+            "time_seconds": 7.883333
+          },
+          {
+            "file": "video_1-sample-10.jpg",
+            "time_seconds": 12.651667
+          },
+          {
+            "file": "video_1-sample-13.jpg",
+            "time_seconds": 16.918333
+          },
+          {
+            "file": "video_1-sample-16.jpg",
+            "time_seconds": 20.085
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1320,
+            "height": 2398,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "498000/12061",
+            "duration": "20.101667",
+            "nb_frames": "830"
+          }
+        ],
+        "format": {
+          "duration": "20.154921"
+        }
+      }
+    }
+  ]
+}

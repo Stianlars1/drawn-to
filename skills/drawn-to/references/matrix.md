@@ -1,4 +1,4 @@
-# Taste matrix - all 85 references
+# Taste matrix - all 104 references
 
 Generated from post frontmatter by `python3 scripts/rebuild-index.py` in the taste repository.
 Edit the post metadata, not this table. `_index.json` contains the same current entries.
@@ -91,11 +91,30 @@ The count includes visual references and resources; it is not a count of videos 
 | 83 | [socoloffalex-2095](posts/socoloffalex-2095936925668438206.md) | resource | mixed | sequence | mixed | balanced | processed-image | Source imagery becomes several distinct visual materials through configurable tools |
 | 84 | [basit_designs-209586](posts/basit_designs-2095862418518008252.md) | hero | light | full-choreography | mixed | airy | photo | A kinetic image collection leaves the words and action still |
 | 85 | [AdityaSur11-2096](posts/AdityaSur11-2096160317458030911.md) | section-set | light | none | sharp | airy | illustration | Blue engraved landscapes turn a footer into an editorial closing scene |
+| 86 | [zzzzshawn-2096](posts/zzzzshawn-2096548536972370319.md) | resource | dark | sequence | contextual | varied | shader | State-driven shader orbs, from clear glass to filamentary atmospheres |
+| 87 | [eve_bouff-2096](posts/eve_bouff-2096417545096200466.md) | hero | dark | ambient | contextual | varied | mixed | A monochrome field of small vertical light cells |
+| 88 | [omarsar0-2096](posts/omarsar0-2096339043919237288.md) | interactive-demo | light | interactive | contextual | varied | mixed | An inspectable camera with exploded mechanical layers |
+| 89 | [_heyfaisal-2096](posts/_heyfaisal-2096513753865240860.md) | hero | dark | ambient | contextual | varied | mixed | A cinematic synthetic portrait under a red luminous visor |
+| 90 | [JameslabiQ-2096](posts/JameslabiQ-2096555751133376528.md) | hero | light | ambient | contextual | varied | mixed | Monumental architecture around a rotating optical centre |
+| 91 | [emilwidlund-2093](posts/emilwidlund-2093066923693011027.md) | interactive-demo | dark | interactive | contextual | varied | mixed | A restrained modular granular-synthesis rack |
+| 92 | [levithefirst-2092](posts/levithefirst-2092975925306507619.md) | resource | mixed | none | contextual | varied | mixed | A resource map for concrete interface construction |
+| 93 | [Talhadesignn-2093](posts/Talhadesignn-2093215721954377839.md) | section-set | mixed | none | contextual | varied | mixed | Four hero directions with very different sources of visual weight |
+| 94 | [vercel-2092](posts/vercel-2092999180780556643.md) | resource | mixed | sequence | contextual | varied | shader | One GPU rendering vocabulary across live canvas, stills and video |
+| 95 | [xchylerdrenth-2093](posts/xchylerdrenth-2093008935800517016.md) | section-set | mixed | none | contextual | varied | mixed | Technical editorial panels with dimensional charts and warm edge light |
+| 96 | [sinvpasha-2092](posts/sinvpasha-2092537706446299362.md) | feature-section | light | none | contextual | varied | mixed | Tactile coral terrain frames a warm product preview |
+| 97 | [jeetnirnejak-2092](posts/jeetnirnejak-2092611495448445101.md) | interactive-demo | light | interactive | contextual | varied | mixed | A one-clock fanout diagram that communicates work and merge |
+| 98 | [mehmetozsoyart-2092](posts/mehmetozsoyart-2092607949734543818.md) | page-sequence | light | sequence | contextual | varied | mixed | An editorial page unified by precise isometric mechanisms |
+| 99 | [SebCornelius-2092](posts/SebCornelius-2092618652994744578.md) | dashboard | dark | none | contextual | dense | mixed | An industrial dashboard with physical control density |
+| 100 | [its_sslvr-2092](posts/its_sslvr-2092129852514029770.md) | illustration-set | dark | ambient | contextual | varied | mixed | Three wireframe specimens on a dark technical poster triptych |
+| 101 | [semochkin_alex-2091](posts/semochkin_alex-2091816203383664688.md) | resource | light | interactive | contextual | varied | mixed | From authored SVG geometry to controllable particle illustrations |
+| 102 | [mnowakdesign-2091](posts/mnowakdesign-2091952693279436862.md) | illustration-set | dark | none | contextual | varied | mixed | Macro halftone displays with luminous subpixel detail |
+| 103 | [RobertJohns-2090](posts/RobertJohns-2090832456081608791.md) | hero | light | ambient | contextual | varied | mixed | Heat-distorted typography beside a luminous industrial aperture |
+| 104 | [kairevicius-2090](posts/kairevicius-2090424600886759913.md) | interactive-demo | dark | ambient | contextual | varied | mixed | A deforming isometric sheet built from sparse SVG geometry |
 
 ## Distribution
 
-- **Kind**: bento 4 · brand 5 · component 18 · dashboard 2 · feature-cards 11 · flow 1 · full-page 6 · hero 11 · illustration 1 · illustration-set 2 · resource 11 · section-set 13
-- **Mode**: both 7 · dark 29 · light 37 · mixed 12
-- **Motion**: full-choreography 22 · hover 1 · micro 10 · none 34 · sequence 18
+- **Kind**: bento 4 · brand 5 · component 18 · dashboard 3 · feature-cards 11 · feature-section 1 · flow 1 · full-page 6 · hero 15 · illustration 1 · illustration-set 4 · interactive-demo 4 · page-sequence 1 · resource 15 · section-set 15
+- **Mode**: both 7 · dark 37 · light 44 · mixed 16
+- **Motion**: ambient 6 · full-choreography 22 · hover 1 · interactive 4 · micro 10 · none 40 · sequence 21
 
 See [style families](style-families.md) for direction seeds and [newer references](september-expansion.md) for the September expansion.

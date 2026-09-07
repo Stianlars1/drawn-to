@@ -1,0 +1,65 @@
+{
+  "slug": "_heyfaisal-2096513753865240860",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/_heyfaisal/status/2096513753865240860",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2096513679487557632/vid/avc1/986x720/amox9ULQj3hBLABV.mp4?tag=14",
+      "bytes": 1485238,
+      "sha256": "de66caa469ea63d3073c17253920fae0c36ebb20fddd92a77dfe01d183a65de6",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 40,
+        "archive": [
+          {
+            "file": "video_1-sample-01.jpg",
+            "time_seconds": 0.08
+          },
+          {
+            "file": "video_1-sample-04.jpg",
+            "time_seconds": 2.059
+          },
+          {
+            "file": "video_1-sample-07.jpg",
+            "time_seconds": 4.038
+          },
+          {
+            "file": "video_1-sample-10.jpg",
+            "time_seconds": 6.016
+          },
+          {
+            "file": "video_1-sample-13.jpg",
+            "time_seconds": 7.995
+          },
+          {
+            "file": "video_1-sample-16.jpg",
+            "time_seconds": 9.974
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 986,
+            "height": 720,
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "68175000/2272613",
+            "duration": "10.100502",
+            "nb_frames": "303"
+          }
+        ],
+        "format": {
+          "duration": "10.123900"
+        }
+      }
+    }
+  ]
+}

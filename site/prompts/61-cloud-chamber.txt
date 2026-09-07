@@ -1,0 +1,33 @@
+Use this visual direction: Cloud chamber / a window into elsewhere
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#cloud-chamber
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the multi-scene showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A monumental limestone and bronze arch rises above a reflective pool and walkway. A live glass sphere with very fine metallic rings is anchored inside the opening. Large dark architectural type sits in the reserved sky on wide screens. Portrait uses a separately composed image region to keep the words clear.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Porous stone, warm bronze edges, cool sky, atmospheric distance, water reflection and thick clear glass. The sphere's environment must agree with the pictured landscape. Avoid an unrelated rectangular studio reflection that makes the live object feel pasted in.
+
+BEHAVIOR
+Clear, Warm and Cool vary the optical centre. Slow ring movement and subtle pointer response reveal it without moving the architecture or copy. The actual scene combines original raster environment art with live Three.js optics, not a freely traversable 3D world.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+The original environment is site/assets/motion/cloud-chamber.webp. It was authored with an empty opening for the live optical centre. Reuse compatible artwork or create an equally detailed original environment; keep background crop and live-object coordinates coupled.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/JameslabiQ-2096555751133376528.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/motion/scenes/cloud.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/motion/runtime.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/motion-rendered.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/motion-rendered.css
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+At wide and portrait sizes the sphere must remain within the architectural opening. Check glass edge, scene reflection, grounding, text contrast and all fallback states. Preserve the walkway and layered environment detail.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

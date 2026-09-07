@@ -1,0 +1,65 @@
+{
+  "slug": "kairevicius-2090424600886759913",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/kairevicius/status/2090424600886759913",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2090424024094363649/vid/avc1/2400x2400/pbSrIM6VyxWMxSSE.mp4?tag=29",
+      "bytes": 2052765,
+      "sha256": "379fa9a2253ad09f0af4e6e1acb6c3d1aae731f06c9c082fc281f454459935a3",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 48,
+        "archive": [
+          {
+            "file": "video_1-sample-01.jpg",
+            "time_seconds": 0.0
+          },
+          {
+            "file": "video_1-sample-04.jpg",
+            "time_seconds": 2.4
+          },
+          {
+            "file": "video_1-sample-07.jpg",
+            "time_seconds": 4.816667
+          },
+          {
+            "file": "video_1-sample-10.jpg",
+            "time_seconds": 7.2
+          },
+          {
+            "file": "video_1-sample-13.jpg",
+            "time_seconds": 9.6
+          },
+          {
+            "file": "video_1-sample-16.jpg",
+            "time_seconds": 11.983333
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 2400,
+            "height": 2400,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "689/12",
+            "duration": "12.000000",
+            "nb_frames": "689"
+          }
+        ],
+        "format": {
+          "duration": "12.000000"
+        }
+      }
+    }
+  ]
+}

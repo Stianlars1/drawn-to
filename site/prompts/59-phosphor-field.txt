@@ -1,0 +1,34 @@
+Use this visual direction: Phosphor field / life between pixels
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#phosphor-field
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the multi-scene showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A broad luminous display plate stretches beneath a short, technical typographic heading on a nearly black ground. Keep the graphic as one large field, with small mode/density controls below rather than enclosing it in a generic metrics dashboard.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Cool green-to-cyan emission, tiny stable cells, dark gutters, a visible unlit matrix, restrained glow and a slight perspective skew. The waveform or bars must be recognizable at a distance while individual cells reward close inspection. Use a mono technical heading and exact labels.
+
+BEHAVIOR
+Wave, Columns and Orbit produce distinctly different signal geometry in the same display material. Cell density adjusts the matrix. A shared shader clock evolves the signal while text stays fixed; pause and reduced motion hold a composed state.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+Use the actual procedural signal and cell-mask construction as the baseline. A dot texture placed over a blurry static line does not match this material.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/mnowakdesign-2091952693279436862.md
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/eve_bouff-2096417545096200466.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/motion-rendered.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/motion-rendered.css
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/motion/scenes/phosphor.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/motion/shader.js
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Inspect fine cell separation and broader emission independently. No moire, flicker or shimmering gutters at the delivered DPR. Verify that each mode produces substantial visual change and does not cover its controls.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

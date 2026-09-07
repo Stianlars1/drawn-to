@@ -1,0 +1,20 @@
+{
+  "slug": "levithefirst-2092975925306507619",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/levithefirst/status/2092975925306507619",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQu-gXDXoAAVM-v.jpg?name=orig",
+      "bytes": 92309,
+      "sha256": "39b5bec8ada83a0bff2e8dcea491bd60cc554148f55987f3b8a8bb9fd7c3453d",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "archive_file": "photo_1.jpg"
+    }
+  ]
+}

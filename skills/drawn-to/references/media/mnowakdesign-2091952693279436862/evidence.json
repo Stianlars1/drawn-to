@@ -1,0 +1,56 @@
+{
+  "slug": "mnowakdesign-2091952693279436862",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/mnowakdesign/status/2091952693279436862",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQgbuFNW8AAMozt.jpg?name=orig",
+      "bytes": 512325,
+      "sha256": "d19528cccc00b743ce750ba7ad9076dda6f8b9c17462241c2233f2c572a66788",
+      "dimensions": [
+        1638,
+        2048
+      ],
+      "archive_file": "photo_1.jpg"
+    },
+    {
+      "file": "photo_2.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQgbu9TWkAAvgkK.jpg?name=orig",
+      "bytes": 2584716,
+      "sha256": "5eccf721f9d2ba4647b7d5abca93d0e654e1670d62b5e4fa6870e04e6a80e815",
+      "dimensions": [
+        1638,
+        2048
+      ],
+      "archive_file": "photo_2.jpg"
+    },
+    {
+      "file": "photo_3.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQgbu9vXgAAbYkk.jpg?name=orig",
+      "bytes": 2691308,
+      "sha256": "929dda04dbfadee67b470eb298e0f52eefdfd2d78bc00f17c03c114225e9c2a2",
+      "dimensions": [
+        1638,
+        2048
+      ],
+      "archive_file": "photo_3.jpg"
+    },
+    {
+      "file": "photo_4.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQgbu9mWYAAmeD5.jpg?name=orig",
+      "bytes": 2875361,
+      "sha256": "5e5f0f11629851ff6be0f7aad664ea1ea6f14670b07bef032af027c39e09a0ad",
+      "dimensions": [
+        1638,
+        2048
+      ],
+      "archive_file": "photo_4.jpg"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+Use this visual direction: Camera obscura / the inspectable object
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#camera-obscura
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the multi-scene showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A pale technical studio balances a large camera model, a compact top-left statement, a narrow right specimen column and a bottom inspection strip. The camera should have enough visual area to inspect, with a visible grounding shadow and spare technical annotations.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Graphite body, silver and warm metal rings, fine grip texture, translucent green-tinted optics, concentric barrel lips, knurling, tiny fasteners, top dials, circuitry and engraved-looking labels. Model contact interfaces and edge bevels. The visual quality comes from the relationships between parts and materials, not a claimed polygon or part count.
+
+BEHAVIOR
+Assembled, Exploded and Inside expose different physical configurations. Separation moves coherent subassemblies along the lens/body axis. Pointer motion offers a restrained inspection angle. Internal circuitry and lens layers remain registered; the actual renderer is Three.js with instanced repeated details and physical materials.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+The camera model is original procedural geometry in the cited source. Reuse compatible source or create a comparably detailed model. The reference author's component counts are not acceptance targets or verified facts about this model.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/omarsar0-2096339043919237288.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/motion-rendered.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/motion-rendered.css
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/motion/scenes/camera.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/motion/runtime.js
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Inspect all three configurations and the largest separation. No detached labels, intersecting iris leaves, ungrounded parts or clipping in portrait. Controls must expose real changes and every fallback must preserve its selected configuration.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

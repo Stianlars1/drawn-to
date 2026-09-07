@@ -1,0 +1,24 @@
+{
+  "date": "2026-09-07T08:37:59.386Z",
+  "browser": "152.0.7977.82",
+  "checks": [
+    "All 70 unique routes render without horizontal overflow at 1440x900",
+    "Form keys stay local; action preview, catalog navigation and reload preserve state",
+    "Clipboard failure and success feedback reflect the actual outcome",
+    "All five GPU scenes stop and dispose; rapid navigation leaves no late canvas",
+    "Particle release changes the field; forced WebGL2 backend renders",
+    "Poster-only material and particle controls switch to decoded matching stills",
+    "Changing reduced motion while the scene is open stops rendering",
+    "The root opens the new mineral scene; home and wraparound follow the curated sequence",
+    "Interacting with a demo holds the catalog; a range key changes the scene without navigating",
+    "Four new Three.js scenes change actual pixels, clean up on departure and expose three valid poster states",
+    "A lost WebGL context releases the scene and retains a working poster interaction",
+    "All six image compositions respond: detail views, chapters, magnifier, modal focus and frame reordering",
+    "New studio animation stops under live reduced-motion changes",
+    "All four studio scenes retain mobile Save-Data controls and matching portrait posters",
+    "Mobile Save-Data uses a usable poster without a renderer"
+  ],
+  "particleBackend": "webgpu",
+  "errors": [],
+  "failedResources": []
+}

@@ -1,4 +1,4 @@
-# Showcase: 55 screens
+# Showcase: 70 screens
 
 The original 30 screens retain their IDs (`a` through `z`, then `A` through `D`).
 Twenty-five additional compositions exercise the September references. The
@@ -28,6 +28,10 @@ holds the catalog cycle so a scene cannot disappear while it is being explored.
 - `?gpu=off` exercises poster-only GPU scenes and their material/state choices.
 - `?gpu=webgl` forces the particle field's WebGL2 implementation.
 - Reduced motion stops the cycle and scene animation. Save-Data selects posters.
+
+The [2026-09-07 motion expansion](motion-expansion.md) documents the current
+15-scene addition and its rendering/interaction contracts. Earlier tables below
+record the previous opening; stable IDs remain valid.
 
 ## Latest ten compositions
 
@@ -182,7 +186,7 @@ node scripts/verify-prompts.mjs http://127.0.0.1:8758/ .eval-output/prompts.json
 ```
 
 The browser check uses the same `PLAYWRIGHT_MODULE` and `CHROME_EXECUTABLE`
-options as the main verification. It checks all 55 clipboard exports, every
+options as the main verification. It checks all 70 clipboard exports, every
 header at three sizes, denied clipboard/manual recovery, loading failure,
 legacy mobile content preservation and repaired control behavior.
 

@@ -6,7 +6,7 @@ visual direction. Discover product facts and consequential gaps; do not send
 the user back through a generic family interview.
 
 The portable [showcase-styles.json](showcase-styles.json) contains a separate
-visual contract for each of the 55 scene IDs. Look up the exact ID, including
+visual contract for each of the 70 scene IDs. Look up the exact ID, including
 case for the original `a`-`z`, `A`-`D` routes. Each entry supplies composition,
 material/light/type, behavior, scene-specific acceptance checks, source
 vocabulary and actual implementation paths. The public showcase is

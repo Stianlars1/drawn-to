@@ -1,0 +1,65 @@
+{
+  "slug": "eve_bouff-2096417545096200466",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/eve_bouff/status/2096417545096200466",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2096414460164587520/vid/avc1/2234x1382/IHK4QuSDL1wGGkTG.mp4?tag=29",
+      "bytes": 6576509,
+      "sha256": "74be1c076c356b9bd76e408d527a8e1a22449e1d91a2d5b7db2c7bebc832c3a6",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 59,
+        "archive": [
+          {
+            "file": "video_1-sample-01.jpg",
+            "time_seconds": 0.08
+          },
+          {
+            "file": "video_1-sample-04.jpg",
+            "time_seconds": 2.972
+          },
+          {
+            "file": "video_1-sample-07.jpg",
+            "time_seconds": 5.865
+          },
+          {
+            "file": "video_1-sample-10.jpg",
+            "time_seconds": 8.757
+          },
+          {
+            "file": "video_1-sample-13.jpg",
+            "time_seconds": 11.649
+          },
+          {
+            "file": "video_1-sample-16.jpg",
+            "time_seconds": 14.542
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 2234,
+            "height": 1382,
+            "r_frame_rate": "120/1",
+            "avg_frame_rate": "101280/1763",
+            "duration": "14.691667",
+            "nb_frames": "844"
+          }
+        ],
+        "format": {
+          "duration": "14.691667"
+        }
+      }
+    }
+  ]
+}

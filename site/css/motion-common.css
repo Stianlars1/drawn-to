@@ -1,0 +1,213 @@
+.xp-stage[class*="xp-auric"],
+.xp-stage[class*="xp-camera-obscura"],
+.xp-stage[class*="xp-plasma"],
+.xp-stage[class*="xp-phosphor"],
+.xp-stage[class*="xp-silver-tide"],
+.xp-stage[class*="xp-cloud-chamber"],
+.xp-stage[class*="xp-morph-study"] {
+  position: relative;
+  isolation: isolate;
+}
+.mo-eyebrow {
+  display: block;
+  font: 400 10px/1.4 var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--xp-muted);
+}
+.mo-host {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+.mo-host canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mo-host picture {
+  position: absolute;
+  inset: 0;
+}
+.mo-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mo-host[data-ready="true"]:not([data-fallback="true"]) picture {
+  visibility: hidden;
+}
+.mo-host[data-fallback="true"] canvas {
+  display: none;
+}
+.mo-controls {
+  display: grid;
+  gap: 12px;
+}
+.mo-control-label {
+  font: 400 11px/1.4 var(--sans);
+  color: var(--xp-muted);
+}
+.mo-choices {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.mo-choices button {
+  color: var(--xp-ink);
+  font: 400 11px/1.25 var(--sans);
+  padding: 11px 17px;
+  border: 1px solid color-mix(in srgb, var(--xp-ink) 22%, transparent);
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.mo-choices button[aria-pressed="true"] {
+  color: var(--xp-bg);
+  background: var(--xp-ink);
+  border-color: var(--xp-ink);
+}
+.mo-choices button:hover {
+  border-color: var(--xp-ink);
+}
+.mo-range {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  font: 400 11px/1.4 var(--sans);
+  min-width: 180px;
+}
+.mo-range output {
+  font-family: var(--mono);
+  color: var(--xp-muted);
+}
+.mo-range input {
+  grid-column: 1/-1;
+  appearance: none;
+  height: 2px;
+  background: color-mix(in srgb, var(--xp-ink) 25%, transparent);
+  cursor: pointer;
+  width: 100%;
+  margin: 8px 0 12px;
+}
+.mo-range input::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border: 3px solid var(--xp-bg);
+  border-radius: 50%;
+  background: var(--xp-ink);
+  box-shadow: 0 0 0 1px var(--xp-muted);
+}
+.mo-pause {
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  color: var(--xp-muted);
+  padding: 8px 0;
+  font: 400 11px/1.4 var(--sans);
+  cursor: pointer;
+  justify-self: end;
+  align-self: end;
+  white-space: nowrap;
+}
+.mo-controls button:focus-visible,
+.mo-range input:focus-visible,
+.mo-pause:focus-visible {
+  outline: 2px solid var(--xp-accent);
+  outline-offset: 5px;
+}
+.mo-editorial-art {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+.mo-editorial-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.mo-image-views {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.mo-image-views button {
+  padding: 10px 0;
+  margin-right: 18px;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  color: var(--xp-muted);
+  font: 400 11px/1.4 var(--sans);
+  cursor: pointer;
+}
+.mo-image-views button[aria-pressed="true"] {
+  color: var(--xp-ink);
+  border-color: currentColor;
+}
+.mo-image-views button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+@media (max-width: 720px) {
+  .mo-eyebrow {
+    font-size: 8px;
+    letter-spacing: 0.1em;
+  }
+  .mo-choices button {
+    padding: 11px 13px;
+    font-size: 10px;
+  }
+  .mo-range {
+    min-width: 140px;
+  }
+  .mo-controls {
+    gap: 8px;
+  }
+  .mo-control-label {
+    font-size: 10px;
+  }
+  .mo-pause {
+    font-size: 10px;
+  }
+  .mo-image-views button {
+    margin-right: 7px;
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mo-choices button,
+  .mo-editorial-art img {
+    transition: none !important;
+  }
+}
+[data-mo-film] video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.22s;
+}
+[data-mo-film][data-playing="true"] video {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-mo-film] video {
+    display: none;
+  }
+}
+.mo-range.mo-disabled {
+  opacity: 0.52;
+}
+.mo-range.mo-disabled input {
+  cursor: default;
+}

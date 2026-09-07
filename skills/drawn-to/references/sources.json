@@ -17,12 +17,9 @@
     "https://x.com/PostiauxCharles/status/2095509261908382083/photo/3",
     "https://x.com/bedirhandogn/status/2096185624256524573/photo/1",
     "https://x.com/bedirhandogn/status/2096185624256524573",
-    "https://x.com/bedirhandogn/status/2096185624256524573",
-    "https://x.com/bedirhandogn/status/2096185624256524573/photo/1",
     "https://x.com/bedirhandogn/status/2096185624256524573/photo/2",
     "https://x.com/bedirhandogn/status/2096185624256524573/photo/3",
     "https://x.com/kitlangton/status/2096041674073874765",
-    "https://x.com/MSchwaibold/status/2096059496812716307",
     "https://x.com/krispuckett/status/2095526364451647564",
     "https://x.com/basit_designs/status/2095821165306732974",
     "https://x.com/TheKartikBansal/status/2094873690924286189",
@@ -41,7 +38,40 @@
     "https://x.com/uihssn/status/2096384145186599306",
     "https://x.com/socoloffalex/status/2095936925668438206",
     "https://x.com/basit_designs/status/2095862418518008252",
-    "https://x.com/AdityaSur11/status/2096160317458030911"
+    "https://x.com/AdityaSur11/status/2096160317458030911",
+    "https://x.com/zzzzshawn/status/2096548536972370319",
+    "https://x.com/eve_bouff/status/2096417545096200466",
+    "https://x.com/omarsar0/status/2096339043919237288",
+    "https://x.com/_heyfaisal/status/2096513753865240860",
+    "https://x.com/JameslabiQ/status/2096555751133376528",
+    "https://x.com/TheKartikBansal/status/2094873690924286189/photo/1",
+    "https://x.com/TheKartikBansal/status/2094873690924286189/photo/2",
+    "https://x.com/TheKartikBansal/status/2094873690924286189/photo/3",
+    "https://x.com/TheKartikBansal/status/2094873690924286189/photo/4",
+    "https://x.com/oguzyagizkara/status/2093733361168662668/photo/1",
+    "https://x.com/oguzyagizkara/status/2093733361168662668/photo/2",
+    "https://x.com/emilwidlund/status/2093066923693011027",
+    "https://x.com/levithefirst/status/2092975925306507619/photo/1",
+    "https://x.com/Talhadesignn/status/2093215721954377839/photo/1",
+    "https://x.com/Talhadesignn/status/2093215721954377839/photo/2",
+    "https://x.com/Talhadesignn/status/2093215721954377839/photo/3",
+    "https://x.com/Talhadesignn/status/2093215721954377839/photo/4",
+    "https://x.com/vercel/status/2092999180780556643",
+    "https://x.com/xchylerdrenth/status/2093008935800517016/photo/1",
+    "https://x.com/xchylerdrenth/status/2093008935800517016/photo/3",
+    "https://x.com/xchylerdrenth/status/2093008935800517016/photo/2",
+    "https://x.com/sinvpasha/status/2092537706446299362/photo/1",
+    "https://x.com/jeetnirnejak/status/2092611495448445101",
+    "https://x.com/mehmetozsoyart/status/2092607949734543818",
+    "https://x.com/SebCornelius/status/2092618652994744578/photo/1",
+    "https://x.com/its_sslvr/status/2092129852514029770",
+    "https://x.com/semochkin_alex/status/2091816203383664688",
+    "https://x.com/mnowakdesign/status/2091952693279436862/photo/1",
+    "https://x.com/mnowakdesign/status/2091952693279436862/photo/2",
+    "https://x.com/mnowakdesign/status/2091952693279436862/photo/3",
+    "https://x.com/mnowakdesign/status/2091952693279436862/photo/4",
+    "https://x.com/RobertJohns/status/2090832456081608791",
+    "https://x.com/kairevicius/status/2090424600886759913"
   ],
   "normalization": "Repeated photo URLs share their post; the joined photo/1https:// URL was split at the second scheme.",
   "references": [
@@ -225,37 +255,16 @@
     {
       "slug": "basit_designs-2095821165306732974",
       "url": "https://x.com/basit_designs/status/2095821165306732974",
-      "requested_urls": [
-        "https://x.com/basit_designs/status/2095821165306732974"
-      ],
-      "owner_label": "veldig kult",
-      "post_media": 1,
-      "article_images": 0,
-      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
       "evidence": "media/basit_designs-2095821165306732974/evidence.json"
     },
     {
       "slug": "TheKartikBansal-2094873690924286189",
       "url": "https://x.com/TheKartikBansal/status/2094873690924286189",
-      "requested_urls": [
-        "https://x.com/TheKartikBansal/status/2094873690924286189"
-      ],
-      "owner_label": "velfig kult",
-      "post_media": 4,
-      "article_images": 0,
-      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
       "evidence": "media/TheKartikBansal-2094873690924286189/evidence.json"
     },
     {
       "slug": "oguzyagizkara-2093733361168662668",
       "url": "https://x.com/oguzyagizkara/status/2093733361168662668",
-      "requested_urls": [
-        "https://x.com/oguzyagizkara/status/2093733361168662668"
-      ],
-      "owner_label": null,
-      "post_media": 2,
-      "article_images": 0,
-      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
       "evidence": "media/oguzyagizkara-2093733361168662668/evidence.json"
     },
     {
@@ -273,13 +282,6 @@
     {
       "slug": "DmitryLepisov-2093247212629139641",
       "url": "https://x.com/DmitryLepisov/status/2093247212629139641",
-      "requested_urls": [
-        "https://x.com/DmitryLepisov/status/2093247212629139641"
-      ],
-      "owner_label": "velig kult",
-      "post_media": 1,
-      "article_images": 0,
-      "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
       "evidence": "media/DmitryLepisov-2093247212629139641/evidence.json"
     },
     {
@@ -396,6 +398,101 @@
       "article_images": 0,
       "source_status": "Public metadata returned 200. Web text fetch returned 403; direct HTTP URL checks later returned 200 (transport only). Post media reviewed from retained original files.",
       "evidence": "media/AdityaSur11-2096160317458030911/evidence.json"
+    },
+    {
+      "slug": "zzzzshawn-2096548536972370319",
+      "url": "https://x.com/zzzzshawn/status/2096548536972370319",
+      "evidence": "media/zzzzshawn-2096548536972370319/evidence.json"
+    },
+    {
+      "slug": "eve_bouff-2096417545096200466",
+      "url": "https://x.com/eve_bouff/status/2096417545096200466",
+      "evidence": "media/eve_bouff-2096417545096200466/evidence.json"
+    },
+    {
+      "slug": "omarsar0-2096339043919237288",
+      "url": "https://x.com/omarsar0/status/2096339043919237288",
+      "evidence": "media/omarsar0-2096339043919237288/evidence.json"
+    },
+    {
+      "slug": "_heyfaisal-2096513753865240860",
+      "url": "https://x.com/_heyfaisal/status/2096513753865240860",
+      "evidence": "media/_heyfaisal-2096513753865240860/evidence.json"
+    },
+    {
+      "slug": "JameslabiQ-2096555751133376528",
+      "url": "https://x.com/JameslabiQ/status/2096555751133376528",
+      "evidence": "media/JameslabiQ-2096555751133376528/evidence.json"
+    },
+    {
+      "slug": "emilwidlund-2093066923693011027",
+      "url": "https://x.com/emilwidlund/status/2093066923693011027",
+      "evidence": "media/emilwidlund-2093066923693011027/evidence.json"
+    },
+    {
+      "slug": "levithefirst-2092975925306507619",
+      "url": "https://x.com/levithefirst/status/2092975925306507619",
+      "evidence": "media/levithefirst-2092975925306507619/evidence.json"
+    },
+    {
+      "slug": "Talhadesignn-2093215721954377839",
+      "url": "https://x.com/Talhadesignn/status/2093215721954377839",
+      "evidence": "media/Talhadesignn-2093215721954377839/evidence.json"
+    },
+    {
+      "slug": "vercel-2092999180780556643",
+      "url": "https://x.com/vercel/status/2092999180780556643",
+      "evidence": "media/vercel-2092999180780556643/evidence.json"
+    },
+    {
+      "slug": "xchylerdrenth-2093008935800517016",
+      "url": "https://x.com/xchylerdrenth/status/2093008935800517016",
+      "evidence": "media/xchylerdrenth-2093008935800517016/evidence.json"
+    },
+    {
+      "slug": "sinvpasha-2092537706446299362",
+      "url": "https://x.com/sinvpasha/status/2092537706446299362",
+      "evidence": "media/sinvpasha-2092537706446299362/evidence.json"
+    },
+    {
+      "slug": "jeetnirnejak-2092611495448445101",
+      "url": "https://x.com/jeetnirnejak/status/2092611495448445101",
+      "evidence": "media/jeetnirnejak-2092611495448445101/evidence.json"
+    },
+    {
+      "slug": "mehmetozsoyart-2092607949734543818",
+      "url": "https://x.com/mehmetozsoyart/status/2092607949734543818",
+      "evidence": "media/mehmetozsoyart-2092607949734543818/evidence.json"
+    },
+    {
+      "slug": "SebCornelius-2092618652994744578",
+      "url": "https://x.com/SebCornelius/status/2092618652994744578",
+      "evidence": "media/SebCornelius-2092618652994744578/evidence.json"
+    },
+    {
+      "slug": "its_sslvr-2092129852514029770",
+      "url": "https://x.com/its_sslvr/status/2092129852514029770",
+      "evidence": "media/its_sslvr-2092129852514029770/evidence.json"
+    },
+    {
+      "slug": "semochkin_alex-2091816203383664688",
+      "url": "https://x.com/semochkin_alex/status/2091816203383664688",
+      "evidence": "media/semochkin_alex-2091816203383664688/evidence.json"
+    },
+    {
+      "slug": "mnowakdesign-2091952693279436862",
+      "url": "https://x.com/mnowakdesign/status/2091952693279436862",
+      "evidence": "media/mnowakdesign-2091952693279436862/evidence.json"
+    },
+    {
+      "slug": "RobertJohns-2090832456081608791",
+      "url": "https://x.com/RobertJohns/status/2090832456081608791",
+      "evidence": "media/RobertJohns-2090832456081608791/evidence.json"
+    },
+    {
+      "slug": "kairevicius-2090424600886759913",
+      "url": "https://x.com/kairevicius/status/2090424600886759913",
+      "evidence": "media/kairevicius-2090424600886759913/evidence.json"
     }
   ]
 }

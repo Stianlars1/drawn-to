@@ -1,0 +1,312 @@
+{
+  "date": "2026-09-07T08:37:58.251Z",
+  "browser": "152.0.7977.82",
+  "copies": [
+    {
+      "id": "auric-orbit",
+      "characters": 4596
+    },
+    {
+      "id": "cloud-chamber",
+      "characters": 4435
+    },
+    {
+      "id": "camera-obscura",
+      "characters": 4539
+    },
+    {
+      "id": "phosphor-field",
+      "characters": 4408
+    },
+    {
+      "id": "sunlit-field",
+      "characters": 4062
+    },
+    {
+      "id": "plasma-study",
+      "characters": 4463
+    },
+    {
+      "id": "thermal-type",
+      "characters": 4035
+    },
+    {
+      "id": "terrain-interface",
+      "characters": 4085
+    },
+    {
+      "id": "quiet-frequency",
+      "characters": 4093
+    },
+    {
+      "id": "ember-portrait",
+      "characters": 4328
+    },
+    {
+      "id": "morph-study",
+      "characters": 4350
+    },
+    {
+      "id": "vector-foundry",
+      "characters": 4206
+    },
+    {
+      "id": "silver-tide",
+      "characters": 4714
+    },
+    {
+      "id": "common-clock",
+      "characters": 4175
+    },
+    {
+      "id": "chamber-control",
+      "characters": 4199
+    },
+    {
+      "id": "optical-type",
+      "characters": 5142
+    },
+    {
+      "id": "night-garden",
+      "characters": 4307
+    },
+    {
+      "id": "woven-spectrum",
+      "characters": 4730
+    },
+    {
+      "id": "character-close",
+      "characters": 3889
+    },
+    {
+      "id": "aperture-control",
+      "characters": 4428
+    },
+    {
+      "id": "paper-theatre",
+      "characters": 4214
+    },
+    {
+      "id": "kinetic-collection",
+      "characters": 3971
+    },
+    {
+      "id": "red-chamber",
+      "characters": 3968
+    },
+    {
+      "id": "chromatic-relief",
+      "characters": 4398
+    },
+    {
+      "id": "scenic-close",
+      "characters": 3856
+    },
+    {
+      "id": "specimen-cabinet",
+      "characters": 3978
+    },
+    {
+      "id": "pixel-plan",
+      "characters": 3854
+    },
+    {
+      "id": "living-terrarium",
+      "characters": 4051
+    },
+    {
+      "id": "iridescent-ribbon",
+      "characters": 4152
+    },
+    {
+      "id": "contact-sheet",
+      "characters": 4026
+    },
+    {
+      "id": "working-widgets",
+      "characters": 3948
+    },
+    {
+      "id": "warm-choices",
+      "characters": 4043
+    },
+    {
+      "id": "arch-editorial",
+      "characters": 3848
+    },
+    {
+      "id": "action-result",
+      "characters": 3964
+    },
+    {
+      "id": "glass-identity",
+      "characters": 4161
+    },
+    {
+      "id": "particle-assembly",
+      "characters": 4084
+    },
+    {
+      "id": "physical-schedule",
+      "characters": 4104
+    },
+    {
+      "id": "material-study",
+      "characters": 4249
+    },
+    {
+      "id": "rolling-decisions",
+      "characters": 3945
+    },
+    {
+      "id": "menu-preview",
+      "characters": 3913
+    },
+    {
+      "id": "a",
+      "characters": 4263
+    },
+    {
+      "id": "b",
+      "characters": 4119
+    },
+    {
+      "id": "c",
+      "characters": 4168
+    },
+    {
+      "id": "d",
+      "characters": 4121
+    },
+    {
+      "id": "e",
+      "characters": 4078
+    },
+    {
+      "id": "f",
+      "characters": 4091
+    },
+    {
+      "id": "g",
+      "characters": 4134
+    },
+    {
+      "id": "h",
+      "characters": 4053
+    },
+    {
+      "id": "i",
+      "characters": 4143
+    },
+    {
+      "id": "j",
+      "characters": 4014
+    },
+    {
+      "id": "k",
+      "characters": 3974
+    },
+    {
+      "id": "l",
+      "characters": 4061
+    },
+    {
+      "id": "m",
+      "characters": 3934
+    },
+    {
+      "id": "n",
+      "characters": 3951
+    },
+    {
+      "id": "o",
+      "characters": 4075
+    },
+    {
+      "id": "p",
+      "characters": 3992
+    },
+    {
+      "id": "q",
+      "characters": 4290
+    },
+    {
+      "id": "r",
+      "characters": 3955
+    },
+    {
+      "id": "s",
+      "characters": 3904
+    },
+    {
+      "id": "t",
+      "characters": 3951
+    },
+    {
+      "id": "u",
+      "characters": 3842
+    },
+    {
+      "id": "v",
+      "characters": 4036
+    },
+    {
+      "id": "w",
+      "characters": 4077
+    },
+    {
+      "id": "x",
+      "characters": 4156
+    },
+    {
+      "id": "y",
+      "characters": 3964
+    },
+    {
+      "id": "z",
+      "characters": 4099
+    },
+    {
+      "id": "A",
+      "characters": 3980
+    },
+    {
+      "id": "B",
+      "characters": 3956
+    },
+    {
+      "id": "C",
+      "characters": 4007
+    },
+    {
+      "id": "D",
+      "characters": 4178
+    }
+  ],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "routes": 70
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "routes": 70
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "routes": 70
+    }
+  ],
+  "checks": [
+    "All 70 header actions write their unique complete prompt to the real browser clipboard.",
+    "Prompt headers fit all 70 scenes at desktop, short desktop and phone sizes.",
+    "Prompt preview contains the optical construction, traps reading keys, restores focus, and offers complete text when copying is denied.",
+    "Prompt loading failure is recoverable and never reports success.",
+    "All old feature diagrams, third cards, ten ledger rows and all theme rows remain inside the mobile reading stage.",
+    "Matrix keyboard/tap, all dual-theme highlights, chapter selection and rotary controls work.",
+    "No page runtime errors."
+  ]
+}

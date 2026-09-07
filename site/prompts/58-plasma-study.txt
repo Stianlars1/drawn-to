@@ -1,0 +1,34 @@
+Use this visual direction: A mineral interior / changing optical surface
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#plasma-study
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the multi-scene showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A very large blue-green orb occupies the main field of a warm ivory page. A quiet editorial statement, ample air and compact palette/energy controls let its internal-looking surface patterns hold the attention.
+
+MATERIAL, LIGHT, TYPE AND TONE
+A crisp spherical limb, view-sensitive pale highlight, dark blue-green regions, pale golden filaments and subtle violet clouding. Fine field detail compresses toward the edge. The shader constructs a sphere-like projected surface with original procedural turbulence and shading; this is not arbitrary DOM refraction or a measured volumetric simulation.
+
+BEHAVIOR
+Lagoon, Violet and Ember change the material palette, while excitation changes its luminous energy. Slow coherent field evolution continues within the fixed silhouette. Pointer input shifts its orientation; pause, reduced motion and matching posters remain useful.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+The internal field is an original fragment shader. Its architecture and look are explicitly separate from the reference collection's licensed shader implementations.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/zzzzshawn-2096548536972370319.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/motion-rendered.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/motion-rendered.css
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/motion/scenes/plasma.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/motion/shader.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/motion/runtime.js
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Compare boundary sharpness, highlight placement, dense-versus-open regions and color relationships. Avoid a flat painted disc, a simple CSS blur bubble or a bright white rim that erases the material. Test parameter extremes and temporal stability.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

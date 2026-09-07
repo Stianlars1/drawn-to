@@ -1,0 +1,366 @@
+{
+  "slug": "semochkin_alex-2091816203383664688",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/semochkin_alex/status/2091816203383664688",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2091816160022970368/vid/avc1/3336x2160/0nQI0FC2dFHcKR0u.mp4?tag=29",
+      "bytes": 2293273,
+      "sha256": "abb511d882789631d9d7e1bdcf730bee8fd1d5718720a92ba0c47d478330e88a",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 11,
+        "archive": [
+          {
+            "file": "video_1-sample-01.jpg",
+            "time_seconds": 0.08
+          },
+          {
+            "file": "video_1-sample-04.jpg",
+            "time_seconds": 0.597
+          },
+          {
+            "file": "video_1-sample-07.jpg",
+            "time_seconds": 1.115
+          },
+          {
+            "file": "video_1-sample-10.jpg",
+            "time_seconds": 1.632
+          },
+          {
+            "file": "video_1-sample-13.jpg",
+            "time_seconds": 2.149
+          },
+          {
+            "file": "video_1-sample-16.jpg",
+            "time_seconds": 2.667
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3336,
+            "height": 2160,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "2.816667",
+            "nb_frames": "169"
+          }
+        ],
+        "format": {
+          "duration": "2.816667"
+        }
+      }
+    },
+    {
+      "file": "quoted_article_1.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQefUHUWcAAPOUk.jpg",
+      "bytes": 113649,
+      "sha256": "ee0bd68c7a73a5fd00c4a62d8c1d668f89690b0767ca0db18f3f2b6bdacf2dab",
+      "dimensions": [
+        2000,
+        800
+      ],
+      "archive_file": "quoted_article_1.jpg"
+    },
+    {
+      "file": "quoted_article_2.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2089634788281917440/vid/avc1/3336x2160/hOvCog8I6uLahsd6.mp4?tag=29",
+      "bytes": 2817121,
+      "sha256": "a7807de0e0f1d75765c9298650cac66bbc8a4586b1258dbf34a31c6fccdf660b",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 20,
+        "archive": [
+          {
+            "file": "quoted_article_2-sample-01.jpg",
+            "time_seconds": 0.0
+          },
+          {
+            "file": "quoted_article_2-sample-04.jpg",
+            "time_seconds": 0.983333
+          },
+          {
+            "file": "quoted_article_2-sample-07.jpg",
+            "time_seconds": 1.966667
+          },
+          {
+            "file": "quoted_article_2-sample-10.jpg",
+            "time_seconds": 2.95
+          },
+          {
+            "file": "quoted_article_2-sample-13.jpg",
+            "time_seconds": 3.933333
+          },
+          {
+            "file": "quoted_article_2-sample-16.jpg",
+            "time_seconds": 4.916667
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3336,
+            "height": 2160,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "4.933333",
+            "nb_frames": "296"
+          }
+        ],
+        "format": {
+          "duration": "4.933333"
+        }
+      }
+    },
+    {
+      "file": "quoted_article_3.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HP_dD0xWsAA34z3.jpg",
+      "bytes": 83030,
+      "sha256": "78679dec59e4bf43aaa233d84bd03a4b8f42cac4443a675efaeccb1e711a3b39",
+      "dimensions": [
+        1154,
+        744
+      ],
+      "archive_file": "quoted_article_3.jpg"
+    },
+    {
+      "file": "quoted_article_4.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HP_bycRXYAAOFQ_.jpg",
+      "bytes": 57334,
+      "sha256": "2f618fea2927b78d7b1fdac5e56181d071bb8091787d6a216c77556d1eedc3f5",
+      "dimensions": [
+        1656,
+        1076
+      ],
+      "archive_file": "quoted_article_4.jpg"
+    },
+    {
+      "file": "quoted_article_5.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/tweet_video/HP_bTDMWMAAnuiE.mp4",
+      "bytes": 488887,
+      "sha256": "226e55fc1e2d4ca50c6acf7ed47252789d7cae019018e174df8f37d0eb43b8df",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 14,
+        "archive": [
+          {
+            "file": "quoted_article_5-sample-01.jpg",
+            "time_seconds": 0.0
+          },
+          {
+            "file": "quoted_article_5-sample-04.jpg",
+            "time_seconds": 0.69
+          },
+          {
+            "file": "quoted_article_5-sample-07.jpg",
+            "time_seconds": 1.44
+          },
+          {
+            "file": "quoted_article_5-sample-10.jpg",
+            "time_seconds": 2.13
+          },
+          {
+            "file": "quoted_article_5-sample-13.jpg",
+            "time_seconds": 2.88
+          },
+          {
+            "file": "quoted_article_5-sample-16.jpg",
+            "time_seconds": 3.56
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 950,
+            "height": 614,
+            "r_frame_rate": "16/1",
+            "avg_frame_rate": "5800/363",
+            "duration": "3.620000",
+            "nb_frames": "58"
+          }
+        ],
+        "format": {
+          "duration": "3.620000"
+        }
+      }
+    },
+    {
+      "file": "quoted_article_6.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HP_cYnnWMAEwUbf.jpg",
+      "bytes": 128448,
+      "sha256": "ca0e1303142247903f3b876eb1ad1da415a255268d239912d457c0bee4119100",
+      "dimensions": [
+        1666,
+        1078
+      ],
+      "archive_file": "quoted_article_6.jpg"
+    },
+    {
+      "file": "quoted_article_7.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HP_dX_qXYAEkkMk.jpg",
+      "bytes": 45798,
+      "sha256": "093b305eec8bad5a93d8069f1cd43cb7ceaf60bc334de704635972fc67a5594b",
+      "dimensions": [
+        1676,
+        1074
+      ],
+      "archive_file": "quoted_article_7.jpg"
+    },
+    {
+      "file": "quoted_article_8.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2089635067916087296/vid/avc1/3336x2160/4fKNuWgwICM_WBPL.mp4?tag=29",
+      "bytes": 2817121,
+      "sha256": "a7807de0e0f1d75765c9298650cac66bbc8a4586b1258dbf34a31c6fccdf660b",
+      "duplicateOf": "semochkin_alex-2091816203383664688/quoted_article_2.mp4",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 20,
+        "archive": [
+          {
+            "file": "quoted_article_8-sample-01.jpg",
+            "time_seconds": 0.0
+          },
+          {
+            "file": "quoted_article_8-sample-04.jpg",
+            "time_seconds": 0.983333
+          },
+          {
+            "file": "quoted_article_8-sample-07.jpg",
+            "time_seconds": 1.966667
+          },
+          {
+            "file": "quoted_article_8-sample-10.jpg",
+            "time_seconds": 2.95
+          },
+          {
+            "file": "quoted_article_8-sample-13.jpg",
+            "time_seconds": 3.933333
+          },
+          {
+            "file": "quoted_article_8-sample-16.jpg",
+            "time_seconds": 4.916667
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3336,
+            "height": 2160,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "4.933333",
+            "nb_frames": "296"
+          }
+        ],
+        "format": {
+          "duration": "4.933333"
+        }
+      }
+    },
+    {
+      "file": "quoted_article_9.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HP_c-sxXEAAAu2z.jpg",
+      "bytes": 78131,
+      "sha256": "62aeabbcaf374c37717e9ee4a19185d7346bab1856427592759948aa2bcab98a",
+      "dimensions": [
+        1088,
+        702
+      ],
+      "archive_file": "quoted_article_9.jpg"
+    },
+    {
+      "file": "quoted_article_10.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2089628883549118464/vid/avc1/3336x2160/wP6NJXxyDsgg9CXJ.mp4?tag=29",
+      "bytes": 2293273,
+      "sha256": "f01425e1d57c0ba3ffb356e1ef265fef5e4b525af1b93e1a2edceb0c4201ff53",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 11,
+        "archive": [
+          {
+            "file": "quoted_article_10-sample-01.jpg",
+            "time_seconds": 0.0
+          },
+          {
+            "file": "quoted_article_10-sample-04.jpg",
+            "time_seconds": 0.566667
+          },
+          {
+            "file": "quoted_article_10-sample-07.jpg",
+            "time_seconds": 1.116667
+          },
+          {
+            "file": "quoted_article_10-sample-10.jpg",
+            "time_seconds": 1.683333
+          },
+          {
+            "file": "quoted_article_10-sample-13.jpg",
+            "time_seconds": 2.233333
+          },
+          {
+            "file": "quoted_article_10-sample-16.jpg",
+            "time_seconds": 2.8
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3336,
+            "height": 2160,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "60/1",
+            "duration": "2.816667",
+            "nb_frames": "169"
+          }
+        ],
+        "format": {
+          "duration": "2.816667"
+        }
+      }
+    }
+  ]
+}

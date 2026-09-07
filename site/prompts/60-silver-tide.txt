@@ -1,0 +1,35 @@
+Use this visual direction: Silver tide / an authored moving surface
+
+I chose this specific Drawn To scene: https://drawn-to.vercel.app/?still#silver-tide
+Reproduce its visual character, composition, level of detail and signature effect in my project. Preserve the qualities below when adapting the subject and copy. Build the selected surface; the multi-scene showcase navigation is not part of my product.
+
+Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
+
+COMPOSITION
+A wide dark sea of reflective waves fills the page beneath a sparse meditative heading. The horizon provides a quiet upper reading area, while a small right note and bottom light/pace controls balance the large surface.
+
+MATERIAL, LIGHT, TYPE AND TONE
+Blue-black water, sharp silver reflection fragments, darker troughs and a coherent low horizon. The Afterglow state adds warm amber light. Layer long swells and finer ripples so this looks like a continuous reflective surface rather than large blurry sine bumps.
+
+BEHAVIOR
+The ordinary showcase plays an original 16-second loop on intentional hover or explicit playback. Silver and Afterglow select two matched films; Pace changes playback rate. Video bytes are deferred until needed. Reduced motion and Save-Data retain selectable matching posters. The films are rendered deterministically from the original shader, which can also be inspected live through the source capture route.
+
+ASSET AND IMPLEMENTATION REQUIREMENTS
+Use the original encoded films under site/assets/motion/films/ and matched posters, or reproduce them with the linked shader/export pipeline. The authored wave function has a 16-second analytic period; omit the duplicate final frame when exporting.
+The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
+
+CALIBRATION SOURCES
+- Transferable reference vocabulary: https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/references/posts/vercel-2092999180780556643.md
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/motion/film.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/motion/scenes/tide.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/scripts/export-motion-film.mjs
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/assets/motion/films/provenance.json
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/expansion/motion-rendered.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/motion-rendered.css
+
+BEFORE YOU BUILD
+Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
+
+ACCEPTANCE
+Compare wave detail, horizon, specular shape and loop boundary. Confirm hover leave pauses, playback works by button/keyboard, hidden tabs stop, source switching does not show a stale frame, and no video downloads before it is needed.
+Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

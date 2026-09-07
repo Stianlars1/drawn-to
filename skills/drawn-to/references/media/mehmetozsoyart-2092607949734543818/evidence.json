@@ -1,0 +1,65 @@
+{
+  "slug": "mehmetozsoyart-2092607949734543818",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/mehmetozsoyart/status/2092607949734543818",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2092607198182457344/vid/avc1/3086x2160/liokPRB84GoAQz9l.mp4?tag=29",
+      "bytes": 30773126,
+      "sha256": "5f99e3de159af8e0c45179f57029fa7c699597f9b96de1bb5c0588098f12e645",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 171,
+        "archive": [
+          {
+            "file": "video_1-sample-01.jpg",
+            "time_seconds": 0.08
+          },
+          {
+            "file": "video_1-sample-04.jpg",
+            "time_seconds": 8.564
+          },
+          {
+            "file": "video_1-sample-07.jpg",
+            "time_seconds": 17.048
+          },
+          {
+            "file": "video_1-sample-10.jpg",
+            "time_seconds": 25.532
+          },
+          {
+            "file": "video_1-sample-13.jpg",
+            "time_seconds": 34.016
+          },
+          {
+            "file": "video_1-sample-16.jpg",
+            "time_seconds": 42.5
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3086,
+            "height": 2160,
+            "r_frame_rate": "60/1",
+            "avg_frame_rate": "29479680/491329",
+            "duration": "42.650087",
+            "nb_frames": "2559"
+          }
+        ],
+        "format": {
+          "duration": "42.650087"
+        }
+      }
+    }
+  ]
+}

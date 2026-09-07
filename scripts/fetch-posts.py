@@ -59,12 +59,22 @@ def media_items(tweet):
             variants = [v for v in media.get('variants', []) if v.get('content_type') == 'video/mp4']
             url = max(variants, key=lambda v: v.get('bitrate', 0))['url'] if variants else media['url']
             result.append((f'video_{n}', url, 'video'))
-    article = tweet.get('article') or {}
-    images = ([article['cover_media']] if article.get('cover_media') else []) + article.get('media_entities', [])
-    for n, image in enumerate(images, 1):
-        url = image.get('media_info', {}).get('original_img_url')
-        if url:
-            result.append((f'article_{n}', url, 'image'))
+    articles = [('article', tweet.get('article') or {})]
+    # A linked tutorial may carry its images/videos on the quoted article.
+    quoted_article = (tweet.get('quote') or {}).get('article')
+    if quoted_article:
+        articles.append(('quoted_article', quoted_article))
+    for prefix, article in articles:
+        media = ([article['cover_media']] if article.get('cover_media') else []) + article.get('media_entities', [])
+        for n, item in enumerate(media, 1):
+            info = item.get('media_info', {})
+            if info.get('original_img_url'):
+                result.append((f'{prefix}_{n}', info['original_img_url'], 'image'))
+            else:
+                variants = [v for v in info.get('variants', []) if v.get('content_type') == 'video/mp4']
+                if variants:
+                    chosen = max(variants, key=lambda v: v.get('bit_rate', v.get('bitrate', 0)))
+                    result.append((f'{prefix}_{n}', chosen['url'], 'video'))
     return result
 
 

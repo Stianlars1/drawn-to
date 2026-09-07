@@ -479,3 +479,24 @@ Thin as a standalone kind: in the corpus the closing beat is usually fused into 
 - **Evidence:** DmitryLepisov-2093247; multi-surface brand board in adriankuleszo-2096048.
 - **Families:** F2/F7 for a tangible showcase, or the brand's own approved system.
 - **Choose when:** teaching or presenting an identity system. Scale changes the detail budget; the functional icon does not inherit showcase animation.
+
+## Optical, film and instrument surfaces
+
+Use [motion-expansion.md](motion-expansion.md) to choose the actual rendering
+contract. A detailed still, authored video, shader field, mesh assembly and SVG
+projection serve different interactions.
+
+- **Material observatory:** one very detailed object against deliberate reading
+  space. Meaningful controls change its material state, light or assembly; a
+  poster retains the same silhouette and finish.
+- **Film with an inspection state:** a composed resting frame and an explicit
+  hover/focus/tap playback contract. Keep text outside the film, preload only
+  what the current scene needs and pause when hidden.
+- **Modular instrument:** several distinct useful modules under one control,
+  value and surface grammar. Demonstrations use real local state; audio starts
+  only after an explicit user action.
+- **Living diagram:** one clock coordinates geometry and semantic milestones.
+  Preserve object identity through dispatch, work, transition and completion.
+- **Projected surface:** a coherent parametric outline and interior ruling in
+  SVG can communicate depth without a 3D library. Match all paths to one
+  underlying function and avoid remounting the whole drawing each frame.

@@ -1,0 +1,65 @@
+{
+  "slug": "emilwidlund-2093066923693011027",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/emilwidlund/status/2093066923693011027",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "video_1.mp4",
+      "kind": "video",
+      "source": "https://video.twimg.com/amplify_video/2093066252377862144/vid/avc1/3600x2012/sfdmhZJlV5yooxAe.mp4?tag=29",
+      "bytes": 15690484,
+      "sha256": "e88e8b4b10b33aab0602e5dc6230b792f9bef252352ce3638f2f0e11999d2acd",
+      "sampling": {
+        "overview_count": 16,
+        "overview_method": "Uniform over the clip; PTS/decoded frame index where recorded, otherwise requested sample time.",
+        "activity_rate": 4,
+        "activity_samples": 89,
+        "archive": [
+          {
+            "file": "video_1-sample-01.jpg",
+            "time_seconds": 0.08
+          },
+          {
+            "file": "video_1-sample-04.jpg",
+            "time_seconds": 4.471
+          },
+          {
+            "file": "video_1-sample-07.jpg",
+            "time_seconds": 8.863
+          },
+          {
+            "file": "video_1-sample-10.jpg",
+            "time_seconds": 13.254
+          },
+          {
+            "file": "video_1-sample-13.jpg",
+            "time_seconds": 17.645
+          },
+          {
+            "file": "video_1-sample-16.jpg",
+            "time_seconds": 22.037
+          }
+        ]
+      },
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 3600,
+            "height": 2012,
+            "r_frame_rate": "240/1",
+            "avg_frame_rate": "125200/2213",
+            "duration": "22.130000",
+            "nb_frames": "1252"
+          }
+        ],
+        "format": {
+          "duration": "22.186667"
+        }
+      }
+    }
+  ]
+}

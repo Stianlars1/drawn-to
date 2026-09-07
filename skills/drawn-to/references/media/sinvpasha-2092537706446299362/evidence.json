@@ -1,0 +1,20 @@
+{
+  "slug": "sinvpasha-2092537706446299362",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/sinvpasha/status/2092537706446299362",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQov8fiXsAAhLI5.jpg?name=orig",
+      "bytes": 355385,
+      "sha256": "5da02bf7739b4858527cb838f6d2bae075074caf5220203bfbdfd27e937cb27a",
+      "dimensions": [
+        3136,
+        2528
+      ],
+      "archive_file": "photo_1.jpg"
+    }
+  ]
+}

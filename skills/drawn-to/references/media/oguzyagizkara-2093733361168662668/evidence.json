@@ -1,15 +1,15 @@
 {
   "slug": "oguzyagizkara-2093733361168662668",
+  "reviewed": "2026-09-07",
   "source_url": "https://x.com/oguzyagizkara/status/2093733361168662668",
-  "reviewed": "2026-09-06",
-  "method": "All supplied stills plus 12 uniformly spaced samples per video; selected favorite frames inspected separately. No claim of manual inspection of every decoded frame.",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
   "assets": [
     {
       "file": "photo_1.jpg",
-      "url": "https://pbs.twimg.com/media/HQ5vT6OWoAAUyov.jpg?name=orig",
-      "type": "photo",
-      "sha256": "7070f4a54f717d7b640f9d620cf55901c6ceadff73be5cb090701de5fb851e5f",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQ5vT6OWoAAUyov.jpg?name=orig",
       "bytes": 497361,
+      "sha256": "7070f4a54f717d7b640f9d620cf55901c6ceadff73be5cb090701de5fb851e5f",
       "dimensions": [
         4096,
         3584
@@ -18,10 +18,10 @@
     },
     {
       "file": "photo_2.jpg",
-      "url": "https://pbs.twimg.com/media/HQ5vT55W0AAfc_q.jpg?name=orig",
-      "type": "photo",
-      "sha256": "a91e3eb41c37b832d6c3e8a785ea004139d7e8d340d3937ab37161720992cfcd",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQ5vT55W0AAfc_q.jpg?name=orig",
       "bytes": 550352,
+      "sha256": "a91e3eb41c37b832d6c3e8a785ea004139d7e8d340d3937ab37161720992cfcd",
       "dimensions": [
         4096,
         3584

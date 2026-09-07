@@ -1,0 +1,56 @@
+{
+  "slug": "Talhadesignn-2093215721954377839",
+  "reviewed": "2026-09-07",
+  "source_url": "https://x.com/Talhadesignn/status/2093215721954377839",
+  "source_access": "All supplied X URLs attempted with the web tool; HTTP 403. Original public metadata/media retrieved separately.",
+  "assets": [
+    {
+      "file": "photo_1.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQyYXHlbgAAVtcV.jpg?name=orig",
+      "bytes": 1131275,
+      "sha256": "4b7ff37ae0495778ffd5027c4ea0fe9ddd50b66bdd9da2a88c54ccf5d2981b3f",
+      "dimensions": [
+        4096,
+        2731
+      ],
+      "archive_file": "photo_1.jpg"
+    },
+    {
+      "file": "photo_2.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQyYdbIbQAALXsx.jpg?name=orig",
+      "bytes": 902879,
+      "sha256": "2a8f1d4ada4a141b27e7fd9ec6dc8b65c92d1b51304ce35a1ba78fffdcec516b",
+      "dimensions": [
+        4096,
+        2731
+      ],
+      "archive_file": "photo_2.jpg"
+    },
+    {
+      "file": "photo_3.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQyYfTybAAA8U92.jpg?name=orig",
+      "bytes": 888234,
+      "sha256": "44afc839896ab08f8155a518848433a3ef1e43e7664531f91f265a0ec3f150c7",
+      "dimensions": [
+        4096,
+        2731
+      ],
+      "archive_file": "photo_3.jpg"
+    },
+    {
+      "file": "photo_4.jpg",
+      "kind": "image",
+      "source": "https://pbs.twimg.com/media/HQyYhpeaYAIg39e.jpg?name=orig",
+      "bytes": 1862998,
+      "sha256": "349938de81f8ce0f99b7f657bf467ddb8499d88cc94a15d7677c3e2b2f423c07",
+      "dimensions": [
+        4096,
+        2731
+      ],
+      "archive_file": "photo_4.jpg"
+    }
+  ]
+}

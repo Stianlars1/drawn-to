@@ -2099,5 +2099,425 @@
       "owner-favorite"
     ],
     "owner_label": "sykt kult"
+  },
+  {
+    "slug": "zzzzshawn-2096548536972370319",
+    "url": "https://x.com/zzzzshawn/status/2096548536972370319",
+    "author": "zzzzshawn",
+    "kind": "resource",
+    "mode": "dark",
+    "motion_level": "sequence",
+    "one_liner": "State-driven shader orbs, from clear glass to filamentary atmospheres",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "shader"
+    },
+    "tags": [
+      "orb",
+      "shader",
+      "state-machine",
+      "volumetric",
+      "optical",
+      "resource"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "eve_bouff-2096417545096200466",
+    "url": "https://x.com/eve_bouff/status/2096417545096200466",
+    "author": "eve_bouff",
+    "kind": "hero",
+    "mode": "dark",
+    "motion_level": "ambient",
+    "one_liner": "A monochrome field of small vertical light cells",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "matrix",
+      "luminance",
+      "monochrome",
+      "field",
+      "event"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "omarsar0-2096339043919237288",
+    "url": "https://x.com/omarsar0/status/2096339043919237288",
+    "author": "omarsar0",
+    "kind": "interactive-demo",
+    "mode": "light",
+    "motion_level": "interactive",
+    "one_liner": "An inspectable camera with exploded mechanical layers",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "three-dimensional",
+      "exploded-view",
+      "machining",
+      "camera",
+      "inspection"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "_heyfaisal-2096513753865240860",
+    "url": "https://x.com/_heyfaisal/status/2096513753865240860",
+    "author": "_heyfaisal",
+    "kind": "hero",
+    "mode": "dark",
+    "motion_level": "ambient",
+    "one_liner": "A cinematic synthetic portrait under a red luminous visor",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "portrait",
+      "cinematic",
+      "visor",
+      "material",
+      "video"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "JameslabiQ-2096555751133376528",
+    "url": "https://x.com/JameslabiQ/status/2096555751133376528",
+    "author": "JameslabiQ",
+    "kind": "hero",
+    "mode": "light",
+    "motion_level": "ambient",
+    "one_liner": "Monumental architecture around a rotating optical centre",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "architecture",
+      "glass",
+      "reflection",
+      "cinematic",
+      "clouds"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "emilwidlund-2093066923693011027",
+    "url": "https://x.com/emilwidlund/status/2093066923693011027",
+    "author": "emilwidlund",
+    "kind": "interactive-demo",
+    "mode": "dark",
+    "motion_level": "interactive",
+    "one_liner": "A restrained modular granular-synthesis rack",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "audio",
+      "instrument",
+      "modular",
+      "waveform",
+      "controls"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "levithefirst-2092975925306507619",
+    "url": "https://x.com/levithefirst/status/2092975925306507619",
+    "author": "levithefirst",
+    "kind": "resource",
+    "mode": "mixed",
+    "motion_level": "none",
+    "one_liner": "A resource map for concrete interface construction",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "resources",
+      "design-system",
+      "type",
+      "motion",
+      "prompts"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "Talhadesignn-2093215721954377839",
+    "url": "https://x.com/Talhadesignn/status/2093215721954377839",
+    "author": "Talhadesignn",
+    "kind": "section-set",
+    "mode": "mixed",
+    "motion_level": "none",
+    "one_liner": "Four hero directions with very different sources of visual weight",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "hero",
+      "halftone",
+      "clouds",
+      "editorial",
+      "landscape"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "vercel-2092999180780556643",
+    "url": "https://x.com/vercel/status/2092999180780556643",
+    "author": "vercel",
+    "kind": "resource",
+    "mode": "mixed",
+    "motion_level": "sequence",
+    "one_liner": "One GPU rendering vocabulary across live canvas, stills and video",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "shader"
+    },
+    "tags": [
+      "webgpu",
+      "vgpu",
+      "shader",
+      "video-export",
+      "testing"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "xchylerdrenth-2093008935800517016",
+    "url": "https://x.com/xchylerdrenth/status/2093008935800517016",
+    "author": "xchylerdrenth",
+    "kind": "section-set",
+    "mode": "mixed",
+    "motion_level": "none",
+    "one_liner": "Technical editorial panels with dimensional charts and warm edge light",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "technical",
+      "charts",
+      "glass",
+      "editorial",
+      "light-dark"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "sinvpasha-2092537706446299362",
+    "url": "https://x.com/sinvpasha/status/2092537706446299362",
+    "author": "sinvpasha",
+    "kind": "feature-section",
+    "mode": "light",
+    "motion_level": "none",
+    "one_liner": "Tactile coral terrain frames a warm product preview",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "terrain",
+      "fiber",
+      "warm",
+      "product-preview",
+      "layering"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "jeetnirnejak-2092611495448445101",
+    "url": "https://x.com/jeetnirnejak/status/2092611495448445101",
+    "author": "jeetnirnejak",
+    "kind": "interactive-demo",
+    "mode": "light",
+    "motion_level": "interactive",
+    "one_liner": "A one-clock fanout diagram that communicates work and merge",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "timeline",
+      "packets",
+      "workflow",
+      "single-clock",
+      "state"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "mehmetozsoyart-2092607949734543818",
+    "url": "https://x.com/mehmetozsoyart/status/2092607949734543818",
+    "author": "mehmetozsoyart",
+    "kind": "page-sequence",
+    "mode": "light",
+    "motion_level": "sequence",
+    "one_liner": "An editorial page unified by precise isometric mechanisms",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "isometric",
+      "line-art",
+      "feature-illustration",
+      "editorial",
+      "page-rhythm"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "SebCornelius-2092618652994744578",
+    "url": "https://x.com/SebCornelius/status/2092618652994744578",
+    "author": "SebCornelius",
+    "kind": "dashboard",
+    "mode": "dark",
+    "motion_level": "none",
+    "one_liner": "An industrial dashboard with physical control density",
+    "axes": {
+      "radius": "contextual",
+      "density": "dense",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "industrial",
+      "instrument",
+      "matrix",
+      "pixel-type",
+      "controls"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "its_sslvr-2092129852514029770",
+    "url": "https://x.com/its_sslvr/status/2092129852514029770",
+    "author": "its_sslvr",
+    "kind": "illustration-set",
+    "mode": "dark",
+    "motion_level": "ambient",
+    "one_liner": "Three wireframe specimens on a dark technical poster triptych",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "wireframe",
+      "poster",
+      "grid",
+      "technical",
+      "orb"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "semochkin_alex-2091816203383664688",
+    "url": "https://x.com/semochkin_alex/status/2091816203383664688",
+    "author": "semochkin_alex",
+    "kind": "resource",
+    "mode": "light",
+    "motion_level": "interactive",
+    "one_liner": "From authored SVG geometry to controllable particle illustrations",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "particles",
+      "svg",
+      "morph",
+      "webflow",
+      "process",
+      "dom-separation"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "mnowakdesign-2091952693279436862",
+    "url": "https://x.com/mnowakdesign/status/2091952693279436862",
+    "author": "mnowakdesign",
+    "kind": "illustration-set",
+    "mode": "dark",
+    "motion_level": "none",
+    "one_liner": "Macro halftone displays with luminous subpixel detail",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "halftone",
+      "phosphor",
+      "display",
+      "macro",
+      "rgb"
+    ],
+    "owner_label": null
+  },
+  {
+    "slug": "RobertJohns-2090832456081608791",
+    "url": "https://x.com/RobertJohns/status/2090832456081608791",
+    "author": "RobertJohns",
+    "kind": "hero",
+    "mode": "light",
+    "motion_level": "ambient",
+    "one_liner": "Heat-distorted typography beside a luminous industrial aperture",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "heat-haze",
+      "typography",
+      "displacement",
+      "industrial",
+      "optical"
+    ],
+    "owner_label": "kult"
+  },
+  {
+    "slug": "kairevicius-2090424600886759913",
+    "url": "https://x.com/kairevicius/status/2090424600886759913",
+    "author": "kairevicius",
+    "kind": "interactive-demo",
+    "mode": "dark",
+    "motion_level": "ambient",
+    "one_liner": "A deforming isometric sheet built from sparse SVG geometry",
+    "axes": {
+      "radius": "contextual",
+      "density": "varied",
+      "illustration": "mixed"
+    },
+    "tags": [
+      "svg",
+      "isometric",
+      "wave",
+      "geometry",
+      "minimal"
+    ],
+    "owner_label": null
   }
 ]

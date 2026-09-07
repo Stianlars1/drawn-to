@@ -201,3 +201,21 @@ document scroll width. Count meaningful cards and diagrams before and after
 reflow. A hidden third card, missing diagram or offscreen selected row is a
 regression even if the body has no overflow. Preserve dated archive labels on
 mobile, and distinguish example terminal/data content from captured results.
+
+## Motion and material expansion checks
+
+For optical orbs, inspect silhouette, surface/volume distinction, density and
+light response in each state. For a hybrid scene, the live object's reflections
+and placement must agree with its authored environment. A generic studio
+softbox reflection pasted into an outdoor scene is a material mismatch.
+
+For an exploded object, inspect parts at their interfaces and at the largest
+allowed separation. Model count is not a quality measure. For particles, the
+resting geometry and transition must both be intentional; a faint cloud is not
+a substitute for a specified curve or surface. For phosphor/halftone work,
+inspect cell gaps, glow order and temporal stability at the delivered DPR.
+
+A working demo still needs real input meaning: a slider should change the
+promised property, state labels should reconcile, and audio must start through
+an explicit action. Verify disposal, hidden-tab behavior and reduced-motion
+changes while the scene is mounted. See [motion expansion](motion-expansion.md).
