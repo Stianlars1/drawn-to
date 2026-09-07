@@ -35,9 +35,12 @@ export function mountGenerator({ catalog, initialState, services }) {
   const panel = app.querySelector(".direction-panel");
   panel.id = "your-direction";
   const notice = app.querySelector(".studio-notice");
-  function notify(message) {
+  let noticeTimer;
+  function notify(message, {persistent=false}={}) {
+    clearTimeout(noticeTimer);
     notice.hidden = false;
     notice.querySelector("span").textContent = message;
+    if(!persistent)noticeTimer=setTimeout(()=>{notice.hidden=true;},4000);
   }
   notice.querySelector("button").addEventListener("click", () => {
     notice.hidden = true;
@@ -58,11 +61,12 @@ export function mountGenerator({ catalog, initialState, services }) {
             (result.conflict
               ? "This draft changed in another tab. Download your direction to keep this version."
               : "Local saving is unavailable. You can still copy or download your direction."),
+          {persistent:true},
         );
     } catch (error) {
       label.textContent = "Not saved";
       label.classList.add("save-failed");
-      notify(`Local saving is unavailable. ${error.message}`);
+      notify(`Local saving is unavailable. ${error.message}`, {persistent:true});
     }
     services.onState?.(state);
   }
@@ -371,6 +375,7 @@ export function mountGenerator({ catalog, initialState, services }) {
       app.querySelector("#sources").scrollIntoView({ block: "start" });
     },
     destroy: () => {
+      clearTimeout(noticeTimer);
       abort.abort();
       dialogs.close({ restore: false });
     },

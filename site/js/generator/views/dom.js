@@ -30,7 +30,7 @@ export const icon = (name) => {
     search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/>',
     arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
     plus: '<path d="M12 5v14M5 12h14"/>',
-    close: '<path d="m6 6 12 12M6 18 12-12"/>',
+    close: '<path d="M6 6l12 12M6 18L18 6"/>',
     check: '<path d="m5 12 4 4 10-10"/>',
     undo: '<path d="m8 5-4 4 4 4M4 9h9a6 6 0 0 1 0 12"/>',
     redo: '<path d="m16 5 4 4-4 4M20 9h-9a6 6 0 0 0 0 12"/>',

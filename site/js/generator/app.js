@@ -314,6 +314,7 @@ window.addEventListener("storage", (event) => {
     if (view && drafts.hasExternalChange(view.getState().id))
       view.notify(
         "This draft changed in another tab. Both versions will be preserved as recovery copies when you save.",
+        {persistent:true},
       );
 });
 const manifestReady = loadManifest().then((loaded) => (manifest = loaded));

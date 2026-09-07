@@ -1354,6 +1354,9 @@
 }
 @media (max-width: 650px) {
   .generator .studio-header .draft-control {
+    max-width: none;
+    width: 100%;
+    min-width: 0;
     display: flex;
     flex: 1 0 100%;
     flex-direction: row;
@@ -1374,6 +1377,7 @@
   }
   .generator .save-state {
     font-size: 9px;
+    white-space: nowrap;
   }
   .generator .workspace {
     padding-bottom: 76px;
