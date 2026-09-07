@@ -4,6 +4,7 @@
 # published is the heavy source material it was derived from:
 skills/drawn-to/references/media/**/*.mp4
 skills/drawn-to/references/media/**/video_*
+!skills/drawn-to/references/media/**/video_*-sample-*.jpg
 references/media/
 # local scratch / OS
 .DS_Store
