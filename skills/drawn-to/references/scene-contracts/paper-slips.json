@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "s",
+  "slug": "paper-slips",
+  "name": "Paper revision slips",
+  "kind": "editorial",
+  "references": [
+    "AlexandruDranga-2090070261978578989"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "handled-paper-trio",
+      "role": "layout",
+      "label": "Handled revision-slip trio",
+      "text": "Rest three small paper documents on a warm desk-like ground, using slight rotation differences and offset crop corners; each contains a revision code, narrow title and short note.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AlexandruDranga-2090070261978578989",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "serif-revision-type",
+      "role": "typography",
+      "label": "Narrow revision-slip serif",
+      "text": "Set each slip's title in a narrow serif and keep its revision code and note clearly readable.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "cream-gold-ink",
+      "role": "color",
+      "label": "Cream, gold and charcoal",
+      "text": "Use warm cream #f2efe8, ivory sheets, muted gold registration marks and charcoal ink.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AlexandruDranga-2090070261978578989",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "lifted-paper",
+      "role": "material",
+      "label": "Lifted paper corners",
+      "text": "Model a subtle lifted corner, fine outer edge and soft directional contact shadow on the paper, keeping texture secondary to type.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AlexandruDranga-2090070261978578989",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "still-editorial-arrangement",
+      "role": "motion",
+      "label": "Still editorial arrangement",
+      "text": "Keep the arrangement still and retain all three slips at narrow widths rather than removing one to fit a poster height.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Paper and shadow acceptance",
+      "text": "Ensure rotations do not clip a sheet or blur reading text, then compare paper edges and shadow direction at full scale.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "handled-paper-trio"
+    ],
+    "surface": [
+      "cream-gold-ink",
+      "serif-revision-type",
+      "lifted-paper"
+    ],
+    "behavior": [
+      "still-editorial-arrangement"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

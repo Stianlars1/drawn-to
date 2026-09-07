@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A dark film-editor composition balances large serif/sans words on the left with one large selected photograph, bounded by perforated film rails. A bottom strip presents six richly different image thumbnails. Caption and selected-frame count stay aligned with the main image.
+Balance large serif/sans words on the left with one large selected photograph bounded by perforated film rails. Present six richly different thumbnails in a bottom strip, keeping caption and selected-frame count aligned with the main image. Use large soft-ivory serif and sans words with quiet captions and precise frame counts. Contrast chrome on velvet, a night garden, paper, glass with foliage, studio materials and engraved ink without forcing them through one color filter.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Charcoal-green #191c1b, soft ivory type and a pale acid-green accent. Image frames have restrained borders and precise gutters. Contrast chrome/velvet, a night garden, paper, glass/foliage, studio materials and engraved ink without forcing them through one color filter.
+Use charcoal-green #191c1b, soft ivory type and one pale acid-green accent. Give image frames restrained borders and precise gutters rather than ornamental card chrome.
 
 BEHAVIOR
-Selecting a thumbnail updates the large image, caption and selected state. Left/right controls reorder the selected frame within the strip and correctly disable at either end. The main image opens a detail dialog. Preserve focus during reordering and report position accessibly.
+Selecting a thumbnail updates the main image, caption and selected state. Left and right controls reorder the selected frame and disable at either end; the main image opens a detail dialog. Preserve focus during reordering and report position accessibly.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 The source lists six original images in site/js/expansion/atelier-collection.js. Preserve comparable subject and material diversity, with optimized but inspectable image resolution.

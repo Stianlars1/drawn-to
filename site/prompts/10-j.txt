@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-Three adjacent feature plates share one continuous outline and dividers. Each combines a small FIG number, a bespoke explanatory drawing, a short title, a paragraph and a compact specification list.
+Join three adjacent feature plates with one continuous outline and single shared dividers. Each plate contains a FIG number, explanatory drawing, short title, paragraph and compact specification list. Use one coherent calibrated line grammar for three distinct subjects: branching source files, weighted input distribution and a decision ledger. Crosshairs and line terminals must describe actual relationships.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Nearly black surface, crisp silver typography and fine gray line drawings. Use one coherent drawing grammar but different subject matter: branching source files, weighted input distribution and a decision ledger. Crosshairs and line terminals serve actual relationships.
+Use a nearly black surface, crisp silver text and fine gray line drawings, reserving any small signal color for meaning. Use crisp silver typography with small monospace FIG labels and specification indices against the dark surface.
 
 BEHAVIOR
-A subtle packet or line draw may explain a connection. Keep the illustration visible at rest and on mobile. Any repeated demonstration yields to deliberate interaction.
+A subtle packet or line draw may explain a connection, but every illustration remains complete at rest and repeated demonstrations yield to deliberate interaction.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -28,5 +28,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-The three illustrations must remain distinct and visible at phone width. Do not replace them with icons, hide one to fit, or stack two borders at a shared edge.
+Keep all three subjects visible and distinct at phone width. Do not replace them with icons, hide one to fit, or double the border at a shared edge.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

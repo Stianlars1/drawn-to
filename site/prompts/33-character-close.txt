@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-An oversized friendly illustrated character anchors a warm closing page. Large editorial words, generous open space and compact useful next actions balance the character rather than surrounding it with decorative cards.
+Anchor a warm closing page with one oversized friendly character, balanced by large editorial words, generous open space and compact useful next actions rather than decorative cards. Create an original character with rounded volumes, deliberate pose and tiny face and edge details; personality must come from proportion and posture rather than an emoji-like blob.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Cream, olive and muted red accents; an original sculptural character with rounded volumes, a deliberate pose, tiny facial/edge details and a soft contact shadow. Mix humane serif emphasis with clear sans controls. Keep the character tactile rather than emoji-like.
+Use cream, olive and muted red accents, keeping the interface quiet enough for the illustrated character to carry the color. Mix humane serif emphasis with clear sans controls, keeping the closing words spacious and the actions concise. Give the character tactile modeled surfaces and a soft contact shadow that places it on the page rather than inside a card.
 
 BEHAVIOR
-Real closing actions can download a starting brief or copy an install command, with accurate feedback. Any small character movement respects its silhouette and leaves the text still.
+If the character moves, preserve its silhouette and keep all reading text still; a one-way state change plays once and holds rather than jumping back into a loop. Let closing actions download a starting brief or copy an install command, and report each result accurately beside its control.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Use the original character asset named by site/js/expansion/editorial.js as implementation evidence; create a distinct authorized character if adapting the design for another brand.
@@ -27,5 +27,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-The character must carry personality through proportion and pose at both phone and desktop scale. A generic blob with two dots is below the reference craft level.
+Verify that pose, proportion and small details preserve the character's point of view at both phone and desktop scale.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

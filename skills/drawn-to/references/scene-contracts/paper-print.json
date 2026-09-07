@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "id": "c",
+  "slug": "paper-print",
+  "name": "Paper and print",
+  "kind": "editorial",
+  "references": [
+    "basit_designs-2089995658640122065",
+    "devxnuj-2090030294892269799"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "exhibition-mat",
+      "role": "layout",
+      "label": "Paper exhibition mat",
+      "text": "Set a large white exhibition mat on warm paper, with a tall narrow title at upper left, specimen metadata in the opposite corner, a saturated printed slab in the lower quarter and a large clean paper interval between them.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089995658640122065",
+          "section": "Layout & composition"
+        },
+        {
+          "id": "devxnuj-2090030294892269799",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "narrow-editorial-serif",
+      "role": "typography",
+      "label": "Narrow editorial serif",
+      "text": "Use Instrument Serif or a similarly narrow editorial serif for the title, balanced by small specimen metadata.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "warm-print-palette",
+      "role": "color",
+      "label": "Warm paper and violet ink",
+      "text": "Use warm off-white #f3f2ee, charcoal ink and saturated pink-to-violet printed color.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089995658640122065",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "bounded-print-artifacts",
+      "role": "graphics",
+      "label": "Bounded halftone print slab",
+      "text": "Confine a crisp, inspectable halftone region, fine crop marks and registration details to the printed composition rather than applying a noisy full-screen filter.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089995658640122065",
+          "section": "Graphic language"
+        },
+        {
+          "id": "devxnuj-2090030294892269799",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "physical-paper",
+      "role": "material",
+      "label": "Physical paper edges",
+      "text": "Use visible mat edges and subtle print texture to make the sheet read as a physical mounted print.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089995658640122065",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "still-print",
+      "role": "motion",
+      "label": "Still print presentation",
+      "text": "Keep the printed composition still; only the functional action receives short confirmation motion.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089995658640122065",
+          "section": "Motion timeline"
+        },
+        {
+          "id": "devxnuj-2090030294892269799",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Complete mat acceptance",
+      "text": "Keep the complete mat inside its stage. Do not crop its corners or cover the ink slab with navigation; at narrow widths move metadata into the reading flow.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "exhibition-mat"
+    ],
+    "surface": [
+      "warm-print-palette",
+      "narrow-editorial-serif",
+      "bounded-print-artifacts",
+      "physical-paper"
+    ],
+    "behavior": [
+      "still-print"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

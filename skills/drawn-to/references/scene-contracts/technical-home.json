@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "e",
+  "slug": "technical-home",
+  "name": "Orbital minimalism",
+  "kind": "hero",
+  "references": [
+    "local-production-heroes",
+    "madebylalit-2087815622709403800"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "asymmetric-orbit-hero",
+      "role": "layout",
+      "label": "Asymmetric orbital hero",
+      "text": "Build a very wide black composition with compact left-aligned copy, one large thin orbital object near the centre and a sparse right-hand column of three facts, preserving generous air.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "local-production-heroes",
+          "section": "What we see"
+        },
+        {
+          "id": "madebylalit-2087815622709403800",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "two-scale-type",
+      "role": "typography",
+      "label": "Tracked sans and tabular mono",
+      "text": "Use closely tracked medium sans for the main copy and small tabular monospace for facts, creating two clear scales.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "black-white-orbit",
+      "role": "color",
+      "label": "True black and white orbit",
+      "text": "Use true black, a very low-contrast complete ring and one white comet arc.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "local-production-heroes",
+          "section": "What we see"
+        }
+      ]
+    },
+    {
+      "id": "sharp-comet-bloom",
+      "role": "light",
+      "label": "Sharp comet with separate bloom",
+      "text": "Separate the comet's fine bright edge from its small bloom so the arc remains sharp while the dark ring remains perceptible.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "madebylalit-2087815622709403800",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "linear-orbit",
+      "role": "motion",
+      "label": "Steady linear orbit",
+      "text": "Rotate the comet at a steady linear cadence while everything else stays still; pause offscreen and under reduced motion.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "madebylalit-2087815622709403800",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "truthful-facts",
+      "role": "context",
+      "label": "Truthful fact labels",
+      "text": "Use real facts or mark them explicitly as sample content.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Complete mobile orbit",
+      "text": "On mobile stack copy, complete ring and facts, retaining perception of the ring without making every edge glow.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "asymmetric-orbit-hero"
+    ],
+    "surface": [
+      "black-white-orbit",
+      "two-scale-type",
+      "sharp-comet-bloom"
+    ],
+    "behavior": [
+      "linear-orbit",
+      "truthful-facts"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

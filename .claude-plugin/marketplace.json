@@ -12,7 +12,7 @@
       "name": "drawn-to",
       "source": "./",
       "description": "Establish a design direction, continue an approved design or review UI against its lock. A curated reference library supports varied composition, type, illustration, material and motion, with portable visual evidence.",
-      "version": "1.3.1",
+      "version": "1.4.0",
       "author": {
         "name": "Stian Larsen"
       },

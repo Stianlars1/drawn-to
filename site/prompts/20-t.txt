@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-An emphatic centred typographic closing statement above a small command action. A very fine cool light seam sits much lower in the frame; sparse aligned metadata finishes the composition.
+Place an emphatic centred closing statement above a small command action, with a very fine light seam much lower in the frame and sparse aligned metadata completing the composition.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Blue-black, soft white and one electric-blue seam with a restrained halo. Large neutral sans is the main object. A long feathered light reflection adds depth without filling the empty stage with shapes.
+Use blue-black, soft white and one electric-blue seam. Make large neutral sans typography the primary visual object. Give the seam a restrained halo and a long feathered reflection that adds depth without filling the empty stage with shapes.
 
 BEHAVIOR
-Hold the composition still. The action gives immediate local feedback. Do not require a long reveal to understand the ending.
+Hold the composition still and give the action immediate local feedback; understanding must not depend on a long reveal.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-The visual tension comes from the distance between type and light seam. Keep both visible on mobile and keep navigation clear of the final metadata.
+Preserve the long visual distance between type and seam. Keep both visible on mobile and keep navigation clear of the final metadata.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

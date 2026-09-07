@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A sober dark comparison page gives two visual treatments equal image space under a short shared title. Fine divider, restrained captions and the source/context note support an honest visual comparison.
+Give two visual treatments equal image space beneath one short shared title, supported by a fine divider, restrained captions and a visible source or context note. Use actual detailed comparison images aligned to the same content, and keep both sides fully visible rather than dimming evidence for an effect.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Near-black, silver sans and tabular mono captions. Let actual detailed visual work inside the frame provide the texture and complexity. Use a thin blue divider; do not dim away the evidence just to create motion.
+Use a near-black ground, silver text and one thin blue divider, letting the detailed evidence inside the frames provide texture and complexity. Use silver sans typography for the shared title and restrained tabular monospace for comparison captions.
 
 BEHAVIOR
-If offering a reveal interaction, use actual before and after images aligned to the same content, with a keyboard-operable control. A static diptych is preferable when only one composite archive image exists.
+Offer a reveal control only when true before and after images exist, and make it keyboard operable; otherwise present the available composite as a static diptych. State whether the material is an archived example or a controlled evaluation, and never claim causal proof without a documented protocol.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Use two original or authorized comparison images. The showcase archive asset is site/assets/proof-same-model-same-brief.jpg; inspect its provenance before reuse.
@@ -28,5 +28,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Both sides must be inspectable on mobile. State whether this is an archived example or a controlled evaluation; do not claim causal proof without a documented protocol.
+Keep both sides inspectable on mobile and verify the provenance of the archive asset before reuse.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

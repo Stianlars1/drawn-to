@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A left editorial explanation balances a large light drawing sheet. One small dimensional lead object dispatches to four distinct process specimens, with curved routes, small colored packets, a merged result and one progress strip.
+Balance a left editorial explanation with a large light drawing sheet. One small dimensional lead object dispatches to four distinct process specimens through curved routes, then resolves into a merged result and one progress strip. Use real curved vector routes, small colored packets, consistent projection, different internal specimen drawings and readable status. Avoid generic connected icons.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Warm paper, precise green-gray lines, pale modeled node faces, small specimen labels and a restrained set of signal colors. The diagram needs coherent routing, consistent projection, different internal drawings and readable status, not generic connected icons.
+Use warm paper, precise green-gray lines, pale modeled node faces, small specimen labels and a restrained family of signal colors.
 
 BEHAVIOR
-A single six-second clock coordinates dispatch, work and return. Packets travel on real SVG route geometry; status updates at semantic stages. Watch/Stop is explicit, and the completed frame remains useful. Reduced motion presents a complete result immediately.
+Coordinate dispatch, work and return with one six-second logical clock. Move packets on actual SVG route geometry and update status only at semantic stages. Watch and Stop are explicit, the completed frame stays useful, and reduced motion presents completion immediately. The sequence illustrates a process. Do not claim actual agent work or numerical productivity results.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Use coherent native vector geometry and one shared logical clock. The original artwork and demonstration copy are in the cited implementation.
@@ -28,5 +28,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Packet positions, selected nodes, captions and progress must agree. Test stopping, replay, navigation cleanup and hidden tabs. Do not claim actual agent work or numerical productivity results from this illustrative sequence.
+Packet positions, selected nodes, captions and progress must agree. Test stopping, replay, navigation cleanup and hidden tabs.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

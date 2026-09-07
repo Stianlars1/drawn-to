@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "specimen-cabinet",
+  "slug": "specimen-cabinet",
+  "name": "A material vocabulary",
+  "kind": "features",
+  "references": [
+    "DmitryLepisov-2093247212629139641"
+  ],
+  "implementation": [
+    "site/js/expansion/atelier-collection.js",
+    "site/css/atelier-collection.css"
+  ],
+  "art": "Use site/assets/atelier/specimen-cabinet.webp as the original material-quality baseline. A new set must be coherently art-directed and detailed enough to inspect.",
+  "properties": [
+    {
+      "id": "cabinet-layout",
+      "role": "layout",
+      "label": "Six-specimen editorial cabinet",
+      "text": "Use a carefully photographed cabinet of six material specimens as the main field, balanced by restrained editorial type and a small selected-specimen description.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "material-collection",
+      "role": "graphics",
+      "label": "Coherent material collection",
+      "text": "Treat the grid as an actual collection in which each object has its own surface vocabulary, coherent scale, contact shadow, fine edge and enough resolution for microstructure comparison.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "museum-labels",
+      "role": "typography",
+      "label": "Quiet museum-drawer labels",
+      "text": "Keep labels quiet and precise, like a museum drawer.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "six-surface-vocabularies",
+      "role": "material",
+      "label": "Six distinct surface vocabularies",
+      "text": "Combine warm chalk, stone, glass, metal and softer organic textures under one consistent studio light.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DmitryLepisov-2093247212629139641",
+          "section": "Why it works and transfer"
+        }
+      ]
+    },
+    {
+      "id": "specimen-dialog",
+      "role": "interaction",
+      "label": "Keyboard-equivalent specimen detail",
+      "text": "Each specimen button opens a large detail dialog with a material name and specific description. Escape and close return to the cabinet; touch and keyboard inspection are equivalent.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "consistent-detail-view",
+      "role": "context",
+      "label": "Consistent enlarged crop",
+      "text": "Preserve the same original lighting and crop in the enlarged view.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "material-difference-check",
+      "role": "context",
+      "label": "Material distinction check",
+      "text": "Every specimen must differ in roughness, transmission or structure rather than hue alone. Compare image crops and selection behavior at all target sizes.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "cabinet-layout",
+      "material-collection",
+      "museum-labels"
+    ],
+    "surface": [
+      "six-surface-vocabularies"
+    ],
+    "behavior": [
+      "specimen-dialog",
+      "consistent-detail-view"
+    ],
+    "checks": [
+      "material-difference-check"
+    ]
+  }
+}

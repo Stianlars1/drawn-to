@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A pale technical studio balances a large camera model, a compact top-left statement, a narrow right specimen column and a bottom inspection strip. The camera should have enough visual area to inspect, with a visible grounding shadow and spare technical annotations.
+Balance a large inspectable camera on a pale technical studio with a compact top-left statement, narrow right specimen column and bottom inspection strip. Reserve ample object area, a visible grounding shadow and spare technical annotations. Model coherent lens, body and internal subassemblies with concentric barrel lips, knurling, fasteners, top dials, circuitry, iris leaves and registered lens layers. Contact interfaces and edge bevels make the relationships plausible; raw part count is not the quality target.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Graphite body, silver and warm metal rings, fine grip texture, translucent green-tinted optics, concentric barrel lips, knurling, tiny fasteners, top dials, circuitry and engraved-looking labels. Model contact interfaces and edge bevels. The visual quality comes from the relationships between parts and materials, not a claimed polygon or part count.
+Use a graphite body, silver and warm-metal rings, fine grip texture, translucent green-tinted optics and engraved-looking labels. Distinguish rough body surfaces, metal edges and transmissive glass.
 
 BEHAVIOR
-Assembled, Exploded and Inside expose different physical configurations. Separation moves coherent subassemblies along the lens/body axis. Pointer motion offers a restrained inspection angle. Internal circuitry and lens layers remain registered; the actual renderer is Three.js with instanced repeated details and physical materials.
+Assembled, Exploded and Inside expose real configurations. One separation scalar moves coherent subassemblies along the lens/body axis, while restrained pointer motion changes the inspection angle without losing registration. The showcase renderer is Three.js with instanced repeated details and physical materials. The source author's stated component counts are unverified and are not requirements.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 The camera model is original procedural geometry in the cited source. Reuse compatible source or create a comparably detailed model. The reference author's component counts are not acceptance targets or verified facts about this model.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Inspect all three configurations and the largest separation. No detached labels, intersecting iris leaves, ungrounded parts or clipping in portrait. Controls must expose real changes and every fallback must preserve its selected configuration.
+Inspect all three configurations at maximum separation. Reject detached labels, intersecting iris leaves, ungrounded parts or portrait clipping. Controls must expose real changes and every fallback must preserve the selected configuration.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

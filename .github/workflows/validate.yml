@@ -17,5 +17,9 @@ jobs:
         run: python3 scripts/build-showcase-data.py --check
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
+      - name: Verify atomic contracts and generated generator catalog
+        run: node scripts/build-generator.mjs --check
+      - name: Test generator selection, handoff and persistence
+        run: node --test tests/generator/*.test.mjs
       - name: Verify generated showcase prompts
         run: node scripts/build-showcase-prompts.mjs --check

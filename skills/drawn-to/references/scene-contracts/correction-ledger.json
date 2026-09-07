@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "v",
+  "slug": "correction-ledger",
+  "name": "The correction ledger",
+  "kind": "editorial",
+  "references": [],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css",
+    "skills/drawn-to/references/quality-bar.md"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "numbered-correction-ledger",
+      "role": "layout",
+      "label": "Numbered correction ledger",
+      "text": "Build an editorial paper ledger from numbered lines, a narrow headline and a small contextual footer framing the list.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "serif-mono-review-type",
+      "role": "typography",
+      "label": "Humane serif with mono indices",
+      "text": "Pair a narrow humane serif headline with small monospace row indices and readable ledger copy.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "paper-graphite-red",
+      "role": "color",
+      "label": "Warm paper and faded red ink",
+      "text": "Use warm off-white paper, muted graphite, faded red ink and fine horizontal rules.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "precise-correction-strikes",
+      "role": "graphics",
+      "label": "Text-aligned correction strikes",
+      "text": "Align one thin red strike to each corrected phrase instead of placing a large bar through an entire row.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "still-review-record",
+      "role": "motion",
+      "label": "Still readable review record",
+      "text": "Keep the correction list still and continuously readable.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "observable-defects-only",
+      "role": "context",
+      "label": "Observable review defects",
+      "text": "Name specific observable defects such as clipped evidence or nonfunctional controls rather than declaring arbitrary global bans on aesthetic choices.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Legible correction acceptance",
+      "text": "Keep every row visible on mobile, preserve the original wording beneath each strike and never hide rows to force a one-screen fit.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "numbered-correction-ledger",
+      "precise-correction-strikes"
+    ],
+    "surface": [
+      "paper-graphite-red",
+      "serif-mono-review-type"
+    ],
+    "behavior": [
+      "still-review-record",
+      "observable-defects-only"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

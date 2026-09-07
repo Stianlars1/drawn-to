@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A dark blue-gray editorial scene presents a horizontal sequence as one physical mechanical assembly, with a short heading above and clear stage labels below. The object carries the process metaphor.
+Present a horizontal sequence as one physical mechanical assembly on a dark blue-gray editorial stage, with a short heading above and clear stage labels below. Let the object carry the process metaphor. Set satin-metal task bars on a graphite or anodized base, with layered cap profiles, thin manufactured bevels and recessed status-light sockets.
 
 MATERIAL, LIGHT, TYPE AND TONE
-A graphite/anodized base supports satin-metal task bars with thin manufactured bevels, layered cap profiles, fine directional finish, recessed status-light sockets and direct readable labels. Keep the lights and contact shadows coherent. Avoid rubber-like rounded edge profiles and reflections that erase the labels.
+Use a fine directional finish, readable direct labels, coherent status lights and contact shadows. Avoid rubber-like rounded edges and reflections that erase labels.
 
 BEHAVIOR
-A quiet change of view reveals the object. An Inspect the finish control switches between the complete plan and an intentional close view; Show the full plan restores the overview. Fit all task bars in the mobile overview. Matching overview and detail posters retain the same selected state if the renderer is unavailable.
+A quiet view change reveals the object. Inspect the finish switches from the complete plan to an intentional close view, while Show the full plan restores the overview. Preserve the selected state in matching overview and detail posters when rendering is unavailable.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Compare the cap, edge and side at actual size and in the inspection view. Review the brightest reflection phase for label legibility. Preserve all four task bars in the portrait overview, and make cropping deliberate in the detail view. Verify the control in both live rendering and poster fallback.
+Compare cap, edge and side at actual size and in the inspection view. Review the brightest reflection phase for label legibility. Preserve all four task bars in the portrait overview and make cropping deliberate in the detail view. Verify the control in both live rendering and poster fallback.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

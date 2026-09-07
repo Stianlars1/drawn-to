@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-An eight-by-eight labelled matrix balances a stable detail-reading panel. Different marks distinguish documented pairings, combinations needing deliberate reconciliation and unassessed pairs.
+Balance an eight-by-eight labelled decision matrix with one stable detail-reading panel. Distinguish documented pairings, combinations needing deliberate reconciliation and unassessed pairs with three clearly different marks.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Blue-black, very thin square cells, small blue positive marks and muted red tension marks. Label columns vertically and rows horizontally. The selected cell gains an exact bright outline; the reading panel remains calm.
+Use blue-black, very thin square cells, small blue positive marks, muted red tension marks and one exact bright focus outline. Set column labels vertically, row labels horizontally and the detail explanation in a calm readable measure.
 
 BEHAVIOR
-Hover, focus and tap all reveal the same pairing detail. Give every cell an accessible name. Untested means unknown, not impossible. Use a roving keyboard focus with arrow-key movement and keep the page carousel out of those keys.
+Make hover, focus and tap reveal the same named pairing detail; use roving arrow-key focus inside the matrix and keep those keys from driving the page carousel. Treat unassessed as unknown rather than impossible, and never infer a universal aesthetic prohibition from zero co-occurrence in a small archive.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Labels, focused cell and explanation must remain visible at mobile width. Never infer a universal aesthetic prohibition from zero co-occurrence in a small archive.
+Keep labels, the focused cell and its explanation visible together at mobile width, and give every cell an accessible name.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

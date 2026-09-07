@@ -5,7 +5,7 @@ material, effect or a copyable prompt. The chosen scene is an established
 visual direction. Discover product facts and consequential gaps; do not send
 the user back through a generic family interview.
 
-The portable [showcase-styles.json](showcase-styles.json) contains a separate
+The portable [showcase-styles.json](showcase-styles.json), generated from the atomic [scene contracts](scene-contracts/), contains a separate
 visual contract for each of the 70 scene IDs. Look up the exact ID, including
 case for the original `a`-`z`, `A`-`D` routes. Each entry supplies composition,
 material/light/type, behavior, scene-specific acceptance checks, source
@@ -55,7 +55,7 @@ Do not silently copy the showcase's marketing text into an unrelated product.
 The repository generates one public text file per scene using
 `scripts/build-showcase-prompts.mjs`. It validates the scene registry, source
 paths and unique prompts. The UI fetches only the requested text. To maintain
-these prompts, edit the canonical profile, regenerate, then verify both the
+these prompts, edit the canonical scene-contract file, run `node scripts/build-generator.mjs`, regenerate, then verify both the
 clipboard content and the prompt's fidelity to the current rendered scene.
 The header copy action exports a visual direction; an install command and a
 workflow prompt are different actions and should have distinct labels.
@@ -79,3 +79,8 @@ The original case-sensitive letter links remain aliases; `a` and `A` are distinc
 scenes. The repository's `site/js/scene-routes.js` is the shared mapping used by
 the browser and prompt generator. Export the current canonical link when a
 prompt is copied. Do not interpret a URL name as a sequence position.
+
+
+## Generator selections
+
+For property-level, mixed-source instructions from `/generator`, use [generator handoff](generator-handoff.md). That workflow receives exact property IDs and scoped source links rather than requiring the complete prose scene export described above.

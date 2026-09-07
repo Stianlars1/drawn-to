@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "rolling-decisions",
+  "slug": "rolling-decisions",
+  "name": "Rolling weighted typography",
+  "kind": "component",
+  "references": [
+    "kitlangton-2096041674073874765"
+  ],
+  "implementation": [
+    "site/js/expansion/interactive.js",
+    "site/css/extra-interactive.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "three-weight-layout",
+      "role": "layout",
+      "label": "Three dominant weighted values",
+      "text": "Let three very large numerical shares dominate a dark editorial page. Pair each number with a short label, slider and concise explanation, then reconcile them below with a segmented total bar and a few presets.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "rolling-numerals",
+      "role": "typography",
+      "label": "Clipped rolling numerals",
+      "text": "Set soft-ivory numerals in individually clipped rolling windows with tabular alignment. The page should read as typography in motion rather than a dashboard of small metric cards.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "kitlangton-2096041674073874765",
+          "section": "Layout, type and material"
+        }
+      ]
+    },
+    {
+      "id": "black-green-sage",
+      "role": "color",
+      "label": "Black-green and sage",
+      "text": "Use black-green #0c1010, soft ivory numerals and restrained sage accents.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "digit-wheel-motion",
+      "role": "motion",
+      "label": "Value-bound digit wheels",
+      "text": "Animate individual digit wheels while the accessible numeric values update immediately. Reduced motion changes digits without rolling.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "kitlangton-2096041674073874765",
+          "section": "Motion evidence"
+        }
+      ]
+    },
+    {
+      "id": "balanced-weight-control",
+      "role": "interaction",
+      "label": "Always-balanced weights",
+      "text": "Adjusting one weight redistributes the remainder so the total stays exactly 100. Presets set all three shares coherently.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "value-extremes-check",
+      "role": "context",
+      "label": "Weight extremes and reversals",
+      "text": "Test 0, 100, all presets and rapid reversals. Bars and values must always reconcile.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "responsive-number-check",
+      "role": "context",
+      "label": "Responsive numeral integrity",
+      "text": "Numerals must never clip their final state or wrap on phones.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "three-weight-layout",
+      "rolling-numerals"
+    ],
+    "surface": [
+      "black-green-sage"
+    ],
+    "behavior": [
+      "digit-wheel-motion",
+      "balanced-weight-control"
+    ],
+    "checks": [
+      "value-extremes-check",
+      "responsive-number-check"
+    ]
+  }
+}

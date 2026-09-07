@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "a",
+  "slug": "narrow-dark",
+  "name": "Narrow dark sharp",
+  "kind": "hero",
+  "references": [],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css",
+    "docs/design-locks/2026-08-21-drawn-to-site.md"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "split-hero",
+      "role": "layout",
+      "label": "Copy and lamina split",
+      "text": "Place a compact left-aligned promise and install-sized action beside a tall isometric stack, retaining architectural void, full-height column rails and a small external read-head with a leader line.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "neutral-type-system",
+      "role": "typography",
+      "label": "Neutral sans with mono specimens",
+      "text": "Set the headline in a large neutral sans and the specimen labels in tiny monospace.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "graphite-white-palette",
+      "role": "color",
+      "label": "Graphite and cool white palette",
+      "text": "Use graphite #0a0c10, cool white faces, near-black undersides and fine blue dimensions.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "isometric-laminae",
+      "role": "graphics",
+      "label": "Isometric reference laminae",
+      "text": "Construct the object as thin reference strata with visible thickness, short edge highlights, occluded gaps and a sharp white top face.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "diagonal-ground-light",
+      "role": "light",
+      "label": "Diagonal ground light",
+      "text": "Cast the light diagonally across the ground plane.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "travelling-read-head",
+      "role": "motion",
+      "label": "Travelling read-head",
+      "text": "Move one discrete read-head between strata while its leader, index, kind and swatch update together; reduced motion freezes one complete reading.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "truthful-specimen",
+      "role": "context",
+      "label": "Dated specimen truth",
+      "text": "Present the numbers as an explicitly dated specimen rather than a current library count, and do not flatten the stack into a generic dashboard.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Scale and reflow acceptance",
+      "text": "Judge the stack at thumbnail and detail scale. On mobile place it below the copy with the full base and labels visible, and keep the action clear of its top.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "split-hero",
+      "isometric-laminae"
+    ],
+    "surface": [
+      "graphite-white-palette",
+      "neutral-type-system",
+      "diagonal-ground-light",
+      "truthful-specimen"
+    ],
+    "behavior": [
+      "travelling-read-head"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

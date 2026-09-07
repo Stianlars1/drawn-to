@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A large ivory rotary instrument on a fine dot-grid balances a concise list of four selectable conditions. The selected row opens one useful explanation while a physical pointer turns to its detent.
+Balance a large ivory rotary instrument on a fine dot grid with a concise list of four selectable conditions; open one useful explanation for the active row.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Warm ivory, graphite, tiny orange state marks and a softly recessed circular face. Use concentric bevel rings, radial ticks, a short raised pointer and a grounded shadow. Typography stays quieter than the physical object.
+Use warm ivory, graphite and tiny orange marks to carry the active instrument state. Keep labels and descriptions quieter than the physical object while retaining clear active, focus and long-description states. Build a softly recessed circular face from concentric bevel rings, radial ticks, a short raised pointer and a grounded shadow.
 
 BEHAVIOR
-Four real buttons change pointer and active description together. Use a restrained settling transition. Scripted cycling stops as soon as the user selects anything; reduced motion uses an immediate composed update.
+Turn the pointer to the selected detent with a restrained settling transition; reduced motion changes to the composed result immediately. Make all four rows real buttons that update pointer and description together, and stop scripted cycling as soon as the user selects anything.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Long descriptions must fit without being clipped. Check all four detents, focus states and pointer alignment; hidden tabs should not keep timers alive.
+Check every detent, focus state and pointer alignment; fit long descriptions without clipping and stop timers while the tab is hidden.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

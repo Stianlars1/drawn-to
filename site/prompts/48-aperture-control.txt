@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A huge physical aperture occupies the left side of a warm stone-gray page. Tall, closely set editorial type and a compact continuous control occupy the right. Fine labels sit outside the object rather than across its moving mechanism.
+Let a huge physical aperture occupy the left side of a warm stone-gray page. Place tall closely set editorial type and a compact continuous control on the right, with fine labels outside the moving mechanism. Build nine overlapping leaves into a real adjustable circular opening, with precise concentric registration, visible thickness, fine edge bevels, engraved ticks and screws.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Ivory enclosure, dark metal iris leaves, precise concentric machining and restrained copper-brown detail. Nine overlapping leaves form a real adjustable opening. Build visible thickness, fine edge bevels, engraved ticks, screws and directional reflection on brushed surfaces. Dark gaps must read as occlusion, not a black sticker.
+Use an ivory enclosure, dark metal iris leaves and restrained copper-brown details. Add directional reflection on brushed surfaces; dark gaps must read as occlusion rather than a black sticker.
 
 BEHAVIOR
-The slider and Narrow/Balanced/Open presets move the nine iris leaves coherently around one centre. Keep the control response direct and frame rendering demand-driven. A poster fallback covers each preset.
+The slider and Narrow, Balanced and Open presets move all nine leaves coherently around one centre. Keep response direct and cover each preset with a poster fallback. Render frames on demand as the control moves rather than maintaining unnecessary idle work.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -30,5 +30,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Inspect the opening at minimum, midpoint and maximum. No leaf intersections, floating screws, broken circular registration or mobile clipping. Preserve the object-to-copy scale imbalance.
+Inspect the opening at minimum, midpoint and maximum. Reject leaf intersections, floating screws and broken circular registration. Prevent mobile clipping while preserving the intended object-to-copy scale imbalance.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-Two comparable product previews surround a compact set of four material criteria. Light and dark frames share the content structure while their surface hierarchy and lighting are independently composed.
+Surround a compact list of four material criteria with two comparable product previews that share content structure while independently composing surface hierarchy and light.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Light uses opaque white planes and soft contact shadows. Dark uses graphite planes, subtle luminous edges and adjusted neutral values. Keep accent semantics consistent but tune luminance separately. The outer showcase ground is quiet pale gray.
+Use opaque whites and tuned neutral values in light mode, and graphite planes with adjusted luminous edges in dark mode; keep accent semantics consistent while tuning luminance per theme. Keep criterion labels and one stable explanation in a consistent hierarchy across all selected states. Separate light planes with soft contact shadows and dark planes with tonal steps and subtle edges, re-deriving the material treatment for each mode.
 
 BEHAVIOR
-Selecting separation, accent, imagery or depth emphasizes the corresponding evidence on both sides and updates one stable explanation. All four selected states must be visible on mobile and keyboard-operable.
+Selecting separation, accent, imagery or depth emphasizes corresponding evidence on both sides and updates one stable explanation; keyboard and touch expose the same states. Do not produce dark mode by merely inverting colors or dimming the light preview.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Do not merely invert colors or dim the light image. Preserve contrast and hierarchy in both modes, including each last row and its selection state.
+Preserve contrast, hierarchy, every criterion row and the selected state in both themes and on mobile.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

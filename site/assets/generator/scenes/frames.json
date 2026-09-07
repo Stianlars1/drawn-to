@@ -1,0 +1,916 @@
+{
+  "schema": 1,
+  "description": "Original Drawn To showcase frames. These depict the individual source scenes, not generated combinations.",
+  "frames": [
+    {
+      "id": "a",
+      "slug": "narrow-dark",
+      "path": "assets/generator/scenes/narrow-dark-91589ea04500.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "91589ea04500075cc74a08a36013af268c3cc4dd40c27676648c480cd6e756b2"
+    },
+    {
+      "id": "b",
+      "slug": "pastel-stage",
+      "path": "assets/generator/scenes/pastel-stage-69836154ea25.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "69836154ea258f5fceb5d2d66e135a724a85a6f3eb450a601d3e6f8078b675a1"
+    },
+    {
+      "id": "c",
+      "slug": "paper-print",
+      "path": "assets/generator/scenes/paper-print-1c6284f0c806.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "1c6284f0c80633bf13db321fb55ae0c6aaf1080ac65bf5422b1dd02eaf70aa59"
+    },
+    {
+      "id": "d",
+      "slug": "dark-atmosphere",
+      "path": "assets/generator/scenes/dark-atmosphere-cc47702a42c6.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "cc47702a42c6a5c32cc285b28685e0ebbae101d3a41295dd125506963afbaa6d"
+    },
+    {
+      "id": "e",
+      "slug": "technical-home",
+      "path": "assets/generator/scenes/technical-home-577fea578d4b.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "577fea578d4b1513bd559d3e1151210f94a01b577682c3b659d413892f18e6da"
+    },
+    {
+      "id": "f",
+      "slug": "ink-air",
+      "path": "assets/generator/scenes/ink-air-1538c84516f1.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "1538c84516f1b9c6d273ce925fff28fc0c84af4a4c55c36fabbcb41808110bd1"
+    },
+    {
+      "id": "g",
+      "slug": "isometric-blueprint",
+      "path": "assets/generator/scenes/isometric-blueprint-4aba60c084bc.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "4aba60c084bc8ac6a860bf02cb7a319479692059f9b3c4cc0a0a0b96dccd9cde"
+    },
+    {
+      "id": "h",
+      "slug": "emissive-signal",
+      "path": "assets/generator/scenes/emissive-signal-c8639b96f64f.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "c8639b96f64fa05ef64d08fc890dced4e1ee9c68d4d61ad25d6f3f5bbd378d40"
+    },
+    {
+      "id": "i",
+      "slug": "tactile-instrument",
+      "path": "assets/generator/scenes/tactile-instrument-aab32b9a31af.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "aab32b9a31af8f5a68ee8b1caad304c7ad8d1492955fb68bba62c7e728a49c63"
+    },
+    {
+      "id": "j",
+      "slug": "divider-trio",
+      "path": "assets/generator/scenes/divider-trio-8e3060e6e367.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "8e3060e6e367bf860d2286cdf7deb253fb3c683445d9d3cd83fbe610ce65fd71"
+    },
+    {
+      "id": "k",
+      "slug": "pebble-trio",
+      "path": "assets/generator/scenes/pebble-trio-4932f422f085.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "4932f422f085469444674fc1ec8e1dde251ddc5cbdcd0b5900c84882fa847801"
+    },
+    {
+      "id": "l",
+      "slug": "print-ledger",
+      "path": "assets/generator/scenes/print-ledger-7b5c57cddd2b.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "7b5c57cddd2b3c724ca6e3ef20856776b390acaf2d5020050a6ac5998633547d"
+    },
+    {
+      "id": "m",
+      "slug": "mosaic-gallery",
+      "path": "assets/generator/scenes/mosaic-gallery-5b2443dca522.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "5b2443dca52214f810b6c345f37b3f66d2ec4913f11dee12a83f4e7dfeba956b"
+    },
+    {
+      "id": "n",
+      "slug": "emissive-metrics",
+      "path": "assets/generator/scenes/emissive-metrics-9df942e3cb39.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "9df942e3cb39f658035b79c0098b67dbc478337c88bcbadcd27315ee92a2c7ef"
+    },
+    {
+      "id": "o",
+      "slug": "frozen-interaction",
+      "path": "assets/generator/scenes/frozen-interaction-936ff3aaffed.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "936ff3aaffed223f34819d09c477b16656c94cba3a5ff0600c92ba0de82c70a2"
+    },
+    {
+      "id": "p",
+      "slug": "chapters",
+      "path": "assets/generator/scenes/chapters-74094ebc80ec.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "74094ebc80ec95a74a584a21abf6d945bdfd00790d082d8b163903eca1323aea"
+    },
+    {
+      "id": "q",
+      "slug": "outlined-bento",
+      "path": "assets/generator/scenes/outlined-bento-91e610ae8d78.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "91e610ae8d78df08e1890e7c614a63a4c8de6177fa6e50c8522a5b192a79e8a3"
+    },
+    {
+      "id": "r",
+      "slug": "instrument-hud",
+      "path": "assets/generator/scenes/instrument-hud-a70be2774ce5.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "a70be2774ce55aae3ea0e05d5e9e598c3b02c1210e627153a5a6cf6ff4e7cb25"
+    },
+    {
+      "id": "s",
+      "slug": "paper-slips",
+      "path": "assets/generator/scenes/paper-slips-b60257cc350e.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "b60257cc350e72882f6a5e27f3fd0690bf7839c5417aa984c98870f1cc255216"
+    },
+    {
+      "id": "t",
+      "slug": "editorial-close",
+      "path": "assets/generator/scenes/editorial-close-96090cd1a91e.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "96090cd1a91e40fb17991fed741df4a207bf82f08d5b2419cd74e87f6a4b7063"
+    },
+    {
+      "id": "u",
+      "slug": "proof-diptych",
+      "path": "assets/generator/scenes/proof-diptych-059cf671d7cd.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "059cf671d7cddeee97e027a98211a84989bb0c2388b9429b6c80c666d1c1ffeb"
+    },
+    {
+      "id": "v",
+      "slug": "correction-ledger",
+      "path": "assets/generator/scenes/correction-ledger-e3c0cbd54189.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "e3c0cbd541893245f4b3e18978cd139985901b38686e3a509a7eecf190b68ae6"
+    },
+    {
+      "id": "w",
+      "slug": "two-registers",
+      "path": "assets/generator/scenes/two-registers-95fb5f211aef.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "95fb5f211aef202b3bb404c0f4d729314bb1aef599ef54a620730ef7e73917ce"
+    },
+    {
+      "id": "x",
+      "slug": "stop-conditions",
+      "path": "assets/generator/scenes/stop-conditions-53e065deeebc.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "53e065deeebc89c79729bb875f9527d3ba47d727b5f8ac7ce83b77d4d1aeffc3"
+    },
+    {
+      "id": "y",
+      "slug": "reference-contact-sheet",
+      "path": "assets/generator/scenes/reference-contact-sheet-824873f4f169.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "824873f4f169fdaa6254b4da8c60a6f4d2a45a8fd87474f274061f9f29e60d4e"
+    },
+    {
+      "id": "z",
+      "slug": "blend-matrix",
+      "path": "assets/generator/scenes/blend-matrix-1017b0c77043.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "1017b0c77043d989b69515fcf8a00e1cd5564b6f596309bc2446d82b98d32de7"
+    },
+    {
+      "id": "A",
+      "slug": "example-run",
+      "path": "assets/generator/scenes/example-run-aad1772461e4.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "aad1772461e4c18f2158bd6c1715d3244e479f7855daf97a0e7c62d2dd387ba0"
+    },
+    {
+      "id": "B",
+      "slug": "agent-integrations",
+      "path": "assets/generator/scenes/agent-integrations-26bddc2407a6.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "26bddc2407a66b28dfb2ef8d177c8b08df31e8e854964912336c020337946c3f"
+    },
+    {
+      "id": "C",
+      "slug": "measured-page",
+      "path": "assets/generator/scenes/measured-page-9bb35d91e4d4.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "9bb35d91e4d4abdda47a05bdfc7f57d8258f74b6c96e5da030d18cb212795d3f"
+    },
+    {
+      "id": "D",
+      "slug": "light-dark",
+      "path": "assets/generator/scenes/light-dark-f21b1b716738.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "f21b1b716738e8e496011d010d44755f3a25501fdf5bdc4b74642a4132d696a7"
+    },
+    {
+      "id": "scenic-close",
+      "slug": "scenic-close",
+      "path": "assets/generator/scenes/scenic-close-23fcd344a6b6.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "23fcd344a6b6ec9a82b0b2457cd63d141a5c3b52cbc51fd10f734c122139bc39"
+    },
+    {
+      "id": "warm-choices",
+      "slug": "warm-choices",
+      "path": "assets/generator/scenes/warm-choices-be6daeebbcdb.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "be6daeebbcdbb71d9f92dc14d83cde6247a197bfcaf101a4ab403ffdf67a0931"
+    },
+    {
+      "id": "character-close",
+      "slug": "character-close",
+      "path": "assets/generator/scenes/character-close-3ee2c76dc8af.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "3ee2c76dc8af16a479b3737040fe5520a3e4ab2f0d0e921248351c3993489066"
+    },
+    {
+      "id": "arch-editorial",
+      "slug": "arch-editorial",
+      "path": "assets/generator/scenes/arch-editorial-27eec1e7ae0c.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "27eec1e7ae0c2f98bcb0ae7fa13eb69cb2da863d46cad7540746bd135ee0d9bc"
+    },
+    {
+      "id": "kinetic-collection",
+      "slug": "kinetic-collection",
+      "path": "assets/generator/scenes/kinetic-collection-20626cb9aa75.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "20626cb9aa75dac3c44112a23d0332cf907ffc39be2da8b4763cdc5188485299"
+    },
+    {
+      "id": "action-result",
+      "slug": "action-result",
+      "path": "assets/generator/scenes/action-result-b5138a6975ff.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "b5138a6975ffaa4dee2db30a486e03d53e2b45d53a06093e75cf34c6b16268ce"
+    },
+    {
+      "id": "pixel-plan",
+      "slug": "pixel-plan",
+      "path": "assets/generator/scenes/pixel-plan-3af961f2ca9a.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "3af961f2ca9a7ccab4e86c88d1f77c4420af93300b881cc7cfec90390f5a3d17"
+    },
+    {
+      "id": "rolling-decisions",
+      "slug": "rolling-decisions",
+      "path": "assets/generator/scenes/rolling-decisions-0ad5f5d2478b.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "0ad5f5d2478b8af5f77ad05f1ba4d6b379b6f71185b89112c220e422766cab1a"
+    },
+    {
+      "id": "menu-preview",
+      "slug": "menu-preview",
+      "path": "assets/generator/scenes/menu-preview-7f23d95b68e3.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "7f23d95b68e3bf27acc96facc51ed6548be13f0c55c4210836498a77a6517e4d"
+    },
+    {
+      "id": "working-widgets",
+      "slug": "working-widgets",
+      "path": "assets/generator/scenes/working-widgets-71ad4b727b64.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "71ad4b727b648985e3cfa75f8cc6903766174d92caaade356047088cbcebb0e8"
+    },
+    {
+      "id": "glass-identity",
+      "slug": "glass-identity",
+      "path": "assets/generator/scenes/glass-identity-f55e8886c7af.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "f55e8886c7afe8620b6b31e37675501059d1f5576f4517c38857b271fdea0603"
+    },
+    {
+      "id": "physical-schedule",
+      "slug": "physical-schedule",
+      "path": "assets/generator/scenes/physical-schedule-8032daf0ab34.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "8032daf0ab340a572a3e47160210b948611015daedeb8c38ace49600ce7602e6"
+    },
+    {
+      "id": "iridescent-ribbon",
+      "slug": "iridescent-ribbon",
+      "path": "assets/generator/scenes/iridescent-ribbon-2e6f5014fa47.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "2e6f5014fa47e396d4a192ac6f811c595b88f8a25e67f69b4062fb8ceaefefea"
+    },
+    {
+      "id": "particle-assembly",
+      "slug": "particle-assembly",
+      "path": "assets/generator/scenes/particle-assembly-8aadf02e817f.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "8aadf02e817fd8514f3889bc14d534907958efe9b79378a55487b768bd6878be"
+    },
+    {
+      "id": "material-study",
+      "slug": "material-study",
+      "path": "assets/generator/scenes/material-study-f0390f2e5f9f.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "f0390f2e5f9f5d7a4f3fb4d9525ab5679b5e92524c0264d52e79fe98365cc305"
+    },
+    {
+      "id": "optical-type",
+      "slug": "optical-type",
+      "path": "assets/generator/scenes/optical-type-433472b6a4b0.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "433472b6a4b023866b84d7a34a79f9ae96952540565e3a0ec53497275d764d91"
+    },
+    {
+      "id": "woven-spectrum",
+      "slug": "woven-spectrum",
+      "path": "assets/generator/scenes/woven-spectrum-af8f807fb496.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "af8f807fb496469da17ca8d9bd931e9a64bbc175e3765a4730d51642fda0b442"
+    },
+    {
+      "id": "aperture-control",
+      "slug": "aperture-control",
+      "path": "assets/generator/scenes/aperture-control-2ee786aa2136.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "2ee786aa21360f769df40c62ed8a8e5d535b2b19ef427b234c9239df59f086ad"
+    },
+    {
+      "id": "chromatic-relief",
+      "slug": "chromatic-relief",
+      "path": "assets/generator/scenes/chromatic-relief-78ab47476bfb.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "78ab47476bfb7b08817d06db2af79c52e7a965ac4c0b51ffe06fcf06ceb5278e"
+    },
+    {
+      "id": "night-garden",
+      "slug": "night-garden",
+      "path": "assets/generator/scenes/night-garden-ee4efdafd96a.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "ee4efdafd96a455043eb8614bd2502de4bcd2b8ade3365be8aa21589a9258f0c"
+    },
+    {
+      "id": "paper-theatre",
+      "slug": "paper-theatre",
+      "path": "assets/generator/scenes/paper-theatre-21d6dc069dfa.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "21d6dc069dfaa94f30d5f629c40582c0e8dc2cbe0d9d23344c78150a79e4139f"
+    },
+    {
+      "id": "living-terrarium",
+      "slug": "living-terrarium",
+      "path": "assets/generator/scenes/living-terrarium-0b702035aed9.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "0b702035aed9cc446b30fc39b27fb5dcf6c7d89a30ef0531fdd108b30dd48f55"
+    },
+    {
+      "id": "red-chamber",
+      "slug": "red-chamber",
+      "path": "assets/generator/scenes/red-chamber-5177b0001105.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "5177b0001105aa6f1050c0dce75383ed7e7689547b6671f1dfe1351d1fc8d134"
+    },
+    {
+      "id": "specimen-cabinet",
+      "slug": "specimen-cabinet",
+      "path": "assets/generator/scenes/specimen-cabinet-49570979ee44.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "49570979ee44936ce1b14f0f1c3618125e56a12c38dae3292f6f29d82cb101ed"
+    },
+    {
+      "id": "contact-sheet",
+      "slug": "contact-sheet",
+      "path": "assets/generator/scenes/contact-sheet-489c2da215ef.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "489c2da215ef960e73e9042256420c3e3c17ba297d239d9c08066f02077a9043"
+    },
+    {
+      "id": "auric-orbit",
+      "slug": "auric-orbit",
+      "path": "assets/generator/scenes/auric-orbit-541577e8098f.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "541577e8098f4ec61af871595e985c8cb37c36b055b4fa9bffd8d96a41160c89"
+    },
+    {
+      "id": "camera-obscura",
+      "slug": "camera-obscura",
+      "path": "assets/generator/scenes/camera-obscura-427e8523b9c6.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "427e8523b9c683746c43517f4d5e4e82db029d689b055c90f41e33244cf50ef6"
+    },
+    {
+      "id": "plasma-study",
+      "slug": "plasma-study",
+      "path": "assets/generator/scenes/plasma-study-f59b8dfac61b.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "f59b8dfac61b47827b8a5ea6dcfff3cc4d6bbdd5474c6712aa5c8814375fdd53"
+    },
+    {
+      "id": "phosphor-field",
+      "slug": "phosphor-field",
+      "path": "assets/generator/scenes/phosphor-field-5adae12d2b98.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "5adae12d2b98f4d2b23f92b11f242b3a74ccd8e8a8752c0870ae6d56af258104"
+    },
+    {
+      "id": "silver-tide",
+      "slug": "silver-tide",
+      "path": "assets/generator/scenes/silver-tide-c6c04c2dfa83.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "c6c04c2dfa8311bb2ae2545ea344d4513f10ae78b529254674f3d714cfe69efa"
+    },
+    {
+      "id": "cloud-chamber",
+      "slug": "cloud-chamber",
+      "path": "assets/generator/scenes/cloud-chamber-e35fb996c5e2.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "e35fb996c5e29e5a55b109dd563612e5662adada4fcf5e43b1c0839d5f417efa"
+    },
+    {
+      "id": "ember-portrait",
+      "slug": "ember-portrait",
+      "path": "assets/generator/scenes/ember-portrait-d4e522a65e9d.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "d4e522a65e9dfb2747b043313bff6db63eaafe82f92771db73f8708ba438253e"
+    },
+    {
+      "id": "terrain-interface",
+      "slug": "terrain-interface",
+      "path": "assets/generator/scenes/terrain-interface-62d751ed0dbc.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "62d751ed0dbc064472b6aea566a2ade048a0b188feab3c1c944d8825641fe9c5"
+    },
+    {
+      "id": "sunlit-field",
+      "slug": "sunlit-field",
+      "path": "assets/generator/scenes/sunlit-field-5499e2ba2a22.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "5499e2ba2a22f1192a7727c9b660c3d69224573ded4867d5d12dc48736568907"
+    },
+    {
+      "id": "chamber-control",
+      "slug": "chamber-control",
+      "path": "assets/generator/scenes/chamber-control-4b47becfd6af.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "4b47becfd6afe7151f1b7c5286d91f1720db7b6a60acbbc5357c3d97b64107d9"
+    },
+    {
+      "id": "quiet-frequency",
+      "slug": "quiet-frequency",
+      "path": "assets/generator/scenes/quiet-frequency-d58e4a23a679.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "d58e4a23a67965519b480dbd1db3b2eb6b10805387814aa5e06e2489d67b4e41"
+    },
+    {
+      "id": "common-clock",
+      "slug": "common-clock",
+      "path": "assets/generator/scenes/common-clock-45b7bcb6ebf5.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "45b7bcb6ebf5af35b1a6090384eae6e9f6931bf2f59862ab4f3d9706e98310d0"
+    },
+    {
+      "id": "vector-foundry",
+      "slug": "vector-foundry",
+      "path": "assets/generator/scenes/vector-foundry-f1ca6eaa022e.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "f1ca6eaa022e1f76a393e34158a8d3901228d8fca586d6c111ede7550f7e137c"
+    },
+    {
+      "id": "thermal-type",
+      "slug": "thermal-type",
+      "path": "assets/generator/scenes/thermal-type-cca0a258a40d.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "cca0a258a40deee6db3c72ff066ea5e086cccf4863609982fdf5983022111518"
+    },
+    {
+      "id": "morph-study",
+      "slug": "morph-study",
+      "path": "assets/generator/scenes/morph-study-aaf8c82f3bc5.jpg",
+      "viewport": [
+        1440,
+        900
+      ],
+      "mode": "composed source still, GPU poster fallback",
+      "sourceRevision": "f3cc3ed2b69a8e4ced31c8c4217e7a044dc8f505",
+      "provenance": "Existing native JPEG capture of the baseline showcase, made before generator showcase/header modifications. Content-addressed without recapturing or altering image bytes.",
+      "sha256": "aaf8c82f3bc5b3906589638006022cd4a163221c761969cdb2c3ee33884a517d"
+    }
+  ]
+}

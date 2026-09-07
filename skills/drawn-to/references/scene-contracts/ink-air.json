@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "f",
+  "slug": "ink-air",
+  "name": "Ink and air",
+  "kind": "editorial",
+  "references": [
+    "LexnLin-2089704858970673447",
+    "local-production-heroes"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "exposed-grid-page",
+      "role": "layout",
+      "label": "Measured open editorial grid",
+      "text": "Use an almost empty light editorial page where left-aligned type and its action share a precise edge, and expose faint vertical rails, crop crosses and marginal measurements around generous margins.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "LexnLin-2089704858970673447",
+          "section": "Layout & composition"
+        },
+        {
+          "id": "local-production-heroes",
+          "section": "What makes them work"
+        }
+      ]
+    },
+    {
+      "id": "annotated-type",
+      "role": "typography",
+      "label": "Editorial type with mono annotation",
+      "text": "Pair the main reading type with fine monospace construction annotations at comfortable contrast.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "chalk-graphite-blue",
+      "role": "color",
+      "label": "Chalk, graphite and blue",
+      "text": "Use chalk #fafafa, graphite #3a3a3a and one small blue accent.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "LexnLin-2089704858970673447",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "hairline-scaffold",
+      "role": "graphics",
+      "label": "Hairline construction scaffold",
+      "text": "Render the grid as a measured hairline scaffold aligned to the actual columns and gutters, rather than as a background pattern competing with the headline.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "LexnLin-2089704858970673447",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "adaptive-still-grid",
+      "role": "motion",
+      "label": "Still adaptive scaffold",
+      "text": "Keep the page mostly still; adapt the scaffold exactly to the active breakpoint while keeping press and copy feedback local.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Proportioned emptiness acceptance",
+      "text": "Make the emptiness feel proportioned rather than unfinished. On mobile keep metadata clear of transport controls and large enough to read.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "exposed-grid-page",
+      "hairline-scaffold"
+    ],
+    "surface": [
+      "chalk-graphite-blue",
+      "annotated-type"
+    ],
+    "behavior": [
+      "adaptive-still-grid"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "t",
+  "slug": "editorial-close",
+  "name": "A luminous ending",
+  "kind": "footer",
+  "references": [],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css",
+    "skills/drawn-to/references/style-families.md"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "distant-seam-closing",
+      "role": "layout",
+      "label": "Distant-seam closing composition",
+      "text": "Place an emphatic centred closing statement above a small command action, with a very fine light seam much lower in the frame and sparse aligned metadata completing the composition.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "large-neutral-statement",
+      "role": "typography",
+      "label": "Large neutral closing type",
+      "text": "Make large neutral sans typography the primary visual object.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "blue-black-electric-seam",
+      "role": "color",
+      "label": "Blue-black with electric seam",
+      "text": "Use blue-black, soft white and one electric-blue seam.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "feathered-seam-light",
+      "role": "light",
+      "label": "Feathered seam reflection",
+      "text": "Give the seam a restrained halo and a long feathered reflection that adds depth without filling the empty stage with shapes.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "still-ending-feedback",
+      "role": "motion",
+      "label": "Still ending with local feedback",
+      "text": "Hold the composition still and give the action immediate local feedback; understanding must not depend on a long reveal.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Type-to-seam tension acceptance",
+      "text": "Preserve the long visual distance between type and seam. Keep both visible on mobile and keep navigation clear of the final metadata.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "distant-seam-closing"
+    ],
+    "surface": [
+      "blue-black-electric-seam",
+      "large-neutral-statement",
+      "feathered-seam-light"
+    ],
+    "behavior": [
+      "still-ending-feedback"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-An oversized folded ribbon sweeps through a warm neutral stage beside or above a compact editorial title. Let the silhouette and its negative space dominate; secondary captions and a pause control stay small.
+Sweep an oversized folded ribbon through a warm neutral stage beside or above a compact editorial title. Let its silhouette and negative space dominate while secondary captions and a pause control stay small. Model one continuous ribbon with smooth curvature, visible thickness and distinct front and back lighting.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Pearl paper ground and thin-film metallic color. Model a continuous ribbon with smooth curvature, thickness and distinct front/back lighting. Iridescent hue follows angle and reflection, with bright edges and darker folds, not a static rainbow painted over a flat blob.
+Place thin-film metallic color on a pearl-paper ground. Iridescent hue follows angle and reflection through bright edges and darker folds rather than a static rainbow painted over a flat blob.
 
 BEHAVIOR
-Slow rotation reveals the material. Pause is immediate. Use view-dependent physical shading for interactive motion and a visually matched poster when GPU is unavailable.
+Use slow rotation to reveal the material, with immediate pause. Interactive motion uses view-dependent physical shading and GPU fallback uses a visually matched poster.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Check the silhouette at a distance and fold detail close up. No visible faceting, clipped ribbon ends or overexposed white regions that erase the material.
+Check the silhouette at a distance and fold detail close up. Reject visible faceting, clipped ribbon ends and overexposed white regions that erase the material.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

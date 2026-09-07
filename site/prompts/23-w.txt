@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-Two horizontal calibrated tracks compare steady motion and a responsive transition. Labels above each describe the purpose and timing; a short note explains the distinction.
+Stack two horizontal calibrated tracks, with purpose and timing labels above each and a short note explaining their difference. Construct fine vertical ticks around a sharp moving centre and a soft local halo, preserving a meaningful resting position in every track.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Graphite-black, green signal for the steady track and white for the responsive track. Fine vertical ticks, a sharp moving centre and a soft local halo create an oscilloscope-like feel. Labels use restrained tabular mono.
+Use graphite-black, a green signal for steady motion and a white signal for the responsive transition. Use restrained tabular monospace for track names, durations, tick labels and the explanatory note.
 
 BEHAVIOR
-The steady track loops linearly; the responsive example traverses, decelerates and holds. Explain these as two useful examples, not all possible motion. Pause visible demos on request and when hidden; show meaningful resting positions under reduced motion.
+Loop the steady example linearly; let the responsive example traverse, decelerate and hold. Present them as two useful examples rather than a complete taxonomy of motion. Provide a visible pause action, pause when hidden and replace movement with meaningful composed positions under reduced motion. Make actual durations match their labels and keep reading text still throughout the demonstrations.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Verify actual duration against labels and the loop boundary. No jumps into view, moving reading text or unreadably dim timing labels.
+Verify duration and loop boundaries, reject jumps into view and keep every timing label comfortably readable.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

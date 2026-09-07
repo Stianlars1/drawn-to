@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "id": "x",
+  "slug": "stop-conditions",
+  "name": "Rotary stop conditions",
+  "kind": "component",
+  "references": [
+    "cabralorenzo-2090102237548740718",
+    "jeetnirnejak-2089706882688753782"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "dial-and-condition-list",
+      "role": "layout",
+      "label": "Dial with four stop conditions",
+      "text": "Balance a large ivory rotary instrument on a fine dot grid with a concise list of four selectable conditions; open one useful explanation for the active row.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "cabralorenzo-2090102237548740718",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "quiet-instrument-type",
+      "role": "typography",
+      "label": "Quiet instrument labels",
+      "text": "Keep labels and descriptions quieter than the physical object while retaining clear active, focus and long-description states.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "ivory-graphite-orange",
+      "role": "color",
+      "label": "Ivory, graphite and orange marks",
+      "text": "Use warm ivory, graphite and tiny orange marks to carry the active instrument state.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "cabralorenzo-2090102237548740718",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "bevelled-detent-dial",
+      "role": "material",
+      "label": "Bevelled detent dial",
+      "text": "Build a softly recessed circular face from concentric bevel rings, radial ticks, a short raised pointer and a grounded shadow.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "jeetnirnejak-2089706882688753782",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "settling-detent-pointer",
+      "role": "motion",
+      "label": "Settling detent pointer",
+      "text": "Turn the pointer to the selected detent with a restrained settling transition; reduced motion changes to the composed result immediately.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "jeetnirnejak-2089706882688753782",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "user-stopped-cycling",
+      "role": "interaction",
+      "label": "User-stopped scripted cycling",
+      "text": "Make all four rows real buttons that update pointer and description together, and stop scripted cycling as soon as the user selects anything.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "jeetnirnejak-2089706882688753782",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Four-detent control acceptance",
+      "text": "Check every detent, focus state and pointer alignment; fit long descriptions without clipping and stop timers while the tab is hidden.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "dial-and-condition-list"
+    ],
+    "surface": [
+      "ivory-graphite-orange",
+      "quiet-instrument-type",
+      "bevelled-detent-dial"
+    ],
+    "behavior": [
+      "settling-detent-pointer",
+      "user-stopped-cycling"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

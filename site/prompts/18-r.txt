@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A calibrated semicircular instrument is centred on a fine dark engineering grid. A large numeric reading sits inside the arc, with a small unit label and a compact secondary readout row.
+Centre a calibrated semicircular instrument on a fine dark engineering grid, placing a large numeric reading inside the arc with a small unit label and compact secondary readout row. Build thick and thin tick ranks, an inner hairline arc and an exact lit-segment endpoint around the named scale.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Black-green #040607, warm amber #ffb43c, dim machined gray and tabular mono. Use thick and thin tick ranks, an inner hairline arc, an exact lit segment endpoint and a concentrated glow. Preserve a dark core inside the light.
+Use black-green #040607, warm amber #ffb43c and dim machined gray. Use tabular monospace for the main value, unit and secondary readings. Concentrate the amber glow around lit evidence while preserving a dark core inside the light.
 
 BEHAVIOR
-The gauge encodes an explicitly named quantity and scale. Generate lit tick count, displayed value and accessible description from one value. No decorative fake live telemetry.
+Generate the lit tick count, displayed value and accessible description from one explicitly named quantity and scale. Do not present decorative values as live telemetry.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -28,5 +28,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Check that the meter scale reconciles and tiny labels remain readable. The composition should feel like a calibrated object, not just a number in a ring.
+Reconcile the meter scale, retain legibility of tiny labels and verify that the result reads as a calibrated object rather than a number inside a ring.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "B",
+  "slug": "agent-integrations",
+  "name": "Interoperable marquee",
+  "kind": "features",
+  "references": [
+    "LexnLin-2024485283769540850"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "manifesto-and-opposing-belts",
+      "role": "layout",
+      "label": "Manifesto with opposing name belts",
+      "text": "Place a spacious left-aligned manifesto above two opposing belts of compact compatibility names that extend toward the edges through quiet fade masks.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "comfortable-chip-type",
+      "role": "typography",
+      "label": "Comfortable compatibility labels",
+      "text": "Use comfortable sans typography and crisp small symbols so every compatibility name remains easy to read.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "white-graphite-shell",
+      "role": "color",
+      "label": "Almost-white graphite shell",
+      "text": "Use an almost-white ground, graphite text and white chips with very fine neutral borders.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "LexnLin-2024485283769540850",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "tangible-name-chips",
+      "role": "material",
+      "label": "Tangible bordered name chips",
+      "text": "Give the pill-shaped chips fine borders and soft shadows without turning the surface into a wall of logos.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "seamless-name-belts",
+      "role": "motion",
+      "label": "Seamless modest name belts",
+      "text": "Move the belts at a steady modest speed using seamless duplication and quiet edge fades.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "LexnLin-2024485283769540850",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "pausable-static-fallback",
+      "role": "interaction",
+      "label": "Pausable wrapped fallback",
+      "text": "Pause movement on hover, focus or an explicit action; under reduced motion show a readable wrapped set of unique items and hide visual duplicates from assistive technology.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "truthful-compatibility",
+      "role": "context",
+      "label": "Truthful integration inventory",
+      "text": "Include only integrations that are actually supported.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Complete marquee acceptance",
+      "text": "Verify both loop seams and preserve every unique agent name in the static mobile arrangement.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "manifesto-and-opposing-belts"
+    ],
+    "surface": [
+      "white-graphite-shell",
+      "comfortable-chip-type",
+      "tangible-name-chips"
+    ],
+    "behavior": [
+      "seamless-name-belts",
+      "pausable-static-fallback",
+      "truthful-compatibility"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

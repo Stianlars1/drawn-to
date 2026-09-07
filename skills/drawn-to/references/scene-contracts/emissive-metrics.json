@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "n",
+  "slug": "emissive-metrics",
+  "name": "Emissive data matrix",
+  "kind": "graphic",
+  "references": [
+    "yurygok-2089624786213237049"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "matrix-with-label-columns",
+      "role": "layout",
+      "label": "Labelled dot-matrix region",
+      "text": "Give a bespoke dot-matrix chart one deliberate region of a dark canvas, with family names in a fixed left column, discrete data points in the centre and tabular totals aligned at right amid generous surrounding air.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "yurygok-2089624786213237049",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "compact-data-type",
+      "role": "typography",
+      "label": "Compact tabular data type",
+      "text": "Use compact labels and tabular monospace totals with enough measure for the longest family name.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "yurygok-2089624786213237049",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "cool-blue-emission",
+      "role": "color",
+      "label": "Cool blue evidence points",
+      "text": "Use near-black, low-contrast guide structure and cool blue active points whose crisp central pixels remain brighter than their small blooms.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "yurygok-2089624786213237049",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "encoded-dot-counts",
+      "role": "graphics",
+      "label": "Discrete reconciled dot counts",
+      "text": "Encode values as discrete lit dots and ensure every dot count reconciles with its displayed total.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "yurygok-2089624786213237049",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "stable-data",
+      "role": "motion",
+      "label": "Stable readable values",
+      "text": "Data may appear once or remain still, but values being read never drift.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "yurygok-2089624786213237049",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "accessible-data-equivalent",
+      "role": "interaction",
+      "label": "Readable data equivalent",
+      "text": "Provide the same information as accessible readable text.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "data-qualification",
+      "role": "context",
+      "label": "Historical or sample status",
+      "text": "State historical or sample status wherever applicable.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Matrix separation acceptance",
+      "text": "At mobile widths keep labels clear of the longest row and prevent adjacent point glows from merging.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "matrix-with-label-columns",
+      "encoded-dot-counts"
+    ],
+    "surface": [
+      "cool-blue-emission",
+      "compact-data-type"
+    ],
+    "behavior": [
+      "stable-data",
+      "accessible-data-equivalent",
+      "data-qualification"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

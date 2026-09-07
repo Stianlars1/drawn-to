@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "description": "Implementation-specific visual contracts for the 70 Drawn To showcase scenes. References identify transferable vocabulary; they do not assert source author implementation or exact copying.",
+  "description": "Generated from atomic, maintained scene-contracts. Edit skills/drawn-to/references/scene-contracts/*.json, then run node scripts/build-generator.mjs and node scripts/build-showcase-prompts.mjs.",
   "styles": [
     {
       "id": "a",
       "name": "Narrow dark sharp",
-      "composition": "A compact left-aligned promise and install-sized action beside a tall isometric stack of thin reference laminae. Keep the architectural void around the stack, full-height column rails and a small external read-head with a leader line.",
-      "surface": "Graphite #0a0c10, cool white faces and near-black undersides. Individual strata need thickness, short edge highlights, occluded gaps and a sharp white top face. Fine blue dimensions and tiny mono specimen labels sit below the large neutral sans headline. The light crosses the ground diagonally; do not flatten the stack into a generic dashboard.",
-      "behavior": "A discrete read-head travels between strata while its leader, index, kind and swatch update together. Freeze one complete reading when motion is reduced. The numbers describe an explicitly dated specimen, not a pretend current library count.",
-      "checks": "Judge the stack at thumbnail and detail scale. On mobile put it below the copy with the full base and labels visible; the action must not cross its top.",
+      "composition": "Place a compact left-aligned promise and install-sized action beside a tall isometric stack, retaining architectural void, full-height column rails and a small external read-head with a leader line. Construct the object as thin reference strata with visible thickness, short edge highlights, occluded gaps and a sharp white top face.",
+      "surface": "Use graphite #0a0c10, cool white faces, near-black undersides and fine blue dimensions. Set the headline in a large neutral sans and the specimen labels in tiny monospace. Cast the light diagonally across the ground plane. Present the numbers as an explicitly dated specimen rather than a current library count, and do not flatten the stack into a generic dashboard.",
+      "behavior": "Move one discrete read-head between strata while its leader, index, kind and swatch update together; reduced motion freezes one complete reading.",
+      "checks": "Judge the stack at thumbnail and detail scale. On mobile place it below the copy with the full base and labels visible, and keep the action clear of its top.",
       "references": [],
       "implementation": [
         "site/js/catalog.js",
@@ -21,10 +21,10 @@
     {
       "id": "b",
       "name": "Pastel horizon",
-      "composition": "One centred typographic statement floats above a broad, low horizon. A single white rounded command surface sits beneath it. Leave the sky open; the visual weight lives in the horizon rim, not a collection of cards.",
-      "surface": "Near-white lavender #f4f6fb, powder blue, deep blue ink #1b2a50. Build a long curved illuminated edge with several quiet atmospheric value layers and fine grain. The command surface has a soft lift shadow and a crisp upper edge. Medium-weight sans, generously spaced lines and tiny restrained mono details.",
-      "behavior": "This composition is complete at rest. Use brief local press/copy confirmation without shifting the button width. Any atmospheric drift must be nearly imperceptible and stop when hidden.",
-      "checks": "Preserve the horizon as a wide surface on mobile, not a circular glow. Check that pale controls and body copy remain readable.",
+      "composition": "Float one centred typographic statement above a broad low horizon, with a single white rounded command surface beneath it and open sky around the composition. Build a long curved illuminated edge with several quiet atmospheric value layers and fine grain; keep the visual weight in the horizon rim rather than adding cards.",
+      "surface": "Use near-white lavender #f4f6fb, powder blue and deep blue ink #1b2a50. Use medium-weight sans typography with generously spaced lines and tiny restrained monospace details. Give the white command surface a crisp upper edge and a soft lift shadow.",
+      "behavior": "Keep the composition complete at rest; any atmospheric drift is nearly imperceptible and stops when hidden. Use brief local press or copy confirmation without changing the button width.",
+      "checks": "On mobile preserve the horizon as a wide surface rather than a circular glow, and verify that pale controls and body copy remain readable.",
       "references": [],
       "implementation": [
         "site/js/catalog.js",
@@ -37,10 +37,10 @@
     {
       "id": "c",
       "name": "Paper and print",
-      "composition": "A large white exhibition mat on warm paper. A tall, narrow serif title occupies the upper left; small specimen metadata occupies the opposite corner. A saturated printed slab anchors the lower quarter, with a large clean paper interval between.",
-      "surface": "Warm off-white #f3f2ee, charcoal ink, Instrument Serif or a similarly narrow editorial serif. Use physical mat edges, fine crop marks, pink-to-violet ink, a bounded halftone region and subtle print texture. Halftone and registration details must be crisp enough to inspect, not a noisy full-screen filter.",
-      "behavior": "Keep the print still. The only functional movement is the short action confirmation. A complete mat stays inside its available stage.",
-      "checks": "Do not crop off the mat corners or cover the ink slab with navigation. At narrow widths move metadata into the reading flow.",
+      "composition": "Set a large white exhibition mat on warm paper, with a tall narrow title at upper left, specimen metadata in the opposite corner, a saturated printed slab in the lower quarter and a large clean paper interval between them.",
+      "surface": "Use warm off-white #f3f2ee, charcoal ink and saturated pink-to-violet printed color. Use Instrument Serif or a similarly narrow editorial serif for the title, balanced by small specimen metadata. Confine a crisp, inspectable halftone region, fine crop marks and registration details to the printed composition rather than applying a noisy full-screen filter. Use visible mat edges and subtle print texture to make the sheet read as a physical mounted print.",
+      "behavior": "Keep the printed composition still; only the functional action receives short confirmation motion.",
+      "checks": "Keep the complete mat inside its stage. Do not crop its corners or cover the ink slab with navigation; at narrow widths move metadata into the reading flow.",
       "references": [
         "basit_designs-2089995658640122065",
         "devxnuj-2090030294892269799"
@@ -55,10 +55,10 @@
     {
       "id": "d",
       "name": "Dark atmosphere",
-      "composition": "A centred concise promise cuts across a near-black stage. One broad diagonal beam enters from the upper right and passes behind the copy. The visual event is the boundary between illuminated haze and darkness.",
-      "surface": "Blue-black #05070a, cool white type and a restrained cyan cast. Give the beam one defined edge, a long soft falloff, irregular dust density and a plausible off-canvas source. Small translucent controls have a lit upper rim. Avoid multiple conic rays or a centred radial blob.",
-      "behavior": "The still frame must already contain the whole scene. Optional dust drift can be slow; text and controls stay fixed. Do not tie reading to an entrance sequence.",
-      "checks": "Keep the headline readable across the brightest portion of the beam. Recompose its origin at portrait widths.",
+      "composition": "Place a concise centred promise across a near-black stage while one broad diagonal beam enters from the upper right and passes behind the copy.",
+      "surface": "Use blue-black #05070a, cool white type and a restrained cyan cast. Give one beam a defined edge, long soft falloff, irregular dust density and a plausible off-canvas source; the scene's event is the boundary between illuminated haze and darkness. Use small translucent controls with a lit upper rim. Avoid multiple conic rays and centred radial blobs.",
+      "behavior": "Keep the whole scene present in the still frame; optional dust drifts slowly while text and controls remain fixed, and reading never depends on an entrance sequence.",
+      "checks": "Keep the headline readable across the brightest beam region and recompose the beam origin at portrait widths.",
       "references": [
         "basit_designs-2089627588184653915",
         "insporadesign-2087895823619182608"
@@ -73,10 +73,10 @@
     {
       "id": "e",
       "name": "Orbital minimalism",
-      "composition": "A very wide black composition: compact left-aligned copy, one large thin orbital object near the centre and a sparse right-hand column of three facts. The asymmetry and generous air are essential.",
-      "surface": "True black with a very low-contrast complete ring and one white comet arc. Separate the fine edge from its small bloom so the arc stays sharp. Closely tracked medium sans and small tabular mono form two clear scales.",
-      "behavior": "The comet rotates with a steady linear cadence while everything else remains still. Pause offscreen and under reduced motion. Facts must be real or explicitly sample content.",
-      "checks": "A mobile composition stacks copy, complete ring and facts. Keep the dark part of the ring perceptible without making every edge glow.",
+      "composition": "Build a very wide black composition with compact left-aligned copy, one large thin orbital object near the centre and a sparse right-hand column of three facts, preserving generous air.",
+      "surface": "Use true black, a very low-contrast complete ring and one white comet arc. Use closely tracked medium sans for the main copy and small tabular monospace for facts, creating two clear scales. Separate the comet's fine bright edge from its small bloom so the arc remains sharp while the dark ring remains perceptible.",
+      "behavior": "Rotate the comet at a steady linear cadence while everything else stays still; pause offscreen and under reduced motion. Use real facts or mark them explicitly as sample content.",
+      "checks": "On mobile stack copy, complete ring and facts, retaining perception of the ring without making every edge glow.",
       "references": [
         "local-production-heroes",
         "madebylalit-2087815622709403800"
@@ -91,10 +91,10 @@
     {
       "id": "f",
       "name": "Ink and air",
-      "composition": "An almost empty light editorial page whose construction grid is visible. Left-aligned type shares a precise edge with the action; very faint vertical rails, crop crosses and marginal measurements expose how the page is set.",
-      "surface": "Chalk #fafafa, graphite #3a3a3a and a small blue accent. Use generous margins, hairline scaffold and fine mono annotations with comfortable contrast. The grid is a measured composition, not a background pattern competing with the headline.",
-      "behavior": "Mostly still. Press/copy feedback is local and exact. The scaffold adapts to the actual column and gutters at each breakpoint.",
-      "checks": "The intentional emptiness should feel proportioned, not unfinished. Mobile metadata must not collide with the transport or turn into unreadable decoration.",
+      "composition": "Use an almost empty light editorial page where left-aligned type and its action share a precise edge, and expose faint vertical rails, crop crosses and marginal measurements around generous margins. Render the grid as a measured hairline scaffold aligned to the actual columns and gutters, rather than as a background pattern competing with the headline.",
+      "surface": "Use chalk #fafafa, graphite #3a3a3a and one small blue accent. Pair the main reading type with fine monospace construction annotations at comfortable contrast.",
+      "behavior": "Keep the page mostly still; adapt the scaffold exactly to the active breakpoint while keeping press and copy feedback local.",
+      "checks": "Make the emptiness feel proportioned rather than unfinished. On mobile keep metadata clear of transport controls and large enough to read.",
       "references": [
         "LexnLin-2089704858970673447",
         "local-production-heroes"
@@ -109,10 +109,10 @@
     {
       "id": "g",
       "name": "Exploded blueprint",
-      "composition": "A left copy column balances a large dimetric exploded document on the right. Five parallel sheets reveal a decision ledger, with a shared perspective, external guides and clear air between layers.",
-      "surface": "Charcoal #1a1a1c, near-white linework and a minimal green reading accent. Each plane has an edge, a subtle face value and real miniature content. Use consistent projection and line hierarchy: outer silhouette, document structure, then annotations.",
-      "behavior": "The object can stay composed and still; any inspection movement must retain registration between sheets. Keep text in the main column as real selectable DOM text.",
-      "checks": "Do not substitute five arbitrary rotated rectangles. On mobile preserve the entire projection, its outer leaders and the relationship of plane spacing to object width.",
+      "composition": "Balance a left copy column with a large dimetric exploded document on the right, preserving a shared perspective, external guides and clear air between five parallel sheets. Draw five planes with visible edges, subtle face values and real miniature decision-ledger content, using a consistent line hierarchy from outer silhouette to document structure to annotations.",
+      "surface": "Use charcoal #1a1a1c, near-white linework and one minimal green reading accent.",
+      "behavior": "The object may remain still; any inspection movement must preserve registration between all sheets. Keep the text in the main copy column as real selectable DOM text.",
+      "checks": "Do not substitute arbitrary rotated rectangles. On mobile retain the complete projection, its outer leaders and the relationship between plane spacing and object width.",
       "references": [
         "marcelkargul-2090148130914206137",
         "local-chatsheet-iso-bento"
@@ -127,10 +127,10 @@
     {
       "id": "h",
       "name": "Emissive signal",
-      "composition": "A sparse dark page with centred type and one physical-looking action slot. A thin amber line under the slot provides the single luminous event.",
-      "surface": "Near-black #08080a, soft silver type and amber #ffb43c. Build a small bright source, a wider low-opacity halo and a dark recessed surround. Keep the rim and slot visible through the glow; body copy needs sufficient contrast independently of the atmospheric effect.",
-      "behavior": "Use local light and label feedback on press/copy. If a signal sweeps, its bright head and softer tail must stay on the same line and stop at rest.",
-      "checks": "Bloom must not wash out the action label. Check close-up edge sharpness, silhouette at a distance and contrast on both desktop and phone.",
+      "composition": "Compose a sparse dark page with centred type and one physical-looking action slot, using a thin amber line beneath it as the only luminous event.",
+      "surface": "Use near-black #08080a, soft silver type and amber #ffb43c. Keep the dark recessed surround and physical rim visible around the thin source line. Build a small bright source and a wider low-opacity halo while preserving the line's sharp core; body-copy contrast must remain independent of the glow.",
+      "behavior": "Use local light and label feedback for press and copy actions. If a signal sweeps, keep its bright head and softer tail on the same line and stop it at rest.",
+      "checks": "Ensure bloom never washes out the action label, then inspect edge sharpness close up, silhouette at a distance and contrast on desktop and phone.",
       "references": [
         "arknow91-2089955524007674031",
         "insporadesign-2088123952136638508"
@@ -145,10 +145,10 @@
     {
       "id": "i",
       "name": "Tactile command",
-      "composition": "One oversized command button is the product object, centred beneath a short headline on a quiet warm instrument ground. The button has a machined outer bezel, recessed track and a separate indicator window.",
-      "surface": "Warm ivory #f2f1ee, graphite and a tiny orange/green indicator. Layer edge bevels, inset shadow, the raised cap, small fasteners and directional highlights. The monochrome label is engraved-looking but readable; the surface must have an apparent thickness.",
-      "behavior": "Press depresses the cap slightly. Successful copy changes the indicator and an accessible status; failure must not display success. Preserve button dimensions through all states.",
-      "checks": "Check the bezel, slot and cap as three distinct planes. Keep the entire command operable and legible at 390px without shrinking it into a toy.",
+      "composition": "Centre one oversized command button beneath a short headline on a quiet warm instrument ground.",
+      "surface": "Use warm ivory #f2f1ee, graphite and a tiny orange or green indicator. Give the monochrome label an engraved appearance while retaining clear legibility. Construct a machined outer bezel, recessed track, raised cap, separate indicator window and small fasteners, with visible thickness, inset shadow, edge bevels and directional highlights.",
+      "behavior": "Depress the cap slightly on press while preserving the button's dimensions through every state. On successful copy, update the indicator and an accessible status; never display success after a failed copy.",
+      "checks": "Verify bezel, slot and cap as three distinct planes, and keep the entire command operable and legible at 390px without shrinking it into a toy.",
       "references": [
         "cabralorenzo-2090102237548740718",
         "flornkm-2089749302960615875"
@@ -163,10 +163,10 @@
     {
       "id": "j",
       "name": "Divider-cut technical plates",
-      "composition": "Three adjacent feature plates share one continuous outline and dividers. Each combines a small FIG number, a bespoke explanatory drawing, a short title, a paragraph and a compact specification list.",
-      "surface": "Nearly black surface, crisp silver typography and fine gray line drawings. Use one coherent drawing grammar but different subject matter: branching source files, weighted input distribution and a decision ledger. Crosshairs and line terminals serve actual relationships.",
-      "behavior": "A subtle packet or line draw may explain a connection. Keep the illustration visible at rest and on mobile. Any repeated demonstration yields to deliberate interaction.",
-      "checks": "The three illustrations must remain distinct and visible at phone width. Do not replace them with icons, hide one to fit, or stack two borders at a shared edge.",
+      "composition": "Join three adjacent feature plates with one continuous outline and single shared dividers. Each plate contains a FIG number, explanatory drawing, short title, paragraph and compact specification list. Use one coherent calibrated line grammar for three distinct subjects: branching source files, weighted input distribution and a decision ledger. Crosshairs and line terminals must describe actual relationships.",
+      "surface": "Use a nearly black surface, crisp silver text and fine gray line drawings, reserving any small signal color for meaning. Use crisp silver typography with small monospace FIG labels and specification indices against the dark surface.",
+      "behavior": "A subtle packet or line draw may explain a connection, but every illustration remains complete at rest and repeated demonstrations yield to deliberate interaction.",
+      "checks": "Keep all three subjects visible and distinct at phone width. Do not replace them with icons, hide one to fit, or double the border at a shared edge.",
       "references": [
         "0xSero-2090197565035753820"
       ],
@@ -180,10 +180,10 @@
     {
       "id": "k",
       "name": "Soft feature instruments",
-      "composition": "Three pale feature scenes show different outputs through floating fragments: a layered ledger, a two-way concept diagram and a plotted timing curve. Image areas dissolve into their text areas.",
-      "surface": "Pale periwinkle, milky white, blue-gray labels and soft contact shadows. Keep fragments on multiple planes, with fine internal content and slight translucency. Light comes from one direction across all three. The white cards should feel buoyant without generic giant drop shadows.",
-      "behavior": "Optional tiny plotted runners or floating motion belong inside the scenes; the descriptive text remains still. Each scene has a strong composed frame.",
-      "checks": "All three features and their drawings must survive mobile reflow. Do not reduce the result to three gradient rectangles with headings.",
+      "composition": "Arrange three pale feature scenes whose image areas dissolve into their text areas, using floating fragments to show a layered ledger, a two-way concept diagram and a plotted timing curve. Place fine-content fragments on multiple planes with slight translucency, giving each scene a specific explanatory drawing rather than a generic gradient rectangle.",
+      "surface": "Use pale periwinkle, milky white, blue-gray labels and restrained semantic accents. Use soft contact shadows and light translucency to make white fragments buoyant without generic giant drop shadows. Light all three scenes from one consistent direction.",
+      "behavior": "If used, keep tiny plotted runners or floating motion inside the scenes while descriptive text remains still; every scene retains a strong composed frame.",
+      "checks": "Preserve all three features and their drawings through mobile reflow.",
       "references": [
         "Triopixels-2089426990696685794"
       ],
@@ -197,10 +197,10 @@
     {
       "id": "l",
       "name": "Print ledger",
-      "composition": "A framed sheet presents twelve carefully aligned rows. Narrow serif title, small document metadata, row numbers, dotted leaders and a right-aligned value column create the hierarchy. A thin print band closes the sheet.",
-      "surface": "Warm gray board, white paper, charcoal text, faded red row numbers and minute halftone. Keep baseline alignment and dotted leader density exact. Values use tabular mono. Let subtle paper edges supply the depth.",
-      "behavior": "Primarily a still reading surface. If the content uses sample or historical data, keep that label visible at every breakpoint.",
-      "checks": "Read every row at mobile scale. Align the last digits; retain the source/date qualifier; do not invent counts to make the ledger look authoritative.",
+      "composition": "Frame a sheet containing twelve aligned rows, with a narrow title, small document metadata, row numbers, dotted leaders, a right-aligned value column and a thin print band closing the sheet.",
+      "surface": "Use warm gray board, white paper, charcoal text and faded red row numbers. Use a narrow serif title, small metadata, faded row indices and tabular monospace values, with exact baseline and final-digit alignment. Keep dotted-leader density exact and confine minute halftone detail to the print treatment. Let subtle paper edges provide the physical depth.",
+      "behavior": "Keep the ledger primarily still and retain any sample or historical-data label at every breakpoint. Retain the source and date qualifier and never invent counts to make the sheet appear authoritative.",
+      "checks": "Verify that every row can be read at mobile scale and that the last digits remain aligned.",
       "references": [
         "basit_designs-2089995658640122065",
         "yurygok-2089624786213237049"
@@ -215,10 +215,10 @@
     {
       "id": "m",
       "name": "Chroma specimen gallery",
-      "composition": "Eight compact specimen plates form a disciplined 4-by-2 gallery over a wide processed chromatic field. Each plate has an index, a small palette, a family name and one short contextual note.",
-      "surface": "Dark translucent plates sit against luminous violet, ochre, pink and blue areas. Coarse field pixels and finer grain add two scales of detail. Swatches are crisp and opaque; text stays neutral and readable. Avoid a separate independent gradient on every card.",
-      "behavior": "Keep the background quiet; this is a gallery to read, not a carousel. On mobile reflow to two columns without losing any specimen.",
-      "checks": "The color field must be felt through the plates while preserving all labels. Do not present historical family memberships as current totals.",
+      "composition": "Arrange eight compact specimen plates as a disciplined 4-by-2 gallery over one wide processed chromatic field; each plate contains an index, compact palette, family name and one contextual note.",
+      "surface": "Use one luminous field spanning violet, ochre, pink and blue behind dark translucent plates; keep swatches crisp and opaque rather than giving every card an independent gradient. Keep every plate's index, family name and note compact, neutral and readable over the field. Combine coarse field pixels with finer grain to create two inspectable scales of detail.",
+      "behavior": "Keep the background quiet and the plates fixed for reading; on mobile reflow to two columns without losing a specimen. Do not present historical family memberships as current totals.",
+      "checks": "Ensure the color field remains perceptible through the plates while every label stays readable.",
       "references": [
         "kevserctk-2090002547410870428"
       ],
@@ -232,10 +232,10 @@
     {
       "id": "n",
       "name": "Emissive data matrix",
-      "composition": "A bespoke dot-matrix chart occupies one deliberate region of a dark canvas. Family names sit in a fixed left column, discrete lit dots encode the values and tabular totals align at the right.",
-      "surface": "Near-black with cool blue points, a small bloom around each lit point and crisp central pixels. Use low-contrast guide structure and brighter active evidence. Compact type and large surrounding air let the data drawing carry the identity.",
-      "behavior": "Data may appear once or remain still; values being read do not drift. Provide the same information as readable text, with historical/sample status stated where applicable.",
-      "checks": "Dot counts must reconcile with displayed values. Mobile labels cannot collide with the longest row; the glow must not merge adjacent points.",
+      "composition": "Give a bespoke dot-matrix chart one deliberate region of a dark canvas, with family names in a fixed left column, discrete data points in the centre and tabular totals aligned at right amid generous surrounding air. Encode values as discrete lit dots and ensure every dot count reconciles with its displayed total.",
+      "surface": "Use near-black, low-contrast guide structure and cool blue active points whose crisp central pixels remain brighter than their small blooms. Use compact labels and tabular monospace totals with enough measure for the longest family name.",
+      "behavior": "Data may appear once or remain still, but values being read never drift. Provide the same information as accessible readable text. State historical or sample status wherever applicable.",
+      "checks": "At mobile widths keep labels clear of the longest row and prevent adjacent point glows from merging.",
       "references": [
         "yurygok-2089624786213237049"
       ],
@@ -249,10 +249,10 @@
     {
       "id": "o",
       "name": "A weighted decision",
-      "composition": "One compact, centred dark product fragment shows a real weighted choice. A quiet title bar introduces the question; four aligned rows pair a selection control, a name and its numeric share. The total closes the form.",
-      "surface": "Violet-black ground, slightly lifted dark surface, muted lilac selection fill and small luminous ticks. Use a restrained inset border and fine dividers. The hierarchy runs question, selected rows, numeric total, then metadata.",
-      "behavior": "Make the weighted choices operable when this is a product UI; keep the total at 100 and expose the values accessibly. For a frozen illustration, clearly identify it as an example rather than suggesting hidden functionality.",
-      "checks": "The selected state must be evident without relying on hue alone. Keep names, weights and total legible on small screens.",
+      "composition": "Centre one compact dark product fragment containing a quiet question title bar, four aligned choice rows and a final total; each row pairs a selection control, name and numeric share.",
+      "surface": "Use a violet-black ground, muted lilac selection fill and small luminous ticks. Order the typographic hierarchy as question, selected rows, numeric total and then metadata. Place the choices on a slightly lifted dark surface with a restrained inset border and fine row dividers.",
+      "behavior": "When used as product UI, make weighted choices operable, maintain a total of 100 and expose every value accessibly. When rendered as an illustration, label the fragment as an example rather than implying hidden functionality.",
+      "checks": "Make selection evident without hue alone, and keep every name, weight and the total legible on small screens.",
       "references": [],
       "implementation": [
         "site/js/catalog.js",
@@ -265,10 +265,10 @@
     {
       "id": "p",
       "name": "Quiet chapters",
-      "composition": "A narrow numbered chapter rail sits beside one spacious detail panel. The active item has a tiny blue registration line. Panel title, prose and a short evidence list share one stable layout.",
-      "surface": "Almost-white ground, softly raised white panel, graphite typography and muted mono indices. Radius is restrained; elevation is a broad faint shadow with a crisp surface edge. The panel is the focal plane, not the whole page.",
-      "behavior": "Click, keyboard focus/activation or touch selects a chapter. Swap the panel in place with a brief dissolve; rapid selection resolves to the latest choice. An auto-demo stops after user input and under reduced motion.",
-      "checks": "Reserve enough height for the longest chapter. Mobile must keep rail and panel close together rather than pushing them to opposite ends of the viewport.",
+      "composition": "Place a narrow numbered chapter rail beside one spacious detail panel. Give the active item a tiny registration line and keep panel title, prose and a short evidence list in one stable layout.",
+      "surface": "Use an almost-white ground, white panel, graphite typography and one muted blue registration accent. Use muted monospace indices in the rail and graphite reading typography in the detail panel. Give the focal panel a restrained radius, broad faint elevation shadow and crisp surface edge without turning the whole page into a panel.",
+      "behavior": "Support click, keyboard focus and activation, and touch as equivalent ways to select a chapter; rapid selections resolve to the latest choice. Swap the panel in place with a brief dissolve. Any auto-demo stops after user input and under reduced motion.",
+      "checks": "Reserve enough height for the longest chapter, and on mobile keep rail and panel close rather than separating them across the viewport.",
       "references": [
         "piyushsphere-2089714360235225334"
       ],
@@ -282,10 +282,10 @@
     {
       "id": "q",
       "name": "Illustrated dark bento",
-      "composition": "A 2-by-2 array of dark outlined feature surfaces. Give each a different small technical visual: branching concept paths, a framed scroll strip, a plotted motion curve and a resolved state change. Copy sits alongside or below its own evidence.",
-      "surface": "Black ground, graphite surfaces, tight radius, restrained directional rim highlights and neutral gray typography. One plate can lead in contrast, while all other content remains readable. The little drawings use fine calibrated strokes and one small lit signal.",
-      "behavior": "Motion, if useful, explains each feature within its plate. Hover/focus may strengthen an edge; it must not be required to discover the evidence. Keep a complete still frame.",
-      "checks": "No empty icon-and-paragraph cards. Inspect each illustration separately, then the shared line hierarchy. Preserve four distinct subjects on mobile.",
+      "composition": "Arrange four dark outlined feature surfaces in a 2-by-2 grid, placing each feature's copy beside or beneath its own visual evidence. Give the plates distinct explanatory visuals: branching concept paths, a framed scroll strip, a plotted motion curve and a resolved state change.",
+      "surface": "Use a black ground, graphite surfaces, fine calibrated strokes and one small lit signal; one plate may lead in contrast while all content stays readable. Use neutral gray typography with a clear hierarchy against graphite surfaces. Use tight radii, uniform quiet borders and restrained directional rim highlights without drop shadows.",
+      "behavior": "Use motion only to explain a feature within its plate; retain a complete still frame and never require hover or focus to discover the evidence.",
+      "checks": "Reject empty icon-and-paragraph cards. Inspect each illustration and the shared line hierarchy, and preserve all four subjects on mobile.",
       "references": [
         "local-stashr-dark-bento",
         "0xSero-2090197565035753820"
@@ -301,10 +301,10 @@
     {
       "id": "r",
       "name": "Amber instrument HUD",
-      "composition": "A calibrated semicircular instrument is centred on a fine dark engineering grid. A large numeric reading sits inside the arc, with a small unit label and a compact secondary readout row.",
-      "surface": "Black-green #040607, warm amber #ffb43c, dim machined gray and tabular mono. Use thick and thin tick ranks, an inner hairline arc, an exact lit segment endpoint and a concentrated glow. Preserve a dark core inside the light.",
-      "behavior": "The gauge encodes an explicitly named quantity and scale. Generate lit tick count, displayed value and accessible description from one value. No decorative fake live telemetry.",
-      "checks": "Check that the meter scale reconciles and tiny labels remain readable. The composition should feel like a calibrated object, not just a number in a ring.",
+      "composition": "Centre a calibrated semicircular instrument on a fine dark engineering grid, placing a large numeric reading inside the arc with a small unit label and compact secondary readout row. Build thick and thin tick ranks, an inner hairline arc and an exact lit-segment endpoint around the named scale.",
+      "surface": "Use black-green #040607, warm amber #ffb43c and dim machined gray. Use tabular monospace for the main value, unit and secondary readings. Concentrate the amber glow around lit evidence while preserving a dark core inside the light.",
+      "behavior": "Generate the lit tick count, displayed value and accessible description from one explicitly named quantity and scale. Do not present decorative values as live telemetry.",
+      "checks": "Reconcile the meter scale, retain legibility of tiny labels and verify that the result reads as a calibrated object rather than a number inside a ring.",
       "references": [
         "recentdesign-2089617450815963434"
       ],
@@ -318,10 +318,10 @@
     {
       "id": "s",
       "name": "Paper revision slips",
-      "composition": "Three small paper documents rest on a warm desk-like ground. Slightly different rotations and offset crop corners make the collection feel handled. Each contains a revision code, narrow serif title and a short note.",
-      "surface": "Warm cream #f2efe8, ivory sheets, muted gold registration marks and charcoal ink. Add a subtle lifted paper corner, a fine outer edge and soft directional contact shadow. Texture remains secondary to the type.",
-      "behavior": "A still editorial arrangement is enough. Keep every slip available at narrow widths and do not remove the final document to fit a poster height.",
-      "checks": "Rotations must not clip a sheet or blur its reading text. Compare the paper edges and shadow direction at full scale.",
+      "composition": "Rest three small paper documents on a warm desk-like ground, using slight rotation differences and offset crop corners; each contains a revision code, narrow title and short note.",
+      "surface": "Use warm cream #f2efe8, ivory sheets, muted gold registration marks and charcoal ink. Set each slip's title in a narrow serif and keep its revision code and note clearly readable. Model a subtle lifted corner, fine outer edge and soft directional contact shadow on the paper, keeping texture secondary to type.",
+      "behavior": "Keep the arrangement still and retain all three slips at narrow widths rather than removing one to fit a poster height.",
+      "checks": "Ensure rotations do not clip a sheet or blur reading text, then compare paper edges and shadow direction at full scale.",
       "references": [
         "AlexandruDranga-2090070261978578989"
       ],
@@ -335,10 +335,10 @@
     {
       "id": "t",
       "name": "A luminous ending",
-      "composition": "An emphatic centred typographic closing statement above a small command action. A very fine cool light seam sits much lower in the frame; sparse aligned metadata finishes the composition.",
-      "surface": "Blue-black, soft white and one electric-blue seam with a restrained halo. Large neutral sans is the main object. A long feathered light reflection adds depth without filling the empty stage with shapes.",
-      "behavior": "Hold the composition still. The action gives immediate local feedback. Do not require a long reveal to understand the ending.",
-      "checks": "The visual tension comes from the distance between type and light seam. Keep both visible on mobile and keep navigation clear of the final metadata.",
+      "composition": "Place an emphatic centred closing statement above a small command action, with a very fine light seam much lower in the frame and sparse aligned metadata completing the composition.",
+      "surface": "Use blue-black, soft white and one electric-blue seam. Make large neutral sans typography the primary visual object. Give the seam a restrained halo and a long feathered reflection that adds depth without filling the empty stage with shapes.",
+      "behavior": "Hold the composition still and give the action immediate local feedback; understanding must not depend on a long reveal.",
+      "checks": "Preserve the long visual distance between type and seam. Keep both visible on mobile and keep navigation clear of the final metadata.",
       "references": [],
       "implementation": [
         "site/js/catalog.js",
@@ -351,10 +351,10 @@
     {
       "id": "u",
       "name": "Editorial comparison",
-      "composition": "A sober dark comparison page gives two visual treatments equal image space under a short shared title. Fine divider, restrained captions and the source/context note support an honest visual comparison.",
-      "surface": "Near-black, silver sans and tabular mono captions. Let actual detailed visual work inside the frame provide the texture and complexity. Use a thin blue divider; do not dim away the evidence just to create motion.",
-      "behavior": "If offering a reveal interaction, use actual before and after images aligned to the same content, with a keyboard-operable control. A static diptych is preferable when only one composite archive image exists.",
-      "checks": "Both sides must be inspectable on mobile. State whether this is an archived example or a controlled evaluation; do not claim causal proof without a documented protocol.",
+      "composition": "Give two visual treatments equal image space beneath one short shared title, supported by a fine divider, restrained captions and a visible source or context note. Use actual detailed comparison images aligned to the same content, and keep both sides fully visible rather than dimming evidence for an effect.",
+      "surface": "Use a near-black ground, silver text and one thin blue divider, letting the detailed evidence inside the frames provide texture and complexity. Use silver sans typography for the shared title and restrained tabular monospace for comparison captions.",
+      "behavior": "Offer a reveal control only when true before and after images exist, and make it keyboard operable; otherwise present the available composite as a static diptych. State whether the material is an archived example or a controlled evaluation, and never claim causal proof without a documented protocol.",
+      "checks": "Keep both sides inspectable on mobile and verify the provenance of the archive asset before reuse.",
       "references": [],
       "implementation": [
         "site/js/catalog.js",
@@ -366,10 +366,10 @@
     {
       "id": "v",
       "name": "The correction ledger",
-      "composition": "An editorial paper ledger uses numbered lines and a thin red strike to show concrete problems removed during review. A narrow serif headline and a small contextual footer frame the list.",
-      "surface": "Warm off-white, muted graphite, faded red ink and fine horizontal rules. Align the strike with the text rather than placing a giant red bar through the row. Small mono indices contrast with the humane serif heading.",
-      "behavior": "Keep it a readable still list. Content should name specific observable defects in the work, such as clipped evidence or nonfunctional controls, rather than arbitrary global bans on aesthetic choices.",
-      "checks": "Every row remains visible and legible on mobile. The strike cannot make the original wording unreadable; do not hide rows to force one-screen fit.",
+      "composition": "Build an editorial paper ledger from numbered lines, a narrow headline and a small contextual footer framing the list. Align one thin red strike to each corrected phrase instead of placing a large bar through an entire row.",
+      "surface": "Use warm off-white paper, muted graphite, faded red ink and fine horizontal rules. Pair a narrow humane serif headline with small monospace row indices and readable ledger copy.",
+      "behavior": "Keep the correction list still and continuously readable. Name specific observable defects such as clipped evidence or nonfunctional controls rather than declaring arbitrary global bans on aesthetic choices.",
+      "checks": "Keep every row visible on mobile, preserve the original wording beneath each strike and never hide rows to force a one-screen fit.",
       "references": [],
       "implementation": [
         "site/js/catalog.js",
@@ -382,10 +382,10 @@
     {
       "id": "w",
       "name": "Motion as a measurement",
-      "composition": "Two horizontal calibrated tracks compare steady motion and a responsive transition. Labels above each describe the purpose and timing; a short note explains the distinction.",
-      "surface": "Graphite-black, green signal for the steady track and white for the responsive track. Fine vertical ticks, a sharp moving centre and a soft local halo create an oscilloscope-like feel. Labels use restrained tabular mono.",
-      "behavior": "The steady track loops linearly; the responsive example traverses, decelerates and holds. Explain these as two useful examples, not all possible motion. Pause visible demos on request and when hidden; show meaningful resting positions under reduced motion.",
-      "checks": "Verify actual duration against labels and the loop boundary. No jumps into view, moving reading text or unreadably dim timing labels.",
+      "composition": "Stack two horizontal calibrated tracks, with purpose and timing labels above each and a short note explaining their difference. Construct fine vertical ticks around a sharp moving centre and a soft local halo, preserving a meaningful resting position in every track.",
+      "surface": "Use graphite-black, a green signal for steady motion and a white signal for the responsive transition. Use restrained tabular monospace for track names, durations, tick labels and the explanatory note.",
+      "behavior": "Loop the steady example linearly; let the responsive example traverse, decelerate and hold. Present them as two useful examples rather than a complete taxonomy of motion. Provide a visible pause action, pause when hidden and replace movement with meaningful composed positions under reduced motion. Make actual durations match their labels and keep reading text still throughout the demonstrations.",
+      "checks": "Verify duration and loop boundaries, reject jumps into view and keep every timing label comfortably readable.",
       "references": [],
       "implementation": [
         "site/js/catalog.js",
@@ -398,10 +398,10 @@
     {
       "id": "x",
       "name": "Rotary stop conditions",
-      "composition": "A large ivory rotary instrument on a fine dot-grid balances a concise list of four selectable conditions. The selected row opens one useful explanation while a physical pointer turns to its detent.",
-      "surface": "Warm ivory, graphite, tiny orange state marks and a softly recessed circular face. Use concentric bevel rings, radial ticks, a short raised pointer and a grounded shadow. Typography stays quieter than the physical object.",
-      "behavior": "Four real buttons change pointer and active description together. Use a restrained settling transition. Scripted cycling stops as soon as the user selects anything; reduced motion uses an immediate composed update.",
-      "checks": "Long descriptions must fit without being clipped. Check all four detents, focus states and pointer alignment; hidden tabs should not keep timers alive.",
+      "composition": "Balance a large ivory rotary instrument on a fine dot grid with a concise list of four selectable conditions; open one useful explanation for the active row.",
+      "surface": "Use warm ivory, graphite and tiny orange marks to carry the active instrument state. Keep labels and descriptions quieter than the physical object while retaining clear active, focus and long-description states. Build a softly recessed circular face from concentric bevel rings, radial ticks, a short raised pointer and a grounded shadow.",
+      "behavior": "Turn the pointer to the selected detent with a restrained settling transition; reduced motion changes to the composed result immediately. Make all four rows real buttons that update pointer and description together, and stop scripted cycling as soon as the user selects anything.",
+      "checks": "Check every detent, focus state and pointer alignment; fit long descriptions without clipping and stop timers while the tab is hidden.",
       "references": [
         "cabralorenzo-2090102237548740718",
         "jeetnirnejak-2089706882688753782"
@@ -416,10 +416,10 @@
     {
       "id": "y",
       "name": "Archival contact sheet",
-      "composition": "Many tiny specimens form a meticulously spaced contact sheet on a warm editorial page. A narrow serif heading introduces the collection; a compact legend decodes the specimen fills.",
-      "surface": "Cream paper, black ink, inset tiny neutral marks and a subtle ruled border per tile. Variations in fill encode light, dark and mixed source modes. Keep texture and registration details at print scale.",
-      "behavior": "A very quiet scanning band may traverse the grid; the data stays fixed. Keep archive date and counts explicit. Do not animate the individual tiles into a distracting wave.",
-      "checks": "The grid count and legend must reconcile. On mobile reduce columns and preserve all specimens instead of cropping the archive.",
+      "composition": "Arrange many tiny specimens as a meticulously spaced contact sheet beneath a narrow heading and beside a compact fill legend. Give every tile a subtle ruled border, inset neutral mark and fine registration texture that remains coherent at print scale.",
+      "surface": "Use cream paper and black ink, with restrained fill variation encoding light, dark and mixed source modes. Use a narrow editorial serif for the collection heading and compact, readable labels for the specimen legend and archive metadata.",
+      "behavior": "If motion is used, let one very quiet scanning band traverse the fixed grid; never animate individual tiles as a wave. Keep the archive date and specimen count explicit and ensure the grid total reconciles with the legend.",
+      "checks": "At mobile widths reduce the number of columns while preserving every specimen instead of cropping the archive.",
       "references": [],
       "implementation": [
         "site/js/catalog.js",
@@ -432,10 +432,10 @@
     {
       "id": "z",
       "name": "A visual decision matrix",
-      "composition": "An eight-by-eight labelled matrix balances a stable detail-reading panel. Different marks distinguish documented pairings, combinations needing deliberate reconciliation and unassessed pairs.",
-      "surface": "Blue-black, very thin square cells, small blue positive marks and muted red tension marks. Label columns vertically and rows horizontally. The selected cell gains an exact bright outline; the reading panel remains calm.",
-      "behavior": "Hover, focus and tap all reveal the same pairing detail. Give every cell an accessible name. Untested means unknown, not impossible. Use a roving keyboard focus with arrow-key movement and keep the page carousel out of those keys.",
-      "checks": "Labels, focused cell and explanation must remain visible at mobile width. Never infer a universal aesthetic prohibition from zero co-occurrence in a small archive.",
+      "composition": "Balance an eight-by-eight labelled decision matrix with one stable detail-reading panel. Distinguish documented pairings, combinations needing deliberate reconciliation and unassessed pairs with three clearly different marks.",
+      "surface": "Use blue-black, very thin square cells, small blue positive marks, muted red tension marks and one exact bright focus outline. Set column labels vertically, row labels horizontally and the detail explanation in a calm readable measure.",
+      "behavior": "Make hover, focus and tap reveal the same named pairing detail; use roving arrow-key focus inside the matrix and keep those keys from driving the page carousel. Treat unassessed as unknown rather than impossible, and never infer a universal aesthetic prohibition from zero co-occurrence in a small archive.",
+      "checks": "Keep labels, the focused cell and its explanation visible together at mobile width, and give every cell an accessible name.",
       "references": [],
       "implementation": [
         "site/js/catalog.js",
@@ -448,10 +448,10 @@
     {
       "id": "A",
       "name": "A quiet terminal example",
-      "composition": "One carefully proportioned terminal window floats in a dark stage. A narrow title bar and a readable sequence of command, observation, decision and output lines tell a small workflow story.",
-      "surface": "Almost-black outer field, a slightly lifted graphite terminal, tiny muted window dots, mint status words and tabular mono. Use a crisp frame, a deep broad shadow and consistent indents. The texture comes from meaningful lines, not dense random code.",
-      "behavior": "Reveal complete lines in a brief readable sequence, then hold the final result. Provide replay if needed. The example must be labelled illustrative unless it is an actual captured run; never simulate executing commands.",
-      "checks": "At rest all lines must be visible. On mobile wrap long paths without horizontal clipping; repeated animation must not erase the content someone is reading.",
+      "composition": "Float one carefully proportioned terminal window in a dark stage, using a narrow title bar and a readable sequence of command, observation, decision and output lines.",
+      "surface": "Use an almost-black outer field, slightly lifted graphite terminal, tiny muted window dots and mint status words. Set meaningful terminal lines in a clear tabular monospace with consistent indentation and enough line height for a short workflow story. Give the terminal a crisp frame and deep broad shadow, deriving texture from meaningful lines rather than dense random code.",
+      "behavior": "Reveal complete lines in a short readable sequence, hold the final result and provide replay only when it helps. Label the example illustrative unless it is an actual captured run, and never imply that displayed commands were executed.",
+      "checks": "Keep all lines visible at rest, wrap long paths on mobile without horizontal clipping and never let replay erase content someone is reading.",
       "references": [],
       "implementation": [
         "site/js/catalog.js",
@@ -463,10 +463,10 @@
     {
       "id": "B",
       "name": "Interoperable marquee",
-      "composition": "A spacious light manifesto above two opposing belts of compact compatibility names. The headline is left-aligned and the belts extend toward the edges with quiet fading masks.",
-      "surface": "Almost-white ground, graphite text and white pill-shaped chips with very fine borders and soft shadows. Crisp small symbols and comfortable type make each chip tangible; avoid turning the surface into a wall of logos.",
-      "behavior": "Belts move at a steady modest speed with seamless duplication. Hover/focus or a pause action stops them. The reduced-motion view is a readable wrapped set of unique items, with duplicates hidden from assistive technology.",
-      "checks": "Verify seam continuity and make every claimed integration truthful. Do not hide agent names offscreen in the static mobile version.",
+      "composition": "Place a spacious left-aligned manifesto above two opposing belts of compact compatibility names that extend toward the edges through quiet fade masks.",
+      "surface": "Use an almost-white ground, graphite text and white chips with very fine neutral borders. Use comfortable sans typography and crisp small symbols so every compatibility name remains easy to read. Give the pill-shaped chips fine borders and soft shadows without turning the surface into a wall of logos.",
+      "behavior": "Move the belts at a steady modest speed using seamless duplication and quiet edge fades. Pause movement on hover, focus or an explicit action; under reduced motion show a readable wrapped set of unique items and hide visual duplicates from assistive technology. Include only integrations that are actually supported.",
+      "checks": "Verify both loop seams and preserve every unique agent name in the static mobile arrangement.",
       "references": [
         "LexnLin-2024485283769540850"
       ],
@@ -480,10 +480,10 @@
     {
       "id": "C",
       "name": "Measured editorial sheet",
-      "composition": "A light specification sheet compares seven historical page containers as dimension lines. Each row carries a name, a precise horizontal measurement and a tabular value; one chosen specimen uses blue emphasis.",
-      "surface": "White, graphite and drafting blue with fine endpoint ticks, subtle rulers and clear numeric alignment. Let the longest chain define the visual scale. A restrained heading and short source note explain what was measured and when.",
-      "behavior": "Keep the measuring view still and scannable. Calculate each line from a documented scale and label any axis truncation. Historic observations are evidence, not current specifications or universal design limits.",
-      "checks": "At phone width keep the seven comparisons readable. No unsupported claims that a fixed number of type sizes or one container width fits every project.",
+      "composition": "Compare seven historical page containers as aligned dimension rows, each carrying a name, precise horizontal measure and tabular value; emphasize one chosen specimen in blue. Draw fine horizontal measures with endpoint ticks and subtle rulers, using the longest documented chain as the visual scale and labelling any truncated axis.",
+      "surface": "Use a white sheet, graphite text and one drafting-blue emphasis. Use a restrained heading, compact source note and tabular values aligned for quick comparison.",
+      "behavior": "Keep the measuring view still and scannable. State what was measured and when; treat the values as historical observations rather than current specifications or universal limits.",
+      "checks": "Keep all seven comparisons readable at phone width and make no unsupported claim that one container width or a fixed number of type sizes fits every project.",
       "references": [
         "local-production-heroes"
       ],
@@ -497,10 +497,10 @@
     {
       "id": "D",
       "name": "Material-aware dual themes",
-      "composition": "Two comparable product previews surround a compact set of four material criteria. Light and dark frames share the content structure while their surface hierarchy and lighting are independently composed.",
-      "surface": "Light uses opaque white planes and soft contact shadows. Dark uses graphite planes, subtle luminous edges and adjusted neutral values. Keep accent semantics consistent but tune luminance separately. The outer showcase ground is quiet pale gray.",
-      "behavior": "Selecting separation, accent, imagery or depth emphasizes the corresponding evidence on both sides and updates one stable explanation. All four selected states must be visible on mobile and keyboard-operable.",
-      "checks": "Do not merely invert colors or dim the light image. Preserve contrast and hierarchy in both modes, including each last row and its selection state.",
+      "composition": "Surround a compact list of four material criteria with two comparable product previews that share content structure while independently composing surface hierarchy and light.",
+      "surface": "Use opaque whites and tuned neutral values in light mode, and graphite planes with adjusted luminous edges in dark mode; keep accent semantics consistent while tuning luminance per theme. Keep criterion labels and one stable explanation in a consistent hierarchy across all selected states. Separate light planes with soft contact shadows and dark planes with tonal steps and subtle edges, re-deriving the material treatment for each mode.",
+      "behavior": "Selecting separation, accent, imagery or depth emphasizes corresponding evidence on both sides and updates one stable explanation; keyboard and touch expose the same states. Do not produce dark mode by merely inverting colors or dimming the light preview.",
+      "checks": "Preserve contrast, hierarchy, every criterion row and the selected state in both themes and on mobile.",
       "references": [
         "piyushsphere-2089714360235225334",
         "mnowakdesign-2089321854582562983"
@@ -515,10 +515,10 @@
     {
       "id": "scenic-close",
       "name": "An inhabited illustrated ending",
-      "composition": "A warm, spacious closing section with a short large invitation in the upper left and two quiet next actions on the right. A panoramic blue engraving fills the lower half and meets the bottom edge, creating somewhere to linger.",
-      "surface": "Cream paper, dark blue ink and fine engraved linework. The landscape includes a house, trees, paths, shoreline and water, with different line densities, a clear distant layer and plenty of air around the type. The illustration must be an authored scene, not an icon landscape.",
-      "behavior": "Keep the artwork still and the links real. Copy feedback remains adjacent to the action. On portrait screens preserve a meaningful landscape crop beneath the reading area.",
-      "checks": "Review the house, canopy and water at full resolution. Match fine line texture and depth rather than only the blue-on-cream palette.",
+      "composition": "Build a spacious closing section with a short large invitation at upper left, two quiet next actions at right and a panoramic landscape filling the lower half to the bottom edge. Author a connected landscape of house, trees, paths, shoreline and water with varied line density, a distinct distant layer and enough workmanship to reward close inspection.",
+      "surface": "Use one family of dark blue ink on cream paper, retaining cream gaps inside the drawing as structural highlights. Use editorial serif type for the invitation and supporting navigation, keeping links as real text outside the illustration.",
+      "behavior": "Keep the landscape still; no parallax, water motion or scroll reveal is implied by the source. Keep both next actions functional and place copy feedback beside the action that caused it. On portrait screens preserve a meaningful landscape crop beneath the reading area rather than shrinking the full panorama until its details disappear.",
+      "checks": "Review house, canopy and water at full resolution, and match line texture and depth rather than only the blue-on-cream palette.",
       "references": [
         "AdityaSur11-2096160317458030911"
       ],
@@ -531,10 +531,10 @@
     {
       "id": "warm-choices",
       "name": "Warm illustrated choices",
-      "composition": "Three substantial warm onboarding choice cards sit beneath a short welcoming heading and a compact mode selector. A small original bird peeks over the card row. Each card has its own title, one clear promise, a concise checklist and a choice action; the chosen card has a distinct warm surface.",
-      "surface": "Warm ivory and burgundy, dark brown editorial type and carefully tuned pink/cream surfaces. The clay-like peeking bird is a small tactile character, with soft volume, eyes, feathers and grounded overlap. Cards use fine borders, controlled corner radii and barely lifted shadows. Selected state must read through surface, label and action together.",
-      "behavior": "Explore, Specify and Build are real selectable states. Update title, explanation and outcome together without moving the whole layout. Keyboard and touch expose the same result.",
-      "checks": "Do not substitute a beige card and generic outline icons for the illustration. Match the still-life quality and keep all choices and outcome visible on mobile.",
+      "composition": "Place three substantial onboarding choice cards beneath a short welcoming heading and compact mode selector; give each a title, clear promise, concise checklist and choice action, with a small character peeking over the row. Use a small original bird with clay-like volume, eyes, feathers and a grounded overlap at the top of the choice row; keep it supporting rather than dominant.",
+      "surface": "Use warm ivory and burgundy with carefully tuned pink and cream surfaces. Use dark brown editorial type with a concise, clearly stepped hierarchy from welcome to title, promise, checklist and action. Give the cards fine borders, controlled corner radii and barely lifted downward shadows, using small warm tonal steps rather than a strong border.",
+      "behavior": "Make Explore, Specify and Build real keyboard- and touch-operable choices. The chosen card reads through a distinct warm surface, label and action, and updates title, explanation and outcome together without moving the whole layout.",
+      "checks": "Keep every choice and the outcome visible on mobile, and reject a beige-card substitute with generic outline icons for the supporting illustration.",
       "references": [
         "DesignByMoein-2095937596665024817"
       ],
@@ -547,10 +547,10 @@
     {
       "id": "character-close",
       "name": "A character with a point of view",
-      "composition": "An oversized friendly illustrated character anchors a warm closing page. Large editorial words, generous open space and compact useful next actions balance the character rather than surrounding it with decorative cards.",
-      "surface": "Cream, olive and muted red accents; an original sculptural character with rounded volumes, a deliberate pose, tiny facial/edge details and a soft contact shadow. Mix humane serif emphasis with clear sans controls. Keep the character tactile rather than emoji-like.",
-      "behavior": "Real closing actions can download a starting brief or copy an install command, with accurate feedback. Any small character movement respects its silhouette and leaves the text still.",
-      "checks": "The character must carry personality through proportion and pose at both phone and desktop scale. A generic blob with two dots is below the reference craft level.",
+      "composition": "Anchor a warm closing page with one oversized friendly character, balanced by large editorial words, generous open space and compact useful next actions rather than decorative cards. Create an original character with rounded volumes, deliberate pose and tiny face and edge details; personality must come from proportion and posture rather than an emoji-like blob.",
+      "surface": "Use cream, olive and muted red accents, keeping the interface quiet enough for the illustrated character to carry the color. Mix humane serif emphasis with clear sans controls, keeping the closing words spacious and the actions concise. Give the character tactile modeled surfaces and a soft contact shadow that places it on the page rather than inside a card.",
+      "behavior": "If the character moves, preserve its silhouette and keep all reading text still; a one-way state change plays once and holds rather than jumping back into a loop. Let closing actions download a starting brief or copy an install command, and report each result accurately beside its control.",
+      "checks": "Verify that pose, proportion and small details preserve the character's point of view at both phone and desktop scale.",
       "references": [
         "DesignByMoein-2096289484577071567"
       ],
@@ -563,10 +563,10 @@
     {
       "id": "arch-editorial",
       "name": "Architectural editorial frames",
-      "composition": "A monumental single-word serif heading sits above a frieze of seven very tall, narrow arched material strips. A short editorial note and a small Change the view action occupy the quieter side. Repeated folded paper, organic green texture and warm material establish the rhythm.",
-      "surface": "Warm light ground, dark ink and rich bounded imagery. The arch cutouts need coherent proportions, crisp edges and intentional crops; let the image lighting provide depth. Type should feel cultivated and spacious rather than dashboard-like.",
-      "behavior": "Selection changes the active view and its description together. Preserve the arch geometry and stable reading anchor through transitions and narrow-screen reflow.",
-      "checks": "Every arch needs a meaningful focal subject. Do not use random stock crops; compare arch spacing, shoulder curves, baseline and image contrast.",
+      "composition": "Place a monumental single-word serif heading above a seven-strip frieze, balancing it with a short editorial note and small Change the view action on the quieter side. Build seven tall narrow strips with coherent proportions and a deliberate rhythm of full arches, one-shoulder curves and square tops. Fill the frieze with intentional crops of folded paper, organic green texture and warm material, preserving distinct focal subjects and complementary visual weight.",
+      "surface": "Use a warm light ground and dark ink, letting rich bounded imagery provide the chroma and depth. Use cultivated spacious serif display type with calm supporting copy rather than dashboard typography.",
+      "behavior": "Change the active view and its description together while retaining a stable reading anchor across input methods and narrow-screen reflow.",
+      "checks": "Compare strip spacing, shoulder curves, baseline and image contrast; every arch needs a meaningful focal subject rather than a random stock crop.",
       "references": [
         "LexnLin-2096045877760795063"
       ],
@@ -579,10 +579,10 @@
     {
       "id": "kinetic-collection",
       "name": "A moving image collection",
-      "composition": "A light editorial hero places large readable type in a protected central zone while a collection of image cards drifts around it. The collection feels curated, with varied size and rotation, a clear front-to-back order and generous intervals.",
-      "surface": "Warm near-white, graphite and richly rendered objects/illustrations inside crisp image cards. Use subtle card thickness, small shadows and layered overlaps. Each card contributes distinct material or imagery; the type must remain the strongest reading anchor.",
-      "behavior": "Animate bounded card transforms slowly and provide pause. Keep cards clear of heading, actions and header at every point in the cycle, not only the first frame. Recompose positions for portrait; reduced motion holds an intentional arrangement.",
-      "checks": "Sample multiple timestamps and full travel extremes for collisions. A few randomly scattered rectangles do not match the curated collection or its art quality.",
+      "composition": "Place large readable type in a protected central zone while a curated collection of image cards occupies the surrounding field with varied size, rotation, depth order and generous intervals. Give every card distinct material or imagery and establish an authored sequence of subject, crop, scale and overlap rather than scattering arbitrary rectangles.",
+      "surface": "Use warm near-white and graphite for the interface while richly rendered objects and illustrations carry the collection's color. Keep the central type stronger than every individual image card and protect the heading, action and header throughout the composition. Use crisp card edges, subtle thickness, small shadows and controlled overlaps to establish front-to-back order.",
+      "behavior": "Animate image transforms slowly inside a tested envelope while type and actions remain fixed; reduced motion holds an intentional authored arrangement. Provide a pause action and recompose the collection for portrait screens without losing the central reading zone.",
+      "checks": "Sample multiple timestamps and every travel extreme for collisions with the heading, actions and header, and compare the actual art quality rather than only the number of cards.",
       "references": [
         "basit_designs-2095862418518008252"
       ],
@@ -595,9 +595,9 @@
     {
       "id": "action-result",
       "name": "Action beside its result",
-      "composition": "A dark split onboarding surface keeps a concise project-name and tone form beside a large persistent live preview. Controls and output form one story rather than unrelated cards. The preview has an actual miniature brand header, typographic hero, detailed metal aperture image and footer.",
-      "surface": "Near-black and graphite with subtle divider lines, clean sans type, quiet metadata and a clearly brighter preview surface. The live preview contains real editorial typography, composed hierarchy and a small original visual, not skeleton bars only.",
-      "behavior": "Editing the project name and selecting Quiet, Warm or Bold updates the actual preview, type treatment, palette and explanatory text. The submit action confirms the current direction. Inputs remain stable and keyboard operation does not trigger page navigation.",
+      "composition": "Use a dark split onboarding surface with a concise project-name and tone form beside a large persistent live preview. Controls and output form one continuous story rather than unrelated cards. Render an actual miniature brand header, typographic hero, detailed metal aperture image and footer. Use composed editorial hierarchy and a small original visual rather than skeleton bars alone. Use clean sans typography with restrained metadata and a real editorial type hierarchy inside the preview.",
+      "surface": "Use near-black and graphite planes with subtle divider lines, quiet metadata and a clearly brighter preview surface.",
+      "behavior": "Editing the project name and selecting Quiet, Warm or Bold updates the actual preview, type treatment, palette and explanatory text. The submit action confirms the current direction; inputs remain stable and keyboard operation does not trigger page navigation.",
       "checks": "The selected direction must visibly change the result. Review initial, intermediate and completed states at desktop and phone sizes.",
       "references": [
         "disarto_max-2093019047851913475"
@@ -611,10 +611,10 @@
     {
       "id": "pixel-plan",
       "name": "Jade and paper",
-      "composition": "A split light onboarding page: editorial heading and a small tangible stack of papers on the left; a substantial rounded choice card on the right. A luminous jade object crowns the card before its options and outcome.",
-      "surface": "Mint, warm white, dark forest ink and pale jade glass. Give the object real apparent thickness, caustic-like internal light and a soft shadow. Paper sheets have crisp edges, offset depth and fine print. Controls combine small radio circles, readable descriptions and a strong dark-green action.",
-      "behavior": "Three depth choices update the outcome text, radio state and confirmation. Arrow keys, touch and pointer work consistently. The decorative object can stay still.",
-      "checks": "The jade image and paper stack are essential, not optional garnish. Keep all three choices, the resulting outcome and action visible without squeezing the labels.",
+      "composition": "Use a split light onboarding page: an editorial heading and small tangible paper stack on the left, with a substantial rounded choice card on the right. Crown the card with a luminous jade object before its options and outcome. Use dark forest ink with readable option descriptions and concise outcome copy.",
+      "surface": "Use mint, warm white, dark forest ink and pale jade glass, with a strong dark-green action. Give the jade object apparent thickness, caustic-like internal light and a soft shadow. Give the paper sheets crisp edges, offset depth and fine print.",
+      "behavior": "Three depth choices update the outcome text, radio state and confirmation. Arrow keys, touch and pointer work consistently; the decorative object can remain still.",
+      "checks": "The jade image and paper stack are essential rather than optional garnish. Keep all three choices, the resulting outcome and the action visible without squeezing the labels.",
       "references": [
         "PostiauxCharles-2095509261908382083"
       ],
@@ -627,10 +627,10 @@
     {
       "id": "rolling-decisions",
       "name": "Rolling weighted typography",
-      "composition": "Three very large numerical shares dominate a dark editorial page. Each number has a short label, slider and concise explanation. A segmented total bar and a few presets reconcile the three below.",
-      "surface": "Black-green #0c1010, soft ivory numerals and sage accents. Digits are individually clipped in rolling windows with tabular alignment; the page feels like typography in motion, not a dashboard of tiny metric cards.",
-      "behavior": "Adjusting one weight redistributes the remainder so the total stays exactly 100. Animate digit wheels while the accessible numeric values update immediately. Presets set all three shares coherently. Reduced motion changes digits without rolling.",
-      "checks": "Test 0, 100, all presets and rapid reversals. Numerals must never clip their final state or wrap on phones; bars and values always reconcile.",
+      "composition": "Let three very large numerical shares dominate a dark editorial page. Pair each number with a short label, slider and concise explanation, then reconcile them below with a segmented total bar and a few presets. Set soft-ivory numerals in individually clipped rolling windows with tabular alignment. The page should read as typography in motion rather than a dashboard of small metric cards.",
+      "surface": "Use black-green #0c1010, soft ivory numerals and restrained sage accents.",
+      "behavior": "Animate individual digit wheels while the accessible numeric values update immediately. Reduced motion changes digits without rolling. Adjusting one weight redistributes the remainder so the total stays exactly 100. Presets set all three shares coherently.",
+      "checks": "Test 0, 100, all presets and rapid reversals. Bars and values must always reconcile. Numerals must never clip their final state or wrap on phones.",
       "references": [
         "kitlangton-2096041674073874765"
       ],
@@ -643,10 +643,10 @@
     {
       "id": "menu-preview",
       "name": "An explanatory menu",
-      "composition": "A light editorial intro leads to a small source control, a compact menu and a larger adjacent preview. Hover/focus/selection makes the consequences of an option visible before commitment. The hero preview has a protected text column beside one original architectural paper sculpture, with consistent perspective, edge thickness and a grounded shadow.",
-      "surface": "Warm white #f8f7f2, forest-gray ink and quiet green selection. Menu rows have distinct miniature composition icons, short descriptive text and a small arrow. The preview is a real miniature page with a browser rim and well-drawn content. Sage structural planes frame ivory folded paper; one restrained ochre accent balances the scene. Review the miniature at its delivered size, not only a magnified SVG.",
-      "behavior": "Hero, feature and onboarding options produce different preview layouts. Support pointer, roving keyboard selection, Escape close and focus return. Avoid changing the menu width or leaving preview state inconsistent.",
-      "checks": "Check the menu open and closed at narrow widths. Tiny previews must still show a recognizable composition rather than arbitrary gray bars. The illustration must retain its composed size when icon styles are applied elsewhere. Keep the hero, feature and onboarding previews meaningfully different.",
+      "composition": "Lead with a light editorial intro, then place a small source control and compact menu beside a larger stable preview. Hover, focus or selection reveals an option's consequence before commitment. Make the hero preview a real miniature page with a browser rim, protected text column and one original architectural paper sculpture. Preserve consistent perspective, folded edge thickness, grounded shadow, negative space and composed type-to-art scale. Give each menu row a distinct miniature composition icon, short descriptive text and a small arrow. Keep the labels understandable at delivered size.",
+      "surface": "Use warm white #f8f7f2, forest-gray ink, quiet green selection, sage structural planes, ivory folded paper and one restrained ochre accent.",
+      "behavior": "Hero, feature and onboarding options produce different preview layouts. Support pointer input, roving keyboard selection, Escape close and focus return without changing menu width or desynchronizing preview state.",
+      "checks": "Check the menu open and closed at narrow widths. Tiny previews must remain recognizable compositions rather than arbitrary gray bars. Keep hero, feature and onboarding previews meaningfully different, and retain the illustration's composed size when icon styles are applied elsewhere.",
       "references": [
         "pqoqubbw-2093012429240431093"
       ],
@@ -660,10 +660,10 @@
     {
       "id": "working-widgets",
       "name": "A useful little workbench",
-      "composition": "Four unequal but aligned light widgets form a tactile working surface beneath a large editorial heading: note paper, a contrast specimen, a radius instrument and a review checklist.",
-      "surface": "White and pale sage with dark green ink. Combine paper grain/edges, an oversized Aa specimen, miniature ruler ticks, a visibly changing shape and a precise completion mark. Maintain one family of edges and shadows while each widget has a different anatomy.",
-      "behavior": "Notes can be kept for the session, contrast colors swap with a computed ratio, a range input changes radius and checkboxes update the count. Label session-only persistence honestly. All controls work without the mouse.",
-      "checks": "Do not deliver decorative mock controls or fake contrast numbers. Review every widget state and reflow all four into a readable mobile workbench.",
+      "composition": "Arrange four unequal but aligned light widgets beneath a large editorial heading: note paper, a contrast specimen, a radius instrument and a review checklist. Combine paper grain and edges, an oversized Aa specimen, miniature ruler ticks, a visibly changing shape and a precise completion mark. Each widget has a different anatomy while sharing one visual family.",
+      "surface": "Use white and pale sage surfaces with dark green ink. Maintain one family of tactile edges and shadows across all four widgets.",
+      "behavior": "Keep notes for the session, swap contrast colors with a computed ratio, change radius with a range input and update the completion count with checkboxes. Label session-only persistence honestly and make every control keyboard-operable.",
+      "checks": "Do not deliver decorative mock controls or fake contrast numbers. Review every widget state. Reflow all four widgets into a readable mobile workbench.",
       "references": [
         "MSchwaibold-2096059496812716307"
       ],
@@ -676,10 +676,10 @@
     {
       "id": "glass-identity",
       "name": "Glass as an identity",
-      "composition": "A large translucent sculptural mark occupies the right of a pale green editorial page. A simple left headline and progressively sized flat versions of the same mark make the relationship between identity and material explicit.",
-      "surface": "Sage-white ground and deep green type. Use a clear polished volume with a restrained cool cast, tighter bevels, dark/bright edge intervals and softly grounded depth. A typographic plane genuinely behind the mark makes refraction visible, while crisp flat vector marks retain the same silhouette.",
-      "behavior": "A very quiet rotation or pointer reaction can reveal thickness. Use an actual modeled mark for a changing viewpoint and a matching composed poster fallback. Keep small flat marks in crisp vector form.",
-      "checks": "Inspect an actual landmark through the volume and its unchanged portion outside it, at rest and under a changing view. Look for coherent thickness and reflections, with a readable clear center. A mint fill or a transmission setting alone is not proof of the intended optical finish.",
+      "composition": "Place a large translucent sculptural mark on the right of a pale green editorial page. Pair a simple left headline with progressively sized flat versions of the same mark so the relationship between identity and material is explicit. Use one folded silhouette for both the large volume and crisp flat vector marks, retaining its meaningful cutouts and direction at small sizes.",
+      "surface": "Use a sage-white ground and deep green type, leaving the glass clear with only a restrained cool cast. Use a clear polished volume with a restrained cool cast, tight bevels, alternating dark and bright edge intervals and softly grounded depth. Place a typographic plane genuinely behind it so refraction is visible.",
+      "behavior": "A very quiet rotation or pointer reaction may reveal thickness. Use an actual modeled mark for a changing viewpoint and a matching composed poster fallback; keep small marks as crisp vectors.",
+      "checks": "Inspect an actual landmark through the volume and its unchanged portion outside it, both at rest and under a changing view. Look for coherent thickness and reflections with a readable clear center. A mint fill or transmission setting alone does not prove the intended optical finish.",
       "references": [
         "DmitryLepisov-2093247212629139641"
       ],
@@ -695,10 +695,10 @@
     {
       "id": "physical-schedule",
       "name": "A tangible plan",
-      "composition": "A dark blue-gray editorial scene presents a horizontal sequence as one physical mechanical assembly, with a short heading above and clear stage labels below. The object carries the process metaphor.",
-      "surface": "A graphite/anodized base supports satin-metal task bars with thin manufactured bevels, layered cap profiles, fine directional finish, recessed status-light sockets and direct readable labels. Keep the lights and contact shadows coherent. Avoid rubber-like rounded edge profiles and reflections that erase the labels.",
-      "behavior": "A quiet change of view reveals the object. An Inspect the finish control switches between the complete plan and an intentional close view; Show the full plan restores the overview. Fit all task bars in the mobile overview. Matching overview and detail posters retain the same selected state if the renderer is unavailable.",
-      "checks": "Compare the cap, edge and side at actual size and in the inspection view. Review the brightest reflection phase for label legibility. Preserve all four task bars in the portrait overview, and make cropping deliberate in the detail view. Verify the control in both live rendering and poster fallback.",
+      "composition": "Present a horizontal sequence as one physical mechanical assembly on a dark blue-gray editorial stage, with a short heading above and clear stage labels below. Let the object carry the process metaphor. Set satin-metal task bars on a graphite or anodized base, with layered cap profiles, thin manufactured bevels and recessed status-light sockets.",
+      "surface": "Use a fine directional finish, readable direct labels, coherent status lights and contact shadows. Avoid rubber-like rounded edges and reflections that erase labels.",
+      "behavior": "A quiet view change reveals the object. Inspect the finish switches from the complete plan to an intentional close view, while Show the full plan restores the overview. Preserve the selected state in matching overview and detail posters when rendering is unavailable.",
+      "checks": "Compare cap, edge and side at actual size and in the inspection view. Review the brightest reflection phase for label legibility. Preserve all four task bars in the portrait overview and make cropping deliberate in the detail view. Verify the control in both live rendering and poster fallback.",
       "references": [
         "nilseller-2093007384465531068"
       ],
@@ -713,10 +713,10 @@
     {
       "id": "iridescent-ribbon",
       "name": "Iridescent form",
-      "composition": "An oversized folded ribbon sweeps through a warm neutral stage beside or above a compact editorial title. Let the silhouette and its negative space dominate; secondary captions and a pause control stay small.",
-      "surface": "Pearl paper ground and thin-film metallic color. Model a continuous ribbon with smooth curvature, thickness and distinct front/back lighting. Iridescent hue follows angle and reflection, with bright edges and darker folds, not a static rainbow painted over a flat blob.",
-      "behavior": "Slow rotation reveals the material. Pause is immediate. Use view-dependent physical shading for interactive motion and a visually matched poster when GPU is unavailable.",
-      "checks": "Check the silhouette at a distance and fold detail close up. No visible faceting, clipped ribbon ends or overexposed white regions that erase the material.",
+      "composition": "Sweep an oversized folded ribbon through a warm neutral stage beside or above a compact editorial title. Let its silhouette and negative space dominate while secondary captions and a pause control stay small. Model one continuous ribbon with smooth curvature, visible thickness and distinct front and back lighting.",
+      "surface": "Place thin-film metallic color on a pearl-paper ground. Iridescent hue follows angle and reflection through bright edges and darker folds rather than a static rainbow painted over a flat blob.",
+      "behavior": "Use slow rotation to reveal the material, with immediate pause. Interactive motion uses view-dependent physical shading and GPU fallback uses a visually matched poster.",
+      "checks": "Check the silhouette at a distance and fold detail close up. Reject visible faceting, clipped ribbon ends and overexposed white regions that erase the material.",
       "references": [
         "basit_designs-2095821165306732974"
       ],
@@ -731,10 +731,10 @@
     {
       "id": "particle-assembly",
       "name": "A field finding its form",
-      "composition": "Thousands of fine cool particles occupy the right side of a dark page, forming one recognizable collective shape. A small left column contains a large two-line statement and Gather/Release controls.",
-      "surface": "Blue-black #060a0e with ivory-to-cyan points. Depth comes from particle scale, overlap, light density and a carefully composed silhouette. Keep the field precise and airy; avoid evenly distributed screen confetti.",
-      "behavior": "Gather brings the same particles into a target shape; Release opens the field. Keep stable particle identity and smooth interruptible motion. Use a measured GPU backend only when it benefits this workload, with working WebGL/poster fallback and no hidden-tab work.",
-      "checks": "Test repeated reversals, fallback controls, memory disposal and portrait framing. Ensure the gathered state is clearly legible and never covers the reading column.",
+      "composition": "Construct the subject from thousands of fine stable particles that form a volumetric surface. Let scale, overlap, density and brighter stacked edges describe depth without a mesh outline or fill, keeping the field precise and airy rather than evenly distributed screen confetti. Place a small reading column on the left and a large particle field across the right side of the page, with controls grouped below the statement and a quiet note at the lower edge. Keep the gathered subject clear of the reading column and recompose the field below the copy in portrait. Use one recognizable dimensional numeral representing the current library total, with shallow face depth rather than a flat text silhouette. Use a compact, large two-line sans statement with tight tracking and a quiet supporting paragraph, keeping the typographic block small enough for the particle field to dominate.",
+      "surface": "Use a blue-black #060a0e field with ivory-to-cyan particles, cool near-white text and restrained blue-gray supporting copy.",
+      "behavior": "Move the same stable particles smoothly and interruptibly between an open flowing field and the gathered target. Preserve particle identity through reversals, let the released field evolve coherently and resolve the gathered state without an idle intermediate shape. Provide explicit Gather and Release buttons that retarget the current particles immediately and expose the active state to keyboard and assistive technology. The poster fallback must respond to the same choices. Use a measured GPU backend only when it benefits this workload, with a working WebGL or poster fallback and no hidden-tab work.",
+      "checks": "Test repeated reversals, fallback controls and memory disposal. Test portrait framing. The gathered state must remain clearly legible and never cover the reading column.",
       "references": [
         "krispuckett-2095994089917522241"
       ],
@@ -748,10 +748,10 @@
     {
       "id": "material-study",
       "name": "One form, three materials",
-      "composition": "A single sculptural folded-aperture object sits in a quiet studio with a large editorial headline and a compact Ceramic/Metal/Glass selector. Geometry, camera and silhouette stay consistent across the material study.",
-      "surface": "Warm-gray studio ground and one shared folded aperture. Ivory ceramic has a fine speckled fired body and a quiet dielectric sheen; satin metal has visible directional reflection gradients and fine brushing; clear glass refracts the actual typographic backing plane. Keep face, bevel and side distinct, without blacked-out metal faces or uniform opaque-looking glass.",
-      "behavior": "Selection changes the actual material without moving the object or rebuilding the page. Load the detailed model once and dispose it when leaving. The fallback offers matching posters for all three choices.",
-      "checks": "Compare all three states at the same pose, full composition and actual-size detail. Show real transmitted background evidence in glass, directional reflection structure in metal and a distinct opaque ceramic body. Verify that surface detail survives filtering at the delivered DPR. Inspect the GLB in the same lighting as its procedural source and export all matching fallback states.",
+      "composition": "Place one sculptural folded-aperture object in a quiet warm-gray studio with a large editorial headline and compact Ceramic/Metal/Glass selector. Keep geometry, camera and silhouette constant across the study. Use one folded-aperture geometry with distinct face, bevel and side readings for every material state.",
+      "surface": "Give ivory ceramic a fine speckled fired body and quiet dielectric sheen; give satin metal directional reflection gradients and fine brushing; make clear glass refract the actual typographic backing plane. Avoid blacked-out metal faces and uniformly opaque-looking glass.",
+      "behavior": "Selection changes the actual material without moving the object or rebuilding the page. Load the detailed model once, dispose it on departure and provide matching posters for all three choices.",
+      "checks": "Compare all three states at the same pose, in the full composition and at actual-size detail. Show transmitted background evidence in glass, directional reflection structure in metal and a distinct opaque ceramic body. Verify that surface detail survives filtering at the delivered DPR. Inspect the GLB in the same lighting as its procedural source and export matching fallback states for all materials.",
       "references": [
         "DmitryLepisov-2093247212629139641"
       ],
@@ -768,9 +768,9 @@
     {
       "id": "optical-type",
       "name": "Optical type / liquid glass",
-      "composition": "Oversized two-line black typography fills an ivory optical specimen. A single thick oblate glass lens overlaps the words; thin horizontal registration lines and a small acid-yellow mark provide optical reference points. Keep the enormous typography and lens as the entire visual event. The bottom contains two quiet captions and one compact lens-position control.",
-      "surface": "Ivory #f5f5f0, near-black #20231f and transparent slightly cyan-absorbing glass. The lens magnifies and bends the letterforms behind it, with a rounded meniscus-like edge, sharp elongated softbox reflections, a faint cyan rim, clear dark/light internal boundaries and a soft offset contact shadow. Actual implementation: a Three.js physical glass sphere scaled roughly 1.08/.97/.44, transmission 1, roughness .015, thickness 1.25, IOR 1.48, dispersion .028 and clearcoat 1, viewed orthographically over a CanvasTexture typography plane. Those are this showcase implementation values, not claims about the source author.",
-      "behavior": "Horizontal drag or slider moves the lens across the words; pointer height influences vertical position. Real refraction moves with it. Text behind the lens is a scene texture; preserve equivalent semantic DOM text. It is demand-rendered: no idle animation loop is needed after settling. Keep three composed fallback positions and a separate portrait crop.",
+      "composition": "Fill an ivory optical specimen with oversized two-line black typography and overlap it with one thick oblate glass lens. Keep the enormous type and lens as the entire visual event; place two quiet captions and one compact lens-position control at the bottom. Use enormous near-black two-line typography as the sampled visual field, with thin horizontal registration lines and a small acid-yellow mark as optical reference points. Use a single thick oblate lens with a rounded meniscus-like edge, scaled roughly 1.08/.97/.44 in the showcase implementation.",
+      "surface": "Use ivory #f5f5f0, near-black #20231f, a small acid-yellow registration mark and transparent glass with slight cyan absorption. Make the lens magnify and bend the letterforms behind it, with sharp elongated softbox reflections, a faint cyan rim, clear dark/light internal boundaries and a soft offset contact shadow. The showcase uses a Three.js physical glass sphere with transmission 1, roughness .015, thickness 1.25, IOR 1.48, dispersion .028 and clearcoat 1, viewed orthographically over a CanvasTexture typography plane. These are showcase implementation values, not claims about the source author.",
+      "behavior": "Horizontal drag or a slider moves the lens across the words, while pointer height influences vertical position. Real refraction moves with it. Render on demand with no idle animation loop after settling. Keep three composed fallback positions and a separate portrait crop. The text behind the lens is a CanvasTexture scene plane; preserve equivalent semantic DOM text and restore it normally if the renderer cannot present the optical layer.",
       "checks": "Compare the same lens position against the live scene at 1440x900, 1280x720 and 390x844. Inspect letter distortion, rim width, highlight shape, shadow offset and lens scale. A frosted rectangle, backdrop blur or glossy CSS bubble is below this target. Reuse the actual optical implementation if needed to preserve the effect.",
       "references": [
         "DmitryLepisov-2093247212629139641"
@@ -787,10 +787,10 @@
     {
       "id": "woven-spectrum",
       "name": "Woven light",
-      "composition": "A dark navy editorial stage holds an oversized woven sweep of many narrow iridescent strips. The luminous bundle crosses diagonally through the right and lower field while a compact left headline occupies stable negative space. Small tension controls sit low in the composition.",
-      "surface": "Deep navy #080b16, silver-lilac type and cyan/violet/pink thin-film metal. The current scene models 22 separately thickened ribbon strips, with smooth long-wave curvature, twisting edge normals, very narrow gaps and a common studio environment. Fine material texture, occluded folds, crisp edge reflections and broad soft highlights make it feel woven and dimensional. Three.js physical metal uses roughness .14 and iridescence with 130-660nm thickness variation in this implementation.",
-      "behavior": "A tension slider alters the actual weave geometry from Open through Gathered to Folded. Slow restrained orientation changes reveal reflected light; provide pause and honor reduced motion. Rebuild geometry only when the control changes, dispose replaced buffers and stop rendering when hidden.",
-      "checks": "Compare strip spacing, edge thickness, front/back overlap, highlight rhythm and silhouette at three tensions and both aspect ratios. A single rainbow ribbon or a flat gradient wave does not reproduce this look.",
+      "composition": "Place an oversized woven sweep of narrow iridescent strips on a dark navy editorial stage. Cross the luminous bundle diagonally through the right and lower field, protect a compact left headline in stable negative space and keep small tension controls low. Model 22 separately thickened ribbon strips with smooth long-wave curvature, twisting edge normals, very narrow gaps and one shared studio environment.",
+      "surface": "Use cyan, violet and pink thin-film metal over deep navy #080b16, with silver-lilac type. Fine material texture, occluded folds, crisp edge reflections and broad soft highlights make the weave dimensional. The showcase uses Three.js physical metal with roughness .14 and iridescence over 130-660nm thickness variation.",
+      "behavior": "A tension slider alters the actual weave geometry from Open through Gathered to Folded. Rebuild geometry only when the control changes and dispose replaced buffers. Use slow restrained orientation changes to reveal reflected light, with pause, reduced-motion support and no hidden rendering.",
+      "checks": "Compare strip spacing, edge thickness, front/back overlap, highlight rhythm and silhouette at three tensions and in both aspect ratios. A single rainbow ribbon or flat gradient wave does not reproduce this look.",
       "references": [
         "basit_designs-2095821165306732974"
       ],
@@ -806,10 +806,10 @@
     {
       "id": "aperture-control",
       "name": "A machined opening",
-      "composition": "A huge physical aperture occupies the left side of a warm stone-gray page. Tall, closely set editorial type and a compact continuous control occupy the right. Fine labels sit outside the object rather than across its moving mechanism.",
-      "surface": "Ivory enclosure, dark metal iris leaves, precise concentric machining and restrained copper-brown detail. Nine overlapping leaves form a real adjustable opening. Build visible thickness, fine edge bevels, engraved ticks, screws and directional reflection on brushed surfaces. Dark gaps must read as occlusion, not a black sticker.",
-      "behavior": "The slider and Narrow/Balanced/Open presets move the nine iris leaves coherently around one centre. Keep the control response direct and frame rendering demand-driven. A poster fallback covers each preset.",
-      "checks": "Inspect the opening at minimum, midpoint and maximum. No leaf intersections, floating screws, broken circular registration or mobile clipping. Preserve the object-to-copy scale imbalance.",
+      "composition": "Let a huge physical aperture occupy the left side of a warm stone-gray page. Place tall closely set editorial type and a compact continuous control on the right, with fine labels outside the moving mechanism. Build nine overlapping leaves into a real adjustable circular opening, with precise concentric registration, visible thickness, fine edge bevels, engraved ticks and screws.",
+      "surface": "Use an ivory enclosure, dark metal iris leaves and restrained copper-brown details. Add directional reflection on brushed surfaces; dark gaps must read as occlusion rather than a black sticker.",
+      "behavior": "The slider and Narrow, Balanced and Open presets move all nine leaves coherently around one centre. Keep response direct and cover each preset with a poster fallback. Render frames on demand as the control moves rather than maintaining unnecessary idle work.",
+      "checks": "Inspect the opening at minimum, midpoint and maximum. Reject leaf intersections, floating screws and broken circular registration. Prevent mobile clipping while preserving the intended object-to-copy scale imbalance.",
       "references": [
         "nilseller-2093007384465531068"
       ],
@@ -825,10 +825,10 @@
     {
       "id": "chromatic-relief",
       "name": "A rhythm in relief",
-      "composition": "A large field of repeated colored relief elements forms an architectural wave beneath a spare editorial heading. Small bottom controls adjust expression; large clear negative space separates the type from the sculptural rhythm.",
-      "surface": "Warm plaster ground, cobalt type and alternating saturated material faces with believable edge light and contact shadows. Model each relief element with thickness. Repetition supplies the visual identity through phase, spacing, depth and reflected color, not through identical flat rectangles.",
-      "behavior": "Quiet/Flowing/Sculptural presets and a continuous expression slider adjust the collective relief. Slow motion alters the rhythm while the heading remains fixed. Pause, reduced motion and preset posters preserve a complete composition.",
-      "checks": "Judge the full wave silhouette and then individual bevels, material separation and shadow consistency. Test extreme expression values without collisions or loss of shape.",
+      "composition": "Build a large architectural wave from repeated colored relief elements beneath a spare editorial heading. Protect large clear negative space between type and sculpture and keep small expression controls at the bottom. Give every relief element thickness. Use repetition, phase, spacing and depth to create the identity rather than identical flat rectangles.",
+      "surface": "Use a warm plaster ground, cobalt type and alternating saturated material faces. Use believable edge light, reflected color and coherent contact shadows to preserve separation between the thick relief units.",
+      "behavior": "Quiet, Flowing and Sculptural presets plus a continuous expression slider adjust the collective relief. Use slow motion to alter the relief rhythm while the heading remains fixed. Provide pause, reduced motion and complete preset posters.",
+      "checks": "Judge the full wave silhouette, then inspect individual bevels, material separation and shadow consistency. Test extreme expression values without collisions or loss of shape.",
       "references": [
         "adriankuleszo-2096048196988580223"
       ],
@@ -844,10 +844,10 @@
     {
       "id": "night-garden",
       "name": "A cinematic night garden",
-      "composition": "A full-bleed nocturnal garden surrounds a small warmly illuminated glass pavilion reflected in still water. Large warm-white editorial words sit in protected dark space on the left. The pavilion, its reflection and the distant tree canopy form three depth layers; quiet view controls sit along the bottom.",
-      "surface": "Deep teal-blue #102129, warm amber interior light, silver-green foliage and creamy serif emphasis. The image must contain actual window mullions, thin glass reflections, roof edges, interior glow, planting at several distances and an imperfect but coherent water reflection. Use soft atmosphere to separate distant trees, not a generic dark overlay that erases all detail.",
-      "behavior": "Whole / Glass & light / Reflections selects intentional crops of the same original scene and changes the caption. This showcase uses detailed raster artwork with controlled CSS reframing, not a real-time 3D garden. Keep any transition gentle; reduced motion switches directly.",
-      "checks": "Compare full-size glass edges, warm interior, foreground foliage and reflection ripples. Preserve the pavilion and reading area on mobile with a separately considered crop. A stock forest photo plus a glow cannot meet the target.",
+      "composition": "Surround a small warmly illuminated glass pavilion and its still-water reflection with a full-bleed nocturnal garden. Keep large warm-white editorial words in protected dark space on the left and quiet view controls along the bottom. Compose the pavilion, its reflection and distant tree canopy as three depth layers. Include actual window mullions, thin glass reflections, roof edges, interior glow, planting at several distances and an imperfect coherent water reflection.",
+      "surface": "Use deep teal-blue #102129, warm amber interior light, silver-green foliage and creamy serif emphasis. Use soft atmosphere to separate distant trees without applying a generic dark overlay that erases detail.",
+      "behavior": "Whole, Glass & light and Reflections select intentional crops of the same original scene and update the caption. This showcase uses detailed raster artwork with controlled CSS reframing rather than a real-time 3D garden. Keep transitions gentle and switch directly under reduced motion.",
+      "checks": "Compare full-size glass edges, warm interior light, foreground foliage and reflection ripples. Preserve the pavilion and reading area on mobile with a separately considered crop. A stock forest photo plus a glow does not meet the target.",
       "references": [
         "uihssn-2096384145186599306"
       ],
@@ -860,10 +860,10 @@
     {
       "id": "paper-theatre",
       "name": "A whole world in paper",
-      "composition": "An open pop-up book fills the lower two thirds of a warm editorial page. Its landscape contains layered trees, a pavilion, a bridge and a winding stream. Above it, a large humane serif/sans title balances a three-item chapter list on the right.",
-      "surface": "Warm cream #f1eadb, moss-green ink and many shades of cut paper. Every tree crown has layered cut edges, the terrain reveals stacked contours, fold hinges attach the world to the page, and contact shadows show the depth between paper planes. Sunlight comes from a coherent direction. Keep visible paper grain, turned page edges and little structural details.",
-      "behavior": "Chapter choices reframe one richly rendered original image and update a caption; the actual showcase is a raster cutout with CSS composition, not live folding geometry. Preserve the silhouette and book base in the complete view. Reduced motion uses immediate crop changes.",
-      "checks": "Inspect page thickness, folds, tree layers, bridge, stream and shadows at full size. The mobile view must still read as an open book with a world inside, not a cropped green mound. Flat clip-path trees cannot replace this level of authored detail.",
+      "composition": "Fill the lower two thirds of a warm editorial page with an open pop-up book. Balance a large humane title above it against a three-item chapter list on the right. Pair humane serif and sans voices so the title belongs to the crafted editorial world. Build a connected paper landscape with layered trees, a pavilion, bridge and winding stream. Give tree crowns layered cut edges, terrain stacked contours, and include turned page edges and small structural details.",
+      "surface": "Use warm cream #f1eadb, moss-green ink and many shades of cut paper. Keep visible paper grain and fold hinges that attach the world to the page. Use contact shadows between planes and coherent directional sunlight to reveal depth.",
+      "behavior": "Chapter choices reframe one richly rendered original image and update a caption while preserving the silhouette and book base in the complete view. The showcase is a raster cutout with CSS composition rather than live folding geometry. Reduced motion uses immediate crop changes.",
+      "checks": "Inspect page thickness, folds, tree layers, bridge, stream and shadows at full size. The mobile view must still read as an open book with a world inside rather than a cropped green mound. Flat clip-path trees cannot replace this authored detail.",
       "references": [
         "AdityaSur11-2096160317458030911"
       ],
@@ -876,10 +876,10 @@
     {
       "id": "living-terrarium",
       "name": "A living material study",
-      "composition": "A massive thick-glass vessel containing a miniature moss garden dominates the right. A calm left editorial column introduces the study, followed by three numbered inspection points. A circular loupe lets a small detail carry as much attention as the whole silhouette.",
-      "surface": "Sage-gray ground, dark green type, thick clear glass, condensation beads, layered ferns, wet stone, soft moss and a small dark pool. Glass distorts the edge of the miniature scene and carries large soft reflections. The light penetrates the canopy and leaves contact shadows on the rocks.",
-      "behavior": "Glass & water / Canopy & light / Stone & moss moves a true magnifying crop to the corresponding feature, preserving pixel alignment after resize. This is an original high-resolution raster scene with a CSS magnification layer, not interactive simulated water.",
-      "checks": "Compare loupe registration, glass rim, condensation and leaf scale. Test all inspection points in portrait; the lens must stay inside its image bounds and not cover the reading column.",
+      "composition": "Let a massive thick-glass vessel containing a miniature moss garden dominate the right. Use a calm left editorial column with three numbered inspection points, and a circular loupe that lets a small detail command as much attention as the whole silhouette. Build the image from condensation beads, layered ferns, wet stone, soft moss and a small dark pool at several scales of detail.",
+      "surface": "Use a sage-gray ground, dark green type and natural wet greens within the vessel. Use thick clear glass that distorts the miniature scene at its edge and carries large soft reflections. Let light penetrate the canopy and cast contact shadows on the rocks.",
+      "behavior": "Glass & water, Canopy & light and Stone & moss move a true magnifying crop to the corresponding feature while preserving pixel alignment after resize. This is an original high-resolution raster scene with a CSS magnification layer, not interactive simulated water.",
+      "checks": "Compare loupe registration, glass rim, condensation and leaf scale. Test all inspection points in portrait; keep the lens inside the image and away from the reading column.",
       "references": [
         "DmitryLepisov-2093247212629139641"
       ],
@@ -892,10 +892,10 @@
     {
       "id": "red-chamber",
       "name": "Chrome against velvet",
-      "composition": "A full-bleed vermilion chamber surrounds one large polished sculptural chrome form. Oversized warm-white serif/sans words occupy a clear left zone. A compact detail action changes from the entire installation to an intimate material view.",
-      "surface": "Deep red #640f12, scarlet velvet, mirror-like silver and creamy type. Velvet needs directional pile, deep soft folds and diffuse red bounce. Chrome needs sharp highlight ribbons, dark reflected bands and curved distortion of the red environment. Contact shadows attach the hard form to the soft ground.",
-      "behavior": "Look closer gently reframes the same original cinematic image, with a matching state label and an immediate reduced-motion version. The showcase is authored raster artwork, not a real-time reflective room.",
-      "checks": "Inspect where chrome meets velvet and compare sharp versus diffuse light. Avoid a plastic silver blob or uniformly lit red background. Ensure the type remains readable in both crops.",
+      "composition": "Fill the frame with a vermilion chamber around one large polished sculptural chrome form. Reserve a clear left zone for oversized warm-white words and use one compact detail action. Use oversized warm-white serif and sans words in the protected left reading zone.",
+      "surface": "Use deep red #640f12, scarlet velvet, mirror-like silver and creamy type. Give velvet directional pile, deep soft folds and diffuse red bounce. Give chrome sharp highlight ribbons, dark reflected bands and curved distortion of the red environment, with contact shadows attaching hard form to soft ground.",
+      "behavior": "Look closer changes between the entire installation and an intimate material view, updating the state label. Gently reframe the same authored raster image and use an immediate reduced-motion version. The scene is not a real-time reflective room.",
+      "checks": "Inspect where chrome meets velvet and compare sharp versus diffuse light. Reject a plastic silver blob or uniformly lit red background. Ensure the type remains readable in both crops.",
       "references": [
         "basit_designs-2095821165306732974"
       ],
@@ -908,10 +908,10 @@
     {
       "id": "specimen-cabinet",
       "name": "A material vocabulary",
-      "composition": "A carefully photographed cabinet of six material specimens forms the main field, balanced by restrained editorial type and a small selected-specimen description. The grid is an actual material collection, with each object carrying its own surface vocabulary.",
-      "surface": "Warm chalk, stone, glass, metal and softer organic textures under one consistent studio light. Objects need coherent scale, contact shadows, fine edges and enough resolution to compare microstructure. Labels remain quiet and precise, like a museum drawer.",
-      "behavior": "Each of six specimen buttons opens a large detail dialog with its material name and a specific description. Escape and the close button return to the cabinet. Preserve the same original lighting and crop in the enlarged view; touch and keyboard inspection are equivalent.",
-      "checks": "Every specimen should differ in roughness, transmission or structure, not merely hue. Compare image crops and selection behavior at all target sizes.",
+      "composition": "Use a carefully photographed cabinet of six material specimens as the main field, balanced by restrained editorial type and a small selected-specimen description. Treat the grid as an actual collection in which each object has its own surface vocabulary, coherent scale, contact shadow, fine edge and enough resolution for microstructure comparison. Keep labels quiet and precise, like a museum drawer.",
+      "surface": "Combine warm chalk, stone, glass, metal and softer organic textures under one consistent studio light.",
+      "behavior": "Each specimen button opens a large detail dialog with a material name and specific description. Escape and close return to the cabinet; touch and keyboard inspection are equivalent. Preserve the same original lighting and crop in the enlarged view.",
+      "checks": "Every specimen must differ in roughness, transmission or structure rather than hue alone. Compare image crops and selection behavior at all target sizes.",
       "references": [
         "DmitryLepisov-2093247212629139641"
       ],
@@ -924,9 +924,9 @@
     {
       "id": "contact-sheet",
       "name": "The things you keep",
-      "composition": "A dark film-editor composition balances large serif/sans words on the left with one large selected photograph, bounded by perforated film rails. A bottom strip presents six richly different image thumbnails. Caption and selected-frame count stay aligned with the main image.",
-      "surface": "Charcoal-green #191c1b, soft ivory type and a pale acid-green accent. Image frames have restrained borders and precise gutters. Contrast chrome/velvet, a night garden, paper, glass/foliage, studio materials and engraved ink without forcing them through one color filter.",
-      "behavior": "Selecting a thumbnail updates the large image, caption and selected state. Left/right controls reorder the selected frame within the strip and correctly disable at either end. The main image opens a detail dialog. Preserve focus during reordering and report position accessibly.",
+      "composition": "Balance large serif/sans words on the left with one large selected photograph bounded by perforated film rails. Present six richly different thumbnails in a bottom strip, keeping caption and selected-frame count aligned with the main image. Use large soft-ivory serif and sans words with quiet captions and precise frame counts. Contrast chrome on velvet, a night garden, paper, glass with foliage, studio materials and engraved ink without forcing them through one color filter.",
+      "surface": "Use charcoal-green #191c1b, soft ivory type and one pale acid-green accent. Give image frames restrained borders and precise gutters rather than ornamental card chrome.",
+      "behavior": "Selecting a thumbnail updates the main image, caption and selected state. Left and right controls reorder the selected frame and disable at either end; the main image opens a detail dialog. Preserve focus during reordering and report position accessibly.",
       "checks": "Check all six actual image crops and their selection states. Do not replace detailed originals with low-resolution thumbnails or gradient placeholders.",
       "references": [
         "LexnLin-2095920966899728661"
@@ -940,10 +940,10 @@
     {
       "id": "auric-orbit",
       "name": "Auric orbit / mineral light",
-      "composition": "An oversized irregular mineral orb dominates a blue-black stage, with a wide spare editorial statement on the left. Two very fine orbital arcs and tiny scattered specks wrap around its silhouette. Use the large rough form, quiet negative space and warm text as the hierarchy; keep the material controls at the lower edge.",
-      "surface": "Charcoal mineral with actual geometric relief, muted metallic inclusions, narrow warm gold veins and tiny granular detail. The veins and stone have different roughness and metallic response. A coherent studio light catches ridges and leaves occluded valleys. Large neutral sans and a humane serif emphasis provide contrast. Do not substitute a smooth gradient sphere or uniform emission.",
-      "behavior": "Mineral, Awakened and Glacial select three actual material/light states. Inner light adjusts the glow of the veins. Slow rotation and fine-pointer movement reveal surface relief; pause and reduced motion retain a composed object. The actual showcase uses a displaced Three.js mesh and original procedural material code.",
-      "checks": "Inspect the full silhouette, vein thickness, ridge highlights, dark valleys and transition between materials. All three states must remain recognizable at phone size. Verify hidden-tab stop, disposal, matching posters and actual CPU/GPU workload.",
+      "composition": "Let one oversized irregular mineral orb dominate a blue-black stage, balanced by a wide spare editorial statement at left, quiet negative space and material controls at the lower edge. Wrap two very fine orbital arcs and tiny scattered specks around the silhouette. Use a large irregular orb with actual displaced geometric relief, fine ridges and occluded valleys rather than a smooth sphere. Set the large statement in a neutral sans with warm text and humane serif emphasis, keeping the type spare enough to preserve the mineral orb's hierarchy.",
+      "surface": "Build a charcoal mineral body with muted metallic inclusions, narrow warm-gold veins and tiny granular detail. Give veins and stone different roughness and metallic response; do not replace them with uniform emission or a smooth gradient. Use coherent studio light that catches ridges, leaves valleys dark and lets the inner veins read as light beneath matter.",
+      "behavior": "Mineral, Awakened and Glacial are three actual material/light states. Inner light changes vein glow; slow rotation and fine-pointer movement reveal the relief. Pause and reduced motion retain a composed object. The showcase uses a displaced Three.js mesh and original procedural material code. These implementation facts do not establish or license the external source's shader equations.",
+      "checks": "Inspect the full silhouette, vein thickness, ridge highlights, dark valleys and transition between all three materials. Every state must remain recognizable at phone size. Verify hidden-tab stop, disposal, matching posters and actual CPU/GPU workload.",
       "references": [
         "zzzzshawn-2096548536972370319"
       ],
@@ -958,10 +958,10 @@
     {
       "id": "camera-obscura",
       "name": "Camera obscura / the inspectable object",
-      "composition": "A pale technical studio balances a large camera model, a compact top-left statement, a narrow right specimen column and a bottom inspection strip. The camera should have enough visual area to inspect, with a visible grounding shadow and spare technical annotations.",
-      "surface": "Graphite body, silver and warm metal rings, fine grip texture, translucent green-tinted optics, concentric barrel lips, knurling, tiny fasteners, top dials, circuitry and engraved-looking labels. Model contact interfaces and edge bevels. The visual quality comes from the relationships between parts and materials, not a claimed polygon or part count.",
-      "behavior": "Assembled, Exploded and Inside expose different physical configurations. Separation moves coherent subassemblies along the lens/body axis. Pointer motion offers a restrained inspection angle. Internal circuitry and lens layers remain registered; the actual renderer is Three.js with instanced repeated details and physical materials.",
-      "checks": "Inspect all three configurations and the largest separation. No detached labels, intersecting iris leaves, ungrounded parts or clipping in portrait. Controls must expose real changes and every fallback must preserve its selected configuration.",
+      "composition": "Balance a large inspectable camera on a pale technical studio with a compact top-left statement, narrow right specimen column and bottom inspection strip. Reserve ample object area, a visible grounding shadow and spare technical annotations. Model coherent lens, body and internal subassemblies with concentric barrel lips, knurling, fasteners, top dials, circuitry, iris leaves and registered lens layers. Contact interfaces and edge bevels make the relationships plausible; raw part count is not the quality target.",
+      "surface": "Use a graphite body, silver and warm-metal rings, fine grip texture, translucent green-tinted optics and engraved-looking labels. Distinguish rough body surfaces, metal edges and transmissive glass.",
+      "behavior": "Assembled, Exploded and Inside expose real configurations. One separation scalar moves coherent subassemblies along the lens/body axis, while restrained pointer motion changes the inspection angle without losing registration. The showcase renderer is Three.js with instanced repeated details and physical materials. The source author's stated component counts are unverified and are not requirements.",
+      "checks": "Inspect all three configurations at maximum separation. Reject detached labels, intersecting iris leaves, ungrounded parts or portrait clipping. Controls must expose real changes and every fallback must preserve the selected configuration.",
       "references": [
         "omarsar0-2096339043919237288"
       ],
@@ -976,10 +976,10 @@
     {
       "id": "plasma-study",
       "name": "A mineral interior / changing optical surface",
-      "composition": "A very large blue-green orb occupies the main field of a warm ivory page. A quiet editorial statement, ample air and compact palette/energy controls let its internal-looking surface patterns hold the attention.",
-      "surface": "A crisp spherical limb, view-sensitive pale highlight, dark blue-green regions, pale golden filaments and subtle violet clouding. Fine field detail compresses toward the edge. The shader constructs a sphere-like projected surface with original procedural turbulence and shading; this is not arbitrary DOM refraction or a measured volumetric simulation.",
-      "behavior": "Lagoon, Violet and Ember change the material palette, while excitation changes its luminous energy. Slow coherent field evolution continues within the fixed silhouette. Pointer input shifts its orientation; pause, reduced motion and matching posters remain useful.",
-      "checks": "Compare boundary sharpness, highlight placement, dense-versus-open regions and color relationships. Avoid a flat painted disc, a simple CSS blur bubble or a bright white rim that erases the material. Test parameter extremes and temporal stability.",
+      "composition": "Use one crisp fixed spherical limb with fine field detail compressed toward its edge. Place one very large focal graphic in the main field, with a quiet editorial statement at left, ample open space and compact atmosphere, excitation and pause controls along the lower edge. Set a large, tightly tracked two-line sans statement with one restrained Instrument Serif emphasis, a small mono eyebrow and a quiet supporting paragraph.",
+      "surface": "Combine warm ivory #ebebe1, deep green and muted green-gray with dark blue-green regions, pale golden filaments and subtle violet clouding. Construct an internal-looking projected optical field with original procedural turbulence, coherent density and fine filamentary detail. It is a procedural surface study, not arbitrary DOM refraction or a measured volumetric simulation. Use directional form light, a tight view-sensitive pale sheen, a restrained cyan edge contribution and a narrow pale boundary highlight so the focal surface stays dimensional without turning into a bright white rim.",
+      "behavior": "Evolve the internal procedural field slowly and coherently inside a fixed boundary. Reduced motion, paused playback and matching posters retain an intentional composed state. Lagoon, Violet and Ember select distinct palettes; Excitation changes luminous energy; pointer position shifts field orientation; and Pause or Resume controls the evolution. Keep every control keyboard and touch operable.",
+      "checks": "Compare boundary sharpness, highlight placement, dense-versus-open regions and color relationships. Reject a flat painted disc, simple CSS blur bubble or bright white rim that erases the material. Test parameter extremes and temporal stability.",
       "references": [
         "zzzzshawn-2096548536972370319"
       ],
@@ -995,10 +995,10 @@
     {
       "id": "phosphor-field",
       "name": "Phosphor field / life between pixels",
-      "composition": "A broad luminous display plate stretches beneath a short, technical typographic heading on a nearly black ground. Keep the graphic as one large field, with small mode/density controls below rather than enclosing it in a generic metrics dashboard.",
-      "surface": "Cool green-to-cyan emission, tiny stable cells, dark gutters, a visible unlit matrix, restrained glow and a slight perspective skew. The waveform or bars must be recognizable at a distance while individual cells reward close inspection. Use a mono technical heading and exact labels.",
-      "behavior": "Wave, Columns and Orbit produce distinctly different signal geometry in the same display material. Cell density adjusts the matrix. A shared shader clock evolves the signal while text stays fixed; pause and reduced motion hold a composed state.",
-      "checks": "Inspect fine cell separation and broader emission independently. No moire, flicker or shimmering gutters at the delivered DPR. Verify that each mode produces substantial visual change and does not cover its controls.",
+      "composition": "Stretch one broad luminous display plate beneath a short technical heading on a nearly black ground. Keep small mode and density controls below the field instead of enclosing it in a generic metrics dashboard.",
+      "surface": "Render a recognizable waveform, columns or orbit signal through tiny stable cells, preserving the visible unlit matrix, individual cell edges, dark gutters and a slight perspective skew. The graphic must read as one signal at distance and structured cells close up. Use cool green-to-cyan emission over near-black, with restrained glow and darker unlit cells. Keep a strong separation between fixed white labels and the luminous field.",
+      "behavior": "Evolve the signal from one shared clock while every cell and reading anchor remains registered. Wave, Columns and Orbit must produce distinctly different geometry; density changes the matrix. Pause and reduced motion hold a composed state. Use a large technical statement with restrained serif emphasis, plus a small mono eyebrow and exact fixed labels that stay registered while the signal changes.",
+      "checks": "Inspect fine cell separation and broader emission independently at delivered DPR. Reject moire, flicker, shimmering gutters and modes without substantial visual change; the field must not cover its controls.",
       "references": [
         "mnowakdesign-2091952693279436862",
         "eve_bouff-2096417545096200466"
@@ -1014,10 +1014,10 @@
     {
       "id": "silver-tide",
       "name": "Silver tide / an authored moving surface",
-      "composition": "A wide dark sea of reflective waves fills the page beneath a sparse meditative heading. The horizon provides a quiet upper reading area, while a small right note and bottom light/pace controls balance the large surface.",
-      "surface": "Blue-black water, sharp silver reflection fragments, darker troughs and a coherent low horizon. The Afterglow state adds warm amber light. Layer long swells and finer ripples so this looks like a continuous reflective surface rather than large blurry sine bumps.",
-      "behavior": "The ordinary showcase plays an original 16-second loop on intentional hover or explicit playback. Silver and Afterglow select two matched films; Pace changes playback rate. Video bytes are deferred until needed. Reduced motion and Save-Data retain selectable matching posters. The films are rendered deterministically from the original shader, which can also be inspected live through the source capture route.",
-      "checks": "Compare wave detail, horizon, specular shape and loop boundary. Confirm hover leave pauses, playback works by button/keyboard, hidden tabs stop, source switching does not show a stale frame, and no video downloads before it is needed.",
+      "composition": "Fill the page with a wide dark sea beneath a sparse meditative heading. Preserve a coherent low horizon and quiet upper reading area, balanced by a small right note and bottom light and pace controls.",
+      "surface": "Layer long swells and finer ripples into one continuous blue-black water surface with sharp silver reflection fragments and darker troughs. Avoid large blurry sine bumps. Use cool silver specular fragments by default; the Afterglow state adds warm amber light while preserving the same wave structure and horizon.",
+      "behavior": "Use a deterministic authored 16-second wave loop with intentional hover or explicit playback. Pace changes playback rate; Silver and Afterglow select matched films. Pause on hover leave and hidden tabs, and keep keyboard playback available. Defer video bytes until needed. Reduced motion and Save-Data retain selectable matching posters. The films come from the original shader and remain inspectable through the source capture route.",
+      "checks": "Compare wave detail, horizon, specular shape and the loop boundary. Confirm source changes never show a stale frame and that no video downloads before needed.",
       "references": [
         "vercel-2092999180780556643"
       ],
@@ -1034,10 +1034,10 @@
     {
       "id": "cloud-chamber",
       "name": "Cloud chamber / a window into elsewhere",
-      "composition": "A monumental limestone and bronze arch rises above a reflective pool and walkway. A live glass sphere with very fine metallic rings is anchored inside the opening. Large dark architectural type sits in the reserved sky on wide screens. Portrait uses a separately composed image region to keep the words clear.",
-      "surface": "Porous stone, warm bronze edges, cool sky, atmospheric distance, water reflection and thick clear glass. The sphere's environment must agree with the pictured landscape. Avoid an unrelated rectangular studio reflection that makes the live object feel pasted in.",
-      "behavior": "Clear, Warm and Cool vary the optical centre. Slow ring movement and subtle pointer response reveal it without moving the architecture or copy. The actual scene combines original raster environment art with live Three.js optics, not a freely traversable 3D world.",
-      "checks": "At wide and portrait sizes the sphere must remain within the architectural opening. Check glass edge, scene reflection, grounding, text contrast and all fallback states. Preserve the walkway and layered environment detail.",
+      "composition": "Raise a monumental limestone and bronze arch above a reflective pool and walkway, with a live optical sphere anchored inside its opening. Reserve quiet sky for large dark architectural type on wide screens and use a separately composed portrait image region to protect the words. Author a connected environment of porous stone, warm bronze edges, cool sky, atmospheric distance, a scale-giving walkway and water that reflects the mass above it. Anchor one thick clear glass sphere with very fine metallic rings inside the architectural opening, preserving a sharp spherical boundary and internal reflected structure.",
+      "surface": "Make the sphere's reflection and lighting agree with the pictured landscape. Avoid an unrelated rectangular studio reflection that makes the live object feel pasted in.",
+      "behavior": "Clear, Warm and Cool vary the optical centre. Slow ring movement and subtle pointer response reveal it while architecture and copy remain still. The scene combines original raster environment art with live Three.js optics; it is not a freely traversable 3D world.",
+      "checks": "At wide and portrait sizes, keep the sphere within the opening. Check glass edge, scene reflection, grounding, text contrast and all fallback states while preserving the walkway and layered environment detail.",
       "references": [
         "JameslabiQ-2096555751133376528"
       ],
@@ -1052,10 +1052,10 @@
     {
       "id": "ember-portrait",
       "name": "Ember portrait / character in the details",
-      "composition": "An oversized synthetic portrait occupies the right and much of the vertical field; strong uppercase type sits in clear darker space to the left. A quiet material caption and three inspection views finish the scene. On mobile recompose around the face and keep the message in a protected lower region.",
-      "surface": "Matte graphite ceramic, layered dark metal, amber curved visor, tiny mesh, gaskets, braiding, fasteners and subtle surface wear. The face and enclosure have different roughness. Long reflected light shapes and warm internal glints provide depth. This is a richly authored object portrait, not a glossy toy.",
-      "behavior": "Portrait, The visor and The mechanism move between deliberate crops and change the explanatory caption. Subtle pointer-based reframing supports inspection. The actual asset is raster artwork; do not promise unrestricted orbit or moving facial geometry without a new model/film.",
-      "checks": "Inspect visor mesh, metal seams and cable detail at full size. All selected crops preserve readable text and visible controls. Keep the portrait's material contrast and personality when adapting it to another subject.",
+      "composition": "Let an oversized synthetic portrait occupy the right and most of the vertical field while strong uppercase type sits in clear darker space at left. Finish with a quiet material caption and three inspection views. On mobile, recompose around the face and protect a lower message region. Use a richly authored object portrait with an amber curved visor, complex face enclosure, tiny mesh, gaskets, braiding, fasteners and subtle surface wear. Preserve character and detail at several scales rather than producing a glossy toy.",
+      "surface": "Combine matte graphite ceramic, layered dark metal and curved amber glass. Give the face and enclosure different roughness, with long reflected light shapes and warm internal glints for depth.",
+      "behavior": "Portrait, The visor and The mechanism select deliberate crops and matching explanatory captions. Subtle pointer reframing may support inspection, but a raster asset does not promise unrestricted orbit or moving facial geometry.",
+      "checks": "Inspect visor mesh, metal seams and cable detail at full size. Every selected crop must preserve readable text, visible controls, material contrast and the subject's personality.",
       "references": [
         "_heyfaisal-2096513753865240860"
       ],
@@ -1069,10 +1069,10 @@
     {
       "id": "terrain-interface",
       "name": "Tactile terrain / soft ground and clear intention",
-      "composition": "A warm light feature surface keeps a concise heading and three-item choice rail at left, a considered miniature collection interface at right and rich coral terrain across the foreground. The terrain overlaps only the nonessential base of the product frame.",
-      "surface": "Cream, warm charcoal ink, coral-orange suede fibers and fine white/ivory interface planes. Use a small tactile mark, quiet rules, precise tabular details and layered window edges. The hills need fine fibers, uneven crests, self-shadowed folds and warm light; a flat orange curve is not equivalent.",
-      "behavior": "The feature choices update the collection title, message and visual surface specimens, with a stable active rail marker. Keep the state operable by keyboard and touch. Recompose the preview and terrain independently on phones.",
-      "checks": "The foreground must not hide essential controls or the selected outcome. Compare fiber detail and contact relationships close up. The miniature UI remains a legible original example rather than copied customer data.",
+      "composition": "On a warm light feature surface, place a concise heading and three-item choice rail at left, a considered miniature collection interface at right and rich coral terrain across the foreground. Let terrain overlap only the nonessential base of the product frame. Create a legible original miniature collection interface with quiet rules, tabular details, layered window edges and meaningful surface specimens rather than copied customer data.",
+      "surface": "Build coral-orange hills from fine suede-like fibers, uneven crests, self-shadowed folds and warm light. Contrast their granular softness with precise interface planes; a flat orange curve is not equivalent. Use cream and white-to-ivory interface planes, warm charcoal ink and coral-orange terrain, with a small tactile mark that echoes the foreground color.",
+      "behavior": "Each feature choice updates the collection title, message and visual surface specimens, with a stable active rail marker. Keep operation available to keyboard and touch, and recompose preview and terrain independently on phones.",
+      "checks": "The foreground must not hide essential controls or the selected outcome. Compare fiber detail and contact relationships close up, and confirm the miniature UI remains legible.",
       "references": [
         "sinvpasha-2092537706446299362"
       ],
@@ -1085,9 +1085,9 @@
     {
       "id": "sunlit-field",
       "name": "Sunlit field / an illustrated atlas",
-      "composition": "A large editorial serif statement occupies the pale sky above a richly drawn agricultural valley. Engraved clouds, layered mountains, fields, water, a pavilion and foreground grasses form one connected landscape. Small inspection links and a restrained compass-like detail complete the page.",
-      "surface": "Warm golden paper, olive ink, dusty teal distance, ochre highlights and subtle printed irregularity. The drawing needs several scales of line density, stipple, material texture and finely observed small structures. The type belongs to the printed world rather than a generic SaaS header.",
-      "behavior": "The valley, The water and The shelter select intentional crops and captions from one original scene. Keep movement gentle and remove travel under reduced motion. The landscape remains fully composed at rest.",
+      "composition": "Place a large editorial serif statement in pale sky above one connected agricultural valley. Complete the page with small inspection links and a restrained compass-like detail, while preserving clear reading space in every crop. Draw engraved clouds, layered mountains, fields, water, a pavilion and foreground grasses as one richly observed landscape. Use several scales of line density, stipple, material texture and fine small structures to establish foreground, middle distance and horizon depth. Use a large editorial serif voice whose weight, scale and texture belong to the illustrated printed world rather than a generic SaaS header.",
+      "surface": "Use warm golden paper, olive ink, dusty teal distance and ochre highlights, with subtle printed irregularity.",
+      "behavior": "The valley, The water and The shelter select intentional crops and captions from one original scene. Keep movement gentle, remove travel under reduced motion and leave the landscape fully composed at rest.",
       "checks": "Compare fine grasses, irrigation lines, architectural edges, field rhythm and distant mountain separation. Protect the text in every crop and preserve a meaningful portrait composition.",
       "references": [
         "Talhadesignn-2093215721954377839"
@@ -1101,10 +1101,10 @@
     {
       "id": "chamber-control",
       "name": "Material laboratory / a precise kind of feeling",
-      "composition": "A dense but disciplined dark instrument console sits beneath a technical heading. A large response plot, physical knobs, illumination switch, state selector and distribution meter occupy different module shapes in one continuous grid.",
-      "surface": "Anthracite-green planes, tiny warm orange indicators, crisp inset borders, machined knob faces, radial ticks and tabular or mono numbers. Use directional surface light, restrained bevels and honest units/relative values. Each module has a useful distinct anatomy.",
-      "behavior": "Excitation, damping and angle controls update the visible local model and curve. Illumination and character controls show actual state changes. This is an interactive local study, not a connected industrial controller. All controls have native keyboard input.",
-      "checks": "No decorative nonworking knobs or invented live-equipment claims. Verify values and graph response, selected state, contrast and complete mobile control coverage. Keep the instrument density without making labels microscopic.",
+      "composition": "Set a disciplined dark console beneath a technical heading. Fit a large response plot, physical knobs, illumination switch, state selector and distribution meter into distinct module shapes on one continuous grid. Give each module useful distinct anatomy: a response plot, setpoints, radial ticks, modes and distribution evidence. Use honest units or explicitly relative values rather than decorative pseudo-telemetry.",
+      "surface": "Use anthracite-green planes, crisp inset borders, restrained bevels, directional surface light and machined knob faces, with tiny warm-orange indicators and tabular or mono numbers.",
+      "behavior": "Excitation, damping and angle update the visible local model and curve; illumination and character controls expose actual state changes. Every control has native keyboard input. This is an interactive local study, not a connected industrial controller. Do not imply live equipment or measured external telemetry.",
+      "checks": "Reject decorative nonworking knobs. Verify values and graph response, selected state, contrast and complete mobile control coverage while keeping labels readable.",
       "references": [
         "SebCornelius-2092618652994744578",
         "xchylerdrenth-2093008935800517016"
@@ -1118,10 +1118,10 @@
     {
       "id": "quiet-frequency",
       "name": "Quiet frequency / a playable modular rack",
-      "composition": "A dark audio instrument pairs an expressive editorial heading and explicit listening action with a broad scope and four carefully fitted modules. The waveform is the largest evidence region; knobs, echo diagram and level strips supply finer detail.",
-      "surface": "Deep green-black, warm silver/ivory, fine panel rims, restrained status lights, concentric dial markings and quiet mono labels. Waveform, filter, echo and output modules share a material language but each shows different information.",
-      "behavior": "Start listening creates an actual local Web Audio tone. Frequency, filter openness, echo and level change the sound; the scope reads the analyser. Stop, hidden-tab handling and unmount cleanup suspend or close the audio. Sound never starts merely because the page appears. Reduced motion keeps useful controls without a travelling trace.",
-      "checks": "Verify actual audio-node state, accurate controls, zero autoplay, bounded gain and cleanup. The scope must correspond to the signal rather than decorative random motion. Preserve the complete control set on mobile.",
+      "composition": "Pair an expressive editorial heading and explicit listening action with a broad scope and four carefully fitted modules. Make the waveform the largest evidence region; use knobs, an echo diagram and level strips for finer detail. Use waveform, filter, echo and output modules that share a visual language while each explains different information. Keep displayed metrics registered as signal data changes.",
+      "surface": "Use deep green-black panels, warm silver and ivory, fine panel rims, restrained status lights, concentric dial markings and quiet mono labels.",
+      "behavior": "Start listening creates a local Web Audio tone. Frequency, filter openness, echo and level change the sound, and the scope reads the analyser. Sound never starts on page appearance; controls remain keyboard operable. Stop, hidden-tab handling and unmount cleanup suspend or close audio. Reduced motion keeps useful controls without a travelling trace.",
+      "checks": "Verify actual audio-node state, accurate controls, zero autoplay, bounded gain and cleanup. The scope must correspond to the signal rather than decorative random motion, and mobile must preserve the complete control set.",
       "references": [
         "emilwidlund-2093066923693011027"
       ],
@@ -1134,10 +1134,10 @@
     {
       "id": "common-clock",
       "name": "A shared rhythm / a living technical diagram",
-      "composition": "A left editorial explanation balances a large light drawing sheet. One small dimensional lead object dispatches to four distinct process specimens, with curved routes, small colored packets, a merged result and one progress strip.",
-      "surface": "Warm paper, precise green-gray lines, pale modeled node faces, small specimen labels and a restrained set of signal colors. The diagram needs coherent routing, consistent projection, different internal drawings and readable status, not generic connected icons.",
-      "behavior": "A single six-second clock coordinates dispatch, work and return. Packets travel on real SVG route geometry; status updates at semantic stages. Watch/Stop is explicit, and the completed frame remains useful. Reduced motion presents a complete result immediately.",
-      "checks": "Packet positions, selected nodes, captions and progress must agree. Test stopping, replay, navigation cleanup and hidden tabs. Do not claim actual agent work or numerical productivity results from this illustrative sequence.",
+      "composition": "Balance a left editorial explanation with a large light drawing sheet. One small dimensional lead object dispatches to four distinct process specimens through curved routes, then resolves into a merged result and one progress strip. Use real curved vector routes, small colored packets, consistent projection, different internal specimen drawings and readable status. Avoid generic connected icons.",
+      "surface": "Use warm paper, precise green-gray lines, pale modeled node faces, small specimen labels and a restrained family of signal colors.",
+      "behavior": "Coordinate dispatch, work and return with one six-second logical clock. Move packets on actual SVG route geometry and update status only at semantic stages. Watch and Stop are explicit, the completed frame stays useful, and reduced motion presents completion immediately. The sequence illustrates a process. Do not claim actual agent work or numerical productivity results.",
+      "checks": "Packet positions, selected nodes, captions and progress must agree. Test stopping, replay, navigation cleanup and hidden tabs.",
       "references": [
         "jeetnirnejak-2092611495448445101",
         "mehmetozsoyart-2092607949734543818"
@@ -1151,10 +1151,10 @@
     {
       "id": "vector-foundry",
       "name": "Vector foundry / a line can hold a world",
-      "composition": "An editorial paper-and-blueprint surface balances a large narrow serif statement with an isometric ruled wave sheet. Fine ground projection, a specimen index, measured-looking annotation and a small seal frame the drawing.",
-      "surface": "Warm paper, muted blue-green line ranks, crisp contour edges and a carefully proportioned 2:1-like projection. The form is made from coherent continuous paths; its outer and internal lines must describe the same surface. Detail is structural rather than textured 3D decoration.",
-      "behavior": "Flat, Ripple and Surge select the wave's character and a continuous height control changes its amplitude. Native SVG paths derive from one parametric surface; there is no 3D library requirement. Motion follows a single phase and stops when hidden or reduced.",
-      "checks": "Inspect the outline and ruling through maximum amplitude, motion extremes and portrait reflow. No broken joins, differing projections or unnecessary SVG remounting each frame. Keep the dimension-like annotations truthful to the illustration's role.",
+      "composition": "Balance a large narrow serif statement with an isometric ruled wave sheet on a paper-and-blueprint surface. Frame it with a fine ground projection, specimen index, measured-looking annotation and small seal. Construct the wave from crisp continuous vector paths in a carefully proportioned 2:1-like isometric projection. The outer contour and internal rulings must derive from the same parametric surface; detail is structural rather than textured 3D decoration.",
+      "surface": "Use warm paper with muted blue-green line ranks, one restrained accent and enough contrast to separate contour, ruling, ground and annotation.",
+      "behavior": "Flat, Ripple and Surge select wave character; a continuous height control changes amplitude. Native SVG paths derive from one surface without requiring a 3D library. One phase drives motion and stops when hidden or reduced.",
+      "checks": "Inspect outline and ruling at maximum amplitude, motion extremes and portrait reflow. Reject broken joins, differing projections and unnecessary full SVG remounts each frame. Keep dimension-like annotations truthful to the illustration's role.",
       "references": [
         "kairevicius-2090424600886759913",
         "its_sslvr-2092129852514029770"
@@ -1168,10 +1168,10 @@
     {
       "id": "thermal-type",
       "name": "Thermal type / typography in heated air",
-      "composition": "A large luminous heat chamber occupies the right of a cool gray page while bold technical type sits in the quiet region at left. The amber opening and concentric hardware create a physical explanation for a small local shimmer in the words.",
-      "surface": "Dark titanium, radial fins, fine fasteners, polished ring edges and glowing striated ceramic. A bounded optical field travels from the aperture through the adjacent image and technical headline, with coherent direction and falloff. Type keeps its reading position while local details refract. Retain a crisp clear reduced-motion state.",
-      "behavior": "Heat is already active on entry without hover. An original advected WebGL field samples the cached artwork and headline together; pointer presence increases it slightly. Pause heat freezes the current field and Resume heat continues. Recompute the source from the actual image crop on resize. Stop hidden/offscreen work, keep semantic DOM text and restore its normal visibility on renderer failure.",
-      "checks": "Capture the normal page with the pointer outside the headline: both image near the heat source and type must change over time, while an outside region stays stable. Inspect the source-to-text relationship visually on desktop and mobile. Check readable text, pause/resume, hidden state, reduced motion, failure and stable texture-upload counts. Do not accept a hover-only wiggle as this effect.",
+      "composition": "Place a large luminous heat chamber at right on a cool gray page and bold technical type in the quiet left region. The amber opening and concentric hardware must physically explain the localized shimmer in the nearby words.",
+      "surface": "Build a dark titanium chamber with radial fins, fine fasteners, polished ring edges and a glowing striated ceramic opening. Carry one bounded optical field from the aperture through the adjacent image and technical headline with coherent direction and falloff. Keep the text block fixed while local details refract, and retain a crisp reduced-motion state.",
+      "behavior": "Start heat on entry without hover. Pointer presence may increase it slightly; Pause heat freezes the current field and Resume continues. Recompute the source from the actual image crop on resize and stop hidden or offscreen work. The original advected WebGL field samples cached artwork and headline together. Keep semantic DOM text and restore normal visibility on renderer failure. This is not a fluid simulation or general arbitrary-DOM refraction.",
+      "checks": "With the pointer outside the headline, both image near the heat source and type must change over time while an outside region stays stable. Inspect the source-to-text relationship on desktop and mobile; reject a hover-only wiggle. Check readable text, pause/resume, hidden state, reduced motion, failure recovery and stable texture-upload counts.",
       "references": [
         "RobertJohns-2090832456081608791"
       ],
@@ -1185,10 +1185,10 @@
     {
       "id": "morph-study",
       "name": "Morph study / a shape for the change",
-      "composition": "A warm mint editorial field places a large expressive heading beside a clear three-dimensional particle structure. Small shape and formation controls sit below. The point cloud must resolve into recognizable geometry, with enough density and contrast to hold its own against the type.",
-      "surface": "Deep green fine points on a pale mint ground, with subtle depth from point distribution, overlap and restrained rotation. Avoid diffuse low-contrast dust that loses the chosen shape. The type is an editorial serif voice, while controls and labels stay quiet and precise.",
-      "behavior": "Sphere, Current and Loop use stable particles to move among authored target geometries. Formation changes how tightly they resolve. The transition retargets from the current positions, and pause/reduced motion provide an intentional completed state. Keep text outside the rendering layer.",
-      "checks": "Compare the resting target and transition separately. No accidental intermediate stall, abrupt stale shape, chaotic particle reassignment or weak mobile contrast. Test reversals, formation extremes and resource disposal.",
+      "composition": "On a warm mint field, place a large expressive heading beside a clear three-dimensional particle structure, with compact shape and formation controls below. Give the point cloud enough area, density and contrast to balance the type. Use stable point identities sampled into recognizable authored target geometries. Let distribution, overlap and density describe depth; keep text outside the rendering layer and avoid diffuse dust that loses the chosen shape.",
+      "surface": "Use fine deep-green points on a pale warm-mint ground, with enough contrast for the resting target at mobile size.",
+      "behavior": "Sphere, Current and Loop move the same particles among authored targets with restrained rotation; Formation changes how tightly they resolve. Retarget from current positions, preserve stable identities, and provide an intentional completed state for pause and reduced motion. Use an expressive editorial heading with Instrument Serif emphasis, balanced by a sans base and quiet precise controls, labels and supporting copy.",
+      "checks": "Compare resting targets and transitions separately. Reject an intermediate stall, abrupt stale shape, chaotic reassignment or weak mobile contrast. Test reversals, formation extremes and resource disposal.",
       "references": [
         "semochkin_alex-2091816203383664688"
       ],

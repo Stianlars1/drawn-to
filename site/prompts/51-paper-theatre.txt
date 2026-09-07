@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-An open pop-up book fills the lower two thirds of a warm editorial page. Its landscape contains layered trees, a pavilion, a bridge and a winding stream. Above it, a large humane serif/sans title balances a three-item chapter list on the right.
+Fill the lower two thirds of a warm editorial page with an open pop-up book. Balance a large humane title above it against a three-item chapter list on the right. Pair humane serif and sans voices so the title belongs to the crafted editorial world. Build a connected paper landscape with layered trees, a pavilion, bridge and winding stream. Give tree crowns layered cut edges, terrain stacked contours, and include turned page edges and small structural details.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Warm cream #f1eadb, moss-green ink and many shades of cut paper. Every tree crown has layered cut edges, the terrain reveals stacked contours, fold hinges attach the world to the page, and contact shadows show the depth between paper planes. Sunlight comes from a coherent direction. Keep visible paper grain, turned page edges and little structural details.
+Use warm cream #f1eadb, moss-green ink and many shades of cut paper. Keep visible paper grain and fold hinges that attach the world to the page. Use contact shadows between planes and coherent directional sunlight to reveal depth.
 
 BEHAVIOR
-Chapter choices reframe one richly rendered original image and update a caption; the actual showcase is a raster cutout with CSS composition, not live folding geometry. Preserve the silhouette and book base in the complete view. Reduced motion uses immediate crop changes.
+Chapter choices reframe one richly rendered original image and update a caption while preserving the silhouette and book base in the complete view. The showcase is a raster cutout with CSS composition rather than live folding geometry. Reduced motion uses immediate crop changes.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 The key transparent original asset is site/assets/atelier/paper-cutout.webp. Use its alpha silhouette and grounding relationship as evidence; create a comparably detailed original paper world if adapting the subject.
@@ -27,5 +27,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Inspect page thickness, folds, tree layers, bridge, stream and shadows at full size. The mobile view must still read as an open book with a world inside, not a cropped green mound. Flat clip-path trees cannot replace this level of authored detail.
+Inspect page thickness, folds, tree layers, bridge, stream and shadows at full size. The mobile view must still read as an open book with a world inside rather than a cropped green mound. Flat clip-path trees cannot replace this authored detail.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

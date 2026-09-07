@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "id": "q",
+  "slug": "outlined-bento",
+  "name": "Illustrated dark bento",
+  "kind": "features",
+  "references": [
+    "local-stashr-dark-bento",
+    "0xSero-2090197565035753820"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css",
+    "site/js/legacy-details.js"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "two-by-two-bento",
+      "role": "layout",
+      "label": "Two-by-two evidence bento",
+      "text": "Arrange four dark outlined feature surfaces in a 2-by-2 grid, placing each feature's copy beside or beneath its own visual evidence.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "local-stashr-dark-bento",
+          "section": "Layout"
+        },
+        {
+          "id": "0xSero-2090197565035753820",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "neutral-dark-type",
+      "role": "typography",
+      "label": "Neutral dark feature type",
+      "text": "Use neutral gray typography with a clear hierarchy against graphite surfaces.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "local-stashr-dark-bento",
+          "section": "Layout"
+        },
+        {
+          "id": "0xSero-2090197565035753820",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "graphite-signal-palette",
+      "role": "color",
+      "label": "Graphite with one lit signal",
+      "text": "Use a black ground, graphite surfaces, fine calibrated strokes and one small lit signal; one plate may lead in contrast while all content stays readable.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "local-stashr-dark-bento",
+          "section": "Layout"
+        },
+        {
+          "id": "0xSero-2090197565035753820",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "four-technical-subjects",
+      "role": "graphics",
+      "label": "Four distinct technical subjects",
+      "text": "Give the plates distinct explanatory visuals: branching concept paths, a framed scroll strip, a plotted motion curve and a resolved state change.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "local-stashr-dark-bento",
+          "section": "What we see"
+        },
+        {
+          "id": "0xSero-2090197565035753820",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "tight-rimmed-surfaces",
+      "role": "material",
+      "label": "Tight rimmed dark surfaces",
+      "text": "Use tight radii, uniform quiet borders and restrained directional rim highlights without drop shadows.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "local-stashr-dark-bento",
+          "section": "Layout"
+        }
+      ]
+    },
+    {
+      "id": "evidence-first-motion",
+      "role": "motion",
+      "label": "Evidence-first plate motion",
+      "text": "Use motion only to explain a feature within its plate; retain a complete still frame and never require hover or focus to discover the evidence.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "local-stashr-dark-bento",
+          "section": "Motion"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Four-subject acceptance",
+      "text": "Reject empty icon-and-paragraph cards. Inspect each illustration and the shared line hierarchy, and preserve all four subjects on mobile.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "two-by-two-bento",
+      "four-technical-subjects"
+    ],
+    "surface": [
+      "graphite-signal-palette",
+      "neutral-dark-type",
+      "tight-rimmed-surfaces"
+    ],
+    "behavior": [
+      "evidence-first-motion"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

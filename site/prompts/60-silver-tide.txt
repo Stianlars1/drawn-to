@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A wide dark sea of reflective waves fills the page beneath a sparse meditative heading. The horizon provides a quiet upper reading area, while a small right note and bottom light/pace controls balance the large surface.
+Fill the page with a wide dark sea beneath a sparse meditative heading. Preserve a coherent low horizon and quiet upper reading area, balanced by a small right note and bottom light and pace controls.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Blue-black water, sharp silver reflection fragments, darker troughs and a coherent low horizon. The Afterglow state adds warm amber light. Layer long swells and finer ripples so this looks like a continuous reflective surface rather than large blurry sine bumps.
+Layer long swells and finer ripples into one continuous blue-black water surface with sharp silver reflection fragments and darker troughs. Avoid large blurry sine bumps. Use cool silver specular fragments by default; the Afterglow state adds warm amber light while preserving the same wave structure and horizon.
 
 BEHAVIOR
-The ordinary showcase plays an original 16-second loop on intentional hover or explicit playback. Silver and Afterglow select two matched films; Pace changes playback rate. Video bytes are deferred until needed. Reduced motion and Save-Data retain selectable matching posters. The films are rendered deterministically from the original shader, which can also be inspected live through the source capture route.
+Use a deterministic authored 16-second wave loop with intentional hover or explicit playback. Pace changes playback rate; Silver and Afterglow select matched films. Pause on hover leave and hidden tabs, and keep keyboard playback available. Defer video bytes until needed. Reduced motion and Save-Data retain selectable matching posters. The films come from the original shader and remain inspectable through the source capture route.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Use the original encoded films under site/assets/motion/films/ and matched posters, or reproduce them with the linked shader/export pipeline. The authored wave function has a 16-second analytic period; omit the duplicate final frame when exporting.
@@ -31,5 +31,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Compare wave detail, horizon, specular shape and loop boundary. Confirm hover leave pauses, playback works by button/keyboard, hidden tabs stop, source switching does not show a stale frame, and no video downloads before it is needed.
+Compare wave detail, horizon, specular shape and the loop boundary. Confirm source changes never show a stale frame and that no video downloads before needed.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

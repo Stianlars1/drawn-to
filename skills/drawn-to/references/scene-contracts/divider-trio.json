@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "j",
+  "slug": "divider-trio",
+  "name": "Divider-cut technical plates",
+  "kind": "features",
+  "references": [
+    "0xSero-2090197565035753820"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "shared-border-trio",
+      "role": "layout",
+      "label": "Shared-border feature plates",
+      "text": "Join three adjacent feature plates with one continuous outline and single shared dividers. Each plate contains a FIG number, explanatory drawing, short title, paragraph and compact specification list.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "0xSero-2090197565035753820",
+          "section": "Layout & composition"
+        },
+        {
+          "id": "0xSero-2090197565035753820",
+          "section": "Card anatomy"
+        }
+      ]
+    },
+    {
+      "id": "silver-technical-type",
+      "role": "typography",
+      "label": "Silver technical hierarchy",
+      "text": "Use crisp silver typography with small monospace FIG labels and specification indices against the dark surface.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "0xSero-2090197565035753820",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "near-black-linework",
+      "role": "color",
+      "label": "Near-black grayscale plates",
+      "text": "Use a nearly black surface, crisp silver text and fine gray line drawings, reserving any small signal color for meaning.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "0xSero-2090197565035753820",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "literal-feature-drawings",
+      "role": "graphics",
+      "label": "Literal technical feature drawings",
+      "text": "Use one coherent calibrated line grammar for three distinct subjects: branching source files, weighted input distribution and a decision ledger. Crosshairs and line terminals must describe actual relationships.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "0xSero-2090197565035753820",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "explanatory-line-motion",
+      "role": "motion",
+      "label": "Explanatory line motion",
+      "text": "A subtle packet or line draw may explain a connection, but every illustration remains complete at rest and repeated demonstrations yield to deliberate interaction.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Distinct-plate acceptance",
+      "text": "Keep all three subjects visible and distinct at phone width. Do not replace them with icons, hide one to fit, or double the border at a shared edge.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "shared-border-trio",
+      "literal-feature-drawings"
+    ],
+    "surface": [
+      "near-black-linework",
+      "silver-technical-type"
+    ],
+    "behavior": [
+      "explanatory-line-motion"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

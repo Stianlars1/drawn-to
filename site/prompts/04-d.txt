@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A centred concise promise cuts across a near-black stage. One broad diagonal beam enters from the upper right and passes behind the copy. The visual event is the boundary between illuminated haze and darkness.
+Place a concise centred promise across a near-black stage while one broad diagonal beam enters from the upper right and passes behind the copy.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Blue-black #05070a, cool white type and a restrained cyan cast. Give the beam one defined edge, a long soft falloff, irregular dust density and a plausible off-canvas source. Small translucent controls have a lit upper rim. Avoid multiple conic rays or a centred radial blob.
+Use blue-black #05070a, cool white type and a restrained cyan cast. Give one beam a defined edge, long soft falloff, irregular dust density and a plausible off-canvas source; the scene's event is the boundary between illuminated haze and darkness. Use small translucent controls with a lit upper rim. Avoid multiple conic rays and centred radial blobs.
 
 BEHAVIOR
-The still frame must already contain the whole scene. Optional dust drift can be slow; text and controls stay fixed. Do not tie reading to an entrance sequence.
+Keep the whole scene present in the still frame; optional dust drifts slowly while text and controls remain fixed, and reading never depends on an entrance sequence.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Keep the headline readable across the brightest portion of the beam. Recompose its origin at portrait widths.
+Keep the headline readable across the brightest beam region and recompose the beam origin at portrait widths.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

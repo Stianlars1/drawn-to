@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "C",
+  "slug": "measured-page",
+  "name": "Measured editorial sheet",
+  "kind": "editorial",
+  "references": [
+    "local-production-heroes"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "seven-container-comparisons",
+      "role": "layout",
+      "label": "Seven measured container rows",
+      "text": "Compare seven historical page containers as aligned dimension rows, each carrying a name, precise horizontal measure and tabular value; emphasize one chosen specimen in blue.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "restrained-specification-type",
+      "role": "typography",
+      "label": "Restrained specification type",
+      "text": "Use a restrained heading, compact source note and tabular values aligned for quick comparison.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "white-graphite-drafting-blue",
+      "role": "color",
+      "label": "White, graphite and drafting blue",
+      "text": "Use a white sheet, graphite text and one drafting-blue emphasis.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "scaled-dimension-lines",
+      "role": "graphics",
+      "label": "Scaled dimension-line comparison",
+      "text": "Draw fine horizontal measures with endpoint ticks and subtle rulers, using the longest documented chain as the visual scale and labelling any truncated axis.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "still-measuring-view",
+      "role": "motion",
+      "label": "Still scannable measures",
+      "text": "Keep the measuring view still and scannable.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "historical-measurement-context",
+      "role": "context",
+      "label": "Historical measurement provenance",
+      "text": "State what was measured and when; treat the values as historical observations rather than current specifications or universal limits.",
+      "selectable": false,
+      "sources": [
+        {
+          "id": "local-production-heroes",
+          "section": "Measured, 1440x900"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Seven-row mobile acceptance",
+      "text": "Keep all seven comparisons readable at phone width and make no unsupported claim that one container width or a fixed number of type sizes fits every project.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "seven-container-comparisons",
+      "scaled-dimension-lines"
+    ],
+    "surface": [
+      "white-graphite-drafting-blue",
+      "restrained-specification-type"
+    ],
+    "behavior": [
+      "still-measuring-view",
+      "historical-measurement-context"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

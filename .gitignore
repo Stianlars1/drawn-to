@@ -10,6 +10,8 @@ references/media/
 .DS_Store
 node_modules/
 .eval-output/
+/work/
+/.superpowers/
 
 # the packaged skill, rebuilt on demand for zip upload
 skills/drawn-to.zip

@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "g",
+  "slug": "isometric-blueprint",
+  "name": "Exploded blueprint",
+  "kind": "hero",
+  "references": [
+    "marcelkargul-2090148130914206137",
+    "local-chatsheet-iso-bento"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "copy-object-split",
+      "role": "layout",
+      "label": "Copy and exploded-document split",
+      "text": "Balance a left copy column with a large dimetric exploded document on the right, preserving a shared perspective, external guides and clear air between five parallel sheets.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "marcelkargul-2090148130914206137",
+          "section": "Layout & composition"
+        },
+        {
+          "id": "local-chatsheet-iso-bento",
+          "section": "Layout"
+        }
+      ]
+    },
+    {
+      "id": "monochrome-reading-accent",
+      "role": "color",
+      "label": "Charcoal with green reading accent",
+      "text": "Use charcoal #1a1a1c, near-white linework and one minimal green reading accent.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "marcelkargul-2090148130914206137",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "exploded-decision-ledger",
+      "role": "graphics",
+      "label": "Exploded decision-ledger sheets",
+      "text": "Draw five planes with visible edges, subtle face values and real miniature decision-ledger content, using a consistent line hierarchy from outer silhouette to document structure to annotations.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "marcelkargul-2090148130914206137",
+          "section": "Graphic language"
+        },
+        {
+          "id": "local-chatsheet-iso-bento",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "registered-inspection",
+      "role": "motion",
+      "label": "Registered sheet inspection",
+      "text": "The object may remain still; any inspection movement must preserve registration between all sheets.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "marcelkargul-2090148130914206137",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "selectable-copy",
+      "role": "interaction",
+      "label": "Selectable main-column copy",
+      "text": "Keep the text in the main copy column as real selectable DOM text.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Projection integrity acceptance",
+      "text": "Do not substitute arbitrary rotated rectangles. On mobile retain the complete projection, its outer leaders and the relationship between plane spacing and object width.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "copy-object-split",
+      "exploded-decision-ledger"
+    ],
+    "surface": [
+      "monochrome-reading-accent"
+    ],
+    "behavior": [
+      "registered-inspection",
+      "selectable-copy"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

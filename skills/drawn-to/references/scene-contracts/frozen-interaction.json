@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "o",
+  "slug": "frozen-interaction",
+  "name": "A weighted decision",
+  "kind": "component",
+  "references": [],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css",
+    "skills/drawn-to/references/question-flow.md"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "weighted-choice-fragment",
+      "role": "layout",
+      "label": "Weighted choice fragment",
+      "text": "Centre one compact dark product fragment containing a quiet question title bar, four aligned choice rows and a final total; each row pairs a selection control, name and numeric share.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "question-to-total-hierarchy",
+      "role": "typography",
+      "label": "Question-to-total hierarchy",
+      "text": "Order the typographic hierarchy as question, selected rows, numeric total and then metadata.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "violet-lilac-palette",
+      "role": "color",
+      "label": "Violet-black and muted lilac",
+      "text": "Use a violet-black ground, muted lilac selection fill and small luminous ticks.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "inset-choice-surface",
+      "role": "material",
+      "label": "Inset divided choice surface",
+      "text": "Place the choices on a slightly lifted dark surface with a restrained inset border and fine row dividers.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "operable-weighted-choices",
+      "role": "interaction",
+      "label": "Operable weighted choices",
+      "text": "When used as product UI, make weighted choices operable, maintain a total of 100 and expose every value accessibly.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "example-disclosure",
+      "role": "context",
+      "label": "Frozen-example disclosure",
+      "text": "When rendered as an illustration, label the fragment as an example rather than implying hidden functionality.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Selection and value acceptance",
+      "text": "Make selection evident without hue alone, and keep every name, weight and the total legible on small screens.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "weighted-choice-fragment"
+    ],
+    "surface": [
+      "violet-lilac-palette",
+      "question-to-total-hierarchy",
+      "inset-choice-surface"
+    ],
+    "behavior": [
+      "operable-weighted-choices",
+      "example-disclosure"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

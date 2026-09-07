@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "id": "l",
+  "slug": "print-ledger",
+  "name": "Print ledger",
+  "kind": "editorial",
+  "references": [
+    "basit_designs-2089995658640122065",
+    "yurygok-2089624786213237049"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "twelve-row-sheet",
+      "role": "layout",
+      "label": "Twelve-row ledger sheet",
+      "text": "Frame a sheet containing twelve aligned rows, with a narrow title, small document metadata, row numbers, dotted leaders, a right-aligned value column and a thin print band closing the sheet.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "serif-mono-ledger",
+      "role": "typography",
+      "label": "Serif title and tabular values",
+      "text": "Use a narrow serif title, small metadata, faded row indices and tabular monospace values, with exact baseline and final-digit alignment.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "yurygok-2089624786213237049",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "paper-red-palette",
+      "role": "color",
+      "label": "Warm paper and faded red",
+      "text": "Use warm gray board, white paper, charcoal text and faded red row numbers.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089995658640122065",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "leader-and-halftone-detail",
+      "role": "graphics",
+      "label": "Dotted leaders and minute halftone",
+      "text": "Keep dotted-leader density exact and confine minute halftone detail to the print treatment.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089995658640122065",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "paper-edge-depth",
+      "role": "material",
+      "label": "Subtle paper-edge depth",
+      "text": "Let subtle paper edges provide the physical depth.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089995658640122065",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "still-qualified-data",
+      "role": "motion",
+      "label": "Still qualified reading surface",
+      "text": "Keep the ledger primarily still and retain any sample or historical-data label at every breakpoint.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "truthful-ledger",
+      "role": "context",
+      "label": "Qualified ledger data",
+      "text": "Retain the source and date qualifier and never invent counts to make the sheet appear authoritative.",
+      "selectable": false,
+      "sources": [
+        {
+          "id": "yurygok-2089624786213237049",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Row legibility acceptance",
+      "text": "Verify that every row can be read at mobile scale and that the last digits remain aligned.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "twelve-row-sheet"
+    ],
+    "surface": [
+      "paper-red-palette",
+      "serif-mono-ledger",
+      "leader-and-halftone-detail",
+      "paper-edge-depth"
+    ],
+    "behavior": [
+      "still-qualified-data",
+      "truthful-ledger"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "D",
+  "slug": "light-dark",
+  "name": "Material-aware dual themes",
+  "kind": "component",
+  "references": [
+    "piyushsphere-2089714360235225334",
+    "mnowakdesign-2089321854582562983"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "paired-theme-evidence",
+      "role": "layout",
+      "label": "Paired light and dark evidence",
+      "text": "Surround a compact list of four material criteria with two comparable product previews that share content structure while independently composing surface hierarchy and light.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "piyushsphere-2089714360235225334",
+          "section": "What we see"
+        },
+        {
+          "id": "mnowakdesign-2089321854582562983",
+          "section": "What we see"
+        }
+      ]
+    },
+    {
+      "id": "stable-criteria-hierarchy",
+      "role": "typography",
+      "label": "Stable criteria hierarchy",
+      "text": "Keep criterion labels and one stable explanation in a consistent hierarchy across all selected states.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "independent-theme-neutrals",
+      "role": "color",
+      "label": "Independent light and dark neutrals",
+      "text": "Use opaque whites and tuned neutral values in light mode, and graphite planes with adjusted luminous edges in dark mode; keep accent semantics consistent while tuning luminance per theme.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "mnowakdesign-2089321854582562983",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "theme-specific-separation",
+      "role": "material",
+      "label": "Theme-specific separation materials",
+      "text": "Separate light planes with soft contact shadows and dark planes with tonal steps and subtle edges, re-deriving the material treatment for each mode.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "piyushsphere-2089714360235225334",
+          "section": "Card anatomy"
+        },
+        {
+          "id": "mnowakdesign-2089321854582562983",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "paired-criterion-inspection",
+      "role": "interaction",
+      "label": "Paired criterion inspection",
+      "text": "Selecting separation, accent, imagery or depth emphasizes corresponding evidence on both sides and updates one stable explanation; keyboard and touch expose the same states.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "no-naive-inversion",
+      "role": "context",
+      "label": "No naive theme inversion",
+      "text": "Do not produce dark mode by merely inverting colors or dimming the light preview.",
+      "selectable": false,
+      "sources": [
+        {
+          "id": "piyushsphere-2089714360235225334",
+          "section": "Why saved"
+        },
+        {
+          "id": "mnowakdesign-2089321854582562983",
+          "section": "Why saved"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Dual-theme hierarchy acceptance",
+      "text": "Preserve contrast, hierarchy, every criterion row and the selected state in both themes and on mobile.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "paired-theme-evidence"
+    ],
+    "surface": [
+      "independent-theme-neutrals",
+      "stable-criteria-hierarchy",
+      "theme-specific-separation"
+    ],
+    "behavior": [
+      "paired-criterion-inspection",
+      "no-naive-inversion"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

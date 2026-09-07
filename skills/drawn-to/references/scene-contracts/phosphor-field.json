@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "phosphor-field",
+  "slug": "phosphor-field",
+  "name": "Phosphor field / life between pixels",
+  "kind": "graphic",
+  "references": [
+    "mnowakdesign-2091952693279436862",
+    "eve_bouff-2096417545096200466"
+  ],
+  "implementation": [
+    "site/js/expansion/motion-rendered.js",
+    "site/css/motion-rendered.css",
+    "site/js/motion/scenes/phosphor.js",
+    "site/js/motion/shader.js"
+  ],
+  "art": "Use the actual procedural signal and cell-mask construction as the baseline. A dot texture placed over a blurry static line does not match this material.",
+  "properties": [
+    {
+      "id": "display-field-layout",
+      "role": "layout",
+      "label": "One broad signal display",
+      "text": "Stretch one broad luminous display plate beneath a short technical heading on a nearly black ground. Keep small mode and density controls below the field instead of enclosing it in a generic metrics dashboard.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "eve_bouff-2096417545096200466",
+          "section": "What is visible"
+        }
+      ]
+    },
+    {
+      "id": "phosphor-cell-graphics",
+      "role": "graphics",
+      "label": "Signal sampled through stable cells",
+      "text": "Render a recognizable waveform, columns or orbit signal through tiny stable cells, preserving the visible unlit matrix, individual cell edges, dark gutters and a slight perspective skew. The graphic must read as one signal at distance and structured cells close up.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "mnowakdesign-2091952693279436862",
+          "section": "Transferable construction"
+        },
+        {
+          "id": "eve_bouff-2096417545096200466",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "green-cyan-emission",
+      "role": "color",
+      "label": "Cool green-to-cyan phosphor",
+      "text": "Use cool green-to-cyan emission over near-black, with restrained glow and darker unlit cells. Keep a strong separation between fixed white labels and the luminous field.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "mnowakdesign-2091952693279436862",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "registered-signal-motion",
+      "role": "motion",
+      "label": "Registered cells with evolving signal",
+      "text": "Evolve the signal from one shared clock while every cell and reading anchor remains registered. Wave, Columns and Orbit must produce distinctly different geometry; density changes the matrix. Pause and reduced motion hold a composed state.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "eve_bouff-2096417545096200466",
+          "section": "Timeline and interaction evidence"
+        }
+      ]
+    },
+    {
+      "id": "technical-type-default",
+      "role": "typography",
+      "label": "Technical serif and mono signal type",
+      "text": "Use a large technical statement with restrained serif emphasis, plus a small mono eyebrow and exact fixed labels that stay registered while the signal changes.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "cell-rendering-check",
+      "role": "context",
+      "label": "Phosphor cell rendering check",
+      "text": "Inspect fine cell separation and broader emission independently at delivered DPR. Reject moire, flicker, shimmering gutters and modes without substantial visual change; the field must not cover its controls.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "display-field-layout"
+    ],
+    "surface": [
+      "phosphor-cell-graphics",
+      "green-cyan-emission"
+    ],
+    "behavior": [
+      "registered-signal-motion",
+      "technical-type-default"
+    ],
+    "checks": [
+      "cell-rendering-check"
+    ]
+  }
+}

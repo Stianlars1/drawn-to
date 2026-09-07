@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "arch-editorial",
+  "slug": "arch-editorial",
+  "name": "Architectural editorial frames",
+  "kind": "editorial",
+  "references": [
+    "LexnLin-2096045877760795063"
+  ],
+  "implementation": [
+    "site/js/expansion/editorial.js",
+    "site/css/extra-editorial.css"
+  ],
+  "art": "Inspect the image list and exact arch layout in the cited source. Curate original or licensed assets with comparable visual weight and complementary crops.",
+  "properties": [
+    {
+      "id": "monumental-heading-frieze",
+      "role": "layout",
+      "label": "Monumental heading over image frieze",
+      "text": "Place a monumental single-word serif heading above a seven-strip frieze, balancing it with a short editorial note and small Change the view action on the quieter side.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "LexnLin-2096045877760795063",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "cultivated-spacious-type",
+      "role": "typography",
+      "label": "Cultivated spacious editorial type",
+      "text": "Use cultivated spacious serif display type with calm supporting copy rather than dashboard typography.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "warm-ink-rich-imagery",
+      "role": "color",
+      "label": "Warm ground with bounded imagery",
+      "text": "Use a warm light ground and dark ink, letting rich bounded imagery provide the chroma and depth.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "LexnLin-2096045877760795063",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "varied-arch-strips",
+      "role": "shape",
+      "label": "Varied architectural arch strips",
+      "text": "Build seven tall narrow strips with coherent proportions and a deliberate rhythm of full arches, one-shoulder curves and square tops.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "LexnLin-2096045877760795063",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "curated-material-crops",
+      "role": "graphics",
+      "label": "Curated material crop sequence",
+      "text": "Fill the frieze with intentional crops of folded paper, organic green texture and warm material, preserving distinct focal subjects and complementary visual weight.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "stable-view-selection",
+      "role": "interaction",
+      "label": "Stable Change the view selection",
+      "text": "Change the active view and its description together while retaining a stable reading anchor across input methods and narrow-screen reflow.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Arch rhythm acceptance",
+      "text": "Compare strip spacing, shoulder curves, baseline and image contrast; every arch needs a meaningful focal subject rather than a random stock crop.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "monumental-heading-frieze",
+      "varied-arch-strips",
+      "curated-material-crops"
+    ],
+    "surface": [
+      "warm-ink-rich-imagery",
+      "cultivated-spacious-type"
+    ],
+    "behavior": [
+      "stable-view-selection"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

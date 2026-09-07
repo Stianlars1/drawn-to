@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "working-widgets",
+  "slug": "working-widgets",
+  "name": "A useful little workbench",
+  "kind": "features",
+  "references": [
+    "MSchwaibold-2096059496812716307"
+  ],
+  "implementation": [
+    "site/js/expansion/interactive.js",
+    "site/css/extra-interactive.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "unequal-widget-grid",
+      "role": "layout",
+      "label": "Aligned unequal workbench",
+      "text": "Arrange four unequal but aligned light widgets beneath a large editorial heading: note paper, a contrast specimen, a radius instrument and a review checklist.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "MSchwaibold-2096059496812716307",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "distinct-widget-anatomy",
+      "role": "graphics",
+      "label": "Four functional widget anatomies",
+      "text": "Combine paper grain and edges, an oversized Aa specimen, miniature ruler ticks, a visibly changing shape and a precise completion mark. Each widget has a different anatomy while sharing one visual family.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "MSchwaibold-2096059496812716307",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "sage-workbench-palette",
+      "role": "color",
+      "label": "White, sage and green",
+      "text": "Use white and pale sage surfaces with dark green ink.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "shared-edge-material",
+      "role": "material",
+      "label": "Shared tactile edges",
+      "text": "Maintain one family of tactile edges and shadows across all four widgets.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "MSchwaibold-2096059496812716307",
+          "section": "Card anatomy"
+        }
+      ]
+    },
+    {
+      "id": "working-controls",
+      "role": "interaction",
+      "label": "Working native controls",
+      "text": "Keep notes for the session, swap contrast colors with a computed ratio, change radius with a range input and update the completion count with checkboxes. Label session-only persistence honestly and make every control keyboard-operable.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "truthful-function-check",
+      "role": "context",
+      "label": "No decorative controls",
+      "text": "Do not deliver decorative mock controls or fake contrast numbers. Review every widget state.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "mobile-workbench-check",
+      "role": "context",
+      "label": "Readable mobile workbench",
+      "text": "Reflow all four widgets into a readable mobile workbench.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "unequal-widget-grid",
+      "distinct-widget-anatomy"
+    ],
+    "surface": [
+      "sage-workbench-palette",
+      "shared-edge-material"
+    ],
+    "behavior": [
+      "working-controls"
+    ],
+    "checks": [
+      "truthful-function-check",
+      "mobile-workbench-check"
+    ]
+  }
+}

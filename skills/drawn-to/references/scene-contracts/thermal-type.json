@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "thermal-type",
+  "slug": "thermal-type",
+  "name": "Thermal type / typography in heated air",
+  "kind": "editorial",
+  "references": [
+    "RobertJohns-2090832456081608791"
+  ],
+  "implementation": [
+    "site/js/expansion/motion-editorial.js",
+    "site/css/motion-editorial.css",
+    "site/js/motion/heat.js"
+  ],
+  "art": "The original engine asset is site/assets/motion/thermal-type.webp. The live effect combines that known image and the known headline into one cached texture, then samples them through a procedural heat field. It does not model an engine or solve fluid dynamics and does not support arbitrary live-DOM refraction. Keep accessible text and the original image as the clear fallback.",
+  "properties": [
+    {
+      "id": "heat-source-layout",
+      "role": "layout",
+      "label": "Technical type beside a physical heat source",
+      "text": "Place a large luminous heat chamber at right on a cool gray page and bold technical type in the quiet left region. The amber opening and concentric hardware must physically explain the localized shimmer in the nearby words.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "RobertJohns-2090832456081608791",
+          "section": "What is visible"
+        }
+      ]
+    },
+    {
+      "id": "industrial-heat-chamber",
+      "role": "material",
+      "label": "Titanium and glowing ceramic chamber",
+      "text": "Build a dark titanium chamber with radial fins, fine fasteners, polished ring edges and a glowing striated ceramic opening.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "RobertJohns-2090832456081608791",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "bounded-heat-refraction",
+      "role": "graphics",
+      "label": "Bounded directional heat refraction",
+      "text": "Carry one bounded optical field from the aperture through the adjacent image and technical headline with coherent direction and falloff. Keep the text block fixed while local details refract, and retain a crisp reduced-motion state.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "RobertJohns-2090832456081608791",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "resting-thermal-motion",
+      "role": "motion",
+      "label": "Heat visible in the resting state",
+      "text": "Start heat on entry without hover. Pointer presence may increase it slightly; Pause heat freezes the current field and Resume continues. Recompute the source from the actual image crop on resize and stop hidden or offscreen work.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "RobertJohns-2090832456081608791",
+          "section": "Timeline and interaction evidence"
+        }
+      ]
+    },
+    {
+      "id": "cached-source-implementation",
+      "role": "context",
+      "label": "Cached image-and-headline WebGL source",
+      "text": "The original advected WebGL field samples cached artwork and headline together. Keep semantic DOM text and restore normal visibility on renderer failure. This is not a fluid simulation or general arbitrary-DOM refraction.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "resting-effect-check",
+      "role": "context",
+      "label": "Resting thermal evidence check",
+      "text": "With the pointer outside the headline, both image near the heat source and type must change over time while an outside region stays stable. Inspect the source-to-text relationship on desktop and mobile; reject a hover-only wiggle.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "thermal-lifecycle-check",
+      "role": "context",
+      "label": "Thermal lifecycle and fallback check",
+      "text": "Check readable text, pause/resume, hidden state, reduced motion, failure recovery and stable texture-upload counts.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "heat-source-layout"
+    ],
+    "surface": [
+      "industrial-heat-chamber",
+      "bounded-heat-refraction"
+    ],
+    "behavior": [
+      "resting-thermal-motion",
+      "cached-source-implementation"
+    ],
+    "checks": [
+      "resting-effect-check",
+      "thermal-lifecycle-check"
+    ]
+  }
+}

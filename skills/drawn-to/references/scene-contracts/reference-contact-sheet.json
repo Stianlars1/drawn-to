@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "y",
+  "slug": "reference-contact-sheet",
+  "name": "Archival contact sheet",
+  "kind": "graphic",
+  "references": [],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css",
+    "skills/drawn-to/references/matrix.md"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "archival-specimen-grid",
+      "role": "layout",
+      "label": "Complete archival specimen grid",
+      "text": "Arrange many tiny specimens as a meticulously spaced contact sheet beneath a narrow heading and beside a compact fill legend.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "serif-heading-legend",
+      "role": "typography",
+      "label": "Narrow serif with compact legend",
+      "text": "Use a narrow editorial serif for the collection heading and compact, readable labels for the specimen legend and archive metadata.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "cream-black-mode-fills",
+      "role": "color",
+      "label": "Cream paper and mode-coded fills",
+      "text": "Use cream paper and black ink, with restrained fill variation encoding light, dark and mixed source modes.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "print-scale-specimen-marks",
+      "role": "graphics",
+      "label": "Print-scale specimen marks",
+      "text": "Give every tile a subtle ruled border, inset neutral mark and fine registration texture that remains coherent at print scale.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "quiet-grid-scan",
+      "role": "motion",
+      "label": "Quiet contact-sheet scan",
+      "text": "If motion is used, let one very quiet scanning band traverse the fixed grid; never animate individual tiles as a wave.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "explicit-archive-record",
+      "role": "context",
+      "label": "Explicit archive date and count",
+      "text": "Keep the archive date and specimen count explicit and ensure the grid total reconciles with the legend.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Complete archive reflow",
+      "text": "At mobile widths reduce the number of columns while preserving every specimen instead of cropping the archive.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "archival-specimen-grid",
+      "print-scale-specimen-marks"
+    ],
+    "surface": [
+      "cream-black-mode-fills",
+      "serif-heading-legend"
+    ],
+    "behavior": [
+      "quiet-grid-scan",
+      "explicit-archive-record"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

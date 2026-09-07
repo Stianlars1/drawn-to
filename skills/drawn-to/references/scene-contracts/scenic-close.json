@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "id": "scenic-close",
+  "slug": "scenic-close",
+  "name": "An inhabited illustrated ending",
+  "kind": "footer",
+  "references": [
+    "AdityaSur11-2096160317458030911"
+  ],
+  "implementation": [
+    "site/js/expansion/editorial.js",
+    "site/css/extra-editorial.css"
+  ],
+  "art": "The original showcase panorama is site/assets/expansion/editorial/garden-panorama.png. Create or adapt an authorized original engraving with comparable density and scene depth.",
+  "properties": [
+    {
+      "id": "invitation-over-landscape",
+      "role": "layout",
+      "label": "Invitation above panoramic landscape",
+      "text": "Build a spacious closing section with a short large invitation at upper left, two quiet next actions at right and a panoramic landscape filling the lower half to the bottom edge.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "Layout and hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "editorial-serif-ending",
+      "role": "typography",
+      "label": "Editorial serif closing voice",
+      "text": "Use editorial serif type for the invitation and supporting navigation, keeping links as real text outside the illustration.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "Type, color and material"
+        }
+      ]
+    },
+    {
+      "id": "cream-and-blue-ink",
+      "role": "color",
+      "label": "Cream paper and blue ink",
+      "text": "Use one family of dark blue ink on cream paper, retaining cream gaps inside the drawing as structural highlights.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "Type, color and material"
+        }
+      ]
+    },
+    {
+      "id": "inhabited-engraved-panorama",
+      "role": "graphics",
+      "label": "Inhabited engraved panorama",
+      "text": "Author a connected landscape of house, trees, paths, shoreline and water with varied line density, a distinct distant layer and enough workmanship to reward close inspection.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "What we see"
+        },
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "Why it works"
+        }
+      ]
+    },
+    {
+      "id": "static-illustrated-closing",
+      "role": "motion",
+      "label": "Static illustrated closing",
+      "text": "Keep the landscape still; no parallax, water motion or scroll reveal is implied by the source.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "Motion and evidence limits"
+        }
+      ]
+    },
+    {
+      "id": "functional-closing-actions",
+      "role": "interaction",
+      "label": "Functional closing actions",
+      "text": "Keep both next actions functional and place copy feedback beside the action that caused it.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "portrait-recomposition",
+      "role": "context",
+      "label": "Portrait landscape recomposition",
+      "text": "On portrait screens preserve a meaningful landscape crop beneath the reading area rather than shrinking the full panorama until its details disappear.",
+      "selectable": false,
+      "sources": [
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "Transfer into a website"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Engraving-depth acceptance",
+      "text": "Review house, canopy and water at full resolution, and match line texture and depth rather than only the blue-on-cream palette.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "invitation-over-landscape",
+      "inhabited-engraved-panorama"
+    ],
+    "surface": [
+      "cream-and-blue-ink",
+      "editorial-serif-ending"
+    ],
+    "behavior": [
+      "static-illustrated-closing",
+      "functional-closing-actions",
+      "portrait-recomposition"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

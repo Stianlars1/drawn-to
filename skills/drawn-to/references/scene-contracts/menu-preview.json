@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "menu-preview",
+  "slug": "menu-preview",
+  "name": "An explanatory menu",
+  "kind": "component",
+  "references": [
+    "pqoqubbw-2093012429240431093"
+  ],
+  "implementation": [
+    "site/js/expansion/interactive.js",
+    "site/css/extra-interactive.css",
+    "site/js/expansion/menu-art.js"
+  ],
+  "art": "The hero artwork is an original SVG in menu-art.js. Preserve its coherent viewpoint, folded-paper construction, negative space and type/art scale; do not substitute several unrelated rounded shapes.",
+  "properties": [
+    {
+      "id": "menu-and-preview",
+      "role": "layout",
+      "label": "Adjacent consequence preview",
+      "text": "Lead with a light editorial intro, then place a small source control and compact menu beside a larger stable preview. Hover, focus or selection reveals an option's consequence before commitment.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "pqoqubbw-2093012429240431093",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "miniature-page-graphics",
+      "role": "graphics",
+      "label": "Architectural paper miniature",
+      "text": "Make the hero preview a real miniature page with a browser rim, protected text column and one original architectural paper sculpture. Preserve consistent perspective, folded edge thickness, grounded shadow, negative space and composed type-to-art scale.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "warm-sage-palette",
+      "role": "color",
+      "label": "Warm paper and sage planes",
+      "text": "Use warm white #f8f7f2, forest-gray ink, quiet green selection, sage structural planes, ivory folded paper and one restrained ochre accent.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "descriptive-menu-rows",
+      "role": "typography",
+      "label": "Descriptive menu rows",
+      "text": "Give each menu row a distinct miniature composition icon, short descriptive text and a small arrow. Keep the labels understandable at delivered size.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "pqoqubbw-2093012429240431093",
+          "section": "Why it works and transfer"
+        }
+      ]
+    },
+    {
+      "id": "preview-selection",
+      "role": "interaction",
+      "label": "Keyboard-equivalent preview selection",
+      "text": "Hero, feature and onboarding options produce different preview layouts. Support pointer input, roving keyboard selection, Escape close and focus return without changing menu width or desynchronizing preview state.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "pqoqubbw-2093012429240431093",
+          "section": "Why it works and transfer"
+        }
+      ]
+    },
+    {
+      "id": "narrow-menu-check",
+      "role": "context",
+      "label": "Narrow menu states",
+      "text": "Check the menu open and closed at narrow widths.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "miniature-legibility-check",
+      "role": "context",
+      "label": "Distinct miniature compositions",
+      "text": "Tiny previews must remain recognizable compositions rather than arbitrary gray bars. Keep hero, feature and onboarding previews meaningfully different, and retain the illustration's composed size when icon styles are applied elsewhere.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "menu-and-preview",
+      "miniature-page-graphics",
+      "descriptive-menu-rows"
+    ],
+    "surface": [
+      "warm-sage-palette"
+    ],
+    "behavior": [
+      "preview-selection"
+    ],
+    "checks": [
+      "narrow-menu-check",
+      "miniature-legibility-check"
+    ]
+  }
+}

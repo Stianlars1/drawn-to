@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-One compact, centred dark product fragment shows a real weighted choice. A quiet title bar introduces the question; four aligned rows pair a selection control, a name and its numeric share. The total closes the form.
+Centre one compact dark product fragment containing a quiet question title bar, four aligned choice rows and a final total; each row pairs a selection control, name and numeric share.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Violet-black ground, slightly lifted dark surface, muted lilac selection fill and small luminous ticks. Use a restrained inset border and fine dividers. The hierarchy runs question, selected rows, numeric total, then metadata.
+Use a violet-black ground, muted lilac selection fill and small luminous ticks. Order the typographic hierarchy as question, selected rows, numeric total and then metadata. Place the choices on a slightly lifted dark surface with a restrained inset border and fine row dividers.
 
 BEHAVIOR
-Make the weighted choices operable when this is a product UI; keep the total at 100 and expose the values accessibly. For a frozen illustration, clearly identify it as an example rather than suggesting hidden functionality.
+When used as product UI, make weighted choices operable, maintain a total of 100 and expose every value accessibly. When rendered as an illustration, label the fragment as an example rather than implying hidden functionality.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-The selected state must be evident without relying on hue alone. Keep names, weights and total legible on small screens.
+Make selection evident without hue alone, and keep every name, weight and the total legible on small screens.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

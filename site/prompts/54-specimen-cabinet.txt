@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A carefully photographed cabinet of six material specimens forms the main field, balanced by restrained editorial type and a small selected-specimen description. The grid is an actual material collection, with each object carrying its own surface vocabulary.
+Use a carefully photographed cabinet of six material specimens as the main field, balanced by restrained editorial type and a small selected-specimen description. Treat the grid as an actual collection in which each object has its own surface vocabulary, coherent scale, contact shadow, fine edge and enough resolution for microstructure comparison. Keep labels quiet and precise, like a museum drawer.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Warm chalk, stone, glass, metal and softer organic textures under one consistent studio light. Objects need coherent scale, contact shadows, fine edges and enough resolution to compare microstructure. Labels remain quiet and precise, like a museum drawer.
+Combine warm chalk, stone, glass, metal and softer organic textures under one consistent studio light.
 
 BEHAVIOR
-Each of six specimen buttons opens a large detail dialog with its material name and a specific description. Escape and the close button return to the cabinet. Preserve the same original lighting and crop in the enlarged view; touch and keyboard inspection are equivalent.
+Each specimen button opens a large detail dialog with a material name and specific description. Escape and close return to the cabinet; touch and keyboard inspection are equivalent. Preserve the same original lighting and crop in the enlarged view.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Use site/assets/atelier/specimen-cabinet.webp as the original material-quality baseline. A new set must be coherently art-directed and detailed enough to inspect.
@@ -27,5 +27,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Every specimen should differ in roughness, transmission or structure, not merely hue. Compare image crops and selection behavior at all target sizes.
+Every specimen must differ in roughness, transmission or structure rather than hue alone. Compare image crops and selection behavior at all target sizes.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

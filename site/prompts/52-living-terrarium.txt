@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A massive thick-glass vessel containing a miniature moss garden dominates the right. A calm left editorial column introduces the study, followed by three numbered inspection points. A circular loupe lets a small detail carry as much attention as the whole silhouette.
+Let a massive thick-glass vessel containing a miniature moss garden dominate the right. Use a calm left editorial column with three numbered inspection points, and a circular loupe that lets a small detail command as much attention as the whole silhouette. Build the image from condensation beads, layered ferns, wet stone, soft moss and a small dark pool at several scales of detail.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Sage-gray ground, dark green type, thick clear glass, condensation beads, layered ferns, wet stone, soft moss and a small dark pool. Glass distorts the edge of the miniature scene and carries large soft reflections. The light penetrates the canopy and leaves contact shadows on the rocks.
+Use a sage-gray ground, dark green type and natural wet greens within the vessel. Use thick clear glass that distorts the miniature scene at its edge and carries large soft reflections. Let light penetrate the canopy and cast contact shadows on the rocks.
 
 BEHAVIOR
-Glass & water / Canopy & light / Stone & moss moves a true magnifying crop to the corresponding feature, preserving pixel alignment after resize. This is an original high-resolution raster scene with a CSS magnification layer, not interactive simulated water.
+Glass & water, Canopy & light and Stone & moss move a true magnifying crop to the corresponding feature while preserving pixel alignment after resize. This is an original high-resolution raster scene with a CSS magnification layer, not interactive simulated water.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 The original image is site/assets/atelier/living-terrarium.webp. A detailed image is essential; do not try to substitute a translucent div containing generic plant icons.
@@ -27,5 +27,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Compare loupe registration, glass rim, condensation and leaf scale. Test all inspection points in portrait; the lens must stay inside its image bounds and not cover the reading column.
+Compare loupe registration, glass rim, condensation and leaf scale. Test all inspection points in portrait; keep the lens inside the image and away from the reading column.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

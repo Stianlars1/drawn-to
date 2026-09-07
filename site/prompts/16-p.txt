@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A narrow numbered chapter rail sits beside one spacious detail panel. The active item has a tiny blue registration line. Panel title, prose and a short evidence list share one stable layout.
+Place a narrow numbered chapter rail beside one spacious detail panel. Give the active item a tiny registration line and keep panel title, prose and a short evidence list in one stable layout.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Almost-white ground, softly raised white panel, graphite typography and muted mono indices. Radius is restrained; elevation is a broad faint shadow with a crisp surface edge. The panel is the focal plane, not the whole page.
+Use an almost-white ground, white panel, graphite typography and one muted blue registration accent. Use muted monospace indices in the rail and graphite reading typography in the detail panel. Give the focal panel a restrained radius, broad faint elevation shadow and crisp surface edge without turning the whole page into a panel.
 
 BEHAVIOR
-Click, keyboard focus/activation or touch selects a chapter. Swap the panel in place with a brief dissolve; rapid selection resolves to the latest choice. An auto-demo stops after user input and under reduced motion.
+Support click, keyboard focus and activation, and touch as equivalent ways to select a chapter; rapid selections resolve to the latest choice. Swap the panel in place with a brief dissolve. Any auto-demo stops after user input and under reduced motion.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -28,5 +28,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Reserve enough height for the longest chapter. Mobile must keep rail and panel close together rather than pushing them to opposite ends of the viewport.
+Reserve enough height for the longest chapter, and on mobile keep rail and panel close rather than separating them across the viewport.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "current": "8035ea8cc5e752628a92",
+  "catalogs": {
+    "0d4d10b23b93140e09ff": {
+      "url": "data/generator/catalogs/0d4d10b23b93140e09ff.json",
+      "sourceRevision": null,
+      "published": false
+    },
+    "8035ea8cc5e752628a92": {
+      "url": "data/generator/catalogs/8035ea8cc5e752628a92.json",
+      "sourceRevision": "8dbf7bc0e52a8c6c232f09ac63284bf072bbb088",
+      "published": true
+    }
+  }
+}

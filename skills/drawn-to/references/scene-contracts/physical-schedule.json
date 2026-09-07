@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "physical-schedule",
+  "slug": "physical-schedule",
+  "name": "A tangible plan",
+  "kind": "features",
+  "references": [
+    "nilseller-2093007384465531068"
+  ],
+  "implementation": [
+    "site/js/expansion/gpu.js",
+    "site/css/extra-gpu.css",
+    "site/js/graphics/three-stage.js",
+    "site/js/graphics/models.js"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "mechanical-sequence-layout",
+      "role": "layout",
+      "label": "Plan as one mechanical sequence",
+      "text": "Present a horizontal sequence as one physical mechanical assembly on a dark blue-gray editorial stage, with a short heading above and clear stage labels below. Let the object carry the process metaphor.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "nilseller-2093007384465531068",
+          "section": "What we see"
+        }
+      ]
+    },
+    {
+      "id": "task-bar-geometry",
+      "role": "shape",
+      "label": "Layered manufactured task bars",
+      "text": "Set satin-metal task bars on a graphite or anodized base, with layered cap profiles, thin manufactured bevels and recessed status-light sockets.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "nilseller-2093007384465531068",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "machined-schedule-material",
+      "role": "material",
+      "label": "Directional machined finish",
+      "text": "Use a fine directional finish, readable direct labels, coherent status lights and contact shadows. Avoid rubber-like rounded edges and reflections that erase labels.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "nilseller-2093007384465531068",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "overview-detail-view",
+      "role": "interaction",
+      "label": "Overview and finish inspection",
+      "text": "A quiet view change reveals the object. Inspect the finish switches from the complete plan to an intentional close view, while Show the full plan restores the overview. Preserve the selected state in matching overview and detail posters when rendering is unavailable.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "direct-readability-check",
+      "role": "context",
+      "label": "Finish and label inspection",
+      "text": "Compare cap, edge and side at actual size and in the inspection view. Review the brightest reflection phase for label legibility.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "portrait-plan-check",
+      "role": "context",
+      "label": "Complete portrait overview",
+      "text": "Preserve all four task bars in the portrait overview and make cropping deliberate in the detail view. Verify the control in both live rendering and poster fallback.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "mechanical-sequence-layout",
+      "task-bar-geometry"
+    ],
+    "surface": [
+      "machined-schedule-material"
+    ],
+    "behavior": [
+      "overview-detail-view"
+    ],
+    "checks": [
+      "direct-readability-check",
+      "portrait-plan-check"
+    ]
+  }
+}

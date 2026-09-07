@@ -40,6 +40,14 @@ The [material refinement](docs/material-refinement.md) improves glass,
 ceramic, metal, source-driven heat and miniature illustration. Every scene now
 has a descriptive address; original letter links remain working aliases.
 
+## Direction studio
+
+The generator at `/generator` lets you start with a showcase scene or build from individual properties. Choose a full page, section, component or graphic, then assign exact Drawn To references to each role. Open decisions stay open for the skill to explore with you.
+
+Local drafts, versioned share links and portable JSON files preserve those decisions. The exported prompt invokes Drawn To with the exact property contracts and supporting references. The generator makes no AI calls. Each showcase scene links directly into the studio.
+
+The skill now owns 70 atomic scene contracts; the existing whole-scene prompts and the generator catalog are generated from that same maintained knowledge. See [generator implementation and maintenance](docs/generator.md).
+
 ## Install
 
 ```sh

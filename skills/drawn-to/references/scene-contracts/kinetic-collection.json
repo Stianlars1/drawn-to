@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "kinetic-collection",
+  "slug": "kinetic-collection",
+  "name": "A moving image collection",
+  "kind": "hero",
+  "references": [
+    "basit_designs-2095862418518008252"
+  ],
+  "implementation": [
+    "site/js/expansion/editorial.js",
+    "site/css/extra-editorial.css"
+  ],
+  "art": "Use the actual curated asset list in site/js/expansion/editorial.js as evidence of image variety. Create or curate equivalent original imagery; budget image decoding and use responsive sizes.",
+  "properties": [
+    {
+      "id": "protected-type-among-images",
+      "role": "layout",
+      "label": "Protected type amid image collection",
+      "text": "Place large readable type in a protected central zone while a curated collection of image cards occupies the surrounding field with varied size, rotation, depth order and generous intervals.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "dominant-editorial-anchor",
+      "role": "typography",
+      "label": "Dominant editorial reading anchor",
+      "text": "Keep the central type stronger than every individual image card and protect the heading, action and header throughout the composition.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095862418518008252",
+          "section": "What we see"
+        }
+      ]
+    },
+    {
+      "id": "neutral-shell-image-color",
+      "role": "color",
+      "label": "Neutral shell with image-led color",
+      "text": "Use warm near-white and graphite for the interface while richly rendered objects and illustrations carry the collection's color.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095862418518008252",
+          "section": "Type, color and material"
+        }
+      ]
+    },
+    {
+      "id": "varied-curated-image-cards",
+      "role": "graphics",
+      "label": "Varied curated image cards",
+      "text": "Give every card distinct material or imagery and establish an authored sequence of subject, crop, scale and overlap rather than scattering arbitrary rectangles.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095862418518008252",
+          "section": "Why it works"
+        }
+      ]
+    },
+    {
+      "id": "thin-layered-cards",
+      "role": "material",
+      "label": "Thin layered image cards",
+      "text": "Use crisp card edges, subtle thickness, small shadows and controlled overlaps to establish front-to-back order.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "bounded-image-drift",
+      "role": "motion",
+      "label": "Bounded slow image drift",
+      "text": "Animate image transforms slowly inside a tested envelope while type and actions remain fixed; reduced motion holds an intentional authored arrangement.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095862418518008252",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "pausable-collection",
+      "role": "interaction",
+      "label": "Pausable kinetic collection",
+      "text": "Provide a pause action and recompose the collection for portrait screens without losing the central reading zone.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095862418518008252",
+          "section": "Transfer into a website"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Full-travel collision acceptance",
+      "text": "Sample multiple timestamps and every travel extreme for collisions with the heading, actions and header, and compare the actual art quality rather than only the number of cards.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "protected-type-among-images",
+      "varied-curated-image-cards"
+    ],
+    "surface": [
+      "neutral-shell-image-color",
+      "dominant-editorial-anchor",
+      "thin-layered-cards"
+    ],
+    "behavior": [
+      "bounded-image-drift",
+      "pausable-collection"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

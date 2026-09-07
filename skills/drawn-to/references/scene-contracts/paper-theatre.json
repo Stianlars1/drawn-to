@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "id": "paper-theatre",
+  "slug": "paper-theatre",
+  "name": "A whole world in paper",
+  "kind": "editorial",
+  "references": [
+    "AdityaSur11-2096160317458030911"
+  ],
+  "implementation": [
+    "site/js/expansion/atelier-editorial.js",
+    "site/css/atelier-editorial.css"
+  ],
+  "art": "The key transparent original asset is site/assets/atelier/paper-cutout.webp. Use its alpha silhouette and grounding relationship as evidence; create a comparably detailed original paper world if adapting the subject.",
+  "properties": [
+    {
+      "id": "book-world-layout",
+      "role": "layout",
+      "label": "Pop-up world below editorial title",
+      "text": "Fill the lower two thirds of a warm editorial page with an open pop-up book. Balance a large humane title above it against a three-item chapter list on the right.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "Layout and hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "humane-serif-sans",
+      "role": "typography",
+      "label": "Humane serif and sans",
+      "text": "Pair humane serif and sans voices so the title belongs to the crafted editorial world.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "Type, color and material"
+        }
+      ]
+    },
+    {
+      "id": "layered-paper-world",
+      "role": "graphics",
+      "label": "Detailed layered paper landscape",
+      "text": "Build a connected paper landscape with layered trees, a pavilion, bridge and winding stream. Give tree crowns layered cut edges, terrain stacked contours, and include turned page edges and small structural details.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "What we see"
+        }
+      ]
+    },
+    {
+      "id": "cream-moss-paper",
+      "role": "color",
+      "label": "Cream and moss paper world",
+      "text": "Use warm cream #f1eadb, moss-green ink and many shades of cut paper.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "Type, color and material"
+        }
+      ]
+    },
+    {
+      "id": "paper-depth",
+      "role": "material",
+      "label": "Grained hinged paper depth",
+      "text": "Keep visible paper grain and fold hinges that attach the world to the page. Use contact shadows between planes and coherent directional sunlight to reveal depth.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "AdityaSur11-2096160317458030911",
+          "section": "Type, color and material"
+        }
+      ]
+    },
+    {
+      "id": "chapter-reframe",
+      "role": "interaction",
+      "label": "Chapter crop selection",
+      "text": "Chapter choices reframe one richly rendered original image and update a caption while preserving the silhouette and book base in the complete view.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "static-paper-motion",
+      "role": "motion",
+      "label": "Immediate paper crop changes",
+      "text": "The showcase is a raster cutout with CSS composition rather than live folding geometry. Reduced motion uses immediate crop changes.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "paper-detail-check",
+      "role": "context",
+      "label": "Paper structure inspection",
+      "text": "Inspect page thickness, folds, tree layers, bridge, stream and shadows at full size.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "mobile-book-check",
+      "role": "context",
+      "label": "Open-book mobile silhouette",
+      "text": "The mobile view must still read as an open book with a world inside rather than a cropped green mound. Flat clip-path trees cannot replace this authored detail.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "book-world-layout",
+      "humane-serif-sans",
+      "layered-paper-world"
+    ],
+    "surface": [
+      "cream-moss-paper",
+      "paper-depth"
+    ],
+    "behavior": [
+      "chapter-reframe",
+      "static-paper-motion"
+    ],
+    "checks": [
+      "paper-detail-check",
+      "mobile-book-check"
+    ]
+  }
+}
