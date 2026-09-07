@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "glass-identity",
+  "slug": "glass-identity",
+  "name": "Glass as an identity",
+  "kind": "hero",
+  "references": [
+    "DmitryLepisov-2093247212629139641"
+  ],
+  "implementation": [
+    "site/js/expansion/gpu.js",
+    "site/css/extra-gpu.css",
+    "site/js/graphics/three-stage.js",
+    "site/js/graphics/models.js",
+    "site/js/graphics/optical-bench.js"
+  ],
+  "art": "The folded mark is original procedural geometry. Its optical backing plane and typography are composed inside the renderer and are actually sampled through the glass. This is a known scene, not arbitrary DOM refraction.",
+  "properties": [
+    {
+      "id": "identity-scale-pair",
+      "role": "layout",
+      "label": "Hero mark beside scale proof",
+      "text": "Place a large translucent sculptural mark on the right of a pale green editorial page. Pair a simple left headline with progressively sized flat versions of the same mark so the relationship between identity and material is explicit.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DmitryLepisov-2093247212629139641",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "folded-mark-silhouette",
+      "role": "shape",
+      "label": "Shared folded mark silhouette",
+      "text": "Use one folded silhouette for both the large volume and crisp flat vector marks, retaining its meaningful cutouts and direction at small sizes.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DmitryLepisov-2093247212629139641",
+          "section": "Why it works and transfer"
+        }
+      ]
+    },
+    {
+      "id": "polished-glass-volume",
+      "role": "material",
+      "label": "Polished refracting identity glass",
+      "text": "Use a clear polished volume with a restrained cool cast, tight bevels, alternating dark and bright edge intervals and softly grounded depth. Place a typographic plane genuinely behind it so refraction is visible.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DmitryLepisov-2093247212629139641",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "sage-identity-palette",
+      "role": "color",
+      "label": "Sage-white and deep green",
+      "text": "Use a sage-white ground and deep green type, leaving the glass clear with only a restrained cool cast.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "quiet-view-change",
+      "role": "motion",
+      "label": "Quiet thickness reveal",
+      "text": "A very quiet rotation or pointer reaction may reveal thickness. Use an actual modeled mark for a changing viewpoint and a matching composed poster fallback; keep small marks as crisp vectors.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DmitryLepisov-2093247212629139641",
+          "section": "Motion evidence"
+        }
+      ]
+    },
+    {
+      "id": "refraction-landmark-check",
+      "role": "context",
+      "label": "Landmark refraction check",
+      "text": "Inspect an actual landmark through the volume and its unchanged portion outside it, both at rest and under a changing view.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "optical-finish-check",
+      "role": "context",
+      "label": "Coherent clear optical finish",
+      "text": "Look for coherent thickness and reflections with a readable clear center. A mint fill or transmission setting alone does not prove the intended optical finish.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "identity-scale-pair",
+      "folded-mark-silhouette"
+    ],
+    "surface": [
+      "sage-identity-palette",
+      "polished-glass-volume"
+    ],
+    "behavior": [
+      "quiet-view-change"
+    ],
+    "checks": [
+      "refraction-landmark-check",
+      "optical-finish-check"
+    ]
+  }
+}

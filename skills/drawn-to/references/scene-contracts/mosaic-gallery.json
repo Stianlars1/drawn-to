@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "id": "m",
+  "slug": "mosaic-gallery",
+  "name": "Chroma specimen gallery",
+  "kind": "graphic",
+  "references": [
+    "kevserctk-2090002547410870428"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "specimen-grid",
+      "role": "layout",
+      "label": "Eight-plate specimen gallery",
+      "text": "Arrange eight compact specimen plates as a disciplined 4-by-2 gallery over one wide processed chromatic field; each plate contains an index, compact palette, family name and one contextual note.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "kevserctk-2090002547410870428",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "compact-neutral-labels",
+      "role": "typography",
+      "label": "Compact neutral specimen labels",
+      "text": "Keep every plate's index, family name and note compact, neutral and readable over the field.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "kevserctk-2090002547410870428",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "shared-chroma-field",
+      "role": "color",
+      "label": "Shared violet-ochre chroma field",
+      "text": "Use one luminous field spanning violet, ochre, pink and blue behind dark translucent plates; keep swatches crisp and opaque rather than giving every card an independent gradient.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "kevserctk-2090002547410870428",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "two-scale-pixel-texture",
+      "role": "graphics",
+      "label": "Two-scale pixel texture",
+      "text": "Combine coarse field pixels with finer grain to create two inspectable scales of detail.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "kevserctk-2090002547410870428",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "quiet-gallery",
+      "role": "motion",
+      "label": "Quiet readable gallery",
+      "text": "Keep the background quiet and the plates fixed for reading; on mobile reflow to two columns without losing a specimen.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "kevserctk-2090002547410870428",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "truthful-membership",
+      "role": "context",
+      "label": "Historical membership qualifier",
+      "text": "Do not present historical family memberships as current totals.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Field-through-plate acceptance",
+      "text": "Ensure the color field remains perceptible through the plates while every label stays readable.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "specimen-grid"
+    ],
+    "surface": [
+      "shared-chroma-field",
+      "compact-neutral-labels",
+      "two-scale-pixel-texture"
+    ],
+    "behavior": [
+      "quiet-gallery",
+      "truthful-membership"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

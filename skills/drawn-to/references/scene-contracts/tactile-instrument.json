@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "i",
+  "slug": "tactile-instrument",
+  "name": "Tactile command",
+  "kind": "component",
+  "references": [
+    "cabralorenzo-2090102237548740718",
+    "flornkm-2089749302960615875"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "button-as-object",
+      "role": "layout",
+      "label": "Command button as product object",
+      "text": "Centre one oversized command button beneath a short headline on a quiet warm instrument ground.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "flornkm-2089749302960615875",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "engraved-label",
+      "role": "typography",
+      "label": "Readable engraved label",
+      "text": "Give the monochrome label an engraved appearance while retaining clear legibility.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "ivory-indicator-palette",
+      "role": "color",
+      "label": "Ivory with signal indicator",
+      "text": "Use warm ivory #f2f1ee, graphite and a tiny orange or green indicator.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "cabralorenzo-2090102237548740718",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "machined-button",
+      "role": "material",
+      "label": "Machined layered command",
+      "text": "Construct a machined outer bezel, recessed track, raised cap, separate indicator window and small fasteners, with visible thickness, inset shadow, edge bevels and directional highlights.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "flornkm-2089749302960615875",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "depressing-cap",
+      "role": "motion",
+      "label": "Short cap depression",
+      "text": "Depress the cap slightly on press while preserving the button's dimensions through every state.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "flornkm-2089749302960615875",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "honest-copy-state",
+      "role": "interaction",
+      "label": "Honest copy indicator",
+      "text": "On successful copy, update the indicator and an accessible status; never display success after a failed copy.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Three-plane command acceptance",
+      "text": "Verify bezel, slot and cap as three distinct planes, and keep the entire command operable and legible at 390px without shrinking it into a toy.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "button-as-object"
+    ],
+    "surface": [
+      "ivory-indicator-palette",
+      "engraved-label",
+      "machined-button"
+    ],
+    "behavior": [
+      "depressing-cap",
+      "honest-copy-state"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

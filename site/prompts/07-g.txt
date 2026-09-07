@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A left copy column balances a large dimetric exploded document on the right. Five parallel sheets reveal a decision ledger, with a shared perspective, external guides and clear air between layers.
+Balance a left copy column with a large dimetric exploded document on the right, preserving a shared perspective, external guides and clear air between five parallel sheets. Draw five planes with visible edges, subtle face values and real miniature decision-ledger content, using a consistent line hierarchy from outer silhouette to document structure to annotations.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Charcoal #1a1a1c, near-white linework and a minimal green reading accent. Each plane has an edge, a subtle face value and real miniature content. Use consistent projection and line hierarchy: outer silhouette, document structure, then annotations.
+Use charcoal #1a1a1c, near-white linework and one minimal green reading accent.
 
 BEHAVIOR
-The object can stay composed and still; any inspection movement must retain registration between sheets. Keep text in the main column as real selectable DOM text.
+The object may remain still; any inspection movement must preserve registration between all sheets. Keep the text in the main copy column as real selectable DOM text.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Do not substitute five arbitrary rotated rectangles. On mobile preserve the entire projection, its outer leaders and the relationship of plane spacing to object width.
+Do not substitute arbitrary rotated rectangles. On mobile retain the complete projection, its outer leaders and the relationship between plane spacing and object width.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

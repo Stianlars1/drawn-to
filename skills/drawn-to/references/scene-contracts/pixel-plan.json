@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "pixel-plan",
+  "slug": "pixel-plan",
+  "name": "Jade and paper",
+  "kind": "onboarding",
+  "references": [
+    "PostiauxCharles-2095509261908382083"
+  ],
+  "implementation": [
+    "site/js/expansion/interactive.js",
+    "site/css/extra-interactive.css"
+  ],
+  "art": "The showcase jade object is site/assets/expansion/interactive/jade-aperture.png. Preserve its rich glass/material finish in an original or authorized asset.",
+  "properties": [
+    {
+      "id": "split-choice-page",
+      "role": "layout",
+      "label": "Editorial choice split",
+      "text": "Use a split light onboarding page: an editorial heading and small tangible paper stack on the left, with a substantial rounded choice card on the right. Crown the card with a luminous jade object before its options and outcome.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "forest-interface-type",
+      "role": "typography",
+      "label": "Readable forest interface type",
+      "text": "Use dark forest ink with readable option descriptions and concise outcome copy.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "mint-paper-palette",
+      "role": "color",
+      "label": "Mint, paper and forest",
+      "text": "Use mint, warm white, dark forest ink and pale jade glass, with a strong dark-green action.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "jade-and-paper-material",
+      "role": "material",
+      "label": "Luminous jade and crisp paper",
+      "text": "Give the jade object apparent thickness, caustic-like internal light and a soft shadow. Give the paper sheets crisp edges, offset depth and fine print.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "PostiauxCharles-2095509261908382083",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "depth-choice-control",
+      "role": "interaction",
+      "label": "Three consequential depth choices",
+      "text": "Three depth choices update the outcome text, radio state and confirmation. Arrow keys, touch and pointer work consistently; the decorative object can remain still.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "essential-assets-check",
+      "role": "context",
+      "label": "Essential object and paper check",
+      "text": "The jade image and paper stack are essential rather than optional garnish.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "choice-visibility-check",
+      "role": "context",
+      "label": "Complete choice visibility",
+      "text": "Keep all three choices, the resulting outcome and the action visible without squeezing the labels.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "split-choice-page",
+      "forest-interface-type"
+    ],
+    "surface": [
+      "mint-paper-palette",
+      "jade-and-paper-material"
+    ],
+    "behavior": [
+      "depth-choice-control"
+    ],
+    "checks": [
+      "essential-assets-check",
+      "choice-visibility-check"
+    ]
+  }
+}

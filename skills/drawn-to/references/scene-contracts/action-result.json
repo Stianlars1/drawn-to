@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "action-result",
+  "slug": "action-result",
+  "name": "Action beside its result",
+  "kind": "onboarding",
+  "references": [
+    "disarto_max-2093019047851913475"
+  ],
+  "implementation": [
+    "site/js/expansion/interactive.js",
+    "site/css/extra-interactive.css"
+  ],
+  "art": "The original preview object is site/assets/expansion/interactive/metal-aperture.png. Retain its modeled metallic finish rather than replacing it with skeleton bars.",
+  "properties": [
+    {
+      "id": "split-workflow",
+      "role": "layout",
+      "label": "Action and result split",
+      "text": "Use a dark split onboarding surface with a concise project-name and tone form beside a large persistent live preview. Controls and output form one continuous story rather than unrelated cards.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "disarto_max-2093019047851913475",
+          "section": "Layout and hierarchy"
+        }
+      ]
+    },
+    {
+      "id": "complete-miniature",
+      "role": "graphics",
+      "label": "Complete miniature preview",
+      "text": "Render an actual miniature brand header, typographic hero, detailed metal aperture image and footer. Use composed editorial hierarchy and a small original visual rather than skeleton bars alone.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "disarto_max-2093019047851913475",
+          "section": "What we see"
+        }
+      ]
+    },
+    {
+      "id": "graphite-palette",
+      "role": "color",
+      "label": "Graphite with a brighter result",
+      "text": "Use near-black and graphite planes with subtle divider lines, quiet metadata and a clearly brighter preview surface.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "disarto_max-2093019047851913475",
+          "section": "Type and material"
+        }
+      ]
+    },
+    {
+      "id": "quiet-sans",
+      "role": "typography",
+      "label": "Clean quiet sans",
+      "text": "Use clean sans typography with restrained metadata and a real editorial type hierarchy inside the preview.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "live-direction-update",
+      "role": "interaction",
+      "label": "Live direction consequence",
+      "text": "Editing the project name and selecting Quiet, Warm or Bold updates the actual preview, type treatment, palette and explanatory text. The submit action confirms the current direction; inputs remain stable and keyboard operation does not trigger page navigation.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "disarto_max-2093019047851913475",
+          "section": "Transfer into a website"
+        }
+      ]
+    },
+    {
+      "id": "visible-change-check",
+      "role": "context",
+      "label": "Visible result check",
+      "text": "The selected direction must visibly change the result. Review initial, intermediate and completed states at desktop and phone sizes.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "split-workflow",
+      "complete-miniature",
+      "quiet-sans"
+    ],
+    "surface": [
+      "graphite-palette"
+    ],
+    "behavior": [
+      "live-direction-update"
+    ],
+    "checks": [
+      "visible-change-check"
+    ]
+  }
+}

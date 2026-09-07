@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "z",
+  "slug": "blend-matrix",
+  "name": "A visual decision matrix",
+  "kind": "component",
+  "references": [],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css",
+    "skills/drawn-to/references/style-families.md"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "matrix-and-reading-panel",
+      "role": "layout",
+      "label": "Eight-by-eight matrix and detail panel",
+      "text": "Balance an eight-by-eight labelled decision matrix with one stable detail-reading panel.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "orthogonal-matrix-labels",
+      "role": "typography",
+      "label": "Orthogonal matrix labels",
+      "text": "Set column labels vertically, row labels horizontally and the detail explanation in a calm readable measure.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "blue-red-matrix-signals",
+      "role": "color",
+      "label": "Blue and red matrix signals",
+      "text": "Use blue-black, very thin square cells, small blue positive marks, muted red tension marks and one exact bright focus outline.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "three-state-pairing-marks",
+      "role": "graphics",
+      "label": "Three-state pairing marks",
+      "text": "Distinguish documented pairings, combinations needing deliberate reconciliation and unassessed pairs with three clearly different marks.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "equivalent-cell-inspection",
+      "role": "interaction",
+      "label": "Equivalent matrix inspection",
+      "text": "Make hover, focus and tap reveal the same named pairing detail; use roving arrow-key focus inside the matrix and keep those keys from driving the page carousel.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "unknown-is-not-impossible",
+      "role": "context",
+      "label": "Unknown pairing discipline",
+      "text": "Treat unassessed as unknown rather than impossible, and never infer a universal aesthetic prohibition from zero co-occurrence in a small archive.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Visible matrix context acceptance",
+      "text": "Keep labels, the focused cell and its explanation visible together at mobile width, and give every cell an accessible name.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "matrix-and-reading-panel",
+      "three-state-pairing-marks"
+    ],
+    "surface": [
+      "blue-red-matrix-signals",
+      "orthogonal-matrix-labels"
+    ],
+    "behavior": [
+      "equivalent-cell-inspection",
+      "unknown-is-not-impossible"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

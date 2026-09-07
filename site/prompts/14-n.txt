@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A bespoke dot-matrix chart occupies one deliberate region of a dark canvas. Family names sit in a fixed left column, discrete lit dots encode the values and tabular totals align at the right.
+Give a bespoke dot-matrix chart one deliberate region of a dark canvas, with family names in a fixed left column, discrete data points in the centre and tabular totals aligned at right amid generous surrounding air. Encode values as discrete lit dots and ensure every dot count reconciles with its displayed total.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Near-black with cool blue points, a small bloom around each lit point and crisp central pixels. Use low-contrast guide structure and brighter active evidence. Compact type and large surrounding air let the data drawing carry the identity.
+Use near-black, low-contrast guide structure and cool blue active points whose crisp central pixels remain brighter than their small blooms. Use compact labels and tabular monospace totals with enough measure for the longest family name.
 
 BEHAVIOR
-Data may appear once or remain still; values being read do not drift. Provide the same information as readable text, with historical/sample status stated where applicable.
+Data may appear once or remain still, but values being read never drift. Provide the same information as accessible readable text. State historical or sample status wherever applicable.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -28,5 +28,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Dot counts must reconcile with displayed values. Mobile labels cannot collide with the longest row; the glow must not merge adjacent points.
+At mobile widths keep labels clear of the longest row and prevent adjacent point glows from merging.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

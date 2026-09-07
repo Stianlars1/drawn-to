@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "b",
+  "slug": "pastel-stage",
+  "name": "Pastel horizon",
+  "kind": "hero",
+  "references": [],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css",
+    "docs/design-locks/2026-08-21-drawn-to-site.md"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "horizon-hero",
+      "role": "layout",
+      "label": "Open horizon hero",
+      "text": "Float one centred typographic statement above a broad low horizon, with a single white rounded command surface beneath it and open sky around the composition.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "spacious-sans",
+      "role": "typography",
+      "label": "Generously spaced medium sans",
+      "text": "Use medium-weight sans typography with generously spaced lines and tiny restrained monospace details.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "lavender-blue-palette",
+      "role": "color",
+      "label": "Lavender sky and blue ink",
+      "text": "Use near-white lavender #f4f6fb, powder blue and deep blue ink #1b2a50.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "layered-horizon",
+      "role": "graphics",
+      "label": "Layered illuminated horizon",
+      "text": "Build a long curved illuminated edge with several quiet atmospheric value layers and fine grain; keep the visual weight in the horizon rim rather than adding cards.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "lifted-command",
+      "role": "material",
+      "label": "Lifted white command surface",
+      "text": "Give the white command surface a crisp upper edge and a soft lift shadow.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "quiet-feedback",
+      "role": "interaction",
+      "label": "Stable press confirmation",
+      "text": "Use brief local press or copy confirmation without changing the button width.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "near-still-atmosphere",
+      "role": "motion",
+      "label": "Near-still atmospheric drift",
+      "text": "Keep the composition complete at rest; any atmospheric drift is nearly imperceptible and stops when hidden.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Wide horizon acceptance",
+      "text": "On mobile preserve the horizon as a wide surface rather than a circular glow, and verify that pale controls and body copy remain readable.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "horizon-hero",
+      "layered-horizon"
+    ],
+    "surface": [
+      "lavender-blue-palette",
+      "spacious-sans",
+      "lifted-command"
+    ],
+    "behavior": [
+      "near-still-atmosphere",
+      "quiet-feedback"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

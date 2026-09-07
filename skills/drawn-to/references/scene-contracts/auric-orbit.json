@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "auric-orbit",
+  "slug": "auric-orbit",
+  "name": "Auric orbit / mineral light",
+  "kind": "hero",
+  "references": [
+    "zzzzshawn-2096548536972370319"
+  ],
+  "implementation": [
+    "site/js/expansion/motion-rendered.js",
+    "site/css/motion-rendered.css",
+    "site/js/motion/runtime.js",
+    "site/js/motion/scenes/auric.js"
+  ],
+  "art": "The original effect is code-native. Read its geometry and physical material construction. No Orbkit/XorDev shader source was copied; preserve that distinction and check source licenses before substituting a third-party shader.",
+  "properties": [
+    {
+      "id": "mineral-orbit-layout",
+      "role": "layout",
+      "label": "Monumental mineral with spare copy",
+      "text": "Let one oversized irregular mineral orb dominate a blue-black stage, balanced by a wide spare editorial statement at left, quiet negative space and material controls at the lower edge. Wrap two very fine orbital arcs and tiny scattered specks around the silhouette.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "rough-mineral-orb",
+      "role": "shape",
+      "label": "Irregular relief-cut mineral orb",
+      "text": "Use a large irregular orb with actual displaced geometric relief, fine ridges and occluded valleys rather than a smooth sphere.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "warm-editorial-contrast",
+      "role": "typography",
+      "label": "Neutral sans with humane serif emphasis",
+      "text": "Set the large statement in a neutral sans with warm text and humane serif emphasis, keeping the type spare enough to preserve the mineral orb's hierarchy.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "charcoal-gold-mineral",
+      "role": "material",
+      "label": "Charcoal mineral with gold veins",
+      "text": "Build a charcoal mineral body with muted metallic inclusions, narrow warm-gold veins and tiny granular detail. Give veins and stone different roughness and metallic response; do not replace them with uniform emission or a smooth gradient.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "zzzzshawn-2096548536972370319",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "raking-studio-light",
+      "role": "light",
+      "label": "Raking studio light over relief",
+      "text": "Use coherent studio light that catches ridges, leaves valleys dark and lets the inner veins read as light beneath matter.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "mineral-state-motion",
+      "role": "motion",
+      "label": "Stateful rotating mineral surface",
+      "text": "Mineral, Awakened and Glacial are three actual material/light states. Inner light changes vein glow; slow rotation and fine-pointer movement reveal the relief. Pause and reduced motion retain a composed object.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "zzzzshawn-2096548536972370319",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "showcase-renderer-facts",
+      "role": "context",
+      "label": "Original displaced renderer",
+      "text": "The showcase uses a displaced Three.js mesh and original procedural material code. These implementation facts do not establish or license the external source's shader equations.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "mineral-inspection-check",
+      "role": "context",
+      "label": "Mineral relief inspection",
+      "text": "Inspect the full silhouette, vein thickness, ridge highlights, dark valleys and transition between all three materials. Every state must remain recognizable at phone size.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "renderer-lifecycle-check",
+      "role": "context",
+      "label": "Auric renderer lifecycle",
+      "text": "Verify hidden-tab stop, disposal, matching posters and actual CPU/GPU workload.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "mineral-orbit-layout",
+      "rough-mineral-orb",
+      "warm-editorial-contrast"
+    ],
+    "surface": [
+      "charcoal-gold-mineral",
+      "raking-studio-light"
+    ],
+    "behavior": [
+      "mineral-state-motion",
+      "showcase-renderer-facts"
+    ],
+    "checks": [
+      "mineral-inspection-check",
+      "renderer-lifecycle-check"
+    ]
+  }
+}

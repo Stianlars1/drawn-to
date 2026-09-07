@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A dark split onboarding surface keeps a concise project-name and tone form beside a large persistent live preview. Controls and output form one story rather than unrelated cards. The preview has an actual miniature brand header, typographic hero, detailed metal aperture image and footer.
+Use a dark split onboarding surface with a concise project-name and tone form beside a large persistent live preview. Controls and output form one continuous story rather than unrelated cards. Render an actual miniature brand header, typographic hero, detailed metal aperture image and footer. Use composed editorial hierarchy and a small original visual rather than skeleton bars alone. Use clean sans typography with restrained metadata and a real editorial type hierarchy inside the preview.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Near-black and graphite with subtle divider lines, clean sans type, quiet metadata and a clearly brighter preview surface. The live preview contains real editorial typography, composed hierarchy and a small original visual, not skeleton bars only.
+Use near-black and graphite planes with subtle divider lines, quiet metadata and a clearly brighter preview surface.
 
 BEHAVIOR
-Editing the project name and selecting Quiet, Warm or Bold updates the actual preview, type treatment, palette and explanatory text. The submit action confirms the current direction. Inputs remain stable and keyboard operation does not trigger page navigation.
+Editing the project name and selecting Quiet, Warm or Bold updates the actual preview, type treatment, palette and explanatory text. The submit action confirms the current direction; inputs remain stable and keyboard operation does not trigger page navigation.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 The original preview object is site/assets/expansion/interactive/metal-aperture.png. Retain its modeled metallic finish rather than replacing it with skeleton bars.

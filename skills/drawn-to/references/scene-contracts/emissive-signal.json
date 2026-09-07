@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "id": "h",
+  "slug": "emissive-signal",
+  "name": "Emissive signal",
+  "kind": "hero",
+  "references": [
+    "arknow91-2089955524007674031",
+    "insporadesign-2088123952136638508"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "centred-action-slot",
+      "role": "layout",
+      "label": "Centred physical action slot",
+      "text": "Compose a sparse dark page with centred type and one physical-looking action slot, using a thin amber line beneath it as the only luminous event.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "insporadesign-2088123952136638508",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "silver-amber-palette",
+      "role": "color",
+      "label": "Silver and amber on black",
+      "text": "Use near-black #08080a, soft silver type and amber #ffb43c.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "insporadesign-2088123952136638508",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "recessed-slot",
+      "role": "material",
+      "label": "Recessed emissive slot",
+      "text": "Keep the dark recessed surround and physical rim visible around the thin source line.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "insporadesign-2088123952136638508",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "local-amber-light",
+      "role": "light",
+      "label": "Local amber source and halo",
+      "text": "Build a small bright source and a wider low-opacity halo while preserving the line's sharp core; body-copy contrast must remain independent of the glow.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "arknow91-2089955524007674031",
+          "section": "Graphic language"
+        },
+        {
+          "id": "insporadesign-2088123952136638508",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "signal-feedback",
+      "role": "interaction",
+      "label": "Local light feedback",
+      "text": "Use local light and label feedback for press and copy actions.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "insporadesign-2088123952136638508",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "head-tail-sweep",
+      "role": "motion",
+      "label": "Single-line signal sweep",
+      "text": "If a signal sweeps, keep its bright head and softer tail on the same line and stop it at rest.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Bloom and edge acceptance",
+      "text": "Ensure bloom never washes out the action label, then inspect edge sharpness close up, silhouette at a distance and contrast on desktop and phone.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "centred-action-slot"
+    ],
+    "surface": [
+      "silver-amber-palette",
+      "recessed-slot",
+      "local-amber-light"
+    ],
+    "behavior": [
+      "signal-feedback",
+      "head-tail-sweep"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

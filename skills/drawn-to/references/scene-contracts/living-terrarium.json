@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "living-terrarium",
+  "slug": "living-terrarium",
+  "name": "A living material study",
+  "kind": "editorial",
+  "references": [
+    "DmitryLepisov-2093247212629139641"
+  ],
+  "implementation": [
+    "site/js/expansion/atelier-editorial.js",
+    "site/css/atelier-editorial.css"
+  ],
+  "art": "The original image is site/assets/atelier/living-terrarium.webp. A detailed image is essential; do not try to substitute a translucent div containing generic plant icons.",
+  "properties": [
+    {
+      "id": "terrarium-inspection-layout",
+      "role": "layout",
+      "label": "Terrarium with editorial inspection",
+      "text": "Let a massive thick-glass vessel containing a miniature moss garden dominate the right. Use a calm left editorial column with three numbered inspection points, and a circular loupe that lets a small detail command as much attention as the whole silhouette.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "miniature-garden-graphics",
+      "role": "graphics",
+      "label": "Layered miniature garden",
+      "text": "Build the image from condensation beads, layered ferns, wet stone, soft moss and a small dark pool at several scales of detail.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "sage-garden-palette",
+      "role": "color",
+      "label": "Sage-gray and dark green",
+      "text": "Use a sage-gray ground, dark green type and natural wet greens within the vessel.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "thick-terrarium-glass",
+      "role": "material",
+      "label": "Thick distorting terrarium glass",
+      "text": "Use thick clear glass that distorts the miniature scene at its edge and carries large soft reflections.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DmitryLepisov-2093247212629139641",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "canopy-light",
+      "role": "light",
+      "label": "Canopy-penetrating light",
+      "text": "Let light penetrate the canopy and cast contact shadows on the rocks.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "registered-loupe",
+      "role": "interaction",
+      "label": "Registered magnifying loupe",
+      "text": "Glass & water, Canopy & light and Stone & moss move a true magnifying crop to the corresponding feature while preserving pixel alignment after resize.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "raster-magnification",
+      "role": "context",
+      "label": "Raster magnification boundary",
+      "text": "This is an original high-resolution raster scene with a CSS magnification layer, not interactive simulated water.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "loupe-detail-check",
+      "role": "context",
+      "label": "Loupe registration check",
+      "text": "Compare loupe registration, glass rim, condensation and leaf scale.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "portrait-loupe-check",
+      "role": "context",
+      "label": "Bounded portrait loupe",
+      "text": "Test all inspection points in portrait; keep the lens inside the image and away from the reading column.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "terrarium-inspection-layout",
+      "miniature-garden-graphics"
+    ],
+    "surface": [
+      "sage-garden-palette",
+      "thick-terrarium-glass",
+      "canopy-light"
+    ],
+    "behavior": [
+      "registered-loupe",
+      "raster-magnification"
+    ],
+    "checks": [
+      "loupe-detail-check",
+      "portrait-loupe-check"
+    ]
+  }
+}

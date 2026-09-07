@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "id": "r",
+  "slug": "instrument-hud",
+  "name": "Amber instrument HUD",
+  "kind": "component",
+  "references": [
+    "recentdesign-2089617450815963434"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "semicircular-instrument",
+      "role": "layout",
+      "label": "Centred semicircular instrument",
+      "text": "Centre a calibrated semicircular instrument on a fine dark engineering grid, placing a large numeric reading inside the arc with a small unit label and compact secondary readout row.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "recentdesign-2089617450815963434",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "tabular-hud-type",
+      "role": "typography",
+      "label": "Tabular HUD readout",
+      "text": "Use tabular monospace for the main value, unit and secondary readings.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "recentdesign-2089617450815963434",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "black-green-amber",
+      "role": "color",
+      "label": "Black-green and amber scale",
+      "text": "Use black-green #040607, warm amber #ffb43c and dim machined gray.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "recentdesign-2089617450815963434",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "ranked-gauge-marks",
+      "role": "graphics",
+      "label": "Ranked calibrated gauge",
+      "text": "Build thick and thin tick ranks, an inner hairline arc and an exact lit-segment endpoint around the named scale.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "recentdesign-2089617450815963434",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "concentrated-amber-glow",
+      "role": "light",
+      "label": "Concentrated amber glow",
+      "text": "Concentrate the amber glow around lit evidence while preserving a dark core inside the light.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "recentdesign-2089617450815963434",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "single-source-value",
+      "role": "interaction",
+      "label": "Single-source gauge value",
+      "text": "Generate the lit tick count, displayed value and accessible description from one explicitly named quantity and scale.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "recentdesign-2089617450815963434",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "truthful-telemetry",
+      "role": "context",
+      "label": "No decorative telemetry",
+      "text": "Do not present decorative values as live telemetry.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Calibrated-object acceptance",
+      "text": "Reconcile the meter scale, retain legibility of tiny labels and verify that the result reads as a calibrated object rather than a number inside a ring.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "semicircular-instrument",
+      "ranked-gauge-marks"
+    ],
+    "surface": [
+      "black-green-amber",
+      "tabular-hud-type",
+      "concentrated-amber-glow"
+    ],
+    "behavior": [
+      "single-source-value",
+      "truthful-telemetry"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

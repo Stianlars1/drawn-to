@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "k",
+  "slug": "pebble-trio",
+  "name": "Soft feature instruments",
+  "kind": "features",
+  "references": [
+    "Triopixels-2089426990696685794"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "dissolving-feature-trio",
+      "role": "layout",
+      "label": "Dissolving feature trio",
+      "text": "Arrange three pale feature scenes whose image areas dissolve into their text areas, using floating fragments to show a layered ledger, a two-way concept diagram and a plotted timing curve.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "Triopixels-2089426990696685794",
+          "section": "Layout & composition"
+        },
+        {
+          "id": "Triopixels-2089426990696685794",
+          "section": "Card anatomy"
+        }
+      ]
+    },
+    {
+      "id": "periwinkle-neutral-palette",
+      "role": "color",
+      "label": "Periwinkle and milky white",
+      "text": "Use pale periwinkle, milky white, blue-gray labels and restrained semantic accents.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "Triopixels-2089426990696685794",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "layered-ui-fragments",
+      "role": "graphics",
+      "label": "Layered instrument fragments",
+      "text": "Place fine-content fragments on multiple planes with slight translucency, giving each scene a specific explanatory drawing rather than a generic gradient rectangle.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "Triopixels-2089426990696685794",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "buoyant-surfaces",
+      "role": "material",
+      "label": "Buoyant translucent surfaces",
+      "text": "Use soft contact shadows and light translucency to make white fragments buoyant without generic giant drop shadows.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "Triopixels-2089426990696685794",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "shared-directional-light",
+      "role": "light",
+      "label": "Shared directional light",
+      "text": "Light all three scenes from one consistent direction.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "contained-scene-motion",
+      "role": "motion",
+      "label": "Contained instrument motion",
+      "text": "If used, keep tiny plotted runners or floating motion inside the scenes while descriptive text remains still; every scene retains a strong composed frame.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "Triopixels-2089426990696685794",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Three-scene reflow acceptance",
+      "text": "Preserve all three features and their drawings through mobile reflow.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "dissolving-feature-trio",
+      "layered-ui-fragments"
+    ],
+    "surface": [
+      "periwinkle-neutral-palette",
+      "buoyant-surfaces",
+      "shared-directional-light"
+    ],
+    "behavior": [
+      "contained-scene-motion"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

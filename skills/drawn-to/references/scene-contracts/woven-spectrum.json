@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "woven-spectrum",
+  "slug": "woven-spectrum",
+  "name": "Woven light",
+  "kind": "hero",
+  "references": [
+    "basit_designs-2095821165306732974"
+  ],
+  "implementation": [
+    "site/js/expansion/studio.js",
+    "site/css/atelier-studio.css",
+    "site/js/atelier/runtime.js",
+    "site/js/atelier/materials.js",
+    "site/js/atelier/scenes/woven.js"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "diagonal-weave-layout",
+      "role": "layout",
+      "label": "Diagonal woven sweep",
+      "text": "Place an oversized woven sweep of narrow iridescent strips on a dark navy editorial stage. Cross the luminous bundle diagonally through the right and lower field, protect a compact left headline in stable negative space and keep small tension controls low.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095821165306732974",
+          "section": "What we see"
+        }
+      ]
+    },
+    {
+      "id": "many-thickened-strips",
+      "role": "shape",
+      "label": "Twenty-two thickened ribbon strips",
+      "text": "Model 22 separately thickened ribbon strips with smooth long-wave curvature, twisting edge normals, very narrow gaps and one shared studio environment.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "thin-film-weave",
+      "role": "material",
+      "label": "Dimensional thin-film weave",
+      "text": "Use cyan, violet and pink thin-film metal over deep navy #080b16, with silver-lilac type. Fine material texture, occluded folds, crisp edge reflections and broad soft highlights make the weave dimensional. The showcase uses Three.js physical metal with roughness .14 and iridescence over 130-660nm thickness variation.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095821165306732974",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "tension-geometry",
+      "role": "interaction",
+      "label": "Open-to-folded tension control",
+      "text": "A tension slider alters the actual weave geometry from Open through Gathered to Folded. Rebuild geometry only when the control changes and dispose replaced buffers.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "restrained-reflective-motion",
+      "role": "motion",
+      "label": "Restrained reflective orientation",
+      "text": "Use slow restrained orientation changes to reveal reflected light, with pause, reduced-motion support and no hidden rendering.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095821165306732974",
+          "section": "Motion evidence"
+        }
+      ]
+    },
+    {
+      "id": "three-tension-check",
+      "role": "context",
+      "label": "Three-tension weave inspection",
+      "text": "Compare strip spacing, edge thickness, front/back overlap, highlight rhythm and silhouette at three tensions and in both aspect ratios.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "weave-fidelity-check",
+      "role": "context",
+      "label": "True multi-strip weave",
+      "text": "A single rainbow ribbon or flat gradient wave does not reproduce this look.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "diagonal-weave-layout",
+      "many-thickened-strips"
+    ],
+    "surface": [
+      "thin-film-weave"
+    ],
+    "behavior": [
+      "tension-geometry",
+      "restrained-reflective-motion"
+    ],
+    "checks": [
+      "three-tension-check",
+      "weave-fidelity-check"
+    ]
+  }
+}

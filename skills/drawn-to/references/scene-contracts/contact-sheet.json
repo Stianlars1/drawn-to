@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "contact-sheet",
+  "slug": "contact-sheet",
+  "name": "The things you keep",
+  "kind": "editorial",
+  "references": [
+    "LexnLin-2095920966899728661"
+  ],
+  "implementation": [
+    "site/js/expansion/atelier-collection.js",
+    "site/css/atelier-collection.css"
+  ],
+  "art": "The source lists six original images in site/js/expansion/atelier-collection.js. Preserve comparable subject and material diversity, with optimized but inspectable image resolution.",
+  "properties": [
+    {
+      "id": "film-editor-layout",
+      "role": "layout",
+      "label": "Film-editor contact sheet",
+      "text": "Balance large serif/sans words on the left with one large selected photograph bounded by perforated film rails. Present six richly different thumbnails in a bottom strip, keeping caption and selected-frame count aligned with the main image.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "mixed-editorial-type",
+      "role": "typography",
+      "label": "Large mixed editorial type",
+      "text": "Use large soft-ivory serif and sans words with quiet captions and precise frame counts.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "six-image-collection",
+      "role": "graphics",
+      "label": "Six materially diverse frames",
+      "text": "Contrast chrome on velvet, a night garden, paper, glass with foliage, studio materials and engraved ink without forcing them through one color filter.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "LexnLin-2095920966899728661",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "charcoal-film-palette",
+      "role": "color",
+      "label": "Charcoal film and acid green",
+      "text": "Use charcoal-green #191c1b, soft ivory type and one pale acid-green accent.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "restrained-film-frames",
+      "role": "material",
+      "label": "Restrained film borders",
+      "text": "Give image frames restrained borders and precise gutters rather than ornamental card chrome.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "select-and-reorder",
+      "role": "interaction",
+      "label": "Select, inspect and reorder frames",
+      "text": "Selecting a thumbnail updates the main image, caption and selected state. Left and right controls reorder the selected frame and disable at either end; the main image opens a detail dialog. Preserve focus during reordering and report position accessibly.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "six-crop-check",
+      "role": "context",
+      "label": "All six crops and states",
+      "text": "Check all six actual image crops and their selection states.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "image-fidelity-check",
+      "role": "context",
+      "label": "Inspectable image fidelity",
+      "text": "Do not replace detailed originals with low-resolution thumbnails or gradient placeholders.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "film-editor-layout",
+      "mixed-editorial-type",
+      "six-image-collection"
+    ],
+    "surface": [
+      "charcoal-film-palette",
+      "restrained-film-frames"
+    ],
+    "behavior": [
+      "select-and-reorder"
+    ],
+    "checks": [
+      "six-crop-check",
+      "image-fidelity-check"
+    ]
+  }
+}

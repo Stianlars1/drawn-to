@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "silver-tide",
+  "slug": "silver-tide",
+  "name": "Silver tide / an authored moving surface",
+  "kind": "hero",
+  "references": [
+    "vercel-2092999180780556643"
+  ],
+  "implementation": [
+    "site/js/motion/film.js",
+    "site/js/motion/scenes/tide.js",
+    "scripts/export-motion-film.mjs",
+    "site/assets/motion/films/provenance.json",
+    "site/js/expansion/motion-rendered.js",
+    "site/css/motion-rendered.css"
+  ],
+  "art": "Use the original encoded films under site/assets/motion/films/ and matched posters, or reproduce them with the linked shader/export pipeline. The authored wave function has a 16-second analytic period; omit the duplicate final frame when exporting.",
+  "properties": [
+    {
+      "id": "reflective-horizon-layout",
+      "role": "layout",
+      "label": "Meditative horizon over moving water",
+      "text": "Fill the page with a wide dark sea beneath a sparse meditative heading. Preserve a coherent low horizon and quiet upper reading area, balanced by a small right note and bottom light and pace controls.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "vercel-2092999180780556643",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "layered-reflective-water",
+      "role": "material",
+      "label": "Layered reflective dark water",
+      "text": "Layer long swells and finer ripples into one continuous blue-black water surface with sharp silver reflection fragments and darker troughs. Avoid large blurry sine bumps.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "vercel-2092999180780556643",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "silver-afterglow-light",
+      "role": "light",
+      "label": "Silver and amber horizon light",
+      "text": "Use cool silver specular fragments by default; the Afterglow state adds warm amber light while preserving the same wave structure and horizon.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "authored-tide-playback",
+      "role": "motion",
+      "label": "Deterministic 16-second tide loop",
+      "text": "Use a deterministic authored 16-second wave loop with intentional hover or explicit playback. Pace changes playback rate; Silver and Afterglow select matched films. Pause on hover leave and hidden tabs, and keep keyboard playback available.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "vercel-2092999180780556643",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "deferred-film-delivery",
+      "role": "context",
+      "label": "Deferred film and poster delivery",
+      "text": "Defer video bytes until needed. Reduced motion and Save-Data retain selectable matching posters. The films come from the original shader and remain inspectable through the source capture route.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "wave-film-check",
+      "role": "context",
+      "label": "Wave film continuity check",
+      "text": "Compare wave detail, horizon, specular shape and the loop boundary. Confirm source changes never show a stale frame and that no video downloads before needed.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "reflective-horizon-layout"
+    ],
+    "surface": [
+      "layered-reflective-water",
+      "silver-afterglow-light"
+    ],
+    "behavior": [
+      "authored-tide-playback",
+      "deferred-film-delivery"
+    ],
+    "checks": [
+      "wave-film-check"
+    ]
+  }
+}

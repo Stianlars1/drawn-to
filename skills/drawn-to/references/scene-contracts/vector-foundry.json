@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "vector-foundry",
+  "slug": "vector-foundry",
+  "name": "Vector foundry / a line can hold a world",
+  "kind": "graphic",
+  "references": [
+    "kairevicius-2090424600886759913",
+    "its_sslvr-2092129852514029770"
+  ],
+  "implementation": [
+    "site/js/expansion/motion-instruments.js",
+    "site/css/motion-instruments.css"
+  ],
+  "art": "This is an original native SVG projection. Read the shared surface equation and point projection rather than replacing the drawing with a static image.",
+  "properties": [
+    {
+      "id": "editorial-blueprint-layout",
+      "role": "layout",
+      "label": "Serif editorial sheet with wave specimen",
+      "text": "Balance a large narrow serif statement with an isometric ruled wave sheet on a paper-and-blueprint surface. Frame it with a fine ground projection, specimen index, measured-looking annotation and small seal.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "its_sslvr-2092129852514029770",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "coherent-ruled-surface",
+      "role": "graphics",
+      "label": "One equation for contour and ruling",
+      "text": "Construct the wave from crisp continuous vector paths in a carefully proportioned 2:1-like isometric projection. The outer contour and internal rulings must derive from the same parametric surface; detail is structural rather than textured 3D decoration.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "kairevicius-2090424600886759913",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "paper-blueprint-palette",
+      "role": "color",
+      "label": "Warm paper and blue-green line ranks",
+      "text": "Use warm paper with muted blue-green line ranks, one restrained accent and enough contrast to separate contour, ruling, ground and annotation.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "its_sslvr-2092129852514029770",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "parametric-wave-control",
+      "role": "interaction",
+      "label": "Flat, Ripple and Surge amplitude control",
+      "text": "Flat, Ripple and Surge select wave character; a continuous height control changes amplitude. Native SVG paths derive from one surface without requiring a 3D library. One phase drives motion and stops when hidden or reduced.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "kairevicius-2090424600886759913",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "vector-integrity-check",
+      "role": "context",
+      "label": "Projected path integrity",
+      "text": "Inspect outline and ruling at maximum amplitude, motion extremes and portrait reflow. Reject broken joins, differing projections and unnecessary full SVG remounts each frame. Keep dimension-like annotations truthful to the illustration's role.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "editorial-blueprint-layout",
+      "coherent-ruled-surface"
+    ],
+    "surface": [
+      "paper-blueprint-palette"
+    ],
+    "behavior": [
+      "parametric-wave-control"
+    ],
+    "checks": [
+      "vector-integrity-check"
+    ]
+  }
+}

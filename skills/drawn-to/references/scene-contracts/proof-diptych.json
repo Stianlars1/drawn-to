@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "u",
+  "slug": "proof-diptych",
+  "name": "Editorial comparison",
+  "kind": "editorial",
+  "references": [],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "Use two original or authorized comparison images. The showcase archive asset is site/assets/proof-same-model-same-brief.jpg; inspect its provenance before reuse.",
+  "properties": [
+    {
+      "id": "equal-evidence-diptych",
+      "role": "layout",
+      "label": "Equal-space evidence diptych",
+      "text": "Give two visual treatments equal image space beneath one short shared title, supported by a fine divider, restrained captions and a visible source or context note.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "silver-comparison-type",
+      "role": "typography",
+      "label": "Silver sans with mono captions",
+      "text": "Use silver sans typography for the shared title and restrained tabular monospace for comparison captions.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "blue-divided-dark",
+      "role": "color",
+      "label": "Near-black with blue divider",
+      "text": "Use a near-black ground, silver text and one thin blue divider, letting the detailed evidence inside the frames provide texture and complexity.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "aligned-comparison-images",
+      "role": "graphics",
+      "label": "Aligned before-and-after evidence",
+      "text": "Use actual detailed comparison images aligned to the same content, and keep both sides fully visible rather than dimming evidence for an effect.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "optional-comparison-reveal",
+      "role": "interaction",
+      "label": "Keyboard-operable comparison reveal",
+      "text": "Offer a reveal control only when true before and after images exist, and make it keyboard operable; otherwise present the available composite as a static diptych.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "evidence-qualification",
+      "role": "context",
+      "label": "Qualified comparison claim",
+      "text": "State whether the material is an archived example or a controlled evaluation, and never claim causal proof without a documented protocol.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Inspectable diptych acceptance",
+      "text": "Keep both sides inspectable on mobile and verify the provenance of the archive asset before reuse.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "equal-evidence-diptych",
+      "aligned-comparison-images"
+    ],
+    "surface": [
+      "blue-divided-dark",
+      "silver-comparison-type"
+    ],
+    "behavior": [
+      "optional-comparison-reveal",
+      "evidence-qualification"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

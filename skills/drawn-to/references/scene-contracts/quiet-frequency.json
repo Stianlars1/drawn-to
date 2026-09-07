@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "quiet-frequency",
+  "slug": "quiet-frequency",
+  "name": "Quiet frequency / a playable modular rack",
+  "kind": "component",
+  "references": [
+    "emilwidlund-2093066923693011027"
+  ],
+  "implementation": [
+    "site/js/expansion/motion-instruments.js",
+    "site/css/motion-instruments.css"
+  ],
+  "art": "The audio and scope are generated locally. Use original synthesis and scene code; do not import the reference's samples, private project state or brand identity.",
+  "properties": [
+    {
+      "id": "playable-rack-layout",
+      "role": "layout",
+      "label": "Editorial listening rack",
+      "text": "Pair an expressive editorial heading and explicit listening action with a broad scope and four carefully fitted modules. Make the waveform the largest evidence region; use knobs, an echo diagram and level strips for finer detail.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "emilwidlund-2093066923693011027",
+          "section": "What is visible"
+        }
+      ]
+    },
+    {
+      "id": "coherent-audio-modules",
+      "role": "graphics",
+      "label": "Functional audio evidence modules",
+      "text": "Use waveform, filter, echo and output modules that share a visual language while each explains different information. Keep displayed metrics registered as signal data changes.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "emilwidlund-2093066923693011027",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "quiet-dark-rack-material",
+      "role": "material",
+      "label": "Green-black rack with warm hardware",
+      "text": "Use deep green-black panels, warm silver and ivory, fine panel rims, restrained status lights, concentric dial markings and quiet mono labels.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "emilwidlund-2093066923693011027",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "opt-in-audio-instrument",
+      "role": "interaction",
+      "label": "Opt-in Web Audio instrument",
+      "text": "Start listening creates a local Web Audio tone. Frequency, filter openness, echo and level change the sound, and the scope reads the analyser. Sound never starts on page appearance; controls remain keyboard operable.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "emilwidlund-2093066923693011027",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "audio-lifecycle",
+      "role": "context",
+      "label": "Audio and analyser lifecycle",
+      "text": "Stop, hidden-tab handling and unmount cleanup suspend or close audio. Reduced motion keeps useful controls without a travelling trace.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "audio-integrity-check",
+      "role": "context",
+      "label": "Signal-linked audio verification",
+      "text": "Verify actual audio-node state, accurate controls, zero autoplay, bounded gain and cleanup. The scope must correspond to the signal rather than decorative random motion, and mobile must preserve the complete control set.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "playable-rack-layout",
+      "coherent-audio-modules"
+    ],
+    "surface": [
+      "quiet-dark-rack-material"
+    ],
+    "behavior": [
+      "opt-in-audio-instrument",
+      "audio-lifecycle"
+    ],
+    "checks": [
+      "audio-integrity-check"
+    ]
+  }
+}

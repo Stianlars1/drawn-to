@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "aperture-control",
+  "slug": "aperture-control",
+  "name": "A machined opening",
+  "kind": "hero",
+  "references": [
+    "nilseller-2093007384465531068"
+  ],
+  "implementation": [
+    "site/js/expansion/studio.js",
+    "site/css/atelier-studio.css",
+    "site/js/atelier/runtime.js",
+    "site/js/atelier/materials.js",
+    "site/js/atelier/scenes/aperture.js"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "object-copy-imbalance",
+      "role": "layout",
+      "label": "Huge aperture beside tall type",
+      "text": "Let a huge physical aperture occupy the left side of a warm stone-gray page. Place tall closely set editorial type and a compact continuous control on the right, with fine labels outside the moving mechanism.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "nine-leaf-iris",
+      "role": "shape",
+      "label": "Nine-leaf concentric iris",
+      "text": "Build nine overlapping leaves into a real adjustable circular opening, with precise concentric registration, visible thickness, fine edge bevels, engraved ticks and screws.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "machined-iris-material",
+      "role": "material",
+      "label": "Ivory enclosure and brushed iris",
+      "text": "Use an ivory enclosure, dark metal iris leaves and restrained copper-brown details. Add directional reflection on brushed surfaces; dark gaps must read as occlusion rather than a black sticker.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "nilseller-2093007384465531068",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "coherent-aperture-control",
+      "role": "interaction",
+      "label": "Coherent iris control",
+      "text": "The slider and Narrow, Balanced and Open presets move all nine leaves coherently around one centre. Keep response direct and cover each preset with a poster fallback.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "demand-rendered-mechanism",
+      "role": "motion",
+      "label": "Demand-rendered mechanism",
+      "text": "Render frames on demand as the control moves rather than maintaining unnecessary idle work.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "iris-extremes-check",
+      "role": "context",
+      "label": "Iris range inspection",
+      "text": "Inspect the opening at minimum, midpoint and maximum. Reject leaf intersections, floating screws and broken circular registration.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "scale-and-mobile-check",
+      "role": "context",
+      "label": "Scale imbalance on mobile",
+      "text": "Prevent mobile clipping while preserving the intended object-to-copy scale imbalance.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "object-copy-imbalance",
+      "nine-leaf-iris"
+    ],
+    "surface": [
+      "machined-iris-material"
+    ],
+    "behavior": [
+      "coherent-aperture-control",
+      "demand-rendered-mechanism"
+    ],
+    "checks": [
+      "iris-extremes-check",
+      "scale-and-mobile-check"
+    ]
+  }
+}

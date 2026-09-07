@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-Eight compact specimen plates form a disciplined 4-by-2 gallery over a wide processed chromatic field. Each plate has an index, a small palette, a family name and one short contextual note.
+Arrange eight compact specimen plates as a disciplined 4-by-2 gallery over one wide processed chromatic field; each plate contains an index, compact palette, family name and one contextual note.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Dark translucent plates sit against luminous violet, ochre, pink and blue areas. Coarse field pixels and finer grain add two scales of detail. Swatches are crisp and opaque; text stays neutral and readable. Avoid a separate independent gradient on every card.
+Use one luminous field spanning violet, ochre, pink and blue behind dark translucent plates; keep swatches crisp and opaque rather than giving every card an independent gradient. Keep every plate's index, family name and note compact, neutral and readable over the field. Combine coarse field pixels with finer grain to create two inspectable scales of detail.
 
 BEHAVIOR
-Keep the background quiet; this is a gallery to read, not a carousel. On mobile reflow to two columns without losing any specimen.
+Keep the background quiet and the plates fixed for reading; on mobile reflow to two columns without losing a specimen. Do not present historical family memberships as current totals.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -28,5 +28,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-The color field must be felt through the plates while preserving all labels. Do not present historical family memberships as current totals.
+Ensure the color field remains perceptible through the plates while every label stays readable.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

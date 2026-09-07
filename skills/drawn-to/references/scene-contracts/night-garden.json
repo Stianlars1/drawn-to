@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "night-garden",
+  "slug": "night-garden",
+  "name": "A cinematic night garden",
+  "kind": "hero",
+  "references": [
+    "uihssn-2096384145186599306"
+  ],
+  "implementation": [
+    "site/js/expansion/atelier-editorial.js",
+    "site/css/atelier-editorial.css"
+  ],
+  "art": "The original high-detail scene is site/assets/atelier/night-garden.webp. Inspect it before implementation. Reuse it where its license permits, or create an original scene matching its depth and detail; CSS alone cannot invent the pictured architecture.",
+  "properties": [
+    {
+      "id": "full-bleed-garden",
+      "role": "layout",
+      "label": "Full-bleed garden with protected copy",
+      "text": "Surround a small warmly illuminated glass pavilion and its still-water reflection with a full-bleed nocturnal garden. Keep large warm-white editorial words in protected dark space on the left and quiet view controls along the bottom.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "uihssn-2096384145186599306",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "three-depth-layers",
+      "role": "graphics",
+      "label": "Three-layer cinematic garden",
+      "text": "Compose the pavilion, its reflection and distant tree canopy as three depth layers. Include actual window mullions, thin glass reflections, roof edges, interior glow, planting at several distances and an imperfect coherent water reflection.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "night-garden-palette",
+      "role": "color",
+      "label": "Teal night and amber glass",
+      "text": "Use deep teal-blue #102129, warm amber interior light, silver-green foliage and creamy serif emphasis.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "atmospheric-depth",
+      "role": "light",
+      "label": "Soft nocturnal depth separation",
+      "text": "Use soft atmosphere to separate distant trees without applying a generic dark overlay that erases detail.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "crop-inspection",
+      "role": "interaction",
+      "label": "Intentional garden crops",
+      "text": "Whole, Glass & light and Reflections select intentional crops of the same original scene and update the caption.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "raster-reframe-behavior",
+      "role": "motion",
+      "label": "Gentle raster reframing",
+      "text": "This showcase uses detailed raster artwork with controlled CSS reframing rather than a real-time 3D garden. Keep transitions gentle and switch directly under reduced motion.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "garden-detail-check",
+      "role": "context",
+      "label": "Garden material inspection",
+      "text": "Compare full-size glass edges, warm interior light, foreground foliage and reflection ripples.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "mobile-garden-check",
+      "role": "context",
+      "label": "Composed mobile crop",
+      "text": "Preserve the pavilion and reading area on mobile with a separately considered crop. A stock forest photo plus a glow does not meet the target.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "full-bleed-garden",
+      "three-depth-layers"
+    ],
+    "surface": [
+      "night-garden-palette",
+      "atmospheric-depth"
+    ],
+    "behavior": [
+      "crop-inspection",
+      "raster-reframe-behavior"
+    ],
+    "checks": [
+      "garden-detail-check",
+      "mobile-garden-check"
+    ]
+  }
+}

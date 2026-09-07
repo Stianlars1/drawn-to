@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-An oversized synthetic portrait occupies the right and much of the vertical field; strong uppercase type sits in clear darker space to the left. A quiet material caption and three inspection views finish the scene. On mobile recompose around the face and keep the message in a protected lower region.
+Let an oversized synthetic portrait occupy the right and most of the vertical field while strong uppercase type sits in clear darker space at left. Finish with a quiet material caption and three inspection views. On mobile, recompose around the face and protect a lower message region. Use a richly authored object portrait with an amber curved visor, complex face enclosure, tiny mesh, gaskets, braiding, fasteners and subtle surface wear. Preserve character and detail at several scales rather than producing a glossy toy.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Matte graphite ceramic, layered dark metal, amber curved visor, tiny mesh, gaskets, braiding, fasteners and subtle surface wear. The face and enclosure have different roughness. Long reflected light shapes and warm internal glints provide depth. This is a richly authored object portrait, not a glossy toy.
+Combine matte graphite ceramic, layered dark metal and curved amber glass. Give the face and enclosure different roughness, with long reflected light shapes and warm internal glints for depth.
 
 BEHAVIOR
-Portrait, The visor and The mechanism move between deliberate crops and change the explanatory caption. Subtle pointer-based reframing supports inspection. The actual asset is raster artwork; do not promise unrestricted orbit or moving facial geometry without a new model/film.
+Portrait, The visor and The mechanism select deliberate crops and matching explanatory captions. Subtle pointer reframing may support inspection, but a raster asset does not promise unrestricted orbit or moving facial geometry.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 The original asset is site/assets/motion/ember-portrait.webp. If adapting the subject, create a comparably detailed original portrait with copy space; generic stock imagery or a flat vector head is below this target.
@@ -28,5 +28,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Inspect visor mesh, metal seams and cable detail at full size. All selected crops preserve readable text and visible controls. Keep the portrait's material contrast and personality when adapting it to another subject.
+Inspect visor mesh, metal seams and cable detail at full size. Every selected crop must preserve readable text, visible controls, material contrast and the subject's personality.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

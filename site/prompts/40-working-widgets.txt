@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-Four unequal but aligned light widgets form a tactile working surface beneath a large editorial heading: note paper, a contrast specimen, a radius instrument and a review checklist.
+Arrange four unequal but aligned light widgets beneath a large editorial heading: note paper, a contrast specimen, a radius instrument and a review checklist. Combine paper grain and edges, an oversized Aa specimen, miniature ruler ticks, a visibly changing shape and a precise completion mark. Each widget has a different anatomy while sharing one visual family.
 
 MATERIAL, LIGHT, TYPE AND TONE
-White and pale sage with dark green ink. Combine paper grain/edges, an oversized Aa specimen, miniature ruler ticks, a visibly changing shape and a precise completion mark. Maintain one family of edges and shadows while each widget has a different anatomy.
+Use white and pale sage surfaces with dark green ink. Maintain one family of tactile edges and shadows across all four widgets.
 
 BEHAVIOR
-Notes can be kept for the session, contrast colors swap with a computed ratio, a range input changes radius and checkboxes update the count. Label session-only persistence honestly. All controls work without the mouse.
+Keep notes for the session, swap contrast colors with a computed ratio, change radius with a range input and update the completion count with checkboxes. Label session-only persistence honestly and make every control keyboard-operable.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -27,5 +27,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Do not deliver decorative mock controls or fake contrast numbers. Review every widget state and reflow all four into a readable mobile workbench.
+Do not deliver decorative mock controls or fake contrast numbers. Review every widget state. Reflow all four widgets into a readable mobile workbench.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

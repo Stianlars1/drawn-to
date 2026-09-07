@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "p",
+  "slug": "chapters",
+  "name": "Quiet chapters",
+  "kind": "component",
+  "references": [
+    "piyushsphere-2089714360235225334"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "rail-and-panel",
+      "role": "layout",
+      "label": "Chapter rail and detail panel",
+      "text": "Place a narrow numbered chapter rail beside one spacious detail panel. Give the active item a tiny registration line and keep panel title, prose and a short evidence list in one stable layout.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "piyushsphere-2089714360235225334",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "mono-index-sans-detail",
+      "role": "typography",
+      "label": "Mono indices with calm sans detail",
+      "text": "Use muted monospace indices in the rail and graphite reading typography in the detail panel.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "piyushsphere-2089714360235225334",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "white-graphite-blue",
+      "role": "color",
+      "label": "White, graphite and blue registration",
+      "text": "Use an almost-white ground, white panel, graphite typography and one muted blue registration accent.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "piyushsphere-2089714360235225334",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "restrained-panel-depth",
+      "role": "material",
+      "label": "Restrained raised panel",
+      "text": "Give the focal panel a restrained radius, broad faint elevation shadow and crisp surface edge without turning the whole page into a panel.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "chapter-selection",
+      "role": "interaction",
+      "label": "Unified chapter selection",
+      "text": "Support click, keyboard focus and activation, and touch as equivalent ways to select a chapter; rapid selections resolve to the latest choice.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "brief-panel-dissolve",
+      "role": "motion",
+      "label": "Brief in-place dissolve",
+      "text": "Swap the panel in place with a brief dissolve. Any auto-demo stops after user input and under reduced motion.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Longest-chapter acceptance",
+      "text": "Reserve enough height for the longest chapter, and on mobile keep rail and panel close rather than separating them across the viewport.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "rail-and-panel"
+    ],
+    "surface": [
+      "white-graphite-blue",
+      "mono-index-sans-detail",
+      "restrained-panel-depth"
+    ],
+    "behavior": [
+      "chapter-selection",
+      "brief-panel-dissolve"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

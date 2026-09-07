@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "A",
+  "slug": "example-run",
+  "name": "A quiet terminal example",
+  "kind": "component",
+  "references": [],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "single-terminal-story",
+      "role": "layout",
+      "label": "Single terminal workflow story",
+      "text": "Float one carefully proportioned terminal window in a dark stage, using a narrow title bar and a readable sequence of command, observation, decision and output lines.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "tabular-terminal-type",
+      "role": "typography",
+      "label": "Readable tabular terminal type",
+      "text": "Set meaningful terminal lines in a clear tabular monospace with consistent indentation and enough line height for a short workflow story.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "graphite-mint-terminal",
+      "role": "color",
+      "label": "Graphite terminal with mint status",
+      "text": "Use an almost-black outer field, slightly lifted graphite terminal, tiny muted window dots and mint status words.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "framed-terminal-depth",
+      "role": "material",
+      "label": "Crisp lifted terminal frame",
+      "text": "Give the terminal a crisp frame and deep broad shadow, deriving texture from meaningful lines rather than dense random code.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "brief-line-sequence",
+      "role": "motion",
+      "label": "Brief terminal line sequence",
+      "text": "Reveal complete lines in a short readable sequence, hold the final result and provide replay only when it helps.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "illustrative-run-disclosure",
+      "role": "context",
+      "label": "Illustrative run disclosure",
+      "text": "Label the example illustrative unless it is an actual captured run, and never imply that displayed commands were executed.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Complete terminal acceptance",
+      "text": "Keep all lines visible at rest, wrap long paths on mobile without horizontal clipping and never let replay erase content someone is reading.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "single-terminal-story"
+    ],
+    "surface": [
+      "graphite-mint-terminal",
+      "tabular-terminal-type",
+      "framed-terminal-depth"
+    ],
+    "behavior": [
+      "brief-line-sequence",
+      "illustrative-run-disclosure"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "iridescent-ribbon",
+  "slug": "iridescent-ribbon",
+  "name": "Iridescent form",
+  "kind": "hero",
+  "references": [
+    "basit_designs-2095821165306732974"
+  ],
+  "implementation": [
+    "site/js/expansion/gpu.js",
+    "site/css/extra-gpu.css",
+    "site/js/graphics/three-stage.js",
+    "site/js/graphics/models.js"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "dominant-ribbon-layout",
+      "role": "layout",
+      "label": "Ribbon-led editorial stage",
+      "text": "Sweep an oversized folded ribbon through a warm neutral stage beside or above a compact editorial title. Let its silhouette and negative space dominate while secondary captions and a pause control stay small.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095821165306732974",
+          "section": "What we see"
+        }
+      ]
+    },
+    {
+      "id": "continuous-folded-ribbon",
+      "role": "shape",
+      "label": "Continuous folded ribbon",
+      "text": "Model one continuous ribbon with smooth curvature, visible thickness and distinct front and back lighting.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095821165306732974",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "thin-film-reflection",
+      "role": "material",
+      "label": "View-dependent thin-film metal",
+      "text": "Place thin-film metallic color on a pearl-paper ground. Iridescent hue follows angle and reflection through bright edges and darker folds rather than a static rainbow painted over a flat blob.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095821165306732974",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "slow-material-rotation",
+      "role": "motion",
+      "label": "Slow reflective rotation",
+      "text": "Use slow rotation to reveal the material, with immediate pause. Interactive motion uses view-dependent physical shading and GPU fallback uses a visually matched poster.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2095821165306732974",
+          "section": "Motion evidence"
+        }
+      ]
+    },
+    {
+      "id": "silhouette-check",
+      "role": "context",
+      "label": "Distance silhouette check",
+      "text": "Check the silhouette at a distance and fold detail close up.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "finish-integrity-check",
+      "role": "context",
+      "label": "Continuous finish check",
+      "text": "Reject visible faceting, clipped ribbon ends and overexposed white regions that erase the material.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "dominant-ribbon-layout",
+      "continuous-folded-ribbon"
+    ],
+    "surface": [
+      "thin-film-reflection"
+    ],
+    "behavior": [
+      "slow-material-rotation"
+    ],
+    "checks": [
+      "silhouette-check",
+      "finish-integrity-check"
+    ]
+  }
+}

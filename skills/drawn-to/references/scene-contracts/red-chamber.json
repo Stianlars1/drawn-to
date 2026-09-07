@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "red-chamber",
+  "slug": "red-chamber",
+  "name": "Chrome against velvet",
+  "kind": "hero",
+  "references": [
+    "basit_designs-2095821165306732974"
+  ],
+  "implementation": [
+    "site/js/expansion/atelier-editorial.js",
+    "site/css/atelier-editorial.css"
+  ],
+  "art": "The original scene is site/assets/atelier/red-chamber.webp. Its material contrast is the core asset requirement; create or use licensed imagery of equivalent finish.",
+  "properties": [
+    {
+      "id": "chamber-hero-layout",
+      "role": "layout",
+      "label": "Chrome form in a vermilion chamber",
+      "text": "Fill the frame with a vermilion chamber around one large polished sculptural chrome form. Reserve a clear left zone for oversized warm-white words and use one compact detail action.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "warm-serif-sans",
+      "role": "typography",
+      "label": "Oversized warm mixed type",
+      "text": "Use oversized warm-white serif and sans words in the protected left reading zone.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "red-silver-palette",
+      "role": "color",
+      "label": "Deep red, silver and cream",
+      "text": "Use deep red #640f12, scarlet velvet, mirror-like silver and creamy type.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "chrome-velvet-contrast",
+      "role": "material",
+      "label": "Mirror chrome against velvet",
+      "text": "Give velvet directional pile, deep soft folds and diffuse red bounce. Give chrome sharp highlight ribbons, dark reflected bands and curved distortion of the red environment, with contact shadows attaching hard form to soft ground.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "detail-reframe",
+      "role": "interaction",
+      "label": "Installation-to-material detail",
+      "text": "Look closer changes between the entire installation and an intimate material view, updating the state label.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "gentle-raster-reframe",
+      "role": "motion",
+      "label": "Gentle cinematic reframe",
+      "text": "Gently reframe the same authored raster image and use an immediate reduced-motion version. The scene is not a real-time reflective room.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "material-contrast-check",
+      "role": "context",
+      "label": "Chrome and velvet inspection",
+      "text": "Inspect where chrome meets velvet and compare sharp versus diffuse light. Reject a plastic silver blob or uniformly lit red background.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "crop-readability-check",
+      "role": "context",
+      "label": "Readable detail crops",
+      "text": "Ensure the type remains readable in both crops.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "chamber-hero-layout",
+      "warm-serif-sans"
+    ],
+    "surface": [
+      "red-silver-palette",
+      "chrome-velvet-contrast"
+    ],
+    "behavior": [
+      "detail-reframe",
+      "gentle-raster-reframe"
+    ],
+    "checks": [
+      "material-contrast-check",
+      "crop-readability-check"
+    ]
+  }
+}

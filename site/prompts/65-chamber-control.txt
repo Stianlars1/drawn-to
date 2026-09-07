@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A dense but disciplined dark instrument console sits beneath a technical heading. A large response plot, physical knobs, illumination switch, state selector and distribution meter occupy different module shapes in one continuous grid.
+Set a disciplined dark console beneath a technical heading. Fit a large response plot, physical knobs, illumination switch, state selector and distribution meter into distinct module shapes on one continuous grid. Give each module useful distinct anatomy: a response plot, setpoints, radial ticks, modes and distribution evidence. Use honest units or explicitly relative values rather than decorative pseudo-telemetry.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Anthracite-green planes, tiny warm orange indicators, crisp inset borders, machined knob faces, radial ticks and tabular or mono numbers. Use directional surface light, restrained bevels and honest units/relative values. Each module has a useful distinct anatomy.
+Use anthracite-green planes, crisp inset borders, restrained bevels, directional surface light and machined knob faces, with tiny warm-orange indicators and tabular or mono numbers.
 
 BEHAVIOR
-Excitation, damping and angle controls update the visible local model and curve. Illumination and character controls show actual state changes. This is an interactive local study, not a connected industrial controller. All controls have native keyboard input.
+Excitation, damping and angle update the visible local model and curve; illumination and character controls expose actual state changes. Every control has native keyboard input. This is an interactive local study, not a connected industrial controller. Do not imply live equipment or measured external telemetry.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 This scene is native HTML/CSS/SVG. Preserve the layered control construction and meaningful local data model rather than using a screenshot of a dashboard.
@@ -28,5 +28,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-No decorative nonworking knobs or invented live-equipment claims. Verify values and graph response, selected state, contrast and complete mobile control coverage. Keep the instrument density without making labels microscopic.
+Reject decorative nonworking knobs. Verify values and graph response, selected state, contrast and complete mobile control coverage while keeping labels readable.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

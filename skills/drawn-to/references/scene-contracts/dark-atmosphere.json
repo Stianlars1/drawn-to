@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "d",
+  "slug": "dark-atmosphere",
+  "name": "Dark atmosphere",
+  "kind": "hero",
+  "references": [
+    "basit_designs-2089627588184653915",
+    "insporadesign-2087895823619182608"
+  ],
+  "implementation": [
+    "site/js/catalog.js",
+    "site/css/catalog.css",
+    "site/css/legacy-polish.css"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "beam-centred-hero",
+      "role": "layout",
+      "label": "Centred beam composition",
+      "text": "Place a concise centred promise across a near-black stage while one broad diagonal beam enters from the upper right and passes behind the copy.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089627588184653915",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "cool-dark-palette",
+      "role": "color",
+      "label": "Blue-black cyan atmosphere",
+      "text": "Use blue-black #05070a, cool white type and a restrained cyan cast.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089627588184653915",
+          "section": "Type & color"
+        }
+      ]
+    },
+    {
+      "id": "single-volumetric-beam",
+      "role": "light",
+      "label": "Single volumetric beam",
+      "text": "Give one beam a defined edge, long soft falloff, irregular dust density and a plausible off-canvas source; the scene's event is the boundary between illuminated haze and darkness.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089627588184653915",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "rimmed-controls",
+      "role": "material",
+      "label": "Rim-lit translucent controls",
+      "text": "Use small translucent controls with a lit upper rim.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "slow-dust",
+      "role": "motion",
+      "label": "Optional slow dust drift",
+      "text": "Keep the whole scene present in the still frame; optional dust drifts slowly while text and controls remain fixed, and reading never depends on an entrance sequence.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "basit_designs-2089627588184653915",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "beam-discipline",
+      "role": "context",
+      "label": "Beam construction boundary",
+      "text": "Avoid multiple conic rays and centred radial blobs.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Beam readability acceptance",
+      "text": "Keep the headline readable across the brightest beam region and recompose the beam origin at portrait widths.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "beam-centred-hero"
+    ],
+    "surface": [
+      "cool-dark-palette",
+      "single-volumetric-beam",
+      "rimmed-controls",
+      "beam-discipline"
+    ],
+    "behavior": [
+      "slow-dust"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

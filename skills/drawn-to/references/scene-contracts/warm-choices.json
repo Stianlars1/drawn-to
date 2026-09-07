@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "warm-choices",
+  "slug": "warm-choices",
+  "name": "Warm illustrated choices",
+  "kind": "component",
+  "references": [
+    "DesignByMoein-2095937596665024817"
+  ],
+  "implementation": [
+    "site/js/expansion/editorial.js",
+    "site/css/extra-editorial.css"
+  ],
+  "art": "The original character is site/assets/expansion/editorial/peeking-bird.png. Inspect its placement and the three card surfaces in the implementation; keep the illustration at this supporting scale.",
+  "properties": [
+    {
+      "id": "three-illustrated-choices",
+      "role": "layout",
+      "label": "Three substantial onboarding choices",
+      "text": "Place three substantial onboarding choice cards beneath a short welcoming heading and compact mode selector; give each a title, clear promise, concise checklist and choice action, with a small character peeking over the row.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DesignByMoein-2095937596665024817",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "warm-editorial-choice-type",
+      "role": "typography",
+      "label": "Warm editorial choice hierarchy",
+      "text": "Use dark brown editorial type with a concise, clearly stepped hierarchy from welcome to title, promise, checklist and action.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "ivory-burgundy-pink",
+      "role": "color",
+      "label": "Ivory, burgundy and warm pink",
+      "text": "Use warm ivory and burgundy with carefully tuned pink and cream surfaces.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "peeking-clay-bird",
+      "role": "graphics",
+      "label": "Peeking clay bird character",
+      "text": "Use a small original bird with clay-like volume, eyes, feathers and a grounded overlap at the top of the choice row; keep it supporting rather than dominant.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "restrained-warm-cards",
+      "role": "material",
+      "label": "Restrained warm card surfaces",
+      "text": "Give the cards fine borders, controlled corner radii and barely lifted downward shadows, using small warm tonal steps rather than a strong border.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DesignByMoein-2095937596665024817",
+          "section": "Card anatomy"
+        }
+      ]
+    },
+    {
+      "id": "coherent-choice-state",
+      "role": "interaction",
+      "label": "Coherent Explore, Specify, Build states",
+      "text": "Make Explore, Specify and Build real keyboard- and touch-operable choices. The chosen card reads through a distinct warm surface, label and action, and updates title, explanation and outcome together without moving the whole layout.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Illustrated-choice acceptance",
+      "text": "Keep every choice and the outcome visible on mobile, and reject a beige-card substitute with generic outline icons for the supporting illustration.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "three-illustrated-choices",
+      "peeking-clay-bird"
+    ],
+    "surface": [
+      "ivory-burgundy-pink",
+      "warm-editorial-choice-type",
+      "restrained-warm-cards"
+    ],
+    "behavior": [
+      "coherent-choice-state"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

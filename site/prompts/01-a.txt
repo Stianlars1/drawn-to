@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A compact left-aligned promise and install-sized action beside a tall isometric stack of thin reference laminae. Keep the architectural void around the stack, full-height column rails and a small external read-head with a leader line.
+Place a compact left-aligned promise and install-sized action beside a tall isometric stack, retaining architectural void, full-height column rails and a small external read-head with a leader line. Construct the object as thin reference strata with visible thickness, short edge highlights, occluded gaps and a sharp white top face.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Graphite #0a0c10, cool white faces and near-black undersides. Individual strata need thickness, short edge highlights, occluded gaps and a sharp white top face. Fine blue dimensions and tiny mono specimen labels sit below the large neutral sans headline. The light crosses the ground diagonally; do not flatten the stack into a generic dashboard.
+Use graphite #0a0c10, cool white faces, near-black undersides and fine blue dimensions. Set the headline in a large neutral sans and the specimen labels in tiny monospace. Cast the light diagonally across the ground plane. Present the numbers as an explicitly dated specimen rather than a current library count, and do not flatten the stack into a generic dashboard.
 
 BEHAVIOR
-A discrete read-head travels between strata while its leader, index, kind and swatch update together. Freeze one complete reading when motion is reduced. The numbers describe an explicitly dated specimen, not a pretend current library count.
+Move one discrete read-head between strata while its leader, index, kind and swatch update together; reduced motion freezes one complete reading.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Judge the stack at thumbnail and detail scale. On mobile put it below the copy with the full base and labels visible; the action must not cross its top.
+Judge the stack at thumbnail and detail scale. On mobile place it below the copy with the full base and labels visible, and keep the action clear of its top.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

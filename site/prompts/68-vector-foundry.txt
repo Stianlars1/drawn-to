@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-An editorial paper-and-blueprint surface balances a large narrow serif statement with an isometric ruled wave sheet. Fine ground projection, a specimen index, measured-looking annotation and a small seal frame the drawing.
+Balance a large narrow serif statement with an isometric ruled wave sheet on a paper-and-blueprint surface. Frame it with a fine ground projection, specimen index, measured-looking annotation and small seal. Construct the wave from crisp continuous vector paths in a carefully proportioned 2:1-like isometric projection. The outer contour and internal rulings must derive from the same parametric surface; detail is structural rather than textured 3D decoration.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Warm paper, muted blue-green line ranks, crisp contour edges and a carefully proportioned 2:1-like projection. The form is made from coherent continuous paths; its outer and internal lines must describe the same surface. Detail is structural rather than textured 3D decoration.
+Use warm paper with muted blue-green line ranks, one restrained accent and enough contrast to separate contour, ruling, ground and annotation.
 
 BEHAVIOR
-Flat, Ripple and Surge select the wave's character and a continuous height control changes its amplitude. Native SVG paths derive from one parametric surface; there is no 3D library requirement. Motion follows a single phase and stops when hidden or reduced.
+Flat, Ripple and Surge select wave character; a continuous height control changes amplitude. Native SVG paths derive from one surface without requiring a 3D library. One phase drives motion and stops when hidden or reduced.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 This is an original native SVG projection. Read the shared surface equation and point projection rather than replacing the drawing with a static image.
@@ -28,5 +28,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Inspect the outline and ruling through maximum amplitude, motion extremes and portrait reflow. No broken joins, differing projections or unnecessary SVG remounting each frame. Keep the dimension-like annotations truthful to the illustration's role.
+Inspect outline and ruling at maximum amplitude, motion extremes and portrait reflow. Reject broken joins, differing projections and unnecessary full SVG remounts each frame. Keep dimension-like annotations truthful to the illustration's role.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

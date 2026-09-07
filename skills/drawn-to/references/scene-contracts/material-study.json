@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "material-study",
+  "slug": "material-study",
+  "name": "One form, three materials",
+  "kind": "component",
+  "references": [
+    "DmitryLepisov-2093247212629139641"
+  ],
+  "implementation": [
+    "site/js/expansion/gpu.js",
+    "site/css/extra-gpu.css",
+    "site/js/graphics/three-stage.js",
+    "site/js/graphics/models.js",
+    "site/assets/models/folded-aperture.glb",
+    "site/js/graphics/optical-bench.js"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "fixed-study-layout",
+      "role": "layout",
+      "label": "Fixed-pose material study",
+      "text": "Place one sculptural folded-aperture object in a quiet warm-gray studio with a large editorial headline and compact Ceramic/Metal/Glass selector. Keep geometry, camera and silhouette constant across the study.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "folded-aperture",
+      "role": "shape",
+      "label": "Shared folded aperture",
+      "text": "Use one folded-aperture geometry with distinct face, bevel and side readings for every material state.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "three-physical-materials",
+      "role": "material",
+      "label": "Ceramic, metal and refracting glass",
+      "text": "Give ivory ceramic a fine speckled fired body and quiet dielectric sheen; give satin metal directional reflection gradients and fine brushing; make clear glass refract the actual typographic backing plane. Avoid blacked-out metal faces and uniformly opaque-looking glass.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DmitryLepisov-2093247212629139641",
+          "section": "Layout and material"
+        }
+      ]
+    },
+    {
+      "id": "material-switch",
+      "role": "interaction",
+      "label": "Same-pose material selection",
+      "text": "Selection changes the actual material without moving the object or rebuilding the page. Load the detailed model once, dispose it on departure and provide matching posters for all three choices.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "state-comparison-check",
+      "role": "context",
+      "label": "Same-pose material comparison",
+      "text": "Compare all three states at the same pose, in the full composition and at actual-size detail.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "surface-evidence-check",
+      "role": "context",
+      "label": "Distinct material evidence",
+      "text": "Show transmitted background evidence in glass, directional reflection structure in metal and a distinct opaque ceramic body. Verify that surface detail survives filtering at the delivered DPR.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "model-poster-check",
+      "role": "context",
+      "label": "GLB and fallback parity",
+      "text": "Inspect the GLB in the same lighting as its procedural source and export matching fallback states for all materials.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "fixed-study-layout",
+      "folded-aperture"
+    ],
+    "surface": [
+      "three-physical-materials"
+    ],
+    "behavior": [
+      "material-switch"
+    ],
+    "checks": [
+      "state-comparison-check",
+      "surface-evidence-check",
+      "model-poster-check"
+    ]
+  }
+}

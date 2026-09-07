@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A light specification sheet compares seven historical page containers as dimension lines. Each row carries a name, a precise horizontal measurement and a tabular value; one chosen specimen uses blue emphasis.
+Compare seven historical page containers as aligned dimension rows, each carrying a name, precise horizontal measure and tabular value; emphasize one chosen specimen in blue. Draw fine horizontal measures with endpoint ticks and subtle rulers, using the longest documented chain as the visual scale and labelling any truncated axis.
 
 MATERIAL, LIGHT, TYPE AND TONE
-White, graphite and drafting blue with fine endpoint ticks, subtle rulers and clear numeric alignment. Let the longest chain define the visual scale. A restrained heading and short source note explain what was measured and when.
+Use a white sheet, graphite text and one drafting-blue emphasis. Use a restrained heading, compact source note and tabular values aligned for quick comparison.
 
 BEHAVIOR
-Keep the measuring view still and scannable. Calculate each line from a documented scale and label any axis truncation. Historic observations are evidence, not current specifications or universal design limits.
+Keep the measuring view still and scannable. State what was measured and when; treat the values as historical observations rather than current specifications or universal limits.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -28,5 +28,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-At phone width keep the seven comparisons readable. No unsupported claims that a fixed number of type sizes or one container width fits every project.
+Keep all seven comparisons readable at phone width and make no unsupported claim that one container width or a fixed number of type sizes fits every project.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

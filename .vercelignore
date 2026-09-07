@@ -9,3 +9,9 @@ skills/
 scripts/
 .github/
 docs/
+
+# Local verification, trial projects and automated-test sources.
+work/
+.eval-output/
+.superpowers/
+tests/

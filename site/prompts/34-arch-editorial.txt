@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A monumental single-word serif heading sits above a frieze of seven very tall, narrow arched material strips. A short editorial note and a small Change the view action occupy the quieter side. Repeated folded paper, organic green texture and warm material establish the rhythm.
+Place a monumental single-word serif heading above a seven-strip frieze, balancing it with a short editorial note and small Change the view action on the quieter side. Build seven tall narrow strips with coherent proportions and a deliberate rhythm of full arches, one-shoulder curves and square tops. Fill the frieze with intentional crops of folded paper, organic green texture and warm material, preserving distinct focal subjects and complementary visual weight.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Warm light ground, dark ink and rich bounded imagery. The arch cutouts need coherent proportions, crisp edges and intentional crops; let the image lighting provide depth. Type should feel cultivated and spacious rather than dashboard-like.
+Use a warm light ground and dark ink, letting rich bounded imagery provide the chroma and depth. Use cultivated spacious serif display type with calm supporting copy rather than dashboard typography.
 
 BEHAVIOR
-Selection changes the active view and its description together. Preserve the arch geometry and stable reading anchor through transitions and narrow-screen reflow.
+Change the active view and its description together while retaining a stable reading anchor across input methods and narrow-screen reflow.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the image list and exact arch layout in the cited source. Curate original or licensed assets with comparable visual weight and complementary crops.
@@ -27,5 +27,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Every arch needs a meaningful focal subject. Do not use random stock crops; compare arch spacing, shoulder curves, baseline and image contrast.
+Compare strip spacing, shoulder curves, baseline and image contrast; every arch needs a meaningful focal subject rather than a random stock crop.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

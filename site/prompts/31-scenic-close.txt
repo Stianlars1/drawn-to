@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A warm, spacious closing section with a short large invitation in the upper left and two quiet next actions on the right. A panoramic blue engraving fills the lower half and meets the bottom edge, creating somewhere to linger.
+Build a spacious closing section with a short large invitation at upper left, two quiet next actions at right and a panoramic landscape filling the lower half to the bottom edge. Author a connected landscape of house, trees, paths, shoreline and water with varied line density, a distinct distant layer and enough workmanship to reward close inspection.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Cream paper, dark blue ink and fine engraved linework. The landscape includes a house, trees, paths, shoreline and water, with different line densities, a clear distant layer and plenty of air around the type. The illustration must be an authored scene, not an icon landscape.
+Use one family of dark blue ink on cream paper, retaining cream gaps inside the drawing as structural highlights. Use editorial serif type for the invitation and supporting navigation, keeping links as real text outside the illustration.
 
 BEHAVIOR
-Keep the artwork still and the links real. Copy feedback remains adjacent to the action. On portrait screens preserve a meaningful landscape crop beneath the reading area.
+Keep the landscape still; no parallax, water motion or scroll reveal is implied by the source. Keep both next actions functional and place copy feedback beside the action that caused it. On portrait screens preserve a meaningful landscape crop beneath the reading area rather than shrinking the full panorama until its details disappear.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 The original showcase panorama is site/assets/expansion/editorial/garden-panorama.png. Create or adapt an authorized original engraving with comparable density and scene depth.
@@ -27,5 +27,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Review the house, canopy and water at full resolution. Match fine line texture and depth rather than only the blue-on-cream palette.
+Review house, canopy and water at full resolution, and match line texture and depth rather than only the blue-on-cream palette.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

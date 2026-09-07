@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A broad luminous display plate stretches beneath a short, technical typographic heading on a nearly black ground. Keep the graphic as one large field, with small mode/density controls below rather than enclosing it in a generic metrics dashboard.
+Stretch one broad luminous display plate beneath a short technical heading on a nearly black ground. Keep small mode and density controls below the field instead of enclosing it in a generic metrics dashboard.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Cool green-to-cyan emission, tiny stable cells, dark gutters, a visible unlit matrix, restrained glow and a slight perspective skew. The waveform or bars must be recognizable at a distance while individual cells reward close inspection. Use a mono technical heading and exact labels.
+Render a recognizable waveform, columns or orbit signal through tiny stable cells, preserving the visible unlit matrix, individual cell edges, dark gutters and a slight perspective skew. The graphic must read as one signal at distance and structured cells close up. Use cool green-to-cyan emission over near-black, with restrained glow and darker unlit cells. Keep a strong separation between fixed white labels and the luminous field.
 
 BEHAVIOR
-Wave, Columns and Orbit produce distinctly different signal geometry in the same display material. Cell density adjusts the matrix. A shared shader clock evolves the signal while text stays fixed; pause and reduced motion hold a composed state.
+Evolve the signal from one shared clock while every cell and reading anchor remains registered. Wave, Columns and Orbit must produce distinctly different geometry; density changes the matrix. Pause and reduced motion hold a composed state. Use a large technical statement with restrained serif emphasis, plus a small mono eyebrow and exact fixed labels that stay registered while the signal changes.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Use the actual procedural signal and cell-mask construction as the baseline. A dot texture placed over a blurry static line does not match this material.
@@ -30,5 +30,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Inspect fine cell separation and broader emission independently. No moire, flicker or shimmering gutters at the delivered DPR. Verify that each mode produces substantial visual change and does not cover its controls.
+Inspect fine cell separation and broader emission independently at delivered DPR. Reject moire, flicker, shimmering gutters and modes without substantial visual change; the field must not cover its controls.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

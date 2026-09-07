@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "morph-study",
+  "slug": "morph-study",
+  "name": "Morph study / a shape for the change",
+  "kind": "graphic",
+  "references": [
+    "semochkin_alex-2091816203383664688"
+  ],
+  "implementation": [
+    "site/js/motion/scenes/morph.js",
+    "site/js/motion/runtime.js",
+    "site/js/expansion/motion-rendered.js",
+    "site/css/motion-rendered.css"
+  ],
+  "art": "The targets and particle transitions are original code. Preserve point identity and authored geometry instead of importing third-party brand illustrations or source screenshots.",
+  "properties": [
+    {
+      "id": "mint-particle-layout",
+      "role": "layout",
+      "label": "Editorial heading beside a particle structure",
+      "text": "On a warm mint field, place a large expressive heading beside a clear three-dimensional particle structure, with compact shape and formation controls below. Give the point cloud enough area, density and contrast to balance the type.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "authored-particle-targets",
+      "role": "graphics",
+      "label": "Stable particles resolving authored geometry",
+      "text": "Use stable point identities sampled into recognizable authored target geometries. Let distribution, overlap and density describe depth; keep text outside the rendering layer and avoid diffuse dust that loses the chosen shape.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "semochkin_alex-2091816203383664688",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "deep-green-mint-palette",
+      "role": "color",
+      "label": "Deep green points on pale mint",
+      "text": "Use fine deep-green points on a pale warm-mint ground, with enough contrast for the resting target at mobile size.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "stable-particle-retargeting",
+      "role": "motion",
+      "label": "Interruptible geometry retargeting",
+      "text": "Sphere, Current and Loop move the same particles among authored targets with restrained rotation; Formation changes how tightly they resolve. Retarget from current positions, preserve stable identities, and provide an intentional completed state for pause and reduced motion.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "semochkin_alex-2091816203383664688",
+          "section": "Timeline and interaction evidence"
+        }
+      ]
+    },
+    {
+      "id": "editorial-type-default",
+      "role": "typography",
+      "label": "Expressive serif particle-study type",
+      "text": "Use an expressive editorial heading with Instrument Serif emphasis, balanced by a sans base and quiet precise controls, labels and supporting copy.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "morph-integrity-check",
+      "role": "context",
+      "label": "Particle transition integrity",
+      "text": "Compare resting targets and transitions separately. Reject an intermediate stall, abrupt stale shape, chaotic reassignment or weak mobile contrast. Test reversals, formation extremes and resource disposal.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "mint-particle-layout",
+      "authored-particle-targets"
+    ],
+    "surface": [
+      "deep-green-mint-palette"
+    ],
+    "behavior": [
+      "stable-particle-retargeting",
+      "editorial-type-default"
+    ],
+    "checks": [
+      "morph-integrity-check"
+    ]
+  }
+}

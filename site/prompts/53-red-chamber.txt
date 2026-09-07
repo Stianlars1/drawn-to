@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A full-bleed vermilion chamber surrounds one large polished sculptural chrome form. Oversized warm-white serif/sans words occupy a clear left zone. A compact detail action changes from the entire installation to an intimate material view.
+Fill the frame with a vermilion chamber around one large polished sculptural chrome form. Reserve a clear left zone for oversized warm-white words and use one compact detail action. Use oversized warm-white serif and sans words in the protected left reading zone.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Deep red #640f12, scarlet velvet, mirror-like silver and creamy type. Velvet needs directional pile, deep soft folds and diffuse red bounce. Chrome needs sharp highlight ribbons, dark reflected bands and curved distortion of the red environment. Contact shadows attach the hard form to the soft ground.
+Use deep red #640f12, scarlet velvet, mirror-like silver and creamy type. Give velvet directional pile, deep soft folds and diffuse red bounce. Give chrome sharp highlight ribbons, dark reflected bands and curved distortion of the red environment, with contact shadows attaching hard form to soft ground.
 
 BEHAVIOR
-Look closer gently reframes the same original cinematic image, with a matching state label and an immediate reduced-motion version. The showcase is authored raster artwork, not a real-time reflective room.
+Look closer changes between the entire installation and an intimate material view, updating the state label. Gently reframe the same authored raster image and use an immediate reduced-motion version. The scene is not a real-time reflective room.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 The original scene is site/assets/atelier/red-chamber.webp. Its material contrast is the core asset requirement; create or use licensed imagery of equivalent finish.
@@ -27,5 +27,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Inspect where chrome meets velvet and compare sharp versus diffuse light. Avoid a plastic silver blob or uniformly lit red background. Ensure the type remains readable in both crops.
+Inspect where chrome meets velvet and compare sharp versus diffuse light. Reject a plastic silver blob or uniformly lit red background. Ensure the type remains readable in both crops.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

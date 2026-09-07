@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "sunlit-field",
+  "slug": "sunlit-field",
+  "name": "Sunlit field / an illustrated atlas",
+  "kind": "editorial",
+  "references": [
+    "Talhadesignn-2093215721954377839"
+  ],
+  "implementation": [
+    "site/js/expansion/motion-editorial.js",
+    "site/css/motion-editorial.css"
+  ],
+  "art": "The original illustration is site/assets/motion/sunlit-field.webp. Create or use authorized imagery with similar linework and depth; a flat vector farm or unrelated photograph cannot carry this direction.",
+  "properties": [
+    {
+      "id": "illustrated-atlas-layout",
+      "role": "layout",
+      "label": "Editorial type over a connected landscape",
+      "text": "Place a large editorial serif statement in pale sky above one connected agricultural valley. Complete the page with small inspection links and a restrained compass-like detail, while preserving clear reading space in every crop.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "Talhadesignn-2093215721954377839",
+          "section": "What is visible"
+        }
+      ]
+    },
+    {
+      "id": "engraved-valley-illustration",
+      "role": "graphics",
+      "label": "Multi-depth engraved agricultural valley",
+      "text": "Draw engraved clouds, layered mountains, fields, water, a pavilion and foreground grasses as one richly observed landscape. Use several scales of line density, stipple, material texture and fine small structures to establish foreground, middle distance and horizon depth.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "Talhadesignn-2093215721954377839",
+          "section": "Composition, material and visual weight"
+        },
+        {
+          "id": "Talhadesignn-2093215721954377839",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "golden-printed-palette",
+      "role": "color",
+      "label": "Golden paper with olive and teal ink",
+      "text": "Use warm golden paper, olive ink, dusty teal distance and ochre highlights, with subtle printed irregularity.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "Talhadesignn-2093215721954377839",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "printed-editorial-type",
+      "role": "typography",
+      "label": "Serif type belonging to the printed world",
+      "text": "Use a large editorial serif voice whose weight, scale and texture belong to the illustrated printed world rather than a generic SaaS header.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "landscape-crop-inspection",
+      "role": "interaction",
+      "label": "Valley, water and shelter inspection",
+      "text": "The valley, The water and The shelter select intentional crops and captions from one original scene. Keep movement gentle, remove travel under reduced motion and leave the landscape fully composed at rest.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "atlas-detail-check",
+      "role": "context",
+      "label": "Landscape depth and crop check",
+      "text": "Compare fine grasses, irrigation lines, architectural edges, field rhythm and distant mountain separation. Protect the text in every crop and preserve a meaningful portrait composition.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "illustrated-atlas-layout",
+      "engraved-valley-illustration",
+      "printed-editorial-type"
+    ],
+    "surface": [
+      "golden-printed-palette"
+    ],
+    "behavior": [
+      "landscape-crop-inspection"
+    ],
+    "checks": [
+      "atlas-detail-check"
+    ]
+  }
+}

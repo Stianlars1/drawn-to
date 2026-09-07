@@ -21,3 +21,8 @@
 .style-dialog :focus-visible{outline:2px solid #577645;outline-offset:3px}
 @media(max-width:720px){.scene-actions{gap:8px}.scene-prompt-actions{gap:1px}.scene-prompt-actions button{font-size:10px;min-height:36px;padding:7px}.scene-prompt-actions [data-style-copy]{min-width:106px}.scene-prompt-actions [data-style-preview]{width:24px}.style-dialog{padding:20px}.style-dialog h2{font-size:29px}.style-dialog-footer{align-items:flex-start}.style-text{padding:12px;font-size:11px}.style-intro{font-size:13px}}
 @media(prefers-reduced-motion:reduce){.scene-prompt-actions button{transition:none}.style-dialog::backdrop{backdrop-filter:none}}
+
+.scene-prompt-actions .generator-entry{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:7px 10px;margin-inline-start:5px;border:1px solid color-mix(in srgb,currentColor 23%,transparent);border-radius:5px;font:500 11px/1.2 var(--sans);color:inherit;text-decoration:none;white-space:pre;background:color-mix(in srgb,currentColor 8%,transparent)}
+.scene-prompt-actions .generator-entry:hover{background:color-mix(in srgb,currentColor 15%,transparent)}
+.scene-prompt-actions .generator-entry:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+@media(max-width:720px){.scene-prompt-actions .generator-entry{min-height:36px;padding:7px 6px;margin-inline-start:2px;font-size:10px}.scene-prompt-actions .generator-entry-prefix{display:none}}

@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "camera-obscura",
+  "slug": "camera-obscura",
+  "name": "Camera obscura / the inspectable object",
+  "kind": "component",
+  "references": [
+    "omarsar0-2096339043919237288"
+  ],
+  "implementation": [
+    "site/js/expansion/motion-rendered.js",
+    "site/css/motion-rendered.css",
+    "site/js/motion/scenes/camera.js",
+    "site/js/motion/runtime.js"
+  ],
+  "art": "The camera model is original procedural geometry in the cited source. Reuse compatible source or create a comparably detailed model. The reference author's component counts are not acceptance targets or verified facts about this model.",
+  "properties": [
+    {
+      "id": "technical-workbench-layout",
+      "role": "layout",
+      "label": "Camera inspection workbench",
+      "text": "Balance a large inspectable camera on a pale technical studio with a compact top-left statement, narrow right specimen column and bottom inspection strip. Reserve ample object area, a visible grounding shadow and spare technical annotations.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "omarsar0-2096339043919237288",
+          "section": "What is visible"
+        }
+      ]
+    },
+    {
+      "id": "mechanical-camera-assembly",
+      "role": "shape",
+      "label": "Layered mechanical camera assembly",
+      "text": "Model coherent lens, body and internal subassemblies with concentric barrel lips, knurling, fasteners, top dials, circuitry, iris leaves and registered lens layers. Contact interfaces and edge bevels make the relationships plausible; raw part count is not the quality target.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "omarsar0-2096339043919237288",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "camera-material-system",
+      "role": "material",
+      "label": "Graphite, metal and green optics",
+      "text": "Use a graphite body, silver and warm-metal rings, fine grip texture, translucent green-tinted optics and engraved-looking labels. Distinguish rough body surfaces, metal edges and transmissive glass.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "omarsar0-2096339043919237288",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "exploded-inspection",
+      "role": "interaction",
+      "label": "Assembled, exploded and inside views",
+      "text": "Assembled, Exploded and Inside expose real configurations. One separation scalar moves coherent subassemblies along the lens/body axis, while restrained pointer motion changes the inspection angle without losing registration.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "omarsar0-2096339043919237288",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "camera-renderer-facts",
+      "role": "context",
+      "label": "Instanced Three.js construction",
+      "text": "The showcase renderer is Three.js with instanced repeated details and physical materials. The source author's stated component counts are unverified and are not requirements.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "configuration-check",
+      "role": "context",
+      "label": "Mechanical configuration integrity",
+      "text": "Inspect all three configurations at maximum separation. Reject detached labels, intersecting iris leaves, ungrounded parts or portrait clipping.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "fallback-state-check",
+      "role": "context",
+      "label": "Selected camera fallback",
+      "text": "Controls must expose real changes and every fallback must preserve the selected configuration.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "technical-workbench-layout",
+      "mechanical-camera-assembly"
+    ],
+    "surface": [
+      "camera-material-system"
+    ],
+    "behavior": [
+      "exploded-inspection",
+      "camera-renderer-facts"
+    ],
+    "checks": [
+      "configuration-check",
+      "fallback-state-check"
+    ]
+  }
+}

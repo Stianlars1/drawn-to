@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "id": "cloud-chamber",
+  "slug": "cloud-chamber",
+  "name": "Cloud chamber / a window into elsewhere",
+  "kind": "hero",
+  "references": [
+    "JameslabiQ-2096555751133376528"
+  ],
+  "implementation": [
+    "site/js/motion/scenes/cloud.js",
+    "site/js/motion/runtime.js",
+    "site/js/expansion/motion-rendered.js",
+    "site/css/motion-rendered.css"
+  ],
+  "art": "The original environment is site/assets/motion/cloud-chamber.webp. It was authored with an empty opening for the live optical centre. Reuse compatible artwork or create an equally detailed original environment; keep background crop and live-object coordinates coupled.",
+  "properties": [
+    {
+      "id": "architectural-opening-layout",
+      "role": "layout",
+      "label": "Monumental arch with anchored focal object",
+      "text": "Raise a monumental limestone and bronze arch above a reflective pool and walkway, with a live optical sphere anchored inside its opening. Reserve quiet sky for large dark architectural type on wide screens and use a separately composed portrait image region to protect the words.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "JameslabiQ-2096555751133376528",
+          "section": "What is visible"
+        }
+      ]
+    },
+    {
+      "id": "arch-pool-environment",
+      "role": "graphics",
+      "label": "Layered architectural landscape",
+      "text": "Author a connected environment of porous stone, warm bronze edges, cool sky, atmospheric distance, a scale-giving walkway and water that reflects the mass above it.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "JameslabiQ-2096555751133376528",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "ringed-optical-sphere",
+      "role": "shape",
+      "label": "Clear sphere with fine metallic rings",
+      "text": "Anchor one thick clear glass sphere with very fine metallic rings inside the architectural opening, preserving a sharp spherical boundary and internal reflected structure.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "JameslabiQ-2096555751133376528",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "matched-environment-glass",
+      "role": "material",
+      "label": "Environment-matched optical glass",
+      "text": "Make the sphere's reflection and lighting agree with the pictured landscape. Avoid an unrelated rectangular studio reflection that makes the live object feel pasted in.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "JameslabiQ-2096555751133376528",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "optical-centre-motion",
+      "role": "motion",
+      "label": "Motion held inside the optical centre",
+      "text": "Clear, Warm and Cool vary the optical centre. Slow ring movement and subtle pointer response reveal it while architecture and copy remain still.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "JameslabiQ-2096555751133376528",
+          "section": "Timeline and interaction evidence"
+        }
+      ]
+    },
+    {
+      "id": "hybrid-scene-fact",
+      "role": "context",
+      "label": "Raster environment with live optics",
+      "text": "The scene combines original raster environment art with live Three.js optics; it is not a freely traversable 3D world.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "opening-registration-check",
+      "role": "context",
+      "label": "Breakpoint optical registration",
+      "text": "At wide and portrait sizes, keep the sphere within the opening. Check glass edge, scene reflection, grounding, text contrast and all fallback states while preserving the walkway and layered environment detail.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "architectural-opening-layout",
+      "arch-pool-environment",
+      "ringed-optical-sphere"
+    ],
+    "surface": [
+      "matched-environment-glass"
+    ],
+    "behavior": [
+      "optical-centre-motion",
+      "hybrid-scene-fact"
+    ],
+    "checks": [
+      "opening-registration-check"
+    ]
+  }
+}

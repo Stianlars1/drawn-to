@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "common-clock",
+  "slug": "common-clock",
+  "name": "A shared rhythm / a living technical diagram",
+  "kind": "features",
+  "references": [
+    "jeetnirnejak-2092611495448445101",
+    "mehmetozsoyart-2092607949734543818"
+  ],
+  "implementation": [
+    "site/js/expansion/motion-instruments.js",
+    "site/css/motion-instruments.css"
+  ],
+  "art": "Use coherent native vector geometry and one shared logical clock. The original artwork and demonstration copy are in the cited implementation.",
+  "properties": [
+    {
+      "id": "fanout-drawing-layout",
+      "role": "layout",
+      "label": "Editorial explanation beside fanout drawing",
+      "text": "Balance a left editorial explanation with a large light drawing sheet. One small dimensional lead object dispatches to four distinct process specimens through curved routes, then resolves into a merged result and one progress strip.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "jeetnirnejak-2092611495448445101",
+          "section": "What is visible"
+        },
+        {
+          "id": "mehmetozsoyart-2092607949734543818",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "routed-process-diagram",
+      "role": "graphics",
+      "label": "Coherent routed process specimens",
+      "text": "Use real curved vector routes, small colored packets, consistent projection, different internal specimen drawings and readable status. Avoid generic connected icons.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "jeetnirnejak-2092611495448445101",
+          "section": "Composition, material and visual weight"
+        },
+        {
+          "id": "mehmetozsoyart-2092607949734543818",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "warm-technical-sheet",
+      "role": "color",
+      "label": "Warm paper with restrained signals",
+      "text": "Use warm paper, precise green-gray lines, pale modeled node faces, small specimen labels and a restrained family of signal colors.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "single-clock-sequence",
+      "role": "motion",
+      "label": "One clock for dispatch, work and return",
+      "text": "Coordinate dispatch, work and return with one six-second logical clock. Move packets on actual SVG route geometry and update status only at semantic stages. Watch and Stop are explicit, the completed frame stays useful, and reduced motion presents completion immediately.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "jeetnirnejak-2092611495448445101",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "illustrative-process-scope",
+      "role": "context",
+      "label": "Illustrative process, not agent telemetry",
+      "text": "The sequence illustrates a process. Do not claim actual agent work or numerical productivity results.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "clock-consistency-check",
+      "role": "context",
+      "label": "Diagram state consistency",
+      "text": "Packet positions, selected nodes, captions and progress must agree. Test stopping, replay, navigation cleanup and hidden tabs.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "fanout-drawing-layout",
+      "routed-process-diagram"
+    ],
+    "surface": [
+      "warm-technical-sheet"
+    ],
+    "behavior": [
+      "single-clock-sequence",
+      "illustrative-process-scope"
+    ],
+    "checks": [
+      "clock-consistency-check"
+    ]
+  }
+}

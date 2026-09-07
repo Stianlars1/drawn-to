@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "id": "plasma-study",
+  "slug": "plasma-study",
+  "name": "A mineral interior / changing optical surface",
+  "kind": "graphic",
+  "references": [
+    "zzzzshawn-2096548536972370319"
+  ],
+  "implementation": [
+    "site/js/expansion/motion-rendered.js",
+    "site/css/motion-rendered.css",
+    "site/js/motion/scenes/plasma.js",
+    "site/js/motion/shader.js",
+    "site/js/motion/runtime.js"
+  ],
+  "art": "The internal field is an original fragment shader. Its architecture and look are explicitly separate from the reference collection's licensed shader implementations.",
+  "properties": [
+    {
+      "id": "crisp-spherical-silhouette",
+      "role": "shape",
+      "label": "Crisp sphere-like optical silhouette",
+      "text": "Use one crisp fixed spherical limb with fine field detail compressed toward its edge.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "zzzzshawn-2096548536972370319",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "lagoon-mineral-palette",
+      "role": "color",
+      "label": "Blue-green, pale gold and violet",
+      "text": "Combine warm ivory #ebebe1, deep green and muted green-gray with dark blue-green regions, pale golden filaments and subtle violet clouding.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "procedural-optical-field",
+      "role": "graphics",
+      "label": "Dense procedural mineral field",
+      "text": "Construct an internal-looking projected optical field with original procedural turbulence, coherent density and fine filamentary detail. It is a procedural surface study, not arbitrary DOM refraction or a measured volumetric simulation.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "zzzzshawn-2096548536972370319",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "default-editorial-stage",
+      "role": "layout",
+      "label": "Large orb on an airy editorial stage",
+      "text": "Place one very large focal graphic in the main field, with a quiet editorial statement at left, ample open space and compact atmosphere, excitation and pause controls along the lower edge.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "default-field-behavior",
+      "role": "motion",
+      "label": "Slow coherent field evolution",
+      "text": "Evolve the internal procedural field slowly and coherently inside a fixed boundary. Reduced motion, paused playback and matching posters retain an intentional composed state.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "sans-serif-form-statement",
+      "role": "typography",
+      "label": "Large sans statement with serif emphasis",
+      "text": "Set a large, tightly tracked two-line sans statement with one restrained Instrument Serif emphasis, a small mono eyebrow and a quiet supporting paragraph.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "view-sensitive-sphere-light",
+      "role": "light",
+      "label": "Directional sheen and cyan edge light",
+      "text": "Use directional form light, a tight view-sensitive pale sheen, a restrained cyan edge contribution and a narrow pale boundary highlight so the focal surface stays dimensional without turning into a bright white rim.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "zzzzshawn-2096548536972370319",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "atmosphere-excitation-controls",
+      "role": "interaction",
+      "label": "Atmosphere, excitation and orientation controls",
+      "text": "Lagoon, Violet and Ember select distinct palettes; Excitation changes luminous energy; pointer position shifts field orientation; and Pause or Resume controls the evolution. Keep every control keyboard and touch operable.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "plasma-quality-check",
+      "role": "context",
+      "label": "Optical field quality check",
+      "text": "Compare boundary sharpness, highlight placement, dense-versus-open regions and color relationships. Reject a flat painted disc, simple CSS blur bubble or bright white rim that erases the material.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "parameter-stability-check",
+      "role": "context",
+      "label": "Stable plasma extremes",
+      "text": "Test parameter extremes and temporal stability.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "crisp-spherical-silhouette",
+      "default-editorial-stage",
+      "sans-serif-form-statement"
+    ],
+    "surface": [
+      "lagoon-mineral-palette",
+      "procedural-optical-field",
+      "view-sensitive-sphere-light"
+    ],
+    "behavior": [
+      "default-field-behavior",
+      "atmosphere-excitation-controls"
+    ],
+    "checks": [
+      "plasma-quality-check",
+      "parameter-stability-check"
+    ]
+  }
+}

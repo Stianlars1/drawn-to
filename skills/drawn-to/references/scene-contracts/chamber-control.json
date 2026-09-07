@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "chamber-control",
+  "slug": "chamber-control",
+  "name": "Material laboratory / a precise kind of feeling",
+  "kind": "component",
+  "references": [
+    "SebCornelius-2092618652994744578",
+    "xchylerdrenth-2093008935800517016"
+  ],
+  "implementation": [
+    "site/js/expansion/motion-instruments.js",
+    "site/css/motion-instruments.css"
+  ],
+  "art": "This scene is native HTML/CSS/SVG. Preserve the layered control construction and meaningful local data model rather than using a screenshot of a dashboard.",
+  "properties": [
+    {
+      "id": "continuous-instrument-grid",
+      "role": "layout",
+      "label": "Dense continuous instrument console",
+      "text": "Set a disciplined dark console beneath a technical heading. Fit a large response plot, physical knobs, illumination switch, state selector and distribution meter into distinct module shapes on one continuous grid.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "SebCornelius-2092618652994744578",
+          "section": "What is visible"
+        }
+      ]
+    },
+    {
+      "id": "functional-module-graphics",
+      "role": "graphics",
+      "label": "Different evidence in every module",
+      "text": "Give each module useful distinct anatomy: a response plot, setpoints, radial ticks, modes and distribution evidence. Use honest units or explicitly relative values rather than decorative pseudo-telemetry.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "SebCornelius-2092618652994744578",
+          "section": "Composition, material and visual weight"
+        },
+        {
+          "id": "xchylerdrenth-2093008935800517016",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "machined-dark-console",
+      "role": "material",
+      "label": "Machined anthracite instrument panels",
+      "text": "Use anthracite-green planes, crisp inset borders, restrained bevels, directional surface light and machined knob faces, with tiny warm-orange indicators and tabular or mono numbers.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "SebCornelius-2092618652994744578",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "operable-local-study",
+      "role": "interaction",
+      "label": "Controls drive a visible local model",
+      "text": "Excitation, damping and angle update the visible local model and curve; illumination and character controls expose actual state changes. Every control has native keyboard input.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "SebCornelius-2092618652994744578",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "demonstration-scope",
+      "role": "context",
+      "label": "Local study, not industrial telemetry",
+      "text": "This is an interactive local study, not a connected industrial controller. Do not imply live equipment or measured external telemetry.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "instrument-integrity-check",
+      "role": "context",
+      "label": "Working control and graph check",
+      "text": "Reject decorative nonworking knobs. Verify values and graph response, selected state, contrast and complete mobile control coverage while keeping labels readable.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "continuous-instrument-grid",
+      "functional-module-graphics"
+    ],
+    "surface": [
+      "machined-dark-console"
+    ],
+    "behavior": [
+      "operable-local-study",
+      "demonstration-scope"
+    ],
+    "checks": [
+      "instrument-integrity-check"
+    ]
+  }
+}

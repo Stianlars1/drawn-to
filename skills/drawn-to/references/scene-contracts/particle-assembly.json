@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "particle-assembly",
+  "slug": "particle-assembly",
+  "name": "A field finding its form",
+  "kind": "graphic",
+  "references": [
+    "krispuckett-2095994089917522241"
+  ],
+  "implementation": [
+    "site/js/expansion/gpu.js",
+    "site/css/extra-gpu.css",
+    "site/js/graphics/particles.js"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "particle-volume",
+      "role": "graphics",
+      "label": "Fine stable particles forming a volume",
+      "text": "Construct the subject from thousands of fine stable particles that form a volumetric surface. Let scale, overlap, density and brighter stacked edges describe depth without a mesh outline or fill, keeping the field precise and airy rather than evenly distributed screen confetti.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "krispuckett-2095994089917522241",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "default-composition",
+      "role": "layout",
+      "label": "Reading column beside a particle field",
+      "text": "Place a small reading column on the left and a large particle field across the right side of the page, with controls grouped below the statement and a quiet note at the lower edge. Keep the gathered subject clear of the reading column and recompose the field below the copy in portrait.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "default-palette",
+      "role": "color",
+      "label": "Blue-black with ivory-to-cyan particles",
+      "text": "Use a blue-black #060a0e field with ivory-to-cyan particles, cool near-white text and restrained blue-gray supporting copy.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "gather-release-behavior",
+      "role": "motion",
+      "label": "Stable gather and release motion",
+      "text": "Move the same stable particles smoothly and interruptibly between an open flowing field and the gathered target. Preserve particle identity through reversals, let the released field evolve coherently and resolve the gathered state without an idle intermediate shape.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "library-count-target",
+      "role": "shape",
+      "label": "Library-count numeral target",
+      "text": "Use one recognizable dimensional numeral representing the current library total, with shallow face depth rather than a flat text silhouette.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "plain-direction-statement",
+      "role": "typography",
+      "label": "Compact two-line direction statement",
+      "text": "Use a compact, large two-line sans statement with tight tracking and a quiet supporting paragraph, keeping the typographic block small enough for the particle field to dominate.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "gather-release-controls",
+      "role": "interaction",
+      "label": "Explicit Gather and Release controls",
+      "text": "Provide explicit Gather and Release buttons that retarget the current particles immediately and expose the active state to keyboard and assistive technology. The poster fallback must respond to the same choices.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "renderer-lifecycle",
+      "role": "context",
+      "label": "Measured renderer lifecycle",
+      "text": "Use a measured GPU backend only when it benefits this workload, with a working WebGL or poster fallback and no hidden-tab work.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "reversal-and-fallback-check",
+      "role": "context",
+      "label": "Particle lifecycle check",
+      "text": "Test repeated reversals, fallback controls and memory disposal.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "portrait-field-check",
+      "role": "context",
+      "label": "Legible portrait formation",
+      "text": "Test portrait framing. The gathered state must remain clearly legible and never cover the reading column.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "particle-volume",
+      "default-composition",
+      "library-count-target",
+      "plain-direction-statement"
+    ],
+    "surface": [
+      "default-palette"
+    ],
+    "behavior": [
+      "gather-release-behavior",
+      "gather-release-controls",
+      "renderer-lifecycle"
+    ],
+    "checks": [
+      "reversal-and-fallback-check",
+      "portrait-field-check"
+    ]
+  }
+}

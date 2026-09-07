@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "chromatic-relief",
+  "slug": "chromatic-relief",
+  "name": "A rhythm in relief",
+  "kind": "graphic",
+  "references": [
+    "adriankuleszo-2096048196988580223"
+  ],
+  "implementation": [
+    "site/js/expansion/studio.js",
+    "site/css/atelier-studio.css",
+    "site/js/atelier/runtime.js",
+    "site/js/atelier/materials.js",
+    "site/js/atelier/scenes/relief.js"
+  ],
+  "art": "",
+  "properties": [
+    {
+      "id": "wave-field-layout",
+      "role": "layout",
+      "label": "Relief wave under spare type",
+      "text": "Build a large architectural wave from repeated colored relief elements beneath a spare editorial heading. Protect large clear negative space between type and sculpture and keep small expression controls at the bottom.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "repeated-relief-geometry",
+      "role": "shape",
+      "label": "Phased thick relief units",
+      "text": "Give every relief element thickness. Use repetition, phase, spacing and depth to create the identity rather than identical flat rectangles.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "adriankuleszo-2096048196988580223",
+          "section": "Layout, type and material"
+        }
+      ]
+    },
+    {
+      "id": "plaster-cobalt-palette",
+      "role": "color",
+      "label": "Warm plaster and cobalt",
+      "text": "Use a warm plaster ground, cobalt type and alternating saturated material faces.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "edge-lit-relief",
+      "role": "material",
+      "label": "Edge-lit dimensional relief",
+      "text": "Use believable edge light, reflected color and coherent contact shadows to preserve separation between the thick relief units.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "expression-control",
+      "role": "interaction",
+      "label": "Relief expression control",
+      "text": "Quiet, Flowing and Sculptural presets plus a continuous expression slider adjust the collective relief.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "slow-rhythm-motion",
+      "role": "motion",
+      "label": "Slow collective rhythm",
+      "text": "Use slow motion to alter the relief rhythm while the heading remains fixed. Provide pause, reduced motion and complete preset posters.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "adriankuleszo-2096048196988580223",
+          "section": "Motion evidence"
+        }
+      ]
+    },
+    {
+      "id": "relief-scale-check",
+      "role": "context",
+      "label": "Whole and detail relief check",
+      "text": "Judge the full wave silhouette, then inspect individual bevels, material separation and shadow consistency.",
+      "selectable": false,
+      "sources": []
+    },
+    {
+      "id": "expression-extremes-check",
+      "role": "context",
+      "label": "Collision-free extremes",
+      "text": "Test extreme expression values without collisions or loss of shape.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "wave-field-layout",
+      "repeated-relief-geometry"
+    ],
+    "surface": [
+      "plaster-cobalt-palette",
+      "edge-lit-relief"
+    ],
+    "behavior": [
+      "expression-control",
+      "slow-rhythm-motion"
+    ],
+    "checks": [
+      "relief-scale-check",
+      "expression-extremes-check"
+    ]
+  }
+}

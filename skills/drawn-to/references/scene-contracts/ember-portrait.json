@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "ember-portrait",
+  "slug": "ember-portrait",
+  "name": "Ember portrait / character in the details",
+  "kind": "editorial",
+  "references": [
+    "_heyfaisal-2096513753865240860"
+  ],
+  "implementation": [
+    "site/js/expansion/motion-editorial.js",
+    "site/css/motion-editorial.css",
+    "site/js/expansion/motion-shared.js"
+  ],
+  "art": "The original asset is site/assets/motion/ember-portrait.webp. If adapting the subject, create a comparably detailed original portrait with copy space; generic stock imagery or a flat vector head is below this target.",
+  "properties": [
+    {
+      "id": "protected-portrait-layout",
+      "role": "layout",
+      "label": "Oversized portrait with protected copy",
+      "text": "Let an oversized synthetic portrait occupy the right and most of the vertical field while strong uppercase type sits in clear darker space at left. Finish with a quiet material caption and three inspection views. On mobile, recompose around the face and protect a lower message region.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "_heyfaisal-2096513753865240860",
+          "section": "What is visible"
+        }
+      ]
+    },
+    {
+      "id": "authored-synthetic-portrait",
+      "role": "graphics",
+      "label": "Detailed synthetic object portrait",
+      "text": "Use a richly authored object portrait with an amber curved visor, complex face enclosure, tiny mesh, gaskets, braiding, fasteners and subtle surface wear. Preserve character and detail at several scales rather than producing a glossy toy.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "_heyfaisal-2096513753865240860",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "graphite-amber-materials",
+      "role": "material",
+      "label": "Graphite ceramic, dark metal and amber glass",
+      "text": "Combine matte graphite ceramic, layered dark metal and curved amber glass. Give the face and enclosure different roughness, with long reflected light shapes and warm internal glints for depth.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "_heyfaisal-2096513753865240860",
+          "section": "Composition, material and visual weight"
+        }
+      ]
+    },
+    {
+      "id": "authored-crop-inspection",
+      "role": "interaction",
+      "label": "Portrait, visor and mechanism crops",
+      "text": "Portrait, The visor and The mechanism select deliberate crops and matching explanatory captions. Subtle pointer reframing may support inspection, but a raster asset does not promise unrestricted orbit or moving facial geometry.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "_heyfaisal-2096513753865240860",
+          "section": "Transferable construction"
+        }
+      ]
+    },
+    {
+      "id": "portrait-detail-check",
+      "role": "context",
+      "label": "Portrait detail and crop check",
+      "text": "Inspect visor mesh, metal seams and cable detail at full size. Every selected crop must preserve readable text, visible controls, material contrast and the subject's personality.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "protected-portrait-layout",
+      "authored-synthetic-portrait"
+    ],
+    "surface": [
+      "graphite-amber-materials"
+    ],
+    "behavior": [
+      "authored-crop-inspection"
+    ],
+    "checks": [
+      "portrait-detail-check"
+    ]
+  }
+}

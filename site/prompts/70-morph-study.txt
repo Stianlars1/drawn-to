@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A warm mint editorial field places a large expressive heading beside a clear three-dimensional particle structure. Small shape and formation controls sit below. The point cloud must resolve into recognizable geometry, with enough density and contrast to hold its own against the type.
+On a warm mint field, place a large expressive heading beside a clear three-dimensional particle structure, with compact shape and formation controls below. Give the point cloud enough area, density and contrast to balance the type. Use stable point identities sampled into recognizable authored target geometries. Let distribution, overlap and density describe depth; keep text outside the rendering layer and avoid diffuse dust that loses the chosen shape.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Deep green fine points on a pale mint ground, with subtle depth from point distribution, overlap and restrained rotation. Avoid diffuse low-contrast dust that loses the chosen shape. The type is an editorial serif voice, while controls and labels stay quiet and precise.
+Use fine deep-green points on a pale warm-mint ground, with enough contrast for the resting target at mobile size.
 
 BEHAVIOR
-Sphere, Current and Loop use stable particles to move among authored target geometries. Formation changes how tightly they resolve. The transition retargets from the current positions, and pause/reduced motion provide an intentional completed state. Keep text outside the rendering layer.
+Sphere, Current and Loop move the same particles among authored targets with restrained rotation; Formation changes how tightly they resolve. Retarget from current positions, preserve stable identities, and provide an intentional completed state for pause and reduced motion. Use an expressive editorial heading with Instrument Serif emphasis, balanced by a sans base and quiet precise controls, labels and supporting copy.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 The targets and particle transitions are original code. Preserve point identity and authored geometry instead of importing third-party brand illustrations or source screenshots.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Compare the resting target and transition separately. No accidental intermediate stall, abrupt stale shape, chaotic particle reassignment or weak mobile contrast. Test reversals, formation extremes and resource disposal.
+Compare resting targets and transitions separately. Reject an intermediate stall, abrupt stale shape, chaotic reassignment or weak mobile contrast. Test reversals, formation extremes and resource disposal.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

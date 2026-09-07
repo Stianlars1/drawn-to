@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-Many tiny specimens form a meticulously spaced contact sheet on a warm editorial page. A narrow serif heading introduces the collection; a compact legend decodes the specimen fills.
+Arrange many tiny specimens as a meticulously spaced contact sheet beneath a narrow heading and beside a compact fill legend. Give every tile a subtle ruled border, inset neutral mark and fine registration texture that remains coherent at print scale.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Cream paper, black ink, inset tiny neutral marks and a subtle ruled border per tile. Variations in fill encode light, dark and mixed source modes. Keep texture and registration details at print scale.
+Use cream paper and black ink, with restrained fill variation encoding light, dark and mixed source modes. Use a narrow editorial serif for the collection heading and compact, readable labels for the specimen legend and archive metadata.
 
 BEHAVIOR
-A very quiet scanning band may traverse the grid; the data stays fixed. Keep archive date and counts explicit. Do not animate the individual tiles into a distracting wave.
+If motion is used, let one very quiet scanning band traverse the fixed grid; never animate individual tiles as a wave. Keep the archive date and specimen count explicit and ensure the grid total reconciles with the legend.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
@@ -29,5 +29,5 @@ BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-The grid count and legend must reconcile. On mobile reduce columns and preserve all specimens instead of cropping the archive.
+At mobile widths reduce the number of columns while preserving every specimen instead of cropping the archive.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

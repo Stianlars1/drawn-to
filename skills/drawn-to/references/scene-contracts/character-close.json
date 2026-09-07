@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "id": "character-close",
+  "slug": "character-close",
+  "name": "A character with a point of view",
+  "kind": "footer",
+  "references": [
+    "DesignByMoein-2096289484577071567"
+  ],
+  "implementation": [
+    "site/js/expansion/editorial.js",
+    "site/css/extra-editorial.css"
+  ],
+  "art": "Use the original character asset named by site/js/expansion/editorial.js as implementation evidence; create a distinct authorized character if adapting the design for another brand.",
+  "properties": [
+    {
+      "id": "character-anchored-closing",
+      "role": "layout",
+      "label": "Character-anchored closing page",
+      "text": "Anchor a warm closing page with one oversized friendly character, balanced by large editorial words, generous open space and compact useful next actions rather than decorative cards.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DesignByMoein-2096289484577071567",
+          "section": "Layout & composition"
+        }
+      ]
+    },
+    {
+      "id": "serif-sans-closing-voice",
+      "role": "typography",
+      "label": "Humane serif with clear controls",
+      "text": "Mix humane serif emphasis with clear sans controls, keeping the closing words spacious and the actions concise.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "cream-olive-muted-red",
+      "role": "color",
+      "label": "Cream, olive and muted red",
+      "text": "Use cream, olive and muted red accents, keeping the interface quiet enough for the illustrated character to carry the color.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "sculptural-character",
+      "role": "graphics",
+      "label": "Sculptural character with point of view",
+      "text": "Create an original character with rounded volumes, deliberate pose and tiny face and edge details; personality must come from proportion and posture rather than an emoji-like blob.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DesignByMoein-2096289484577071567",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "grounded-tactile-character",
+      "role": "material",
+      "label": "Grounded tactile character",
+      "text": "Give the character tactile modeled surfaces and a soft contact shadow that places it on the page rather than inside a card.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DesignByMoein-2096289484577071567",
+          "section": "Graphic language"
+        }
+      ]
+    },
+    {
+      "id": "asset-only-character-motion",
+      "role": "motion",
+      "label": "Asset-only character motion",
+      "text": "If the character moves, preserve its silhouette and keep all reading text still; a one-way state change plays once and holds rather than jumping back into a loop.",
+      "selectable": true,
+      "sources": [
+        {
+          "id": "DesignByMoein-2096289484577071567",
+          "section": "Motion timeline"
+        }
+      ]
+    },
+    {
+      "id": "honest-closing-actions",
+      "role": "interaction",
+      "label": "Honest closing actions",
+      "text": "Let closing actions download a starting brief or copy an install command, and report each result accurately beside its control.",
+      "selectable": true,
+      "sources": []
+    },
+    {
+      "id": "acceptance",
+      "role": "context",
+      "label": "Character personality acceptance",
+      "text": "Verify that pose, proportion and small details preserve the character's point of view at both phone and desktop scale.",
+      "selectable": false,
+      "sources": []
+    }
+  ],
+  "sections": {
+    "composition": [
+      "character-anchored-closing",
+      "sculptural-character"
+    ],
+    "surface": [
+      "cream-olive-muted-red",
+      "serif-sans-closing-voice",
+      "grounded-tactile-character"
+    ],
+    "behavior": [
+      "asset-only-character-motion",
+      "honest-closing-actions"
+    ],
+    "checks": [
+      "acceptance"
+    ]
+  }
+}

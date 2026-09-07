@@ -6,13 +6,13 @@ Reproduce its visual character, composition, level of detail and signature effec
 Start by inspecting the live scene and the implementation links below. If a resource is unavailable, say which one; do not silently replace the effect with a generic approximation. Use the Drawn To skill if installed, or read https://github.com/Stianlars1/drawn-to/blob/main/skills/drawn-to/SKILL.md. Follow its relevant linked guidance.
 
 COMPOSITION
-A large editorial serif statement occupies the pale sky above a richly drawn agricultural valley. Engraved clouds, layered mountains, fields, water, a pavilion and foreground grasses form one connected landscape. Small inspection links and a restrained compass-like detail complete the page.
+Place a large editorial serif statement in pale sky above one connected agricultural valley. Complete the page with small inspection links and a restrained compass-like detail, while preserving clear reading space in every crop. Draw engraved clouds, layered mountains, fields, water, a pavilion and foreground grasses as one richly observed landscape. Use several scales of line density, stipple, material texture and fine small structures to establish foreground, middle distance and horizon depth. Use a large editorial serif voice whose weight, scale and texture belong to the illustrated printed world rather than a generic SaaS header.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Warm golden paper, olive ink, dusty teal distance, ochre highlights and subtle printed irregularity. The drawing needs several scales of line density, stipple, material texture and finely observed small structures. The type belongs to the printed world rather than a generic SaaS header.
+Use warm golden paper, olive ink, dusty teal distance and ochre highlights, with subtle printed irregularity.
 
 BEHAVIOR
-The valley, The water and The shelter select intentional crops and captions from one original scene. Keep movement gentle and remove travel under reduced motion. The landscape remains fully composed at rest.
+The valley, The water and The shelter select intentional crops and captions from one original scene. Keep movement gentle, remove travel under reduced motion and leave the landscape fully composed at rest.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
 The original illustration is site/assets/motion/sunlit-field.webp. Create or use authorized imagery with similar linework and depth; a flat vector farm or unrelated photograph cannot carry this direction.
