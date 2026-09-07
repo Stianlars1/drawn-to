@@ -362,21 +362,14 @@ try {
   await page.waitForTimeout(150);
   assert.equal(await page.locator("[data-clock-time]").innerText(), stopped);
   await visit("thermal-type");
-  await page.locator("[data-heat]").click();
-  assert.equal(
-    await page.locator("[data-heat]").getAttribute("aria-pressed"),
-    "true",
-  );
-  assert.notEqual(
-    await page.locator("feDisplacementMap").getAttribute("scale"),
-    "0",
-  );
-  await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.waitForFunction(
-    () =>
-      document.querySelector("feDisplacementMap")?.getAttribute("scale") ===
-      "0",
-  );
+  await page.waitForFunction(()=>document.querySelector('[data-heat-host]').__heatState.frames>2);
+  await page.locator('[data-heat]').click();
+  assert.equal(await page.locator('[data-heat]').getAttribute('aria-pressed'),'true');
+  const heatFrames=await page.locator('[data-heat-host]').evaluate(h=>h.__heatState.frames);
+  await page.waitForTimeout(180);
+  assert.equal(await page.locator('[data-heat-host]').evaluate(h=>h.__heatState.frames),heatFrames);
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await page.waitForFunction(()=>document.querySelector('[data-heat]').hidden);
   report.checks.push(
     "Industrial controls, continuous SVG geometry, single-clock sequence and local heat distortion respond to their promised inputs.",
   );

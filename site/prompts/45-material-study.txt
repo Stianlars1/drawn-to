@@ -9,7 +9,7 @@ COMPOSITION
 A single sculptural folded-aperture object sits in a quiet studio with a large editorial headline and a compact Ceramic/Metal/Glass selector. Geometry, camera and silhouette stay consistent across the material study.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Warm-gray ground. Ceramic has broad soft highlights and an opaque body; metal has sharp directional reflections; glass has transmission, thickness and tinted edge absorption. Use one lighting rig that lets those differences read honestly.
+Warm-gray studio ground and one shared folded aperture. Ivory ceramic has a fine speckled fired body and a quiet dielectric sheen; satin metal has visible directional reflection gradients and fine brushing; clear glass refracts the actual typographic backing plane. Keep face, bevel and side distinct, without blacked-out metal faces or uniform opaque-looking glass.
 
 BEHAVIOR
 Selection changes the actual material without moving the object or rebuilding the page. Load the detailed model once and dispose it when leaving. The fallback offers matching posters for all three choices.
@@ -25,10 +25,11 @@ CALIBRATION SOURCES
 - Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/graphics/three-stage.js
 - Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/graphics/models.js
 - Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/assets/models/folded-aperture.glb
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/graphics/optical-bench.js
 
 BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Compare all three states side by side. If the only visible difference is color, the material study has failed.
+Compare all three states at the same pose, full composition and actual-size detail. Show real transmitted background evidence in glass, directional reflection structure in metal and a distinct opaque ceramic body. Verify that surface detail survives filtering at the delivered DPR. Inspect the GLB in the same lighting as its procedural source and export all matching fallback states.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

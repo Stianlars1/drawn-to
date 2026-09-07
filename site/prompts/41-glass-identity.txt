@@ -9,13 +9,13 @@ COMPOSITION
 A large translucent sculptural mark occupies the right of a pale green editorial page. A simple left headline and progressively sized flat versions of the same mark make the relationship between identity and material explicit.
 
 MATERIAL, LIGHT, TYPE AND TONE
-Sage-white ground, deep green type, thick green-tinted glass with rounded edge bevels, clear internal voids, environmental reflections and a grounded shadow. The mark silhouette must remain identical across flat and volumetric versions.
+Sage-white ground and deep green type. Use a clear polished volume with a restrained cool cast, tighter bevels, dark/bright edge intervals and softly grounded depth. A typographic plane genuinely behind the mark makes refraction visible, while crisp flat vector marks retain the same silhouette.
 
 BEHAVIOR
 A very quiet rotation or pointer reaction can reveal thickness. Use an actual modeled mark for a changing viewpoint and a matching composed poster fallback. Keep small flat marks in crisp vector form.
 
 ASSET AND IMPLEMENTATION REQUIREMENTS
-Inspect the source construction before selecting a renderer. Keep the distinctive geometry, material and detail in the final output. Use semantic HTML for reading and controls; use SVG, CSS, a detailed original image or real 3D according to what the effect actually needs.
+The folded mark is original procedural geometry. Its optical backing plane and typography are composed inside the renderer and are actually sampled through the glass. This is a known scene, not arbitrary DOM refraction.
 The rendering techniques described here are those used in our showcase, not claims about the original reference author. Reuse compatible licensed showcase code when fidelity benefits; retain required notices. Create original or licensed brand artwork rather than lifting third-party reference art.
 
 CALIBRATION SOURCES
@@ -24,10 +24,11 @@ CALIBRATION SOURCES
 - Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/css/extra-gpu.css
 - Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/graphics/three-stage.js
 - Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/graphics/models.js
+- Actual showcase implementation: https://github.com/Stianlars1/drawn-to/blob/main/site/js/graphics/optical-bench.js
 
 BEFORE YOU BUILD
 Read the existing project and use facts and approvals already available. Ask only for missing decisions that would change the result: where this surface belongs, what product/content/action it serves, whether to retain the pictured subject or adapt it, and any platform or asset constraints. Treat this chosen look and level of craft as established; do not restart a broad style-selection interview. Keep implementation choices open until the actual effect and project constraints are understood.
 
 ACCEPTANCE
-Glass needs visible thickness, transmitted light and a coherent reflection environment. A flat translucent logo with a CSS blur is not equivalent.
+Inspect an actual landmark through the volume and its unchanged portion outside it, at rest and under a changing view. Look for coherent thickness and reflections, with a readable clear center. A mint fill or a transmission setting alone is not proof of the intended optical finish.
 Render and visually inspect at 1440x900, 1280x720 and 390x844, plus the actual target size. Compare the output to the selected scene at both whole-composition and close-up scale. Check hierarchy, silhouette, density of detail, material roughness/thickness, reflection shape, light direction, contact shadow and crop wherever relevant. A neat page with matching colors alone is not enough. Test all controls and motion extremes, keyboard/touch, reduced motion and relevant fallback states. Preserve content and evidence on mobile; recompose or allow controlled reading space instead of hiding them. Stop timers/rendering when hidden or unmounted, avoid needless per-frame CPU work and measure performance before making claims. Report what still differs and refine the substantive gaps before calling it finished.

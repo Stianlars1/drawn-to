@@ -219,3 +219,29 @@ A working demo still needs real input meaning: a slider should change the
 promised property, state labels should reconcile, and audio must start through
 an explicit action. Verify disposal, hidden-tab behavior and reduced-motion
 changes while the scene is mounted. See [motion expansion](motion-expansion.md).
+
+
+## Reproduction checks from material and effect review
+
+For selected physical finishes, use [material evidence](material-evidence.md)
+to test visible transmission, reflection shape, surface frequency and interfaces.
+Keep the original criticism as an acceptance criterion; do not merely attach a
+new positive label to the same output.
+
+For source-driven motion, use [causal effects](causal-effects.md). Review the
+normal unattended page as well as hover. The cause, carrier and affected region
+must agree across the desktop and mobile compositions.
+
+Small hero illustrations need the same coherent viewpoint and material logic as
+large ones. Group a focal object, supporting structure, negative space and type
+at the actual preview size. Several overlapping primitives with no considered
+relationship are not a finished composition. A quiet schematic remains valid
+when the preview's role is to explain structure; do not inflate it into a brand
+illustration unnecessarily. Scope icon CSS to icons so it cannot collapse a
+real illustration to icon size.
+
+
+The [menu composition comparison](../assets/studies/menu-composition-refinement.jpg)
+shows our own earlier stacked-shape placeholder and the composed miniature hero.
+Use it to compare viewpoint, focal object, scale and relationship to type, not as
+a requirement that every preview contain an arch or folded paper.

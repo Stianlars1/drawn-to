@@ -43,8 +43,18 @@
       render(){return `<div class="xp-glass-copy"><h1>Recognizable.<br>At every <em>scale.</em></h1><p>One visual idea, from a small signature to an entire world.</p><div class="xp-flat-marks">${markSvg(22)}${markSvg(38)}${markSvg(58)}<span>The same idea.<br>Less detail.</span></div></div>${stage('glass-identity')}<p class="xp-study-caption">The shape stays. The material changes the feeling.</p>`;},
       mount(root,options){return mount(root,options,'three','mark','glass','#e9eee9');}},
     {id:'physical-schedule',order:42,name:'a tangible plan',reference:'nilseller-2093007384465531068',theme:{background:'#141c23',ink:'#e8edef',muted:'#9ba8b2',accent:'#bad8fa'},
-      render(){return `<div class="xp-schedule-heading"><h1>Give the work<br>a shape.</h1><p>A direction becomes useful<br>when you can see what comes next.</p></div>${stage('physical-schedule')}<div class="xp-schedule-steps"><span>Discover</span><span>Frame</span><span>Make</span><span>Refine</span></div>`;},
-      mount(root,options){return mount(root,options,'three','schedule','metal','#141c23');}},
+      render(){return `<div class="xp-schedule-heading"><h1>Give the work<br>a shape.</h1><p>A direction becomes useful<br>when you can see what comes next.</p></div>${stage('physical-schedule')}<div class="xp-schedule-steps"><span>Discover</span><span>Frame</span><span>Make</span><span>Refine</span></div><button type="button" class="xp-inspect-finish" data-inspect aria-pressed="false">Inspect the finish ↗</button>`;},
+      async mount(root,options){
+        const cleanup=await mount(root,options,'three','schedule','metal','#141c23');
+        if(options.signal.aborted)return cleanup;
+        const host=root.querySelector('[data-model-host]'),button=root.querySelector('[data-inspect]');let close=false;
+        function apply(){
+          button.setAttribute('aria-pressed',String(close));button.textContent=close?'Show the full plan ↙':'Inspect the finish ↗';
+          if(host.__stage)host.__stage.setInspection(close);
+          else{const base='./assets/expansion/gpu/physical-schedule'+(close?'-detail':'');host.querySelector('picture source').srcset=base+'-mobile.webp';host.querySelector('img').src=base+'.webp';}
+        }
+        button.addEventListener('click',()=>{close=!close;apply();},{signal:options.signal});host.addEventListener('gpu-fallback',apply,{signal:options.signal});return cleanup;
+      }},
     {id:'iridescent-ribbon',order:43,name:'iridescent form',reference:'basit_designs-2095821165306732974',theme:{background:'#efeee9',ink:'#202323',muted:'#6b706c',accent:'#7054ae'},
       render(){return `${stage('iridescent-ribbon')}<div class="xp-ribbon-copy"><h1>More than<br>a colour.</h1><p>A silhouette. A reflection.<br>A material that holds the direction.</p></div><div class="xp-ribbon-note"><span>Form gives colour<br>somewhere to belong.</span><button data-motion type="button" aria-pressed="false">Pause motion</button></div>`;},
       mount(root,options){return mount(root,options,'three','ribbon','ribbon','#efeee9');}},

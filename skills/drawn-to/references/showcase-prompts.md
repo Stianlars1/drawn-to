@@ -70,3 +70,12 @@ solution. Do not describe a text/metadata check as a visual reproduction test.
 A prompt is a reproducible brief and source trail, not a guarantee that every
 model will generate identical pixels. When output falls short, name the missing
 qualities and revise the output or the under-specified profile.
+
+
+## Stable scene links
+
+The showcase uses descriptive canonical names independently of display order.
+The original case-sensitive letter links remain aliases; `a` and `A` are distinct
+scenes. The repository's `site/js/scene-routes.js` is the shared mapping used by
+the browser and prompt generator. Export the current canonical link when a
+prompt is copied. Do not interpret a URL name as a sequence position.

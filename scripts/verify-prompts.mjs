@@ -21,7 +21,7 @@ try{
   await button.click();await page.waitForFunction(()=>document.querySelector('.scene-prompt-actions [data-style-copy]').dataset.copied==='true');
   const actual=await page.evaluate(()=>navigator.clipboard.readText());
   const url=await page.evaluate(id=>window.DrawnToPromptIndex[id].url,id);
-  const expected=await (await context.request.get(new URL(url,base).href)).text();assert.equal(actual,expected,id);assert.ok(actual.includes('?still#'+id),id);assert.ok(actual.length>2000,id);assert.ok(!copied.has(actual));copied.add(actual);
+  const expected=await (await context.request.get(new URL(url,base).href)).text();assert.equal(actual,expected,id);const slug=await page.evaluate(id=>DrawnToRoutes.slug(id),id);assert.ok(actual.includes('?still#'+slug),id);assert.ok(actual.length>2000,id);assert.ok(!copied.has(actual));copied.add(actual);
   report.copies.push({id,characters:actual.length});
  }
  await page.locator('.scene-prompt-actions [data-style-copy]').click();

@@ -109,84 +109,12 @@
         accent: "#ac5528",
       },
       render() {
-        return `<div class="mo-editorial-art"><img src="${m.asset("thermal-type")}" alt="An original titanium heat chamber with intricate cooling fins and a luminous amber ceramic interior."></div><svg class="mo-filter" aria-hidden="true"><defs><filter id="mo-heat"><feTurbulence type="fractalNoise" baseFrequency=".025 .065" numOctaves="2" seed="8" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G"/></filter></defs></svg><div class="mo-thermal-copy"><span class="mo-eyebrow">A PHYSICAL IMPRESSION</span><h1>Feel the<br><em>afterglow.</em></h1><p>Sharp edges. Warm light.<br>A little movement in the air.</p><button type="button" class="mo-thermal-trigger" data-heat aria-pressed="false">Hold the heat ${m.arrow}</button></div><div class="mo-thermal-bottom"><span>TITANIUM / CERAMIC / LIGHT</span><span data-heat-note>Move over the words.<br>Watch the air change.</span></div>`;
+        return `<div class="mo-editorial-art"><img src="${m.asset("thermal-type")}" alt="An original titanium heat chamber with intricate cooling fins and a luminous amber ceramic interior."></div><div class="mo-heat-host" data-heat-host></div><div class="mo-thermal-copy"><span class="mo-eyebrow">A PHYSICAL IMPRESSION</span><h1>Feel the<br><em>afterglow.</em></h1><p>Sharp edges. Warm light.<br>A little movement in the air.</p><button type="button" class="mo-thermal-trigger" data-heat aria-pressed="false">Pause heat</button></div><div class="mo-thermal-bottom"><span>TITANIUM / CERAMIC / LIGHT</span><span data-heat-note>Heat travels.<br>The air carries it.</span></div>`;
       },
-      mount(root, { signal, reducedMotion, still }) {
-        const copy = root.querySelector(".mo-thermal-copy"),
-          filter = root.querySelector("feDisplacementMap"),
-          noise = root.querySelector("feTurbulence"),
-          button = root.querySelector("[data-heat]");
-        let latched = false,
-          hover = false,
-          raf = 0,
-          time = 0,
-          last = 0;
-        const media = matchMedia("(prefers-reduced-motion:reduce)");
-        function paint() {
-          filter.setAttribute(
-            "scale",
-            media.matches ? "0" : String(latched || hover ? 5 : 0),
-          );
-        }
-        function tick(now) {
-          time += last ? Math.min((now - last) / 1000, 0.08) : 0;
-          last = now;
-          noise.setAttribute(
-            "baseFrequency",
-            `${0.022 + Math.sin(time * 0.7) * 0.003} ${0.063 + Math.cos(time * 0.43) * 0.006}`,
-          );
-          paint();
-          if ((latched || hover) && !media.matches && !document.hidden)
-            raf = requestAnimationFrame(tick);
-          else {
-            raf = 0;
-            last = 0;
-          }
-        }
-        function reconcile() {
-          cancelAnimationFrame(raf);
-          raf = 0;
-          last = 0;
-          paint();
-          if ((latched || hover) && !media.matches && !document.hidden)
-            raf = requestAnimationFrame(tick);
-        }
-        copy.addEventListener(
-          "pointerenter",
-          () => {
-            hover = true;
-            reconcile();
-          },
-          { signal },
-        );
-        copy.addEventListener(
-          "pointerleave",
-          () => {
-            hover = false;
-            reconcile();
-          },
-          { signal },
-        );
-        button.addEventListener(
-          "click",
-          () => {
-            latched = !latched;
-            button.setAttribute("aria-pressed", String(latched));
-            button.firstChild.textContent = latched
-              ? "Release the heat "
-              : "Hold the heat ";
-            root.querySelector("[data-heat-note]").textContent = media.matches
-              ? "A clear resting state follows your motion preference."
-              : latched
-                ? "The shimmer is held."
-                : "Move over the words. Watch the air change.";
-            reconcile();
-          },
-          { signal },
-        );
-        media.addEventListener("change", reconcile, { signal });
-        document.addEventListener("visibilitychange", reconcile, { signal });
-        return () => cancelAnimationFrame(raf);
+      async mount(root, options) {
+        const {mountHeat}=await import('../motion/heat.js');
+        if(options.signal.aborted)return()=>{};
+        return mountHeat(root, options);
       },
     },
   ];

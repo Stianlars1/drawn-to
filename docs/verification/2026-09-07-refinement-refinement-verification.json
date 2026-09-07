@@ -1,0 +1,149 @@
+{
+  "date": "2026-09-07T12:24:56.085Z",
+  "browser": "152.0.7977.82",
+  "checks": [
+    "All 30 case-sensitive legacy IDs and descriptive aliases resolve; hash/query conflicts normalize to the hash choice; encoded legacy links resolve.",
+    "Manual next/previous navigation writes history; browser Back and Forward restore the actual scene.",
+    "Heat advances without hover, changes both source-region and headline pixels, leaves an outside region fixed, caches its texture and pauses.",
+    "Context loss restores semantic visible text; forced GPU-off and reduced motion retain a composed readable state.",
+    "The composed illustration keeps real artwork dimensions at all three widths; menu preview, selection and Escape retain keyboard behavior.",
+    "The plan inspection changes actual rendered pixels and preserves the selected overview/detail state across context loss and forced-poster rendering."
+  ],
+  "aliases": [
+    {
+      "id": "a",
+      "slug": "narrow-dark"
+    },
+    {
+      "id": "b",
+      "slug": "pastel-stage"
+    },
+    {
+      "id": "c",
+      "slug": "paper-print"
+    },
+    {
+      "id": "d",
+      "slug": "dark-atmosphere"
+    },
+    {
+      "id": "e",
+      "slug": "technical-home"
+    },
+    {
+      "id": "f",
+      "slug": "ink-air"
+    },
+    {
+      "id": "g",
+      "slug": "isometric-blueprint"
+    },
+    {
+      "id": "h",
+      "slug": "emissive-signal"
+    },
+    {
+      "id": "i",
+      "slug": "tactile-instrument"
+    },
+    {
+      "id": "j",
+      "slug": "divider-trio"
+    },
+    {
+      "id": "k",
+      "slug": "pebble-trio"
+    },
+    {
+      "id": "l",
+      "slug": "print-ledger"
+    },
+    {
+      "id": "m",
+      "slug": "mosaic-gallery"
+    },
+    {
+      "id": "n",
+      "slug": "emissive-metrics"
+    },
+    {
+      "id": "o",
+      "slug": "frozen-interaction"
+    },
+    {
+      "id": "p",
+      "slug": "chapters"
+    },
+    {
+      "id": "q",
+      "slug": "outlined-bento"
+    },
+    {
+      "id": "r",
+      "slug": "instrument-hud"
+    },
+    {
+      "id": "s",
+      "slug": "paper-slips"
+    },
+    {
+      "id": "t",
+      "slug": "editorial-close"
+    },
+    {
+      "id": "u",
+      "slug": "proof-diptych"
+    },
+    {
+      "id": "v",
+      "slug": "correction-ledger"
+    },
+    {
+      "id": "w",
+      "slug": "two-registers"
+    },
+    {
+      "id": "x",
+      "slug": "stop-conditions"
+    },
+    {
+      "id": "y",
+      "slug": "reference-contact-sheet"
+    },
+    {
+      "id": "z",
+      "slug": "blend-matrix"
+    },
+    {
+      "id": "A",
+      "slug": "example-run"
+    },
+    {
+      "id": "B",
+      "slug": "agent-integrations"
+    },
+    {
+      "id": "C",
+      "slug": "measured-page"
+    },
+    {
+      "id": "D",
+      "slug": "light-dark"
+    }
+  ],
+  "errors": [],
+  "heatPixels": {
+    "headline": {
+      "count": 13641,
+      "total": 75632
+    },
+    "source": {
+      "count": 3798,
+      "total": 6561
+    },
+    "outside": {
+      "count": 0,
+      "total": 2500
+    }
+  }
+}

@@ -608,7 +608,8 @@ const params = new URLSearchParams(location.search);
 const still = params.has('still');
 const sceneStill = params.has('poster') || params.has('t');
 let paused = still || reduce;
-let idx = Math.max(0, ORDER.indexOf(params.get('v') || (location.hash||'#').slice(1)));
+const routes=window.DrawnToRoutes;
+let idx = Math.max(0, ORDER.indexOf(routes.resolve((location.hash||'#').slice(1) || params.get('v'))));
 let first = true, timer = null;
 const app = document.getElementById('app');
 const live = document.getElementById('live');
@@ -747,15 +748,21 @@ function render(v){
     }).catch(error=>{if(generation===renderGeneration) app.dataset.mountError=String(error);});
   }
 }
-function go(v){
-  const run = () => render(v);
-  if (document.startViewTransition && !reduce) document.startViewTransition(run); else run();
-  const url=new URL(location.href); url.hash=v;
-  if(url.searchParams.has('v')) url.searchParams.set('v',v);
-  history.replaceState(null,'',url.pathname+url.search+url.hash);
+function writeSceneUrl(v, mode='replace') {
+  const slug=routes.slug(v),url=new URL(location.href);url.hash=slug;
+  if(url.searchParams.has('v'))url.searchParams.set('v',slug);
+  const target=url.pathname+url.search+url.hash;
+  if(target!==location.pathname+location.search+location.hash)history[mode+'State'](null,'',target);
 }
-function next(d){ idx = (idx + (d||1) + ORDER.length) % ORDER.length; go(ORDER[idx]); startTimer(); }
-function startTimer(){ stopTimer(); if (paused || document.hidden) return; timer = setInterval(function(){ next(1); }, 5000); }
+function go(v, historyMode='push'){
+  const id=routes.resolve(v);if(!registered.has(id))return;
+  idx=ORDER.indexOf(id);
+  const run=()=>render(id);
+  if(document.startViewTransition&&!reduce)document.startViewTransition(run);else run();
+  writeSceneUrl(id,historyMode);
+}
+function next(d, historyMode='push'){idx=(idx+(d||1)+ORDER.length)%ORDER.length;go(ORDER[idx],historyMode);startTimer();}
+function startTimer(){stopTimer();if(paused||document.hidden)return;timer=setInterval(()=>next(1,'replace'),5000);}
 function stopTimer(){ if (timer){ clearInterval(timer); timer = null; } }
 function setPaused(p){
   paused = p; paused ? stopTimer() : startTimer();
@@ -816,9 +823,15 @@ motionQuery.addEventListener('change',()=>{
   render(ORDER[idx]);
 });
 document.addEventListener('visibilitychange',()=>{document.documentElement.dataset.hidden=String(document.hidden);if(document.hidden){stopTimer();stopBeats();}else startTimer();});
-addEventListener('hashchange',()=>{
-  const key=location.hash.slice(1)||ORDER[0];
-  if(ORDER.includes(key)){idx=ORDER.indexOf(key);go(key);startTimer();}
-});
+function restoreSceneFromUrl(){
+  const query=new URLSearchParams(location.search);
+  const id=routes.resolve(location.hash.slice(1)||query.get('v')||ORDER[0]);
+  if(!registered.has(id))return;
+  if(id!==ORDER[idx]){idx=ORDER.indexOf(id);render(id);}
+  writeSceneUrl(id);startTimer();
+}
+addEventListener('hashchange',restoreSceneFromUrl);
+addEventListener('popstate',restoreSceneFromUrl);
 render(ORDER[idx]);
+writeSceneUrl(ORDER[idx]);
 startTimer();

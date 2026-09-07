@@ -149,15 +149,16 @@
 .xi-menu-description {padding:16px 17px 19px;border-top:1px solid #e2e9da;min-height:107px;box-sizing:border-box}
 .xi-menu-description h2 {font-size:13px;font-weight:550;line-height:1.5}
 .xi-menu-description p {font-size:10px;color:#65765d;line-height:1.65;margin-top:6px}
-.xi-sketch-hero {height:100%;display:grid;grid-template-columns:57% 43%;align-items:center;gap:7px}
-.xi-sketch-hero>div>i {display:block;width:28px;height:3px;background:#b7c9ad;margin-bottom:11px}
-.xi-sketch-hero b {font-size:18px;line-height:1.06;font-weight:500;letter-spacing:-.55px}
-.xi-sketch-hero>div>span {width:80%;height:3px;display:block;background:#d1dbc8;margin-top:11px}
-.xi-sketch-hero em {display:block;width:38px;height:12px;background:#566f48;margin-top:9px;border-radius:2px}
-.xi-sketch-hero figure {margin:0;position:relative;height:105px}
-.xi-sketch-hero figure i {position:absolute;left:0;right:2px;top:26px;bottom:0;border-radius:50% 50% 5px 5px;background:#b5cba0;transform:rotate(-12deg)}
-.xi-sketch-hero figure i:nth-child(2) {top:16px;bottom:10px;background:#d3dec6;left:8px;right:0}
-.xi-sketch-hero figure i:nth-child(3) {top:6px;bottom:20px;background:#ebf0df;left:16px;border:1px solid #acbf99}
+.xi-sketch-hero{height:100%;display:grid;grid-template-columns:47% 53%;align-items:center;gap:0}
+.xi-sketch-hero>div{z-index:1;min-width:0}
+.xi-sketch-hero>div>i{display:block;width:18px;height:18px;border-radius:50% 50% 2px 2px;background:#395740;margin-bottom:12px}
+.xi-sketch-hero>div>small{display:block;font:5px/1.4 'Geist Mono',monospace;letter-spacing:.08em;color:#84927a;margin-bottom:10px}
+.xi-sketch-hero b{font:400 26px/.97 'Instrument Serif',serif;letter-spacing:-.6px;color:#324b36}
+.xi-sketch-hero p{font-size:6px;line-height:1.5;max-width:130px;color:#7e8c74;margin-top:10px}
+.xi-sketch-hero em{display:inline-block;font:500 5px/1.4 Inter,sans-serif;background:#395740;color:#f6f4e6;padding:6px 8px;border-radius:2px;margin-top:10px}
+.xi-sketch-hero figure{margin:-10px -15px -10px -5px;min-width:0}
+.xp-stage .xi-sketch-hero svg.xi-composed-art{display:block;width:100%;height:auto;overflow:visible;stroke:none;fill:none;stroke-width:1}
+.xi-surface-sketch{height:205px;padding:20px;background:#f5f7ed}
 .xi-sketch-features>b {font-size:12px;font-weight:500;letter-spacing:-.4px;display:block;margin:8px 0 21px}
 .xi-sketch-features>div {display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
 .xi-sketch-features article {background:linear-gradient(140deg,#f8faf1,#eaf0df);border:1px solid #d4e0c5;border-radius:4px;padding:10px 6px;height:67px;box-sizing:border-box;box-shadow:0 1px 0 #fff inset,0 2px 3px #4c66300b}
@@ -441,3 +442,6 @@
 }
 
 .xp-stage.xi-static * {transition:none!important;animation:none!important}
+
+@media(max-width:1100px) and (min-width:721px){.xi-sketch-hero b{font-size:22px}.xi-sketch-hero>div>small{font-size:4px}.xi-sketch-hero p{font-size:5px}}
+@media(max-width:720px){.xi-surface-sketch{height:190px}.xi-sketch-hero{grid-template-columns:47% 53%}.xi-sketch-hero b{font-size:29px}.xi-sketch-hero figure{height:auto}.xi-sketch-hero>div>small{font-size:5px}.xi-sketch-hero p{font-size:6px}}

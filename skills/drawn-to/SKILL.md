@@ -7,7 +7,7 @@ description: >-
   an existing direction. Also supports maintaining this reference library.
   A project's own approved design system and the user's explicit choices take precedence.
 metadata:
-  version: "1.3.0"
+  version: "1.3.1"
 ---
 
 # Drawn To
@@ -72,6 +72,7 @@ A request to continue does not restart this interview.
 | Surface or decision | Reference |
 |---|---|
 | Direction, family blends, scope of the twelve defaults | [style-families](references/style-families.md) |
+| Material realism and source-driven effects | [material evidence](references/material-evidence.md), [causal effects](references/causal-effects.md) |
 | Optical volume, video/hover behavior, inspectable objects and modular instruments | [motion-expansion](references/motion-expansion.md) |
 | Newer directions and deeper readings of the owner's favorites | [september-expansion](references/september-expansion.md) |
 | Questions for unresolved direction, material or composition | [question-flow](references/question-flow.md) |

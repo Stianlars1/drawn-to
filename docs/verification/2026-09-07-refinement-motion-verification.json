@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-07T12:24:56.989Z",
+  "browser": "152.0.7977.82",
+  "checks": [
+    "All six live 3D/shader scenes change rendered pixels, accept their parameters and dispose on navigation.",
+    "Every forced-poster state decodes and remains selectable without a renderer.",
+    "Animation starts, pauses and stops under a live reduced-motion change.",
+    "Lost WebGL context becomes a working selected poster state.",
+    "Authored video bytes are deferred; playback, light switching and pause work.",
+    "Playback can be cancelled before decode; rapid light changes leave the final selected film playing.",
+    "Real pointer enter/leave starts and stops film playback; a visibility event suspends and resumes it; simulated Save-Data requests no film bytes.",
+    "Audio is opt-in, creates a real running graph, accepts parameters and suspends on stop.",
+    "Industrial controls, continuous SVG geometry, single-clock sequence and local heat distortion respond to their promised inputs.",
+    "The original image scenes support actual selection, captions and material/scene inspection.",
+    "All six live-scene fallbacks have decoded portrait posters."
+  ],
+  "states": [
+    {
+      "id": "auric-orbit",
+      "materialChanges": true,
+      "disposed": true
+    },
+    {
+      "id": "camera-obscura",
+      "materialChanges": true,
+      "disposed": true
+    },
+    {
+      "id": "plasma-study",
+      "materialChanges": true,
+      "disposed": true
+    },
+    {
+      "id": "phosphor-field",
+      "materialChanges": true,
+      "disposed": true
+    },
+    {
+      "id": "cloud-chamber",
+      "materialChanges": true,
+      "disposed": true
+    },
+    {
+      "id": "morph-study",
+      "materialChanges": true,
+      "disposed": true
+    }
+  ],
+  "errors": [],
+  "failedResources": []
+}

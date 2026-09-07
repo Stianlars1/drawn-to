@@ -87,3 +87,6 @@
 .xp-gpu-picture{position:absolute;inset:0;z-index:0}.xp-gpu-picture .xp-gpu-poster{position:absolute;inset:0}.xp-ribbon-note button[hidden]{display:none}
 
 @media(prefers-reduced-motion:reduce){.xp-stage [data-motion]{display:none}}
+
+.xp-inspect-finish{position:absolute;bottom:2%;right:3%;z-index:3;border:0;border-bottom:1px solid #82939b;background:none;padding:9px 0;color:#c4d0d6;font-size:12px!important;cursor:pointer}
+@media(max-width:720px){.xp-inspect-finish{right:0;bottom:7%;font-size:11px!important}}

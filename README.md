@@ -36,6 +36,10 @@ The [motion expansion](docs/motion-expansion.md) adds optical/mineral orbs, an
 inspectable camera, authored shader films, phosphor displays, illustrated worlds
 and playable instruments. The library now contains 104 references.
 
+The [material refinement](docs/material-refinement.md) improves glass,
+ceramic, metal, source-driven heat and miniature illustration. Every scene now
+has a descriptive address; original letter links remain working aliases.
+
 ## Install
 
 ```sh

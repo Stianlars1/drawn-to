@@ -159,7 +159,7 @@
     { title: 'Onboarding flow', subtitle: 'Keep the action and result together.', caption: 'A choice, and what it changes.', detail: 'Preserve one stable preview as the user moves through related steps.', kind: 'onboarding' }
   ];
   function surfaceSketch(kind) {
-    if (kind === 'hero') return '<div class="xi-sketch-hero"><div><i></i><b>Good ideas.<br> Clearly seen.</b><span></span><em></em></div><figure><i></i><i></i><i></i></figure></div>';
+    if (kind === 'hero') return `<div class="xi-sketch-hero"><div><i></i><small>A LITTLE ROOM TO THINK</small><b>Good ideas.<br>Clearly seen.</b><p>Make space for what comes next.</p><em>Find your direction ↗</em></div><figure>${window.DrawnToMenuArt()}</figure></div>`;
     if (kind === 'features') return '<div class="xi-sketch-features"><b>Three things. Well explained.</b><div><article><i class="xi-mini-ring"></i><span></span><small></small></article><article><i class="xi-mini-layers"></i><span></span><small></small></article><article><i class="xi-mini-bars"></i><span></span><small></small></article></div></div>';
     return '<div class="xi-sketch-onboarding"><div><b>Make it yours.</b><i></i><span></span><span></span><em></em></div><figure><i></i><b>Your direction</b><span></span><span></span></figure></div>';
   }

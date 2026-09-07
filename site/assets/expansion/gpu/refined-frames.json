@@ -1,0 +1,86 @@
+[
+  {
+    "id": "glass-identity",
+    "mode": "glass",
+    "width": 1440,
+    "height": 900,
+    "file": "glass-identity.webp"
+  },
+  {
+    "id": "material-study",
+    "mode": "ceramic",
+    "width": 1440,
+    "height": 900,
+    "file": "material-study.webp"
+  },
+  {
+    "id": "material-study",
+    "mode": "metal",
+    "width": 1440,
+    "height": 900,
+    "file": "material-study-metal.webp"
+  },
+  {
+    "id": "material-study",
+    "mode": "glass",
+    "width": 1440,
+    "height": 900,
+    "file": "material-study-glass.webp"
+  },
+  {
+    "id": "physical-schedule",
+    "mode": "overview",
+    "width": 1440,
+    "height": 900,
+    "file": "physical-schedule.webp"
+  },
+  {
+    "id": "physical-schedule",
+    "mode": "detail",
+    "width": 1440,
+    "height": 900,
+    "file": "physical-schedule-detail.webp"
+  },
+  {
+    "id": "glass-identity",
+    "mode": "glass",
+    "width": 390,
+    "height": 844,
+    "file": "glass-identity-mobile.webp"
+  },
+  {
+    "id": "material-study",
+    "mode": "ceramic",
+    "width": 390,
+    "height": 844,
+    "file": "material-study-mobile.webp"
+  },
+  {
+    "id": "material-study",
+    "mode": "metal",
+    "width": 390,
+    "height": 844,
+    "file": "material-study-metal-mobile.webp"
+  },
+  {
+    "id": "material-study",
+    "mode": "glass",
+    "width": 390,
+    "height": 844,
+    "file": "material-study-glass-mobile.webp"
+  },
+  {
+    "id": "physical-schedule",
+    "mode": "overview",
+    "width": 390,
+    "height": 844,
+    "file": "physical-schedule-mobile.webp"
+  },
+  {
+    "id": "physical-schedule",
+    "mode": "detail",
+    "width": 390,
+    "height": 844,
+    "file": "physical-schedule-detail-mobile.webp"
+  }
+]

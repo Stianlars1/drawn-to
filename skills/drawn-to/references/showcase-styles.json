@@ -643,18 +643,19 @@
     {
       "id": "menu-preview",
       "name": "An explanatory menu",
-      "composition": "A light editorial intro leads to a small source control, a compact menu and a larger adjacent preview. Hover/focus/selection makes the consequences of an option visible before commitment.",
-      "surface": "Warm white #f8f7f2, forest-gray ink and quiet green selection. Menu rows have distinct miniature composition icons, short descriptive text and a small arrow. The preview is a real miniature page with a browser rim and well-drawn content.",
+      "composition": "A light editorial intro leads to a small source control, a compact menu and a larger adjacent preview. Hover/focus/selection makes the consequences of an option visible before commitment. The hero preview has a protected text column beside one original architectural paper sculpture, with consistent perspective, edge thickness and a grounded shadow.",
+      "surface": "Warm white #f8f7f2, forest-gray ink and quiet green selection. Menu rows have distinct miniature composition icons, short descriptive text and a small arrow. The preview is a real miniature page with a browser rim and well-drawn content. Sage structural planes frame ivory folded paper; one restrained ochre accent balances the scene. Review the miniature at its delivered size, not only a magnified SVG.",
       "behavior": "Hero, feature and onboarding options produce different preview layouts. Support pointer, roving keyboard selection, Escape close and focus return. Avoid changing the menu width or leaving preview state inconsistent.",
-      "checks": "Check the menu open and closed at narrow widths. Tiny previews must still show a recognizable composition rather than arbitrary gray bars.",
+      "checks": "Check the menu open and closed at narrow widths. Tiny previews must still show a recognizable composition rather than arbitrary gray bars. The illustration must retain its composed size when icon styles are applied elsewhere. Keep the hero, feature and onboarding previews meaningfully different.",
       "references": [
         "pqoqubbw-2093012429240431093"
       ],
       "implementation": [
         "site/js/expansion/interactive.js",
-        "site/css/extra-interactive.css"
+        "site/css/extra-interactive.css",
+        "site/js/expansion/menu-art.js"
       ],
-      "art": ""
+      "art": "The hero artwork is an original SVG in menu-art.js. Preserve its coherent viewpoint, folded-paper construction, negative space and type/art scale; do not substitute several unrelated rounded shapes."
     },
     {
       "id": "working-widgets",
@@ -676,9 +677,9 @@
       "id": "glass-identity",
       "name": "Glass as an identity",
       "composition": "A large translucent sculptural mark occupies the right of a pale green editorial page. A simple left headline and progressively sized flat versions of the same mark make the relationship between identity and material explicit.",
-      "surface": "Sage-white ground, deep green type, thick green-tinted glass with rounded edge bevels, clear internal voids, environmental reflections and a grounded shadow. The mark silhouette must remain identical across flat and volumetric versions.",
+      "surface": "Sage-white ground and deep green type. Use a clear polished volume with a restrained cool cast, tighter bevels, dark/bright edge intervals and softly grounded depth. A typographic plane genuinely behind the mark makes refraction visible, while crisp flat vector marks retain the same silhouette.",
       "behavior": "A very quiet rotation or pointer reaction can reveal thickness. Use an actual modeled mark for a changing viewpoint and a matching composed poster fallback. Keep small flat marks in crisp vector form.",
-      "checks": "Glass needs visible thickness, transmitted light and a coherent reflection environment. A flat translucent logo with a CSS blur is not equivalent.",
+      "checks": "Inspect an actual landmark through the volume and its unchanged portion outside it, at rest and under a changing view. Look for coherent thickness and reflections, with a readable clear center. A mint fill or a transmission setting alone is not proof of the intended optical finish.",
       "references": [
         "DmitryLepisov-2093247212629139641"
       ],
@@ -686,17 +687,18 @@
         "site/js/expansion/gpu.js",
         "site/css/extra-gpu.css",
         "site/js/graphics/three-stage.js",
-        "site/js/graphics/models.js"
+        "site/js/graphics/models.js",
+        "site/js/graphics/optical-bench.js"
       ],
-      "art": ""
+      "art": "The folded mark is original procedural geometry. Its optical backing plane and typography are composed inside the renderer and are actually sampled through the glass. This is a known scene, not arbitrary DOM refraction."
     },
     {
       "id": "physical-schedule",
       "name": "A tangible plan",
       "composition": "A dark blue-gray editorial scene presents a horizontal sequence as one physical mechanical assembly, with a short heading above and clear stage labels below. The object carries the process metaphor.",
-      "surface": "Steel, graphite, pale blue highlights and machined details. Give the assembly coherent thickness, seams, fasteners and light catching at different edge angles. Use quiet typography so the physical object holds the attention.",
-      "behavior": "Subtle scene motion may reveal the object. Keep the sequence and labels aligned. A static fallback preserves the same assembly and hierarchy rather than replacing it with a generic loading icon.",
-      "checks": "Inspect actual source geometry before adapting. Every repeated element must serve the process, and all geometry must fit the portrait camera.",
+      "surface": "A graphite/anodized base supports satin-metal task bars with thin manufactured bevels, layered cap profiles, fine directional finish, recessed status-light sockets and direct readable labels. Keep the lights and contact shadows coherent. Avoid rubber-like rounded edge profiles and reflections that erase the labels.",
+      "behavior": "A quiet change of view reveals the object. An Inspect the finish control switches between the complete plan and an intentional close view; Show the full plan restores the overview. Fit all task bars in the mobile overview. Matching overview and detail posters retain the same selected state if the renderer is unavailable.",
+      "checks": "Compare the cap, edge and side at actual size and in the inspection view. Review the brightest reflection phase for label legibility. Preserve all four task bars in the portrait overview, and make cropping deliberate in the detail view. Verify the control in both live rendering and poster fallback.",
       "references": [
         "nilseller-2093007384465531068"
       ],
@@ -747,9 +749,9 @@
       "id": "material-study",
       "name": "One form, three materials",
       "composition": "A single sculptural folded-aperture object sits in a quiet studio with a large editorial headline and a compact Ceramic/Metal/Glass selector. Geometry, camera and silhouette stay consistent across the material study.",
-      "surface": "Warm-gray ground. Ceramic has broad soft highlights and an opaque body; metal has sharp directional reflections; glass has transmission, thickness and tinted edge absorption. Use one lighting rig that lets those differences read honestly.",
+      "surface": "Warm-gray studio ground and one shared folded aperture. Ivory ceramic has a fine speckled fired body and a quiet dielectric sheen; satin metal has visible directional reflection gradients and fine brushing; clear glass refracts the actual typographic backing plane. Keep face, bevel and side distinct, without blacked-out metal faces or uniform opaque-looking glass.",
       "behavior": "Selection changes the actual material without moving the object or rebuilding the page. Load the detailed model once and dispose it when leaving. The fallback offers matching posters for all three choices.",
-      "checks": "Compare all three states side by side. If the only visible difference is color, the material study has failed.",
+      "checks": "Compare all three states at the same pose, full composition and actual-size detail. Show real transmitted background evidence in glass, directional reflection structure in metal and a distinct opaque ceramic body. Verify that surface detail survives filtering at the delivered DPR. Inspect the GLB in the same lighting as its procedural source and export all matching fallback states.",
       "references": [
         "DmitryLepisov-2093247212629139641"
       ],
@@ -758,7 +760,8 @@
         "site/css/extra-gpu.css",
         "site/js/graphics/three-stage.js",
         "site/js/graphics/models.js",
-        "site/assets/models/folded-aperture.glb"
+        "site/assets/models/folded-aperture.glb",
+        "site/js/graphics/optical-bench.js"
       ],
       "art": ""
     },
@@ -1166,17 +1169,18 @@
       "id": "thermal-type",
       "name": "Thermal type / typography in heated air",
       "composition": "A large luminous heat chamber occupies the right of a cool gray page while bold technical type sits in the quiet region at left. The amber opening and concentric hardware create a physical explanation for a small local shimmer in the words.",
-      "surface": "Dark titanium, radial fins, fine fasteners, polished ring edges and glowing striated ceramic. The type is sharp at rest and uses a restrained local displacement only when engaged. Preserve the hard-material and hot-light contrast.",
-      "behavior": "Hovering the words or pressing Hold the heat engages an original SVG turbulence/displacement effect; leaving or releasing returns the text to clarity. Keep semantic text, keyboard input and a clear reduced-motion state. The image is original raster artwork and the text distortion is live.",
-      "checks": "The message must remain readable during the effect. Test release, hidden tabs, rapid toggles and reduced motion. On mobile give the text its own clear region and keep the material opening visible.",
+      "surface": "Dark titanium, radial fins, fine fasteners, polished ring edges and glowing striated ceramic. A bounded optical field travels from the aperture through the adjacent image and technical headline, with coherent direction and falloff. Type keeps its reading position while local details refract. Retain a crisp clear reduced-motion state.",
+      "behavior": "Heat is already active on entry without hover. An original advected WebGL field samples the cached artwork and headline together; pointer presence increases it slightly. Pause heat freezes the current field and Resume heat continues. Recompute the source from the actual image crop on resize. Stop hidden/offscreen work, keep semantic DOM text and restore its normal visibility on renderer failure.",
+      "checks": "Capture the normal page with the pointer outside the headline: both image near the heat source and type must change over time, while an outside region stays stable. Inspect the source-to-text relationship visually on desktop and mobile. Check readable text, pause/resume, hidden state, reduced motion, failure and stable texture-upload counts. Do not accept a hover-only wiggle as this effect.",
       "references": [
         "RobertJohns-2090832456081608791"
       ],
       "implementation": [
         "site/js/expansion/motion-editorial.js",
-        "site/css/motion-editorial.css"
+        "site/css/motion-editorial.css",
+        "site/js/motion/heat.js"
       ],
-      "art": "The original asset is site/assets/motion/thermal-type.webp. The source effect is a bounded text filter; it does not imply a modeled engine, heat simulation or copied Hermeus implementation."
+      "art": "The original engine asset is site/assets/motion/thermal-type.webp. The live effect combines that known image and the known headline into one cached texture, then samples them through a procedural heat field. It does not model an engine or solve fluid dynamics and does not support arbitrary live-DOM refraction. Keep accessible text and the original image as the clear fallback."
     },
     {
       "id": "morph-study",

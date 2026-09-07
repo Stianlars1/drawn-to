@@ -131,6 +131,10 @@ corners against the text and chrome, while images crop only at a real viewport
 edge or an intentional frame. Inspect the actual images, not just their collision
 rectangles.
 
+For a material that still reads as plastic, use the observable evidence table
+in [material evidence](material-evidence.md). Record what the render must show
+and reject the attempt when that evidence is absent, even if the shader runs.
+
 ## Lighting and material checks
 
 Inspect the scene at the intended output size and in a close crop:
