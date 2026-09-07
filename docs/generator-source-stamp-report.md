@@ -23,3 +23,8 @@ The stamp CLI anonymously requests `SKILL.md` and `references/generator-handoff.
 ## Integration command
 
 After root commits and pushes all authoritative inputs, run `node scripts/stamp-generator-source.mjs <full-published-commit-SHA>`, then regenerate the final catalog with the existing builder. No final SHA was supplied or stamped by this task.
+
+
+## Verified integration
+
+Root executed the stamp against public source commit `8dbf7bc0e52a8c6c232f09ac63284bf072bbb088`. Both guide resources passed anonymous byte verification. The published generator catalog is `8035ea8cc5e752628a92`; its preceding beta catalog remains available for existing drafts.

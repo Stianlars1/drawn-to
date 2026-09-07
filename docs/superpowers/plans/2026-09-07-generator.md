@@ -38,13 +38,13 @@ UI exports `mountGenerator({catalog,initialState,services})` from `site/js/gener
 
 ## Tasks
 
-- [ ] 1. Curate 70 atomic canonical scene contracts in two nonoverlapping sets. Preserve original full-scene facts; verify every cited section. Root validates count, assembly and positive property scope.
-- [ ] 2. Add catalog builder and validator; derive legacy showcase-styles.json from contracts; update maintenance docs and new generator receiving path in the skill. Validate with existing library scripts and all70 prompt generation.
-- [ ] 3. Write meaningful failing state/compiler/codec tests, run RED, then implement pure modules. Assert the three-property particle-orb case, open masking, explicit override preservation, target inheritance, deterministic export and privacy/round-trip constraints.
-- [ ] 4. Build visually ambitious responsive workspace using real catalog/API. Create `generator.html`, scoped CSS, view modules, dialogs, source inspection and source-to-choice motion. Inputs use delegated commands and textContent/escaped output. Root integrates without changing core interfaces.
-- [ ] 5. Capture all70 reproducible actual showcase thumbnails; wire Use in generator in shared scene header. Verify aliases and header sizing.
-- [ ] 6. Integrate separate drafts, strict share/import codec, immutable catalog snapshots, explicit context disclosure and storage/multitab recovery. Exercise clipboard denied, no storage, malformed catalog and long input paths.
-- [ ] 7. Run browser flows and visual QA at target sizes. Fix material gaps, then independently review spec compliance and implementation. Exercise matching/outdated/absent skill handoffs and small controlled output trial.
+- [x] 1. Curate 70 atomic canonical scene contracts in two nonoverlapping sets. Preserve original full-scene facts; verify every cited section. Root validates count, assembly and positive property scope.
+- [x] 2. Add catalog builder and validator; derive legacy showcase-styles.json from contracts; update maintenance docs and new generator receiving path in the skill. Validate with existing library scripts and all70 prompt generation.
+- [x] 3. Write meaningful failing state/compiler/codec tests, run RED, then implement pure modules. Assert the three-property particle-orb case, open masking, explicit override preservation, target inheritance, deterministic export and privacy/round-trip constraints.
+- [x] 4. Build visually ambitious responsive workspace using real catalog/API. Create `generator.html`, scoped CSS, view modules, dialogs, source inspection and source-to-choice motion. Inputs use delegated commands and textContent/escaped output. Root integrates without changing core interfaces.
+- [x] 5. Capture all70 reproducible actual showcase thumbnails; wire Use in generator in shared scene header. Verify aliases and header sizing.
+- [x] 6. Integrate separate drafts, strict share/import codec, immutable catalog snapshots, explicit context disclosure and storage/multitab recovery. Exercise clipboard denied, no storage, malformed catalog and long input paths.
+- [x] 7. Run browser flows and visual QA at target sizes. Fix material gaps, then independently review spec compliance and implementation. Exercise matching/outdated/absent skill handoffs and small controlled output trial.
 - [ ] 8. Record evidence, create a reviewable branch/PR if tooling permits, and present local/deployed preview separately from production release. Later picker stays queued as agreed.
 
 ## Initial rulings

@@ -5,22 +5,28 @@ import { createRequire } from "node:module";
 import { resolve } from "node:path";
 import { createHash } from "node:crypto";
 const require = createRequire(import.meta.url);
-const { chromium } = require(
+const playwright = require(
   process.env.PLAYWRIGHT_MODULE ||
     "/Users/stian/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright",
 );
 const base = new URL(process.argv[2] || "http://127.0.0.1:56505/generator");
 const output = resolve(process.argv[3] || ".eval-output/generator-races");
 await mkdir(output, { recursive: true });
-const browser = await chromium.launch({
+const engine = process.env.BROWSER_ENGINE || "chromium";
+const browser = await playwright[engine].launch({
   headless: true,
-  executablePath:
-    process.env.CHROME_EXECUTABLE ||
-    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  ...(engine === "chromium"
+    ? {
+        executablePath:
+          process.env.CHROME_EXECUTABLE ||
+          "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+      }
+    : {}),
 });
 const report = {
   date: new Date().toISOString(),
   browser: browser.version(),
+  engine,
   base: base.href,
   checks: [],
   errors: [],
@@ -49,7 +55,7 @@ const changedCatalog = {
   ...changedContent,
 };
 const changedURL = `data/generator/catalogs/${changedCatalog.id}.json`;
-async function fixture({ older = false } = {}) {
+async function fixture({ older = false, delayBoot = null } = {}) {
   const context = await browser.newContext({
     viewport: { width: 1440, height: 900 },
     reducedMotion: "reduce",
@@ -82,8 +88,17 @@ async function fixture({ older = false } = {}) {
   const catalogGate = new Promise((resolve) => {
     releaseCatalog = resolve;
   });
-  await context.route("**/data/generator/index.json", (route) =>
-    route.fulfill({
+  let releaseBoot,
+    bootRequested = false;
+  const bootGate = new Promise((resolve) => {
+    releaseBoot = resolve;
+  });
+  await context.route("**/data/generator/index.json", async (route) => {
+    if (delayBoot === "manifest") {
+      bootRequested = true;
+      await bootGate;
+    }
+    await route.fulfill({
       json: {
         ...manifest,
         current: older ? changedCatalog.id : manifest.current,
@@ -92,8 +107,17 @@ async function fixture({ older = false } = {}) {
           [changedCatalog.id]: { url: changedURL },
         },
       },
-    }),
-  );
+    });
+  });
+  if (delayBoot === "catalog")
+    await context.route(
+      `**/${manifest.catalogs[manifest.current].url}`,
+      async (route) => {
+        bootRequested = true;
+        await bootGate;
+        await route.fulfill({ json: originalCatalog });
+      },
+    );
   await context.route(`**/${changedURL}`, async (route) => {
     catalogRequested = true;
     await catalogGate;
@@ -122,13 +146,15 @@ async function fixture({ older = false } = {}) {
           ],
         }),
       ).toString("base64url");
-  await page.goto(url.href);
-  await page.waitForFunction(() => window.__drawnToGenerator);
+  await page.goto(url.href, { waitUntil: "domcontentloaded" });
+  if (!delayBoot) await page.waitForFunction(() => window.__drawnToGenerator);
   return {
     context,
     page,
     releaseCatalog,
     catalogRequested: () => catalogRequested,
+    releaseBoot,
+    bootRequested: () => bootRequested,
   };
 }
 async function dismiss(page) {
@@ -153,11 +179,14 @@ async function beginImport(page, data, filename = "slow.json") {
   if (filename.startsWith("slow"))
     await page.waitForFunction(() => window.pendingReads.length);
 }
-async function waitForCatalog(setup) {
+async function waitForRequest(requested) {
   const deadline = Date.now() + 8000;
-  while (!setup.catalogRequested() && Date.now() < deadline)
+  while (!requested() && Date.now() < deadline)
     await new Promise((resolve) => setTimeout(resolve, 10));
-  assert.ok(setup.catalogRequested(), "Expected the delayed catalog request");
+  assert.ok(requested(), "Expected the delayed catalog/manifest request");
+}
+function waitForCatalog(setup) {
+  return waitForRequest(setup.catalogRequested);
 }
 async function drain(page) {
   await page.evaluate(async () => {
@@ -183,7 +212,248 @@ async function run(name, fn, options) {
     await context.close();
   }
 }
+function shareURL(data) {
+  const url = new URL(base);
+  url.hash = "d=" + Buffer.from(JSON.stringify(data)).toString("base64url");
+  return url.href;
+}
+async function waitForDraft(page, previousId) {
+  await page.waitForFunction(
+    (id) => window.__drawnToGenerator?.draftId !== id,
+    previousId,
+  );
+  return page.evaluate(() => window.__drawnToGenerator.draftId);
+}
 try {
+  for (const delayBoot of ["manifest", "catalog"])
+    await run(
+      `a newer hash supersedes initial ${delayBoot} loading`,
+      async (page, setup) => {
+        await waitForRequest(setup.bootRequested);
+        const data = {
+          format: "drawn-to-direction",
+          schema: 1,
+          catalogId: changedCatalog.id,
+          scope: "graphic",
+          name: "Newest startup hash",
+          targets: [
+            {
+              id: "main",
+              kind: "graphic",
+              baseScene: "particle-assembly",
+              choices: {},
+            },
+          ],
+        };
+        await page.evaluate((url) => {
+          location.hash = new URL(url).hash;
+        }, shareURL(data));
+        if (delayBoot === "manifest") setup.releaseBoot();
+        await waitForCatalog(setup);
+        setup.releaseCatalog();
+        await page.waitForFunction(
+          (id) => window.__drawnToGenerator?.catalogId === id,
+          changedCatalog.id,
+        );
+        const imported = await page.evaluate(
+          () => window.__drawnToGenerator.draftId,
+        );
+        setup.releaseBoot();
+        await page.waitForTimeout(250);
+        assert.equal(
+          await page.locator(".draft-name").innerText(),
+          "Newest startup hash",
+        );
+        assert.equal(
+          await page.evaluate(() => window.__drawnToGenerator.draftId),
+          imported,
+        );
+        assert.deepEqual((await payload(page)).targets, data.targets);
+        await page.locator('[data-action="drafts"]').click();
+        assert.equal(await page.locator("[data-draft]").count(), 1);
+      },
+      { delayBoot },
+    );
+  await run(
+    "same-tab share hash imports exact selections once and Back/Forward restores draft IDs",
+    async (page) => {
+      const before = await page.evaluate(() => {
+        window.sameDocumentMarker = true;
+        return window.__drawnToGenerator.draftId;
+      });
+      const data = await payload(page);
+      data.targets[0].baseScene = "plasma-study";
+      data.targets[0].choices.motion = { mode: "open", propertyIds: [] };
+      await page.goto(shareURL(data));
+      const imported = await waitForDraft(page, before);
+      assert.equal(await page.evaluate(() => window.sameDocumentMarker), true);
+      assert.deepEqual((await payload(page)).targets, data.targets);
+      assert.equal(await page.evaluate(() => history.state?.draftId), imported);
+      await page.goBack();
+      await page.waitForFunction(
+        (id) => window.__drawnToGenerator?.draftId === id,
+        before,
+      );
+      await page.goForward();
+      await page.waitForFunction(
+        (id) => window.__drawnToGenerator?.draftId === id,
+        imported,
+      );
+      assert.deepEqual((await payload(page)).targets, data.targets);
+      await page.locator('[data-action="drafts"]').click();
+      assert.equal(await page.locator("[data-draft]").count(), 2);
+    },
+  );
+  await run(
+    "rapid share hashes keep the newer direction after delayed catalog completion",
+    async (page, setup) => {
+      const data = await payload(page);
+      const before = await page.evaluate(
+        () => window.__drawnToGenerator.draftId,
+      );
+      await page.evaluate(
+        (url) => {
+          location.hash = new URL(url).hash;
+        },
+        shareURL({ ...data, catalogId: changedCatalog.id, name: "Slow hash" }),
+      );
+      await waitForCatalog(setup);
+      await page.evaluate(
+        (url) => {
+          location.hash = new URL(url).hash;
+        },
+        shareURL({ ...data, name: "Latest hash" }),
+      );
+      const imported = await waitForDraft(page, before);
+      setup.releaseCatalog();
+      await page.waitForTimeout(250);
+      assert.equal(
+        await page.locator(".draft-name").innerText(),
+        "Latest hash",
+      );
+      assert.equal(
+        await page.evaluate(() => window.__drawnToGenerator.draftId),
+        imported,
+      );
+    },
+  );
+  await run(
+    "an edit cancels a pending share hash and leaves history bound to the edited draft",
+    async (page, setup) => {
+      const data = await payload(page);
+      const before = await page.evaluate(
+        () => window.__drawnToGenerator.draftId,
+      );
+      await page.evaluate(
+        (url) => {
+          location.hash = new URL(url).hash;
+        },
+        shareURL({ ...data, catalogId: changedCatalog.id }),
+      );
+      await waitForCatalog(setup);
+      await page.locator('[data-action="rename"]').click();
+      await page.locator('dialog input[name="name"]').fill("Edited after hash");
+      await page
+        .getByRole("button", { name: "Save name", exact: true })
+        .click();
+      setup.releaseCatalog();
+      await page.waitForTimeout(250);
+      assert.equal(
+        await page.evaluate(() => window.__drawnToGenerator.draftId),
+        before,
+      );
+      assert.equal(await page.evaluate(() => history.state?.draftId), before);
+      assert.equal(new URL(page.url()).hash, "");
+      assert.equal(
+        await page.locator(".draft-name").innerText(),
+        "Edited after hash",
+      );
+    },
+  );
+  await run(
+    "genuine retained snapshot hash opens original bindings and updates a separate copy",
+    async (page) => {
+      const retainedId = Object.keys(manifest.catalogs).find(
+        (id) => id !== manifest.current,
+      );
+      assert.ok(
+        retainedId,
+        "A published manifest must retain the beta snapshot",
+      );
+      const data = await payload(page);
+      data.catalogId = retainedId;
+      data.targets[0].baseScene = "plasma-study";
+      const before = await page.evaluate(
+        () => window.__drawnToGenerator.draftId,
+      );
+      await page.goto(shareURL(data));
+      const oldDraft = await waitForDraft(page, before);
+      assert.equal(
+        await page.evaluate(() => window.__drawnToGenerator.catalogId),
+        retainedId,
+      );
+      assert.deepEqual((await payload(page)).targets, data.targets);
+      await page
+        .getByRole("button", { name: "Review update", exact: true })
+        .click();
+      await page
+        .getByRole("button", { name: "Create updated copy", exact: true })
+        .click();
+      await page.waitForFunction(
+        (id) => window.__drawnToGenerator.catalogId === id,
+        manifest.current,
+      );
+      assert.notEqual(
+        await page.evaluate(() => window.__drawnToGenerator.draftId),
+        oldDraft,
+      );
+      await page.locator('[data-action="drafts"]').click();
+      assert.equal(await page.locator(`[data-draft="${oldDraft}"]`).count(), 1);
+    },
+  );
+  await run(
+    "same-tab invalid share clears active metadata and Back recovers the original draft",
+    async (page) => {
+      const before = await page.evaluate(
+        () => window.__drawnToGenerator.draftId,
+      );
+      await page.goto(new URL("#d=invalid", base).href);
+      await page.locator(".generator-error").waitFor();
+      assert.equal(
+        await page.evaluate(() => window.__drawnToGenerator),
+        undefined,
+      );
+      await page.goBack();
+      await page.waitForFunction(
+        (id) => window.__drawnToGenerator?.draftId === id,
+        before,
+      );
+    },
+  );
+  await run(
+    "mobile sources skip hash reveals and focuses Sources without importing another draft",
+    async (page) => {
+      await page.setViewportSize({ width: 390, height: 844 });
+      const before = await page.evaluate(
+        () => window.__drawnToGenerator.draftId,
+      );
+      await page.locator('[data-mobile-view="direction"]').click();
+      await page.evaluate(() => {
+        location.hash = "sources";
+      });
+      await page.waitForFunction(
+        () => document.querySelector("#app").dataset.mobileView === "sources",
+      );
+      assert.equal(
+        await page.evaluate(() => window.__drawnToGenerator.draftId),
+        before,
+      );
+      assert.equal(
+        await page.evaluate(() => document.activeElement.id),
+        "sources",
+      );
+    },
+  );
   await run(
     "delayed import cannot replace a newly created direction or close its dialog",
     async (page) => {

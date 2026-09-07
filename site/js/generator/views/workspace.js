@@ -365,6 +365,11 @@ export function mountGenerator({ catalog, initialState, services }) {
   save();
   return {
     getState: () => state,
+    showSources: () => {
+      mobileView("sources");
+      app.querySelector("#sources").focus({ preventScroll: true });
+      app.querySelector("#sources").scrollIntoView({ block: "start" });
+    },
     destroy: () => {
       abort.abort();
       dialogs.close({ restore: false });

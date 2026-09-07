@@ -117,11 +117,8 @@ const manifestPath = "site/data/generator/index.json";
 const previous = existsSync(resolve(root, manifestPath))
   ? JSON.parse(read(manifestPath))
   : { catalogs: {} };
-const archived = Object.fromEntries(
-  Object.entries(previous.catalogs).filter(
-    ([id, item]) => item.published || id === catalog.id,
-  ),
-);
+// Local drafts may predate public source stamping. Keep their exact snapshots too.
+const archived = { ...previous.catalogs };
 archived[catalog.id] = {
   url: `data/generator/catalogs/${catalog.id}.json`,
   sourceRevision: catalog.sourceRevision,

@@ -23,7 +23,9 @@ let view = null,
   activeCatalog = null,
   activeSession = null,
   reviewDialog = null,
-  transition = 0;
+  transition = 0,
+  transitionLocation = null,
+  handledLocation = null;
 const activeKey = "drawn-to:active-draft:v1";
 const root = document.querySelector("#app");
 const remember = (id) => {
@@ -82,13 +84,25 @@ function save(state) {
           " Your drafts remain in Recent drafts for this tab; download them before closing.",
       };
 }
+function locationKey() {
+  return JSON.stringify([location.href, history.state?.draftId || null]);
+}
+function writeHistory(draftId) {
+  const hash = location.hash === "#sources" ? "#sources" : "";
+  history.replaceState({ draftId }, "", location.pathname + hash);
+  handledLocation = locationKey();
+}
 function beginTransition() {
   reviewDialog?.close();
+  transitionLocation = locationKey();
   return ++transition;
+}
+function isCurrentTransition(token) {
+  return token === transition && transitionLocation === locationKey();
 }
 async function openState(state, token = beginTransition()) {
   const catalog = await catalogFor(state.catalogId);
-  if (token !== transition) return false;
+  if (!isCurrentTransition(token)) return false;
   const invalid = validateDirection(catalog, state);
   if (invalid.length) throw new Error(invalid[0].message);
   activate(catalog, state);
@@ -112,7 +126,7 @@ function activate(catalog, state) {
       try {
         return await openState(localState(id), token);
       } catch (error) {
-        if (isActive() && token === transition) throw error;
+        if (isActive() && isCurrentTransition(token)) throw error;
         return false;
       }
     },
@@ -134,16 +148,16 @@ function activate(catalog, state) {
             `The direction file exceeds the ${Math.round(MAX_IMPORT_BYTES / 1_000_000)} MB import limit.`,
           );
         const text = await file.text();
-        if (token !== transition) return false;
+        if (!isCurrentTransition(token)) return false;
         const payload = readPayload(text, { json: true });
         const importedCatalog = await catalogFor(payload.catalogId);
-        if (token !== transition) return false;
+        if (!isCurrentTransition(token)) return false;
         const imported = restorePayload(importedCatalog, payload);
         activate(importedCatalog, imported);
         view.notify("Direction imported as a separate local draft.");
         return true;
       } catch (error) {
-        if (isActive() && token === transition) throw error;
+        if (isActive() && isCurrentTransition(token)) throw error;
         return false;
       }
     },
@@ -159,6 +173,7 @@ function activate(catalog, state) {
       if (current !== lastState) beginTransition();
       lastState = current;
       remember(current.id);
+      writeHistory(current.id);
       window.__drawnToGenerator = {
         catalogId: catalog.id,
         draftId: current.id,
@@ -168,7 +183,6 @@ function activate(catalog, state) {
   };
   view = mountGenerator({ catalog, initialState: state, services });
   document.title = "Direction studio - Drawn To";
-  history.replaceState({}, "", location.pathname);
   if (catalog.id !== manifest.current) {
     const note = document.createElement("div");
     note.className = "catalog-version-note";
@@ -188,7 +202,7 @@ async function reviewUpdate() {
     previous = structuredClone(view.getState()),
     trigger = document.activeElement,
     token = beginTransition();
-  const isCurrent = () => token === transition && view === previousView;
+  const isCurrent = () => isCurrentTransition(token) && view === previousView;
   try {
     const current = await catalogFor(manifest.current);
     if (!isCurrent()) return;
@@ -258,8 +272,14 @@ async function reviewUpdate() {
   }
 }
 function errorScreen(error, payload = null) {
+  beginTransition();
   view?.destroy();
   view = null;
+  activeSession = null;
+  activeCatalog = null;
+  delete window.__drawnToGenerator;
+  history.replaceState(null, "", location.href);
+  handledLocation = locationKey();
   root.innerHTML =
     '<main class="generator-error"><a href="./">Drawn To ↗</a><p class="eyebrow">YOUR REFERENCES STAY YOURS</p><h1>We could not open this direction.</h1><p class="error-message"></p><div class="error-actions"></div></main>';
   root.querySelector(".error-message").textContent = error.message;
@@ -296,48 +316,76 @@ window.addEventListener("storage", (event) => {
         "This draft changed in another tab. Both versions will be preserved as recovery copies when you save.",
       );
 });
-let importedPayload = null;
-try {
-  manifest = await loadManifest();
-  const url = new URL(location.href),
-    encoded = url.hash.startsWith("#d=") ? url.hash.slice(3) : null;
-  if (encoded) {
-    importedPayload = readPayload(encoded);
-    const catalog = await catalogFor(importedPayload.catalogId);
-    activate(catalog, restorePayload(catalog, importedPayload));
-    view.notify("Shared direction opened as a separate local draft.");
-  } else if (url.searchParams.has("scene") || url.searchParams.has("example")) {
-    const catalog = await catalogFor(manifest.current);
-    activate(
-      catalog,
-      createDirection(catalog, {
-        scope: url.searchParams.get("scope") || "graphic",
-        sceneId: url.searchParams.get("scene") || undefined,
-        example: url.searchParams.get("example") || undefined,
-      }),
-    );
-  } else {
-    let active = null;
-    try {
-      active = sessionStorage.getItem(activeKey);
-    } catch {}
-    if (active) {
-      try {
-        await openState(localState(active));
-      } catch (error) {
-        view?.destroy();
-        view = null;
-        const catalog = await catalogFor(manifest.current);
-        activate(catalog, createDirection(catalog));
-        view.notify(
-          error.message + " The original draft remains in Recent drafts.",
-        );
-      }
-    } else {
+const manifestReady = loadManifest().then((loaded) => (manifest = loaded));
+
+async function navigateLocation() {
+  const key = locationKey();
+  if (key === handledLocation) return;
+  handledLocation = key;
+  const token = beginTransition(),
+    url = new URL(location.href),
+    entryDraftId = history.state?.draftId;
+  let importedPayload = null;
+  try {
+    await manifestReady;
+    if (!isCurrentTransition(token)) return;
+    const encoded = url.hash.startsWith("#d=") ? url.hash.slice(3) : null;
+    if (encoded !== null) {
+      importedPayload = readPayload(encoded);
+      const catalog = await catalogFor(importedPayload.catalogId);
+      if (!isCurrentTransition(token)) return;
+      activate(catalog, restorePayload(catalog, importedPayload));
+      view.notify("Shared direction opened as a separate local draft.");
+    } else if (
+      view &&
+      ((!entryDraftId && url.hash === "#sources") ||
+        entryDraftId === view.getState().id)
+    ) {
+      writeHistory(view.getState().id);
+    } else if (
+      !entryDraftId &&
+      (url.searchParams.has("scene") || url.searchParams.has("example"))
+    ) {
       const catalog = await catalogFor(manifest.current);
-      activate(catalog, createDirection(catalog));
+      if (!isCurrentTransition(token)) return;
+      activate(
+        catalog,
+        createDirection(catalog, {
+          scope: url.searchParams.get("scope") || "graphic",
+          sceneId: url.searchParams.get("scene") || undefined,
+          example: url.searchParams.get("example") || undefined,
+        }),
+      );
+    } else {
+      let active = entryDraftId;
+      if (!active)
+        try {
+          active = sessionStorage.getItem(activeKey);
+        } catch {}
+      let recoveryMessage = null;
+      if (active) {
+        try {
+          if (!(await openState(localState(active), token))) return;
+        } catch (error) {
+          if (!isCurrentTransition(token)) return;
+          if (entryDraftId) throw error;
+          recoveryMessage =
+            error.message + " The original draft remains in Recent drafts.";
+        }
+      }
+      if (!active || recoveryMessage) {
+        const catalog = await catalogFor(manifest.current);
+        if (!isCurrentTransition(token)) return;
+        activate(catalog, createDirection(catalog));
+        if (recoveryMessage) view.notify(recoveryMessage);
+      }
     }
+    if (url.hash === "#sources") view?.showSources();
+  } catch (error) {
+    if (isCurrentTransition(token)) errorScreen(error, importedPayload);
   }
-} catch (error) {
-  errorScreen(error, importedPayload);
 }
+// Both events may describe the same navigation. The location key prevents a duplicate import.
+window.addEventListener("popstate", navigateLocation);
+window.addEventListener("hashchange", navigateLocation);
+await navigateLocation();
