@@ -31,10 +31,9 @@ try{
  for(const [width,height]of [[1440,900],[1280,720],[390,844]]){
   await page.setViewportSize({width,height});
   for(const id of ids){await visit(id);const result=await page.evaluate(()=>{
-    const elements=[...document.querySelectorAll('.scene-actions,.brand,.xp-brand')];
+    const elements=[...document.querySelectorAll('.scene-actions,.brand,.xp-brand,.nav-install')];
     const bounds=elements.map(x=>x.getBoundingClientRect());
-    const actions=document.querySelector('.scene-actions').getBoundingClientRect(),brand=document.querySelector('.brand,.xp-brand').getBoundingClientRect();
-    return {overflow:document.documentElement.scrollWidth>innerWidth,contained:bounds.every(r=>r.left>=0&&r.right<=innerWidth&&r.top>=0&&r.bottom<=innerHeight),overlap:brand.right>actions.left};
+    return {overflow:document.documentElement.scrollWidth>innerWidth,contained:bounds.every(r=>r.left>=0&&r.right<=innerWidth&&r.top>=0&&r.bottom<=innerHeight),overlap:bounds.some((a,i)=>bounds.slice(i+1).some(b=>a.left<b.right&&a.right>b.left&&a.top<b.bottom&&a.bottom>b.top))};
    });assert.deepEqual(result,{overflow:false,contained:true,overlap:false},`${id} ${width}`);}
   report.viewports.push({width,height,routes:ids.length});
  }

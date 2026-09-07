@@ -63,6 +63,8 @@ try {
   await page.locator('.copy').first().click();
   await page.waitForFunction(() => document.querySelector('#live').textContent.includes('Could not copy'));
   assert.notEqual(await page.locator('.copy').first().getAttribute('data-state'), 'done');
+  assert.equal(await page.locator('.install-dialog textarea').inputValue(), 'npx skills add Stianlars1/drawn-to');
+  await page.keyboard.press('Escape');
   await page.evaluate(() => Object.defineProperty(navigator, 'clipboard', {
     configurable: true, value: { writeText: async text => { window.__copied = text; } }
   }));

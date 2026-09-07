@@ -117,6 +117,7 @@ const CMD = () => `<span class="cmd"><span class="p">$</span>${C.cmd}<button typ
 const CMD_HW = () => `<div class="hw"><div class="track"><button type="button" class="cap" data-state="idle" aria-label="Copy install command" onclick="copyCmd(this)"><span class="p">$</span>${C.cmd}<span class="win" aria-hidden="true"><i></i></span></button></div></div>`;
 const STYLE_ACTIONS = () => `<div class="scene-prompt-actions"><button type="button" data-style-copy>Copy this prompt</button><button type="button" data-style-preview aria-label="Preview this style prompt" title="Preview prompt">↗</button><a class="generator-entry" data-generator-entry href="./generator?scene=${encodeURIComponent(DrawnToRoutes.slug(document.documentElement.dataset.variant))}&amp;scope=section" target="_top" aria-label="Use this scene in generator"><span class="generator-entry-prefix">Use in </span>generator ↗</a></div>`;
 const TOP = () => `<div class="top"><a class="brand" href="#${ORDER[0]}">Drawn To</a><div class="scene-actions">${STYLE_ACTIONS()}<a class="gh" href="${C.repo}">GitHub</a></div></div>`;
+const INSTALL_ACTION = () => `<button type="button" class="copy nav-install" data-state="idle" aria-label="Copy install command" title="${C.cmd}" onclick="copyCmd(this)"><span class="swap"><span class="w1">Copy install command</span><span class="w2">Copied!</span></span><span class="ico" aria-hidden="true">${ICONS}</span></button>`;
 const NUMS = (cls) => `<span class="${cls||'nums'}">${C.nums.map(([n,l])=>`<b data-count="${n}">${n}</b> ${l}`).join(' &middot; ')}</span>`;
 function arrow(d){ return `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="${d}"/></svg>`; }
 const PREV = () => `<button type="button" class="cb" data-act="prev" aria-label="Previous direction">${arrow('M9.5 3.5 5 8l4.5 4.5')}</button>`;
@@ -735,6 +736,7 @@ function render(v){
   delete app.dataset.mounted;
   document.documentElement.dataset.variant = v;
   app.innerHTML = `<main class="screen${EXTRA_MAP.has(v)?' extra-screen':''}">${SCREEN[v](first)}</main>`;
+  app.querySelector('.top,.xp-header').insertAdjacentHTML('beforeend',INSTALL_ACTION());
   if (first) countUp();        /* C12: only the first paint animates - every later skin arrives composed */
   first = false;
   if (BEAT[v]) BEAT[v]();
@@ -772,25 +774,8 @@ function setPaused(p){
   if (tog){ tog.setAttribute('aria-pressed', paused ? 'true' : 'false'); tog.setAttribute('aria-label', paused ? 'Resume the cycle' : 'Pause the cycle'); }
   live.textContent = paused ? 'Cycle paused' : 'Cycle running';
 }
-async function copyCmd(btn){
-  const originalLabel=btn.dataset.copyLabel||btn.getAttribute('aria-label');
-  btn.dataset.copyLabel=originalLabel;
-  try {
-    if(!navigator.clipboard) throw new Error('Clipboard unavailable');
-    await navigator.clipboard.writeText(C.cmd);
-    if(!btn.isConnected) return;
-    btn.dataset.state='done';btn.setAttribute('aria-label',originalLabel);live.textContent='Copied';
-  } catch {
-    if(!btn.isConnected) return;
-    btn.dataset.state='idle';
-    btn.setAttribute('aria-label','Copy failed. Try again.');
-    const label=btn.querySelector('.w1'); if(label) label.textContent='retry';
-    live.textContent='Could not copy. Select the install command to copy it manually.';
-  }
-  clearTimeout(btn._t);btn._t=setTimeout(()=>{
-    btn.dataset.state='idle';btn.setAttribute('aria-label',originalLabel);
-    const label=btn.querySelector('.w1');if(label)label.textContent='copy';
-  },1600);
+function copyCmd(btn){
+  return window.DrawnToInstall.copy(btn,C.cmd,live);
 }
 function countUp(){
   if (reduce) return;
@@ -811,7 +796,7 @@ document.addEventListener('drawnto:prompt-open',()=>{setPaused(true);stopBeats()
 app.addEventListener('pointerdown',holdForInteraction);
 app.addEventListener('focusin',holdForInteraction);
 addEventListener('keydown', function(e){
-  if(document.querySelector('.style-dialog[open]') || e.defaultPrevented || e.target.closest('input,textarea,select,[contenteditable=true],[role=slider],[role=tablist],[role=menu],[data-scroll-region]') || e.target.closest('button,a,[role=button]')) return;
+  if(document.querySelector('dialog[open]') || e.defaultPrevented || e.target.closest('input,textarea,select,[contenteditable=true],[role=slider],[role=tablist],[role=menu],[data-scroll-region]') || e.target.closest('button,a,[role=button]')) return;
   if (e.key === 'ArrowRight') next(1);
   else if (e.key === 'ArrowLeft') next(-1);
   else if (e.key === ' ' && !e.target.closest('button,a,[role="button"]') && !reduce){ e.preventDefault(); setPaused(!paused); }
